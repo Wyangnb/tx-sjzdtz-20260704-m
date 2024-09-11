@@ -1,0 +1,59 @@
+// 介绍页
+.m-introduce{
+    .img_introduce_bg{
+      
+    }
+    .introduce-ispt{
+        margin-top: -240px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .divider-line{
+        width: 580px;
+        border-bottom: 2px dotted #e5e5e5;
+        margin-top: 144px;
+        opacity: 0;
+    }
+    .text-list{
+        width: 600px;
+        font-size: 20px;
+        color: #e6e5e5;
+        margin-top: 280px;
+        font-family: text;
+        >li{
+            list-style: square;
+            line-height: 26px;
+            margin-top: 50px;
+            opacity: 0;
+            .white{
+                color: #ffffff;
+
+            }
+            .bold{
+                font-family: boldtext;
+                color: #ffffff;
+            }
+        }
+    }
+
+    &.show{
+        .introduce-ispt{
+            animation: sparkShow .5s .3s ease-in-out forwards;
+        }
+        .divider-line{
+            animation: sparkShow .5s .3s ease-in-out forwards;
+        }
+        .text-list{
+            li{
+                &:nth-child(1){
+                    animation: moveLeft .4s .2s ease-in-out forwards;
+                }
+                &:nth-child(2){
+                    animation: moveLeft .4s .4s ease-in-out forwards;
+
+                }
+            }
+        }
+
+    }
+}

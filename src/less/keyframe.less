@@ -1,0 +1,659 @@
+.keyframes (@name, @frames) {
+    @-moz-keyframes @name { @frames(); }
+    @-ms-keyframes @name { @frames();}
+    @-o-keyframes @name { @frames(); }
+    @-webkit-keyframes @name { @frames(); }
+    @keyframes @name { @frames(); }
+};
+
+
+.keyframes(fadein,{
+    0% {
+       opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+});
+.keyframes(fadeout,{
+    0% {
+       opacity: 1;
+    }
+    100% {
+       opacity: 0;
+    }
+});
+.keyframes(fadeinout,{
+    0% {
+       opacity: 0;
+    }
+    50% {
+       opacity: 1;
+    }
+    100% {
+       opacity: 0;
+    }
+});
+
+.keyframes(scaleX ,{
+    0%{
+        transform: scaleX(0.01);
+    }
+    100%{
+        opacity: 1;
+        transform: scaleX(1);
+    }
+});
+
+.keyframes(gameplayVideoScale ,{
+    0%{
+        transform: translate3d(-50%, -50%, 0) scaleY(0);
+    }
+    // 50%{
+    //     transform: scale(0.2, 1);
+    // }
+    100%{
+        opacity: 1;
+        transform: translate3d(-50%, -50%, 0) scaleY(1);
+    }
+});
+.keyframes(violationScale ,{
+    0%{
+        transform: translate3d(-50%, 0%, 0) scaleY(0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(-50%, 0%, 0) scaleY(1);
+    }
+});
+.keyframes(moveLeft ,{
+    0%{
+        transform: translateX(434px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+});
+
+.keyframes(moveRight ,{
+    0%{
+        transform: translateX(-434px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+});
+
+.keyframes(sparkShow ,{
+    0%{
+        opacity: 1;
+    }
+    10%{
+        opacity: 1;
+    }
+    15%{
+        opacity: 0.2;
+    }
+    20%{
+        opacity: 1;
+    }
+
+    30%{
+        opacity: 1;
+    }
+    35%{
+        opacity: 0.4;
+    }
+    40%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 1;
+    }
+    55%{
+        opacity: 0.6;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+});
+
+
+
+
+
+
+.keyframes(progressIconAni,{
+    0% {
+       opacity: 0.6;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+       opacity: 0.6;
+    }
+});
+
+.keyframes(loadmove, {
+  100%{
+    transform: translate3d(-738px,0,0);
+  }
+});
+
+
+.keyframes(rotate360 ,{
+   0%{
+      transform: rotate(0);
+    }
+   100%{
+      transform: rotate(360deg);
+   }
+});
+ 
+.keyframes(rotateCenter360 ,{
+   0%{
+      transform: translate3d(-50%, -50%, 0) rotate(0);
+    }
+   100%{
+      opacity: 1;
+      transform: translate3d(-50%, -50%, 0) rotate(360deg);
+   }
+});
+ 
+.keyframes(fadeInOutHalf,{
+   0% {
+      opacity: 1;
+   }
+   50% {
+      opacity: 0.5;
+   }
+   100% {
+      opacity: 1;
+   }
+});
+
+.keyframes(gcjAni ,{
+   0%{
+       opacity: 1;
+   }
+   1.5%{
+       opacity: 0.5;
+   }
+   3%{
+       opacity: 1;
+   }
+   4.5%{
+       opacity: 0.5;
+   }
+   6.5%{
+       opacity: 1;
+   }
+   10%{
+       opacity: 1;
+   }
+   11.5%{
+       opacity: 0.5;
+   }
+   25%{
+       opacity: 0.5;
+   }
+   30%{
+       opacity: 1;
+   }
+   55%{
+       opacity: 1;
+   }
+   60%{
+       opacity: 0.5;
+   }
+   65%{
+       opacity: 0.5;
+   }
+   70%{
+       opacity: 0.5;
+   }
+   72%{
+       opacity: 0.3;
+   }
+   85%{
+       opacity: 0.3;
+   }
+   90%{
+       opacity: 1;
+   }
+   100%{
+       opacity: 1;
+   }
+
+});
+
+.keyframes(spark ,{
+   0%{
+       opacity: 1;
+   }
+   2.5%{
+       opacity: 0;
+   }
+   5%{
+       opacity: 1;
+   }
+   7.5%{
+       opacity: 0;
+   }
+   10%{
+       opacity: 0.5;
+   }
+   20%{
+       opacity: 0.5;
+   }
+   25%{
+       opacity: 1;
+   }
+   100%{
+       opacity: 1;
+   }
+});
+
+.keyframes(mapIconShow ,{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+});
+.keyframes(mapRingScale ,{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+});
+.keyframes(gameplayWindowShow ,{
+    0%{
+        transform: scaleX(0);
+    }
+    // 50%{
+    //     transform: scale(0.2, 1);
+    // }
+    100%{
+        opacity: 1;
+        transform: scaleX(1);
+    }
+});
+
+.keyframes(gameplayLineBoxShow ,{
+    0%{
+        transform: translateX(-100px);
+    }
+    // 50%{
+    //     transform: scale(0.2, 1);
+    // }
+    100%{
+        transform: translateX(0);
+    }
+});
+
+.keyframes(gameplayLineScale ,{
+    0%{
+        transform: scaleY(0);
+    }
+    // 50%{
+    //     transform: scale(0.2, 1);
+    // }
+    100%{
+        transform: scaleY(1);
+    }
+});
+
+.keyframes(moveUp ,{
+    0%{
+        transform: translate3d(-50%, 250%, 0);
+    }
+    100%{
+        transform: translate3d(-50%, -50%, 0);
+    }
+});
+
+.keyframes(armsImgShow ,{
+    0%{
+        // opacity: 0;
+        transform: translate3d(-100px, 0, 0);
+    }
+    100%{
+        // opacity: 1;
+        transform:  translate3d(0, 0, 0);
+    }
+});
+
+.keyframes(armsImgShow2 ,{
+    0%{
+        transform: translate3d(-50px, 0, 0);
+    }
+    100%{
+        transform:  translate3d(0, 0, 0);
+    }
+});
+
+.keyframes(borderMoveLeft ,{
+    0%{
+        transform: translate3d(700px, 0, 0);
+    }
+    100%{
+        transform:  translate3d(0, 0, 0);
+    }
+});
+
+.keyframes(borderMoveRight ,{
+    0%{
+        transform: translate3d(-700px, 0, 0);
+    }
+    100%{
+        transform:  translate3d(0, 0, 0);
+    }
+});
+
+.keyframes(armsMoveDown ,{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+});
+
+.keyframes(textShow ,{
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+});
+.keyframes(textShow2 ,{
+    0%{
+        opacity: 0;
+        transform: translateX(-20px) scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(0.5);
+    }
+});
+.keyframes(textShow3 ,{
+    0%{
+        opacity: 0;
+        transform: translateX(-20px) translateY(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) translateY(-50%);
+    }
+});
+
+.keyframes(mapScaleIn ,{
+    0%{
+        transform: scale(1.15);
+    }
+    100%{
+        transform: scale(1);
+    }
+});
+
+.keyframes(mapWindow ,{
+    0%{
+        opacity: 0;
+        width: 0;
+    }
+    100%{
+        opacity: 1;
+        width: 100%;
+    }
+});
+
+.keyframes(mapImg ,{
+    0%{
+        opacity: 0;
+        width: 0;
+    }
+    100%{
+        opacity: 1;
+        width: 369px;
+    }
+});
+
+.keyframes(mapLine ,{
+    0%{
+        opacity: 0;
+        width: 0;
+    }
+    100%{
+        opacity: 1;
+        width: 166px;
+    }
+});
+
+.keyframes(compassArrow ,{
+    0%{
+        transform: rotate(0);
+    }
+    20%{
+        transform: rotate(-10deg);
+    }
+    40%{
+        transform: rotate(10deg);
+    }
+    60%{
+        transform: rotate(0);
+    }
+});
+
+.keyframes(compassArrow2 ,{
+    0%{
+        transform: rotate(0);
+    }
+    20%{
+        transform: rotate(10deg);
+    }
+    40%{
+        transform: rotate(-10deg);
+    }
+    60%{
+        transform: rotate(0);
+    }
+});
+
+.keyframes(windowScaleShow ,{
+    0%{
+        transform: scale(0) translate3d(-50%, -50%, 0);
+    }
+    100%{
+        transform: scale(1) translate3d(-50%, -50%, 0);
+    }
+});
+
+.keyframes(planetShow ,{
+    0%{
+        opacity: 0;
+        transform: scale(2) rotateZ(-20deg);
+    }
+    66%{
+        opacity: 1;
+        transform: scale(0.96) rotateZ(0)
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) rotateZ(0);
+    }
+});
+
+.keyframes(planetShow2 ,{
+    0%{
+        opacity: 0;
+        transform: scale(2) rotateZ(-20deg);
+    }
+    66%{
+        opacity: 0.5;
+        transform: scale(1) rotateZ(0)
+    }
+    100%{
+        opacity: 0.5;
+        transform: scale(1.05) rotateZ(0);
+    }
+});
+
+.keyframes(ringRotateShow ,{
+    0%{
+        transform: rotateZ(-60deg);
+    }
+    
+    100%{
+        transform: rotateZ(0);
+    }
+});
+
+.keyframes(rewardShow ,{
+    0%{
+        // opacity: 0;
+        width: 0;
+    }
+    100%{
+        // opacity: 1;
+        width: 360px;
+    }
+});
+
+.keyframes(newsCard ,{
+    0%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+});
+
+
+
+
+
+.keyframes(sparkShow2 ,{
+    0%{
+        opacity: 1;
+    }
+    10%{
+        opacity: 1;
+    }
+    15%{
+        opacity: 0.2;
+    }
+    20%{
+        opacity: 1;
+    }
+
+    30%{
+        opacity: 1;
+    }
+    35%{
+        opacity: 0.4;
+    }
+    40%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 1;
+    }
+    55%{
+        opacity: 0.6;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+});
+
+.keyframes(mapShow ,{
+    0%{
+        transform: rotateX(60deg);
+    }
+    100%{
+        transform:  rotateX(0);
+    }
+});
+
+
+
+.keyframes(logoS, {
+    0% {
+       opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+});
+
+.keyframes(progressIconAni, {
+    0% {
+       opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    66%{
+        opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+});
+
+
+.keyframes(skillBoxScale, {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    
+    100% {
+       opacity: 1;
+       transform: scale(1.3);
+    }
+});
+
+.keyframes(scrollArrow, {
+    0% {
+        transform: translate3d(-50%, 0, 0);
+    }
+    
+    50% {
+        transform: translate3d(-50%, 20px, 0);
+    }
+});
