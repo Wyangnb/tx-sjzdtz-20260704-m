@@ -71,7 +71,7 @@ module.exports = function () {
                             {
                                 loader: 'css-loader',
                                 options: {
-                                    minimize: true  // css压缩，不需要时 false
+                                    minimize: false  // css压缩，不需要时 false
                                 }
                             },
                             {
@@ -176,7 +176,7 @@ module.exports = function () {
         },
         plugins: [
             new CleanPlugin('dist'),
-            new ExtractTextPlugin('main.[hash:8].css'),
+            new ExtractTextPlugin('main.css'),
             new CopyWebpackPlugin(copyItem),
             new DefinePlugin({
                 'process.env': {
@@ -205,7 +205,7 @@ module.exports = function () {
                 minify: {
                     // removeComments: true, // 移除HTML中的注释
                     collapseWhitespace: false, // 删除空白符与换行符
-                    minifyCSS: true, // 压缩 HTML 中出现的 CSS 代码
+                    minifyCSS: false, // 压缩 HTML 中出现的 CSS 代码
                     minifyJS: true // 压缩 HTML 中出现的 JS 代码
                 }
             })

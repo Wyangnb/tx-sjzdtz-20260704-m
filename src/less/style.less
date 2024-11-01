@@ -57,6 +57,16 @@ body {
     white-space: nowrap;
 }
 
+.m-toast2{
+    display: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.36rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 100001;
+    white-space: nowrap;
+}
+
 // 横竖屏布局相关，慎删；
 .m-vertical {
     -webkit-transform-origin: center center;
@@ -200,6 +210,7 @@ body {
                 top: 34px;
                 width: 970px/2;
                 height: 430px/2;
+                height: 565px/2;
                 .map-list{
                     flex-shrink: 0;
                     width: 470px/2;
@@ -211,6 +222,7 @@ body {
                     overflow: hidden;
                     &.show{
                         height: 430px/2;
+                        height: 565px/2;
                         border: solid 1px #9a9b9b;
                     }
                     .map-item{
@@ -264,7 +276,7 @@ body {
                     }
                     &.show-2{
                         transform: translateY(140px);
-                        height: 150px/2;
+                        height: 290px/2;
                         .map-lv-item-2{
                             display: block;
                       
@@ -274,7 +286,23 @@ body {
                       
                         }
                         .map-lv-item-1{
+                            display: block;
+                      
+                        }
+                    }
+                    &.show-3{
+                        transform: translateY(210px);
+                        height: 290px/2;
+                        .map-lv-item-2{
                             display: none;
+                      
+                        }
+                        .map-lv-item-0{
+                            display: block;
+                      
+                        }
+                        .map-lv-item-1{
+                            display: block;
                       
                         }
                     }
@@ -931,6 +959,88 @@ body {
             right: 90px;
         }
         
+    }
+}
+.pop-copy{
+    display: none;
+    .absf;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 100000;
+    .pop-bg{
+        .img_pop_bg;
+        .pop-text{
+            .abcter;
+            // margin-left: 90px;
+            margin-top: -100px;
+            text-align: center;
+            font-size: 66px/2;
+            line-height: 30px;
+            color: #e6f5ea;
+            &::before{
+                content: "";
+                position: absolute;
+                left: -25px;
+                top: -4px;
+                background-image: data-uri('../img/pop_text_left_i.png');
+                width: 27px/2;
+                height: 75px/2;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 27px/2 auto;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                right: -25px;
+                top: -5px;
+                background-image: data-uri('../img/pop_text_right_i.png');
+                width: 24px/2;
+                height: 75px/2;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 24px/2 auto;
+            }
+        }
+        input{
+            .abcter;
+            width: 500px;
+            height: 50px;
+            background-color: transparent;
+            border: 1px solid #606163;
+            color: #b5c1b9;
+        }
+
+        input:focus {
+            outline: none;
+        }
+        .money-bg{
+            .abcter;
+            text-align: center;
+            // margin-top: -20px;
+            .money-num{
+                margin-top: 98px;
+                font-size: 10px;
+                color: #0ff796;
+            }
+        }
+        .btn-cfm{
+            .img_pop_btn;
+            .abcter;
+            // margin-left: 90px;
+            margin-top: 100px;
+            color: #1e343b;
+            font-size: 16px;
+            text-align: center;
+            line-height: 74px/2;
+            cursor: pointer;
+            transform: translate3d(-50%, -50%, 0) scale(1.4);
+        }
+    }
+    .btn-close{
+        margin-left: 2.96rem;
+        margin-top: -1.66rem;
     }
 }
 .leaflet-popup-content-wrapper{

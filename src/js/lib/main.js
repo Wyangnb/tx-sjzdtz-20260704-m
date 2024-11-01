@@ -275,6 +275,8 @@ var currLayer;
     var mapLvIsClick = false;
     var rightNavIsClick = false;
 
+    var mapMenuIsShow = false;
+
     var showCheck = false;
 
 
@@ -354,8 +356,13 @@ function refreshMarker2(from, arr) {
                         }));
                         currClickMarker = this;
                         $(this.getElement()).addClass('click')
+                        if (item['随机']) {
+                            markerName.html(`${that.name}${item['拾取条件'] && item['拾取条件'] !== ''? `<span> ( ${item['拾取条件']} ) </span>`: ` [${item['随机']}]`}`)
+                        } else {
+                            markerName.html(`${that.name}${item['拾取条件'] && item['拾取条件'] !== ''? `<span> ( ${item['拾取条件']} ) </span>`: ''}`)
+                        }
                         // this?.remove()
-                        markerName.html(`${that.name}${item['拾取条件'] && item['拾取条件'] !== ''? `<span> ( ${item['拾取条件']} ) </span>`: ''}`)
+                       
                         addressName.html(that['自定义区域'])
                         markerPop.addClass('show')
                     },
@@ -717,6 +724,18 @@ function changeMapLv(type) {
                 map.addLayer(currLayer);
                 // toastTips();
                 break;
+            case '21':
+                mapScaleInfo = htjdInfo;
+                allNavList = navList_htjd;
+                navTypeList = navListInfo_htjd;
+                mapIcons = mapArticle_htjd;
+                poiInfo = selectRegion_htjd;
+                $('.map-lv').text('( 机密 )')
+                $('.curr-map-name').text('航天基地')
+                map.removeLayer(currLayer)
+                currLayer.name !== 'map_htjd' && addLayer('map_htjd')
+                map.addLayer(currLayer);
+                break;
             case '22':
                 mapScaleInfo = htjdInfo;
                 allNavList = navList2_htjd;
@@ -727,6 +746,30 @@ function changeMapLv(type) {
                 $('.curr-map-name').text('航天基地')
                 map.removeLayer(currLayer)
                 currLayer.name !== 'map_htjd' && addLayer('map_htjd')
+                map.addLayer(currLayer);
+                break;
+            case '30':
+                mapScaleInfo = bksInfo;
+                allNavList = navList_bks;
+                navTypeList = navListInfo_bks;
+                mapIcons = mapArticle_bks;
+                poiInfo = selectRegion_bks;
+                $('.map-lv').text('( 普通 )')
+                $('.curr-map-name').text('巴克什')
+                map.removeLayer(currLayer)
+                currLayer.name !== 'map_bks' && addLayer('map_bks')
+                map.addLayer(currLayer);
+                break;
+            case '31':
+                mapScaleInfo = bksInfo;
+                allNavList = navList2_bks;
+                navTypeList = navListInfo2_bks;
+                mapIcons = mapArticle2_bks;
+                poiInfo = selectRegion_bks;
+                $('.map-lv').text('( 机密 )')
+                $('.curr-map-name').text('巴克什')
+                map.removeLayer(currLayer)
+                currLayer.name !== 'map_bks' && addLayer('map_bks')
                 map.addLayer(currLayer);
                 break;
         default:
@@ -826,6 +869,11 @@ function bindOptionEvent () {
         }
         console.log('点击');
     })
+}
+
+function showMsg (text) {
+    console.log(text);
+    
 }
 
 // 事件
@@ -958,7 +1006,7 @@ var bindEvent = function () {
         dom_map_lv.removeClass('click')
         mapLvIsClick = false;
         mapChangeIsClick = false;
-
+        mapMenuIsShow = false;
         if (rightNavIsClick) {
             rightNavIsClick = false;
             $('.right-nav').removeClass('click')
@@ -968,6 +1016,7 @@ var bindEvent = function () {
         // 地图选择控制
         if (!mapChangeIsClick) {
             mapChangeIsClick = false;
+            mapMenuIsShow = false;
             $('.map-list').removeClass('show')
         }
     })
@@ -1019,6 +1068,7 @@ var bindEvent = function () {
             dom_mapList.addClass('show')
             dom_changeMapBtn.addClass('click')
             dom_map_lv_list.removeClass('top0')
+            mapMenuIsShow = true;
         } else {
             dom_mapList.removeClass('show')
             dom_changeMapBtn.removeClass('click')
@@ -1026,6 +1076,7 @@ var bindEvent = function () {
             dom_map_lv_list.attr('class', 'map-lv-list')
             dom_map_lv.removeClass('click')
             mapLvIsClick = false;
+            mapMenuIsShow = false;
         }
         
     })
@@ -1034,7 +1085,7 @@ var bindEvent = function () {
         e.stopPropagation();
         mapLvIsClick = !mapLvIsClick
         if (mapLvIsClick) {
-            mapChangeIsClick ? dom_map_lv_list.addClass(`show show-${clickMap}`) : dom_map_lv_list.addClass(`show show-${clickMap} top0`)
+            mapMenuIsShow ? dom_map_lv_list.addClass(`show show-${clickMap}`) : dom_map_lv_list.addClass(`show show-${clickMap} top0`)
             
             dom_map_lv.addClass('click')
             // dom_mapList.addClass('show')
@@ -1045,6 +1096,7 @@ var bindEvent = function () {
             dom_map_lv_list.attr('class', 'map-lv-list')
             dom_map_lv.removeClass('click')
         }
+
         
     })
 
@@ -1061,7 +1113,8 @@ var bindEvent = function () {
         if (index) {
             clickMap = index;
             dom_map_lv_list.attr('class', `map-lv-list show show-${clickMap}`)
-            mapChangeIsClick = true;
+            mapChangeIsClick = false;
+            mapMenuIsShow = false;
             $('.map-item').removeClass('action')
             $('.map-lv-item').removeClass('action')
             dom_map_lv.addClass('click')
@@ -1170,7 +1223,12 @@ var bindEvent = function () {
     $('.btn-share').on('click', function () {
         // $('.bottom-bar').fadeIn();
         // $('.bottom-bar').addClass('show')
-        $('.share-tips').fadeIn();
+        
+        if (browser.versions.QQ || browser.versions.Wechat) {
+            $('.share-tips').fadeIn();
+        } else {
+            $('.pop-copy').fadeIn();
+        }
     })
     $('.share-tips').on('click', function () {
         $('.share-tips').fadeOut();
@@ -1235,6 +1293,50 @@ var bindEvent = function () {
 
     $('.bottom-bar-list').on('click', function () {
         toastTips();
+    })
+
+    $('.btn-cfm-copy').on('click', () => {
+         // 获取输入框的最新值
+         var shareLink = document.getElementById('shareLink');
+         var text = shareLink ? (shareLink.textContent || shareLink.innerText ||shareLink.value) : '';
+
+        if (navigator.clipboard && window.isSecureContext) {
+            // 对于支持 Clipboard API 的现代浏览器
+            navigator.clipboard.writeText(text).then(function() {
+                showMsg('链接已复制到剪贴板');
+            }, function(err) {
+                console.error('无法复制文本: ', err);
+            });
+        } else {
+            // 回退方案：创建一个临时文本区域
+            var textArea = document.createElement("textarea");
+            textArea.value = text;
+
+            // 避免滚动到底部
+            textArea.style.top = "0";
+            textArea.style.left = "0";
+            textArea.style.position = "fixed";
+
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+
+            try {
+                var successful = document.execCommand('copy');
+                var msg = successful ? '链接已复制到剪贴板' : '复制失败';
+                showMsg(msg);
+
+            } catch (err) {
+                console.error('无法复制文本: ', err);
+            }
+
+            document.body.removeChild(textArea);
+        }
+        $('.m-toast2').fadeIn();
+        $('.pop-copy').fadeOut();
+        setTimeout(() => {
+            $('.m-toast2').fadeOut();
+        }, 1500)
     })
 
     // navCtn.on('touchstart', (e) => {

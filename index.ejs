@@ -96,6 +96,7 @@
                                 <div class="map-item map-item-0 action" data-index="0">零号大坝</div>
                                 <div class="map-item map-item-1" data-index="1">长弓溪谷</div>
                                 <div class="map-item map-item-2" data-index="2">航天基地</div>
+                                <div class="map-item map-item-3" data-index="3">巴克什</div>
                               </div>
                               <div class="map-lv-list">
                                   <div class="map-lv-item map-lv-item-0 action" data-lv="0">普通</div>
@@ -175,6 +176,8 @@
                          </div>
 
                          <div class="abcter m-toast">功能开发中，敬请期待</div>
+
+                         <div class="abcter m-toast2">链接已复制到剪贴板</div>
         
                          <!-- 外链 -->
                           <div class="bottom-bar">
@@ -188,6 +191,16 @@
                                 <div class="bottom-bar-item lj"></div>
                               </div>
                             </div>
+                          </div>
+
+                          <!-- 复制链接弹窗 -->
+                          <div class="pop-ctn pop-copy">
+                            <div class="abcter pop-bg">
+                              <div class="abcter pop-text">已生成分享链接</div>
+                              <input type="text" id="shareLink" value="https://df.qq.com/cp/a20240729directory/m/index.html"  readonly>
+                              <div class="btn-cfm btn-cfm-copy">复制链接分享好友</div>
+                            </div>
+                            <div class="abcter btn-close close-copy img_btn_close_pop"></div>
                           </div>
 
                           <div class="share-tips">
@@ -224,6 +237,7 @@
   <script src="<%= require('./src/js/lib/map_article.js') %>"></script>
   <script src="<%= require('./src/js/lib/map_cgxg.js') %>"></script>
   <script src="<%= require('./src/js/lib/map_htjd.js') %>"></script>
+  <script src="<%= require('./src/js/lib/map_bks.js') %>"></script>
   <script src="<%= require('./src/js/lib/main.js') %>"></script>
   <script src="https://ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
   <script src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
