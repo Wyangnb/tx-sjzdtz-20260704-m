@@ -1,12 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 
-let distPath = './dist/a20240531anticheat/';
+// let distPath = './dist/a20240531anticheat/';
+let distPath = './dist/';
 let htmlPath = path.join(distPath, 'index.html');
 // let cssPath = './dist/a20230707reserve/';
 // let jsPath = './dist/a20230707reserve/ossweb-img/js/';
-let mainJsPath = './dist/a20240531anticheat/ossweb-img/js/lib/main.js';
-let newMainJsPath = './dist/a20240531anticheat/ossweb-img/main.js';
+// let mainJsPath = './dist/a20240531anticheat/ossweb-img/js/lib/main.js';
+// let newMainJsPath = './dist/a20240531anticheat/ossweb-img/main.js';
+let mainJsPath = './dist/ossweb-img/js/lib/main.js';
 
 // 修改html
 let htmlStr = fs.readFileSync(htmlPath).toString();
@@ -27,8 +29,10 @@ fs.writeFileSync(htmlPath, htmlStr);
 
 // 修改js
 let jsStr = fs.readFileSync(mainJsPath).toString();
-jsStr = jsStr.replaceAll('../../img/', 'https://game.gtimg.cn/images/dfm/cp/a20240531anticheat/');
-jsStr = jsStr.replaceAll('./img/', 'https://game.gtimg.cn/images/dfm/cp/a20240531anticheat/');
+// jsStr = jsStr.replaceAll('../../img/', 'https://game.gtimg.cn/images/dfm/cp/a20240531anticheat/img/');
+// jsStr = jsStr.replaceAll('./img/', 'https://game.gtimg.cn/images/dfm/cp/a20240531anticheat/img/');
+jsStr = jsStr.replaceAll('../../img/', 'https://qrss.treedom.cn/sjzdtz4/img/');
+jsStr = jsStr.replaceAll('./img/', 'https://qrss.treedom.cn/sjzdtz4/img/');
 fs.writeFileSync(mainJsPath, jsStr);
 
 // // 删除多余的js文件

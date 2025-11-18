@@ -66,9 +66,9 @@
                 <!-- abcter -->
                 <div class="m-wrap sizcover abcter page-swiper">
                 
-                    <div class="swiper-wrapper">
+                    <!-- <div class="swiper-wrapper"> -->
                       <div class="m-index absf">
-                        <div id="MapContainer">
+                        <div id="MapContainer" class="map">
                           <div class="map-mask img_map_mask absf sizcover"></div>
                         </div>
 
@@ -76,17 +76,24 @@
                           <div class="marker-name">哪里</div>
                           <div class="address">地点：<span class="address-name"></span></div>
                           <div class="btn-close-marker-pop"></div>
+                          <div class="btn-pop-floor" data-name="" data-floor="" data-index="" ></div>
                         </div>
 
                          <!-- 切换地图 -->
                          <div class="curr-map-ctn">
                           <div class="curr-map-name-ctn">
                             <div class="curr-map-name">零号大坝</div>
-                            <div class="curr-map-lv">普通</div>
+                            <div class="curr-map-lv">常规</div>
+
+                            <div class="curr-random">特殊事件</div>
 
                             <div class="zj-ctn">
                               <div class="zj-icon"></div>
                               <div class="zj-text">坠机事件</div>
+                            </div>
+                            <div class="type-change-ctn">
+                              <div class="type-change-icon"></div>
+                              <div class="type-change-text">占领模式</div>
                             </div>
                           </div>
                           <div class="btn-change-map-ctn ">
@@ -97,11 +104,50 @@
                                 <div class="map-item map-item-1" data-index="1">长弓溪谷</div>
                                 <div class="map-item map-item-2" data-index="2">航天基地</div>
                                 <div class="map-item map-item-3" data-index="3">巴克什</div>
+                                <div class="map-item map-item-4" data-index="4">潮汐监狱</div>
                               </div>
                               <div class="map-lv-list">
-                                  <div class="map-lv-item map-lv-item-0 action" data-lv="0">普通</div>
+                                  <div class="map-lv-item map-lv-item-0 action" data-lv="0">常规</div>
                                   <div class="map-lv-item map-lv-item-1" data-lv="1">机密</div>
                                   <div class="map-lv-item map-lv-item-2" data-lv="2">绝密</div>
+                                  <div class="map-lv-item map-lv-item-3" data-lv="0">前夜</div>
+                                  <div class="map-lv-item map-lv-item-4" data-lv="1">长夜</div>
+                                  <div class="map-lv-item map-lv-item-5" data-lv="2">终夜</div>
+                              </div>
+
+                              <div class="war-list">
+                                <div class="map-item map-item-0 action" data-index="0"  data-map="pc">攀升</div>
+                                <div class="map-item map-item-1" data-index="1"  data-map="ljd">临界点</div>
+                                <div class="map-item map-item-2" data-index="2" data-map="gc">贯穿</div>
+                                <div class="map-item map-item-3" data-index="3" data-map="jq">烬区</div>
+                                <div class="map-item map-item-4" data-index="4" data-map="qhz">堑壕战</div>
+                                <div class="map-item map-item-5" data-index="5" data-map="df">刀锋</div>
+                                <div class="map-item map-item-6" data-index="6" data-map="dg">断轨</div>
+                                <div class="map-item map-item-7" data-index="7" data-map="hdz">风暴眼</div>
+                                <div class="map-item map-item-8" data-index="8" data-map="jzt">金字塔</div>
+                                <div class="map-item map-item-9" data-index="9" data-map="dc">断层</div>
+                              </div>
+                              <div class="war-lv-list">
+                                  <div class="map-lv-item map-lv-item-0 action" data-lv="0" data-type="pc">PC</div>
+                                  <div class="map-lv-item map-lv-item-1" data-lv="1" data-type="mobile">移动</div>
+                              </div>
+
+                              <div class="random-list">
+                                <div class="random-item random-item-1">
+                                  <div class="random-name-text">坠机事件</div>
+                                  <div class="btn-random-opt"></div>
+                                </div>
+                                <div class="random-item random-item-2">
+                                  <div class="random-name-text">森林山火</div>
+                                  <div class="btn-random-opt"></div>
+                                </div>
+                                <div class="random-item random-item-3">
+                                  <div class="random-name-text">断桥事件</div>
+                                  <div class="btn-random-opt"></div>
+                                </div>
+                                <!-- <div class="random-item-close">
+                                  <div class="random-name-text">不开启特殊事件</div>
+                                </div> -->
                               </div>
                             </div>
                           </div>
@@ -110,6 +156,7 @@
                         <div class="btn-nav-state">
                           <div class="nav-state-icon img_nav_state"></div>
                         </div>
+
                         <div class="select-region-ctn">
                           <div class="btn-select-region img_nav_check"></div>
                           <div class="select-region">
@@ -121,7 +168,11 @@
                         </div>
                     
                         <div class="nav-ctn ">
+                          
                           <div class="nav-ctn-bg img_nav_bg">
+                            <div class="btn-nav-state-top">
+                              <div class="nav-state-icon img_nav_nav_state"></div>
+                            </div>
                             <div class="nav-title img_nav_title"></div>
                             
                             <!-- 搜索 -->
@@ -156,14 +207,121 @@
                           <div class="btn-tutorial"></div>
                           <div class="btn-feedback"></div>
                         </div>
+
+                        <div class="btn-back-game">
+                          <div class="back-i btn_back_game"></div>
+                          <div class="back-text">返回社区</div>
+                        </div>
+
+                        <div class="btn-war-change">
+                          <div class="iswar-i"></div>
+                          <div class="war-change-text">全面战场</div>
+                        </div>
+
+                        <div class="btn-view-change">
+                          <div class="iswar-i"></div>
+                          <div class="view-change-text">视角切换</div>
+                        </div>
+
+                        <div class="btn-floor-mod show">
+                          <div class="floor-i"></div>
+                          <div class="floor-text">切换楼层</div>
+                        </div>
+                        <div class="floor-list"></div>
+
+
+                         <!-- 导航 -->
+                        <div class="war-lv-change-ctn">
+                          <div class="war-lv-change-top">
+                            <div class="lv-left-i"></div>
+                            <div class="war-lv-change-list">
+                              <div class="war-lv-item" data-index="0">1</div>
+                              <div class="war-lv-item" data-index="1">2</div>
+                              <div class="war-lv-item" data-index="2">3</div>
+                              <div class="war-lv-item" data-index="3">4</div>
+                            </div>
+                            <div class="lv-right-i"></div>
+                          </div>
+
+                          <div class="lv-change-ctn">
+                            <div class="lv-change-prev"></div>
+                            <div class="lv-change-tips">区域1</div>
+                            <div class="lv-change-next"></div>
+                          </div>
+                        </div>
+
+                        <div class="deploy-swiper">
+                          <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                            </div>
+                            <div class="btn-swiper-prev"></div>
+                            <div class="btn-swiper-next"></div>
+                          </div>
+                        </div>
         
                         <!-- 弹窗 -->
                          <div class="log-pop">
                           <div class="log-pop-bg"></div>
                           <div class="abcter log-pop-ctn-bg img_log_pop">
                             <!-- <div class="log-title">更新日志</div> -->
-                            <div class="log-pop-title">*温馨提示：坐标持续更新中，目前地图工具内坐标信息为双子测试版本。</div>
+                            <div class="log-pop-title">*温馨提示：坐标持续更新中，目前地图工具内坐标信息为破壁赛季版本。</div>
                             <div class="abcter log-pop-ctn">
+
+                              <div class="log-item">
+                                <div class="log-time">7月11日</div>
+                                <div class="log-fgx img_pop_fgx"></div>
+                                <div class="log-text">
+                                  <ul>
+                                    <li>地图工具坐标已更新至破壁赛季版本；</li>
+                                    <li>新增烽火地带-潮汐监狱的分层地图，选中对应区域后即可进入具体楼层查看；</li>
+                                    <li>新增全面战场-风暴眼地图；</li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <div class="log-item">
+                                <div class="log-time">4月29日</div>
+                                <div class="log-fgx img_pop_fgx"></div>
+                                <div class="log-text">
+                                  <ul>
+                                    <li>地图工具坐标已更新至黑夜之子赛季版本；</li>
+                                    <li>新增零号大坝-行政辖区、长弓溪谷-钻石皇后酒店、巴克什-皇家博物馆区域的分层地图，选中对应区域后即可进入具体楼层查看；</li>
+                                    <li>新增零号大坝（前夜、长夜、终夜）模式地图；</li>
+                                    <li>新增长弓溪谷、航天基地地图随机事件。</li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <div class="log-item">
+                                <div class="log-time">1月15日</div>
+                                <div class="log-fgx img_pop_fgx"></div>
+                                <div class="log-text">
+                                  <ul>
+                                    <li>地图工具坐标已更新至焰火赛季版本；</li>
+                                    <li>烽火地带模式已更新巴克什（绝密）、零号大坝地下区域坐标；</li>
+                                    <li>全面战场模式已更新刀锋、断轨地图坐标；</li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <div class="log-item">
+                                <div class="log-time">11月21日</div>
+                                <div class="log-fgx img_pop_fgx"></div>
+                                <div class="log-text">
+                                  <ul>
+                                    <li>地图工具坐标已更新至聚变赛季版本；</li>
+                                    <li>烽火地带模式已更新巴克什地图坐标（含巴别塔区域坐标）；</li>
+                                    <li>全面战场模式地图正式上线，已更新攀升、临界点、贯穿、烬区、堑壕战的据点、基地部署点、载具、载具补给站、固定弹药箱、固定武器、装置坐标，并支持切换攻防模式和占领模式、PC端和移动端的地图。</li>
+                                  </ul>
+                                </div>
+                              </div>
+        
+                              <div class="log-item">
+                                <div class="log-time">9月26日</div>
+                                <div class="log-fgx img_pop_fgx"></div>
+                                <div class="log-text">《三角洲行动》地图工具正式版上线，已更新零号大坝（普通）、零号大坝（机密）、长弓溪谷（普通）、长弓溪谷（机密）、航天基地（机密）、航天基地（绝密）、巴克什（普通）、巴克什（机密）的物资点、出生点、撤离点及首领坐标。</div>
+                              </div>
+                            
                               <div class="log-item">
                                 <div class="log-time">8月15日</div>
                                 <div class="log-fgx img_pop_fgx"></div>
@@ -211,7 +369,7 @@
                         <div class="abs btn_test_rap"></div>
                       <% } %>
         
-                    </div>
+                    <!-- </div> -->
                     </div>
                 </div>
             </div>
@@ -234,13 +392,29 @@
   </script>
 
   <script src="<%= require('./src/js/lib/jquery-1.11.3.min.js') %>"></script>
+  <script src="<%= require('./src/js/lib/floor/daba_floor.js') %>"></script>
+  <script src="<%= require('./src/js/lib/floor/cgxg_floor.js') %>"></script>
+  <script src="<%= require('./src/js/lib/floor/bks_floor.js') %>"></script>
+  <script src="<%= require('./src/js/lib/floor/cxjy_floor.js') %>"></script>
   <script src="<%= require('./src/js/lib/map_article.js') %>"></script>
   <script src="<%= require('./src/js/lib/map_cgxg.js') %>"></script>
   <script src="<%= require('./src/js/lib/map_htjd.js') %>"></script>
   <script src="<%= require('./src/js/lib/map_bks.js') %>"></script>
+  <script src="<%= require('./src/js/lib/map_cxjy.js') %>"></script>
+  <script src="<%= require('./src/js/lib/dzc/map_gc.js') %>"></script>
+  <script src="<%= require('./src/js/lib/dzc/map_jq.js') %>"></script>
+  <script src="<%= require('./src/js/lib/dzc/map_pc.js') %>"></script>
+  <script src="<%= require('./src/js/lib/dzc/map_ljd.js') %>"></script>
+  <script src="<%= require('./src/js/lib/dzc/map_qhz.js') %>"></script>
+  <script src="<%= require('./src/js/lib/dzc/map_df.js') %>"></script>
+  <script src="<%= require('./src/js/lib/dzc/map_dg.js') %>"></script>
+  <script src="<%= require('./src/js/lib/dzc/map_hdz.js') %>"></script>
+  <script src="<%= require('./src/js/lib/dzc/map_jzt.js') %>"></script>
+  <script src="<%= require('./src/js/lib/dzc/map_dc.js') %>"></script>
   <script src="<%= require('./src/js/lib/main.js') %>"></script>
   <script src="https://ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
   <script src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+  <script src="https://img.ssl.msdk.qq.com/wiki/msdkJsAdapter.js"></script>
   <script>
     //分享参数设置
     var shareParam = {
@@ -277,6 +451,15 @@
     if (window.location.href.indexOf('webview') > 0) {
       $('.share-tips').addClass('webview')
     }
+
+    if (window.location.href.indexOf('pix') > 0) {
+      $('.m-vertical').addClass('pix')
+    }
+
+    // 返回游戏
+    $('.btn-back-game').on('click', function() {
+      msdkCall('{"MsdkMethod":"closeWebView","key":"value"}')
+    })
 
 
 

@@ -10,7 +10,10 @@
         "handover": "webpack --config webpack.config.handover.js  && node buildFix_handover",
         "zip": "webpack --config webpack.config.zip.js",
         "ssh": "ssh -D 0.0.0.0:20000 treedom@8.135.58.157 -N",
-        "local": "cross-env NODE_ENV=prod webpack --config webpack.config.local.js"
+        "local": "cross-env NODE_ENV=prod webpack --config webpack.config.local.js",
+        "sftp": "node sftp-test.js",
+        "deploy": "npm run qshell && npm run sftp",
+        "qshell": "qshell user cu td && qshell qupload -c 30 .qshell.json"
     },
     "author": "Treedom",
     "devDependencies": {

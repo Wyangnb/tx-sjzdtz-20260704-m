@@ -60,6 +60,160 @@ var browser = {
     language: (navigator.browserLanguage || navigator.language).toLowerCase()
 };
 
+function findPad() {
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    console.log('findPad', width);
+    
+    if ($('.pad_landscape').length) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function detectNotchOrDynamicIsland() {
+    const result = {
+        hasNotch: false,
+        hasDynamicIsland: false,
+        deviceType: 'unknown',
+        safeAreaTop: 0,
+        screenInfo: {
+            width: window.screen.width,
+            height: window.screen.height,
+            pixelRatio: window.devicePixelRatio || 1
+        }
+    };
+
+    // 获取安全区域顶部距离
+    const computedStyle = getComputedStyle(document.documentElement);
+    const safeAreaTop = computedStyle.getPropertyValue('env(safe-area-inset-top)') || 
+                        computedStyle.getPropertyValue('constant(safe-area-inset-top)');
+
+    const safeAreaLef = computedStyle.getPropertyValue('env(safe-area-inset-)') || 
+    computedStyle.getPropertyValue('constant(safe-area-inset-top)');
+    
+    if (safeAreaTop && safeAreaTop !== '0px') {
+        result.safeAreaTop = parseInt(safeAreaTop);
+        result.hasNotch = true;
+    }
+
+    // 检测iOS设备
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isStandalone = window.navigator.standalone;
+    
+    if (isIOS) {
+        const { width, height } = window.screen;
+        const pixelRatio = window.devicePixelRatio || 1;
+        const actualWidth = width * pixelRatio;
+        const actualHeight = height * pixelRatio;
+
+        // iPhone X系列及以上设备尺寸检测
+        const iphoneModels = {
+            // iPhone X, XS
+            'iPhone X/XS': { width: 1125, height: 2436 },
+            // iPhone XR
+            'iPhone XR': { width: 828, height: 1792 },
+            // iPhone XS Max
+            'iPhone XS Max': { width: 1242, height: 2688 },
+            // iPhone 11
+            'iPhone 11': { width: 828, height: 1792 },
+            // iPhone 11 Pro
+            'iPhone 11 Pro': { width: 1125, height: 2436 },
+            // iPhone 11 Pro Max
+            'iPhone 11 Pro Max': { width: 1242, height: 2688 },
+            // iPhone 12 mini
+            'iPhone 12 mini': { width: 1080, height: 2340 },
+            // iPhone 12, 12 Pro
+            'iPhone 12/12 Pro': { width: 1170, height: 2532 },
+            // iPhone 12 Pro Max
+            'iPhone 12 Pro Max': { width: 1284, height: 2778 },
+            // iPhone 13 mini
+            'iPhone 13 mini': { width: 1080, height: 2340 },
+            // iPhone 13, 13 Pro
+            'iPhone 13/13 Pro': { width: 1170, height: 2532 },
+            // iPhone 13 Pro Max
+            'iPhone 13 Pro Max': { width: 1284, height: 2778 },
+            // iPhone 14
+            'iPhone 14': { width: 1170, height: 2532 },
+            // iPhone 14 Plus
+            'iPhone 14 Plus': { width: 1284, height: 2778 },
+            // iPhone 14 Pro (灵动岛)
+            'iPhone 14 Pro': { width: 1179, height: 2556 },
+            // iPhone 14 Pro Max (灵动岛)
+            'iPhone 14 Pro Max': { width: 1290, height: 2796 },
+            // iPhone 15
+            'iPhone 15': { width: 1179, height: 2556 },
+            // iPhone 15 Plus
+            'iPhone 15 Plus': { width: 1290, height: 2796 },
+            // iPhone 15 Pro (灵动岛)
+            'iPhone 15 Pro': { width: 1179, height: 2556 },
+            // iPhone 15 Pro Max (灵动岛)
+            'iPhone 15 Pro Max': { width: 1290, height: 2796 }
+        };
+
+        // 检测具体设备型号
+        for (const [model, dimensions] of Object.entries(iphoneModels)) {
+            if ((actualWidth === dimensions.width && actualHeight === dimensions.height) ||
+                (actualWidth === dimensions.height && actualHeight === dimensions.width)) {
+                result.deviceType = model;
+                result.hasNotch = true;
+                
+                // 检测是否有灵动岛
+                if (model.includes('14 Pro') || model.includes('15 Pro') || model === 'iPhone 15' || model === 'iPhone 15 Plus') {
+                    result.hasDynamicIsland = true;
+                }
+                break;
+            }
+        }
+
+        // 如果没有匹配到具体型号，但有安全区域，则认为是刘海屏
+        if (result.deviceType === 'unknown' && result.safeAreaTop > 0) {
+            result.hasNotch = true;
+            result.deviceType = 'Unknown iPhone with notch';
+        }
+    }
+
+    // 检测Android设备
+    const isAndroid = /Android/.test(navigator.userAgent);
+    if (isAndroid) {
+        // Android设备通过安全区域和屏幕比例判断
+        const { width, height } = window.screen;
+        const aspectRatio = Math.max(width, height) / Math.min(width, height);
+        
+        // 如果屏幕比例大于2:1且有安全区域，很可能是刘海屏
+        if (aspectRatio > 2.0 && result.safeAreaTop > 0) {
+            result.hasNotch = true;
+            result.deviceType = 'Android device with notch';
+        }
+
+        // 一些已知的Android刘海屏设备检测
+        const userAgent = navigator.userAgent.toLowerCase();
+        const androidNotchDevices = [
+            'pixel 3', 'pixel 3 xl', 'pixel 4', 'pixel 4 xl',
+            'oneplus 6', 'oneplus 6t', 'oneplus 7', 'oneplus 7 pro',
+            'huawei p20', 'huawei p30', 'huawei mate 20',
+            'xiaomi mi 8', 'xiaomi mi 9', 'xiaomi mi 10',
+            'samsung galaxy s10', 'samsung galaxy s20', 'samsung galaxy s21'
+        ];
+
+        for (const device of androidNotchDevices) {
+            if (userAgent.includes(device.replace(' ', ''))) {
+                result.hasNotch = true;
+                result.deviceType = `Android: ${device}`;
+                break;
+            }
+        }
+    }
+
+    return result;
+}
+
+const deviceInfo = detectNotchOrDynamicIsland();
+if (deviceInfo.hasNotch || deviceInfo.hasDynamicIsland) {
+    $('.m-index').addClass('has-notch');
+}
+
 
 
 /**变量 */
@@ -70,6 +224,72 @@ let part3ListBot = false;
 let movePart3List = false;
 let currScrollIndex = 0;
 let footShow = false;
+
+// 全面战场新全局变量
+window.viewChange = true; // 进攻方视角
+
+window.occupy = false; // 占领模式
+
+window.warLv = 0; // 阶段
+
+window.isLvChange = false;
+
+window.warSwiper = null; // 部署swiper
+
+window.pervInitX = '' // 上一次位移
+
+// 导航相关
+var navTypyList = $('.nav-type-list')
+var regionList = $('.region-list')
+var floorList = $('.floor-list')
+var currLeftNav = 0;
+
+// 全面战场模式
+var isWar = false;
+// 攻守方
+var isAttack = true;
+
+// 楼层模式
+var isFloor = false;
+var currFloorIndex = -1;
+var currMapFloor = dabaFloor;
+var outFloor = true;
+
+// 定义名称与类名的映射，实现可扩展性
+const nameClassMap = {
+    '保险柜': 'red',
+    '小保险箱': 'red',
+    '服务器': 'orange',
+    '电脑': 'orange'
+};
+
+
+var warNavText = {
+    '全部': 'all',
+    '据点': 'jd',
+    '基地部署点': 'jdbsd',
+    '载具': 'zj',
+    '固定弹药箱': 'gddyx',
+    '固定武器': 'gdwq',
+    '载具补给站': 'zjbjz',
+    '装置': 'zz'
+}
+
+var regionText = {
+    0: 'A',
+    1: 'B',
+    2: 'C',
+    3: 'D',
+    4: 'E'
+}
+
+var queryMap = {
+    'daba': '00',
+    'cgxg': '10',
+    'htjd': '21',
+    'bks': '31',
+    'cxjy': '42',
+}
 
 
 // 导航相关
@@ -86,6 +306,9 @@ var listIsAll = {
     3: false,
     4: false,
     5: false,
+    6: false,
+    7: false,
+    8: false,
 }
 var visibleMarker2 = {
     0: {
@@ -117,8 +340,24 @@ var visibleMarker2 = {
         isAll: false,
         isInit: false,
         markers: {}
+    },
+    6: {
+        isAll: false,
+        isInit: false,
+        markers: {}
+    },
+    7: {
+        isAll: false,
+        isInit: false,
+        markers: {}
+    },
+    8: {
+        isAll: false,
+        isInit: false,
+        markers: {}
     }
 };
+
 var hoverMarker = {};
 var clickMarker = {}
 var ciLayer = null;
@@ -127,19 +366,12 @@ function Page() {
     var _this = this;
     _this.$page = $('.m-index')
 
+    const navTypeList = $('.nav-option-ctn')
+
     // _this.$page.css('height', window.innerHeight)
     _this.init = function () {
         console.log(11111);
-        if (!browser.versions.mobile) {
-           
-            _this.resizeDom();
-            if (window.innerWidth / window.innerHeight > 1920 / 1080) {
-                $('.select_map_video').css({ 'width': '100%', 'height': 'auto'})
-            } else {
-                $('.select_map_video').css({ 'width': 'auto', 'height': '100%'})
-            }
-        }
-       
+       _this.resizeDom();
         console.log('init');
         _this.isInit = true;
     }
@@ -147,52 +379,99 @@ function Page() {
     var sizeAutoList = $('.sizeAuto');
     var scaleAutoList = $('.scaleAuto')
     _this.resizeDom = () => {
-        if (window.innerHeight > window.innerWidth) return;
-        var size = window.innerWidth / 1920  > 1 ? 1 : window.innerWidth / 1920;
-        if (window.innerWidth / window.innerHeight - 1920 / 1080 > 0) {
-            // let scale = window.innerWidth / window.innerHeight - 1920 / 1080
-            // scaleAutoList.css('bottom', `${scale * 250}px`)
-            // topCtn[0].style.top = `${scale * 250}px`
+        if (window.innerHeight > window.innerWidth) {
+            // 清除行内样式
+            navTypeList.css('height', '')
+
+            return;
+        };
+        if (isLandscapeType() === 'landscape') {
+        //    navTypeList.css('height', 50 * (window.innerWidth / window.innerHeight) + 'vh')
+            
         } else {
-            scaleAutoList.css('bottom', '0px')
+
         }
 
         
     };
 
     window.onresize = function(e) {
-        if (!browser.versions.mobile) {
-            _this.resizeDom();
-        }
+        _this.resizeDom();
     }
 
+    function isLandscapeType () {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    // const userAgent = navigator.userAgent.toLowerCase();
+
+    // 确保是横屏状态
+    if (width <= height) {
+        return null; // 非横屏状态
+    }
+
+    // 常规手机横屏：宽度小于768px且是移动设备
+    const isRegularPhoneLandscape = width / height > 1.5;
+
+    // 宽屏或折叠屏横屏：宽度大于等于768px
+    const isWideOrFoldableLandscape = width / height <= 1.5;
+
+    if (isRegularPhoneLandscape) {
+        return 'landscape'; // 常规尺寸手机横屏
+    } else if (isWideOrFoldableLandscape) {
+        return 'pad_landscape'; // 宽屏或折叠屏横屏
+    }
+
+    return null;
+}
 
 }
+var bksTop = ['-461305', '-460454', '-459334', '-460257', '-459631', '-459328.9688', '-458885', '-459003', '-458692']
+var bksBom = ['-458000', '-457863', '-457854', '-457554', '-457310', '-457776', '-457320', '-457322', '-457830']
+
 var mapScaleInfo = dabaInfo;
-// var mapScaleInfo = cgxgInfo
+// var mapScaleInfo = gcInfo;
 function getMapPos (posX, posY) {
-    console.log(111, clickMap);
     
+    if (currLayer.name === 'bks_1f' || currLayer.name === 'map_bks2') {
+        // console.log(posX, posY);
+        
+        if (bksTop.includes(posY)) {
+            posX = Number(posX) + 700
+            posY = Number(posY) - 200
+        }
+        if (bksBom.includes(posY)) {
+            posX = Number(posX) + 900
+            posY = Number(posY) + 200
+        }
+        if (posY === -459085) {
+            posX = Number(posX) + 300
+        }
+
+    }
     var x = Number(posX)
     var y = Number(posY)
+    var bj = isFloor ? mapScaleInfo.floorInfo.info.bj : 128
     // x轴转换计算公式：世界轴 / 设计稿宽度/2
     // x轴倍率：81086.304688 / 4096 = 19.79646110546875
     // var xB = 81086.304688 / 4096
     // 81086.304688 / 128
-    var xB2 = mapScaleInfo.width / 128
+    var xB2 = mapScaleInfo.width / bj
 
     // y轴计算公式：世界轴 / 设计稿宽度/2
     // y轴倍率：80988.500000 / 4096 = 19.7725830078125
-    // var yB = 80988.500000 / 4096 / -128
-    var yB2 = mapScaleInfo.height / 128
-
+    // var yB = 80988.500000 / 4096 / -bj
+    var yB2 = mapScaleInfo.height / bj
+    
     // 世界中心轴x： 358155.687500； y： 750191.750000
-    // return {x:  (mapScaleInfo.centerX - x ) / xB2, y: - (mapScaleInfo.centerY + y ) / yB2}
-    if (clickMap == 1) {
-        return {x: 128 - (mapScaleInfo.centerY + y ) / yB2, y: -128 + (mapScaleInfo.centerX - x ) / xB2}
+    // return {x: bj - (mapScaleInfo.centerX - x ) / xB2, y: -bj - (mapScaleInfo.centerY + y ) / yB2}
+    // currLayer.name === 'map_gc'|| currLayer.name === 'map_pc'
+    if (currLayer.name.indexOf('cgxg') !== -1 || currLayer.name === 'map_yc2' || currLayer.name === 'map_yc'|| mapScaleInfo.rotate) {
+
+        return {x: bj - (mapScaleInfo.centerY + y ) / yB2, y: -bj + (mapScaleInfo.centerX - x ) / xB2}
     } else{
-        return {x: 128 - (mapScaleInfo.centerX - x ) / xB2, y: -128 - (mapScaleInfo.centerY + y ) / yB2}
+        return {x: bj - (mapScaleInfo.centerX - x ) / xB2, y: -bj - (mapScaleInfo.centerY + y ) / yB2}
     }
+    // return {x: 127, y: -68}
 }
 new Page().init();
 
@@ -261,15 +540,22 @@ var currLayer;
     var removeCacheMarker = [];
     var markerList = [];
     var currClickMarker;
+    var warMark = [];
+    var borderList = [];
+
 
     // 切换地图
     var dom_changeMapBtn = $('.curr-map-name')
     var dom_mapList = $('.map-list')
+    var dom_warList = $('.war-list')
     var dom_map_lv = $('.curr-map-lv')
     var dom_map_lv_list = $('.map-lv-list')
+    var dom_war_lv_list = $('.war-lv-list')
     var currMap = '0';
     var clickMap = '0';
     var currLv = '0'
+    var currWarMap = 'gc';
+    var currWarType = 'pc';
     var isZj = false;
     var mapChangeIsClick = false;
     var mapLvIsClick = false;
@@ -279,6 +565,11 @@ var currLayer;
 
     var showCheck = false;
 
+    var saveMarker = {}; // 切换楼层前保存的点位
+    var currNavIcon = ''; // 当前选择的icon
+    var NavCliciIndex = 1;
+    var chooseItemLvName = ''; // 选择的难度名称
+
 
 var markerPop = $('.marker-pop-ctn')
 var markerName = $('.marker-pop-ctn .marker-name')
@@ -286,12 +577,14 @@ var addressName = $('.marker-pop-ctn .address-name')
 
 function refreshMarker2(from, arr) {
     $.each(cacheMarker, function () {
+        if (this.options.icon?.polyline) {
+            this.options.icon?.polyline.remove();
+            this.options.icon?.polyline2.remove();
+        }
         this.remove();
     
     });
     isRemove = true;
-    console.log('设置true');
-    console.log('remove', isRemove);
     cacheMarker = [];
     markerList = []
 
@@ -315,11 +608,13 @@ function refreshMarker2(from, arr) {
             if (item['自定义区域']) {
                 var popupHtml = `
                 <div class="name">${this.name}${item['自定义区域'] !== ''? `<span> ( ${item['自定义区域']} ) </span>`: ''}</div>
+                 <div class="btn-floor" data-floor=${this.floor}></div>
                 <div class="address">地点：<span>${item['自定义区域']}</span></div>
             `;
             } else {
                 var popupHtml = `
                 <div class="name">${this.name}${item['自定义区域'] !== ''? `<span> ( ${item['自定义区域']} ) </span>`: ''}</div>
+                 <div class="btn-floor" data-floor=${this.floor}></div>
             `;
             }
           
@@ -334,23 +629,68 @@ function refreshMarker2(from, arr) {
                 className =  'article'
             }
             var pos = getMapPos(this.x, this.y)
+            var path = isWar ? ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/' : ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/'
+            var iconName;
+            if (that.name === "进攻方基地" ) {
+                iconName = window.viewChange ? 'g_jdbsd_g': 'g_jdbsd_r'
+            } else if (that.name === "防守方基地") {
+                iconName = window.viewChange ? 'f_jdbsd_r': 'f_jdbsd_g'
+            } else {
+                iconName = that.icon
+            }
             if (this.icon) {
+                let rotate = currWarMap === 'qhz' ? 90 : 180
                 var myIcon =  L.divIcon({
-                    className: ` map-icon`,
-                    html: `<div class="map-icon-bg"><img src="../../img/xdaba/${that.icon}.png"/></div>`,
+                    className: `${isWar ? 'map-war-icon' : 'map-icon'} ${nameClassMap[that.name] || ''}`,
+                    html: `<div class="map-icon-bg" style="${that?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(that?.rotate) + rotate}deg)` : ''}"><img src="${path + iconName}.png"/></div>`,
                     iconSize: [30, 30],			//设置图标大小
                     iconAnchor: [15, 15],		//设置图标偏移
                 })
+
+                if (that.name === '电梯撤离点' && that.point1) {
+                    var pos1 = getMapPos(that.point1.x, that.point1.y)
+                    var pos2 = getMapPos(that.point2.x, that.point2.y)
+                    var latlngs1 = [
+                        [pos1.y, pos1.x],
+                        [pos.y, pos.x]  // 添加终点坐标
+                    ];
+                    var latlngs2 = [
+                        [pos2.y, pos2.x],
+                        [pos.y, pos.x]  // 添加终点坐标
+                    ];
+                    
+                    myIcon.polyline = L.polyline(latlngs1, {
+                        color: '#EAEBEB',
+                        dashArray: '10, 10',  // 虚线样式：10px线段，10px间隔
+                        weight: 2
+                    }).addTo(map);
+                    myIcon.polyline2 = L.polyline(latlngs2, {
+                        color: '#EAEBEB',
+                        dashArray: '10, 10',  // 虚线样式：10px线段，10px间隔
+                        weight: 2
+                    }).addTo(map);
+                }
+
+                myIcon.name = that.name;
                 
-                cacheMarker.push(L.marker([pos.y, pos.x], {icon:  myIcon}).bindPopup(popupHtml).addTo(map).on({
+                cacheMarker.push(L.marker([pos.y, pos.x], {icon:  myIcon, zIndexOffset: that.name === currNavIcon ? NavCliciIndex + 1 : NavCliciIndex}).bindPopup(popupHtml).addTo(map).on({
                     click: function () {
+                        document.getElementById('MapContainer').classList.remove('zooming');
                         currClickMarker?.setIcon(currClickMarker?.myIcon)
                         this.isClick = true;
                         this.myIcon = myIcon;
+                        if (that?.floor || that?.floor === 0) {
+                            $('.leaflet-popup').addClass('floor')
+                            $('.btn-pop-floor').attr('data-name', that.name)
+                            $('.btn-pop-floor').attr('data-floor', mapScaleInfo?.floor[that.floor]?.floor_f)
+                            $('.btn-pop-floor').attr('data-index', that.floor)
+                        } else {
+                            $('.leaflet-popup').removeClass('floor')
+                        }
                         this.openPopup();
                         this.setIcon( L.divIcon({
-                            className: ` map-icon click`,
-                            html: `<div class="map-icon-bg"><img src="../../img/xdaba/${that.icon}.png"/></div>`,
+                            className: `${isWar ? 'map-war-icon' : 'map-icon'} click ${nameClassMap[that.name] || ''}`,
+                            html: `<div class="map-icon-bg" style="${that?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(that?.rotate) + rotate}deg)` : ''}"><img src="${path + iconName}.png"/></div>`,
                             iconSize: [50, 50],			//设置图标大小
                             iconAnchor: [25, 25],		//设置图标偏移
                         }));
@@ -358,13 +698,29 @@ function refreshMarker2(from, arr) {
                         $(this.getElement()).addClass('click')
                         if (item['随机']) {
                             markerName.html(`${that.name}${item['拾取条件'] && item['拾取条件'] !== ''? `<span> ( ${item['拾取条件']} ) </span>`: ` [${item['随机']}]`}`)
+                        } else if (item['撤离条件']) {
+                            markerName.html(`${that.name}${item['撤离条件'] && item['撤离条件'] !== ''? `<span> ( ${item['撤离条件']} ) </span>`: ` [${item['撤离条件']}]`}`)
                         } else {
                             markerName.html(`${that.name}${item['拾取条件'] && item['拾取条件'] !== ''? `<span> ( ${item['拾取条件']} ) </span>`: ''}`)
+                        }
+                        if (this.myIcon.name.indexOf('基地') > -1) {
+                            initWarSwiper(this.myIcon.name, that);
                         }
                         // this?.remove()
                        
                         addressName.html(that['自定义区域'])
                         markerPop.addClass('show')
+                        console.log('that', that);
+                        
+                        // 如果有楼层，则显示楼层按钮
+                        if (that?.floor || that?.floor === 0) {
+                            $('.marker-pop-ctn').attr('data-floor', that.floor)
+                            $('.marker-pop-ctn').attr('data-name', that.name)
+                            $('.marker-pop-ctn').attr('data-index', index)
+                            $('.marker-pop-ctn').addClass('floor')
+                        } else {
+                            $('.marker-pop-ctn').removeClass('floor')
+                        }
                     },
                     popupclose: function () {
                         markerPop.removeClass('show')
@@ -376,7 +732,6 @@ function refreshMarker2(from, arr) {
       
     });
     isRemove = false;
-    console.log('设置false');
 }
 
 
@@ -400,11 +755,11 @@ function toggleVisible(type, index) {
         case "5_none":
           
             renderMarker()
-            $('.map-icon').remove();
+            isWar ? $('.map-war-icon').remove() : $('.map-icon').remove();
             console.log('删除', $('.map-icon').remove());
             break;
         case "none":
-            $('.map-icon').remove();
+            isWar ? $('.map-war-icon').remove() : $('.map-icon').remove();
             currClickMarker?.remove();
             renderMarker2()
             break;
@@ -413,9 +768,11 @@ function toggleVisible(type, index) {
             visibleMarker[type] = visibleMarker[type] ? false : true;
             break;
     }
-    console.log('type', type);
+    $('.deploy-swiper').removeClass('show')
     function renderMarker () {
         if (Number(currLeftNav) === 0) {
+            console.log(visibleMarker);
+            
             for (var o in visibleMarker) {
                 if (visibleMarker.hasOwnProperty(o)) {
                     visibleMarker[o] = (type.indexOf('all') > 0 ? true : false);
@@ -446,12 +803,13 @@ function toggleVisible(type, index) {
 
 
 var init = function () {
-    var mapWidth = mapScaleInfo.boundsW;  
-    var mapHeight = mapScaleInfo.boundsH;  
-    var mapOrigin = L.latLng(0, 0);
+    var mapWidth = isFloor ? mapScaleInfo.floorInfo.info.boundsW : mapScaleInfo.boundsW;  
+    var mapHeight = isFloor ? mapScaleInfo.floorInfo.info.boundsH :mapScaleInfo.boundsH;  
+    // var mapOrigin = L.latLng(0, 0);
+    var mapOrigin = isWar ? L.latLng(0, 0) : L.latLng(0, 0);
     var pixelToLatLngRatio = -1;
     var southWest = mapOrigin; // 左上角  
-    var northEast = L.latLng((mapHeight - 70) * pixelToLatLngRatio, mapWidth * pixelToLatLngRatio); // 右下角  
+    var northEast = L.latLng((mapHeight) * pixelToLatLngRatio, mapWidth * pixelToLatLngRatio); // 右下角  
     var bounds = L.latLngBounds(southWest, northEast);  
 
     map = L.map('MapContainer', {
@@ -462,20 +820,38 @@ var init = function () {
         maxBoundsViscosity: 1.0,
         minZoom: mapScaleInfo.minZoom,
         maxZoom: 8,
-        preferCanvas: true,
+        // preferCanvas: true,
         smoothSensitivity: 1,   // zoom speed. default is 1
         zoomSnap: .1,
         wheelDebounceTime: 10
     }).setView([mapScaleInfo.initX,  mapScaleInfo.initY], mapScaleInfo.initZoom);
     // let control = new L.Control.Zoomslider()
     // map.addControl(control);
-
+    window.pervInitX = mapScaleInfo.initX
     addLayer('map_db');
+    if (queryMap[getQuery('map')]) {
+        let getMap = queryMap[getQuery('map')];
+        currMap = getMap[0];
+        currLv = getMap[1];
+        changeMapLv(getMap);
+        if (getQuery('map') === 'cgxg' || getQuery('map') === 'htjd') {
+            
+            $('.zj-ctn').addClass('show')   
+            $('.curr-random').css('display', 'block')
+            $('.random-list').removeClass('close')
+        }
+    }
 
+    if (getQuery('map').indexOf('dzc') !== -1) {
+        enterWarMap();
+    }
+    // addLayer('daba_1f');
 
     map.on('click', function(e) {
-        if (!currClickMarker) return;
-        currClickMarker.setIcon(currClickMarker.myIcon)
+        if (currClickMarker) {
+            currClickMarker.setIcon(currClickMarker.myIcon)
+            $('.deploy-swiper').removeClass('show')
+        }
      });
  
      $('.leaflet-popup-pane').on('click', (e) => {
@@ -483,63 +859,350 @@ var init = function () {
          console.log(currClickMarker);
          currClickMarker?.closePopup();
          currClickMarker?.setIcon(currClickMarker.myIcon)
+         $('.deploy-swiper').removeClass('show')
      })
 
     initNav();
+    // 如果有floor，则初始化floor
+    if (mapScaleInfo.floorInfo) {
+        initFloor();
+    } else{
+        $('.btn-floor-mod').removeClass('show')
+    }
     bindEvent();
 };
 
-function addLayer (mapName) {
-    console.log(mapScaleInfo);
-    var mapWidth = mapScaleInfo.boundsW;  
-    var mapHeight = mapScaleInfo.boundsH;  
-    var mapOrigin = L.latLng(0, 0);
-    var pixelToLatLngRatio = -1;
-    var southWest = mapOrigin; // 左上角  
-    var northEast = L.latLng((mapHeight - 70) * pixelToLatLngRatio, mapWidth * pixelToLatLngRatio); // 右下角  
+// 边界数组转换
+function filterPos (str, char1, char2, i) {
+    var index = str.indexOf(char1);
+    var index2 = str.indexOf(char2, index + 1);
+    // console.log(index, index2);
+    
+    if (index != -1 && index2 != -1) {
+        return str.slice(index + 2, index2);
+    }
+    return str;
+}
 
+
+// 绘制边界
+function drawBorder (color, border, isJd = false){ 
+
+    var latlngs = [];
+   
+
+    for (let index = 0; index < border.length; index++) {
+        const element = border[index];
+        let x = filterPos(element, 'X', ',')
+        let y = filterPos(element, 'Y', ',', 1)
+        var pos = getMapPos(x, y)
+        latlngs.push([pos.y, pos.x])
+    }
+
+    // 全地图边界
+    let fourLatlng = [[0, mapScaleInfo.boundsW * -1],[-mapScaleInfo.boundsH, mapScaleInfo.boundsW * -1],[-mapScaleInfo.boundsH, -mapScaleInfo.boundsW * -1], [0, -mapScaleInfo.boundsW * -1]];
+    var latlngs2 = [latlngs]
+    
+
+    // // 绘制且添加
+    // transparent
+    // if (isAttack) {
+    //     var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
+    // } else {
+    //     var polyline = L.polyline(latlngs, {color: 'green'}).addTo(map);
+    // }
+   
+    
+    if (isJd) {
+        let colors
+        if (window.occupy) {
+            colors = 'white'
+        } else {
+            colors = window.viewChange ? 'red' : color
+        }
+        console.log('colors', colors);
+        
+        const line = L.polygon(latlngs, {color: colors, fillColor: colors, weight: 3, stroke: false}).addTo(map)
+        const line2 = L.polygon(latlngs, {color: colors, fillColor: colors, weight: 3, stroke: false}).addTo(map)
+        const line3 = L.polygon(latlngs, {color: colors, fillColor: colors, weight: 3, stroke: false}).addTo(map)
+        const line4 = L.polyline(latlngs, {color: colors}).addTo(map)
+        // line.bringToFront();
+        
+        borderList.push(line);
+        borderList.push(line2);
+        borderList.push(line3);
+        borderList.push(line4);
+    } else {
+        borderList.push(L.polyline(latlngs, {color}).addTo(map));
+    }
+   
+    // var polygon = L.polygon(latlngs, { color: "transparent"}).addTo(map);
+
+    // polygon.on('click', (e) => {
+    //     console.log(1, e);
+    //     polyline.setStyle({color: 'red'});
+    // })
+}
+
+function addLayer (mapName) {
+    if (currLayer && map.hasLayer(currLayer)) {
+        map.removeLayer(currLayer);
+    }
+    var mapWidth
+    var mapHeight
+
+    var minZoom, initZoom, initX, initY
+    var mapOrigin
+    var pixelToLatLngRatio;
+    var southWest; // 左上角  
+    if (window.occupy) {
+        mapWidth = mapScaleInfo.boundsW_s
+        mapHeight = mapScaleInfo.boundsH_s
+        southWest = L.latLng(0, 0)
+        pixelToLatLngRatio = -1
+    } else if (isFloor) {
+        mapWidth = mapScaleInfo.floorInfo.info.floor[currFloorIndex].boundsW
+        mapHeight = mapScaleInfo.floorInfo.info.floor[currFloorIndex].boundsH
+        // southWest = L.latLng(-25, 55)
+        // pixelToLatLngRatio = -0.85
+        // mapWidth = mapScaleInfo.boundsW
+        // mapHeight = mapScaleInfo.boundsH
+        console.log(mapScaleInfo.floorInfo.info.latLngX, mapScaleInfo);
+        
+        southWest = L.latLng(mapScaleInfo.floorInfo.info.floor[currFloorIndex].latLngX, mapScaleInfo.floorInfo.info.floor[currFloorIndex].latLngY)
+        pixelToLatLngRatio = mapScaleInfo.floorInfo.info.pixelToLatLngRatio
+    } else if (isWar) {
+        mapWidth = mapScaleInfo.boundsW
+        mapHeight = mapScaleInfo.boundsH
+        southWest = L.latLng(0, 0)
+        pixelToLatLngRatio = -1
+    } else {
+        mapWidth = mapScaleInfo.boundsW
+        mapHeight = mapScaleInfo.boundsH
+        southWest = L.latLng(0, 0)
+        pixelToLatLngRatio = -1
+    }
+    var northEast = L.latLng((mapHeight) * pixelToLatLngRatio, mapWidth * pixelToLatLngRatio); // 右下角  
+    if (window.occupy) {
+        minZoom = mapScaleInfo.minZoom_s
+        initZoom = mapScaleInfo.initZoom_s
+        initX = mapScaleInfo.initX_s
+        initY = mapScaleInfo.initY_s
+    } else if (isFloor) {
+        
+        minZoom = mapScaleInfo.floorInfo.info.floor[currFloorIndex].minZoom
+        initZoom =  mapScaleInfo.floorInfo.info.floor[currFloorIndex].initZoom
+        initX = mapScaleInfo.floorInfo.info.floor[currFloorIndex].initX
+        initY = mapScaleInfo.floorInfo.info.floor[currFloorIndex].initY;
+        
+    } else {
+        minZoom = mapScaleInfo.minZoom
+        initZoom =  mapScaleInfo.initZoom
+        initX = mapScaleInfo.initX
+        initY = mapScaleInfo.initY;
+    }
+    console.log('目标', mapName, isFloor, initZoom);
+    
     var bounds = L.latLngBounds(southWest, northEast);  
+        // var href = mapScaleInfo?.href ? mapScaleInfo?.href : 'https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/'
+        var href = ''
+    if (!isFloor && mapScaleInfo.href) {
+        href = mapScaleInfo.href
+    
+    } else if (isFloor && mapScaleInfo.floorInfo?.info?.href) {
+        href = mapScaleInfo.floorInfo?.info?.href
+    } else {
+        href = ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/'
+    }
     console.log(northEast, bounds);
-    currLayer = L.tileLayer(`../../img/${mapName}/{z}_{x}_{y}.jpg`, {
-        minZoom: mapScaleInfo.minZoom,
+    currLayer = L.tileLayer(href + `${mapName}/{z}_{x}_{y}.jpg`, {
+        minZoom: minZoom,
         maxZoom: 8,
-        maxNativeZoom: 5,
+        maxNativeZoom: isFloor ? (mapScaleInfo.floorInfo.info?.maxZomm || 6) : 4,
         noWrap: true,
         attribution: '© OpenStreetMap contributors',
-        bounds: bounds
+        bounds: bounds,
+        errorTileUrl:href + `${mapName}/0_0_0.jpg`,
+        tileSize: isFloor ? 512 : 256,
+        zoomOffset: isFloor ? -1 : 0
     }).addTo(map);
+    console.log(isFloor ? 512 : 256);
+    
     currLayer.name = mapName
 
-    map.setMaxBounds(bounds)
-    map.options.minZoom = mapScaleInfo.minZoom;
-    map.setView([mapScaleInfo.initX, mapScaleInfo.initY], mapScaleInfo.initZoom)
-    console.log('mapScaleInfo.minZoom', mapScaleInfo.minZoom, mapScaleInfo.initZoom);
 
+    map.setMaxBounds(bounds)
+    map.options.minZoom = minZoom;
+    
+    if (mapName === 'map_qhz' && currWarType === 'mobile') {
+        map.setView([window.occupy ? mapScaleInfo.initX_mobile_s : mapScaleInfo.initX, window.occupy ? mapScaleInfo.initY_mobile_s : mapScaleInfo.initY], initZoom)
+    } else {
+        console.log('执行', initZoom);
+        
+        map.setView([initX, initY], initZoom)
+    }
+
+
+    window.pervInitX = window.occupy ? mapScaleInfo.initX_s : mapScaleInfo.initX
+    
+
+
+    let html = ''
     $.each(poiList, function () {
         this.remove();
     
     });
     poiList = [];
-    let html = ''
-    poiInfo.forEach((item, index) => {
-        if (item.name === '行政西楼' || item.name === '行政东楼') return;
-    var myIcon =  L.divIcon({
-        className: ` map-region-name`,
-        html: `<div class="map-region-name">${item.name}</div>`,
-    })
-    var pos = getMapPos(item.x, item.y)
-     html+= `<div class="region-item region-item-${index}" data-x="${item.x}" data-y="${item.y}">${item.name}</div>`
-    poiList.push(L.marker([pos.y, pos.x], {icon: myIcon}).addTo(map))
-})
+    if (!isWar) {
+        
+        poiInfo.forEach((item, index) => {
+            if (item.name === '行政西楼' || item.name === '行政东楼') return;
+            var myIcon =  L.divIcon({
+                className: ` map-region-name`,
+                html: `<div class="map-region-name">${item.name}</div>`,
+            })
+            var pos = getMapPos(item.x, item.y)
+            html+= `<div class="region-item region-item-${index}" data-x="${item.x}" data-y="${item.y}">${item.name}</div>`
+            poiList.push(L.marker([pos.y, pos.x], {icon: myIcon}).addTo(map))
+        })
+    
+        // 锚点定位
+        regionList.html(html)
+        $('.region-item').on('click', anchorRegion)
+    } else {
+        console.log(currWarMap, currWarType, window[currWarMap]);
 
-    // 锚点定位
-    regionList.html(html)
-    $('.region-item').on('click', function (e) {
-        var x = $(e.target).attr('data-x');
-        var y = $(e.target).attr('data-y');
-        var pos = getMapPos(x, y)
-        map.flyTo([pos.y, pos.x], 5)
+        let length = window[currWarMap].info.sector
+        for (let index = 0; index < length; index++) {
+            html += `<div class="region-item-war region-item-war-${index} ${Number(window.warLv) === index ? 'active' : ''}" data-index="${index}">区域${regionText[index]}</div>`
+        }
+        regionList.html(html)
+        $('.region-item-war').on('click', function (e) {
+            console.log(2222, $(this));
+            var index = $(e.target).attr('data-index');
+            window.isLvChange = true;
+            window.warLv = index
+            changeWarMap(currWarMap, currWarType);
+            // initNav();
+            // bindOptionEvent();
+            $('.lv-change-tips').text(`区域${window.warLv+1}`)
+            $('.deploy-swiper').removeClass('show')
+            map.flyTo([window[currWarMap].info.sectorInit[window.warLv].initX,  window[currWarMap].info.sectorInit[window.warLv].initY], window[currWarMap].info.sectorInit[window.warLv].initZoom)
+            listIsAll[currLeftNav] = false;
+            $('.choose-all').attr('class', 'img_all_close choose-all')
+            console.log('addLayer', currLeftNav, listIsAll);
+            setTimeout(() => {
+                window.isLvChange = false;
+            }, 1000)
+        })
+    }
+    
+}
+
+// 定位通用方法
+function anchorRegion (e) {
+    e.stopPropagation();
+    var x = $(e.target).attr('data-x');
+    var y = $(e.target).attr('data-y');
+    var pos = getMapPos(x, y)
+    if (isFloor) {
+        isFloor = false;
+        changeMapLv(`${currMap + currLv}`);
+        $('.btn-floor-mod').addClass('act')
+        $('.floor-text').text('切换楼层')
+        $('.floor-list').removeClass('show')
+        setTimeout(() => {
+            map.flyTo([pos.y * 2, pos.x * 2], 4.5)
+        }, 500)
+        outFloor = true;
+       
+    } else {
+        map.flyTo([pos.y, pos.x], 4.5)
+    }
+    // map.flyTo([pos.y, pos.x], 4.5)
+    $('.region-item').removeClass('action')
+    $(this).addClass('action')
+    // findFloor($(e.target).text())
+
+}
+
+// 初始化楼层
+function initFloor () {
+    floorList.html('')
+    floorTop = $('.map-floor-change-list')
+    let html2 = ''
+    mapScaleInfo.floor.forEach((item, index) => {
+        let html = `<div class="floor-item floor-item-${index} ${currFloorIndex === index ? 'act' : ''}" data-index="${index}" data-floor="${item.floor_f}">${item.floor_f}</div>`
+        html2 += `<div class="map-floor-item floor_${item.floor_f} ${currFloorIndex === index ? 'act' : ''}" data-index="${index}"></div>`
+        floorList.append(html)
+       
     })
+    floorTop.html(html2)
+    $('.btn-floor-mod').addClass('show')
+    $('.floor-item').on('click', (e) => {
+         outFloor = false;
+        isFloor = true;
+        let index = Number($(e.target).attr('data-index'));
+        let floor = $(e.target).attr('data-floor');
+        currFloorIndex = index;
+        $('.nav-option-ctn').addClass('floor')
+        saveMarker = Object.assign({}, visibleMarker);
+        if (isZj) {
+            changeMapLv(`${currMap + currLv + '_s_' +floor}`)
+        } else {
+            changeMapLv(`${currMap + currLv + '_' +floor}`)
+        }
+        enterFloorSave();
+      
+    })
+}
+
+// 进入楼层保留选项
+function enterFloorSave () {
+    let navType = {
+        '保险柜': 'nav_bxx',
+        '小保险箱': 'nav_xbxx',
+        '服务器': 'nav_fwq',
+        '电脑': 'nav_dn',
+        '电脑机箱': 'nav_dnjx',
+        '武器箱': 'nav_wqx',
+        '大武器箱': 'nav_dwqx',
+        '弹药箱': 'nav_dyx',
+        '工具柜': 'nav_gjg',
+        '大工具盒': 'nav_dgjh',
+        '实验服': 'nav_yf_s',
+        '衣服': 'nav_yf',
+        '医疗包': 'nav_ylb',
+        '医疗物资堆': 'nav_ylwzd',
+        '旅行袋': 'nav_lxd',
+        '手提箱': 'nav_stx',
+        '储物柜': 'nav_cwg',
+        '高级储物箱': 'nav_cwg_gj',
+        '抽屉柜': 'nav_ctg',
+        '登山包': 'nav_dsb',
+        '快递箱': 'nav_kdx',
+        '航空储物箱': 'nav_hkcwx',
+        '垃圾箱': 'nav_ljx',
+        '水泥车': 'nav_snc',
+        '野外物资箱': 'nav_ywwzx',
+        '鸟窝': 'nav_nw',
+        '藏匿物': 'nav_cnw',
+        '高级旅行箱': 'nav_xlx'
+    }
+    console.log(saveMarker);
+    for (const key in saveMarker) {
+        if (Object.hasOwnProperty.call(saveMarker, key)) {
+            if (saveMarker[key]) {
+                console.log(key);
+                
+                !visibleMarker[key] ? $(`.nav-list-${navType[key]}`).addClass('active'): $(`.${navType[key]}`).removeClass('active')
+                toggleVisible(key, currLeftNav);
+            }
+        }
+    }
+    visibleMarker = Object.assign({}, saveMarker);
+    // !visibleMarker[name] ? $(`.${nav}`).addClass('active'): $(`.${nav}`).removeClass('active')
+    // toggleVisible(name, currLeftNav);
 }
 
 // 重置全选
@@ -570,6 +1233,7 @@ function resetAll (type) {
     } else {
         // listIsAll[currLeftNav] = type === 'none' ? false: true;
         listIsAll[currLeftNav] = listIsAll[currLeftNav] ? false: true;
+        
     }
     
     if (listIsAll[1] && listIsAll[2] && listIsAll[3] && listIsAll[4] && listIsAll[5]) {
@@ -581,17 +1245,108 @@ function resetAll (type) {
 }
 
 var initNav = function () {
+    currLeftNav = 0;
     var navLeft = $('.nav-options');
+    navLeft.html('')
+    var navList;
+    if (isWar) {
+        navList = allNavList.typeList;
+    } else {
+        navList = allNavList
+    }
+    var html = ''
+    console.log(1111, allNavList);
+    
     allNavList.forEach(function (item, index) {
-        navLeft.append(`<div class="nav-option-item nav-option-item-${index} ${currLeftNav === index ? 'active': ''}" data-index="${index}"></div>`)
+        if (item.titleType === 'xdjqz') return;
+        if (isWar) {
+            html+= `
+            <div class="nav-option-item nav-option-item-${index}  ${currLeftNav === index ? 'active': ''}" data-index="${index}">
+                <div class="nav-option-i ${warNavText[item.title]}"></div>
+                <div class="nav-option-text">${item.title}</div>
+            </div>
+            `
+        } else {
+            html+= `
+            <div class="nav-option-item nav-option-item-${index} ${currLeftNav === index ? 'active': ''}" data-index="${index}">
+                <div class="nav-option-i ${item.titleType === "首领" ? 'sl': item.titleType}"></div>
+                <div class="nav-option-text">${item.title}</div>
+            </div>
+            `
+        }
+       
+        // navLeft.append()
 
     })
+    navLeft.html(html)
+
+    var navOptItem = $('.nav-option-item')
+    // 选择类型
+    navOptItem.on('click', function (e) {
+        var index = $(e.target).attr('data-index');
+        currLeftNav = index;
+        navOptItem.removeClass('active')
+        $(`.nav-option-item-${index}`).addClass('active')
+        console.log($(e.target).attr('data-index'));
+        if (Number(index) === 0) {
+            renderNavTypeList(allNavList[0].typeList, 0)
+        } else {
+            console.log('navTypeList[index]', navTypeList[index]);
+            
+            renderNavTypeList(navTypeList[index].typeList, index)
+        }
+
+        if (listIsAll[currLeftNav]) {
+            $('.choose-all').attr('class', 'img_all_open choose-all')
+        } else {
+            $('.choose-all').attr('class', 'img_all_close choose-all')
+        }
+        console.log('initNav', currLeftNav, listIsAll);
+        
+        bindOptionEvent();
+
+        // if (isWar) {
+        //     warInit(currWarMap, currWarType);
+        // }
+
+    })
+    
     renderNavTypeList(allNavList[0].typeList, 0)
+    
 
         
-    selectRegion.forEach(function (item, index) {
-        regionList.append(`<div class="region-item region-item-${index}" data-x="${item.x}" data-y="${item.y}">${item.name}</div>`)
-    })
+    if (isWar) {
+        regionList.html('')
+        let length = window[currWarMap].info.sector
+        for (let index = 0; index < length; index++) {
+            regionList.append(`<div class="region-item-war region-item-war-${index} ${Number(window.warLv) === index ? 'active' : ''}" data-index="${index}">区域${regionText[index]}</div>`)
+        }
+        $('.region-item-war').on('click', function (e) {
+            // $('.region-item-war').removeClass('active')
+            $(this).addClass('active')
+            console.log(2222, $(this));
+            var index = $(e.target).attr('data-index');
+            $(e.target).addClass('active')
+            window.isLvChange = true;
+            window.warLv = index
+            changeWarMap(currWarMap, currWarType);
+            // initNav();
+            // bindOptionEvent();
+            $('.lv-change-tips').text(`区域${window.warLv+1}`)
+            $('.deploy-swiper').removeClass('show')
+            map.flyTo([window[currWarMap].info.sectorInit[window.warLv].initX,  window[currWarMap].info.sectorInit[window.warLv].initY], window[currWarMap].info.sectorInit[window.warLv].initZoom)
+            listIsAll[currLeftNav] = false;
+            $('.choose-all').attr('class', 'img_all_close choose-all')
+            setTimeout(() => {
+                window.isLvChange = false;
+            }, 1000)
+        })
+    } else {
+        selectRegion.forEach(function (item, index) {
+            regionList.append(`<div class="region-item region-item-${index}" data-x="${item.x}" data-y="${item.y}">${item.name}</div>`)
+        })
+    }
+   
 }
 
 var renderNavTypeList = function (list, navIndex = 0){
@@ -600,21 +1355,65 @@ var renderNavTypeList = function (list, navIndex = 0){
         html = '<div class="fgx top0">物资点</div>'
     }
     list.forEach(function (item, index) {
-        // console.log(visibleMarker[item.name], item.name);
         if (item.name === '行动接取站' || item.name === '高价值接取站') return;
         if (item.name === '付费撤离点' || item.name === '拉闸撤离点') {
             html+=`
             <div class="fgx ${list.length > 15 ? '' : 'top0'}">撤离点</div>
-                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+                <div class="nav-list-item nav-list-item-${index} ${nameClassMap[item.name] || ''} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
                 <div class="wz-bg">
                     <div class="wz-num">${item.num}</div>
                 </div>
                 <div class="wz-name">${item.name}</div>
             </div>`
-        } else if (item.name === '出生点' || item.name === '撤离点' || item.name === '首领' || item.name === '行动接取站') {
+        } else if (item.name === '进攻方基地') {
             html+=`
-            <div class="fgx ${list.length > 15 ? '' : 'top0'}">${item.name}</div>
+            <div class="fgx">基地部署点</div>
                 <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+                <div class="wz-bg">
+                    <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
+                </div>
+                <div class="wz-name">${item.name}</div>
+            </div>`
+        }else if ((item.name === '据点A' || item.name === '据点B'|| item.name === '据点C'||item.name === '据点D'||item.name === '据点E'||item.name === '据点A1'||item.name === '据点B1'||item.name === '据点C1'||item.name === '据点D1'||item.name === '据点E1') && !window.occupy) {
+            html+=`
+            <div class="fgx">据点</div>
+                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+                <div class="wz-bg">
+                    <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
+                </div>
+                <div class="wz-name">${item.name}</div>
+            </div>`
+        } else if (item.name === '据点A'  && window.occupy) {
+            html+=`
+            <div class="fgx">据点</div>
+                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+                <div class="wz-bg">
+                    <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
+                </div>
+                <div class="wz-name">${item.name}</div>
+            </div>`
+        } else if (isWar && (item.name.indexOf('突击车') > -1 || item.name.indexOf('枪') > -1 || item.name.indexOf('固定防空') > -1)) {
+            html+=`
+            <div class="fgx">${(item.name.indexOf('突击车') > -1) ? '载具' : '固定武器'}</div>
+                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`} ${item.num > 0 ? '' : 'hide'}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+                <div class="wz-bg">
+                    <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
+                </div>
+                <div class="wz-name">${item.name}</div>
+            </div>`
+        } else if ('滑索'.indexOf(item.name) > -1) {
+            html+=`
+            <div class="fgx">装置</div>
+                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+                <div class="wz-bg">
+                    <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
+                </div>
+                <div class="wz-name">${item.name}</div>
+            </div>`
+        } else if (item.name === '出生点' || item.name === '撤离点' || item.name === '首领' || item.name === '行动接取站' || item.name === '固定弹药箱' || item.name === '载具补给站') {
+            html+=`
+            <div class="fgx ${(list.length > 15 || item.name === '固定弹药箱' || item.name === '载具补给站') ? '' : 'top0'}">${item.name}</div>
+                <div class="nav-list-item nav-list-item-${index} ${nameClassMap[item.name] || ''} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
                 <div class="wz-bg">
                     <div class="wz-num">${item.num}</div>
                 </div>
@@ -622,7 +1421,7 @@ var renderNavTypeList = function (list, navIndex = 0){
             </div>`
         } else {
             html+=`
-            <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+            <div class="nav-list-item nav-list-item-${index} ${nameClassMap[item.name] || ''} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
                 <div class="wz-bg">
                     <div class="wz-num">${item.num}</div>
                 </div>
@@ -631,8 +1430,17 @@ var renderNavTypeList = function (list, navIndex = 0){
         }
        
         
-       !typeListInit && (visibleMarker[item.name] = false)
+       !typeListInit &&  (visibleMarker[item.name] = false)
+       
     })
+    if (isWar) {
+        navTypyList.addClass('war')
+        navTypyList.removeClass('normal')
+
+    } else {
+        navTypyList.addClass('normal')
+        navTypyList.removeClass('war')
+    }
     navTypyList.html(html)
     typeListInit = true;
     visibleMarker2[navIndex].isInit = true;
@@ -646,155 +1454,621 @@ function toastTips () {
 }
 
 // 地图难度切换
+// ... existing code ...
 function changeMapLv(type) {
     console.log('难度', type);
+    
+    // 地图配置映射
+    const mapConfigs = {
+        // 零号大坝
+        '00': {
+            mapInfo: dabaInfo,
+            navList: navList,
+            navTypeList: navListInfo,
+            mapIcons: mapArticle,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'map_db',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '前夜' : '常规'
+        },
+        '00_B1': {
+            mapInfo: dabaInfo,
+            navList: () => dabaInfo.floorInfo.navList_minus,
+            navTypeList: () => dabaInfo.floorInfo.navList_minus,
+            mapIcons: () => dabaInfo.floorInfo.mapArticle_minus,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'daba_0f',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '前夜' : '常规'
+        },
+        '00_1F': {
+            mapInfo: dabaInfo,
+            navList: () => dabaInfo.floorInfo.navList_firest,
+            navTypeList: () => dabaInfo.floorInfo.navList_firest,
+            mapIcons: () => dabaInfo.floorInfo.mapArticle_first,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'daba_1f',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '前夜' : '常规'
+        },
+        '00_2F': {
+            mapInfo: dabaInfo,
+            navList: () => dabaInfo.floorInfo.navList_second,
+            navTypeList: () => dabaInfo.floorInfo.navList_second,
+            mapIcons: () => dabaInfo.floorInfo.mapArticle_second,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'daba_2f',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '前夜' : '常规'
+        },
+        '01': {
+            mapInfo: dabaInfo,
+            navList: navList2,
+            navTypeList: navListInfo2,
+            mapIcons: mapArticle2,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'map_db',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '长夜' : '机密'
+        },
+        '01_B1': {
+            mapInfo: dabaInfo,
+            navList: () => dabaInfo.floorInfo.navList2_minus,
+            navTypeList: () => dabaInfo.floorInfo.navList2_minus,
+            mapIcons: () => dabaInfo.floorInfo.mapArticle2_minus,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'daba_0f',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '长夜' : '机密'
+        },
+        '01_1F': {
+            mapInfo: dabaInfo,
+            navList: () => dabaInfo.floorInfo.navList2_firest,
+            navTypeList: () => dabaInfo.floorInfo.navList2_firest,
+            mapIcons: () => dabaInfo.floorInfo.mapArticle2_first,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'daba_1f',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '长夜' : '机密'
+        },
+        '01_2F': {
+            mapInfo: dabaInfo,
+            navList: () => dabaInfo.floorInfo.navList2_second,
+            navTypeList: () => dabaInfo.floorInfo.navList2_second,
+            mapIcons: () => dabaInfo.floorInfo.mapArticle2_second,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'daba_2f',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '长夜' : '机密'
+        },
+        '02': {
+            mapInfo: dabaInfo,
+            navList: navList3,
+            navTypeList: navListInfo3,
+            mapIcons: mapArticle3,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'map_db',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '终夜' : '绝密'
+        },
+        '02_B1': {
+            mapInfo: dabaInfo,
+            navList: () => dabaInfo.floorInfo.navList3_minus,
+            navTypeList: () => dabaInfo.floorInfo.navList3_minus,
+            mapIcons: () => dabaInfo.floorInfo.mapArticle3_minus,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'daba_0f',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '终夜' : '绝密'
+        },
+        '02_1F': {
+            mapInfo: dabaInfo,
+            navList: () => dabaInfo.floorInfo.navList3_firest,
+            navTypeList: () => dabaInfo.floorInfo.navList3_firest,
+            mapIcons: () => dabaInfo.floorInfo.mapArticle3_first,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'daba_1f',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '终夜' : '绝密'
+        },
+        '02_2F': {
+            mapInfo: dabaInfo,
+            navList: () => dabaInfo.floorInfo.navList3_second,
+            navTypeList: () => dabaInfo.floorInfo.navList3_second,
+            mapIcons: () => dabaInfo.floorInfo.mapArticle3_second,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'daba_2f',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '终夜' : '绝密'
+        },
+        
+        // 长弓溪谷
+        '10': {
+            mapInfo: cgxgInfo,
+            navList: navList_cgxg,
+            navTypeList: navListInfo_cgxg,
+            mapIcons: mapArticle_cgxg,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            mapLayer: 'map_yc',
+            lvName: '常规',
+            extraConfig: {
+                zjText: '坠机事件',
+                removeExistingLayer: true
+            }
+        },
+        '10_1F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList_firest,
+            navTypeList: () => cgxgInfo.floorInfo.navList_firest,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle_first,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            mapLayer: 'cgxg_1f',
+            lvName: '常规'
+        },
+        '10_2F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList_second,
+            navTypeList: () => cgxgInfo.floorInfo.navList_second,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle_second,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            mapLayer: 'cgxg_2f',
+            lvName: '常规'
+        },
+        '10_s': {
+            mapInfo: cgxgInfo,
+            navList: navList2_cgxg,
+            navTypeList: navListInfo2_cgxg,
+            mapIcons: mapArticle2_cgxg,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            mapLayer: 'map_yc2',
+            lvName: '常规',
+            extraConfig: {
+                zjText: '坠机事件',
+                removeExistingLayer: true
+            }
+        },
+        '10_s_1F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList_s_firest,
+            navTypeList: () => cgxgInfo.floorInfo.navList_s_firest,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle_s_first,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            mapLayer: 'cgxg_1f',
+            lvName: '常规'
+        },
+        '10_s_2F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList_s_second,
+            navTypeList: () => cgxgInfo.floorInfo.navList_s_second,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle_s_second,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            mapLayer: 'cgxg_2f',
+            lvName: '常规'
+        },
+        '11': {
+            mapInfo: cgxgInfo,
+            navList: navList3_cgxg,
+            navTypeList: navListInfo3_cgxg,
+            mapIcons: mapArticle3_cgxg,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            mapLayer: 'map_yc',
+            lvName: '机密',
+            extraConfig: {
+                zjText: '坠机事件',
+                removeExistingLayer: true
+            }
+        },
+        '11_1F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList2_firest,
+            navTypeList: () => cgxgInfo.floorInfo.navList2_firest,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle2_first,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            mapLayer: 'cgxg_1f',
+            lvName: '机密'
+        },
+        '11_2F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList2_second,
+            navTypeList: () => cgxgInfo.floorInfo.navList2_second,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle2_second,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            mapLayer: 'cgxg_2f',
+            lvName: '机密'
+        },
+        '11_s': {
+            mapInfo: cgxgInfo,
+            navList: navList4_cgxg,
+            navTypeList: navListInfo4_cgxg,
+            mapIcons: mapArticle4_cgxg,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            mapLayer: 'map_yc2',
+            lvName: '机密',
+            extraConfig: {
+                zjText: '坠机事件',
+                removeExistingLayer: true
+            }
+        },
+        '11_s_1F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList2_s_firest,
+            navTypeList: () => cgxgInfo.floorInfo.navList2_s_firest,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle2_s_first,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            mapLayer: 'cgxg_1f',
+            lvName: '机密'
+        },
+        '11_s_2F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList2_s_second,
+            navTypeList: () => cgxgInfo.floorInfo.navList2_s_second,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle2_s_second,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            mapLayer: 'cgxg_2f',
+            lvName: '机密'
+        },
+        
+        // 航天基地
+        '21': {
+            mapInfo: htjdInfo,
+            navList: navList_htjd,
+            navTypeList: navListInfo_htjd,
+            mapIcons: mapArticle_htjd,
+            poiInfo: selectRegion_htjd,
+            mapName: '航天基地',
+            mapLayer: 'map_htjd',
+            lvName: '机密',
+            extraConfig: {
+                zjText: '断桥事件',
+                removeExistingLayer: true
+            }
+        },
+        '21_s': {
+            mapInfo: htjdInfo,
+            navList: navList2_htjd,
+            navTypeList: navListInfo2_htjd,
+            mapIcons: mapArticle2_htjd,
+            poiInfo: selectRegion_htjd,
+            mapName: '航天基地',
+            mapLayer: 'map_htjd2',
+            lvName: '机密',
+            extraConfig: {
+                zjText: '断桥事件',
+                removeExistingLayer: true
+            }
+        },
+        '22': {
+            mapInfo: htjdInfo,
+            navList: navList3_htjd,
+            navTypeList: navListInfo3_htjd,
+            mapIcons: mapArticle3_htjd,
+            poiInfo: selectRegion_htjd,
+            mapName: '航天基地',
+            mapLayer: 'map_htjd',
+            lvName: '绝密',
+            extraConfig: {
+                zjText: '断桥事件',
+                removeExistingLayer: true
+            }
+        },
+        '22_s': {
+            mapInfo: htjdInfo,
+            navList: navList4_htjd,
+            navTypeList: navListInfo4_htjd,
+            mapIcons: mapArticle4_htjd,
+            poiInfo: selectRegion_htjd,
+            mapName: '航天基地',
+            mapLayer: 'map_htjd2',
+            lvName: '绝密',
+            extraConfig: {
+                zjText: '断桥事件',
+                removeExistingLayer: true
+            }
+        },
+        
+        // 巴克什
+        '30': {
+            mapInfo: bksInfo,
+            navList: navList_bks,
+            navTypeList: navListInfo_bks,
+            mapIcons: mapArticle_bks,
+            poiInfo: selectRegion_bks,
+            mapName: '巴克什',
+            mapLayer: 'map_bks2',
+            lvName: '常规',
+            extraConfig: {
+                removeExistingLayer: true
+            }
+        },
+        '30_B1': {
+            mapInfo: bksInfo,
+            navList: () => bksInfo.floorInfo.navList_three,
+            navTypeList: () => bksInfo.floorInfo.navList_three,
+            mapIcons: () => bksInfo.floorInfo.mapArticle_three,
+            poiInfo: selectRegion_bks,
+            mapName: '巴克什',
+            mapLayer: 'bks_b1',
+            lvName: '常规'
+        },
+        '30_1F': {
+            mapInfo: bksInfo,
+            navList: () => bksInfo.floorInfo.navList_firest,
+            navTypeList: () => bksInfo.floorInfo.navList_firest,
+            mapIcons: () => bksInfo.floorInfo.mapArticle_first,
+            poiInfo: selectRegion_bks,
+            mapName: '巴克什',
+            mapLayer: 'bks_1f',
+            lvName: '常规'
+        },
+        '30_2F': {
+            mapInfo: bksInfo,
+            navList: () => bksInfo.floorInfo.navList_second,
+            navTypeList: () => bksInfo.floorInfo.navList_second,
+            mapIcons: () => bksInfo.floorInfo.mapArticle_second,
+            poiInfo: selectRegion_bks,
+            mapName: '巴克什',
+            mapLayer: 'bks_2f',
+            lvName: '常规'
+        },
+        '31': {
+            mapInfo: bksInfo,
+            navList: navList_bks,
+            navTypeList: navListInfo_bks,
+            mapIcons: mapArticle_bks,
+            poiInfo: selectRegion_bks,
+            mapName: '巴克什',
+            mapLayer: 'map_bks2',
+            lvName: '机密',
+            extraConfig: {
+                removeExistingLayer: true
+            }
+        },
+        '31_B1': {
+            mapInfo: bksInfo,
+            navList: () => bksInfo.floorInfo.navList_firest,
+            navTypeList: () => bksInfo.floorInfo.navList_firest,
+            mapIcons: () => bksInfo.floorInfo.mapArticle_first,
+            poiInfo: selectRegion_bks,
+            mapName: '巴克什',
+            mapLayer: 'bks_1f',
+            lvName: '机密'
+        },
+        '31_1F': {
+            mapInfo: bksInfo,
+            navList: () => bksInfo.floorInfo.navList_second,
+            navTypeList: () => bksInfo.floorInfo.navList_second,
+            mapIcons: () => bksInfo.floorInfo.mapArticle_second,
+            poiInfo: selectRegion_bks,
+            mapName: '巴克什',
+            mapLayer: 'bks_2f',
+            lvName: '机密'
+        },
+        '31_2F': {
+            mapInfo: bksInfo,
+            navList: () => bksInfo.floorInfo.navList_three,
+            navTypeList: () => bksInfo.floorInfo.navList_three,
+            mapIcons: () => bksInfo.floorInfo.mapArticle_three,
+            poiInfo: selectRegion_bks,
+            mapName: '巴克什',
+            mapLayer: 'bks_3f',
+            lvName: '机密'
+        },
+        '32': {
+            mapInfo: bksInfo,
+            navList: navList2_bks,
+            navTypeList: navListInfo2_bks,
+            mapIcons: mapArticle2_bks,
+            poiInfo: selectRegion_bks,
+            mapName: '巴克什',
+            mapLayer: 'map_bks2',
+            lvName: '绝密',
+            extraConfig: {
+                removeExistingLayer: true
+            }
+        },
+        '32_B1': {
+            mapInfo: bksInfo,
+            navList: () => bksInfo.floorInfo.navList2_firest,
+            navTypeList: () => bksInfo.floorInfo.navList2_firest,
+            mapIcons: () => bksInfo.floorInfo.mapArticle2_first,
+            poiInfo: selectRegion_bks,
+            mapName: '巴克什',
+            mapLayer: 'bks_1f',
+            lvName: '机密'
+        },
+        '32_1F': {
+            mapInfo: bksInfo,
+            navList: () => bksInfo.floorInfo.navList2_second,
+            navTypeList: () => bksInfo.floorInfo.navList2_second,
+            mapIcons: () => bksInfo.floorInfo.mapArticle2_second,
+            poiInfo: selectRegion_bks,
+            mapName: '巴克什',
+            mapLayer: 'bks_2f',
+            lvName: '机密'
+        },
+        '32_2F': {
+            mapInfo: bksInfo,
+            navList: () => bksInfo.floorInfo.navList2_three,
+            navTypeList: () => bksInfo.floorInfo.navList2_three,
+            mapIcons: () => bksInfo.floorInfo.mapArticle2_three,
+            poiInfo: selectRegion_bks,
+            mapName: '巴克什',
+            mapLayer: 'bks_3f',
+            lvName: '机密'
+        },
+        // 潮汐监狱
+        '42': {
+            mapInfo: cxjyInfo,
+            navList: navList_cxjy,
+            navTypeList: navListInfo_cxjy,
+            mapIcons: mapArticle_cxjy,
+            poiInfo: selectRegion_cxjy,
+            mapName: '潮汐监狱',
+            mapLayer: 'map_cxjy',
+            lvName: '绝密',
+            extraConfig: {
+                removeExistingLayer: true
+            }
+        },
+        '42_1F': {
+            mapInfo: cxjyInfo,
+            navList: () => cxjyInfo.floorInfo.navList_first,
+            navTypeList: () => cxjyInfo.floorInfo.navList_first,
+            mapIcons: () => cxjyInfo.floorInfo.mapArticle_first,
+            poiInfo: selectRegion_cxjy,
+            mapName: '潮汐监狱',
+            mapLayer: 'cxjy_1f',
+            lvName: '绝密'
+        },
+        '42_2F': {  
+            mapInfo: cxjyInfo,
+            navList: () => cxjyInfo.floorInfo.navList_second,
+            navTypeList: () => cxjyInfo.floorInfo.navList_second,
+            mapIcons: () => cxjyInfo.floorInfo.mapArticle_second,
+            poiInfo: selectRegion_cxjy,
+            mapName: '潮汐监狱',
+            mapLayer: 'cxjy_2f',
+            lvName: '绝密'
+        },
+        '42_3F': {
+            mapInfo: cxjyInfo,
+            navList: () => cxjyInfo.floorInfo.navList_three,
+            navTypeList: () => cxjyInfo.floorInfo.navList_three,
+            mapIcons: () => cxjyInfo.floorInfo.mapArticle_three,
+            poiInfo: selectRegion_cxjy,
+            mapName: '潮汐监狱',
+            mapLayer: 'cxjy_3f',
+            lvName: '绝密'
+        },
+        '42_4F': {
+            mapInfo: cxjyInfo,
+            navList: () => cxjyInfo.floorInfo.navList_four,
+            navTypeList: () => cxjyInfo.floorInfo.navList_four,
+            mapIcons: () => cxjyInfo.floorInfo.mapArticle_four,
+            poiInfo: selectRegion_cxjy,
+            mapName: '潮汐监狱',
+            mapLayer: 'cxjy_4f',
+            lvName: '绝密'
+        }
+        // 注意：原代码中32以下有一些重复的case(31_B1, 31_1F, 31_2F)，看起来可能是错误
+    };
 
-    switch (type) {
-        case '00':
-            mapScaleInfo = dabaInfo;
-            allNavList = navList;
-            navTypeList = navListInfo;
-            mapIcons = mapArticle;
-            poiInfo = selectRegion;
-            $('.map-lv').text('( 普通 )')
-            $('.curr-map-name').text('零号大坝')
-            currLayer.name !== 'map_db' && addLayer('map_db')
-            break;
-        case '01':
-            mapScaleInfo = dabaInfo;
-            allNavList = navList2;
-            navTypeList = navListInfo2;
-            mapIcons = mapArticle2;
-            poiInfo = selectRegion;
-            $('.map-lv').text('( 机密 )')
-            $('.curr-map-name').text('零号大坝')
-            currLayer.name !== 'map_db' && addLayer('map_db')
-            break;
-        case '10':
-            mapScaleInfo = cgxgInfo;
-            allNavList = navList_cgxg;
-            navTypeList = navListInfo_cgxg;
-            mapIcons = mapArticle_cgxg;
-            poiInfo = selectRegion_cgxg;
-            $('.map-lv').text('( 普通 )')
-            $('.curr-map-name').text('长弓溪谷')
-            map.removeLayer(currLayer)
-            currLayer.name !== 'map_yc' && addLayer('map_yc')
-            map.addLayer(currLayer);
-            // toastTips();
-            break;
-        case '10_s':
-            mapScaleInfo = cgxgInfo;
-            allNavList = navList2_cgxg;
-            navTypeList = navListInfo2_cgxg;
-            mapIcons = mapArticle2_cgxg;
-            poiInfo = selectRegion_cgxg;
-            $('.map-lv').text('( 普通 )')
-            $('.curr-map-name').text('长弓溪谷')
-            map.removeLayer(currLayer)
-            currLayer.name !== 'map_yc2' && addLayer('map_yc2')
-            map.addLayer(currLayer);
-            // toastTips();
-            break;
-            case '11':
-                mapScaleInfo = cgxgInfo;
-                allNavList = navList3_cgxg;
-                navTypeList = navListInfo3_cgxg;
-                mapIcons = mapArticle3_cgxg;
-                poiInfo = selectRegion_cgxg;
-                $('.map-lv').text('( 普通 )')
-                $('.curr-map-name').text('长弓溪谷')
-                map.removeLayer(currLayer)
-                currLayer.name !== 'map_yc' && addLayer('map_yc')
-                map.addLayer(currLayer);
-                // toastTips();
-                break;
-            case '11_s':
-                mapScaleInfo = cgxgInfo;
-                allNavList = navList4_cgxg;
-                navTypeList = navListInfo4_cgxg;
-                mapIcons = mapArticle4_cgxg;
-                console.log('我操死你吗');
-                
-                poiInfo = selectRegion_cgxg;
-                $('.map-lv').text('( 普通 )')
-                $('.curr-map-name').text('长弓溪谷')
-                map.removeLayer(currLayer)
-                currLayer.name !== 'map_yc2' && addLayer('map_yc2')
-                map.addLayer(currLayer);
-                // toastTips();
-                break;
-            case '21':
-                mapScaleInfo = htjdInfo;
-                allNavList = navList_htjd;
-                navTypeList = navListInfo_htjd;
-                mapIcons = mapArticle_htjd;
-                poiInfo = selectRegion_htjd;
-                $('.map-lv').text('( 机密 )')
-                $('.curr-map-name').text('航天基地')
-                map.removeLayer(currLayer)
-                currLayer.name !== 'map_htjd' && addLayer('map_htjd')
-                map.addLayer(currLayer);
-                break;
-            case '22':
-                mapScaleInfo = htjdInfo;
-                allNavList = navList2_htjd;
-                navTypeList = navListInfo2_htjd;
-                mapIcons = mapArticle2_htjd;
-                poiInfo = selectRegion_htjd;
-                $('.map-lv').text('( 绝密 )')
-                $('.curr-map-name').text('航天基地')
-                map.removeLayer(currLayer)
-                currLayer.name !== 'map_htjd' && addLayer('map_htjd')
-                map.addLayer(currLayer);
-                break;
-            case '30':
-                mapScaleInfo = bksInfo;
-                allNavList = navList_bks;
-                navTypeList = navListInfo_bks;
-                mapIcons = mapArticle_bks;
-                poiInfo = selectRegion_bks;
-                $('.map-lv').text('( 普通 )')
-                $('.curr-map-name').text('巴克什')
-                map.removeLayer(currLayer)
-                currLayer.name !== 'map_bks' && addLayer('map_bks')
-                map.addLayer(currLayer);
-                break;
-            case '31':
-                mapScaleInfo = bksInfo;
-                allNavList = navList2_bks;
-                navTypeList = navListInfo2_bks;
-                mapIcons = mapArticle2_bks;
-                poiInfo = selectRegion_bks;
-                $('.map-lv').text('( 机密 )')
-                $('.curr-map-name').text('巴克什')
-                map.removeLayer(currLayer)
-                currLayer.name !== 'map_bks' && addLayer('map_bks')
-                map.addLayer(currLayer);
-                break;
-        default:
+    // 处理地图配置切换
+    const applyMapConfig = (config) => {
+        if (!config) {
             toastTips();
-            break;
-    }
+            return false;
+        }
+
+        isZj = false;
+        // 设置基本信息
+        mapScaleInfo = config.mapInfo;
+        poiInfo = config.poiInfo;
+
+        // 设置导航列表
+        allNavList = typeof config.navList === 'function' ? config.navList() : config.navList;
+        navTypeList = typeof config.navTypeList === 'function' ? config.navTypeList() : config.navTypeList;
+        mapIcons = typeof config.mapIcons === 'function' ? config.mapIcons() : config.mapIcons;
+
+        if (Number(currMap) === 1 && Number(currLv) === 1) {
+            if ($('.random-act').text().indexOf('山火') > -1) {
+                mapIcons = mapArticle5_cgxg;
+            }
+            if ($('.random-act').text().indexOf('坠机') > -1 && $('.random-act').text().indexOf('山火') > -1) {
+                mapIcons = mapArticle6_cgxg;
+                console.log('mapArticle6_cgxg');
+            }
+            const { arr, arrInfo } = dataFilter(mapIcons);
+            allNavList = arrInfo;
+            navTypeList = arrInfo;
+        }
+
+        // 设置地图名称和难度
+        const lvName = config.lvName || (config.getLvName ? config.getLvName(chooseItemLvName) : '常规');
+        console.log('changeMapLv', config.mapName, lvName, config.lvName);
+        
+        $('.curr-map-name').text(config.mapName);
+        $('.map-lv').text(`( ${lvName} )`);
+        $('.curr-map-lv').text(lvName);
+
+        // 处理额外配置
+        if (config.extraConfig) {
+            if (config.extraConfig.zjText) {
+                $('.zj-text').text(config.extraConfig.zjText);
+            }
+            
+            if (config.extraConfig.removeExistingLayer) {
+                map.removeLayer(currLayer);
+            }
+        }
+
+        // 切换地图图层
+        if (currLayer.name !== config.mapLayer) {
+            addLayer(config.mapLayer);
+        }
+        
+        // 必要时添加图层
+        if (config.extraConfig && config.extraConfig.removeExistingLayer) {
+            map.addLayer(currLayer);
+        }
+
+        return true;
+    };
+
+    // 应用地图配置
+    const configApplied = applyMapConfig(mapConfigs[type]);
+
+
+    if (!configApplied) return;
+
+    // 重置和初始化
     typeListInit = false;
-    resetAll('none')
+    if (outFloor) {
+        resetAll('none');
+    }
+    
+
+
+     
+    // 初始化楼层
+    if (mapScaleInfo.floorInfo) {
+        initFloor();
+    } else {
+        $('.btn-floor-mod').removeClass('show');
+    }
+
+    // 设置导航状态
     if (listIsAll[currLeftNav]) {
         toggleVisible(`${currLeftNav}_all`, currLeftNav);
-        $('.choose-all').attr('class', 'img_all_open choose-all')
+        $('.choose-all').attr('class', 'img_all_open choose-all');
     } else {
         toggleVisible(`${currLeftNav}_none`, currLeftNav);
-        $('.choose-all').attr('class', 'img_all_close choose-all')
+        $('.choose-all').attr('class', 'img_all_close choose-all');
     }
-    // renderNavTypeList(navList[0].typeList)
-    console.log(allNavList);
+    console.log('changeMapLv', currLeftNav, listIsAll);
+    // 渲染导航类型列表
     if (Number(currLeftNav) === 0) {
-        renderNavTypeList(allNavList[0].typeList, 0)
+        renderNavTypeList(allNavList[0]?.typeList, 0);
     } else {
-        renderNavTypeList(navTypeList[currLeftNav].typeList, currLeftNav)
+        renderNavTypeList(navTypeList[currLeftNav].typeList, currLeftNav);
     }
 
+    // 绑定选项事件
     bindOptionEvent();
 }
+// ... existing code ...
 
 function fuzzyMatch(text, pattern) {
     // 将模糊词转换为正则表达式
@@ -851,12 +2125,16 @@ function bindOptionEvent () {
             $(this).removeClass(`img_${icon}_click active`)
             $(this).addClass(`img_${icon}`)
         }
+        currNavIcon = name;
+        NavCliciIndex++;
         toggleVisible(name, currLeftNav);
- 
+        saveMarker = Object.assign({}, visibleMarker);
         
         let chooseNum = $('.nav-type-list').find('.active').length;
-        console.log(chooseNum, navTypeList[currLeftNav].typeList.length);
+        console.log(123, chooseNum, navTypeList[currLeftNav].typeList.length);
         if (chooseNum === navTypeList[currLeftNav].typeList.length) {
+            console.log('走这里');
+            
             $('.choose-all').attr('class', 'img_all_open choose-all')
         } else {
             if (listIsAll[currLeftNav]) {
@@ -887,22 +2165,20 @@ var bindEvent = function () {
     var btnNavState = $('.btn-nav-state');
 
     // 搜索地区
-    $('.region-item').on('click', function (e) {
-        var x = $(e.target).attr('data-x');
-        var y = $(e.target).attr('data-y');
-        var pos = getMapPos(x, y)
-        map.flyTo([pos.y, pos.x], 5)
-    })
+    $('.region-item').on('click', anchorRegion)
 
     // 全选
     var isAll = false;
     $('.choose-all').on('click', function (e) {
         e.stopPropagation();
         // resetNav();
+        // isAll = !isAll;
         resetAll()
         
         if (listIsAll[currLeftNav]) {
             toggleVisible(`${currLeftNav}_all`, currLeftNav);
+            console.log('走这里2', currLeftNav);
+            
             $('.choose-all').attr('class', 'img_all_open choose-all')
         } else {
             toggleVisible(`${currLeftNav}_none`, currLeftNav);
@@ -949,6 +2225,8 @@ var bindEvent = function () {
         }
 
         if (listIsAll[currLeftNav]) {
+            console.log('走这里3');
+            
             $('.choose-all').attr('class', 'img_all_open choose-all')
         } else {
             $('.choose-all').attr('class', 'img_all_close choose-all')
@@ -965,10 +2243,24 @@ var bindEvent = function () {
     btnNavState.on('click', function (e) {
         e.stopPropagation();
         navState = !navState;
+        console.log('navState', navState);
+        
         if (navState) {
-            navCtn.addClass('open')
+            findPad() ? navCtn.addClass('open_max') : navCtn.addClass('open')
         } else {
-            navCtn.removeClass('open')
+            findPad() ? navCtn.removeClass('open_max') : navCtn.removeClass('open')
+        }
+    })
+
+    $('.btn-nav-state-top').on('click', function (e) {
+        e.stopPropagation();
+        navState = !navState;
+        console.log('navState', navState);
+        
+        if (navState) {
+            findPad() ? navCtn.addClass('open_max') : navCtn.addClass('open')
+        } else {
+            findPad() ? navCtn.removeClass('open_max') : navCtn.removeClass('open')
         }
     })
 
@@ -976,9 +2268,9 @@ var bindEvent = function () {
         e.stopPropagation();
         navState = !navState;
         if (navState) {
-            navCtn.addClass('open')
+            findPad() ? navCtn.addClass('open_max') : navCtn.addClass('open')
         } else {
-            navCtn.removeClass('open')
+            findPad() ? navCtn.removeClass('open_max') : navCtn.removeClass('open')
         }
     })
 
@@ -990,17 +2282,25 @@ var bindEvent = function () {
        
         if ($(e.target).attr('class') === 'nav-ctn open') {
             navState = false;
-            navCtn.removeClass('open')
+            findPad() ? navCtn.removeClass('open_max') : navCtn.removeClass('open')
         }
 
         if ($(e.target).attr('class') === 'nav-ctn open open_max') {
             // navState = false;
-            navCtn.removeClass('open_max')
+            findPad() ? navCtn.removeClass('open_max') : navCtn.removeClass('open')
         }
+
+         if ($(e.target).attr('class') === 'nav-ctn open_max') {
+            navState = false;
+            findPad() ? navCtn.removeClass('open_max') : navCtn.removeClass('open')
+        }
+        
 
         $('.select-region-ctn').removeClass('click')
 
         dom_mapList.removeClass('show')
+        dom_warList.removeClass('show')
+        $('.war-lv-list').removeClass('show')
         dom_changeMapBtn.removeClass('click')
         dom_map_lv_list.attr('class', 'map-lv-list')
         dom_map_lv.removeClass('click')
@@ -1036,21 +2336,21 @@ var bindEvent = function () {
         if (touchDifferenceY < 0) {
             // that.toLeft();
             
-            navCtn.addClass('open_max')
+            findPad() ? navCtn.addClass('open_max') : navCtn.addClass('open')
             console.log('上');
         } else {
             console.log(navCtn.attr('class'));
             if ( navCtn.attr('class') === 'nav-ctn open') {
                 navState = false;
-                navCtn.removeClass('open')
+                findPad() ? navCtn.removeClass('open_max') : navCtn.removeClass('open')
             } else {
-                navCtn.removeClass('open_max')
+                navState = false;
+                findPad() ? navCtn.removeClass('open_max') : navCtn.removeClass('open')
             } 
         }
         setTimeout(autoRoll, 100);
     }
 
-   
     function autoRoll() {
         // that.canvas.addEventListener("touchmove", touch);
         // that.canvas.addEventListener("touchmove", move);
@@ -1065,15 +2365,30 @@ var bindEvent = function () {
 
         mapChangeIsClick = !mapChangeIsClick
         if (mapChangeIsClick) {
-            dom_mapList.addClass('show')
+            if (isWar) {
+                dom_warList.addClass('show')
+                dom_war_lv_list.removeClass('top0')
+            } else {
+                dom_mapList.addClass('show')
+                dom_map_lv_list.removeClass('top0')
+            }
+          
+           
             dom_changeMapBtn.addClass('click')
-            dom_map_lv_list.removeClass('top0')
+       
             mapMenuIsShow = true;
         } else {
-            dom_mapList.removeClass('show')
+            if (isWar) {
+                dom_warList.removeClass('show')
+                dom_war_lv_list.attr('class', 'war-lv-list')
+            } else {
+                dom_mapList.removeClass('show')
+                dom_map_lv_list.attr('class', 'map-lv-list')
+          
+            }
+        
             dom_changeMapBtn.removeClass('click')
             // dom_map_lv_list.removeClass('show')
-            dom_map_lv_list.attr('class', 'map-lv-list')
             dom_map_lv.removeClass('click')
             mapLvIsClick = false;
             mapMenuIsShow = false;
@@ -1085,18 +2400,33 @@ var bindEvent = function () {
         e.stopPropagation();
         mapLvIsClick = !mapLvIsClick
         if (mapLvIsClick) {
-            mapMenuIsShow ? dom_map_lv_list.addClass(`show show-${clickMap}`) : dom_map_lv_list.addClass(`show show-${clickMap} top0`)
+            if (isWar) {
+                mapMenuIsShow ? dom_war_lv_list.addClass(`show show-${clickMap}`) : dom_war_lv_list.addClass(`show show-${clickMap} top0`)
+            } else {
+                mapMenuIsShow ? dom_map_lv_list.addClass(`show show-${clickMap}`) : dom_map_lv_list.addClass(`show show-${clickMap} top0`)
+
+            }
+           
             
             dom_map_lv.addClass('click')
             // dom_mapList.addClass('show')
             // dom_changeMapBtn.addClass('click')
             // mapChangeIsClick = true;
+            // $('.war-lv-list').add('show')
         } else {
             // dom_map_lv_list.removeClass('show')
             dom_map_lv_list.attr('class', 'map-lv-list')
             dom_map_lv.removeClass('click')
+            $('.war-lv-list').removeClass('show')
         }
 
+        
+    })
+
+    // 随机事件列表
+    $('.curr-random').on('click', function (e) {
+        e.stopPropagation();
+        $('.random-list').toggleClass(`map-${currMap}-${currLv}`)
         
     })
 
@@ -1109,6 +2439,7 @@ var bindEvent = function () {
     dom_mapList.on('click', function (e) {
         e.stopPropagation();
         var index = $(e.target).attr('data-index')
+        var warMap = $(e.target).attr('data-map')
 
         if (index) {
             clickMap = index;
@@ -1118,94 +2449,207 @@ var bindEvent = function () {
             $('.map-item').removeClass('action')
             $('.map-lv-item').removeClass('action')
             dom_map_lv.addClass('click')
-            clickMap === currMap && $(`.map-lv-item-${currLv}`).addClass('action')
+            if (clickMap === currMap) {
+                if (chooseItemLvName.indexOf('前夜') > -1) {
+                    $(`.map-lv-item-3`).addClass('action')
+                } else if (chooseItemLvName.indexOf('长夜') > -1) {
+                    $(`.map-lv-item-4`).addClass('action')
+                } else if (chooseItemLvName.indexOf('终夜') > -1) {
+                    $(`.map-lv-item-5`).addClass('action')
+                } else {
+                    $(`.map-lv-item-${currLv}`).addClass('action')
+                }
+            }
             $(e.target).addClass('action')
             // dom_mapList.attr('class', `map-list-ctn hover_${index}`)
 
          
         }
+        if (warMap) {
+            currWarMap = warMap;
+        }
+        // dom_mapList.css('width', '2.1rem');
+        // isMoveMapList = true;
+    })
+    dom_warList.on('click', function (e) {
+        e.stopPropagation();
+        var index = $(e.target).attr('data-index')
+        var warMap = $(e.target).attr('data-map')
+
+        if (index) {
+            clickMap = index;
+            dom_war_lv_list.attr('class', `war-lv-list show show-${clickMap}`)
+            mapChangeIsClick = false;
+            mapMenuIsShow = false;
+            $('.map-item').removeClass('action')
+            $('.map-lv-item').removeClass('action')
+            dom_map_lv.addClass('click')
+            clickMap === currMap && $(`.map-lv-item-${currLv}`).addClass('action')
+            $(e.target).addClass('action')
+
+            // dom_mapList.attr('class', `map-list-ctn hover_${index}`)
+
+         
+        }
+        if (warMap) {
+            currWarMap = warMap;
+        }
         // dom_mapList.css('width', '2.1rem');
         // isMoveMapList = true;
     })
 
-    var lvText = ['普通', '机密', '绝密']
+    var lvText = ['常规', '机密', '绝密']
+    var warText = ['PC', '移动']
     // 选择难度等级
     $('.map-lv-item').on('click', function (e) {
         e.stopPropagation();
         var lv = $(e.target).attr('data-lv')
-        if (clickMap == 1 && isZj) {
-            changeMapLv(clickMap + lv + '_s');
+        var type = $(e.target).attr('data-type')
+        
+        chooseItemLvName = $(e.target).text()
+        // 退出楼层
+        $('.btn-floor-mod').removeClass('act')
+        $('.floor-list').removeClass('show')
+        $('.floor-text').text('切换楼层')
+        
+        if (isFloor) {
+            isFloor = false;
+            currFloorIndex = -1
+            changeMapLv(`${currMap + lv}`)
+            enterFloorSave();
+            outFloor = true;
+        }
+        $('.nav-option-ctn').removeClass('floor')
+
+        if (isWar) {
+            resetAll('none')
+            toggleVisible(`none`, currLeftNav);
+            changeWarMap(currWarMap, type)
+            $('.type-change-ctn').addClass('show')  
+            // initNav();
+            // bindOptionEvent();
+        } else if (clickMap == 1 || clickMap == 2) {
+            if ((clickMap == 1 || clickMap == 2) && isZj) {
+                changeMapLv(clickMap + lv + '_s');
+            } else {
+                changeMapLv(clickMap + lv);
+            }
+            $('.zj-ctn').addClass('show')   
+            $('.type-change-ctn').removeClass('show')  
+            $('.curr-random').css('display', 'block')
+            $('.random-list').removeClass('close')
+            
         } else {
             changeMapLv(clickMap + lv);
-        }
-
-        if (clickMap == 1) {
-            $('.zj-ctn').addClass('show')   
-        } else {
             $('.zj-ctn').removeClass('show')   
+            $('.type-change-ctn').removeClass('show') 
+             $('.curr-random').css('display', 'none')
+            $('.random-list').addClass('close')
+           
         }
        
-        console.log(currMap + lv);
+        console.log(123, currMap + lv);
         if (currMap + currLv !== currMap + lv) {
-            map.flyTo([mapScaleInfo.initX,  mapScaleInfo.initY], mapScaleInfo.initZoom)
-            $('.curr-map-lv').text(lvText[Number(lv)] )
+            if (isWar) {
+                $('.curr-map-lv').text(warText[Number(lv)] )
+            }
+            if (window.pervInitX !== window.occupy ? mapScaleInfo.initX_s : mapScaleInfo.initX){
+                map.flyTo([window.occupy ? mapScaleInfo.initX_s : mapScaleInfo.initX,  window.occupy ? mapScaleInfo.initY_s : mapScaleInfo.initY], window.occupy ? mapScaleInfo.initZoom_s : mapScaleInfo.initZoom)
+          
+            
+                window.pervInitX = window.occupy ? mapScaleInfo.initX_s : mapScaleInfo.initX
+            }
+           
         }
         currMap = clickMap;
         currLv = lv;
+        currWarType = type
 
         $('.map-lv-item').removeClass('action')
-        $(`.map-lv-item-${currLv}`).addClass('action')
+        if (chooseItemLvName.indexOf('前夜') > -1) {
+            $(`.map-lv-item-3`).addClass('action')
+        } else if (chooseItemLvName.indexOf('长夜') > -1) {
+            $(`.map-lv-item-4`).addClass('action')
+        } else if (chooseItemLvName.indexOf('终夜') > -1) {
+            $(`.map-lv-item-5`).addClass('action')
+        } else {
+            $(`.map-lv-item-${currLv}`).addClass('action')
+        }
+       
+        
 
         dom_mapList.removeClass('show')
+        dom_warList.removeClass('show')
+        $('.war-lv-list').removeClass('show')
         dom_changeMapBtn.removeClass('click')
         dom_map_lv_list.attr('class', 'map-lv-list')
+        dom_war_lv_list.attr('class', 'war-lv-list')
         dom_map_lv.removeClass('click')
         mapLvIsClick = false;
+        if (!isWar) {
+            resetAll('none')
+            toggleVisible(`none`, currLeftNav);
+        }
 
-        resetAll('none')
-        toggleVisible(`none`, currLeftNav);
+        // 清除随机事件
+        $('.random-item').removeClass('random-act')
+        $('.random-list').attr('class', 'random-list')
     })
 
         // 坠机事件
         $('.zj-ctn').on('click', function () {
             isZj = !isZj;
             isZj ? $('.zj-ctn').addClass('open') : $('.zj-ctn').removeClass('open')
-            console.log($('.curr-map-lv').text());
             
-            if (isZj) {
-                if ($('.curr-map-lv').text() === '普通') {
-                    changeMapLv('10_s');
-                    if (currMap + currLv !== '10_s') {
-                        // map.setView([mapScaleInfo.initX, mapScaleInfo.initY], mapScaleInfo.initZoom)
-                        map.flyTo([mapScaleInfo.initX,  mapScaleInfo.initY], mapScaleInfo.initZoom)
-                    }
-                    currLv = '0'
-                } else {
-                    changeMapLv('11_s');
-                    if (currMap + currLv !== '11_s') {
-                        map.flyTo([mapScaleInfo.initX,  mapScaleInfo.initY], mapScaleInfo.initZoom)
-                    }
-                    currLv = '1'
-                }
-               
+            enterRandomEvent();
+        })
+
+        let currRandomText = ''
+        // 多选随机事件
+        $('.random-item').on('click', function () {
+            $(this).toggleClass('random-act')
+            let length = $('.random-act').length
+            if (length) {
+                $('.random-list').removeClass('close')
+                isZj = true;
             } else {
-                if ($('.curr-map-lv').text() === '普通') {
-                    changeMapLv('10');
-                    if (currMap + currLv !== '10') {
-                        // map.setView([mapScaleInfo.initX, mapScaleInfo.initY], mapScaleInfo.initZoom)
-                        map.flyTo([mapScaleInfo.initX,  mapScaleInfo.initY], mapScaleInfo.initZoom)
-                    }
-                    currLv = '0'
-                } else {
-                    changeMapLv('11');
-                    if (currMap + currLv !== '11') {
-                        map.flyTo([mapScaleInfo.initX,  mapScaleInfo.initY], mapScaleInfo.initZoom)
-                    }
-                    currLv = '1'
-                }
+                $('.random-list').addClass('close')
+                isZj = false;
             }
-            resetAll('none')
-            toggleVisible(`none`, currLeftNav);
+            $('.random-list').attr('class', 'random-list')
+            enterRandomEvent();
+            // currMap = currMoveMap;
+        })
+        
+        // 关闭随机事件
+        $('.random-item-close').on('click', () => {
+            $('.random-item').removeClass('random-act')
+            $('.random-list').addClass('close')
+            isZj = false;
+            enterRandomEvent();
+        })
+
+        // 弹窗进入楼层
+        $('.btn-pop-floor').on('click', function () {
+            var name = $(this).attr('data-name')
+            var floor = $(this).attr('data-floor')
+            var index = Number($(this).attr('data-index'))
+            console.log('name', currMap, currLv, floor, index);
+            outFloor = false;
+            isFloor = true;
+            currFloorIndex = index;
+            $('.nav-option-ctn').addClass('floor')
+            saveMarker = Object.assign({}, visibleMarker);
+            if (isZj) {
+                changeMapLv(`${currMap + currLv + '_s_' +floor}`)
+            } else {
+                changeMapLv(`${currMap + currLv + '_' +floor}`)
+            }
+            enterFloorSave();
+            $('.m-index').addClass('floor')
+            $('.floor-text').text('退出楼层')
+            $('.btn-floor-mod').addClass('act')
+            $('.floor-list').addClass('show')
         })
 
     // 打开日志
@@ -1245,15 +2689,16 @@ var bindEvent = function () {
         
     });
 
-    $('.region-item').on('click',  function (e) {
-        e.stopPropagation();
-        var x = $(e.target).attr('data-x');
-        var y = $(e.target).attr('data-y');
-        var pos = getMapPos(x, y)
-        map.flyTo([pos.y, pos.x], 5)
-        $('.region-item').removeClass('action')
-        $(this).addClass('action')
-    })
+    $('.region-item').on('click', anchorRegion)
+    // $('.region-item').on('click',  function (e) {
+    //     e.stopPropagation();
+    //     var x = $(e.target).attr('data-x');
+    //     var y = $(e.target).attr('data-y');
+    //     var pos = getMapPos(x, y)
+    //     map.flyTo([pos.y, pos.x], 5)
+    //     $('.region-item').removeClass('action')
+    //     $(this).addClass('action')
+    // })
     
 
     // 搜索
@@ -1342,11 +2787,915 @@ var bindEvent = function () {
     // navCtn.on('touchstart', (e) => {
     //     console.log(e);
     // })
+
+
+    // 全面战场
+    $('.btn-war-change').on('click', () => {
+        enterWarMap();
+        
+    })
+    
+    // 切换视角
+    $('.btn-view-change').on('click', () => {
+        window.viewChange = !window.viewChange
+        window.isViewChange = true;
+        if (window.viewChange) {
+            $('.nav-option-ctn').addClass('g');
+            $('.nav-option-ctn').removeClass('f');
+            $('.war-lv-change-list').attr('class', 'war-lv-change-list g')
+        } else {
+            $('.nav-option-ctn').addClass('f');
+            $('.nav-option-ctn').removeClass('g');
+            $('.war-lv-change-list').attr('class', 'war-lv-change-list f')
+
+        }
+        warInit(currWarMap, currWarType, true);
+        viewChangeToMap();
+        setTimeout(() => {
+            window.isViewChange = false;
+        }, 800);
+    })
+    // 进攻方视角
+    $('.view-change1').on('click', () => {
+        if (!window.viewChange) {
+            window.viewChange = true;
+            $('.btn-view-change').addClass('g')
+            $('.btn-view-change').removeClass('f')
+            $('.nav-option-ctn').addClass('g');
+            $('.nav-option-ctn').removeClass('f');
+            $('.war-lv-change-list').attr('class', 'war-lv-change-list g')
+            warInit(currWarMap, currWarType, true);
+            viewChangeToMap();
+        }
+    })
+
+    // 防守方视角
+    $('.view-change2').on('click', () => {
+        if (window.viewChange) {
+            window.viewChange = false;
+            $('.btn-view-change').addClass('f')
+            $('.btn-view-change').removeClass('g')
+            $('.nav-option-ctn').addClass('f');
+            $('.nav-option-ctn').removeClass('g');
+            $('.war-lv-change-list').attr('class', 'war-lv-change-list f')
+            warInit(currWarMap, currWarType, true);
+            // console.log(cacheMarker);
+            viewChangeToMap();
+        }
+    })
+
+    $('.type-change-ctn').on('click', () => {
+        window.occupy = !window.occupy;
+        if (window.occupy) {
+            console.log(11111, window.occupy);
+            
+            $('.type-change-ctn').addClass('open')
+            $('.lv-change-ctn').css('display', 'none')
+            $('.select-region-ctn').css('display', 'none')
+        } else {
+            $('.type-change-ctn').removeClass('open')
+            $('.lv-change-ctn').css('display', 'flex')
+            $('.select-region-ctn').css('display', 'block')
+        }
+        
+        console.log('事件', currWarMap, currWarType);
+        
+        changeWarMap(currWarMap, currWarType);
+        // initNav();
+        // bindOptionEvent();
+        // warInit(currWarMap, currWarType);
+    })
+
+    $('.lv-change-prev').on('click', () => {
+        if (window.isLvChange) return;
+        if (window.warLv === 0) return;
+        window.isLvChange = true;
+        window.warLv--;
+        changeWarMap(currWarMap, currWarType);
+        // initNav();
+        // bindOptionEvent();
+        $('.lv-change-tips').text(`区域${window.warLv+1}`)
+        $('.deploy-swiper').removeClass('show')
+        map.flyTo([window[currWarMap].info.sectorInit[window.warLv].initX,  window[currWarMap].info.sectorInit[window.warLv].initY], window[currWarMap].info.sectorInit[window.warLv].initZoom)
+        setTimeout(() => {
+            window.isLvChange = false;
+        }, 1000)
+    })
+
+    $('.lv-change-next').on('click', () => {
+        if (window.isLvChange) return;
+        if (window.warLv === window[currWarMap].info.sector - 1) return;
+        window.isLvChange = true;
+        window.warLv++;
+        changeWarMap(currWarMap, currWarType);
+        // initNav();
+        // bindOptionEvent();
+        $('.lv-change-tips').text(`区域${window.warLv+1}`)
+        $('.deploy-swiper').removeClass('show')
+        console.log('currWarMap', currWarMap);
+        
+        map.flyTo([window[currWarMap].info.sectorInit[window.warLv].initX,  window[currWarMap].info.sectorInit[window.warLv].initY], window[currWarMap].info.sectorInit[window.warLv].initZoom)
+        setTimeout(() => {
+            window.isLvChange = false;
+        }, 1000)
+    })
+
+    $('.btn-swiper-prev').on('click', () => {
+        window.warSwiper.slidePrev();
+    })
+
+    $('.btn-swiper-next').on('click', () => {
+        window.warSwiper.slideNext();
+    })
+
+    // 切换楼层部分
+    const btn_floor = $('.btn-floor-mod')
+    btn_floor.on('click', () => {
+        enterFloor();
+       
+    })
+    
 }
+
+// 视角切换
+function viewChangeToMap () {
+    
+    $.each(cacheMarker, function (index) {
+        console.log(window.viewChange, this.options.icon);
+        if (this.options.icon.name === "进攻方基地" ) {
+            console.log(`${window.viewChange ? 'g_jdbsd_g': 'g_jdbsd_r'}`);
+            var icon = L.divIcon({
+                className: ` map-war-icon`,
+                html: `<div class="map-icon-bg"><img src=" https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${window.viewChange ? 'g_jdbsd_g': 'g_jdbsd_r'}.png"/></div>`,
+                iconSize: [30, 30],			//设置图标大小
+                iconAnchor: [15, 15],		//设置图标偏移
+            })
+            icon.name = '进攻方基地'
+            this.setIcon(icon);
+        } else if (this.options.icon.name === "防守方基地") {
+            var icon = L.divIcon({
+                className: ` map-war-icon`,
+                html: `<div class="map-icon-bg"><img src=" https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${window.viewChange ? 'f_jdbsd_r': 'f_jdbsd_g'}.png"/></div>`,
+                iconSize: [30, 30],			//设置图标大小
+                iconAnchor: [15, 15],		//设置图标偏移
+            })
+            icon.name = '防守方基地'
+            this.setIcon(icon);
+        }
+    })
+}
+
+// 进入楼层通用方法
+function enterFloor (regionName) {
+    const floorList = $('.floor-list')
+    const floor_text = $('.floor-text')
+    floorList.attr('class').indexOf('show') > -1 ? floorList.removeClass('show') : floorList.addClass('show')
+    if ($('.btn-floor-mod').attr('class').indexOf('act') > -1) {
+        $('.btn-floor-mod').removeClass('act')
+        floor_text.text('切换楼层')
+        if (isFloor) {
+            isFloor = false;
+            currFloorIndex = -1
+            changeMapLv(`${currMap + currLv}`)
+            enterFloorSave();
+            outFloor = true;
+        }
+        $('.nav-option-ctn').removeClass('floor')
+        $('.m-index').removeClass('floor')
+    } else {
+        $('.btn-floor-mod').addClass('act')
+        floor_text.text('退出楼层')
+        $('.m-index').addClass('floor')
+    }
+}
+
+// 重制楼层
+function resetFloor () {
+    $('.map-floor-change-ctn').removeClass('show')
+    isFloor = false;
+    outFloor = true;
+    currFloorIndex = -1;
+}
+
+// 查找是否有楼层
+function findFloor (regionName) {
+    let floorInfo = mapScaleInfo.floor.find(item => item.floor_name === regionName);
+    if (floorInfo) {
+        enterFloor();
+        $('.btn-floor-mod').addClass('show')
+
+    }
+}
+
+function enterWarMap () {
+        isWar = !isWar;
+        isFloor = false;
+        outFloor = true;
+        window.occupy = false;
+        window.viewChange = true;
+        $('.btn-view-change').addClass('g')
+        $('.btn-view-change').removeClass('f')
+        $('.nav-option-ctn').addClass('g');
+        $('.nav-option-ctn').removeClass('f');
+        $('.war-lv-change-list').attr('class', 'war-lv-change-list g')
+        $('.zj-ctn').removeClass('show')
+
+        if (isWar) {
+            // dom_changeMapBtn.addClass('war')
+            $('.map-list-ctn').addClass('war')
+            $('.btn-change-map-ctn').addClass('war')
+            $('.btn-war-change').addClass('war')
+            $('.btn-view-change').addClass('show')
+            $('.btn-floor-mod').removeClass('show')
+            $('#MapContainer').removeClass('map')
+            $('.floor-list').removeClass('show')
+            // changeWarMap('jq', 'pc');
+            currWarMap = 'pc';
+            currWarType = 'pc';
+            if (getQuery('map').indexOf('dzc') !== -1) {
+                // 从第4位开始截取getQuery('map')
+                const mapName = getQuery('map').substring(4);
+                currWarMap = mapName === 'fby' ? 'hdz': mapName;
+                console.log('currWarMap', currWarMap);
+                changeWarMap(currWarMap, 'pc');
+                
+            } else {
+                changeWarMap('pc', 'pc');
+            }
+            $('.random-list').addClass('close')
+
+            // initNav();
+            // bindOptionEvent();
+            $('.war-lv-change-ctn').addClass('show')
+            $('.curr-map-lv').text('PC')
+            $('.type-change-ctn').addClass('show')  
+            navTypyList.addClass('war')
+            $('.war-change-text').text('烽火地带')
+            $('.random-list').addClass('close')
+            $('.curr-random').css('display', 'none')
+            $('.war-list').show();
+
+        } else {
+            // dom_changeMapBtn.removeClass('war')
+            $('.map-list-ctn').removeClass('war')
+            $('.btn-change-map-ctn').removeClass('war')
+            $('.btn-war-change').removeClass('war')
+            $('.btn-view-change').removeClass('show')
+            $('.type-change-ctn').attr('class', 'type-change-ctn') 
+            $('.btn-floor-mod').addClass('show')
+            $('#MapContainer').addClass('map')
+            // $('.floor-list').addClass('show')
+            changeMapLv('00');
+            warRemove();
+            currMap = '0';
+            currLv = '0'
+            initNav();
+            bindOptionEvent();
+            $('.war-lv-change-ctn').removeClass('show')
+            $('.curr-map-lv').text('常规')
+            navTypyList.removeClass('war')
+            $('.check-title').text('快速定位')
+            $('.war-change-text').text('全面战场')
+            dom_war_lv_list.attr('class', 'war-lv-list')
+            $('.select-region-ctn').css('display', 'block')
+            $('.map-item').removeClass('action')
+            $('.map-item-0').addClass('action')
+            $('.war-list').hide();
+            if (currMap === '1' || currMap === '2') {
+                 $('.curr-random').css('display', 'block')
+                $('.random-list').removeClass('close')
+            }
+           
+        }
+}
+
+// 战场切换
+function changeWarMap(mapName, type) {
+    console.log('mapName', mapName, type, window.occupy, window[mapName]);
+    
+    visibleMarker = {}
+    mapScaleInfo = window[mapName].info;
+    poiInfo =  window[mapName].region;
+    currWarType = type;
+    if (window.occupy) {
+        currWarType = type;
+        poiInfo = window[mapName].region
+        mapIcons = window[`${mapName}_${type}_s`].mapArticle;
+        allNavList = window[`${mapName}_${type}_s`].navRegion;
+        navTypeList = window[`${mapName}_${type}_s`].navRegionInfo;
+        if (currLayer.name !== mapScaleInfo.names) {
+            map.removeLayer(currLayer)
+            addLayer(mapScaleInfo[`names_${currWarType}`])
+        }
+    } else {
+        mapIcons = window[`${mapName}_${type}`].mapArticle[window.warLv];
+        allNavList = window[`${mapName}_${type}`].navRegion[window.warLv];
+        navTypeList = window[`${mapName}_${type}`].navRegionInfo[window.warLv];
+        if (currLayer.name !== mapScaleInfo.name) {
+            map.removeLayer(currLayer)
+            addLayer(mapScaleInfo[`name_${currWarType}`])
+        }
+    }
+   
+    console.log(window[`${mapName}_${type}`].title);
+    
+    $('.curr-map-name').html(`${window[`${mapName}_${type}`].title}`)
+    
+    
+   
+    typeListInit = false;
+
+    initNav();
+    warInit(currWarMap, currWarType);
+
+
+    bindOptionEvent();
+}
+
+// 战场初始化
+function warInit (mapName, type, isBorder = false) {
+
+    var init;
+    init = window.occupy ? window[`${mapName}_${type}_s`].init : window[`${mapName}_${type}`].init
+    // if (window.viewChange) {
+    //     init = window.occupy ? window[`${mapName}_${type}_s`].init_g : window[`${mapName}_${type}`].init_g
+    // } else {
+    //     init = window.occupy ? window[`${mapName}_${type}_s`].init_s : window[`${mapName}_${type}`].init_s
+    // }
+    if (!window.isViewChange) {
+        listIsAll[currLeftNav] = false;
+        $('.choose-all').attr('class', 'img_all_close choose-all')
+    }
+    
+    $.each(borderList, function () {
+        this.remove();
+    
+    });
+
+    if (!isBorder) {
+        $.each(warMark, function () {
+            this.remove();
+        
+        });
+    
+        $.each(cacheMarker, function () {
+            this.remove();
+        
+        });
+    } else {
+        $.each(cacheMarker, function () {
+            if (this.options.icon.name) {
+                if (this.options.icon.name.indexOf('据点') > -1) {
+                
+                    this.remove();
+                }
+            }
+            if (this.options.icon.options.html.indexOf('jd') > -1) {
+                this.remove();
+            }
+        });
+    }
+
+    // visibleMarker = []
+    
+    borderList = []
+
+    var initList = [];
+    // 是否是占领模式
+    if (window.occupy) {
+        initList = init
+    } else {
+        initList = init[window.warLv].typeList
+    }
+
+    let lineHtmlg = ''
+    let lineHtmlf = ''
+    let lineHtmlz = ''
+
+    
+    
+    for (let index = 0; index < initList.length; index++) {
+        const element = initList[index];
+        
+        if (element.border) {
+            // if (element.region.indexOf('进攻') > -1) {
+            //     drawBorder('red', element.border)
+            // }
+
+            //  if (element.region.indexOf('防守') > -1){
+            //     drawBorder('green', element.border)
+            // }
+
+            // if (element.isRegion === 'true') {
+            //     drawBorder('white', element.border)
+            // }
+
+            if (element.name.indexOf('据点') > -1) {
+                drawBorder(window.occupy ? 'white' : 'green', element.border, true)
+            } else {
+                if (element.region.indexOf('进攻') > -1 || element.region.indexOf('GTI') > -1) {
+                    drawBorder(window.viewChange ? 'green' : 'red', element.border)
+                } else if (element.region.indexOf('防守') > -1 || element.region.indexOf('HAAVK') > -1){
+                    drawBorder(window.viewChange ? 'red' : 'green', element.border)
+                } else {
+                    drawBorder('white', element.border)
+                }
+            }
+            
+
+           
+        }
+
+        if (element.isRegion === "false") {
+            
+            var pos = getMapPos(element.x, element.y)
+            let myIcon;
+            if (element.name.indexOf('据点') > -1) {
+                lineHtmlz += `<div class="war-lv-jd img_nav_jd_${element['自定义区域']}"></div>`
+            } else {
+                if (element.region.indexOf('进攻') > -1 || element.region.indexOf('GTI') > -1) {
+                    lineHtmlg += `<div class="war-lv-item ${window.viewChange ? 'green' : 'red'}"></div>`
+                } else if (element.region.indexOf('防守') > -1 || element.region.indexOf('HAAVK') > -1){
+                    lineHtmlf += `<div class="war-lv-item ${window.viewChange ? 'red' : 'green'}"></div>`
+                }
+            }
+           let icon;
+           if (element.name === "进攻方基地" ) {
+                icon = window.viewChange ? 'g_jdbsd_g': 'g_jdbsd_r'
+            } else if (element.name === "防守方基地") {
+                icon = window.viewChange ? 'f_jdbsd_r': 'f_jdbsd_g'
+            } else {
+                icon = element.icon
+            }
+
+            if (element.rotate) {
+                let rotate = currWarMap === 'qhz' ? 90 : 180
+                myIcon = L.divIcon({
+                    className: ` map-war-icon`,
+                    html: `<div class="map-icon-bg" style="transform: translate3d(-50%, -50%, 0) rotate(${Number(element.rotate) + rotate}deg)"><img src=" https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${icon}.png"/></div>`,
+                    iconSize: [30, 30],			//设置图标大小
+                    iconAnchor: [15, 15],		//设置图标偏移
+                })
+            } else {
+                myIcon = L.divIcon({
+                    className: ` map-war-icon`,
+                    html: `<div class="map-icon-bg"><img src=" https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${icon}.png"/></div>`,
+                    iconSize: [30, 30],			//设置图标大小
+                    iconAnchor: [15, 15],		//设置图标偏移
+                })
+            }
+            myIcon.name = element.name;
+            myIcon.icon = icon;
+            visibleMarker[element.name] = true;
+            
+            $(`.nav-list-nav${icon.substring(1)}`).addClass(`img_nav${icon.substring(1)}_click active`)
+            var popupHtml = `
+                <div class="name">${element.name}</div>
+            `;
+            // popupHtml += '</div>';
+            cacheMarker.push(L.marker([pos.y, pos.x], {icon: myIcon}).bindPopup(popupHtml).addTo(map).on({
+                click: function () {
+                    currClickMarker?.setIcon(currClickMarker?.myIcon)
+                    this.isClick = true;
+                    this.myIcon = myIcon;
+                    let rotate = currWarMap === 'qhz' ? 90 : 180
+                    this.openPopup();
+                    this.setIcon( L.divIcon({
+                        className: ` map-war-icon click`,
+                        html: `<div class="map-icon-bg" style="${element?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(element?.rotate) + rotate}deg)` : ''}"><img src=" https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${icon}.png"/></div>`,
+                        iconSize: [50, 50],			//设置图标大小
+                        iconAnchor: [25, 25],		//设置图标偏移
+                    }));
+                    currClickMarker = this;
+                    $(this.getElement()).addClass('click')
+                    if (element['随机']) {
+                        markerName.html(`${element.name}${element['拾取条件'] && element['拾取条件'] !== ''? `<span> ( ${element['拾取条件']} ) </span>`: ` [${element['随机']}]`}`)
+                    } else {
+                        markerName.html(`${element.name}${element['拾取条件'] && element['拾取条件'] !== ''? `<span> ( ${element['拾取条件']} ) </span>`: ''}`)
+                    }
+                    
+                    if (this.myIcon.name.indexOf('基地') > -1 || (this.myIcon.name.indexOf('据点') > -1 && window.occupy)) {
+                        initWarSwiper(this.myIcon.name, element);
+                    }
+                    addressName.html(element['自定义区域'])
+                    markerPop.addClass('show')
+                    
+                    // this?.remove()
+                },
+                popupclose: function () {
+                    markerPop.removeClass('show')
+                }
+            }))
+            
+            
+           
+        }
+
+       
+    }
+    listIsAll[1] = true;
+    listIsAll[2] = true;
+   $('.war-lv-change-list').html(lineHtmlg + lineHtmlz + lineHtmlf)
+    
+}
+
+// 清除战场
+function warRemove () {
+    $.each(borderList, function () {
+        this.remove();
+    
+    });
+    $.each(warMark, function () {
+        this.remove();
+    
+    });
+}
+
+// 部署swiper
+function initWarSwiper (name, data) {
+    // if (window.warSwiper) {
+    //     window.warSwiper.destroy(true);
+    // }
+
+    let html = '';
+    console.log(data);
+    let list = window.occupy ? window[currWarMap + '_' + currWarType + '_s'].deploy : window[currWarMap + '_' + currWarType].deploy[window.warLv]
+    console.log(name, list);
+    let length = 0;
+    
+   
+    $.each(list, function(index) {
+        
+        if (name.indexOf(this['阵营']) > -1 && !window.occupy) {
+            length++;
+            if (this?.type) {
+                html += ` <div class="swiper-slide">
+                <div class="slide-name">${this.name}</div>
+                <div class="slide-bot">
+                    <div class="slide-img-ctn">
+                        <div class="slide-img ${this.icon}"></div>
+                    </div>
+                    <div class="slide-info">
+                        <div class="slide-help">所需积分:${this.num}</div>
+                    </div>
+                </div>
+            </div>`
+            } else {
+                if (this['备注'] !== data['自定义区域'] && this['备注'] !== data['备注']) return;
+                html += ` <div class="swiper-slide">
+                <div class="slide-name">${this.name}</div>
+                <div class="slide-bot">
+                    <div class="slide-img-ctn">
+                        <div class="slide-img ${this.icon}"></div>
+                    </div>
+                    <div class="slide-info">
+                        <div class="slide-tiem">${this.CD}s</div>
+                        <div class="slide-num">可部署:${this.num}</div>
+                    </div>
+                </div>
+            </div>`
+            }
+        // } else if ((name.indexOf(this['阵营']) > -1) && window.occupy) {
+        } else if (this['备注'] === data['自定义区域'] && window.occupy) {
+        //     length++;
+        //     if (this?.type) {
+        //         html += ` <div class="swiper-slide">
+        //         <div class="slide-name">${this.name}</div>
+        //         <div class="slide-bot">
+        //             <div class="slide-img-ctn">
+        //                 <div class="slide-img ${this.icon}"></div>
+        //             </div>
+        //             <div class="slide-info">
+        //                 <div class="slide-help">所需积分:${this.num}</div>
+        //             </div>
+        //         </div>
+        //     </div>`
+        //     } else {
+        //         console.log('潜质判断', this['备注'], (this['备注'] !== data['备注']) && this['阵营'] !== name, name.indexOf(this['阵营']));
+                
+        //         if (this['备注'] && this['备注'] !== '' && (this['备注'] !== data['备注']) && this['阵营'] !== name) return;
+                
+        //         console.log('占领有', this['备注'], data['备注'], name, (this['备注'] !== data['备注']) && this['阵营'] !== name);
+        //         html += ` <div class="swiper-slide">
+        //         <div class="slide-name">${this.name}</div>
+        //         <div class="slide-bot">
+        //             <div class="slide-img-ctn">
+        //                 <div class="slide-img ${this.icon}"></div>
+        //             </div>
+        //             <div class="slide-info">
+        //                 <div class="slide-tiem">${this.CD}s</div>
+        //                 <div class="slide-num">可部署:${this.num}</div>
+        //             </div>
+        //         </div>
+        //     </div>`
+        //     }
+        // }
+        length++;
+                html += ` <div class="swiper-slide">
+                <div class="slide-name">${this.name}</div>
+                <div class="slide-bot">
+                    <div class="slide-img-ctn">
+                        <div class="slide-img ${this.icon}"></div>
+                    </div>
+                    <div class="slide-info">
+                        <div class="slide-tiem">${this.CD}s</div>
+                        <div class="slide-num">可部署:${this.num}</div>
+                    </div>
+                </div>
+            </div>`
+        } else if (this['阵营'] === data['name']) {
+            html += ` <div class="swiper-slide">
+                <div class="slide-name">${this.name}</div>
+                <div class="slide-bot">
+                    <div class="slide-img-ctn">
+                        <div class="slide-img ${this.icon}"></div>
+                    </div>
+                    <div class="slide-info">
+                        <div class="slide-tiem">${this.CD}s</div>
+                        <div class="slide-num">可部署:${this.num}</div>
+                    </div>
+                </div>
+            </div>`
+        }
+
+        
+
+        
+    })
+
+    // if (length < 7) {
+    //     $('.btn-swiper-prev').css('display', 'none')
+    //     $('.btn-swiper-next').css('display', 'none')
+    // } else {
+    //     $('.btn-swiper-prev').css('display', 'block')
+    //     $('.btn-swiper-next').css('display', 'block')
+    // }
+    
+ 
+    $('.swiper-wrapper').html(html)
+
+    // window.warSwiper= new Swiper('.swiper-container', {
+    //     slidesPerView: 'auto',
+    // });
+
+    if (html !== '') {
+        $('.deploy-swiper').addClass('show')
+    } else {
+        $('.deploy-swiper').removeClass('show')
+    }
+  
+
+    
+}
+
+// 进入随机事件
+function enterRandomEvent (){
+    if (isZj) {
+         let randomText = $('.random-act').text()
+        if ($('.curr-map-lv').text() === '常规' || $('.curr-map-lv').text() === '前夜') {
+            console.log('有没有', $('.random-act').text().indexOf('坠机'));
+            
+            if (randomText.indexOf('坠机') > -1 || randomText.indexOf('断桥') > -1) {
+                changeMapLv(currMap + currLv + '_s');
+            } else{
+                changeMapLv(currMap + currLv);
+            }
+         
+            if (currMap + currLv !== '10_s' || currMap + currLv !== '21_s') {
+                // map.setView([mapScaleInfo.initX, mapScaleInfo.initY], mapScaleInfo.initZoom)
+                map.flyTo([mapScaleInfo.initX,  mapScaleInfo.initY], mapScaleInfo.initZoom)
+            }
+            currLv = '0'
+        } else {
+            if (randomText.indexOf('坠机') > -1 || randomText.indexOf('断桥') > -1) {
+                changeMapLv(currMap + currLv + '_s');
+            } else{
+                changeMapLv(currMap + currLv);
+            }
+            if (currMap + currLv !== '11_s' || currMap + currLv !== '22_s') {
+                map.flyTo([mapScaleInfo.initX,  mapScaleInfo.initY], mapScaleInfo.initZoom)
+            }
+            currLv = '1'
+        }
+        
+    } else {
+        if ($('.curr-map-lv').text() === '常规' || $('.curr-map-lv').text() === '前夜') {
+            changeMapLv(currMap + currLv);
+            if (currMap + currLv !== '10' || currMap + currLv !== '21') {
+                // map.setView([mapScaleInfo.initX, mapScaleInfo.initY], mapScaleInfo.initZoom)
+                map.flyTo([mapScaleInfo.initX,  mapScaleInfo.initY], mapScaleInfo.initZoom)
+            }
+            currLv = '0'
+        } else {
+            changeMapLv(currMap + currLv);
+            if (currMap + currLv !== '11' || currMap + currLv !== '22') {
+                map.flyTo([mapScaleInfo.initX,  mapScaleInfo.initY], mapScaleInfo.initZoom)
+            }
+            currLv = '1'
+        }
+    }
+    resetAll('none')
+    toggleVisible(`none`, currLeftNav);
+}
+
+// 数据分类
+function dataFilter (mapArticle) {
+    // 保险箱
+    let arr = [
+        {
+        name: "保险柜"
+      },
+      {
+        name: "小保险箱"
+      },
+      {
+        name: "服务器"
+      },
+      {
+        name: "电脑"
+      },
+      {
+        name: "电脑机箱"
+      },
+      {
+        name: "武器箱"
+      },
+      {
+        name: "大武器箱"
+      },
+      {
+        name: "弹药箱"
+      },
+      {
+        name: "工具柜"
+      },
+      {
+        name: "大工具盒"
+      },
+      {
+        name: "实验服"
+      },
+      {
+        name: "衣服"
+      },
+      {
+        name: "医疗包"
+      },
+      {
+        name: "医疗物资堆"
+      },
+      {
+        name: "旅行袋"
+      },
+      {
+        name: "手提箱"
+      },
+      {
+        name: "储物柜"
+      },
+      {
+        name: "高级储物箱"
+      },
+      {
+        name: "抽屉柜"
+      },
+      {
+        name: "登山包"
+      },
+      {
+        name: "快递箱"
+      },
+      {
+        name: "航空储物箱"
+      },
+      {
+        name: "垃圾箱"
+      },
+      {
+        name: "水泥车"
+      },
+      {
+        name: "野外物资箱"
+      },
+      {
+        name: "鸟窝"
+      },
+      {
+        name: "藏匿物"
+      },
+      {
+        name: "高级旅行箱"
+      },
+      {
+        name: "出生点"
+      },
+      {
+        name: "付费撤离点"
+      },
+      {
+        name: "常规撤离点"
+      },
+      {
+        name: "概率撤离点"
+      },
+      {
+        name: "列车撤离点"
+      },
+      {
+        name: "首领"
+      }
+    ]
+    let arrInfo = [
+         { 
+            titleType: "all",
+            title: "全部",
+            typeList: []
+        },
+        { 
+            titleType: "wzd",
+            title: "物资点",
+            typeList: []
+        },
+        {
+            titleType: 'csd',
+            title: '出生点',
+            typeList: []
+        },
+        {
+            titleType: "cld",
+            title: "撤离点",
+            typeList: []
+        },
+        {
+            titleType: "首领",
+            title: "首领",
+            typeList: []
+        }
+    ];
+    let numList = {}
+
+    console.log('mapArticle', mapArticle);
+    for (let index = 0; index < mapArticle.length; index++) {
+        const element = mapArticle[index];
+       
+        if (element.name.indexOf('接取站') !== -1) {
+            continue;
+        }
+
+        if (element.icon === 'boss') {
+            element.name = '首领'
+        }
+         numList[element.name] = numList[element.name] ? numList[element.name] + 1 : 1
+        // 检测数组中是否存在这一项,如果存在则不在添加
+        if (!arr.some(item => item.name === element.name)) {
+          
+            arr.push({
+                name: element.name,
+                icon: 'nav_' + element.icon,
+            })
+            
+        } else {
+            // 存在则更新图标
+            const existingItem = arr.find(item => item.name === element.name);
+            existingItem.icon = 'nav_' + element.icon;
+        }
+    }
+    
+    for (let index = 0; index < arr.length; index++) {
+        const element = arr[index];
+        if (element.icon === 'boss') {
+            element.name = '首领'
+        }
+        if (numList[element.name]) {
+            element.num = numList[element.name]
+        }
+        
+
+        if (element.name === '出生点') {
+            arrInfo[2]['typeList'].push(element)
+        } else if (element.name.indexOf('撤离点') > -1) {
+            arrInfo[3]['typeList'].push(element)
+        } else if (element.name === '首领') {
+            arrInfo[4]['typeList'].push(element)
+        } else {
+            arrInfo[1]['typeList'].push(element)
+        }
+    }
+    console.log('数据分类', arr);
+    arrInfo[0]['typeList'] = arr
+    console.log('数据分类2', arrInfo);
+    return {
+        arr,
+        arrInfo
+    }
+    
+}
+
 
 $('.btn-close-marker-pop').on('click', function () {
 
     markerPop.removeClass('show')
+    $('.deploy-swiper').removeClass('show')
     currClickMarker.setIcon(currClickMarker.myIcon)
 })
 

@@ -48,6 +48,106 @@ if (fs.existsSync('src/img/xdaba')) {
     });
 }
 
+if (fs.existsSync('src/img/dzc_i')) {
+    copyItem.push({
+        from: 'src/img/dzc_i',
+        to: './img/dzc_i',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/map_gc')) {
+    copyItem.push({
+        from: 'src/img/map_gc',
+        to: './img/map_gc',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/map_gc_zl')) {
+    copyItem.push({
+        from: 'src/img/map_gc_zl',
+        to: './img/map_gc_zl',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/map_jq')) {
+    copyItem.push({
+        from: 'src/img/map_jq',
+        to: './img/map_jq',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/map_jq_zl')) {
+    copyItem.push({
+        from: 'src/img/map_jq_zl',
+        to: './img/map_jq_zl',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/map_ljd')) {
+    copyItem.push({
+        from: 'src/img/map_ljd',
+        to: './img/map_ljd',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/map_pc')) {
+    copyItem.push({
+        from: 'src/img/map_pc',
+        to: './img/map_pc',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/map_pc_zl')) {
+    copyItem.push({
+        from: 'src/img/map_pc_zl',
+        to: './img/map_pc_zl',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/map_pc_mobile_zl')) {
+    copyItem.push({
+        from: 'src/img/map_pc_mobile_zl',
+        to: './img/map_pc_mobile_zl',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/map_jq_mobile_zl')) {
+    copyItem.push({
+        from: 'src/img/map_jq_mobile_zl',
+        to: './img/map_jq_mobile_zl',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/map_ljd_pc')) {
+    copyItem.push({
+        from: 'src/img/map_ljd_pc',
+        to: './img/map_ljd_pc',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/map_qhz')) {
+    copyItem.push({
+        from: 'src/img/map_qhz',
+        to: './img/map_qhz',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/map_qhz_mobile_zl')) {
+    copyItem.push({
+        from: 'src/img/map_qhz_mobile_zl',
+        to: './img/map_qhz_mobile_zl',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/map_qhz_zl')) {
+    copyItem.push({
+        from: 'src/img/map_qhz_zl',
+        to: './img/map_qhz_zl',
+        flatten: true
+    });
+}
+
+
 module.exports = function () {
     return {
         entry: {
