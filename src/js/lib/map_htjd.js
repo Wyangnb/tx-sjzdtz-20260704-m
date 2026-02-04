@@ -88,201 +88,201 @@ var navList_htjd = [
       title: '全部',
       typeList: [
         {
-          "name": "保险柜",
-          "lang": "lang_bxg",
-          "idType": 1,
-          "num": 8,
-          "icon": "nav_bxx"
-        },
-        {
-          "name": "小保险箱",
-          "lang": "lang_xbxx",
-          "idType": 2,
-          "num": 4,
-          "icon": "nav_xbxx"
-        },
-        {
-          "name": "服务器",
-          "lang": "lang_fwq",
-          "idType": 3,
-          "num": 6,
-          "icon": "nav_fwq"
-        },
-        {
-          "name": "电脑",
-          "lang": "lang_dn",
-          "idType": 4,
-          "num": 3,
-          "icon": "nav_dn"
-        },
-        {
-          "name": "电脑机箱",
-          "lang": "lang_dnjx",
-          "idType": 5,
-          "num": 10,
-          "icon": "nav_dnjx"
-        },
-        {
-          "name": "电脑包",
-          "lang": "lang_dnb",
-          "idType": 5,
-          "num": 6,
-          "icon": "nav_dsb"
-        },
-        {
-          "name": "武器箱",
-          "lang": "lang_wqx",
-          "idType": 6,
-          "num": 4,
-          "icon": "nav_wqx"
-        },
-        {
-          "name": "大武器箱",
-          "lang": "lang_dwqx",
-          "idType": 7,
-          "num": 13,
-          "icon": "nav_dwqx"
-        },
-        {
-          "name": "弹药箱",
-          "lang": "lang_dyx",
-          "idType": 8,
-          "num": 13,
-          "icon": "nav_dyx"
-        },
-        {
-          "name": "工具柜",
-          "lang": "lang_gjg",
-          "idType": 9,
-          "num": 7,
-          "icon": "nav_gjg"
-        },
-        {
-          "name": "大工具盒",
-          "lang": "lang_dgjh",
-          "idType": 10,
-          "num": 18,
-          "icon": "nav_dgjx"
-        },
-        {
-          "name": "实验服",
-          "lang": "lang_syf",
-          "idType": 11,
-          "num": 13,
-          "icon": "nav_yf_s"
-        },
-        {
-          "name": "衣服",
-          "lang": "lang_yf",
-          "idType": 12,
-          "num": 20,
-          "icon": "nav_yf"
-        },
-        {
-          "name": "医疗包",
-          "lang": "lang_ylb",
-          "idType": 13,
-          "num": 8,
-          "icon": "nav_ylb"
-        },
-        {
-          "name": "医疗物资堆",
-          "lang": "lang_ylwzd",
-          "idType": 14,
-          "num": 7,
-          "icon": "nav_ylwzd"
-        },
-        {
-          "name": "旅行袋",
-          "lang": "lang_lxd",
-          "idType": 15,
-          "num": 10,
-          "icon": "nav_lxd"
-        },
-        {
-          "name": "手提箱",
-          "lang": "lang_stx",
-          "idType": 16,
-          "num": 7,
-          "icon": "nav_stx"
-        },
-        {
-          "name": "储物柜",
-          "lang": "lang_cwg",
-          "idType": 17,
-          "num": 8,
-          "icon": "nav_cwg"
-        },
-        {
-          "name": "高级储物箱",
-          "lang": "lang_gjcwx",
-          "idType": 18,
-          "num": 9,
-          "icon": "nav_gjcwx"
-        },
-        {
-          "name": "抽屉柜",
-          "lang": "lang_ctg",
-          "idType": 19,
-          "num": 14,
-          "icon": "nav_ctg"
-        },
-        {
-          "name": "登山包",
-          "lang": "lang_dsb",
-          "idType": 20,
-          "num": 4,
-          "icon": "nav_dsb"
-        },
-        {
-          "name": "快递箱",
-          "lang": "lang_kdx",
-          "idType": 21,
-          "num": 17,
-          "icon": "nav_kdx"
-        },
-        {
-          "name": "航空储物箱",
-          "lang": "lang_hkcwx",
-          "idType": 22,
-          "num": 8,
-          "icon": "nav_hkcwx"
-        },
-        {
-          "name": "垃圾箱",
-          "lang": "lang_ljx",
-          "idType": 23,
-          "num": 5,
-          "icon": "nav_ljx"
-        },
-        {
-          "name": "野外物资箱",
-          "lang": "lang_ywwzx",
-          "idType": 25,
-          "num": 8,
-          "icon": "nav_ywwzx"
-        },
-        {
-          "name": "鸟窝",
-          "lang": "lang_nw",
-          "idType": 25,
-          "num": 6,
-          "icon": "nav_nw"
-        },
-        {
-          "name": "藏匿物",
-          "lang": "lang_cnw",
-          "idType": 25,
-          "num": 5,
-          "icon": "nav_cnw"
-        },
-        {
-          "name": "高级旅行箱",
-          "lang": "lang_gjlxx",
-          "idType": 25,
-          "num": 3,
-          "icon": "nav_xlx"
-        },
+            "name": "保险箱",
+            "lang": "lang_bxg",
+            "idType": 1,
+            "num": 9,
+            "icon": "nav_bxx"
+          },
+          {
+            "name": "小保险箱",
+            "lang": "lang_xbxx",
+            "idType": 2,
+            "num": 4,
+            "icon": "nav_xbxx"
+          },
+          {
+            "name": "服务器",
+            "lang": "lang_fwq",
+            "idType": 3,
+            "num": 6,
+            "icon": "nav_fwq"
+          },
+          {
+            "name": "电脑",
+            "lang": "lang_dn",
+            "idType": 4,
+            "num": 5,
+            "icon": "nav_dn"
+          },
+          {
+            "name": "电脑机箱",
+            "lang": "lang_dnjx",
+            "idType": 5,
+            "num": 12,
+            "icon": "nav_dnjx"
+          },
+          {
+            "name": "电脑包",
+            "lang": "lang_dnb",
+            "idType": 5,
+            "num": 6,
+            "icon": "nav_dsb"
+          },
+          {
+            "name": "武器箱",
+            "lang": "lang_wqx",
+            "idType": 6,
+            "num": 4,
+            "icon": "nav_wqx"
+          },
+          {
+            "name": "大武器箱",
+            "lang": "lang_dwqx",
+            "idType": 7,
+            "num": 13,
+            "icon": "nav_dwqx"
+          },
+          {
+            "name": "弹药箱",
+            "lang": "lang_dyx",
+            "idType": 8,
+            "num": 13,
+            "icon": "nav_dyx"
+          },
+          {
+            "name": "工具柜",
+            "lang": "lang_gjg",
+            "idType": 9,
+            "num": 9,
+            "icon": "nav_gjg"
+          },
+          {
+            "name": "收纳盒",
+            "lang": "lang_dgjh",
+            "idType": 10,
+            "num": 18,
+            "icon": "nav_dgjx"
+          },
+          {
+            "name": "一件衣服",
+            "lang": "lang_yf",
+            "idType": 12,
+            "num": 33,
+            "icon": "nav_yf"
+          },
+          {
+            "name": "军用医疗包",
+            "lang": "lang_ylb",
+            "idType": 13,
+            "num": 8,
+            "icon": "nav_ylb"
+          },
+          {
+            "name": "医疗物资堆",
+            "lang": "lang_ylwzd",
+            "idType": 14,
+            "num": 7,
+            "icon": "nav_ylwzd"
+          },
+          {
+            "name": "旅行包",
+            "lang": "lang_lxd",
+            "idType": 15,
+            "num": 14,
+            "icon": "nav_lxd"
+          },
+          {
+            "name": "手提箱",
+            "lang": "lang_stx",
+            "idType": 16,
+            "num": 10,
+            "icon": "nav_stx"
+          },
+          {
+            "name": "储物柜",
+            "lang": "lang_cwg",
+            "idType": 17,
+            "num": 8,
+            "icon": "nav_cwg"
+          },
+          {
+            "name": "高级储物箱",
+            "lang": "lang_gjcwx",
+            "idType": 18,
+            "num": 15,
+            "icon": "nav_gjcwx"
+          },
+          {
+            "name": "抽屉柜",
+            "lang": "lang_ctg",
+            "idType": 19,
+            "num": 16,
+            "icon": "nav_ctg"
+          },
+          {
+            "name": "登山包",
+            "lang": "lang_dsb",
+            "idType": 20,
+            "num": 7,
+            "icon": "nav_dsb"
+          },
+          {
+            "name": "快递箱",
+            "lang": "lang_kdx",
+            "idType": 21,
+            "num": 21,
+            "icon": "nav_kdx"
+          },
+          {
+            "name": "航空储物箱",
+            "lang": "lang_hkcwx",
+            "idType": 22,
+            "num": 8,
+            "icon": "nav_hkcwx"
+          },
+          {
+            "name": "垃圾桶",
+            "lang": "lang_ljx",
+            "idType": 23,
+            "num": 5,
+            "icon": "nav_ljx"
+          },
+          {
+            "name": "搅拌车",
+            "lang": "lang_snc",
+            "idType": 24,
+            "num": 0,
+            "icon": "nav_snc"
+          },
+          {
+            "name": "野外物资箱",
+            "lang": "lang_ywwzx",
+            "idType": 25,
+            "num": 8,
+            "icon": "nav_ywwzx"
+          },
+          {
+            "name": "鸟窝",
+            "lang": "lang_nw",
+            "idType": 25,
+            "num": 7,
+            "icon": "nav_nw"
+          },
+          {
+            "name": "藏匿物",
+            "lang": "lang_cnw",
+            "idType": 25,
+            "num": 7,
+            "icon": "nav_cnw"
+          },
+          {
+            "name": "高级旅行箱",
+            "lang": "lang_gjlxx",
+            "idType": 25,
+            "num": 6,
+            "icon": "nav_xlx"
+          },
         {
           "name": "出生点",
           "idType": 26,
@@ -332,7 +332,7 @@ var navList_htjd = [
       title: '物资点',
       typeList: [
         {
-          "name": "保险柜",
+          "name": "保险箱",
           "idType": 1,
           "num": 8,
           "icon": "nav_bxx"
@@ -392,25 +392,19 @@ var navList_htjd = [
           "icon": "nav_gjg"
         },
         {
-          "name": "大工具盒",
+          "name": "收纳盒",
           "idType": 10,
           "num": 17,
           "icon": "nav_dgjx"
         },
         {
-          "name": "实验服",
-          "idType": 11,
-          "num": 13,
-          "icon": "nav_yf_s"
-        },
-        {
-          "name": "衣服",
+          "name": "一件衣服",
           "idType": 12,
-          "num": 20,
+          "num": 33,
           "icon": "nav_yf"
         },
         {
-          "name": "医疗包",
+          "name": "军用医疗包",
           "idType": 13,
           "num": 8,
           "icon": "nav_ylb"
@@ -422,7 +416,7 @@ var navList_htjd = [
           "icon": "nav_ylwzd"
         },
         {
-          "name": "旅行袋",
+          "name": "旅行包",
           "idType": 15,
           "num": 10,
           "icon": "nav_lxd"
@@ -470,13 +464,13 @@ var navList_htjd = [
           "icon": "nav_hkcwx"
         },
         {
-          "name": "垃圾箱",
+          "name": "垃圾桶",
           "idType": 23,
           "num": 5,
           "icon": "nav_ljx"
         },
         // {
-        //   "name": "水泥车",
+        //   "name": "搅拌车",
         //   "idType": 24,
         //   "num": 0,
         //   "icon": "nav_snc"
@@ -568,201 +562,201 @@ var navListInfo_htjd = [
       title: '全部',
       typeList: [
         {
-          "name": "保险柜",
-          "lang": "lang_bxg",
-          "idType": 1,
-          "num": 8,
-          "icon": "nav_bxx"
-        },
-        {
-          "name": "小保险箱",
-          "lang": "lang_xbxx",
-          "idType": 2,
-          "num": 4,
-          "icon": "nav_xbxx"
-        },
-        {
-          "name": "服务器",
-          "lang": "lang_fwq",
-          "idType": 3,
-          "num": 6,
-          "icon": "nav_fwq"
-        },
-        {
-          "name": "电脑",
-          "lang": "lang_dn",
-          "idType": 4,
-          "num": 3,
-          "icon": "nav_dn"
-        },
-        {
-          "name": "电脑机箱",
-          "lang": "lang_dnjx",
-          "idType": 5,
-          "num": 10,
-          "icon": "nav_dnjx"
-        },
-        {
-          "name": "电脑包",
-          "lang": "lang_dnb",
-          "idType": 5,
-          "num": 6,
-          "icon": "nav_dsb"
-        },
-        {
-          "name": "武器箱",
-          "lang": "lang_wqx",
-          "idType": 6,
-          "num": 4,
-          "icon": "nav_wqx"
-        },
-        {
-          "name": "大武器箱",
-          "lang": "lang_dwqx",
-          "idType": 7,
-          "num": 13,
-          "icon": "nav_dwqx"
-        },
-        {
-          "name": "弹药箱",
-          "lang": "lang_dyx",
-          "idType": 8,
-          "num": 13,
-          "icon": "nav_dyx"
-        },
-        {
-          "name": "工具柜",
-          "lang": "lang_gjg",
-          "idType": 9,
-          "num": 7,
-          "icon": "nav_gjg"
-        },
-        {
-          "name": "大工具盒",
-          "lang": "lang_dgjh",
-          "idType": 10,
-          "num": 18,
-          "icon": "nav_dgjx"
-        },
-        {
-          "name": "实验服",
-          "lang": "lang_syf",
-          "idType": 11,
-          "num": 13,
-          "icon": "nav_yf_s"
-        },
-        {
-          "name": "衣服",
-          "lang": "lang_yf",
-          "idType": 12,
-          "num": 20,
-          "icon": "nav_yf"
-        },
-        {
-          "name": "医疗包",
-          "lang": "lang_ylb",
-          "idType": 13,
-          "num": 8,
-          "icon": "nav_ylb"
-        },
-        {
-          "name": "医疗物资堆",
-          "lang": "lang_ylwzd",
-          "idType": 14,
-          "num": 7,
-          "icon": "nav_ylwzd"
-        },
-        {
-          "name": "旅行袋",
-          "lang": "lang_lxd",
-          "idType": 15,
-          "num": 10,
-          "icon": "nav_lxd"
-        },
-        {
-          "name": "手提箱",
-          "lang": "lang_stx",
-          "idType": 16,
-          "num": 7,
-          "icon": "nav_stx"
-        },
-        {
-          "name": "储物柜",
-          "lang": "lang_cwg",
-          "idType": 17,
-          "num": 8,
-          "icon": "nav_cwg"
-        },
-        {
-          "name": "高级储物箱",
-          "lang": "lang_gjcwx",
-          "idType": 18,
-          "num": 9,
-          "icon": "nav_gjcwx"
-        },
-        {
-          "name": "抽屉柜",
-          "lang": "lang_ctg",
-          "idType": 19,
-          "num": 14,
-          "icon": "nav_ctg"
-        },
-        {
-          "name": "登山包",
-          "lang": "lang_dsb",
-          "idType": 20,
-          "num": 4,
-          "icon": "nav_dsb"
-        },
-        {
-          "name": "快递箱",
-          "lang": "lang_kdx",
-          "idType": 21,
-          "num": 17,
-          "icon": "nav_kdx"
-        },
-        {
-          "name": "航空储物箱",
-          "lang": "lang_hkcwx",
-          "idType": 22,
-          "num": 8,
-          "icon": "nav_hkcwx"
-        },
-        {
-          "name": "垃圾箱",
-          "lang": "lang_ljx",
-          "idType": 23,
-          "num": 5,
-          "icon": "nav_ljx"
-        },
-        {
-          "name": "野外物资箱",
-          "lang": "lang_ywwzx",
-          "idType": 25,
-          "num": 8,
-          "icon": "nav_ywwzx"
-        },
-        {
-          "name": "鸟窝",
-          "lang": "lang_nw",
-          "idType": 25,
-          "num": 6,
-          "icon": "nav_nw"
-        },
-        {
-          "name": "藏匿物",
-          "lang": "lang_cnw",
-          "idType": 25,
-          "num": 5,
-          "icon": "nav_cnw"
-        },
-        {
-          "name": "高级旅行箱",
-          "lang": "lang_gjlxx",
-          "idType": 25,
-          "num": 3,
-          "icon": "nav_xlx"
-        },
+            "name": "保险箱",
+            "lang": "lang_bxg",
+            "idType": 1,
+            "num": 9,
+            "icon": "nav_bxx"
+          },
+          {
+            "name": "小保险箱",
+            "lang": "lang_xbxx",
+            "idType": 2,
+            "num": 4,
+            "icon": "nav_xbxx"
+          },
+          {
+            "name": "服务器",
+            "lang": "lang_fwq",
+            "idType": 3,
+            "num": 6,
+            "icon": "nav_fwq"
+          },
+          {
+            "name": "电脑",
+            "lang": "lang_dn",
+            "idType": 4,
+            "num": 5,
+            "icon": "nav_dn"
+          },
+          {
+            "name": "电脑机箱",
+            "lang": "lang_dnjx",
+            "idType": 5,
+            "num": 12,
+            "icon": "nav_dnjx"
+          },
+          {
+            "name": "电脑包",
+            "lang": "lang_dnb",
+            "idType": 5,
+            "num": 6,
+            "icon": "nav_dsb"
+          },
+          {
+            "name": "武器箱",
+            "lang": "lang_wqx",
+            "idType": 6,
+            "num": 4,
+            "icon": "nav_wqx"
+          },
+          {
+            "name": "大武器箱",
+            "lang": "lang_dwqx",
+            "idType": 7,
+            "num": 13,
+            "icon": "nav_dwqx"
+          },
+          {
+            "name": "弹药箱",
+            "lang": "lang_dyx",
+            "idType": 8,
+            "num": 13,
+            "icon": "nav_dyx"
+          },
+          {
+            "name": "工具柜",
+            "lang": "lang_gjg",
+            "idType": 9,
+            "num": 9,
+            "icon": "nav_gjg"
+          },
+          {
+            "name": "收纳盒",
+            "lang": "lang_dgjh",
+            "idType": 10,
+            "num": 18,
+            "icon": "nav_dgjx"
+          },
+          {
+            "name": "一件衣服",
+            "lang": "lang_yf",
+            "idType": 12,
+            "num": 33,
+            "icon": "nav_yf"
+          },
+          {
+            "name": "军用医疗包",
+            "lang": "lang_ylb",
+            "idType": 13,
+            "num": 8,
+            "icon": "nav_ylb"
+          },
+          {
+            "name": "医疗物资堆",
+            "lang": "lang_ylwzd",
+            "idType": 14,
+            "num": 7,
+            "icon": "nav_ylwzd"
+          },
+          {
+            "name": "旅行包",
+            "lang": "lang_lxd",
+            "idType": 15,
+            "num": 14,
+            "icon": "nav_lxd"
+          },
+          {
+            "name": "手提箱",
+            "lang": "lang_stx",
+            "idType": 16,
+            "num": 10,
+            "icon": "nav_stx"
+          },
+          {
+            "name": "储物柜",
+            "lang": "lang_cwg",
+            "idType": 17,
+            "num": 8,
+            "icon": "nav_cwg"
+          },
+          {
+            "name": "高级储物箱",
+            "lang": "lang_gjcwx",
+            "idType": 18,
+            "num": 15,
+            "icon": "nav_gjcwx"
+          },
+          {
+            "name": "抽屉柜",
+            "lang": "lang_ctg",
+            "idType": 19,
+            "num": 16,
+            "icon": "nav_ctg"
+          },
+          {
+            "name": "登山包",
+            "lang": "lang_dsb",
+            "idType": 20,
+            "num": 7,
+            "icon": "nav_dsb"
+          },
+          {
+            "name": "快递箱",
+            "lang": "lang_kdx",
+            "idType": 21,
+            "num": 21,
+            "icon": "nav_kdx"
+          },
+          {
+            "name": "航空储物箱",
+            "lang": "lang_hkcwx",
+            "idType": 22,
+            "num": 8,
+            "icon": "nav_hkcwx"
+          },
+          {
+            "name": "垃圾桶",
+            "lang": "lang_ljx",
+            "idType": 23,
+            "num": 5,
+            "icon": "nav_ljx"
+          },
+          {
+            "name": "搅拌车",
+            "lang": "lang_snc",
+            "idType": 24,
+            "num": 0,
+            "icon": "nav_snc"
+          },
+          {
+            "name": "野外物资箱",
+            "lang": "lang_ywwzx",
+            "idType": 25,
+            "num": 8,
+            "icon": "nav_ywwzx"
+          },
+          {
+            "name": "鸟窝",
+            "lang": "lang_nw",
+            "idType": 25,
+            "num": 7,
+            "icon": "nav_nw"
+          },
+          {
+            "name": "藏匿物",
+            "lang": "lang_cnw",
+            "idType": 25,
+            "num": 7,
+            "icon": "nav_cnw"
+          },
+          {
+            "name": "高级旅行箱",
+            "lang": "lang_gjlxx",
+            "idType": 25,
+            "num": 6,
+            "icon": "nav_xlx"
+          },
           {
             "name": "出生点",
             "idType": 26,
@@ -812,201 +806,201 @@ var navListInfo_htjd = [
       title: '物资点',
       typeList: [
         {
-          "name": "保险柜",
-          "lang": "lang_bxg",
-          "idType": 1,
-          "num": 8,
-          "icon": "nav_bxx"
-        },
-        {
-          "name": "小保险箱",
-          "lang": "lang_xbxx",
-          "idType": 2,
-          "num": 4,
-          "icon": "nav_xbxx"
-        },
-        {
-          "name": "服务器",
-          "lang": "lang_fwq",
-          "idType": 3,
-          "num": 6,
-          "icon": "nav_fwq"
-        },
-        {
-          "name": "电脑",
-          "lang": "lang_dn",
-          "idType": 4,
-          "num": 3,
-          "icon": "nav_dn"
-        },
-        {
-          "name": "电脑机箱",
-          "lang": "lang_dnjx",
-          "idType": 5,
-          "num": 10,
-          "icon": "nav_dnjx"
-        },
-        {
-          "name": "电脑包",
-          "lang": "lang_dnb",
-          "idType": 5,
-          "num": 6,
-          "icon": "nav_dsb"
-        },
-        {
-          "name": "武器箱",
-          "lang": "lang_wqx",
-          "idType": 6,
-          "num": 4,
-          "icon": "nav_wqx"
-        },
-        {
-          "name": "大武器箱",
-          "lang": "lang_dwqx",
-          "idType": 7,
-          "num": 13,
-          "icon": "nav_dwqx"
-        },
-        {
-          "name": "弹药箱",
-          "lang": "lang_dyx",
-          "idType": 8,
-          "num": 13,
-          "icon": "nav_dyx"
-        },
-        {
-          "name": "工具柜",
-          "lang": "lang_gjg",
-          "idType": 9,
-          "num": 7,
-          "icon": "nav_gjg"
-        },
-        {
-          "name": "大工具盒",
-          "lang": "lang_dgjh",
-          "idType": 10,
-          "num": 18,
-          "icon": "nav_dgjx"
-        },
-        {
-          "name": "实验服",
-          "lang": "lang_syf",
-          "idType": 11,
-          "num": 13,
-          "icon": "nav_yf_s"
-        },
-        {
-          "name": "衣服",
-          "lang": "lang_yf",
-          "idType": 12,
-          "num": 20,
-          "icon": "nav_yf"
-        },
-        {
-          "name": "医疗包",
-          "lang": "lang_ylb",
-          "idType": 13,
-          "num": 8,
-          "icon": "nav_ylb"
-        },
-        {
-          "name": "医疗物资堆",
-          "lang": "lang_ylwzd",
-          "idType": 14,
-          "num": 7,
-          "icon": "nav_ylwzd"
-        },
-        {
-          "name": "旅行袋",
-          "lang": "lang_lxd",
-          "idType": 15,
-          "num": 10,
-          "icon": "nav_lxd"
-        },
-        {
-          "name": "手提箱",
-          "lang": "lang_stx",
-          "idType": 16,
-          "num": 7,
-          "icon": "nav_stx"
-        },
-        {
-          "name": "储物柜",
-          "lang": "lang_cwg",
-          "idType": 17,
-          "num": 8,
-          "icon": "nav_cwg"
-        },
-        {
-          "name": "高级储物箱",
-          "lang": "lang_gjcwx",
-          "idType": 18,
-          "num": 9,
-          "icon": "nav_gjcwx"
-        },
-        {
-          "name": "抽屉柜",
-          "lang": "lang_ctg",
-          "idType": 19,
-          "num": 14,
-          "icon": "nav_ctg"
-        },
-        {
-          "name": "登山包",
-          "lang": "lang_dsb",
-          "idType": 20,
-          "num": 4,
-          "icon": "nav_dsb"
-        },
-        {
-          "name": "快递箱",
-          "lang": "lang_kdx",
-          "idType": 21,
-          "num": 17,
-          "icon": "nav_kdx"
-        },
-        {
-          "name": "航空储物箱",
-          "lang": "lang_hkcwx",
-          "idType": 22,
-          "num": 8,
-          "icon": "nav_hkcwx"
-        },
-        {
-          "name": "垃圾箱",
-          "lang": "lang_ljx",
-          "idType": 23,
-          "num": 5,
-          "icon": "nav_ljx"
-        },
-        {
-          "name": "野外物资箱",
-          "lang": "lang_ywwzx",
-          "idType": 25,
-          "num": 8,
-          "icon": "nav_ywwzx"
-        },
-        {
-          "name": "鸟窝",
-          "lang": "lang_nw",
-          "idType": 25,
-          "num": 6,
-          "icon": "nav_nw"
-        },
-        {
-          "name": "藏匿物",
-          "lang": "lang_cnw",
-          "idType": 25,
-          "num": 5,
-          "icon": "nav_cnw"
-        },
-        {
-          "name": "高级旅行箱",
-          "lang": "lang_gjlxx",
-          "idType": 25,
-          "num": 3,
-          "icon": "nav_xlx"
-        }
+            "name": "保险箱",
+            "lang": "lang_bxg",
+            "idType": 1,
+            "num": 9,
+            "icon": "nav_bxx"
+          },
+          {
+            "name": "小保险箱",
+            "lang": "lang_xbxx",
+            "idType": 2,
+            "num": 4,
+            "icon": "nav_xbxx"
+          },
+          {
+            "name": "服务器",
+            "lang": "lang_fwq",
+            "idType": 3,
+            "num": 6,
+            "icon": "nav_fwq"
+          },
+          {
+            "name": "电脑",
+            "lang": "lang_dn",
+            "idType": 4,
+            "num": 5,
+            "icon": "nav_dn"
+          },
+          {
+            "name": "电脑机箱",
+            "lang": "lang_dnjx",
+            "idType": 5,
+            "num": 12,
+            "icon": "nav_dnjx"
+          },
+          {
+            "name": "电脑包",
+            "lang": "lang_dnb",
+            "idType": 5,
+            "num": 6,
+            "icon": "nav_dsb"
+          },
+          {
+            "name": "武器箱",
+            "lang": "lang_wqx",
+            "idType": 6,
+            "num": 4,
+            "icon": "nav_wqx"
+          },
+          {
+            "name": "大武器箱",
+            "lang": "lang_dwqx",
+            "idType": 7,
+            "num": 13,
+            "icon": "nav_dwqx"
+          },
+          {
+            "name": "弹药箱",
+            "lang": "lang_dyx",
+            "idType": 8,
+            "num": 13,
+            "icon": "nav_dyx"
+          },
+          {
+            "name": "工具柜",
+            "lang": "lang_gjg",
+            "idType": 9,
+            "num": 9,
+            "icon": "nav_gjg"
+          },
+          {
+            "name": "收纳盒",
+            "lang": "lang_dgjh",
+            "idType": 10,
+            "num": 18,
+            "icon": "nav_dgjx"
+          },
+          {
+            "name": "一件衣服",
+            "lang": "lang_yf",
+            "idType": 12,
+            "num": 33,
+            "icon": "nav_yf"
+          },
+          {
+            "name": "军用医疗包",
+            "lang": "lang_ylb",
+            "idType": 13,
+            "num": 8,
+            "icon": "nav_ylb"
+          },
+          {
+            "name": "医疗物资堆",
+            "lang": "lang_ylwzd",
+            "idType": 14,
+            "num": 7,
+            "icon": "nav_ylwzd"
+          },
+          {
+            "name": "旅行包",
+            "lang": "lang_lxd",
+            "idType": 15,
+            "num": 14,
+            "icon": "nav_lxd"
+          },
+          {
+            "name": "手提箱",
+            "lang": "lang_stx",
+            "idType": 16,
+            "num": 10,
+            "icon": "nav_stx"
+          },
+          {
+            "name": "储物柜",
+            "lang": "lang_cwg",
+            "idType": 17,
+            "num": 8,
+            "icon": "nav_cwg"
+          },
+          {
+            "name": "高级储物箱",
+            "lang": "lang_gjcwx",
+            "idType": 18,
+            "num": 15,
+            "icon": "nav_gjcwx"
+          },
+          {
+            "name": "抽屉柜",
+            "lang": "lang_ctg",
+            "idType": 19,
+            "num": 16,
+            "icon": "nav_ctg"
+          },
+          {
+            "name": "登山包",
+            "lang": "lang_dsb",
+            "idType": 20,
+            "num": 7,
+            "icon": "nav_dsb"
+          },
+          {
+            "name": "快递箱",
+            "lang": "lang_kdx",
+            "idType": 21,
+            "num": 21,
+            "icon": "nav_kdx"
+          },
+          {
+            "name": "航空储物箱",
+            "lang": "lang_hkcwx",
+            "idType": 22,
+            "num": 8,
+            "icon": "nav_hkcwx"
+          },
+          {
+            "name": "垃圾桶",
+            "lang": "lang_ljx",
+            "idType": 23,
+            "num": 5,
+            "icon": "nav_ljx"
+          },
+          {
+            "name": "搅拌车",
+            "lang": "lang_snc",
+            "idType": 24,
+            "num": 0,
+            "icon": "nav_snc"
+          },
+          {
+            "name": "野外物资箱",
+            "lang": "lang_ywwzx",
+            "idType": 25,
+            "num": 8,
+            "icon": "nav_ywwzx"
+          },
+          {
+            "name": "鸟窝",
+            "lang": "lang_nw",
+            "idType": 25,
+            "num": 7,
+            "icon": "nav_nw"
+          },
+          {
+            "name": "藏匿物",
+            "lang": "lang_cnw",
+            "idType": 25,
+            "num": 7,
+            "icon": "nav_cnw"
+          },
+          {
+            "name": "高级旅行箱",
+            "lang": "lang_gjlxx",
+            "idType": 25,
+            "num": 6,
+            "icon": "nav_xlx"
+          }
       ]
   },
   {
@@ -1088,9 +1082,9 @@ var mapArticle_htjd = [
     "z坐标": "-20926.5",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "661854",
+    "x": 661854,
     "y": "-451773"
   },
   {
@@ -1102,9 +1096,9 @@ var mapArticle_htjd = [
     "z坐标": "-21955.2",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "672929",
+    "x": 672929,
     "y": "-459886"
   },
   {
@@ -1116,9 +1110,9 @@ var mapArticle_htjd = [
     "z坐标": "-22619",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "696034",
+    "x": 696034,
     "y": "-472179"
   },
   {
@@ -1130,9 +1124,9 @@ var mapArticle_htjd = [
     "z坐标": "-22620",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "696587",
+    "x": 696587,
     "y": "-472179"
   },
   {
@@ -1144,9 +1138,9 @@ var mapArticle_htjd = [
     "z坐标": "-22033.6",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "696181.4",
+    "x": 696181.4,
     "y": "-464094"
   },
   {
@@ -1158,9 +1152,9 @@ var mapArticle_htjd = [
     "z坐标": "-21672.4",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "643787.1",
+    "x": 643787.1,
     "y": "-470335"
   },
   {
@@ -1172,9 +1166,9 @@ var mapArticle_htjd = [
     "z坐标": "-19886.7",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "663905.3",
+    "x": 663905.3,
     "y": "-459187"
   },
   {
@@ -1186,9 +1180,9 @@ var mapArticle_htjd = [
     "z坐标": "-19886.7",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "663905.3",
+    "x": 663905.3,
     "y": "-459077"
   },
   {
@@ -1200,9 +1194,9 @@ var mapArticle_htjd = [
     "z坐标": "-20695.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "664132",
+    "x": 664132,
     "y": "-476221"
   },
   {
@@ -1214,9 +1208,9 @@ var mapArticle_htjd = [
     "z坐标": "-20695.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "664132",
+    "x": 664132,
     "y": "-476830"
   },
   {
@@ -1228,9 +1222,9 @@ var mapArticle_htjd = [
     "z坐标": "-20695.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "664706.2",
+    "x": 664706.2,
     "y": "-475291"
   },
   {
@@ -1242,9 +1236,9 @@ var mapArticle_htjd = [
     "z坐标": "-22635",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "696353",
+    "x": 696353,
     "y": "-470084"
   },
   {
@@ -1256,9 +1250,9 @@ var mapArticle_htjd = [
     "z坐标": "-19670",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "670524",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 670524,
     "y": "-453166"
   },
   {
@@ -1270,9 +1264,9 @@ var mapArticle_htjd = [
     "z坐标": "-19670",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "670524",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 670524,
     "y": "-453047"
   },
   {
@@ -1284,9 +1278,9 @@ var mapArticle_htjd = [
     "z坐标": "-21199.4",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "675585",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 675585,
     "y": "-450255"
   },
   {
@@ -1298,9 +1292,9 @@ var mapArticle_htjd = [
     "z坐标": "-20870",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "662753",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 662753,
     "y": "-449237"
   },
   {
@@ -1312,9 +1306,9 @@ var mapArticle_htjd = [
     "z坐标": "-22572",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "696448",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 696448,
     "y": "-471024"
   },
   {
@@ -1326,9 +1320,9 @@ var mapArticle_htjd = [
     "z坐标": "-21785",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "643247",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 643247,
     "y": "-467106"
   },
   {
@@ -1340,9 +1334,9 @@ var mapArticle_htjd = [
     "z坐标": "-22040",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "646665",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 646665,
     "y": "-468270"
   },
   {
@@ -1354,9 +1348,9 @@ var mapArticle_htjd = [
     "z坐标": "-20865",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "665922",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 665922,
     "y": "-450765"
   },
   {
@@ -1368,9 +1362,9 @@ var mapArticle_htjd = [
     "z坐标": "-22735.5",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "657940",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 657940,
     "y": "-448830"
   },
   {
@@ -1382,9 +1376,9 @@ var mapArticle_htjd = [
     "z坐标": "-20319.6",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "674273",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 674273,
     "y": "-457630"
   },
   {
@@ -1396,9 +1390,9 @@ var mapArticle_htjd = [
     "z坐标": "-20240.7",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "667846",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 667846,
     "y": "-478836"
   },
   {
@@ -1410,9 +1404,9 @@ var mapArticle_htjd = [
     "z坐标": "-22005.9",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "694421",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 694421,
     "y": "-462587"
   },
   {
@@ -1424,9 +1418,9 @@ var mapArticle_htjd = [
     "z坐标": "-22003",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "695360",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 695360,
     "y": "-466067"
   },
   {
@@ -1438,9 +1432,9 @@ var mapArticle_htjd = [
     "z坐标": "-21716",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "676387",
+    "x": 676387,
     "y": "-450543"
   },
   {
@@ -1452,9 +1446,9 @@ var mapArticle_htjd = [
     "z坐标": "-21712",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "676445",
+    "x": 676445,
     "y": "-450088"
   },
   {
@@ -1466,9 +1460,9 @@ var mapArticle_htjd = [
     "z坐标": "-21171",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "663838",
+    "x": 663838,
     "y": "-454865"
   },
   {
@@ -1480,9 +1474,9 @@ var mapArticle_htjd = [
     "z坐标": "-19796.2",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "670121.2",
+    "x": 670121.2,
     "y": "-451748"
   },
   {
@@ -1494,9 +1488,9 @@ var mapArticle_htjd = [
     "z坐标": "-19796.2",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "670266.2",
+    "x": 670266.2,
     "y": "-451751"
   },
   {
@@ -1508,9 +1502,9 @@ var mapArticle_htjd = [
     "z坐标": "-21012.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "663012.4",
+    "x": 663012.4,
     "y": "-450593"
   },
   {
@@ -1522,9 +1516,9 @@ var mapArticle_htjd = [
     "z坐标": "-27889.7",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "662051.9",
+    "x": 662051.9,
     "y": "-456572"
   },
   {
@@ -1536,9 +1530,9 @@ var mapArticle_htjd = [
     "z坐标": "-20500.8",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "676014.6",
+    "x": 676014.6,
     "y": "-457350"
   },
   {
@@ -1550,9 +1544,9 @@ var mapArticle_htjd = [
     "z坐标": "-22485.4",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "675685",
+    "x": 675685,
     "y": "-459474"
   },
   {
@@ -1564,9 +1558,9 @@ var mapArticle_htjd = [
     "z坐标": "-19957.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "668854",
+    "x": 668854,
     "y": "-455667"
   },
   {
@@ -1578,9 +1572,9 @@ var mapArticle_htjd = [
     "z坐标": "-20768",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "668753.6",
+    "x": 668753.6,
     "y": "-479098"
   },
   {
@@ -1592,9 +1586,9 @@ var mapArticle_htjd = [
     "z坐标": "-19839.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "667703",
+    "x": 667703,
     "y": "-453517"
   },
   {
@@ -1606,9 +1600,9 @@ var mapArticle_htjd = [
     "z坐标": "-21916",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "643767",
+    "x": 643767,
     "y": "-467333"
   },
   {
@@ -1620,9 +1614,9 @@ var mapArticle_htjd = [
     "z坐标": "-19896.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "667665",
+    "x": 667665,
     "y": "-455530"
   },
   {
@@ -1634,9 +1628,9 @@ var mapArticle_htjd = [
     "z坐标": "-21920",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "665046",
+    "x": 665046,
     "y": "-476764"
   },
   {
@@ -1648,9 +1642,9 @@ var mapArticle_htjd = [
     "z坐标": "-22030.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "675297",
+    "x": 675297,
     "y": "-454476"
   },
   {
@@ -1664,7 +1658,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "663146",
+    "x": 663146,
     "y": "-449179"
   },
   {
@@ -1678,7 +1672,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "672380",
+    "x": 672380,
     "y": "-459295"
   },
   {
@@ -1692,7 +1686,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "665169",
+    "x": 665169,
     "y": "-450563"
   },
   {
@@ -1706,7 +1700,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "672035",
+    "x": 672035,
     "y": "-475501"
   },
   {
@@ -1720,7 +1714,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "669195.3",
+    "x": 669195.3,
     "y": "-478667"
   },
   {
@@ -1734,7 +1728,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "669256.3",
+    "x": 669256.3,
     "y": "-478290"
   },
   {
@@ -1748,7 +1742,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "665851",
+    "x": 665851,
     "y": "-478849"
   },
   {
@@ -1762,7 +1756,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "695260.3",
+    "x": 695260.3,
     "y": "-464229"
   },
   {
@@ -1776,7 +1770,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "694805",
+    "x": 694805,
     "y": "-464475"
   },
   {
@@ -1790,7 +1784,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "694884",
+    "x": 694884,
     "y": "-463559"
   },
   {
@@ -1804,7 +1798,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "695198",
+    "x": 695198,
     "y": "-465099"
   },
   {
@@ -1818,7 +1812,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "674040",
+    "x": 674040,
     "y": "-448615"
   },
   {
@@ -1832,7 +1826,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "663590",
+    "x": 663590,
     "y": "-460295"
   },
   {
@@ -1846,7 +1840,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "663660",
+    "x": 663660,
     "y": "-460375"
   },
   {
@@ -1860,7 +1854,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "668480",
+    "x": 668480,
     "y": "-476670"
   },
   {
@@ -1874,7 +1868,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "652353",
+    "x": 652353,
     "y": "-470414"
   },
   {
@@ -1888,7 +1882,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "671435",
+    "x": 671435,
     "y": "-437321"
   },
   {
@@ -1902,7 +1896,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "666964",
+    "x": 666964,
     "y": "-469405"
   },
   {
@@ -1916,7 +1910,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "679382",
+    "x": 679382,
     "y": "-472393"
   },
   {
@@ -1930,7 +1924,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "694776",
+    "x": 694776,
     "y": "-451613"
   },
   {
@@ -1944,7 +1938,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "676372.5",
+    "x": 676372.5,
     "y": "-450522"
   },
   {
@@ -1958,7 +1952,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "676898.1",
+    "x": 676898.1,
     "y": "-450401"
   },
   {
@@ -1972,7 +1966,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "685170",
+    "x": 685170,
     "y": "-430970"
   },
   {
@@ -1986,7 +1980,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "663391",
+    "x": 663391,
     "y": "-448536"
   },
   {
@@ -2000,7 +1994,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "664586",
+    "x": 664586,
     "y": "-449511"
   },
   {
@@ -2014,7 +2008,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "668919.3",
+    "x": 668919.3,
     "y": "-451097"
   },
   {
@@ -2028,7 +2022,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "663345",
+    "x": 663345,
     "y": "-458445"
   },
   {
@@ -2042,7 +2036,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "672386",
+    "x": 672386,
     "y": "-458972"
   },
   {
@@ -2056,7 +2050,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "668859",
+    "x": 668859,
     "y": "-475585"
   },
   {
@@ -2070,7 +2064,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "694736",
+    "x": 694736,
     "y": "-464989"
   },
   {
@@ -2084,7 +2078,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "655275",
+    "x": 655275,
     "y": "-446412"
   },
   {
@@ -2098,7 +2092,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "675568",
+    "x": 675568,
     "y": "-437623"
   },
   {
@@ -2112,7 +2106,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "686553",
+    "x": 686553,
     "y": "-457151"
   },
   {
@@ -2126,7 +2120,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "686243",
+    "x": 686243,
     "y": "-467092"
   },
   {
@@ -2140,7 +2134,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "684432",
+    "x": 684432,
     "y": "-475050"
   },
   {
@@ -2154,7 +2148,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "681733",
+    "x": 681733,
     "y": "-479003"
   },
   {
@@ -2168,7 +2162,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "643456",
+    "x": 643456,
     "y": "-467901"
   },
   {
@@ -2182,7 +2176,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "647184",
+    "x": 647184,
     "y": "-468979"
   },
   {
@@ -2196,7 +2190,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "675972",
+    "x": 675972,
     "y": "-449853"
   },
   {
@@ -2210,7 +2204,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "669304",
+    "x": 669304,
     "y": "-451914"
   },
   {
@@ -2224,7 +2218,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "661738",
+    "x": 661738,
     "y": "-459085"
   },
   {
@@ -2238,7 +2232,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "672445",
+    "x": 672445,
     "y": "-473668"
   },
   {
@@ -2252,7 +2246,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "672890",
+    "x": 672890,
     "y": "-473713"
   },
   {
@@ -2266,7 +2260,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "655184",
+    "x": 655184,
     "y": "-422585"
   },
   {
@@ -2280,7 +2274,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "663400",
+    "x": 663400,
     "y": "-420080"
   },
   {
@@ -2294,7 +2288,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "小保险箱",
     "icon": "xbxx",
-    "x": "674176.9",
+    "x": 674176.9,
     "y": "-448634"
   },
   {
@@ -2308,7 +2302,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "小保险箱",
     "icon": "xbxx",
-    "x": "663440",
+    "x": 663440,
     "y": "-460300"
   },
   {
@@ -2322,7 +2316,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "小保险箱",
     "icon": "xbxx",
-    "x": "662096.9",
+    "x": 662096.9,
     "y": "-457531"
   },
   {
@@ -2336,7 +2330,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "小保险箱",
     "icon": "xbxx",
-    "x": "672277.9",
+    "x": 672277.9,
     "y": "-454264"
   },
   {
@@ -2350,7 +2344,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "670314.8",
+    "x": 670314.8,
     "y": "-453482"
   },
   {
@@ -2364,7 +2358,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "673578",
+    "x": 673578,
     "y": "-456626"
   },
   {
@@ -2378,7 +2372,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "648115",
+    "x": 648115,
     "y": "-469573"
   },
   {
@@ -2392,7 +2386,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "661338",
+    "x": 661338,
     "y": "-449479"
   },
   {
@@ -2406,7 +2400,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "679311",
+    "x": 679311,
     "y": "-429125"
   },
   {
@@ -2420,7 +2414,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "676633",
+    "x": 676633,
     "y": "-452212"
   },
   {
@@ -2434,7 +2428,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "669794",
+    "x": 669794,
     "y": "-452240"
   },
   {
@@ -2448,7 +2442,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "663969",
+    "x": 663969,
     "y": "-459463"
   },
   {
@@ -2462,7 +2456,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "673592.1",
+    "x": 673592.1,
     "y": "-456131"
   },
   {
@@ -2476,7 +2470,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "680735",
+    "x": 680735,
     "y": "-458327"
   },
   {
@@ -2490,7 +2484,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "695845",
+    "x": 695845,
     "y": "-461866"
   },
   {
@@ -2504,7 +2498,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "694588",
+    "x": 694588,
     "y": "-469186"
   },
   {
@@ -2518,7 +2512,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "693925",
+    "x": 693925,
     "y": "-471663"
   },
   {
@@ -2530,9 +2524,9 @@ var mapArticle_htjd = [
     "z坐标": "-19807.7",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "667337",
+    "x": 667337,
     "y": "-452530"
   },
   {
@@ -2544,9 +2538,9 @@ var mapArticle_htjd = [
     "z坐标": "-22334.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "647048",
+    "x": 647048,
     "y": "-465044"
   },
   {
@@ -2558,9 +2552,9 @@ var mapArticle_htjd = [
     "z坐标": "-22056",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "648957",
+    "x": 648957,
     "y": "-467177"
   },
   {
@@ -2572,9 +2566,9 @@ var mapArticle_htjd = [
     "z坐标": "-22844",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "658688",
+    "x": 658688,
     "y": "-453638"
   },
   {
@@ -2586,9 +2580,9 @@ var mapArticle_htjd = [
     "z坐标": "-21920",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "665163",
+    "x": 665163,
     "y": "-475387"
   },
   {
@@ -2600,9 +2594,9 @@ var mapArticle_htjd = [
     "z坐标": "-22031.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "675412",
+    "x": 675412,
     "y": "-456374"
   },
   {
@@ -2614,9 +2608,9 @@ var mapArticle_htjd = [
     "z坐标": "-21012.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "672033",
+    "x": 672033,
     "y": "-457399"
   },
   {
@@ -2628,9 +2622,9 @@ var mapArticle_htjd = [
     "z坐标": "-20695.2",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "672846",
+    "x": 672846,
     "y": "-477730"
   },
   {
@@ -2642,9 +2636,9 @@ var mapArticle_htjd = [
     "z坐标": "-22704",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "689429",
+    "x": 689429,
     "y": "-463706"
   },
   {
@@ -2656,9 +2650,9 @@ var mapArticle_htjd = [
     "z坐标": "-22844",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "682014",
+    "x": 682014,
     "y": "-455757"
   },
   {
@@ -2672,7 +2666,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "676625",
+    "x": 676625,
     "y": "-450110"
   },
   {
@@ -2686,7 +2680,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "674241",
+    "x": 674241,
     "y": "-448316"
   },
   {
@@ -2700,7 +2694,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "674280",
+    "x": 674280,
     "y": "-448630"
   },
   {
@@ -2714,7 +2708,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "663605",
+    "x": 663605,
     "y": "-460563"
   },
   {
@@ -2728,7 +2722,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "672412",
+    "x": 672412,
     "y": "-452421"
   },
   {
@@ -2742,7 +2736,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "666663",
+    "x": 666663,
     "y": "-469660"
   },
   {
@@ -2756,7 +2750,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "675511",
+    "x": 675511,
     "y": "-459935"
   },
   {
@@ -2770,7 +2764,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "673105",
+    "x": 673105,
     "y": "-473870"
   },
   {
@@ -2784,7 +2778,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "694557.5",
+    "x": 694557.5,
     "y": "-466020"
   },
   {
@@ -2798,7 +2792,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "644038",
+    "x": 644038,
     "y": "-469103"
   },
   {
@@ -2812,7 +2806,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "663607",
+    "x": 663607,
     "y": "-452850"
   },
   {
@@ -2826,7 +2820,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "661694",
+    "x": 661694,
     "y": "-459134"
   },
   {
@@ -2840,7 +2834,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "672087",
+    "x": 672087,
     "y": "-457926"
   },
   {
@@ -2854,7 +2848,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "672731",
+    "x": 672731,
     "y": "-476174"
   },
   {
@@ -2868,7 +2862,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "695541",
+    "x": 695541,
     "y": "-463792"
   },
   {
@@ -2882,7 +2876,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "644041",
+    "x": 644041,
     "y": "-467030"
   },
   {
@@ -2896,7 +2890,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "647484",
+    "x": 647484,
     "y": "-468846"
   },
   {
@@ -2910,7 +2904,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "662663",
+    "x": 662663,
     "y": "-455301"
   },
   {
@@ -2922,9 +2916,9 @@ var mapArticle_htjd = [
     "z坐标": "-22383",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "653951.8",
+    "x": 653951.8,
     "y": "-470157"
   },
   {
@@ -2936,9 +2930,9 @@ var mapArticle_htjd = [
     "z坐标": "-22086.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "646985",
+    "x": 646985,
     "y": "-468932"
   },
   {
@@ -2950,9 +2944,9 @@ var mapArticle_htjd = [
     "z坐标": "-21990.5",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "664442",
+    "x": 664442,
     "y": "-452415"
   },
   {
@@ -2964,9 +2958,9 @@ var mapArticle_htjd = [
     "z坐标": "-21778.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "664942",
+    "x": 664942,
     "y": "-457472"
   },
   {
@@ -2978,9 +2972,9 @@ var mapArticle_htjd = [
     "z坐标": "-21364.8",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "662167",
+    "x": 662167,
     "y": "-454915"
   },
   {
@@ -2992,9 +2986,9 @@ var mapArticle_htjd = [
     "z坐标": "-21364.7",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "661678.8",
+    "x": 661678.8,
     "y": "-455302"
   },
   {
@@ -3006,9 +3000,9 @@ var mapArticle_htjd = [
     "z坐标": "-21364.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "664314.3",
+    "x": 664314.3,
     "y": "-455291"
   },
   {
@@ -3020,9 +3014,9 @@ var mapArticle_htjd = [
     "z坐标": "-21364.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "662399",
+    "x": 662399,
     "y": "-454900"
   },
   {
@@ -3036,7 +3030,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "644857.9",
+    "x": 644857.9,
     "y": "-460457"
   },
   {
@@ -3050,7 +3044,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "663897",
+    "x": 663897,
     "y": "-451402"
   },
   {
@@ -3064,7 +3058,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "662264",
+    "x": 662264,
     "y": "-454192"
   },
   {
@@ -3078,7 +3072,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "662814",
+    "x": 662814,
     "y": "-458716"
   },
   {
@@ -3092,7 +3086,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "661798",
+    "x": 661798,
     "y": "-457040"
   },
   {
@@ -3106,7 +3100,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "665427",
+    "x": 665427,
     "y": "-474974"
   },
   {
@@ -3120,7 +3114,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "680935",
+    "x": 680935,
     "y": "-469578"
   },
   {
@@ -3132,9 +3126,9 @@ var mapArticle_htjd = [
     "z坐标": "-22329.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "646040",
+    "x": 646040,
     "y": "-465780"
   },
   {
@@ -3146,9 +3140,9 @@ var mapArticle_htjd = [
     "z坐标": "-21512.4",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "662060",
+    "x": 662060,
     "y": "-426430"
   },
   {
@@ -3160,9 +3154,9 @@ var mapArticle_htjd = [
     "z坐标": "-22344.2",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "679665",
+    "x": 679665,
     "y": "-429210"
   },
   {
@@ -3174,9 +3168,9 @@ var mapArticle_htjd = [
     "z坐标": "-21925.6",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "670131",
+    "x": 670131,
     "y": "-473064"
   },
   {
@@ -3188,9 +3182,9 @@ var mapArticle_htjd = [
     "z坐标": "-22960.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "691105",
+    "x": 691105,
     "y": "-478797"
   },
   {
@@ -3204,7 +3198,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "677268.9",
+    "x": 677268.9,
     "y": "-450274"
   },
   {
@@ -3218,7 +3212,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "676996.9",
+    "x": 676996.9,
     "y": "-450995"
   },
   {
@@ -3232,7 +3226,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "662316",
+    "x": 662316,
     "y": "-451829"
   },
   {
@@ -3246,7 +3240,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "675499.2",
+    "x": 675499.2,
     "y": "-457064"
   },
   {
@@ -3260,7 +3254,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "675892.8",
+    "x": 675892.8,
     "y": "-456579"
   },
   {
@@ -3274,7 +3268,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "673509",
+    "x": 673509,
     "y": "-474125"
   },
   {
@@ -3286,9 +3280,9 @@ var mapArticle_htjd = [
     "z坐标": "-21364.8",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "676599",
+    "x": 676599,
     "y": "-450979"
   },
   {
@@ -3300,9 +3294,9 @@ var mapArticle_htjd = [
     "z坐标": "-21012.3",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "676822",
+    "x": 676822,
     "y": "-456839"
   },
   {
@@ -3314,9 +3308,9 @@ var mapArticle_htjd = [
     "z坐标": "-22036.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "673695",
+    "x": 673695,
     "y": "-459563"
   },
   {
@@ -3328,9 +3322,9 @@ var mapArticle_htjd = [
     "z坐标": "-22926",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "696068",
+    "x": 696068,
     "y": "-461971"
   },
   {
@@ -3342,9 +3336,9 @@ var mapArticle_htjd = [
     "z坐标": "-22141.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "696770",
+    "x": 696770,
     "y": "-463565"
   },
   {
@@ -3356,9 +3350,9 @@ var mapArticle_htjd = [
     "z坐标": "-21404",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "661800",
+    "x": 661800,
     "y": "-417680"
   },
   {
@@ -3370,9 +3364,9 @@ var mapArticle_htjd = [
     "z坐标": "-22844",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "657946",
+    "x": 657946,
     "y": "-452599"
   },
   {
@@ -3384,9 +3378,9 @@ var mapArticle_htjd = [
     "z坐标": "-21908.9",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "674296",
+    "x": 674296,
     "y": "-451835"
   },
   {
@@ -3398,9 +3392,9 @@ var mapArticle_htjd = [
     "z坐标": "-21255.2",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "674923",
+    "x": 674923,
     "y": "-450554"
   },
   {
@@ -3412,9 +3406,9 @@ var mapArticle_htjd = [
     "z坐标": "-21909.6",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "661023",
+    "x": 661023,
     "y": "-456423"
   },
   {
@@ -3426,9 +3420,9 @@ var mapArticle_htjd = [
     "z坐标": "-21909.6",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "661023",
+    "x": 661023,
     "y": "-456550"
   },
   {
@@ -3440,9 +3434,9 @@ var mapArticle_htjd = [
     "z坐标": "-20768",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "665159",
+    "x": 665159,
     "y": "-477634"
   },
   {
@@ -3454,9 +3448,9 @@ var mapArticle_htjd = [
     "z坐标": "-20908.9",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "672604",
+    "x": 672604,
     "y": "-458472"
   },
   {
@@ -3468,9 +3462,9 @@ var mapArticle_htjd = [
     "z坐标": "-22352.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "674605.2",
+    "x": 674605.2,
     "y": "-458782"
   },
   {
@@ -3482,9 +3476,9 @@ var mapArticle_htjd = [
     "z坐标": "-22040",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "680394",
+    "x": 680394,
     "y": "-475652"
   },
   {
@@ -3496,9 +3490,9 @@ var mapArticle_htjd = [
     "z坐标": "-20639.9",
     "拾取条件": "需要完成局内行动才能开启",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "672198",
+    "x": 672198,
     "y": "-473719"
   },
   {
@@ -3510,9 +3504,9 @@ var mapArticle_htjd = [
     "z坐标": "-22926",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "691675",
+    "x": 691675,
     "y": "-464235"
   },
   {
@@ -3524,9 +3518,9 @@ var mapArticle_htjd = [
     "z坐标": "-22926",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "694371.6",
+    "x": 694371.6,
     "y": "-460994"
   },
   {
@@ -3540,7 +3534,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "663260",
+    "x": 663260,
     "y": "-424480"
   },
   {
@@ -3554,7 +3548,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "656687",
+    "x": 656687,
     "y": "-420595"
   },
   {
@@ -3568,7 +3562,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "664834",
+    "x": 664834,
     "y": "-452655"
   },
   {
@@ -3582,7 +3576,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "676920",
+    "x": 676920,
     "y": "-432860"
   },
   {
@@ -3596,7 +3590,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "672828",
+    "x": 672828,
     "y": "-456239"
   },
   {
@@ -3610,7 +3604,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "692483",
+    "x": 692483,
     "y": "-452249"
   },
   {
@@ -3624,7 +3618,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "657429",
+    "x": 657429,
     "y": "-451603"
   },
   {
@@ -3638,7 +3632,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "665217.3",
+    "x": 665217.3,
     "y": "-476172"
   },
   {
@@ -3652,7 +3646,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "691635",
+    "x": 691635,
     "y": "-468647"
   },
   {
@@ -3666,7 +3660,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "695716",
+    "x": 695716,
     "y": "-469595"
   },
   {
@@ -3680,7 +3674,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "649620",
+    "x": 649620,
     "y": "-465177"
   },
   {
@@ -3694,7 +3688,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "649635.9",
+    "x": 649635.9,
     "y": "-457794"
   },
   {
@@ -3708,7 +3702,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "665686",
+    "x": 665686,
     "y": "-452899"
   },
   {
@@ -3722,7 +3716,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "665558",
+    "x": 665558,
     "y": "-459128"
   },
   {
@@ -3736,7 +3730,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "663862",
+    "x": 663862,
     "y": "-455298"
   },
   {
@@ -3750,7 +3744,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "666150",
+    "x": 666150,
     "y": "-475668"
   },
   {
@@ -3764,7 +3758,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "668652",
+    "x": 668652,
     "y": "-454846"
   },
   {
@@ -3778,7 +3772,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "669871.9",
+    "x": 669871.9,
     "y": "-454246"
   },
   {
@@ -3792,7 +3786,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "672355.7",
+    "x": 672355.7,
     "y": "-474157"
   },
   {
@@ -3806,7 +3800,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "672816.6",
+    "x": 672816.6,
     "y": "-474149"
   },
   {
@@ -3820,7 +3814,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "680728",
+    "x": 680728,
     "y": "-458075"
   },
   {
@@ -3834,7 +3828,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "694100.1",
+    "x": 694100.1,
     "y": "-465981"
   },
   {
@@ -3848,7 +3842,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "693810",
+    "x": 693810,
     "y": "-468516"
   },
   {
@@ -3862,7 +3856,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "647665",
+    "x": 647665,
     "y": "-470030"
   },
   {
@@ -3876,7 +3870,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "662500",
+    "x": 662500,
     "y": "-449700"
   },
   {
@@ -3890,7 +3884,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "675242.3",
+    "x": 675242.3,
     "y": "-451220"
   },
   {
@@ -3904,7 +3898,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "663229",
+    "x": 663229,
     "y": "-455209"
   },
   {
@@ -3918,7 +3912,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "676731",
+    "x": 676731,
     "y": "-458550"
   },
   {
@@ -3932,7 +3926,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "673915.1",
+    "x": 673915.1,
     "y": "-454119"
   },
   {
@@ -3946,7 +3940,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "680034.2",
+    "x": 680034.2,
     "y": "-463950"
   },
   {
@@ -3960,7 +3954,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "673382.8",
+    "x": 673382.8,
     "y": "-474770"
   },
   {
@@ -3974,7 +3968,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "671851",
+    "x": 671851,
     "y": "-459464"
   },
   {
@@ -3988,7 +3982,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "684510",
+    "x": 684510,
     "y": "-431500"
   },
   {
@@ -4002,7 +3996,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "665874",
+    "x": 665874,
     "y": "-450118"
   },
   {
@@ -4016,7 +4010,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "673870",
+    "x": 673870,
     "y": "-450766"
   },
   {
@@ -4030,7 +4024,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "668073.6",
+    "x": 668073.6,
     "y": "-450920"
   },
   {
@@ -4044,7 +4038,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "661073",
+    "x": 661073,
     "y": "-459559"
   },
   {
@@ -4058,7 +4052,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "664499",
+    "x": 664499,
     "y": "-474868"
   },
   {
@@ -4072,7 +4066,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "664197.8",
+    "x": 664197.8,
     "y": "-477877"
   },
   {
@@ -4086,7 +4080,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "672665",
+    "x": 672665,
     "y": "-473690"
   },
   {
@@ -4100,7 +4094,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "672750",
+    "x": 672750,
     "y": "-473690"
   },
   {
@@ -4114,7 +4108,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "664682.8",
+    "x": 664682.8,
     "y": "-479119"
   },
   {
@@ -4128,7 +4122,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "694627",
+    "x": 694627,
     "y": "-462665"
   },
   {
@@ -4142,7 +4136,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "694555",
+    "x": 694555,
     "y": "-463929"
   },
   {
@@ -4156,7 +4150,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "694458",
+    "x": 694458,
     "y": "-464772"
   },
   {
@@ -4170,7 +4164,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "663830",
+    "x": 663830,
     "y": "-452275"
   },
   {
@@ -4184,7 +4178,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "695605",
+    "x": 695605,
     "y": "-461989"
   },
   {
@@ -4198,7 +4192,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "669765",
+    "x": 669765,
     "y": "-478725"
   },
   {
@@ -4212,7 +4206,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "643435",
+    "x": 643435,
     "y": "-469885"
   },
   {
@@ -4226,7 +4220,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "674724",
+    "x": 674724,
     "y": "-450142"
   },
   {
@@ -4240,7 +4234,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "661000",
+    "x": 661000,
     "y": "-458780"
   },
   {
@@ -4254,7 +4248,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "670024",
+    "x": 670024,
     "y": "-455529"
   },
   {
@@ -4268,7 +4262,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "665009",
+    "x": 665009,
     "y": "-450030"
   },
   {
@@ -4282,7 +4276,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "671758",
+    "x": 671758,
     "y": "-473775"
   },
   {
@@ -4296,7 +4290,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑",
     "icon": "dn",
-    "x": "643661",
+    "x": 643661,
     "y": "-467539"
   },
   {
@@ -4310,7 +4304,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑",
     "icon": "dn",
-    "x": "668639",
+    "x": 668639,
     "y": "-451136"
   },
   {
@@ -4324,7 +4318,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "电脑",
     "icon": "dn",
-    "x": "694747",
+    "x": 694747,
     "y": "-463562"
   },
   {
@@ -4338,7 +4332,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "664680",
+    "x": 664680,
     "y": "-448479"
   },
   {
@@ -4352,7 +4346,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "664680",
+    "x": 664680,
     "y": "-448569"
   },
   {
@@ -4366,7 +4360,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "664680",
+    "x": 664680,
     "y": "-448658"
   },
   {
@@ -4380,7 +4374,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "664680",
+    "x": 664680,
     "y": "-448747"
   },
   {
@@ -4394,7 +4388,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "673741",
+    "x": 673741,
     "y": "-459785"
   },
   {
@@ -4408,7 +4402,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "673741",
+    "x": 673741,
     "y": "-459873"
   },
   {
@@ -4422,7 +4416,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "663262",
+    "x": 663262,
     "y": "-452892"
   },
   {
@@ -4436,7 +4430,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "663351",
+    "x": 663351,
     "y": "-452892"
   },
   {
@@ -4450,7 +4444,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "武器箱",
     "icon": "wqx",
-    "x": "662091",
+    "x": 662091,
     "y": "-452645"
   },
   {
@@ -4464,7 +4458,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "武器箱",
     "icon": "wqx",
-    "x": "661287",
+    "x": 661287,
     "y": "-449357"
   },
   {
@@ -4478,7 +4472,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "武器箱",
     "icon": "wqx",
-    "x": "675045",
+    "x": 675045,
     "y": "-456004"
   },
   {
@@ -4492,7 +4486,7 @@ var mapArticle_htjd = [
     "出现条件": "",
     "name": "武器箱",
     "icon": "wqx",
-    "x": "673214",
+    "x": 673214,
     "y": "-456129"
   },
   {
@@ -4506,8 +4500,5520 @@ var mapArticle_htjd = [
     "出现条件": "飞升者行动",
     "name": "电脑",
     "icon": "dn",
-    "x": "657158.3125",
+    "x": 657158.3125,
     "y": "-418684"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 664558,
+    "y": "-440413"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22350.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 658115,
+    "y": "-440439"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21859",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 665443,
+    "y": "-439261"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 658014,
+    "y": "-439952"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 664569,
+    "y": "-437844"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 657992,
+    "y": "-441014"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21361",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 666484,
+    "y": "-437321"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22346",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 659859,
+    "y": "-440958"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24325",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 685906,
+    "y": "-438732"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24265.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 688930,
+    "y": "-443480"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21859",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 663586,
+    "y": "-440363"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21802.5",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 662768,
+    "y": "-440946"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21855",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 658951,
+    "y": "-440637"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24657",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 686171,
+    "y": "-445918"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21847",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 664454,
+    "y": "-436127"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21847",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 665749,
+    "y": "-437577"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22350",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 658833,
+    "y": "-439725"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21764",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 659362,
+    "y": "-439406"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-25185.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 685214,
+    "y": "-443542"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22351",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "藏匿物",
+    "icon": "cnw",
+    "x": 652834,
+    "y": "-442731"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22370",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "藏匿物",
+    "icon": "cnw",
+    "x": 656073,
+    "y": "-440185"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24963",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 653835,
+    "y": "-453637"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21859",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 664778,
+    "y": "-439962"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21847",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 665026,
+    "y": "-436431"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21836",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 665110,
+    "y": "-439364"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21821",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 664039.2,
+    "y": "-436414"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22249",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 658900,
+    "y": "-440294"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "鸟窝",
+    "icon": "nw",
+    "x": 663622,
+    "y": "-439047"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21338",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 659496,
+    "y": "-439705"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21270",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑",
+    "icon": "dn",
+    "x": 663871,
+    "y": "-439853"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 663861,
+    "y": "-440870"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": 21364,
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 663604,
+    "y": "-441103"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 663127,
+    "y": "-440212"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 664060,
+    "y": "-440627"
+  },
+// 出生点
+{
+  "name": "出生点",
+  "type": "revive",
+  "icon": 'csd',
+  "x": "642030.562500",
+  "y": "-454288.562500",
+  "z": ""
+},
+{
+  "name": "出生点",
+  "type": "revive",
+  "icon": 'csd',
+  "x": "641868.000000",
+  "y": "-472453.812500",
+  "z": ""
+},
+{
+  "name": "出生点",
+  "type": "revive",
+  "icon": 'csd',
+  "x": "352348.562500",
+  "y": "-576832.375000",
+  "z": ""
+},
+{
+  "name": "出生点",
+  "type": "revive",
+  "icon": 'csd',
+  "x": "665390.312500",
+  "y": "-479538.906250",
+  "z": ""
+},
+{
+  "name": "出生点",
+  "type": "revive",
+  "icon": 'csd',
+  "x": "697247.12500",
+  "y": "-464868.593750",
+  "z": ""
+},
+{
+  "name": "出生点",
+  "type": "revive",
+  "icon": 'csd',
+  "x": "679688.500000",
+  "y": "-467399.687500",
+  "z": ""
+},
+{
+  "name": "出生点",
+  "type": "revive",
+  "icon": 'csd',
+  "x": "689175.562500",
+  "y": "-480478.718750",
+  "z": ""
+},
+{
+  "name": "出生点",
+  "type": "revive",
+  "icon": 'csd',
+  "x": "691724.312500",
+  "y": "-445028.250000",
+  "z": ""
+},
+{
+  "name": "出生点",
+  "type": "revive",
+  "icon": 'csd',
+  "x": "657532.812500",
+  "y": "-419005.406250",
+  "z": ""
+},
+{
+  "name": "拉闸撤离点",
+  "自定义区域": "直升机撤离点",
+  "type": "retreat",
+  "icon": 'dtcld',
+  "x": "672075.937500",
+  "y": "-440850.687500",
+  "z": ""
+},
+{
+  "name": "丢包撤离点",
+  "自定义区域": "试车场撤离点",
+  "type": "retreat",
+  "icon": 'tjcld',
+  "x": "687504.687500",
+  "y": "-427413.843750",
+  "z": "",
+  "撤离条件": "丢弃背包"
+},
+{
+  "name": "行动撤离点",
+  "自定义区域": "火箭撤离点",
+  "type": "retreat",
+  "icon": 'hjcld',
+  "x": "660050.062500",
+  "y": "-416314.531250",
+  "z": ""
+},
+]
+
+// 事件
+var navList2_htjd = [
+  {
+    titleType: 'all',
+    title: '全部',
+    typeList: [
+      {
+            "name": "保险箱",
+            "lang": "lang_bxg",
+            "idType": 1,
+            "num": 9,
+            "icon": "nav_bxx"
+          },
+          {
+            "name": "小保险箱",
+            "lang": "lang_xbxx",
+            "idType": 2,
+            "num": 4,
+            "icon": "nav_xbxx"
+          },
+          {
+            "name": "服务器",
+            "lang": "lang_fwq",
+            "idType": 3,
+            "num": 6,
+            "icon": "nav_fwq"
+          },
+          {
+            "name": "电脑",
+            "lang": "lang_dn",
+            "idType": 4,
+            "num": 5,
+            "icon": "nav_dn"
+          },
+          {
+            "name": "电脑机箱",
+            "lang": "lang_dnjx",
+            "idType": 5,
+            "num": 12,
+            "icon": "nav_dnjx"
+          },
+          {
+            "name": "电脑包",
+            "lang": "lang_dnb",
+            "idType": 5,
+            "num": 6,
+            "icon": "nav_dsb"
+          },
+          {
+            "name": "武器箱",
+            "lang": "lang_wqx",
+            "idType": 6,
+            "num": 4,
+            "icon": "nav_wqx"
+          },
+          {
+            "name": "大武器箱",
+            "lang": "lang_dwqx",
+            "idType": 7,
+            "num": 13,
+            "icon": "nav_dwqx"
+          },
+          {
+            "name": "弹药箱",
+            "lang": "lang_dyx",
+            "idType": 8,
+            "num": 13,
+            "icon": "nav_dyx"
+          },
+          {
+            "name": "工具柜",
+            "lang": "lang_gjg",
+            "idType": 9,
+            "num": 9,
+            "icon": "nav_gjg"
+          },
+          {
+            "name": "收纳盒",
+            "lang": "lang_dgjh",
+            "idType": 10,
+            "num": 18,
+            "icon": "nav_dgjx"
+          },
+          {
+            "name": "一件衣服",
+            "lang": "lang_yf",
+            "idType": 12,
+            "num": 33,
+            "icon": "nav_yf"
+          },
+          {
+            "name": "军用医疗包",
+            "lang": "lang_ylb",
+            "idType": 13,
+            "num": 8,
+            "icon": "nav_ylb"
+          },
+          {
+            "name": "医疗物资堆",
+            "lang": "lang_ylwzd",
+            "idType": 14,
+            "num": 7,
+            "icon": "nav_ylwzd"
+          },
+          {
+            "name": "旅行包",
+            "lang": "lang_lxd",
+            "idType": 15,
+            "num": 14,
+            "icon": "nav_lxd"
+          },
+          {
+            "name": "手提箱",
+            "lang": "lang_stx",
+            "idType": 16,
+            "num": 10,
+            "icon": "nav_stx"
+          },
+          {
+            "name": "储物柜",
+            "lang": "lang_cwg",
+            "idType": 17,
+            "num": 8,
+            "icon": "nav_cwg"
+          },
+          {
+            "name": "高级储物箱",
+            "lang": "lang_gjcwx",
+            "idType": 18,
+            "num": 15,
+            "icon": "nav_gjcwx"
+          },
+          {
+            "name": "抽屉柜",
+            "lang": "lang_ctg",
+            "idType": 19,
+            "num": 16,
+            "icon": "nav_ctg"
+          },
+          {
+            "name": "登山包",
+            "lang": "lang_dsb",
+            "idType": 20,
+            "num": 7,
+            "icon": "nav_dsb"
+          },
+          {
+            "name": "快递箱",
+            "lang": "lang_kdx",
+            "idType": 21,
+            "num": 21,
+            "icon": "nav_kdx"
+          },
+          {
+            "name": "航空储物箱",
+            "lang": "lang_hkcwx",
+            "idType": 22,
+            "num": 8,
+            "icon": "nav_hkcwx"
+          },
+          {
+            "name": "垃圾桶",
+            "lang": "lang_ljx",
+            "idType": 23,
+            "num": 5,
+            "icon": "nav_ljx"
+          },
+          {
+            "name": "搅拌车",
+            "lang": "lang_snc",
+            "idType": 24,
+            "num": 0,
+            "icon": "nav_snc"
+          },
+          {
+            "name": "野外物资箱",
+            "lang": "lang_ywwzx",
+            "idType": 25,
+            "num": 8,
+            "icon": "nav_ywwzx"
+          },
+          {
+            "name": "鸟窝",
+            "lang": "lang_nw",
+            "idType": 25,
+            "num": 7,
+            "icon": "nav_nw"
+          },
+          {
+            "name": "藏匿物",
+            "lang": "lang_cnw",
+            "idType": 25,
+            "num": 7,
+            "icon": "nav_cnw"
+          },
+          {
+            "name": "高级旅行箱",
+            "lang": "lang_gjlxx",
+            "idType": 25,
+            "num": 6,
+            "icon": "nav_xlx"
+          },
+          {
+            "name": "哈夫克返回舱",
+            "lang": "lang_hfkfhc",
+            "idType": 25,
+            "num": 1,
+            "icon": "nav_hfkfhc"
+          },
+      {
+        "name": "出生点",
+        "idType": 26,
+        "num": 8,
+        "icon": "nav_csd"
+      },
+      {
+        "name": "拉闸撤离点",
+        "idType": 27,
+        "num": 1,
+        "icon": "nav_dtcld"
+      },
+      {
+        "name": "丢包撤离点",
+        "idType": 27,
+        "num": 1,
+        "icon": "nav_tjcld"
+      },
+      {
+        "name": "行动撤离点",
+        "idType": 27,
+        "num": 1,
+        "icon": "nav_hjcld"
+      },
+      // {
+      //   "name": "首领",
+      //   "idType": 28,
+      //   "num": 0,
+      //   "icon": "nav_boss"
+      // },
+      // {
+      //   "name": "行动接取站",
+      //   "idType": 30,
+      //   "num": 0,
+      //   "icon": "nav_xdjqz"
+      // },
+      // {
+      //   "name": "高价值接取站",
+      //   "idType": 30,
+      //   "num": 0,
+      //   "icon": "nav_xdjqzgjz"
+      // }
+    ]
+  },
+  {
+    titleType: 'wzd',
+    title: '物资点',
+    typeList: [
+      {
+        "name": "保险箱",
+        "idType": 1,
+        "num": 8,
+        "icon": "nav_bxx"
+      },
+      {
+        "name": "小保险箱",
+        "idType": 2,
+        "num": 4,
+        "icon": "nav_xbxx"
+      },
+      {
+        "name": "服务器",
+        "idType": 3,
+        "num": 6,
+        "icon": "nav_fwq"
+      },
+      {
+        "name": "电脑",
+        "idType": 4,
+        "num": 3,
+        "icon": "nav_dn"
+      },
+      {
+        "name": "电脑包",
+        "idType": 25,
+        "num": 5,
+        "icon": "nav_dsb"
+      },
+      {
+        "name": "电脑机箱",
+        "idType": 5,
+        "num": 10,
+        "icon": "nav_dnjx"
+      },
+      {
+        "name": "武器箱",
+        "idType": 6,
+        "num": 4,
+        "icon": "nav_wqx"
+      },
+      {
+        "name": "大武器箱",
+        "idType": 7,
+        "num": 13,
+        "icon": "nav_dwqx"
+      },
+      {
+        "name": "弹药箱",
+        "idType": 8,
+        "num": 13,
+        "icon": "nav_dyx"
+      },
+      {
+        "name": "工具柜",
+        "idType": 9,
+        "num": 7,
+        "icon": "nav_gjg"
+      },
+      {
+        "name": "收纳盒",
+        "idType": 10,
+        "num": 17,
+        "icon": "nav_dgjx"
+      },
+      {
+        "name": "一件衣服",
+        "idType": 12,
+        "num": 33,
+        "icon": "nav_yf"
+      },
+      {
+        "name": "军用医疗包",
+        "idType": 13,
+        "num": 8,
+        "icon": "nav_ylb"
+      },
+      {
+        "name": "医疗物资堆",
+        "idType": 14,
+        "num": 7,
+        "icon": "nav_ylwzd"
+      },
+      {
+        "name": "旅行包",
+        "idType": 15,
+        "num": 10,
+        "icon": "nav_lxd"
+      },
+      {
+        "name": "手提箱",
+        "idType": 16,
+        "num": 6,
+        "icon": "nav_stx"
+      },
+      {
+        "name": "储物柜",
+        "idType": 17,
+        "num": 8,
+        "icon": "nav_cwg"
+      },
+      {
+        "name": "高级储物箱",
+        "idType": 18,
+        "num": 9,
+        "icon": "nav_gjcwx"
+      },
+      {
+        "name": "抽屉柜",
+        "idType": 19,
+        "num": 14,
+        "icon": "nav_ctg"
+      },
+      {
+        "name": "登山包",
+        "idType": 20,
+        "num": 4,
+        "icon": "nav_dsb"
+      },
+      {
+        "name": "快递箱",
+        "idType": 21,
+        "num": 17,
+        "icon": "nav_kdx"
+      },
+      {
+        "name": "航空储物箱",
+        "idType": 22,
+        "num": 8,
+        "icon": "nav_hkcwx"
+      },
+      {
+        "name": "垃圾桶",
+        "idType": 23,
+        "num": 5,
+        "icon": "nav_ljx"
+      },
+      // {
+      //   "name": "搅拌车",
+      //   "idType": 24,
+      //   "num": 0,
+      //   "icon": "nav_snc"
+      // },
+      {
+        "name": "野外物资箱",
+        "idType": 25,
+        "num": 8,
+        "icon": "nav_ywwzx"
+      },
+      {
+        "name": "鸟窝",
+        "idType": 25,
+        "num": 3,
+        "icon": "nav_nw"
+      },
+      {
+        "name": "藏匿物",
+        "idType": 25,
+        "num": 4,
+        "icon": "nav_cnw"
+      },
+      {
+        "name": "高级旅行箱",
+        "idType": 25,
+        "num": 3,
+        "icon": "nav_xlx"
+      },
+    ]
+  },
+  {
+    titleType: 'csd',
+    title: '出生点',
+    typeList: [
+      {
+        name: '出生点',
+        idType: 27,
+        icon: 'nav_csd',
+      }
+    ]
+  },
+  {
+    titleType: 'cld',
+    title: '撤离点',
+    typeList: [
+      {
+        name: '撤离点',
+        idType: 28,
+        icon: 'nav_cld',
+      }
+    ]
+  },
+  {
+    titleType: '首领',
+    title: '首领',
+    typeList: [
+      // {
+      //     name: '首领',
+      //     idType: 29,
+      //     num: 2,
+      //     icon: 'nav_boss',
+      // }
+    ]
+  },
+  {
+    titleType: 'xdjqz',
+    title: '行动接取站',
+    typeList: [
+      // {
+      //     name: '行动接取站',
+      //     idType: 30,
+      //     num: 20,
+      //     icon: 'nav_xdjqz',
+      // },
+      // {
+      //     name: '高价值接取站',
+      //     idType: 30,
+      //     num: 2,
+      //     icon: 'nav_xdjqzgjz',
+      // },
+    ]
+  }
+]
+
+// 事件-单个大类
+var navListInfo2_htjd = [
+  {
+    titleType: 'all',
+    title: '全部',
+    typeList: [
+      {
+            "name": "保险箱",
+            "lang": "lang_bxg",
+            "idType": 1,
+            "num": 9,
+            "icon": "nav_bxx"
+          },
+          {
+            "name": "小保险箱",
+            "lang": "lang_xbxx",
+            "idType": 2,
+            "num": 4,
+            "icon": "nav_xbxx"
+          },
+          {
+            "name": "服务器",
+            "lang": "lang_fwq",
+            "idType": 3,
+            "num": 6,
+            "icon": "nav_fwq"
+          },
+          {
+            "name": "电脑",
+            "lang": "lang_dn",
+            "idType": 4,
+            "num": 5,
+            "icon": "nav_dn"
+          },
+          {
+            "name": "电脑机箱",
+            "lang": "lang_dnjx",
+            "idType": 5,
+            "num": 12,
+            "icon": "nav_dnjx"
+          },
+          {
+            "name": "电脑包",
+            "lang": "lang_dnb",
+            "idType": 5,
+            "num": 6,
+            "icon": "nav_dsb"
+          },
+          {
+            "name": "武器箱",
+            "lang": "lang_wqx",
+            "idType": 6,
+            "num": 4,
+            "icon": "nav_wqx"
+          },
+          {
+            "name": "大武器箱",
+            "lang": "lang_dwqx",
+            "idType": 7,
+            "num": 13,
+            "icon": "nav_dwqx"
+          },
+          {
+            "name": "弹药箱",
+            "lang": "lang_dyx",
+            "idType": 8,
+            "num": 13,
+            "icon": "nav_dyx"
+          },
+          {
+            "name": "工具柜",
+            "lang": "lang_gjg",
+            "idType": 9,
+            "num": 9,
+            "icon": "nav_gjg"
+          },
+          {
+            "name": "收纳盒",
+            "lang": "lang_dgjh",
+            "idType": 10,
+            "num": 18,
+            "icon": "nav_dgjx"
+          },
+          {
+            "name": "一件衣服",
+            "lang": "lang_yf",
+            "idType": 12,
+            "num": 33,
+            "icon": "nav_yf"
+          },
+          {
+            "name": "军用医疗包",
+            "lang": "lang_ylb",
+            "idType": 13,
+            "num": 8,
+            "icon": "nav_ylb"
+          },
+          {
+            "name": "医疗物资堆",
+            "lang": "lang_ylwzd",
+            "idType": 14,
+            "num": 7,
+            "icon": "nav_ylwzd"
+          },
+          {
+            "name": "旅行包",
+            "lang": "lang_lxd",
+            "idType": 15,
+            "num": 14,
+            "icon": "nav_lxd"
+          },
+          {
+            "name": "手提箱",
+            "lang": "lang_stx",
+            "idType": 16,
+            "num": 10,
+            "icon": "nav_stx"
+          },
+          {
+            "name": "储物柜",
+            "lang": "lang_cwg",
+            "idType": 17,
+            "num": 8,
+            "icon": "nav_cwg"
+          },
+          {
+            "name": "高级储物箱",
+            "lang": "lang_gjcwx",
+            "idType": 18,
+            "num": 15,
+            "icon": "nav_gjcwx"
+          },
+          {
+            "name": "抽屉柜",
+            "lang": "lang_ctg",
+            "idType": 19,
+            "num": 16,
+            "icon": "nav_ctg"
+          },
+          {
+            "name": "登山包",
+            "lang": "lang_dsb",
+            "idType": 20,
+            "num": 7,
+            "icon": "nav_dsb"
+          },
+          {
+            "name": "快递箱",
+            "lang": "lang_kdx",
+            "idType": 21,
+            "num": 21,
+            "icon": "nav_kdx"
+          },
+          {
+            "name": "航空储物箱",
+            "lang": "lang_hkcwx",
+            "idType": 22,
+            "num": 8,
+            "icon": "nav_hkcwx"
+          },
+          {
+            "name": "垃圾桶",
+            "lang": "lang_ljx",
+            "idType": 23,
+            "num": 5,
+            "icon": "nav_ljx"
+          },
+          {
+            "name": "搅拌车",
+            "lang": "lang_snc",
+            "idType": 24,
+            "num": 0,
+            "icon": "nav_snc"
+          },
+          {
+            "name": "野外物资箱",
+            "lang": "lang_ywwzx",
+            "idType": 25,
+            "num": 8,
+            "icon": "nav_ywwzx"
+          },
+          {
+            "name": "鸟窝",
+            "lang": "lang_nw",
+            "idType": 25,
+            "num": 7,
+            "icon": "nav_nw"
+          },
+          {
+            "name": "藏匿物",
+            "lang": "lang_cnw",
+            "idType": 25,
+            "num": 7,
+            "icon": "nav_cnw"
+          },
+          {
+            "name": "高级旅行箱",
+            "lang": "lang_gjlxx",
+            "idType": 25,
+            "num": 6,
+            "icon": "nav_xlx"
+          },
+          {
+            "name": "哈夫克返回舱",
+            "lang": "lang_hfkfhc",
+            "idType": 25,
+            "num": 1,
+            "icon": "nav_hfkfhc"
+          },
+      {
+        "name": "出生点",
+        "idType": 26,
+        "num": 8,
+        "icon": "nav_csd"
+      },
+      {
+        "name": "拉闸撤离点",
+        "idType": 27,
+        "num": 1,
+        "icon": "nav_dtcld"
+      },
+      {
+        "name": "丢包撤离点",
+        "idType": 27,
+        "num": 1,
+        "icon": "nav_tjcld"
+      },
+      {
+        "name": "行动撤离点",
+        "idType": 27,
+        "num": 1,
+        "icon": "nav_hjcld"
+      }, ,
+      // {
+      //   "name": "首领",
+      //   "idType": 28,
+      //   "num": 0,
+      //   "icon": "nav_boss"
+      // },
+      // {
+      //   "name": "行动接取站",
+      //   "idType": 30,
+      //   "num": 0,
+      //   "icon": "nav_xdjqz"
+      // },
+      // {
+      //   "name": "高价值接取站",
+      //   "idType": 30,
+      //   "num": 0,
+      //   "icon": "nav_xdjqzgjz"
+      // }
+    ]
+  },
+  {
+    titleType: 'wzd',
+    title: '物资点',
+    typeList: [
+     {
+            "name": "保险箱",
+            "lang": "lang_bxg",
+            "idType": 1,
+            "num": 9,
+            "icon": "nav_bxx"
+          },
+          {
+            "name": "小保险箱",
+            "lang": "lang_xbxx",
+            "idType": 2,
+            "num": 4,
+            "icon": "nav_xbxx"
+          },
+          {
+            "name": "服务器",
+            "lang": "lang_fwq",
+            "idType": 3,
+            "num": 6,
+            "icon": "nav_fwq"
+          },
+          {
+            "name": "电脑",
+            "lang": "lang_dn",
+            "idType": 4,
+            "num": 5,
+            "icon": "nav_dn"
+          },
+          {
+            "name": "电脑机箱",
+            "lang": "lang_dnjx",
+            "idType": 5,
+            "num": 12,
+            "icon": "nav_dnjx"
+          },
+          {
+            "name": "电脑包",
+            "lang": "lang_dnb",
+            "idType": 5,
+            "num": 6,
+            "icon": "nav_dsb"
+          },
+          {
+            "name": "武器箱",
+            "lang": "lang_wqx",
+            "idType": 6,
+            "num": 4,
+            "icon": "nav_wqx"
+          },
+          {
+            "name": "大武器箱",
+            "lang": "lang_dwqx",
+            "idType": 7,
+            "num": 13,
+            "icon": "nav_dwqx"
+          },
+          {
+            "name": "弹药箱",
+            "lang": "lang_dyx",
+            "idType": 8,
+            "num": 13,
+            "icon": "nav_dyx"
+          },
+          {
+            "name": "工具柜",
+            "lang": "lang_gjg",
+            "idType": 9,
+            "num": 9,
+            "icon": "nav_gjg"
+          },
+          {
+            "name": "收纳盒",
+            "lang": "lang_dgjh",
+            "idType": 10,
+            "num": 18,
+            "icon": "nav_dgjx"
+          },
+          {
+            "name": "一件衣服",
+            "lang": "lang_yf",
+            "idType": 12,
+            "num": 33,
+            "icon": "nav_yf"
+          },
+          {
+            "name": "军用医疗包",
+            "lang": "lang_ylb",
+            "idType": 13,
+            "num": 8,
+            "icon": "nav_ylb"
+          },
+          {
+            "name": "医疗物资堆",
+            "lang": "lang_ylwzd",
+            "idType": 14,
+            "num": 7,
+            "icon": "nav_ylwzd"
+          },
+          {
+            "name": "旅行包",
+            "lang": "lang_lxd",
+            "idType": 15,
+            "num": 14,
+            "icon": "nav_lxd"
+          },
+          {
+            "name": "手提箱",
+            "lang": "lang_stx",
+            "idType": 16,
+            "num": 10,
+            "icon": "nav_stx"
+          },
+          {
+            "name": "储物柜",
+            "lang": "lang_cwg",
+            "idType": 17,
+            "num": 8,
+            "icon": "nav_cwg"
+          },
+          {
+            "name": "高级储物箱",
+            "lang": "lang_gjcwx",
+            "idType": 18,
+            "num": 15,
+            "icon": "nav_gjcwx"
+          },
+          {
+            "name": "抽屉柜",
+            "lang": "lang_ctg",
+            "idType": 19,
+            "num": 16,
+            "icon": "nav_ctg"
+          },
+          {
+            "name": "登山包",
+            "lang": "lang_dsb",
+            "idType": 20,
+            "num": 7,
+            "icon": "nav_dsb"
+          },
+          {
+            "name": "快递箱",
+            "lang": "lang_kdx",
+            "idType": 21,
+            "num": 21,
+            "icon": "nav_kdx"
+          },
+          {
+            "name": "航空储物箱",
+            "lang": "lang_hkcwx",
+            "idType": 22,
+            "num": 8,
+            "icon": "nav_hkcwx"
+          },
+          {
+            "name": "垃圾桶",
+            "lang": "lang_ljx",
+            "idType": 23,
+            "num": 5,
+            "icon": "nav_ljx"
+          },
+          {
+            "name": "搅拌车",
+            "lang": "lang_snc",
+            "idType": 24,
+            "num": 0,
+            "icon": "nav_snc"
+          },
+          {
+            "name": "野外物资箱",
+            "lang": "lang_ywwzx",
+            "idType": 25,
+            "num": 8,
+            "icon": "nav_ywwzx"
+          },
+          {
+            "name": "鸟窝",
+            "lang": "lang_nw",
+            "idType": 25,
+            "num": 7,
+            "icon": "nav_nw"
+          },
+          {
+            "name": "藏匿物",
+            "lang": "lang_cnw",
+            "idType": 25,
+            "num": 7,
+            "icon": "nav_cnw"
+          },
+          {
+            "name": "高级旅行箱",
+            "lang": "lang_gjlxx",
+            "idType": 25,
+            "num": 6,
+            "icon": "nav_xlx"
+          },
+          {
+            "name": "哈夫克返回舱",
+            "lang": "lang_hfkfhc",
+            "idType": 25,
+            "num": 1,
+            "icon": "nav_hfkfhc"
+          }
+    ]
+  },
+  {
+    titleType: 'csd',
+    title: '出生点',
+    typeList: [
+      {
+        name: '出生点',
+        idType: 26,
+        num: 8,
+        icon: 'nav_csd',
+      },
+    ]
+  },
+  {
+    titleType: 'cld',
+    title: '撤离点',
+    typeList: [
+      {
+        "name": "拉闸撤离点",
+        "idType": 27,
+        "num": 1,
+        "icon": "nav_dtcld"
+      },
+      {
+        "name": "丢包撤离点",
+        "idType": 27,
+        "num": 1,
+        "icon": "nav_tjcld"
+      },
+      {
+        "name": "行动撤离点",
+        "idType": 27,
+        "num": 1,
+        "icon": "nav_hjcld"
+      },
+    ]
+  },
+  {
+    titleType: '首领',
+    title: '首领',
+    typeList: [
+      // {
+      //     name: '首领',
+      //     idType: 29,
+      //     num: 0,
+      //     icon: 'nav_boss',
+      // }
+    ]
+  },
+  {
+    titleType: 'xdjqz',
+    title: '行动接取站',
+    typeList: [
+      // {
+      //     name: '行动接取站',
+      //     idType: 30,
+      //     num: 0,
+      //     icon: 'nav_xdjqz',
+      // },
+      // {
+      //     name: '高价值接取站',
+      //     idType: 30,
+      //     num: 0,
+      //     icon: 'nav_xdjqzgjz',
+      // },
+    ]
+  }
+]
+
+// 事件-普通
+var mapArticle2_htjd = [
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20926.5",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 661854,
+    "y": "-451773"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21955.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 672929,
+    "y": "-459886"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22619",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 696034,
+    "y": "-472179"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22620",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 696587,
+    "y": "-472179"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22033.6",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 696181.4,
+    "y": "-464094"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21672.4",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 643787.1,
+    "y": "-470335"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19886.7",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 663905.3,
+    "y": "-459187"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19886.7",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 663905.3,
+    "y": "-459077"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20695.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 664132,
+    "y": "-476221"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20695.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 664132,
+    "y": "-476830"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20695.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 664706.2,
+    "y": "-475291"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22635",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 696353,
+    "y": "-470084"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19670",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 670524,
+    "y": "-453166"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19670",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 670524,
+    "y": "-453047"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21199.4",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 675585,
+    "y": "-450255"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20870",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 662753,
+    "y": "-449237"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22572",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 696448,
+    "y": "-471024"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21785",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 643247,
+    "y": "-467106"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22040",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 646665,
+    "y": "-468270"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20865",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 665922,
+    "y": "-450765"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22735.5",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 657940,
+    "y": "-448830"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20319.6",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 674273,
+    "y": "-457630"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20240.7",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 667846,
+    "y": "-478836"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22005.9",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 694421,
+    "y": "-462587"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22003",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 695360,
+    "y": "-466067"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21716",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 676387,
+    "y": "-450543"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21712",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 676445,
+    "y": "-450088"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21171",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 663838,
+    "y": "-454865"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19796.2",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 670121.2,
+    "y": "-451748"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19796.2",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 670266.2,
+    "y": "-451751"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21012.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 663012.4,
+    "y": "-450593"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-27889.7",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 662051.9,
+    "y": "-456572"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20500.8",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 676014.6,
+    "y": "-457350"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22485.4",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 675685,
+    "y": "-459474"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19957.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 668854,
+    "y": "-455667"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20768",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 668753.6,
+    "y": "-479098"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19839.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 667703,
+    "y": "-453517"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21916",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 643767,
+    "y": "-467333"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19896.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 667665,
+    "y": "-455530"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21920",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 665046,
+    "y": "-476764"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22030.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 675297,
+    "y": "-454476"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21011.5",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 663146,
+    "y": "-449179"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21012.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 672380,
+    "y": "-459295"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20913",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 665169,
+    "y": "-450563"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21903.9",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 672035,
+    "y": "-475501"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20668.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 669195.3,
+    "y": "-478667"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20768",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 669256.3,
+    "y": "-478290"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20768",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 665851,
+    "y": "-478849"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22926",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 695260.3,
+    "y": "-464229"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22926",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 694805,
+    "y": "-464475"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22066",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 694884,
+    "y": "-463559"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22141.3",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 695198,
+    "y": "-465099"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22035",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 674040,
+    "y": "-448615"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21978.5",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 663590,
+    "y": "-460295"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22036.8",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 663660,
+    "y": "-460375"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21920",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 668480,
+    "y": "-476670"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22352",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "藏匿物",
+    "icon": "cnw",
+    "x": 652353,
+    "y": "-470414"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_水平试车厂",
+    "自定义区域": "水平试车场",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22367.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "藏匿物",
+    "icon": "cnw",
+    "x": 671435,
+    "y": "-437321"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22353.4",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "藏匿物",
+    "icon": "cnw",
+    "x": 666964,
+    "y": "-469405"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22353",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "藏匿物",
+    "icon": "cnw",
+    "x": 679382,
+    "y": "-472393"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22949.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "藏匿物",
+    "icon": "cnw",
+    "x": 694776,
+    "y": "-451613"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364.8",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 676372.5,
+    "y": "-450522"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364.8",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 676898.1,
+    "y": "-450401"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_水平试车厂",
+    "自定义区域": "水平试车场",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22055.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 685170,
+    "y": "-430970"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21012.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 663391,
+    "y": "-448536"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21780.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 664586,
+    "y": "-449511"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19802.5",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 668919.3,
+    "y": "-451097"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 663345,
+    "y": "-458445"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21013",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 672386,
+    "y": "-458972"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20768",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 668859,
+    "y": "-475585"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22142.3",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 694736,
+    "y": "-464989"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22189.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "鸟窝",
+    "icon": "nw",
+    "x": 655275,
+    "y": "-446412"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_水平试车厂",
+    "自定义区域": "水平试车场",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21925.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "鸟窝",
+    "icon": "nw",
+    "x": 675568,
+    "y": "-437623"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22950.7",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "鸟窝",
+    "icon": "nw",
+    "x": 686553,
+    "y": "-457151"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22932",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "鸟窝",
+    "icon": "nw",
+    "x": 686243,
+    "y": "-467092"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22665.9",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "鸟窝",
+    "icon": "nw",
+    "x": 684432,
+    "y": "-475050"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22097.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "鸟窝",
+    "icon": "nw",
+    "x": 681733,
+    "y": "-479003"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22225.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 643456,
+    "y": "-467901"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22097.5",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 647184,
+    "y": "-468979"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21924.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 675972,
+    "y": "-449853"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19716",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 669304,
+    "y": "-451914"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22013",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 661738,
+    "y": "-459085"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20615",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 672445,
+    "y": "-473668"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20639.9",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 672890,
+    "y": "-473713"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_发射区",
+    "自定义区域": "发射区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20702.5",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "野外物资箱",
+    "icon": "ywwzx",
+    "x": 655184,
+    "y": "-422585"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_发射区",
+    "自定义区域": "发射区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21756",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "野外物资箱",
+    "icon": "ywwzx",
+    "x": 663400,
+    "y": "-420080"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22037.6",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "小保险箱",
+    "icon": "xbxx",
+    "x": 674176.9,
+    "y": "-448634"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21860.3",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "小保险箱",
+    "icon": "xbxx",
+    "x": 663440,
+    "y": "-460300"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22372.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "小保险箱",
+    "icon": "xbxx",
+    "x": 662096.9,
+    "y": "-457531"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21856.7",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "小保险箱",
+    "icon": "xbxx",
+    "x": 672277.9,
+    "y": "-454264"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19839.8",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "大武器箱",
+    "icon": "dwqx",
+    "x": 670314.8,
+    "y": "-453482"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21012.3",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "大武器箱",
+    "icon": "dwqx",
+    "x": 673578,
+    "y": "-456626"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21788.4",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "大武器箱",
+    "icon": "dwqx",
+    "x": 648115,
+    "y": "-469573"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21778",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "大武器箱",
+    "icon": "dwqx",
+    "x": 661338,
+    "y": "-449479"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_水平试车厂",
+    "自定义区域": "水平试车场",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22344.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "大武器箱",
+    "icon": "dwqx",
+    "x": 679311,
+    "y": "-429125"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21908.9",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "大武器箱",
+    "icon": "dwqx",
+    "x": 676633,
+    "y": "-452212"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19770.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "大武器箱",
+    "icon": "dwqx",
+    "x": 669794,
+    "y": "-452240"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19956.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "大武器箱",
+    "icon": "dwqx",
+    "x": 663969,
+    "y": "-459463"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22040",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "大武器箱",
+    "icon": "dwqx",
+    "x": 673592.1,
+    "y": "-456131"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22844",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "大武器箱",
+    "icon": "dwqx",
+    "x": 680735,
+    "y": "-458327"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22140.9",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "大武器箱",
+    "icon": "dwqx",
+    "x": 695845,
+    "y": "-461866"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22712.9",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "大武器箱",
+    "icon": "dwqx",
+    "x": 694588,
+    "y": "-469186"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22713",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "大武器箱",
+    "icon": "dwqx",
+    "x": 693925,
+    "y": "-471663"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19807.7",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 667337,
+    "y": "-452530"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22334.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 647048,
+    "y": "-465044"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22056",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 648957,
+    "y": "-467177"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22844",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 658688,
+    "y": "-453638"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21920",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 665163,
+    "y": "-475387"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22031.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 675412,
+    "y": "-456374"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21012.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 672033,
+    "y": "-457399"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20695.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 672846,
+    "y": "-477730"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22704",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 689429,
+    "y": "-463706"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22844",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 682014,
+    "y": "-455757"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364.8",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 676625,
+    "y": "-450110"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22034.8",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 674241,
+    "y": "-448316"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22037.6",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 674280,
+    "y": "-448630"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22036.8",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 663605,
+    "y": "-460563"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21772",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 672412,
+    "y": "-452421"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22353.4",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 666663,
+    "y": "-469660"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22036.4",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 675511,
+    "y": "-459935"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20639.9",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 673105,
+    "y": "-473870"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22141.3",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 694557.5,
+    "y": "-466020"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21789",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 644038,
+    "y": "-469103"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21980.5",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 663607,
+    "y": "-452850"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21927",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 661694,
+    "y": "-459134"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21952.6",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 672087,
+    "y": "-457926"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20655.5",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 672731,
+    "y": "-476174"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22845.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 695541,
+    "y": "-463792"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21916",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 644041,
+    "y": "-467030"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21783.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 647484,
+    "y": "-468846"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 662663,
+    "y": "-455301"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22383",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "军用医疗包",
+    "icon": "ylb",
+    "x": 653951.8,
+    "y": "-470157"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22086.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "军用医疗包",
+    "icon": "ylb",
+    "x": 646985,
+    "y": "-468932"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21990.5",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "军用医疗包",
+    "icon": "ylb",
+    "x": 664442,
+    "y": "-452415"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21778.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "军用医疗包",
+    "icon": "ylb",
+    "x": 664942,
+    "y": "-457472"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364.8",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "军用医疗包",
+    "icon": "ylb",
+    "x": 662167,
+    "y": "-454915"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364.7",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "军用医疗包",
+    "icon": "ylb",
+    "x": 661678.8,
+    "y": "-455302"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "军用医疗包",
+    "icon": "ylb",
+    "x": 664314.3,
+    "y": "-455291"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "军用医疗包",
+    "icon": "ylb",
+    "x": 662399,
+    "y": "-454900"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22470.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "医疗物资堆",
+    "icon": "ylwzd",
+    "x": 644857.9,
+    "y": "-460457"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22037",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "医疗物资堆",
+    "icon": "ylwzd",
+    "x": 663897,
+    "y": "-451402"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22030.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "医疗物资堆",
+    "icon": "ylwzd",
+    "x": 662264,
+    "y": "-454192"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21908.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "医疗物资堆",
+    "icon": "ylwzd",
+    "x": 662814,
+    "y": "-458716"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-23085",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "医疗物资堆",
+    "icon": "ylwzd",
+    "x": 661798,
+    "y": "-457040"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21903.9",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "医疗物资堆",
+    "icon": "ylwzd",
+    "x": 665427,
+    "y": "-474974"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22353.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "医疗物资堆",
+    "icon": "ylwzd",
+    "x": 680935,
+    "y": "-469578"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22329.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "垃圾桶",
+    "icon": "ljx",
+    "x": 646040,
+    "y": "-465780"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_发射区",
+    "自定义区域": "发射区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21512.4",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "垃圾桶",
+    "icon": "ljx",
+    "x": 662060,
+    "y": "-426430"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_水平试车厂",
+    "自定义区域": "水平试车场",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22344.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "垃圾桶",
+    "icon": "ljx",
+    "x": 679665,
+    "y": "-429210"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21925.6",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "垃圾桶",
+    "icon": "ljx",
+    "x": 670131,
+    "y": "-473064"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22960.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "垃圾桶",
+    "icon": "ljx",
+    "x": 691105,
+    "y": "-478797"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364.8",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "服务器",
+    "icon": "fwq",
+    "x": 677268.9,
+    "y": "-450274"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364.8",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "服务器",
+    "icon": "fwq",
+    "x": 676996.9,
+    "y": "-450995"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21012.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "服务器",
+    "icon": "fwq",
+    "x": 662316,
+    "y": "-451829"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21012.3",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "服务器",
+    "icon": "fwq",
+    "x": 675499.2,
+    "y": "-457064"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21012.3",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "服务器",
+    "icon": "fwq",
+    "x": 675892.8,
+    "y": "-456579"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20639.9",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "服务器",
+    "icon": "fwq",
+    "x": 673509,
+    "y": "-474125"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364.8",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 676599,
+    "y": "-450979"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21012.3",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 676822,
+    "y": "-456839"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22036.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 673695,
+    "y": "-459563"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22926",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 696068,
+    "y": "-461971"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22141.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 696770,
+    "y": "-463565"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_发射区",
+    "自定义区域": "发射区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21404",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 661800,
+    "y": "-417680"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22844",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 657946,
+    "y": "-452599"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21908.9",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 674296,
+    "y": "-451835"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21255.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 674923,
+    "y": "-450554"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21909.6",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 661023,
+    "y": "-456423"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21909.6",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 661023,
+    "y": "-456550"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20768",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 665159,
+    "y": "-477634"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20908.9",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 672604,
+    "y": "-458472"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22352.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 674605.2,
+    "y": "-458782"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22040",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 680394,
+    "y": "-475652"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20639.9",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 672198,
+    "y": "-473719"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22926",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 691675,
+    "y": "-464235"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22926",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "收纳盒",
+    "icon": "dgjx",
+    "x": 694371.6,
+    "y": "-460994"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_发射区",
+    "自定义区域": "发射区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21523.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "野外物资箱",
+    "icon": "ywwzx",
+    "x": 663260,
+    "y": "-424480"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_发射区",
+    "自定义区域": "发射区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20707",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "野外物资箱",
+    "icon": "ywwzx",
+    "x": 656687,
+    "y": "-420595"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22036.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "野外物资箱",
+    "icon": "ywwzx",
+    "x": 664834,
+    "y": "-452655"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_水平试车厂",
+    "自定义区域": "水平试车场",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22200",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "野外物资箱",
+    "icon": "ywwzx",
+    "x": 676920,
+    "y": "-432860"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22036.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "野外物资箱",
+    "icon": "ywwzx",
+    "x": 672828,
+    "y": "-456239"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22141",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "野外物资箱",
+    "icon": "ywwzx",
+    "x": 692483,
+    "y": "-452249"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22844",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 657429,
+    "y": "-451603"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20768",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 665217.3,
+    "y": "-476172"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22717.9",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 691635,
+    "y": "-468647"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22718",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 695716,
+    "y": "-469595"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22056",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "弹药箱",
+    "icon": "dyx",
+    "x": 649620,
+    "y": "-465177"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22620",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "弹药箱",
+    "icon": "dyx",
+    "x": 649635.9,
+    "y": "-457794"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22036.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "弹药箱",
+    "icon": "dyx",
+    "x": 665686,
+    "y": "-452899"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19956.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "弹药箱",
+    "icon": "dyx",
+    "x": 665558,
+    "y": "-459128"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "弹药箱",
+    "icon": "dyx",
+    "x": 663862,
+    "y": "-455298"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20768",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "弹药箱",
+    "icon": "dyx",
+    "x": 666150,
+    "y": "-475668"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19957.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "弹药箱",
+    "icon": "dyx",
+    "x": 668652,
+    "y": "-454846"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19954.7",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "弹药箱",
+    "icon": "dyx",
+    "x": 669871.9,
+    "y": "-454246"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20640.1",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "弹药箱",
+    "icon": "dyx",
+    "x": 672355.7,
+    "y": "-474157"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20640.1",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "弹药箱",
+    "icon": "dyx",
+    "x": 672816.6,
+    "y": "-474149"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22844",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "弹药箱",
+    "icon": "dyx",
+    "x": 680728,
+    "y": "-458075"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22719.5",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "弹药箱",
+    "icon": "dyx",
+    "x": 694100.1,
+    "y": "-465981"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22717.9",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "弹药箱",
+    "icon": "dyx",
+    "x": 693810,
+    "y": "-468516"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22205",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "航空储物箱",
+    "icon": "hkcwx",
+    "x": 647665,
+    "y": "-470030"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22034.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "航空储物箱",
+    "icon": "hkcwx",
+    "x": 662500,
+    "y": "-449700"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21905.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "航空储物箱",
+    "icon": "hkcwx",
+    "x": 675242.3,
+    "y": "-451220"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-23109.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "航空储物箱",
+    "icon": "hkcwx",
+    "x": 663229,
+    "y": "-455209"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22033.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "航空储物箱",
+    "icon": "hkcwx",
+    "x": 676731,
+    "y": "-458550"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21980.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "航空储物箱",
+    "icon": "hkcwx",
+    "x": 673915.1,
+    "y": "-454119"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22341",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "航空储物箱",
+    "icon": "hkcwx",
+    "x": 680034.2,
+    "y": "-463950"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20631.9",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "航空储物箱",
+    "icon": "hkcwx",
+    "x": 673382.8,
+    "y": "-474770"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21012.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 671851,
+    "y": "-459464"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_水平试车厂",
+    "自定义区域": "水平试车场",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22050.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 684510,
+    "y": "-431500"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21009.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 665874,
+    "y": "-450118"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 673870,
+    "y": "-450766"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19770.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 668073.6,
+    "y": "-450920"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22036.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 661073,
+    "y": "-459559"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21921",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 664499,
+    "y": "-474868"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20768",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 664197.8,
+    "y": "-477877"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20639.9",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 672665,
+    "y": "-473690"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20639.9",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 672750,
+    "y": "-473690"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20768",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 664682.8,
+    "y": "-479119"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22926",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 694627,
+    "y": "-462665"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22141.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 694555,
+    "y": "-463929"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22141.3",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 694458,
+    "y": "-464772"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21012.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 663830,
+    "y": "-452275"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22926",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 695605,
+    "y": "-461989"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中控室",
+    "自定义区域": "中控室",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20352",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 669765,
+    "y": "-478725"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22098",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑包",
+    "icon": "dsb",
+    "x": 643435,
+    "y": "-469885"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21848.6",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑包",
+    "icon": "dsb",
+    "x": 674724,
+    "y": "-450142"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21861.4",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑包",
+    "icon": "dsb",
+    "x": 661000,
+    "y": "-458780"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19895.9",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑包",
+    "icon": "dsb",
+    "x": 670024,
+    "y": "-455529"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20899",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑包",
+    "icon": "dsb",
+    "x": 665009,
+    "y": "-450030"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-20469",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "电脑包",
+    "icon": "dsb",
+    "x": 671758,
+    "y": "-473775"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_发射区",
+    "自定义区域": "发射区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22362.6",
+    "拾取条件": "断桥事件",
+    "出现条件": "断桥事件",
+    "name": "哈夫克返回舱",
+    "icon": "hfkfhc",
+    "x": 668464.8,
+    "y": "-433862"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_西区",
+    "自定义区域": "西区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21816.6",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑",
+    "icon": "dn",
+    "x": 643661,
+    "y": "-467539"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-19711.4",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑",
+    "icon": "dn",
+    "x": 668639,
+    "y": "-451136"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22066.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑",
+    "icon": "dn",
+    "x": 694747,
+    "y": "-463562"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21004.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "储物柜",
+    "icon": "cwg",
+    "x": 664680,
+    "y": "-448479"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21004.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "储物柜",
+    "icon": "cwg",
+    "x": 664680,
+    "y": "-448569"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21004.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "储物柜",
+    "icon": "cwg",
+    "x": 664680,
+    "y": "-448658"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21004.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "储物柜",
+    "icon": "cwg",
+    "x": 664680,
+    "y": "-448747"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22037",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "储物柜",
+    "icon": "cwg",
+    "x": 673741,
+    "y": "-459785"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22037",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "储物柜",
+    "icon": "cwg",
+    "x": 673741,
+    "y": "-459873"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22036.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "储物柜",
+    "icon": "cwg",
+    "x": 663262,
+    "y": "-452892"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22036.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "储物柜",
+    "icon": "cwg",
+    "x": 663351,
+    "y": "-452892"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22036.8",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "武器箱",
+    "icon": "wqx",
+    "x": 662091,
+    "y": "-452645"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21013",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "武器箱",
+    "icon": "wqx",
+    "x": 661287,
+    "y": "-449357"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22037",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "武器箱",
+    "icon": "wqx",
+    "x": 675045,
+    "y": "-456004"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22037",
+    "拾取条件": "需要使用钥匙卡才能开启",
+    "出现条件": "",
+    "name": "武器箱",
+    "icon": "wqx",
+    "x": 673214,
+    "y": "-456129"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_发射区",
+    "自定义区域": "发射区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21421.09766",
+    "拾取条件": "",
+    "出现条件": "飞升者行动",
+    "name": "电脑",
+    "icon": "dn",
+    "x": 657158.3125,
+    "y": "-418684"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 664558,
+    "y": "-440413"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22350.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 658115,
+    "y": "-440439"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21859",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 665443,
+    "y": "-439261"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 658014,
+    "y": "-439952"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 664569,
+    "y": "-437844"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 657992,
+    "y": "-441014"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21361",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 666484,
+    "y": "-437321"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22346",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 659859,
+    "y": "-440958"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24325",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 685906,
+    "y": "-438732"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24265.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 688930,
+    "y": "-443480"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21859",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 663586,
+    "y": "-440363"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21802.5",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 662768,
+    "y": "-440946"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21855",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 658951,
+    "y": "-440637"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24657",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 686171,
+    "y": "-445918"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21847",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 664454,
+    "y": "-436127"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21847",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 665749,
+    "y": "-437577"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22350",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 658833,
+    "y": "-439725"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21764",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 659362,
+    "y": "-439406"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-25185.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 685214,
+    "y": "-443542"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22351",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "藏匿物",
+    "icon": "cnw",
+    "x": 652834,
+    "y": "-442731"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22370",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "藏匿物",
+    "icon": "cnw",
+    "x": 656073,
+    "y": "-440185"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24963",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 653835,
+    "y": "-453637"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21859",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 664778,
+    "y": "-439962"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21847",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 665026,
+    "y": "-436431"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21836",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 665110,
+    "y": "-439364"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21821",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 664039.2,
+    "y": "-436414"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22249",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 658900,
+    "y": "-440294"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "鸟窝",
+    "icon": "nw",
+    "x": 663622,
+    "y": "-439047"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21338",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 659496,
+    "y": "-439705"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21270",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑",
+    "icon": "dn",
+    "x": 663871,
+    "y": "-439853"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 663861,
+    "y": "-440870"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": 21364,
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 663604,
+    "y": "-441103"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 663127,
+    "y": "-440212"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 664060,
+    "y": "-440627"
   },
 // 出生点
 {
@@ -4612,4551 +10118,6 @@ var mapArticle_htjd = [
 },
 ]
 
-// 事件
-var navList2_htjd = [
-  {
-    titleType: 'all',
-    title: '全部',
-    typeList: [
-      {
-        "name": "保险柜",
-        "lang": "lang_bxg",
-        "idType": 1,
-        "num": 8,
-        "icon": "nav_bxx"
-      },
-      {
-        "name": "小保险箱",
-        "lang": "lang_xbxx",
-        "idType": 2,
-        "num": 4,
-        "icon": "nav_xbxx"
-      },
-      {
-        "name": "服务器",
-        "lang": "lang_fwq",
-        "idType": 3,
-        "num": 6,
-        "icon": "nav_fwq"
-      },
-      {
-        "name": "电脑",
-        "lang": "lang_dn",
-        "idType": 4,
-        "num": 4,
-        "icon": "nav_dn"
-      },
-      {
-        "name": "电脑机箱",
-        "lang": "lang_dnjx",
-        "idType": 5,
-        "num": 10,
-        "icon": "nav_dnjx"
-      },
-      {
-        "name": "武器箱",
-        "lang": "lang_wqx",
-        "idType": 6,
-        "num": 4,
-        "icon": "nav_wqx"
-      },
-      {
-        "name": "大武器箱",
-        "lang": "lang_dwqx",
-        "idType": 7,
-        "num": 13,
-        "icon": "nav_dwqx"
-      },
-      {
-        "name": "弹药箱",
-        "lang": "lang_dyx",
-        "idType": 8,
-        "num": 13,
-        "icon": "nav_dyx"
-      },
-      {
-        "name": "工具柜",
-        "lang": "lang_gjg",
-        "idType": 9,
-        "num": 7,
-        "icon": "nav_gjg"
-      },
-      {
-        "name": "大工具盒",
-        "lang": "lang_dgjh",
-        "idType": 10,
-        "num": 18,
-        "icon": "nav_dgjx"
-      },
-      {
-        "name": "实验服",
-        "lang": "lang_syf",
-        "idType": 11,
-        "num": 13,
-        "icon": "nav_yf_s"
-      },
-      {
-        "name": "衣服",
-        "lang": "lang_yf",
-        "idType": 12,
-        "num": 20,
-        "icon": "nav_yf"
-      },
-      {
-        "name": "医疗包",
-        "lang": "lang_ylb",
-        "idType": 13,
-        "num": 8,
-        "icon": "nav_ylb"
-      },
-      {
-        "name": "医疗物资堆",
-        "lang": "lang_ylwzd",
-        "idType": 14,
-        "num": 7,
-        "icon": "nav_ylwzd"
-      },
-      {
-        "name": "旅行袋",
-        "lang": "lang_lxd",
-        "idType": 15,
-        "num": 10,
-        "icon": "nav_lxd"
-      },
-      {
-        "name": "手提箱",
-        "lang": "lang_stx",
-        "idType": 16,
-        "num": 7,
-        "icon": "nav_stx"
-      },
-      {
-        "name": "储物柜",
-        "lang": "lang_cwg",
-        "idType": 17,
-        "num": 8,
-        "icon": "nav_cwg"
-      },
-      {
-        "name": "高级储物箱",
-        "lang": "lang_gjcwx",
-        "idType": 18,
-        "num": 9,
-        "icon": "nav_gjcwx"
-      },
-      {
-        "name": "抽屉柜",
-        "lang": "lang_ctg",
-        "idType": 19,
-        "num": 14,
-        "icon": "nav_ctg"
-      },
-      {
-        "name": "登山包",
-        "lang": "lang_dsb",
-        "idType": 20,
-        "num": 4,
-        "icon": "nav_dsb"
-      },
-      {
-        "name": "快递箱",
-        "lang": "lang_kdx",
-        "idType": 21,
-        "num": 17,
-        "icon": "nav_kdx"
-      },
-      {
-        "name": "航空储物箱",
-        "lang": "lang_hkcwx",
-        "idType": 22,
-        "num": 8,
-        "icon": "nav_hkcwx"
-      },
-      {
-        "name": "垃圾箱",
-        "lang": "lang_ljx",
-        "idType": 23,
-        "num": 5,
-        "icon": "nav_ljx"
-      },
-      {
-        "name": "野外物资箱",
-        "lang": "lang_ywwzx",
-        "idType": 25,
-        "num": 8,
-        "icon": "nav_ywwzx"
-      },
-      {
-        "name": "鸟窝",
-        "lang": "lang_nw",
-        "idType": 25,
-        "num": 6,
-        "icon": "nav_nw"
-      },
-      {
-        "name": "藏匿物",
-        "lang": "lang_cnw",
-        "idType": 25,
-        "num": 5,
-        "icon": "nav_cnw"
-      },
-      {
-        "name": "高级旅行箱",
-        "lang": "lang_gjlxx",
-        "idType": 25,
-        "num": 3,
-        "icon": "nav_xlx"
-      },
-      {
-        "name": "哈夫克返回舱",
-        "lang": "lang_hfkfhc",
-        "idType": 25,
-        "num": 1,
-        "icon": "nav_hfkfhc"
-      },
-      {
-        "name": "出生点",
-        "idType": 26,
-        "num": 8,
-        "icon": "nav_csd"
-      },
-      {
-        "name": "拉闸撤离点",
-        "idType": 27,
-        "num": 1,
-        "icon": "nav_dtcld"
-      },
-      {
-        "name": "丢包撤离点",
-        "idType": 27,
-        "num": 1,
-        "icon": "nav_tjcld"
-      },
-      {
-        "name": "行动撤离点",
-        "idType": 27,
-        "num": 1,
-        "icon": "nav_hjcld"
-      },
-      // {
-      //   "name": "首领",
-      //   "idType": 28,
-      //   "num": 0,
-      //   "icon": "nav_boss"
-      // },
-      // {
-      //   "name": "行动接取站",
-      //   "idType": 30,
-      //   "num": 0,
-      //   "icon": "nav_xdjqz"
-      // },
-      // {
-      //   "name": "高价值接取站",
-      //   "idType": 30,
-      //   "num": 0,
-      //   "icon": "nav_xdjqzgjz"
-      // }
-    ]
-  },
-  {
-    titleType: 'wzd',
-    title: '物资点',
-    typeList: [
-      {
-        "name": "保险柜",
-        "idType": 1,
-        "num": 8,
-        "icon": "nav_bxx"
-      },
-      {
-        "name": "小保险箱",
-        "idType": 2,
-        "num": 4,
-        "icon": "nav_xbxx"
-      },
-      {
-        "name": "服务器",
-        "idType": 3,
-        "num": 6,
-        "icon": "nav_fwq"
-      },
-      {
-        "name": "电脑",
-        "idType": 4,
-        "num": 3,
-        "icon": "nav_dn"
-      },
-      {
-        "name": "电脑包",
-        "idType": 25,
-        "num": 5,
-        "icon": "nav_dsb"
-      },
-      {
-        "name": "电脑机箱",
-        "idType": 5,
-        "num": 10,
-        "icon": "nav_dnjx"
-      },
-      {
-        "name": "武器箱",
-        "idType": 6,
-        "num": 4,
-        "icon": "nav_wqx"
-      },
-      {
-        "name": "大武器箱",
-        "idType": 7,
-        "num": 13,
-        "icon": "nav_dwqx"
-      },
-      {
-        "name": "弹药箱",
-        "idType": 8,
-        "num": 13,
-        "icon": "nav_dyx"
-      },
-      {
-        "name": "工具柜",
-        "idType": 9,
-        "num": 7,
-        "icon": "nav_gjg"
-      },
-      {
-        "name": "大工具盒",
-        "idType": 10,
-        "num": 17,
-        "icon": "nav_dgjx"
-      },
-      {
-        "name": "实验服",
-        "idType": 11,
-        "num": 13,
-        "icon": "nav_yf_s"
-      },
-      {
-        "name": "衣服",
-        "idType": 12,
-        "num": 20,
-        "icon": "nav_yf"
-      },
-      {
-        "name": "医疗包",
-        "idType": 13,
-        "num": 8,
-        "icon": "nav_ylb"
-      },
-      {
-        "name": "医疗物资堆",
-        "idType": 14,
-        "num": 7,
-        "icon": "nav_ylwzd"
-      },
-      {
-        "name": "旅行袋",
-        "idType": 15,
-        "num": 10,
-        "icon": "nav_lxd"
-      },
-      {
-        "name": "手提箱",
-        "idType": 16,
-        "num": 6,
-        "icon": "nav_stx"
-      },
-      {
-        "name": "储物柜",
-        "idType": 17,
-        "num": 8,
-        "icon": "nav_cwg"
-      },
-      {
-        "name": "高级储物箱",
-        "idType": 18,
-        "num": 9,
-        "icon": "nav_gjcwx"
-      },
-      {
-        "name": "抽屉柜",
-        "idType": 19,
-        "num": 14,
-        "icon": "nav_ctg"
-      },
-      {
-        "name": "登山包",
-        "idType": 20,
-        "num": 4,
-        "icon": "nav_dsb"
-      },
-      {
-        "name": "快递箱",
-        "idType": 21,
-        "num": 17,
-        "icon": "nav_kdx"
-      },
-      {
-        "name": "航空储物箱",
-        "idType": 22,
-        "num": 8,
-        "icon": "nav_hkcwx"
-      },
-      {
-        "name": "垃圾箱",
-        "idType": 23,
-        "num": 5,
-        "icon": "nav_ljx"
-      },
-      // {
-      //   "name": "水泥车",
-      //   "idType": 24,
-      //   "num": 0,
-      //   "icon": "nav_snc"
-      // },
-      {
-        "name": "野外物资箱",
-        "idType": 25,
-        "num": 8,
-        "icon": "nav_ywwzx"
-      },
-      {
-        "name": "鸟窝",
-        "idType": 25,
-        "num": 3,
-        "icon": "nav_nw"
-      },
-      {
-        "name": "藏匿物",
-        "idType": 25,
-        "num": 4,
-        "icon": "nav_cnw"
-      },
-      {
-        "name": "高级旅行箱",
-        "idType": 25,
-        "num": 3,
-        "icon": "nav_xlx"
-      },
-    ]
-  },
-  {
-    titleType: 'csd',
-    title: '出生点',
-    typeList: [
-      {
-        name: '出生点',
-        idType: 27,
-        icon: 'nav_csd',
-      }
-    ]
-  },
-  {
-    titleType: 'cld',
-    title: '撤离点',
-    typeList: [
-      {
-        name: '撤离点',
-        idType: 28,
-        icon: 'nav_cld',
-      }
-    ]
-  },
-  {
-    titleType: '首领',
-    title: '首领',
-    typeList: [
-      // {
-      //     name: '首领',
-      //     idType: 29,
-      //     num: 2,
-      //     icon: 'nav_boss',
-      // }
-    ]
-  },
-  {
-    titleType: 'xdjqz',
-    title: '行动接取站',
-    typeList: [
-      // {
-      //     name: '行动接取站',
-      //     idType: 30,
-      //     num: 20,
-      //     icon: 'nav_xdjqz',
-      // },
-      // {
-      //     name: '高价值接取站',
-      //     idType: 30,
-      //     num: 2,
-      //     icon: 'nav_xdjqzgjz',
-      // },
-    ]
-  }
-]
-
-// 事件-单个大类
-var navListInfo2_htjd = [
-  {
-    titleType: 'all',
-    title: '全部',
-    typeList: [
-      {
-        "name": "保险柜",
-        "lang": "lang_bxg",
-        "idType": 1,
-        "num": 8,
-        "icon": "nav_bxx"
-      },
-      {
-        "name": "小保险箱",
-        "lang": "lang_xbxx",
-        "idType": 2,
-        "num": 4,
-        "icon": "nav_xbxx"
-      },
-      {
-        "name": "服务器",
-        "lang": "lang_fwq",
-        "idType": 3,
-        "num": 6,
-        "icon": "nav_fwq"
-      },
-      {
-        "name": "电脑",
-        "lang": "lang_dn",
-        "idType": 4,
-        "num": 4,
-        "icon": "nav_dn"
-      },
-      {
-        "name": "电脑机箱",
-        "lang": "lang_dnjx",
-        "idType": 5,
-        "num": 10,
-        "icon": "nav_dnjx"
-      },
-      {
-        "name": "武器箱",
-        "lang": "lang_wqx",
-        "idType": 6,
-        "num": 4,
-        "icon": "nav_wqx"
-      },
-      {
-        "name": "大武器箱",
-        "lang": "lang_dwqx",
-        "idType": 7,
-        "num": 13,
-        "icon": "nav_dwqx"
-      },
-      {
-        "name": "弹药箱",
-        "lang": "lang_dyx",
-        "idType": 8,
-        "num": 13,
-        "icon": "nav_dyx"
-      },
-      {
-        "name": "工具柜",
-        "lang": "lang_gjg",
-        "idType": 9,
-        "num": 7,
-        "icon": "nav_gjg"
-      },
-      {
-        "name": "大工具盒",
-        "lang": "lang_dgjh",
-        "idType": 10,
-        "num": 18,
-        "icon": "nav_dgjx"
-      },
-      {
-        "name": "实验服",
-        "lang": "lang_syf",
-        "idType": 11,
-        "num": 13,
-        "icon": "nav_yf_s"
-      },
-      {
-        "name": "衣服",
-        "lang": "lang_yf",
-        "idType": 12,
-        "num": 20,
-        "icon": "nav_yf"
-      },
-      {
-        "name": "医疗包",
-        "lang": "lang_ylb",
-        "idType": 13,
-        "num": 8,
-        "icon": "nav_ylb"
-      },
-      {
-        "name": "医疗物资堆",
-        "lang": "lang_ylwzd",
-        "idType": 14,
-        "num": 7,
-        "icon": "nav_ylwzd"
-      },
-      {
-        "name": "旅行袋",
-        "lang": "lang_lxd",
-        "idType": 15,
-        "num": 10,
-        "icon": "nav_lxd"
-      },
-      {
-        "name": "手提箱",
-        "lang": "lang_stx",
-        "idType": 16,
-        "num": 7,
-        "icon": "nav_stx"
-      },
-      {
-        "name": "储物柜",
-        "lang": "lang_cwg",
-        "idType": 17,
-        "num": 8,
-        "icon": "nav_cwg"
-      },
-      {
-        "name": "高级储物箱",
-        "lang": "lang_gjcwx",
-        "idType": 18,
-        "num": 9,
-        "icon": "nav_gjcwx"
-      },
-      {
-        "name": "抽屉柜",
-        "lang": "lang_ctg",
-        "idType": 19,
-        "num": 14,
-        "icon": "nav_ctg"
-      },
-      {
-        "name": "登山包",
-        "lang": "lang_dsb",
-        "idType": 20,
-        "num": 4,
-        "icon": "nav_dsb"
-      },
-      {
-        "name": "快递箱",
-        "lang": "lang_kdx",
-        "idType": 21,
-        "num": 17,
-        "icon": "nav_kdx"
-      },
-      {
-        "name": "航空储物箱",
-        "lang": "lang_hkcwx",
-        "idType": 22,
-        "num": 8,
-        "icon": "nav_hkcwx"
-      },
-      {
-        "name": "垃圾箱",
-        "lang": "lang_ljx",
-        "idType": 23,
-        "num": 5,
-        "icon": "nav_ljx"
-      },
-      {
-        "name": "野外物资箱",
-        "lang": "lang_ywwzx",
-        "idType": 25,
-        "num": 8,
-        "icon": "nav_ywwzx"
-      },
-      {
-        "name": "鸟窝",
-        "lang": "lang_nw",
-        "idType": 25,
-        "num": 6,
-        "icon": "nav_nw"
-      },
-      {
-        "name": "藏匿物",
-        "lang": "lang_cnw",
-        "idType": 25,
-        "num": 5,
-        "icon": "nav_cnw"
-      },
-      {
-        "name": "高级旅行箱",
-        "lang": "lang_gjlxx",
-        "idType": 25,
-        "num": 3,
-        "icon": "nav_xlx"
-      },
-      {
-        "name": "哈夫克返回舱",
-        "lang": "lang_hfkfhc",
-        "idType": 25,
-        "num": 1,
-        "icon": "nav_hfkfhc"
-      },
-      {
-        "name": "出生点",
-        "idType": 26,
-        "num": 8,
-        "icon": "nav_csd"
-      },
-      {
-        "name": "拉闸撤离点",
-        "idType": 27,
-        "num": 1,
-        "icon": "nav_dtcld"
-      },
-      {
-        "name": "丢包撤离点",
-        "idType": 27,
-        "num": 1,
-        "icon": "nav_tjcld"
-      },
-      {
-        "name": "行动撤离点",
-        "idType": 27,
-        "num": 1,
-        "icon": "nav_hjcld"
-      }, ,
-      // {
-      //   "name": "首领",
-      //   "idType": 28,
-      //   "num": 0,
-      //   "icon": "nav_boss"
-      // },
-      // {
-      //   "name": "行动接取站",
-      //   "idType": 30,
-      //   "num": 0,
-      //   "icon": "nav_xdjqz"
-      // },
-      // {
-      //   "name": "高价值接取站",
-      //   "idType": 30,
-      //   "num": 0,
-      //   "icon": "nav_xdjqzgjz"
-      // }
-    ]
-  },
-  {
-    titleType: 'wzd',
-    title: '物资点',
-    typeList: [
-      {
-        "name": "保险柜",
-        "lang": "lang_bxg",
-        "idType": 1,
-        "num": 8,
-        "icon": "nav_bxx"
-      },
-      {
-        "name": "小保险箱",
-        "lang": "lang_xbxx",
-        "idType": 2,
-        "num": 4,
-        "icon": "nav_xbxx"
-      },
-      {
-        "name": "服务器",
-        "lang": "lang_fwq",
-        "idType": 3,
-        "num": 6,
-        "icon": "nav_fwq"
-      },
-      {
-        "name": "电脑",
-        "lang": "lang_dn",
-        "idType": 4,
-        "num": 4,
-        "icon": "nav_dn"
-      },
-      {
-        "name": "电脑机箱",
-        "lang": "lang_dnjx",
-        "idType": 5,
-        "num": 10,
-        "icon": "nav_dnjx"
-      },
-      {
-        "name": "武器箱",
-        "lang": "lang_wqx",
-        "idType": 6,
-        "num": 4,
-        "icon": "nav_wqx"
-      },
-      {
-        "name": "大武器箱",
-        "lang": "lang_dwqx",
-        "idType": 7,
-        "num": 13,
-        "icon": "nav_dwqx"
-      },
-      {
-        "name": "弹药箱",
-        "lang": "lang_dyx",
-        "idType": 8,
-        "num": 13,
-        "icon": "nav_dyx"
-      },
-      {
-        "name": "工具柜",
-        "lang": "lang_gjg",
-        "idType": 9,
-        "num": 7,
-        "icon": "nav_gjg"
-      },
-      {
-        "name": "大工具盒",
-        "lang": "lang_dgjh",
-        "idType": 10,
-        "num": 18,
-        "icon": "nav_dgjx"
-      },
-      {
-        "name": "实验服",
-        "lang": "lang_syf",
-        "idType": 11,
-        "num": 13,
-        "icon": "nav_yf_s"
-      },
-      {
-        "name": "衣服",
-        "lang": "lang_yf",
-        "idType": 12,
-        "num": 20,
-        "icon": "nav_yf"
-      },
-      {
-        "name": "医疗包",
-        "lang": "lang_ylb",
-        "idType": 13,
-        "num": 8,
-        "icon": "nav_ylb"
-      },
-      {
-        "name": "医疗物资堆",
-        "lang": "lang_ylwzd",
-        "idType": 14,
-        "num": 7,
-        "icon": "nav_ylwzd"
-      },
-      {
-        "name": "旅行袋",
-        "lang": "lang_lxd",
-        "idType": 15,
-        "num": 10,
-        "icon": "nav_lxd"
-      },
-      {
-        "name": "手提箱",
-        "lang": "lang_stx",
-        "idType": 16,
-        "num": 7,
-        "icon": "nav_stx"
-      },
-      {
-        "name": "储物柜",
-        "lang": "lang_cwg",
-        "idType": 17,
-        "num": 8,
-        "icon": "nav_cwg"
-      },
-      {
-        "name": "高级储物箱",
-        "lang": "lang_gjcwx",
-        "idType": 18,
-        "num": 9,
-        "icon": "nav_gjcwx"
-      },
-      {
-        "name": "抽屉柜",
-        "lang": "lang_ctg",
-        "idType": 19,
-        "num": 14,
-        "icon": "nav_ctg"
-      },
-      {
-        "name": "登山包",
-        "lang": "lang_dsb",
-        "idType": 20,
-        "num": 4,
-        "icon": "nav_dsb"
-      },
-      {
-        "name": "快递箱",
-        "lang": "lang_kdx",
-        "idType": 21,
-        "num": 17,
-        "icon": "nav_kdx"
-      },
-      {
-        "name": "航空储物箱",
-        "lang": "lang_hkcwx",
-        "idType": 22,
-        "num": 8,
-        "icon": "nav_hkcwx"
-      },
-      {
-        "name": "垃圾箱",
-        "lang": "lang_ljx",
-        "idType": 23,
-        "num": 5,
-        "icon": "nav_ljx"
-      },
-      {
-        "name": "野外物资箱",
-        "lang": "lang_ywwzx",
-        "idType": 25,
-        "num": 8,
-        "icon": "nav_ywwzx"
-      },
-      {
-        "name": "鸟窝",
-        "lang": "lang_nw",
-        "idType": 25,
-        "num": 6,
-        "icon": "nav_nw"
-      },
-      {
-        "name": "藏匿物",
-        "lang": "lang_cnw",
-        "idType": 25,
-        "num": 5,
-        "icon": "nav_cnw"
-      },
-      {
-        "name": "高级旅行箱",
-        "lang": "lang_gjlxx",
-        "idType": 25,
-        "num": 3,
-        "icon": "nav_xlx"
-      },
-      {
-        "name": "哈夫克返回舱",
-        "lang": "lang_hfkfhc",
-        "idType": 25,
-        "num": 1,
-        "icon": "nav_hfkfhc"
-      }
-    ]
-  },
-  {
-    titleType: 'csd',
-    title: '出生点',
-    typeList: [
-      {
-        name: '出生点',
-        idType: 26,
-        num: 8,
-        icon: 'nav_csd',
-      },
-    ]
-  },
-  {
-    titleType: 'cld',
-    title: '撤离点',
-    typeList: [
-      {
-        "name": "拉闸撤离点",
-        "idType": 27,
-        "num": 1,
-        "icon": "nav_dtcld"
-      },
-      {
-        "name": "丢包撤离点",
-        "idType": 27,
-        "num": 1,
-        "icon": "nav_tjcld"
-      },
-      {
-        "name": "行动撤离点",
-        "idType": 27,
-        "num": 1,
-        "icon": "nav_hjcld"
-      },
-    ]
-  },
-  {
-    titleType: '首领',
-    title: '首领',
-    typeList: [
-      // {
-      //     name: '首领',
-      //     idType: 29,
-      //     num: 0,
-      //     icon: 'nav_boss',
-      // }
-    ]
-  },
-  {
-    titleType: 'xdjqz',
-    title: '行动接取站',
-    typeList: [
-      // {
-      //     name: '行动接取站',
-      //     idType: 30,
-      //     num: 0,
-      //     icon: 'nav_xdjqz',
-      // },
-      // {
-      //     name: '高价值接取站',
-      //     idType: 30,
-      //     num: 0,
-      //     icon: 'nav_xdjqzgjz',
-      // },
-    ]
-  }
-]
-
-// 事件-普通
-var mapArticle2_htjd = [
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20926.5",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "661854",
-    "y": "-451773"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21955.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "672929",
-    "y": "-459886"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22619",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "696034",
-    "y": "-472179"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22620",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "696587",
-    "y": "-472179"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22033.6",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "696181.4",
-    "y": "-464094"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21672.4",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "643787.1",
-    "y": "-470335"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19886.7",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "663905.3",
-    "y": "-459187"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19886.7",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "663905.3",
-    "y": "-459077"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20695.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "664132",
-    "y": "-476221"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20695.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "664132",
-    "y": "-476830"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20695.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "664706.2",
-    "y": "-475291"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22635",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "696353",
-    "y": "-470084"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19670",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "670524",
-    "y": "-453166"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19670",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "670524",
-    "y": "-453047"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21199.4",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "675585",
-    "y": "-450255"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20870",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "662753",
-    "y": "-449237"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22572",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "696448",
-    "y": "-471024"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21785",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "643247",
-    "y": "-467106"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22040",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "646665",
-    "y": "-468270"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20865",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "665922",
-    "y": "-450765"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22735.5",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "657940",
-    "y": "-448830"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20319.6",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "674273",
-    "y": "-457630"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20240.7",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "667846",
-    "y": "-478836"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22005.9",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "694421",
-    "y": "-462587"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22003",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "695360",
-    "y": "-466067"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21716",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "676387",
-    "y": "-450543"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21712",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "676445",
-    "y": "-450088"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21171",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "663838",
-    "y": "-454865"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19796.2",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "保险柜",
-    "icon": "bxx",
-    "x": "670121.2",
-    "y": "-451748"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19796.2",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "保险柜",
-    "icon": "bxx",
-    "x": "670266.2",
-    "y": "-451751"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21012.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "保险柜",
-    "icon": "bxx",
-    "x": "663012.4",
-    "y": "-450593"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-27889.7",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "保险柜",
-    "icon": "bxx",
-    "x": "662051.9",
-    "y": "-456572"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20500.8",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "保险柜",
-    "icon": "bxx",
-    "x": "676014.6",
-    "y": "-457350"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22485.4",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "保险柜",
-    "icon": "bxx",
-    "x": "675685",
-    "y": "-459474"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19957.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "保险柜",
-    "icon": "bxx",
-    "x": "668854",
-    "y": "-455667"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20768",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "保险柜",
-    "icon": "bxx",
-    "x": "668753.6",
-    "y": "-479098"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19839.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "667703",
-    "y": "-453517"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21916",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "643767",
-    "y": "-467333"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19896.1",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "667665",
-    "y": "-455530"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21920",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "665046",
-    "y": "-476764"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22030.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "675297",
-    "y": "-454476"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21011.5",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "663146",
-    "y": "-449179"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21012.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "672380",
-    "y": "-459295"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20913",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "665169",
-    "y": "-450563"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21903.9",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "672035",
-    "y": "-475501"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20668.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "669195.3",
-    "y": "-478667"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20768",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "669256.3",
-    "y": "-478290"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20768",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "665851",
-    "y": "-478849"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22926",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "695260.3",
-    "y": "-464229"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22926",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "694805",
-    "y": "-464475"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22066",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "694884",
-    "y": "-463559"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22141.3",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "695198",
-    "y": "-465099"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22035",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "登山包",
-    "icon": "dsb",
-    "x": "674040",
-    "y": "-448615"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21978.5",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "登山包",
-    "icon": "dsb",
-    "x": "663590",
-    "y": "-460295"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22036.8",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "登山包",
-    "icon": "dsb",
-    "x": "663660",
-    "y": "-460375"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21920",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "登山包",
-    "icon": "dsb",
-    "x": "668480",
-    "y": "-476670"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22352",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "藏匿物",
-    "icon": "cnw",
-    "x": "652353",
-    "y": "-470414"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_水平试车厂",
-    "自定义区域": "水平试车场",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22367.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "藏匿物",
-    "icon": "cnw",
-    "x": "671435",
-    "y": "-437321"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22353.4",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "藏匿物",
-    "icon": "cnw",
-    "x": "666964",
-    "y": "-469405"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22353",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "藏匿物",
-    "icon": "cnw",
-    "x": "679382",
-    "y": "-472393"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22949.1",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "藏匿物",
-    "icon": "cnw",
-    "x": "694776",
-    "y": "-451613"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21364.8",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "676372.5",
-    "y": "-450522"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21364.8",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "676898.1",
-    "y": "-450401"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_水平试车厂",
-    "自定义区域": "水平试车场",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22055.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "685170",
-    "y": "-430970"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21012.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "663391",
-    "y": "-448536"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21780.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "664586",
-    "y": "-449511"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19802.5",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "668919.3",
-    "y": "-451097"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21364.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "663345",
-    "y": "-458445"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21013",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "672386",
-    "y": "-458972"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20768",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "668859",
-    "y": "-475585"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22142.3",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "694736",
-    "y": "-464989"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22189.1",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "鸟窝",
-    "icon": "nw",
-    "x": "655275",
-    "y": "-446412"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_水平试车厂",
-    "自定义区域": "水平试车场",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21925.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "鸟窝",
-    "icon": "nw",
-    "x": "675568",
-    "y": "-437623"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22950.7",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "鸟窝",
-    "icon": "nw",
-    "x": "686553",
-    "y": "-457151"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22932",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "鸟窝",
-    "icon": "nw",
-    "x": "686243",
-    "y": "-467092"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22665.9",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "鸟窝",
-    "icon": "nw",
-    "x": "684432",
-    "y": "-475050"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22097.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "鸟窝",
-    "icon": "nw",
-    "x": "681733",
-    "y": "-479003"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22225.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "手提箱",
-    "icon": "stx",
-    "x": "643456",
-    "y": "-467901"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22097.5",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "手提箱",
-    "icon": "stx",
-    "x": "647184",
-    "y": "-468979"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21924.1",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "手提箱",
-    "icon": "stx",
-    "x": "675972",
-    "y": "-449853"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19716",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "手提箱",
-    "icon": "stx",
-    "x": "669304",
-    "y": "-451914"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22013",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "手提箱",
-    "icon": "stx",
-    "x": "661738",
-    "y": "-459085"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20615",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "手提箱",
-    "icon": "stx",
-    "x": "672445",
-    "y": "-473668"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20639.9",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "手提箱",
-    "icon": "stx",
-    "x": "672890",
-    "y": "-473713"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_发射区",
-    "自定义区域": "发射区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20702.5",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "野外物资箱",
-    "icon": "ywwzx",
-    "x": "655184",
-    "y": "-422585"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_发射区",
-    "自定义区域": "发射区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21756",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "野外物资箱",
-    "icon": "ywwzx",
-    "x": "663400",
-    "y": "-420080"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22037.6",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "小保险箱",
-    "icon": "xbxx",
-    "x": "674176.9",
-    "y": "-448634"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21860.3",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "小保险箱",
-    "icon": "xbxx",
-    "x": "663440",
-    "y": "-460300"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22372.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "小保险箱",
-    "icon": "xbxx",
-    "x": "662096.9",
-    "y": "-457531"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21856.7",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "小保险箱",
-    "icon": "xbxx",
-    "x": "672277.9",
-    "y": "-454264"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19839.8",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "670314.8",
-    "y": "-453482"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21012.3",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "673578",
-    "y": "-456626"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21788.4",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "648115",
-    "y": "-469573"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21778",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "661338",
-    "y": "-449479"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_水平试车厂",
-    "自定义区域": "水平试车场",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22344.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "679311",
-    "y": "-429125"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21908.9",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "676633",
-    "y": "-452212"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19770.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "669794",
-    "y": "-452240"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19956.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "663969",
-    "y": "-459463"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22040",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "673592.1",
-    "y": "-456131"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22844",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "680735",
-    "y": "-458327"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22140.9",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "695845",
-    "y": "-461866"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22712.9",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "694588",
-    "y": "-469186"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22713",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "693925",
-    "y": "-471663"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19807.7",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "旅行袋",
-    "icon": "lxd",
-    "x": "667337",
-    "y": "-452530"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22334.1",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "旅行袋",
-    "icon": "lxd",
-    "x": "647048",
-    "y": "-465044"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22056",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "旅行袋",
-    "icon": "lxd",
-    "x": "648957",
-    "y": "-467177"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22844",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "旅行袋",
-    "icon": "lxd",
-    "x": "658688",
-    "y": "-453638"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21920",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "旅行袋",
-    "icon": "lxd",
-    "x": "665163",
-    "y": "-475387"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22031.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "旅行袋",
-    "icon": "lxd",
-    "x": "675412",
-    "y": "-456374"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21012.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "旅行袋",
-    "icon": "lxd",
-    "x": "672033",
-    "y": "-457399"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20695.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "旅行袋",
-    "icon": "lxd",
-    "x": "672846",
-    "y": "-477730"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22704",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "旅行袋",
-    "icon": "lxd",
-    "x": "689429",
-    "y": "-463706"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22844",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "旅行袋",
-    "icon": "lxd",
-    "x": "682014",
-    "y": "-455757"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21364.8",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "高级储物箱",
-    "icon": "gjcwx",
-    "x": "676625",
-    "y": "-450110"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22034.8",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "高级储物箱",
-    "icon": "gjcwx",
-    "x": "674241",
-    "y": "-448316"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22037.6",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "高级储物箱",
-    "icon": "gjcwx",
-    "x": "674280",
-    "y": "-448630"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22036.8",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "高级储物箱",
-    "icon": "gjcwx",
-    "x": "663605",
-    "y": "-460563"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21772",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "高级储物箱",
-    "icon": "gjcwx",
-    "x": "672412",
-    "y": "-452421"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22353.4",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "高级储物箱",
-    "icon": "gjcwx",
-    "x": "666663",
-    "y": "-469660"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22036.4",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "高级储物箱",
-    "icon": "gjcwx",
-    "x": "675511",
-    "y": "-459935"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20639.9",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "高级储物箱",
-    "icon": "gjcwx",
-    "x": "673105",
-    "y": "-473870"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22141.3",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "高级储物箱",
-    "icon": "gjcwx",
-    "x": "694557.5",
-    "y": "-466020"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21789",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "644038",
-    "y": "-469103"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21980.5",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "663607",
-    "y": "-452850"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21927",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "661694",
-    "y": "-459134"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21952.6",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "672087",
-    "y": "-457926"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20655.5",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "672731",
-    "y": "-476174"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22845.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "快递箱",
-    "icon": "kdx",
-    "x": "695541",
-    "y": "-463792"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21916",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "高级旅行箱",
-    "icon": "xlx",
-    "x": "644041",
-    "y": "-467030"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21783.1",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "高级旅行箱",
-    "icon": "xlx",
-    "x": "647484",
-    "y": "-468846"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21364.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "高级旅行箱",
-    "icon": "xlx",
-    "x": "662663",
-    "y": "-455301"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22383",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗包",
-    "icon": "ylb",
-    "x": "653951.8",
-    "y": "-470157"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22086.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗包",
-    "icon": "ylb",
-    "x": "646985",
-    "y": "-468932"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21990.5",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗包",
-    "icon": "ylb",
-    "x": "664442",
-    "y": "-452415"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21778.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗包",
-    "icon": "ylb",
-    "x": "664942",
-    "y": "-457472"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21364.8",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "医疗包",
-    "icon": "ylb",
-    "x": "662167",
-    "y": "-454915"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21364.7",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "医疗包",
-    "icon": "ylb",
-    "x": "661678.8",
-    "y": "-455302"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21364.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗包",
-    "icon": "ylb",
-    "x": "664314.3",
-    "y": "-455291"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21364.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗包",
-    "icon": "ylb",
-    "x": "662399",
-    "y": "-454900"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22470.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗物资堆",
-    "icon": "ylwzd",
-    "x": "644857.9",
-    "y": "-460457"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22037",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗物资堆",
-    "icon": "ylwzd",
-    "x": "663897",
-    "y": "-451402"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22030.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗物资堆",
-    "icon": "ylwzd",
-    "x": "662264",
-    "y": "-454192"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21908.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗物资堆",
-    "icon": "ylwzd",
-    "x": "662814",
-    "y": "-458716"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-23085",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗物资堆",
-    "icon": "ylwzd",
-    "x": "661798",
-    "y": "-457040"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21903.9",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗物资堆",
-    "icon": "ylwzd",
-    "x": "665427",
-    "y": "-474974"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22353.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗物资堆",
-    "icon": "ylwzd",
-    "x": "680935",
-    "y": "-469578"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22329.1",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "垃圾箱",
-    "icon": "ljx",
-    "x": "646040",
-    "y": "-465780"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_发射区",
-    "自定义区域": "发射区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21512.4",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "垃圾箱",
-    "icon": "ljx",
-    "x": "662060",
-    "y": "-426430"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_水平试车厂",
-    "自定义区域": "水平试车场",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22344.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "垃圾箱",
-    "icon": "ljx",
-    "x": "679665",
-    "y": "-429210"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21925.6",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "垃圾箱",
-    "icon": "ljx",
-    "x": "670131",
-    "y": "-473064"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22960.1",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "垃圾箱",
-    "icon": "ljx",
-    "x": "691105",
-    "y": "-478797"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21364.8",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "服务器",
-    "icon": "fwq",
-    "x": "677268.9",
-    "y": "-450274"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21364.8",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "服务器",
-    "icon": "fwq",
-    "x": "676996.9",
-    "y": "-450995"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21012.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "服务器",
-    "icon": "fwq",
-    "x": "662316",
-    "y": "-451829"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21012.3",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "服务器",
-    "icon": "fwq",
-    "x": "675499.2",
-    "y": "-457064"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21012.3",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "服务器",
-    "icon": "fwq",
-    "x": "675892.8",
-    "y": "-456579"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20639.9",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "服务器",
-    "icon": "fwq",
-    "x": "673509",
-    "y": "-474125"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21364.8",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "676599",
-    "y": "-450979"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21012.3",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "676822",
-    "y": "-456839"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22036.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "673695",
-    "y": "-459563"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22926",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "696068",
-    "y": "-461971"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22141.1",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "696770",
-    "y": "-463565"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_发射区",
-    "自定义区域": "发射区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21404",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "661800",
-    "y": "-417680"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22844",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "657946",
-    "y": "-452599"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21908.9",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "674296",
-    "y": "-451835"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21255.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "674923",
-    "y": "-450554"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21909.6",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "661023",
-    "y": "-456423"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21909.6",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "661023",
-    "y": "-456550"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20768",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "665159",
-    "y": "-477634"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20908.9",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "672604",
-    "y": "-458472"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22352.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "674605.2",
-    "y": "-458782"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22040",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "680394",
-    "y": "-475652"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20639.9",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "672198",
-    "y": "-473719"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22926",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "691675",
-    "y": "-464235"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22926",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "694371.6",
-    "y": "-460994"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_发射区",
-    "自定义区域": "发射区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21523.1",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "野外物资箱",
-    "icon": "ywwzx",
-    "x": "663260",
-    "y": "-424480"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_发射区",
-    "自定义区域": "发射区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20707",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "野外物资箱",
-    "icon": "ywwzx",
-    "x": "656687",
-    "y": "-420595"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22036.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "野外物资箱",
-    "icon": "ywwzx",
-    "x": "664834",
-    "y": "-452655"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_水平试车厂",
-    "自定义区域": "水平试车场",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22200",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "野外物资箱",
-    "icon": "ywwzx",
-    "x": "676920",
-    "y": "-432860"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22036.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "野外物资箱",
-    "icon": "ywwzx",
-    "x": "672828",
-    "y": "-456239"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22141",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "野外物资箱",
-    "icon": "ywwzx",
-    "x": "692483",
-    "y": "-452249"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22844",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "工具柜",
-    "icon": "gjg",
-    "x": "657429",
-    "y": "-451603"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20768",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "工具柜",
-    "icon": "gjg",
-    "x": "665217.3",
-    "y": "-476172"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22717.9",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "工具柜",
-    "icon": "gjg",
-    "x": "691635",
-    "y": "-468647"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22718",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "工具柜",
-    "icon": "gjg",
-    "x": "695716",
-    "y": "-469595"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22056",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "649620",
-    "y": "-465177"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22620",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "649635.9",
-    "y": "-457794"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22036.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "665686",
-    "y": "-452899"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19956.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "665558",
-    "y": "-459128"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21364.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "663862",
-    "y": "-455298"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20768",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "666150",
-    "y": "-475668"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19957.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "668652",
-    "y": "-454846"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19954.7",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "669871.9",
-    "y": "-454246"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20640.1",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "672355.7",
-    "y": "-474157"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20640.1",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "672816.6",
-    "y": "-474149"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22844",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "680728",
-    "y": "-458075"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22719.5",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "694100.1",
-    "y": "-465981"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22717.9",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "693810",
-    "y": "-468516"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22205",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "航空储物箱",
-    "icon": "hkcwx",
-    "x": "647665",
-    "y": "-470030"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22034.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "航空储物箱",
-    "icon": "hkcwx",
-    "x": "662500",
-    "y": "-449700"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21905.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "航空储物箱",
-    "icon": "hkcwx",
-    "x": "675242.3",
-    "y": "-451220"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-23109.1",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "航空储物箱",
-    "icon": "hkcwx",
-    "x": "663229",
-    "y": "-455209"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22033.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "航空储物箱",
-    "icon": "hkcwx",
-    "x": "676731",
-    "y": "-458550"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21980.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "航空储物箱",
-    "icon": "hkcwx",
-    "x": "673915.1",
-    "y": "-454119"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22341",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "航空储物箱",
-    "icon": "hkcwx",
-    "x": "680034.2",
-    "y": "-463950"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20631.9",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "航空储物箱",
-    "icon": "hkcwx",
-    "x": "673382.8",
-    "y": "-474770"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21012.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "671851",
-    "y": "-459464"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_水平试车厂",
-    "自定义区域": "水平试车场",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22050.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "684510",
-    "y": "-431500"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21009.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "665874",
-    "y": "-450118"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21364.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "673870",
-    "y": "-450766"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19770.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "668073.6",
-    "y": "-450920"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22036.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "661073",
-    "y": "-459559"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21921",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "664499",
-    "y": "-474868"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20768",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "664197.8",
-    "y": "-477877"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20639.9",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "672665",
-    "y": "-473690"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20639.9",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "672750",
-    "y": "-473690"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20768",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "664682.8",
-    "y": "-479119"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22926",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "694627",
-    "y": "-462665"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22141.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "694555",
-    "y": "-463929"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22141.3",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "694458",
-    "y": "-464772"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21012.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "工具柜",
-    "icon": "gjg",
-    "x": "663830",
-    "y": "-452275"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22926",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "工具柜",
-    "icon": "gjg",
-    "x": "695605",
-    "y": "-461989"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20352",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "工具柜",
-    "icon": "gjg",
-    "x": "669765",
-    "y": "-478725"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22098",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑包",
-    "icon": "dsb",
-    "x": "643435",
-    "y": "-469885"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21848.6",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑包",
-    "icon": "dsb",
-    "x": "674724",
-    "y": "-450142"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21861.4",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑包",
-    "icon": "dsb",
-    "x": "661000",
-    "y": "-458780"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19895.9",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑包",
-    "icon": "dsb",
-    "x": "670024",
-    "y": "-455529"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20899",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑包",
-    "icon": "dsb",
-    "x": "665009",
-    "y": "-450030"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_合同",
-    "自定义区域": "行动奖励",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-20469",
-    "拾取条件": "需要完成局内行动才能开启",
-    "出现条件": "",
-    "name": "电脑包",
-    "icon": "dsb",
-    "x": "671758",
-    "y": "-473775"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_发射区",
-    "自定义区域": "发射区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22362.6",
-    "拾取条件": "断桥事件",
-    "出现条件": "断桥事件",
-    "name": "哈夫克返回舱",
-    "icon": "hfkfhc",
-    "x": "668464.8",
-    "y": "-433862"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21816.6",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑",
-    "icon": "dn",
-    "x": "643661",
-    "y": "-467539"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-19711.4",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑",
-    "icon": "dn",
-    "x": "668639",
-    "y": "-451136"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22066.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑",
-    "icon": "dn",
-    "x": "694747",
-    "y": "-463562"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21004.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "储物柜",
-    "icon": "cwg",
-    "x": "664680",
-    "y": "-448479"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21004.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "储物柜",
-    "icon": "cwg",
-    "x": "664680",
-    "y": "-448569"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21004.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "储物柜",
-    "icon": "cwg",
-    "x": "664680",
-    "y": "-448658"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21004.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "储物柜",
-    "icon": "cwg",
-    "x": "664680",
-    "y": "-448747"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22037",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "储物柜",
-    "icon": "cwg",
-    "x": "673741",
-    "y": "-459785"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22037",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "储物柜",
-    "icon": "cwg",
-    "x": "673741",
-    "y": "-459873"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22036.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "储物柜",
-    "icon": "cwg",
-    "x": "663262",
-    "y": "-452892"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22036.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "储物柜",
-    "icon": "cwg",
-    "x": "663351",
-    "y": "-452892"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22036.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "武器箱",
-    "icon": "wqx",
-    "x": "662091",
-    "y": "-452645"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21013",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "武器箱",
-    "icon": "wqx",
-    "x": "661287",
-    "y": "-449357"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22037",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "武器箱",
-    "icon": "wqx",
-    "x": "675045",
-    "y": "-456004"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-22037",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "武器箱",
-    "icon": "wqx",
-    "x": "673214",
-    "y": "-456129"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_发射区",
-    "自定义区域": "发射区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "默认全倍场",
-    "z坐标": "-21421.09766",
-    "拾取条件": "",
-    "出现条件": "飞升者行动",
-    "name": "电脑",
-    "icon": "dn",
-    "x": "657158.3125",
-    "y": "-418684"
-  },
-  // 出生点
-  {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "642030.562500",
-    "y": "-454288.562500",
-    "z": ""
-  },
-  {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "641868.000000",
-    "y": "-472453.812500",
-    "z": ""
-  },
-  {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "352348.562500",
-    "y": "-576832.375000",
-    "z": ""
-  },
-  {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "665390.312500",
-    "y": "-479538.906250",
-    "z": ""
-  },
-  {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "697247.12500",
-    "y": "-464868.593750",
-    "z": ""
-  },
-  {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "679688.500000",
-    "y": "-467399.687500",
-    "z": ""
-  },
-  {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "689175.562500",
-    "y": "-480478.718750",
-    "z": ""
-  },
-  {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "691724.312500",
-    "y": "-445028.250000",
-    "z": ""
-  },
-  {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "657532.812500",
-    "y": "-419005.406250",
-    "z": ""
-  },
-  {
-    "name": "拉闸撤离点",
-    "自定义区域": "直升机撤离点",
-    "type": "retreat",
-    "icon": 'dtcld',
-    "x": "672075.937500",
-    "y": "-440850.687500",
-    "z": ""
-  },
-  {
-    "name": "丢包撤离点",
-    "自定义区域": "试车场撤离点",
-    "type": "retreat",
-    "icon": 'tjcld',
-    "x": "687504.687500",
-    "y": "-427413.843750",
-    "z": "",
-  "撤离条件": "丢弃背包"
-  },
-  {
-    "name": "行动撤离点",
-    "自定义区域": "火箭撤离点",
-    "type": "retreat",
-    "icon": 'hjcld',
-    "x": "660050.062500",
-    "y": "-416314.531250",
-    "z": ""
-  },
-]
-
 // 机密-------
 // 全部
 var navList3_htjd = [
@@ -9165,194 +10126,201 @@ var navList3_htjd = [
     title: '全部',
     typeList: [
       {
-        "name": "保险柜",
-        "lang": "lang_bxg",
-        "idType": 1,
-        "num": 8,
-        "icon": "nav_bxx"
-      },
-      {
-        "name": "小保险箱",
-        "lang": "lang_xbxx",
-        "idType": 2,
-        "num": 6,
-        "icon": "nav_xbxx"
-      },
-      {
-        "name": "服务器",
-        "lang": "lang_fwq",
-        "idType": 3,
-        "num": 8,
-        "icon": "nav_fwq"
-      },
-      {
-        "name": "电脑",
-        "lang": "lang_dn",
-        "idType": 4,
-        "num": 4,
-        "icon": "nav_dn"
-      },
-      {
-        "name": "电脑机箱",
-        "lang": "lang_dnjx",
-        "idType": 5,
-        "num": 16,
-        "icon": "nav_dnjx"
-      },
-      {
-        "name": "武器箱",
-        "lang": "lang_wqx",
-        "idType": 6,
-        "num": 4,
-        "icon": "nav_wqx"
-      },
-      {
-        "name": "大武器箱",
-        "lang": "lang_dwqx",
-        "idType": 7,
-        "num": 15,
-        "icon": "nav_dwqx"
-      },
-      {
-        "name": "弹药箱",
-        "lang": "lang_dyx",
-        "idType": 8,
-        "num": 15,
-        "icon": "nav_dyx"
-      },
-      {
-        "name": "工具柜",
-        "lang": "lang_gjg",
-        "idType": 9,
-        "num": 9,
-        "icon": "nav_gjg"
-      },
-      {
-        "name": "大工具盒",
-        "lang": "lang_dgjh",
-        "idType": 10,
-        "num": 25,
-        "icon": "nav_dgjx"
-      },
-      {
-        "name": "实验服",
-        "lang": "lang_syf",
-        "idType": 11,
-        "num": 14,
-        "icon": "nav_yf_s"
-      },
-      {
-        "name": "衣服",
-        "lang": "lang_yf",
-        "idType": 12,
-        "num": 21,
-        "icon": "nav_yf"
-      },
-      {
-        "name": "医疗包",
-        "lang": "lang_ylb",
-        "idType": 13,
-        "num": 13,
-        "icon": "nav_ylb"
-      },
-      {
-        "name": "医疗物资堆",
-        "lang": "lang_ylwzd",
-        "idType": 14,
-        "num": 8,
-        "icon": "nav_ylwzd"
-      },
-      {
-        "name": "旅行袋",
-        "lang": "lang_lxd",
-        "idType": 15,
-        "num": 10,
-        "icon": "nav_lxd"
-      },
-      {
-        "name": "手提箱",
-        "lang": "lang_stx",
-        "idType": 16,
-        "num": 9,
-        "icon": "nav_stx"
-      },
-      {
-        "name": "储物柜",
-        "lang": "lang_cwg",
-        "idType": 17,
-        "num": 8,
-        "icon": "nav_cwg"
-      },
-      {
-        "name": "高级储物箱",
-        "lang": "lang_gjcwx",
-        "idType": 18,
-        "num": 11,
-        "icon": "nav_gjcwx"
-      },
-      {
-        "name": "抽屉柜",
-        "lang": "lang_ctg",
-        "idType": 19,
-        "num": 18,
-        "icon": "nav_ctg"
-      },
-      {
-        "name": "登山包",
-        "lang": "lang_dsb",
-        "idType": 20,
-        "num": 7,
-        "icon": "nav_dsb"
-      },
-      {
-        "name": "快递箱",
-        "lang": "lang_kdx",
-        "idType": 21,
-        "num": 17,
-        "icon": "nav_kdx"
-      },
-      {
-        "name": "航空储物箱",
-        "lang": "lang_hkcwx",
-        "idType": 22,
-        "num": 11,
-        "icon": "nav_hkcwx"
-      },
-      {
-        "name": "垃圾箱",
-        "lang": "lang_ljx",
-        "idType": 23,
-        "num": 5,
-        "icon": "nav_ljx"
-      },
-      {
-        "name": "野外物资箱",
-        "lang": "lang_ywwzx",
-        "idType": 25,
-        "num": 8,
-        "icon": "nav_ywwzx"
-      },
-      {
-        "name": "鸟窝",
-        "lang": "lang_nw",
-        "idType": 25,
-        "num": 7,
-        "icon": "nav_nw"
-      },
-      {
-        "name": "藏匿物",
-        "lang": "lang_cnw",
-        "idType": 25,
-        "num": 7,
-        "icon": "nav_cnw"
-      },
-      {
-        "name": "高级旅行箱",
-        "lang": "lang_gjlxx",
-        "idType": 25,
-        "num": 10,
-        "icon": "nav_xlx"
-      },
+          "name": "保险箱",
+          "lang": "lang_bxg",
+          "idType": 1,
+          "num": 13,
+          "icon": "nav_bxx"
+        },
+        {
+          "name": "小保险箱",
+          "lang": "lang_xbxx",
+          "idType": 2,
+          "num": 8,
+          "icon": "nav_xbxx"
+        },
+        {
+          "name": "服务器",
+          "lang": "lang_fwq",
+          "idType": 3,
+          "num": 8,
+          "icon": "nav_fwq"
+        },
+        {
+          "name": "电脑",
+          "lang": "lang_dn",
+          "idType": 4,
+          "num": 5,
+          "icon": "nav_dn"
+        },
+        {
+          "name": "电脑机箱",
+          "lang": "lang_dnjx",
+          "idType": 5,
+          "num": 18,
+          "icon": "nav_dnjx"
+        },
+        {
+          "name": "电脑包",
+          "lang": "lang_dnb",
+          "idType": 5,
+          "num": 6,
+          "icon": "nav_dsb"
+        },
+        {
+          "name": "武器箱",
+          "lang": "lang_wqx",
+          "idType": 6,
+          "num": 4,
+          "icon": "nav_wqx"
+        },
+        {
+          "name": "大武器箱",
+          "lang": "lang_dwqx",
+          "idType": 7,
+          "num": 15,
+          "icon": "nav_dwqx"
+        },
+        {
+          "name": "弹药箱",
+          "lang": "lang_dyx",
+          "idType": 8,
+          "num": 16,
+          "icon": "nav_dyx"
+        },
+        {
+          "name": "工具柜",
+          "lang": "lang_gjg",
+          "idType": 9,
+          "num": 11,
+          "icon": "nav_gjg"
+        },
+        {
+          "name": "收纳盒",
+          "lang": "lang_dgjh",
+          "idType": 10,
+          "num": 25,
+          "icon": "nav_dgjx"
+        },
+        {
+          "name": "一件衣服",
+          "lang": "lang_yf",
+          "idType": 12,
+          "num": 35,
+          "icon": "nav_yf"
+        },
+        {
+          "name": "军用医疗包",
+          "lang": "lang_ylb",
+          "idType": 13,
+          "num": 13,
+          "icon": "nav_ylb"
+        },
+        {
+          "name": "医疗物资堆",
+          "lang": "lang_ylwzd",
+          "idType": 14,
+          "num": 8,
+          "icon": "nav_ylwzd"
+        },
+        {
+          "name": "旅行包",
+          "lang": "lang_lxd",
+          "idType": 15,
+          "num": 14,
+          "icon": "nav_lxd"
+        },
+        {
+          "name": "手提箱",
+          "lang": "lang_stx",
+          "idType": 16,
+          "num": 12,
+          "icon": "nav_stx"
+        },
+        {
+          "name": "储物柜",
+          "lang": "lang_cwg",
+          "idType": 17,
+          "num": 8,
+          "icon": "nav_cwg"
+        },
+        {
+          "name": "高级储物箱",
+          "lang": "lang_gjcwx",
+          "idType": 18,
+          "num": 17,
+          "icon": "nav_gjcwx"
+        },
+        {
+          "name": "抽屉柜",
+          "lang": "lang_ctg",
+          "idType": 19,
+          "num": 20,
+          "icon": "nav_ctg"
+        },
+        {
+          "name": "登山包",
+          "lang": "lang_dsb",
+          "idType": 20,
+          "num": 10,
+          "icon": "nav_dsb"
+        },
+        {
+          "name": "快递箱",
+          "lang": "lang_kdx",
+          "idType": 21,
+          "num": 21,
+          "icon": "nav_kdx"
+        },
+        {
+          "name": "航空储物箱",
+          "lang": "lang_hkcwx",
+          "idType": 22,
+          "num": 11,
+          "icon": "nav_hkcwx"
+        },
+        {
+          "name": "垃圾桶",
+          "lang": "lang_ljx",
+          "idType": 23,
+          "num": 5,
+          "icon": "nav_ljx"
+        },
+        {
+          "name": "搅拌车",
+          "lang": "lang_snc",
+          "idType": 24,
+          "num": 0,
+          "icon": "nav_snc"
+        },
+        {
+          "name": "野外物资箱",
+          "lang": "lang_ywwzx",
+          "idType": 25,
+          "num": 8,
+          "icon": "nav_ywwzx"
+        },
+        {
+          "name": "鸟窝",
+          "lang": "lang_nw",
+          "idType": 25,
+          "num": 8,
+          "icon": "nav_nw"
+        },
+        {
+          "name": "藏匿物",
+          "lang": "lang_cnw",
+          "idType": 25,
+          "num": 9,
+          "icon": "nav_cnw"
+        },
+        {
+          "name": "高级旅行箱",
+          "lang": "lang_gjlxx",
+          "idType": 25,
+          "num": 13,
+          "icon": "nav_xlx"
+        },
       {
         "name": "出生点",
         "idType": 26,
@@ -9402,7 +10370,7 @@ var navList3_htjd = [
     title: '物资点',
     typeList: [
       {
-        "name": "保险柜",
+        "name": "保险箱",
         "idType": 1,
         "num": 8,
         "icon": "nav_bxx"
@@ -9456,25 +10424,19 @@ var navList3_htjd = [
         "icon": "nav_gjg"
       },
       {
-        "name": "大工具盒",
+        "name": "收纳盒",
         "idType": 10,
         "num": 23,
         "icon": "nav_dgjx"
       },
       {
-        "name": "实验服",
-        "idType": 11,
-        "num": 14,
-        "icon": "nav_yf_s"
-      },
-      {
-        "name": "衣服",
+        "name": "一件衣服",
         "idType": 12,
-        "num": 21,
+        "num": 35,
         "icon": "nav_yf"
       },
       {
-        "name": "医疗包",
+        "name": "军用医疗包",
         "idType": 13,
         "num": 13,
         "icon": "nav_ylb"
@@ -9486,7 +10448,7 @@ var navList3_htjd = [
         "icon": "nav_ylwzd"
       },
       {
-        "name": "旅行袋",
+        "name": "旅行包",
         "idType": 15,
         "num": 10,
         "icon": "nav_lxd"
@@ -9534,13 +10496,13 @@ var navList3_htjd = [
         "icon": "nav_hkcwx"
       },
       {
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "idType": 23,
         "num": 5,
         "icon": "nav_ljx"
       },
       // {
-      //   "name": "水泥车",
+      //   "name": "搅拌车",
       //   "idType": 24,
       //   "num": 0,
       //   "icon": "nav_snc"
@@ -9632,194 +10594,201 @@ var navListInfo3_htjd = [
     title: '全部',
     typeList: [
       {
-        "name": "保险柜",
-        "lang": "lang_bxg",
-        "idType": 1,
-        "num": 8,
-        "icon": "nav_bxx"
-      },
-      {
-        "name": "小保险箱",
-        "lang": "lang_xbxx",
-        "idType": 2,
-        "num": 6,
-        "icon": "nav_xbxx"
-      },
-      {
-        "name": "服务器",
-        "lang": "lang_fwq",
-        "idType": 3,
-        "num": 8,
-        "icon": "nav_fwq"
-      },
-      {
-        "name": "电脑",
-        "lang": "lang_dn",
-        "idType": 4,
-        "num": 4,
-        "icon": "nav_dn"
-      },
-      {
-        "name": "电脑机箱",
-        "lang": "lang_dnjx",
-        "idType": 5,
-        "num": 16,
-        "icon": "nav_dnjx"
-      },
-      {
-        "name": "武器箱",
-        "lang": "lang_wqx",
-        "idType": 6,
-        "num": 4,
-        "icon": "nav_wqx"
-      },
-      {
-        "name": "大武器箱",
-        "lang": "lang_dwqx",
-        "idType": 7,
-        "num": 15,
-        "icon": "nav_dwqx"
-      },
-      {
-        "name": "弹药箱",
-        "lang": "lang_dyx",
-        "idType": 8,
-        "num": 15,
-        "icon": "nav_dyx"
-      },
-      {
-        "name": "工具柜",
-        "lang": "lang_gjg",
-        "idType": 9,
-        "num": 9,
-        "icon": "nav_gjg"
-      },
-      {
-        "name": "大工具盒",
-        "lang": "lang_dgjh",
-        "idType": 10,
-        "num": 25,
-        "icon": "nav_dgjx"
-      },
-      {
-        "name": "实验服",
-        "lang": "lang_syf",
-        "idType": 11,
-        "num": 14,
-        "icon": "nav_yf_s"
-      },
-      {
-        "name": "衣服",
-        "lang": "lang_yf",
-        "idType": 12,
-        "num": 21,
-        "icon": "nav_yf"
-      },
-      {
-        "name": "医疗包",
-        "lang": "lang_ylb",
-        "idType": 13,
-        "num": 13,
-        "icon": "nav_ylb"
-      },
-      {
-        "name": "医疗物资堆",
-        "lang": "lang_ylwzd",
-        "idType": 14,
-        "num": 8,
-        "icon": "nav_ylwzd"
-      },
-      {
-        "name": "旅行袋",
-        "lang": "lang_lxd",
-        "idType": 15,
-        "num": 10,
-        "icon": "nav_lxd"
-      },
-      {
-        "name": "手提箱",
-        "lang": "lang_stx",
-        "idType": 16,
-        "num": 9,
-        "icon": "nav_stx"
-      },
-      {
-        "name": "储物柜",
-        "lang": "lang_cwg",
-        "idType": 17,
-        "num": 8,
-        "icon": "nav_cwg"
-      },
-      {
-        "name": "高级储物箱",
-        "lang": "lang_gjcwx",
-        "idType": 18,
-        "num": 11,
-        "icon": "nav_gjcwx"
-      },
-      {
-        "name": "抽屉柜",
-        "lang": "lang_ctg",
-        "idType": 19,
-        "num": 18,
-        "icon": "nav_ctg"
-      },
-      {
-        "name": "登山包",
-        "lang": "lang_dsb",
-        "idType": 20,
-        "num": 7,
-        "icon": "nav_dsb"
-      },
-      {
-        "name": "快递箱",
-        "lang": "lang_kdx",
-        "idType": 21,
-        "num": 17,
-        "icon": "nav_kdx"
-      },
-      {
-        "name": "航空储物箱",
-        "lang": "lang_hkcwx",
-        "idType": 22,
-        "num": 11,
-        "icon": "nav_hkcwx"
-      },
-      {
-        "name": "垃圾箱",
-        "lang": "lang_ljx",
-        "idType": 23,
-        "num": 5,
-        "icon": "nav_ljx"
-      },
-      {
-        "name": "野外物资箱",
-        "lang": "lang_ywwzx",
-        "idType": 25,
-        "num": 8,
-        "icon": "nav_ywwzx"
-      },
-      {
-        "name": "鸟窝",
-        "lang": "lang_nw",
-        "idType": 25,
-        "num": 7,
-        "icon": "nav_nw"
-      },
-      {
-        "name": "藏匿物",
-        "lang": "lang_cnw",
-        "idType": 25,
-        "num": 7,
-        "icon": "nav_cnw"
-      },
-      {
-        "name": "高级旅行箱",
-        "lang": "lang_gjlxx",
-        "idType": 25,
-        "num": 10,
-        "icon": "nav_xlx"
-      },
+          "name": "保险箱",
+          "lang": "lang_bxg",
+          "idType": 1,
+          "num": 13,
+          "icon": "nav_bxx"
+        },
+        {
+          "name": "小保险箱",
+          "lang": "lang_xbxx",
+          "idType": 2,
+          "num": 8,
+          "icon": "nav_xbxx"
+        },
+        {
+          "name": "服务器",
+          "lang": "lang_fwq",
+          "idType": 3,
+          "num": 8,
+          "icon": "nav_fwq"
+        },
+        {
+          "name": "电脑",
+          "lang": "lang_dn",
+          "idType": 4,
+          "num": 5,
+          "icon": "nav_dn"
+        },
+        {
+          "name": "电脑机箱",
+          "lang": "lang_dnjx",
+          "idType": 5,
+          "num": 18,
+          "icon": "nav_dnjx"
+        },
+        {
+          "name": "电脑包",
+          "lang": "lang_dnb",
+          "idType": 5,
+          "num": 6,
+          "icon": "nav_dsb"
+        },
+        {
+          "name": "武器箱",
+          "lang": "lang_wqx",
+          "idType": 6,
+          "num": 4,
+          "icon": "nav_wqx"
+        },
+        {
+          "name": "大武器箱",
+          "lang": "lang_dwqx",
+          "idType": 7,
+          "num": 15,
+          "icon": "nav_dwqx"
+        },
+        {
+          "name": "弹药箱",
+          "lang": "lang_dyx",
+          "idType": 8,
+          "num": 16,
+          "icon": "nav_dyx"
+        },
+        {
+          "name": "工具柜",
+          "lang": "lang_gjg",
+          "idType": 9,
+          "num": 11,
+          "icon": "nav_gjg"
+        },
+        {
+          "name": "收纳盒",
+          "lang": "lang_dgjh",
+          "idType": 10,
+          "num": 25,
+          "icon": "nav_dgjx"
+        },
+        {
+          "name": "一件衣服",
+          "lang": "lang_yf",
+          "idType": 12,
+          "num": 35,
+          "icon": "nav_yf"
+        },
+        {
+          "name": "军用医疗包",
+          "lang": "lang_ylb",
+          "idType": 13,
+          "num": 13,
+          "icon": "nav_ylb"
+        },
+        {
+          "name": "医疗物资堆",
+          "lang": "lang_ylwzd",
+          "idType": 14,
+          "num": 8,
+          "icon": "nav_ylwzd"
+        },
+        {
+          "name": "旅行包",
+          "lang": "lang_lxd",
+          "idType": 15,
+          "num": 14,
+          "icon": "nav_lxd"
+        },
+        {
+          "name": "手提箱",
+          "lang": "lang_stx",
+          "idType": 16,
+          "num": 12,
+          "icon": "nav_stx"
+        },
+        {
+          "name": "储物柜",
+          "lang": "lang_cwg",
+          "idType": 17,
+          "num": 8,
+          "icon": "nav_cwg"
+        },
+        {
+          "name": "高级储物箱",
+          "lang": "lang_gjcwx",
+          "idType": 18,
+          "num": 17,
+          "icon": "nav_gjcwx"
+        },
+        {
+          "name": "抽屉柜",
+          "lang": "lang_ctg",
+          "idType": 19,
+          "num": 20,
+          "icon": "nav_ctg"
+        },
+        {
+          "name": "登山包",
+          "lang": "lang_dsb",
+          "idType": 20,
+          "num": 10,
+          "icon": "nav_dsb"
+        },
+        {
+          "name": "快递箱",
+          "lang": "lang_kdx",
+          "idType": 21,
+          "num": 21,
+          "icon": "nav_kdx"
+        },
+        {
+          "name": "航空储物箱",
+          "lang": "lang_hkcwx",
+          "idType": 22,
+          "num": 11,
+          "icon": "nav_hkcwx"
+        },
+        {
+          "name": "垃圾桶",
+          "lang": "lang_ljx",
+          "idType": 23,
+          "num": 5,
+          "icon": "nav_ljx"
+        },
+        {
+          "name": "搅拌车",
+          "lang": "lang_snc",
+          "idType": 24,
+          "num": 0,
+          "icon": "nav_snc"
+        },
+        {
+          "name": "野外物资箱",
+          "lang": "lang_ywwzx",
+          "idType": 25,
+          "num": 8,
+          "icon": "nav_ywwzx"
+        },
+        {
+          "name": "鸟窝",
+          "lang": "lang_nw",
+          "idType": 25,
+          "num": 8,
+          "icon": "nav_nw"
+        },
+        {
+          "name": "藏匿物",
+          "lang": "lang_cnw",
+          "idType": 25,
+          "num": 9,
+          "icon": "nav_cnw"
+        },
+        {
+          "name": "高级旅行箱",
+          "lang": "lang_gjlxx",
+          "idType": 25,
+          "num": 13,
+          "icon": "nav_xlx"
+        },
       {
         "name": "出生点",
         "idType": 26,
@@ -9869,194 +10838,201 @@ var navListInfo3_htjd = [
     title: '物资点',
     typeList: [
       {
-        "name": "保险柜",
-        "lang": "lang_bxg",
-        "idType": 1,
-        "num": 8,
-        "icon": "nav_bxx"
-      },
-      {
-        "name": "小保险箱",
-        "lang": "lang_xbxx",
-        "idType": 2,
-        "num": 6,
-        "icon": "nav_xbxx"
-      },
-      {
-        "name": "服务器",
-        "lang": "lang_fwq",
-        "idType": 3,
-        "num": 8,
-        "icon": "nav_fwq"
-      },
-      {
-        "name": "电脑",
-        "lang": "lang_dn",
-        "idType": 4,
-        "num": 4,
-        "icon": "nav_dn"
-      },
-      {
-        "name": "电脑机箱",
-        "lang": "lang_dnjx",
-        "idType": 5,
-        "num": 16,
-        "icon": "nav_dnjx"
-      },
-      {
-        "name": "武器箱",
-        "lang": "lang_wqx",
-        "idType": 6,
-        "num": 4,
-        "icon": "nav_wqx"
-      },
-      {
-        "name": "大武器箱",
-        "lang": "lang_dwqx",
-        "idType": 7,
-        "num": 15,
-        "icon": "nav_dwqx"
-      },
-      {
-        "name": "弹药箱",
-        "lang": "lang_dyx",
-        "idType": 8,
-        "num": 15,
-        "icon": "nav_dyx"
-      },
-      {
-        "name": "工具柜",
-        "lang": "lang_gjg",
-        "idType": 9,
-        "num": 9,
-        "icon": "nav_gjg"
-      },
-      {
-        "name": "大工具盒",
-        "lang": "lang_dgjh",
-        "idType": 10,
-        "num": 25,
-        "icon": "nav_dgjx"
-      },
-      {
-        "name": "实验服",
-        "lang": "lang_syf",
-        "idType": 11,
-        "num": 14,
-        "icon": "nav_yf_s"
-      },
-      {
-        "name": "衣服",
-        "lang": "lang_yf",
-        "idType": 12,
-        "num": 21,
-        "icon": "nav_yf"
-      },
-      {
-        "name": "医疗包",
-        "lang": "lang_ylb",
-        "idType": 13,
-        "num": 13,
-        "icon": "nav_ylb"
-      },
-      {
-        "name": "医疗物资堆",
-        "lang": "lang_ylwzd",
-        "idType": 14,
-        "num": 8,
-        "icon": "nav_ylwzd"
-      },
-      {
-        "name": "旅行袋",
-        "lang": "lang_lxd",
-        "idType": 15,
-        "num": 10,
-        "icon": "nav_lxd"
-      },
-      {
-        "name": "手提箱",
-        "lang": "lang_stx",
-        "idType": 16,
-        "num": 9,
-        "icon": "nav_stx"
-      },
-      {
-        "name": "储物柜",
-        "lang": "lang_cwg",
-        "idType": 17,
-        "num": 8,
-        "icon": "nav_cwg"
-      },
-      {
-        "name": "高级储物箱",
-        "lang": "lang_gjcwx",
-        "idType": 18,
-        "num": 11,
-        "icon": "nav_gjcwx"
-      },
-      {
-        "name": "抽屉柜",
-        "lang": "lang_ctg",
-        "idType": 19,
-        "num": 18,
-        "icon": "nav_ctg"
-      },
-      {
-        "name": "登山包",
-        "lang": "lang_dsb",
-        "idType": 20,
-        "num": 7,
-        "icon": "nav_dsb"
-      },
-      {
-        "name": "快递箱",
-        "lang": "lang_kdx",
-        "idType": 21,
-        "num": 17,
-        "icon": "nav_kdx"
-      },
-      {
-        "name": "航空储物箱",
-        "lang": "lang_hkcwx",
-        "idType": 22,
-        "num": 11,
-        "icon": "nav_hkcwx"
-      },
-      {
-        "name": "垃圾箱",
-        "lang": "lang_ljx",
-        "idType": 23,
-        "num": 5,
-        "icon": "nav_ljx"
-      },
-      {
-        "name": "野外物资箱",
-        "lang": "lang_ywwzx",
-        "idType": 25,
-        "num": 8,
-        "icon": "nav_ywwzx"
-      },
-      {
-        "name": "鸟窝",
-        "lang": "lang_nw",
-        "idType": 25,
-        "num": 7,
-        "icon": "nav_nw"
-      },
-      {
-        "name": "藏匿物",
-        "lang": "lang_cnw",
-        "idType": 25,
-        "num": 7,
-        "icon": "nav_cnw"
-      },
-      {
-        "name": "高级旅行箱",
-        "lang": "lang_gjlxx",
-        "idType": 25,
-        "num": 10,
-        "icon": "nav_xlx"
-      }
+          "name": "保险箱",
+          "lang": "lang_bxg",
+          "idType": 1,
+          "num": 13,
+          "icon": "nav_bxx"
+        },
+        {
+          "name": "小保险箱",
+          "lang": "lang_xbxx",
+          "idType": 2,
+          "num": 8,
+          "icon": "nav_xbxx"
+        },
+        {
+          "name": "服务器",
+          "lang": "lang_fwq",
+          "idType": 3,
+          "num": 8,
+          "icon": "nav_fwq"
+        },
+        {
+          "name": "电脑",
+          "lang": "lang_dn",
+          "idType": 4,
+          "num": 5,
+          "icon": "nav_dn"
+        },
+        {
+          "name": "电脑机箱",
+          "lang": "lang_dnjx",
+          "idType": 5,
+          "num": 18,
+          "icon": "nav_dnjx"
+        },
+        {
+          "name": "电脑包",
+          "lang": "lang_dnb",
+          "idType": 5,
+          "num": 6,
+          "icon": "nav_dsb"
+        },
+        {
+          "name": "武器箱",
+          "lang": "lang_wqx",
+          "idType": 6,
+          "num": 4,
+          "icon": "nav_wqx"
+        },
+        {
+          "name": "大武器箱",
+          "lang": "lang_dwqx",
+          "idType": 7,
+          "num": 15,
+          "icon": "nav_dwqx"
+        },
+        {
+          "name": "弹药箱",
+          "lang": "lang_dyx",
+          "idType": 8,
+          "num": 16,
+          "icon": "nav_dyx"
+        },
+        {
+          "name": "工具柜",
+          "lang": "lang_gjg",
+          "idType": 9,
+          "num": 11,
+          "icon": "nav_gjg"
+        },
+        {
+          "name": "收纳盒",
+          "lang": "lang_dgjh",
+          "idType": 10,
+          "num": 25,
+          "icon": "nav_dgjx"
+        },
+        {
+          "name": "一件衣服",
+          "lang": "lang_yf",
+          "idType": 12,
+          "num": 35,
+          "icon": "nav_yf"
+        },
+        {
+          "name": "军用医疗包",
+          "lang": "lang_ylb",
+          "idType": 13,
+          "num": 13,
+          "icon": "nav_ylb"
+        },
+        {
+          "name": "医疗物资堆",
+          "lang": "lang_ylwzd",
+          "idType": 14,
+          "num": 8,
+          "icon": "nav_ylwzd"
+        },
+        {
+          "name": "旅行包",
+          "lang": "lang_lxd",
+          "idType": 15,
+          "num": 14,
+          "icon": "nav_lxd"
+        },
+        {
+          "name": "手提箱",
+          "lang": "lang_stx",
+          "idType": 16,
+          "num": 12,
+          "icon": "nav_stx"
+        },
+        {
+          "name": "储物柜",
+          "lang": "lang_cwg",
+          "idType": 17,
+          "num": 8,
+          "icon": "nav_cwg"
+        },
+        {
+          "name": "高级储物箱",
+          "lang": "lang_gjcwx",
+          "idType": 18,
+          "num": 17,
+          "icon": "nav_gjcwx"
+        },
+        {
+          "name": "抽屉柜",
+          "lang": "lang_ctg",
+          "idType": 19,
+          "num": 20,
+          "icon": "nav_ctg"
+        },
+        {
+          "name": "登山包",
+          "lang": "lang_dsb",
+          "idType": 20,
+          "num": 10,
+          "icon": "nav_dsb"
+        },
+        {
+          "name": "快递箱",
+          "lang": "lang_kdx",
+          "idType": 21,
+          "num": 21,
+          "icon": "nav_kdx"
+        },
+        {
+          "name": "航空储物箱",
+          "lang": "lang_hkcwx",
+          "idType": 22,
+          "num": 11,
+          "icon": "nav_hkcwx"
+        },
+        {
+          "name": "垃圾桶",
+          "lang": "lang_ljx",
+          "idType": 23,
+          "num": 5,
+          "icon": "nav_ljx"
+        },
+        {
+          "name": "搅拌车",
+          "lang": "lang_snc",
+          "idType": 24,
+          "num": 0,
+          "icon": "nav_snc"
+        },
+        {
+          "name": "野外物资箱",
+          "lang": "lang_ywwzx",
+          "idType": 25,
+          "num": 8,
+          "icon": "nav_ywwzx"
+        },
+        {
+          "name": "鸟窝",
+          "lang": "lang_nw",
+          "idType": 25,
+          "num": 8,
+          "icon": "nav_nw"
+        },
+        {
+          "name": "藏匿物",
+          "lang": "lang_cnw",
+          "idType": 25,
+          "num": 9,
+          "icon": "nav_cnw"
+        },
+        {
+          "name": "高级旅行箱",
+          "lang": "lang_gjlxx",
+          "idType": 25,
+          "num": 13,
+          "icon": "nav_xlx"
+        }
     ]
   },
   {
@@ -10137,9 +11113,9 @@ var mapArticle3_htjd = [
     "z坐标": "-20926.5",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "661854",
+    "x": 661854,
     "y": "-451773"
   },
   {
@@ -10151,9 +11127,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21955.2",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "672929",
+    "x": 672929,
     "y": "-459886"
   },
   {
@@ -10165,9 +11141,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22619",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "696034",
+    "x": 696034,
     "y": "-472179"
   },
   {
@@ -10179,9 +11155,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22620",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "696587",
+    "x": 696587,
     "y": "-472179"
   },
   {
@@ -10193,9 +11169,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22033.6",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "696181.4",
+    "x": 696181.4,
     "y": "-464094"
   },
   {
@@ -10207,9 +11183,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21672.4",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "643787.1",
+    "x": 643787.1,
     "y": "-470335"
   },
   {
@@ -10221,9 +11197,9 @@ var mapArticle3_htjd = [
     "z坐标": "-19886.7",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "663905.3",
+    "x": 663905.3,
     "y": "-459187"
   },
   {
@@ -10235,9 +11211,9 @@ var mapArticle3_htjd = [
     "z坐标": "-19886.7",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "663905.3",
+    "x": 663905.3,
     "y": "-459077"
   },
   {
@@ -10249,9 +11225,9 @@ var mapArticle3_htjd = [
     "z坐标": "-20695.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "664132",
+    "x": 664132,
     "y": "-476221"
   },
   {
@@ -10263,9 +11239,9 @@ var mapArticle3_htjd = [
     "z坐标": "-20695.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "664132",
+    "x": 664132,
     "y": "-476830"
   },
   {
@@ -10277,9 +11253,9 @@ var mapArticle3_htjd = [
     "z坐标": "-20695.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "664706.2",
+    "x": 664706.2,
     "y": "-475291"
   },
   {
@@ -10291,24 +11267,10 @@ var mapArticle3_htjd = [
     "z坐标": "-22635",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "696353",
+    "x": 696353,
     "y": "-470084"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21674.1",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "衣服",
-    "icon": "yf",
-    "x": "643956.9",
-    "y": "-470335"
   },
   {
     "地图": "航天城",
@@ -10319,9 +11281,9 @@ var mapArticle3_htjd = [
     "z坐标": "-19670",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "670524",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 670524,
     "y": "-453166"
   },
   {
@@ -10333,9 +11295,9 @@ var mapArticle3_htjd = [
     "z坐标": "-19670",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "670524",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 670524,
     "y": "-453047"
   },
   {
@@ -10347,9 +11309,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21199.4",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "675585",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 675585,
     "y": "-450255"
   },
   {
@@ -10361,9 +11323,9 @@ var mapArticle3_htjd = [
     "z坐标": "-20870",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "662753",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 662753,
     "y": "-449237"
   },
   {
@@ -10375,9 +11337,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22572",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "696448",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 696448,
     "y": "-471024"
   },
   {
@@ -10389,9 +11351,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21785",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "643247",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 643247,
     "y": "-467106"
   },
   {
@@ -10403,9 +11365,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22040",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "646665",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 646665,
     "y": "-468270"
   },
   {
@@ -10417,9 +11379,9 @@ var mapArticle3_htjd = [
     "z坐标": "-20865",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "665922",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 665922,
     "y": "-450765"
   },
   {
@@ -10431,9 +11393,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22735.5",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "657940",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 657940,
     "y": "-448830"
   },
   {
@@ -10445,9 +11407,9 @@ var mapArticle3_htjd = [
     "z坐标": "-20319.6",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "674273",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 674273,
     "y": "-457630"
   },
   {
@@ -10459,9 +11421,9 @@ var mapArticle3_htjd = [
     "z坐标": "-20240.7",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "667846",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 667846,
     "y": "-478836"
   },
   {
@@ -10473,9 +11435,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22005.9",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "694421",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 694421,
     "y": "-462587"
   },
   {
@@ -10487,24 +11449,10 @@ var mapArticle3_htjd = [
     "z坐标": "-22003",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "695360",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 695360,
     "y": "-466067"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-19712",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "667137",
-    "y": "-453391"
   },
   {
     "地图": "航天城",
@@ -10515,9 +11463,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21716",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "676387",
+    "x": 676387,
     "y": "-450543"
   },
   {
@@ -10529,9 +11477,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21712",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "676445",
+    "x": 676445,
     "y": "-450088"
   },
   {
@@ -10543,9 +11491,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21171",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "663838",
+    "x": 663838,
     "y": "-454865"
   },
   {
@@ -10557,9 +11505,9 @@ var mapArticle3_htjd = [
     "z坐标": "-19796.2",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "670121.2",
+    "x": 670121.2,
     "y": "-451748"
   },
   {
@@ -10571,9 +11519,9 @@ var mapArticle3_htjd = [
     "z坐标": "-19796.2",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "670266.2",
+    "x": 670266.2,
     "y": "-451751"
   },
   {
@@ -10585,9 +11533,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21012.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "663012.4",
+    "x": 663012.4,
     "y": "-450593"
   },
   {
@@ -10599,9 +11547,9 @@ var mapArticle3_htjd = [
     "z坐标": "-27889.7",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "662051.9",
+    "x": 662051.9,
     "y": "-456572"
   },
   {
@@ -10613,9 +11561,9 @@ var mapArticle3_htjd = [
     "z坐标": "-20500.8",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "676014.6",
+    "x": 676014.6,
     "y": "-457350"
   },
   {
@@ -10627,9 +11575,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22485.4",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "675685",
+    "x": 675685,
     "y": "-459474"
   },
   {
@@ -10641,9 +11589,9 @@ var mapArticle3_htjd = [
     "z坐标": "-19957.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "668854",
+    "x": 668854,
     "y": "-455667"
   },
   {
@@ -10655,9 +11603,9 @@ var mapArticle3_htjd = [
     "z坐标": "-20768",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "668753.6",
+    "x": 668753.6,
     "y": "-479098"
   },
   {
@@ -10669,9 +11617,9 @@ var mapArticle3_htjd = [
     "z坐标": "-19839.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "667703",
+    "x": 667703,
     "y": "-453517"
   },
   {
@@ -10683,9 +11631,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21916",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "643767",
+    "x": 643767,
     "y": "-467333"
   },
   {
@@ -10697,9 +11645,9 @@ var mapArticle3_htjd = [
     "z坐标": "-19896.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "667665",
+    "x": 667665,
     "y": "-455530"
   },
   {
@@ -10711,9 +11659,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21920",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "665046",
+    "x": 665046,
     "y": "-476764"
   },
   {
@@ -10725,9 +11673,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22030.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "675297",
+    "x": 675297,
     "y": "-454476"
   },
   {
@@ -10741,7 +11689,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "663146",
+    "x": 663146,
     "y": "-449179"
   },
   {
@@ -10755,7 +11703,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "672380",
+    "x": 672380,
     "y": "-459295"
   },
   {
@@ -10769,7 +11717,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "665169",
+    "x": 665169,
     "y": "-450563"
   },
   {
@@ -10783,7 +11731,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "672035",
+    "x": 672035,
     "y": "-475501"
   },
   {
@@ -10797,7 +11745,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "669195.3",
+    "x": 669195.3,
     "y": "-478667"
   },
   {
@@ -10811,7 +11759,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "669256.3",
+    "x": 669256.3,
     "y": "-478290"
   },
   {
@@ -10825,7 +11773,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "665851",
+    "x": 665851,
     "y": "-478849"
   },
   {
@@ -10839,7 +11787,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "695260.3",
+    "x": 695260.3,
     "y": "-464229"
   },
   {
@@ -10853,7 +11801,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "694805",
+    "x": 694805,
     "y": "-464475"
   },
   {
@@ -10867,7 +11815,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "694884",
+    "x": 694884,
     "y": "-463559"
   },
   {
@@ -10881,7 +11829,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "695198",
+    "x": 695198,
     "y": "-465099"
   },
   {
@@ -10895,7 +11843,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "674040",
+    "x": 674040,
     "y": "-448615"
   },
   {
@@ -10909,7 +11857,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "663590",
+    "x": 663590,
     "y": "-460295"
   },
   {
@@ -10923,7 +11871,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "663660",
+    "x": 663660,
     "y": "-460375"
   },
   {
@@ -10937,50 +11885,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "668480",
+    "x": 668480,
     "y": "-476670"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21916",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "登山包",
-    "icon": "dsb",
-    "x": "643398",
-    "y": "-467416"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22036.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "登山包",
-    "icon": "dsb",
-    "x": "665720",
-    "y": "-450490"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-19840.7",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "登山包",
-    "icon": "dsb",
-    "x": "670094",
-    "y": "-453531"
   },
   {
     "地图": "航天城",
@@ -10993,7 +11899,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "652353",
+    "x": 652353,
     "y": "-470414"
   },
   {
@@ -11007,7 +11913,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "671435",
+    "x": 671435,
     "y": "-437321"
   },
   {
@@ -11021,7 +11927,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "666964",
+    "x": 666964,
     "y": "-469405"
   },
   {
@@ -11035,7 +11941,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "679382",
+    "x": 679382,
     "y": "-472393"
   },
   {
@@ -11049,36 +11955,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "694776",
+    "x": 694776,
     "y": "-451613"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_水平试车厂",
-    "自定义区域": "水平试车场",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22340.9",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "藏匿物",
-    "icon": "cnw",
-    "x": "683115",
-    "y": "-437248"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22950.1",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "藏匿物",
-    "icon": "cnw",
-    "x": "689993",
-    "y": "-467209"
   },
   {
     "地图": "航天城",
@@ -11091,7 +11969,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "676372.5",
+    "x": 676372.5,
     "y": "-450522"
   },
   {
@@ -11105,7 +11983,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "676898.1",
+    "x": 676898.1,
     "y": "-450401"
   },
   {
@@ -11119,7 +11997,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "685170",
+    "x": 685170,
     "y": "-430970"
   },
   {
@@ -11133,7 +12011,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "663391",
+    "x": 663391,
     "y": "-448536"
   },
   {
@@ -11147,7 +12025,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "664586",
+    "x": 664586,
     "y": "-449511"
   },
   {
@@ -11161,7 +12039,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "668919.3",
+    "x": 668919.3,
     "y": "-451097"
   },
   {
@@ -11175,7 +12053,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "663345",
+    "x": 663345,
     "y": "-458445"
   },
   {
@@ -11189,7 +12067,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "672386",
+    "x": 672386,
     "y": "-458972"
   },
   {
@@ -11203,7 +12081,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "668859",
+    "x": 668859,
     "y": "-475585"
   },
   {
@@ -11217,92 +12095,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "694736",
+    "x": 694736,
     "y": "-464989"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21780.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "663673",
-    "y": "-449005"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22037",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "675810",
-    "y": "-449784"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21364.8",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "676688.1",
-    "y": "-450622"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-20927",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "675026",
-    "y": "-459883"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22925.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "695363",
-    "y": "-464559"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22141",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "电脑机箱",
-    "icon": "dnjx",
-    "x": "694709",
-    "y": "-464121"
   },
   {
     "地图": "航天城",
@@ -11315,7 +12109,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "655275",
+    "x": 655275,
     "y": "-446412"
   },
   {
@@ -11329,7 +12123,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "675568",
+    "x": 675568,
     "y": "-437623"
   },
   {
@@ -11343,7 +12137,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "686553",
+    "x": 686553,
     "y": "-457151"
   },
   {
@@ -11357,7 +12151,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "686243",
+    "x": 686243,
     "y": "-467092"
   },
   {
@@ -11371,7 +12165,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "684432",
+    "x": 684432,
     "y": "-475050"
   },
   {
@@ -11385,22 +12179,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "681733",
+    "x": 681733,
     "y": "-479003"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_水平试车厂",
-    "自定义区域": "水平试车场",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22203",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "鸟窝",
-    "icon": "nw",
-    "x": "676468",
-    "y": "-434356"
   },
   {
     "地图": "航天城",
@@ -11413,7 +12193,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "643456",
+    "x": 643456,
     "y": "-467901"
   },
   {
@@ -11427,7 +12207,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "647184",
+    "x": 647184,
     "y": "-468979"
   },
   {
@@ -11441,7 +12221,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "675972",
+    "x": 675972,
     "y": "-449853"
   },
   {
@@ -11455,7 +12235,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "669304",
+    "x": 669304,
     "y": "-451914"
   },
   {
@@ -11469,7 +12249,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "661738",
+    "x": 661738,
     "y": "-459085"
   },
   {
@@ -11483,7 +12263,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "672445",
+    "x": 672445,
     "y": "-473668"
   },
   {
@@ -11497,36 +12277,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "672890",
+    "x": 672890,
     "y": "-473713"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-19871.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "手提箱",
-    "icon": "stx",
-    "x": "664626.2",
-    "y": "-459770"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-20740",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "手提箱",
-    "icon": "stx",
-    "x": "669392.6",
-    "y": "-477572"
   },
   {
     "地图": "航天城",
@@ -11539,7 +12291,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "655184",
+    "x": 655184,
     "y": "-422585"
   },
   {
@@ -11553,7 +12305,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "663400",
+    "x": 663400,
     "y": "-420080"
   },
   {
@@ -11567,7 +12319,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "小保险箱",
     "icon": "xbxx",
-    "x": "674176.9",
+    "x": 674176.9,
     "y": "-448634"
   },
   {
@@ -11581,7 +12333,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "小保险箱",
     "icon": "xbxx",
-    "x": "663440",
+    "x": 663440,
     "y": "-460300"
   },
   {
@@ -11595,7 +12347,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "小保险箱",
     "icon": "xbxx",
-    "x": "662096.9",
+    "x": 662096.9,
     "y": "-457531"
   },
   {
@@ -11609,36 +12361,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "小保险箱",
     "icon": "xbxx",
-    "x": "672277.9",
+    "x": 672277.9,
     "y": "-454264"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-19827.4",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "小保险箱",
-    "icon": "xbxx",
-    "x": "669933",
-    "y": "-452906"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-20501",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "小保险箱",
-    "icon": "xbxx",
-    "x": "674763",
-    "y": "-457310"
   },
   {
     "地图": "航天城",
@@ -11651,7 +12375,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "670314.8",
+    "x": 670314.8,
     "y": "-453482"
   },
   {
@@ -11665,7 +12389,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "673578",
+    "x": 673578,
     "y": "-456626"
   },
   {
@@ -11679,7 +12403,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "648115",
+    "x": 648115,
     "y": "-469573"
   },
   {
@@ -11693,7 +12417,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "661338",
+    "x": 661338,
     "y": "-449479"
   },
   {
@@ -11707,7 +12431,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "679311",
+    "x": 679311,
     "y": "-429125"
   },
   {
@@ -11721,7 +12445,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "676633",
+    "x": 676633,
     "y": "-452212"
   },
   {
@@ -11735,7 +12459,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "669794",
+    "x": 669794,
     "y": "-452240"
   },
   {
@@ -11749,7 +12473,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "663969",
+    "x": 663969,
     "y": "-459463"
   },
   {
@@ -11763,7 +12487,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "673592.1",
+    "x": 673592.1,
     "y": "-456131"
   },
   {
@@ -11777,7 +12501,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "680735",
+    "x": 680735,
     "y": "-458327"
   },
   {
@@ -11791,7 +12515,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "695845",
+    "x": 695845,
     "y": "-461866"
   },
   {
@@ -11805,7 +12529,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "694588",
+    "x": 694588,
     "y": "-469186"
   },
   {
@@ -11819,36 +12543,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "693925",
+    "x": 693925,
     "y": "-471663"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22053.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "646008",
-    "y": "-464957"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21920",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大武器箱",
-    "icon": "dwqx",
-    "x": "665187",
-    "y": "-476031"
   },
   {
     "地图": "航天城",
@@ -11859,9 +12555,9 @@ var mapArticle3_htjd = [
     "z坐标": "-19807.7",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "667337",
+    "x": 667337,
     "y": "-452530"
   },
   {
@@ -11873,9 +12569,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22334.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "647048",
+    "x": 647048,
     "y": "-465044"
   },
   {
@@ -11887,9 +12583,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22056",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "648957",
+    "x": 648957,
     "y": "-467177"
   },
   {
@@ -11901,9 +12597,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22844",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "658688",
+    "x": 658688,
     "y": "-453638"
   },
   {
@@ -11915,9 +12611,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21920",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "665163",
+    "x": 665163,
     "y": "-475387"
   },
   {
@@ -11929,9 +12625,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22031.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "675412",
+    "x": 675412,
     "y": "-456374"
   },
   {
@@ -11943,9 +12639,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21012.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "672033",
+    "x": 672033,
     "y": "-457399"
   },
   {
@@ -11957,9 +12653,9 @@ var mapArticle3_htjd = [
     "z坐标": "-20695.2",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "672846",
+    "x": 672846,
     "y": "-477730"
   },
   {
@@ -11971,9 +12667,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22704",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "689429",
+    "x": 689429,
     "y": "-463706"
   },
   {
@@ -11985,9 +12681,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22844",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "682014",
+    "x": 682014,
     "y": "-455757"
   },
   {
@@ -12001,7 +12697,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "676625",
+    "x": 676625,
     "y": "-450110"
   },
   {
@@ -12015,7 +12711,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "674241",
+    "x": 674241,
     "y": "-448316"
   },
   {
@@ -12029,7 +12725,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "674280",
+    "x": 674280,
     "y": "-448630"
   },
   {
@@ -12043,7 +12739,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "663605",
+    "x": 663605,
     "y": "-460563"
   },
   {
@@ -12057,7 +12753,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "672412",
+    "x": 672412,
     "y": "-452421"
   },
   {
@@ -12071,7 +12767,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "666663",
+    "x": 666663,
     "y": "-469660"
   },
   {
@@ -12085,7 +12781,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "675511",
+    "x": 675511,
     "y": "-459935"
   },
   {
@@ -12099,7 +12795,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "673105",
+    "x": 673105,
     "y": "-473870"
   },
   {
@@ -12113,36 +12809,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "694557.5",
+    "x": 694557.5,
     "y": "-466020"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-19770.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "高级储物箱",
-    "icon": "gjcwx",
-    "x": "669649",
-    "y": "-450926"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-20349",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "高级储物箱",
-    "icon": "gjcwx",
-    "x": "669201",
-    "y": "-478341"
   },
   {
     "地图": "航天城",
@@ -12155,7 +12823,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "644038",
+    "x": 644038,
     "y": "-469103"
   },
   {
@@ -12169,7 +12837,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "663607",
+    "x": 663607,
     "y": "-452850"
   },
   {
@@ -12183,7 +12851,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "661694",
+    "x": 661694,
     "y": "-459134"
   },
   {
@@ -12197,7 +12865,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "672087",
+    "x": 672087,
     "y": "-457926"
   },
   {
@@ -12211,7 +12879,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "672731",
+    "x": 672731,
     "y": "-476174"
   },
   {
@@ -12225,7 +12893,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "695541",
+    "x": 695541,
     "y": "-463792"
   },
   {
@@ -12239,7 +12907,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "644041",
+    "x": 644041,
     "y": "-467030"
   },
   {
@@ -12253,7 +12921,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "647484",
+    "x": 647484,
     "y": "-468846"
   },
   {
@@ -12267,106 +12935,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "662663",
+    "x": 662663,
     "y": "-455301"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21789",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "高级旅行箱",
-    "icon": "xlx",
-    "x": "643271",
-    "y": "-468913"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22332",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "高级旅行箱",
-    "icon": "xlx",
-    "x": "643775.2",
-    "y": "-468011"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22204.4",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "高级旅行箱",
-    "icon": "xlx",
-    "x": "646519",
-    "y": "-468463"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21908.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "高级旅行箱",
-    "icon": "xlx",
-    "x": "675407",
-    "y": "-450140"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22036.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "高级旅行箱",
-    "icon": "xlx",
-    "x": "677266",
-    "y": "-448808"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21365",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "高级旅行箱",
-    "icon": "xlx",
-    "x": "662117",
-    "y": "-455291"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22095.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "高级旅行箱",
-    "icon": "xlx",
-    "x": "669016.3",
-    "y": "-477215"
   },
   {
     "地图": "航天城",
@@ -12377,9 +12947,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22383",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "653951.8",
+    "x": 653951.8,
     "y": "-470157"
   },
   {
@@ -12391,9 +12961,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22086.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "646985",
+    "x": 646985,
     "y": "-468932"
   },
   {
@@ -12405,9 +12975,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21990.5",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "664442",
+    "x": 664442,
     "y": "-452415"
   },
   {
@@ -12419,9 +12989,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21778.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "664942",
+    "x": 664942,
     "y": "-457472"
   },
   {
@@ -12433,9 +13003,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21364.8",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "662167",
+    "x": 662167,
     "y": "-454915"
   },
   {
@@ -12447,9 +13017,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21364.7",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "661678.8",
+    "x": 661678.8,
     "y": "-455302"
   },
   {
@@ -12461,9 +13031,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21364.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "664314.3",
+    "x": 664314.3,
     "y": "-455291"
   },
   {
@@ -12475,80 +13045,10 @@ var mapArticle3_htjd = [
     "z坐标": "-21364.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "662399",
+    "x": 662399,
     "y": "-454900"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22477",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗包",
-    "icon": "ylb",
-    "x": "644759.1",
-    "y": "-459843"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-19967.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗包",
-    "icon": "ylb",
-    "x": "667787.2",
-    "y": "-454020"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-20956.1",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗包",
-    "icon": "ylb",
-    "x": "673027",
-    "y": "-460210"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21845.7",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗包",
-    "icon": "ylb",
-    "x": "669947.6",
-    "y": "-475076"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-20768",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗包",
-    "icon": "ylb",
-    "x": "667811.2",
-    "y": "-479051"
   },
   {
     "地图": "航天城",
@@ -12561,7 +13061,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "644857.9",
+    "x": 644857.9,
     "y": "-460457"
   },
   {
@@ -12575,7 +13075,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "663897",
+    "x": 663897,
     "y": "-451402"
   },
   {
@@ -12589,7 +13089,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "662264",
+    "x": 662264,
     "y": "-454192"
   },
   {
@@ -12603,7 +13103,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "662814",
+    "x": 662814,
     "y": "-458716"
   },
   {
@@ -12617,7 +13117,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "661798",
+    "x": 661798,
     "y": "-457040"
   },
   {
@@ -12631,7 +13131,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "665427",
+    "x": 665427,
     "y": "-474974"
   },
   {
@@ -12645,22 +13145,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "680935",
+    "x": 680935,
     "y": "-469578"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22348.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "医疗物资堆",
-    "icon": "ylwzd",
-    "x": "657022.9",
-    "y": "-467795"
   },
   {
     "地图": "航天城",
@@ -12671,9 +13157,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22329.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "646040",
+    "x": 646040,
     "y": "-465780"
   },
   {
@@ -12685,9 +13171,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21512.4",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "662060",
+    "x": 662060,
     "y": "-426430"
   },
   {
@@ -12699,9 +13185,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22344.2",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "679665",
+    "x": 679665,
     "y": "-429210"
   },
   {
@@ -12713,9 +13199,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21925.6",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "670131",
+    "x": 670131,
     "y": "-473064"
   },
   {
@@ -12727,9 +13213,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22960.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "691105",
+    "x": 691105,
     "y": "-478797"
   },
   {
@@ -12743,7 +13229,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "677268.9",
+    "x": 677268.9,
     "y": "-450274"
   },
   {
@@ -12757,7 +13243,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "676996.9",
+    "x": 676996.9,
     "y": "-450995"
   },
   {
@@ -12771,7 +13257,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "662316",
+    "x": 662316,
     "y": "-451829"
   },
   {
@@ -12785,7 +13271,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "675499.2",
+    "x": 675499.2,
     "y": "-457064"
   },
   {
@@ -12799,7 +13285,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "675892.8",
+    "x": 675892.8,
     "y": "-456579"
   },
   {
@@ -12813,36 +13299,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "673509",
+    "x": 673509,
     "y": "-474125"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21364.8",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "服务器",
-    "icon": "fwq",
-    "x": "676267.9",
-    "y": "-450118"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21012.3",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "服务器",
-    "icon": "fwq",
-    "x": "674003.2",
-    "y": "-457064"
   },
   {
     "地图": "航天城",
@@ -12853,9 +13311,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21364.8",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "676599",
+    "x": 676599,
     "y": "-450979"
   },
   {
@@ -12867,9 +13325,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21012.3",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "676822",
+    "x": 676822,
     "y": "-456839"
   },
   {
@@ -12881,9 +13339,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22036.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "673695",
+    "x": 673695,
     "y": "-459563"
   },
   {
@@ -12895,9 +13353,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22926",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "696068",
+    "x": 696068,
     "y": "-461971"
   },
   {
@@ -12909,9 +13367,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22141.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "696770",
+    "x": 696770,
     "y": "-463565"
   },
   {
@@ -12923,9 +13381,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21404",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "661800",
+    "x": 661800,
     "y": "-417680"
   },
   {
@@ -12937,9 +13395,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22844",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "657946",
+    "x": 657946,
     "y": "-452599"
   },
   {
@@ -12951,9 +13409,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21908.9",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "674296",
+    "x": 674296,
     "y": "-451835"
   },
   {
@@ -12965,9 +13423,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21255.2",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "674923",
+    "x": 674923,
     "y": "-450554"
   },
   {
@@ -12979,9 +13437,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21909.6",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "661023",
+    "x": 661023,
     "y": "-456423"
   },
   {
@@ -12993,9 +13451,9 @@ var mapArticle3_htjd = [
     "z坐标": "-21909.6",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "661023",
+    "x": 661023,
     "y": "-456550"
   },
   {
@@ -13007,9 +13465,9 @@ var mapArticle3_htjd = [
     "z坐标": "-20768",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "665159",
+    "x": 665159,
     "y": "-477634"
   },
   {
@@ -13021,9 +13479,9 @@ var mapArticle3_htjd = [
     "z坐标": "-20908.9",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "672604",
+    "x": 672604,
     "y": "-458472"
   },
   {
@@ -13035,9 +13493,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22352.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "674605.2",
+    "x": 674605.2,
     "y": "-458782"
   },
   {
@@ -13049,9 +13507,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22040",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "680394",
+    "x": 680394,
     "y": "-475652"
   },
   {
@@ -13063,9 +13521,9 @@ var mapArticle3_htjd = [
     "z坐标": "-20639.9",
     "拾取条件": "需要完成局内行动才能开启",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "672198",
+    "x": 672198,
     "y": "-473719"
   },
   {
@@ -13077,9 +13535,9 @@ var mapArticle3_htjd = [
     "z坐标": "-22926",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "691675",
+    "x": 691675,
     "y": "-464235"
   },
   {
@@ -13091,108 +13549,10 @@ var mapArticle3_htjd = [
     "z坐标": "-22926",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "694371.6",
+    "x": 694371.6,
     "y": "-460994"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_西区",
-    "自定义区域": "西区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21788.4",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "647687",
-    "y": "-468911"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22748.6",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "657421",
-    "y": "-451410"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21364.8",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "676130",
-    "y": "-450595"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22844",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "681988",
-    "y": "-457496"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22841",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "691990",
-    "y": "-475575"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22926",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "694921",
-    "y": "-464091"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22265.5",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "大工具盒",
-    "icon": "dgjx",
-    "x": "696201",
-    "y": "-471626"
   },
   {
     "地图": "航天城",
@@ -13205,7 +13565,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "663260",
+    "x": 663260,
     "y": "-424480"
   },
   {
@@ -13219,7 +13579,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "656687",
+    "x": 656687,
     "y": "-420595"
   },
   {
@@ -13233,7 +13593,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "664834",
+    "x": 664834,
     "y": "-452655"
   },
   {
@@ -13247,7 +13607,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "676920",
+    "x": 676920,
     "y": "-432860"
   },
   {
@@ -13261,7 +13621,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "672828",
+    "x": 672828,
     "y": "-456239"
   },
   {
@@ -13275,7 +13635,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "692483",
+    "x": 692483,
     "y": "-452249"
   },
   {
@@ -13289,7 +13649,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "657429",
+    "x": 657429,
     "y": "-451603"
   },
   {
@@ -13303,7 +13663,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "665217.3",
+    "x": 665217.3,
     "y": "-476172"
   },
   {
@@ -13317,7 +13677,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "691635",
+    "x": 691635,
     "y": "-468647"
   },
   {
@@ -13331,7 +13691,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "695716",
+    "x": 695716,
     "y": "-469595"
   },
   {
@@ -13345,7 +13705,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "649620",
+    "x": 649620,
     "y": "-465177"
   },
   {
@@ -13359,7 +13719,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "649635.9",
+    "x": 649635.9,
     "y": "-457794"
   },
   {
@@ -13373,7 +13733,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "665686",
+    "x": 665686,
     "y": "-452899"
   },
   {
@@ -13387,7 +13747,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "665558",
+    "x": 665558,
     "y": "-459128"
   },
   {
@@ -13401,7 +13761,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "663862",
+    "x": 663862,
     "y": "-455298"
   },
   {
@@ -13415,7 +13775,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "666150",
+    "x": 666150,
     "y": "-475668"
   },
   {
@@ -13429,7 +13789,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "668652",
+    "x": 668652,
     "y": "-454846"
   },
   {
@@ -13443,7 +13803,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "669871.9",
+    "x": 669871.9,
     "y": "-454246"
   },
   {
@@ -13457,7 +13817,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "672355.7",
+    "x": 672355.7,
     "y": "-474157"
   },
   {
@@ -13471,7 +13831,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "672816.6",
+    "x": 672816.6,
     "y": "-474149"
   },
   {
@@ -13485,7 +13845,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "680728",
+    "x": 680728,
     "y": "-458075"
   },
   {
@@ -13499,7 +13859,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "694100.1",
+    "x": 694100.1,
     "y": "-465981"
   },
   {
@@ -13513,36 +13873,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "693810",
+    "x": 693810,
     "y": "-468516"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21908.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "663563",
-    "y": "-454668"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22141.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "弹药箱",
-    "icon": "dyx",
-    "x": "693118.7",
-    "y": "-452037"
   },
   {
     "地图": "航天城",
@@ -13555,7 +13887,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "647665",
+    "x": 647665,
     "y": "-470030"
   },
   {
@@ -13569,7 +13901,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "662500",
+    "x": 662500,
     "y": "-449700"
   },
   {
@@ -13583,7 +13915,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "675242.3",
+    "x": 675242.3,
     "y": "-451220"
   },
   {
@@ -13597,7 +13929,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "663229",
+    "x": 663229,
     "y": "-455209"
   },
   {
@@ -13611,7 +13943,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "676731",
+    "x": 676731,
     "y": "-458550"
   },
   {
@@ -13625,7 +13957,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "673915.1",
+    "x": 673915.1,
     "y": "-454119"
   },
   {
@@ -13639,7 +13971,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "680034.2",
+    "x": 680034.2,
     "y": "-463950"
   },
   {
@@ -13653,50 +13985,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "673382.8",
+    "x": 673382.8,
     "y": "-474770"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22025.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "航空储物箱",
-    "icon": "hkcwx",
-    "x": "662572",
-    "y": "-453119"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22030.3",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "航空储物箱",
-    "icon": "hkcwx",
-    "x": "675486",
-    "y": "-455799"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21856.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "航空储物箱",
-    "icon": "hkcwx",
-    "x": "672780.1",
-    "y": "-454224"
   },
   {
     "地图": "航天城",
@@ -13709,7 +13999,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "671851",
+    "x": 671851,
     "y": "-459464"
   },
   {
@@ -13723,7 +14013,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "684510",
+    "x": 684510,
     "y": "-431500"
   },
   {
@@ -13737,7 +14027,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "665874",
+    "x": 665874,
     "y": "-450118"
   },
   {
@@ -13751,7 +14041,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "673870",
+    "x": 673870,
     "y": "-450766"
   },
   {
@@ -13765,7 +14055,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "668073.6",
+    "x": 668073.6,
     "y": "-450920"
   },
   {
@@ -13779,7 +14069,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "661073",
+    "x": 661073,
     "y": "-459559"
   },
   {
@@ -13793,7 +14083,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "664499",
+    "x": 664499,
     "y": "-474868"
   },
   {
@@ -13807,7 +14097,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "664197.8",
+    "x": 664197.8,
     "y": "-477877"
   },
   {
@@ -13821,7 +14111,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "672665",
+    "x": 672665,
     "y": "-473690"
   },
   {
@@ -13835,7 +14125,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "672750",
+    "x": 672750,
     "y": "-473690"
   },
   {
@@ -13849,7 +14139,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "664682.8",
+    "x": 664682.8,
     "y": "-479119"
   },
   {
@@ -13863,7 +14153,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "694627",
+    "x": 694627,
     "y": "-462665"
   },
   {
@@ -13877,7 +14167,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "694555",
+    "x": 694555,
     "y": "-463929"
   },
   {
@@ -13891,64 +14181,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "694458",
+    "x": 694458,
     "y": "-464772"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21012.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "665843",
-    "y": "-449443"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中控室",
-    "自定义区域": "中控室",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-21920",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "667921",
-    "y": "-478136"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22141.3",
-    "拾取条件": "需要使用钥匙卡才能开启",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "695527",
-    "y": "-464716"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_东区",
-    "自定义区域": "东区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22141.8",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "抽屉柜",
-    "icon": "ctg",
-    "x": "696119",
-    "y": "-469274"
   },
   {
     "地图": "航天城",
@@ -13961,7 +14195,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "663830",
+    "x": 663830,
     "y": "-452275"
   },
   {
@@ -13975,7 +14209,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "695605",
+    "x": 695605,
     "y": "-461989"
   },
   {
@@ -13989,36 +14223,8 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "669765",
+    "x": 669765,
     "y": "-478725"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22034.2",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "工具柜",
-    "icon": "gjg",
-    "x": "663210",
-    "y": "-449620"
-  },
-  {
-    "地图": "航天城",
-    "大区域": "航天城_中心区",
-    "自定义区域": "中心区",
-    "是否为散点": "FALSE",
-    "倍场特殊配置": "第二难度倍场以上才刷新",
-    "z坐标": "-22485.4",
-    "拾取条件": "",
-    "出现条件": "",
-    "name": "工具柜",
-    "icon": "gjg",
-    "x": "674251",
-    "y": "-459041"
   },
   {
     "地图": "航天城",
@@ -14031,7 +14237,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "643435",
+    "x": 643435,
     "y": "-469885"
   },
   {
@@ -14045,7 +14251,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "674724",
+    "x": 674724,
     "y": "-450142"
   },
   {
@@ -14059,7 +14265,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "661000",
+    "x": 661000,
     "y": "-458780"
   },
   {
@@ -14073,7 +14279,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "670024",
+    "x": 670024,
     "y": "-455529"
   },
   {
@@ -14087,7 +14293,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "665009",
+    "x": 665009,
     "y": "-450030"
   },
   {
@@ -14101,8 +14307,22 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "671758",
+    "x": 671758,
     "y": "-473775"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_发射区",
+    "自定义区域": "发射区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22362.6",
+    "拾取条件": "断桥事件",
+    "出现条件": "断桥事件",
+    "name": "哈夫克返回舱",
+    "icon": "hfkfhc",
+    "x": 668464.8,
+    "y": "-433862"
   },
   {
     "地图": "航天城",
@@ -14115,7 +14335,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑",
     "icon": "dn",
-    "x": "643661",
+    "x": 643661,
     "y": "-467539"
   },
   {
@@ -14129,7 +14349,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑",
     "icon": "dn",
-    "x": "668639",
+    "x": 668639,
     "y": "-451136"
   },
   {
@@ -14143,7 +14363,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "电脑",
     "icon": "dn",
-    "x": "694747",
+    "x": 694747,
     "y": "-463562"
   },
   {
@@ -14157,7 +14377,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "664680",
+    "x": 664680,
     "y": "-448479"
   },
   {
@@ -14171,7 +14391,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "664680",
+    "x": 664680,
     "y": "-448569"
   },
   {
@@ -14185,7 +14405,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "664680",
+    "x": 664680,
     "y": "-448658"
   },
   {
@@ -14199,7 +14419,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "664680",
+    "x": 664680,
     "y": "-448747"
   },
   {
@@ -14213,7 +14433,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "673741",
+    "x": 673741,
     "y": "-459785"
   },
   {
@@ -14227,7 +14447,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "673741",
+    "x": 673741,
     "y": "-459873"
   },
   {
@@ -14241,7 +14461,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "663262",
+    "x": 663262,
     "y": "-452892"
   },
   {
@@ -14255,7 +14475,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "663351",
+    "x": 663351,
     "y": "-452892"
   },
   {
@@ -14269,7 +14489,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "武器箱",
     "icon": "wqx",
-    "x": "662091",
+    "x": 662091,
     "y": "-452645"
   },
   {
@@ -14283,7 +14503,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "武器箱",
     "icon": "wqx",
-    "x": "661287",
+    "x": 661287,
     "y": "-449357"
   },
   {
@@ -14297,7 +14517,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "武器箱",
     "icon": "wqx",
-    "x": "675045",
+    "x": 675045,
     "y": "-456004"
   },
   {
@@ -14311,7 +14531,7 @@ var mapArticle3_htjd = [
     "出现条件": "",
     "name": "武器箱",
     "icon": "wqx",
-    "x": "673214",
+    "x": 673214,
     "y": "-456129"
   },
   {
@@ -14325,309 +14545,785 @@ var mapArticle3_htjd = [
     "出现条件": "飞升者行动",
     "name": "电脑",
     "icon": "dn",
-    "x": "657158.3125",
+    "x": 657158.3125,
     "y": "-418684"
   },
-  // 复活点
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "642030.562500",
-    "y": "-454288.562500",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 664558,
+    "y": "-440413"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "641868.000000",
-    "y": "-472453.812500",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22350.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 658115,
+    "y": "-440439"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "352348.562500",
-    "y": "-576832.375000",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21859",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 665443,
+    "y": "-439261"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "665390.312500",
-    "y": "-479538.906250",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 658014,
+    "y": "-439952"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "697247.12500",
-    "y": "-464868.593750",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 664569,
+    "y": "-437844"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "679688.500000",
-    "y": "-467399.687500",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 657992,
+    "y": "-441014"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "689175.562500",
-    "y": "-480478.718750",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21361",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 666484,
+    "y": "-437321"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "691724.312500",
-    "y": "-445028.250000",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22346",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 659859,
+    "y": "-440958"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "657532.812500",
-    "y": "-419005.406250",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24325",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 685906,
+    "y": "-438732"
   },
   {
-    "name": "拉闸撤离点",
-    "自定义区域": "直升机撤离点",
-    "type": "retreat",
-    "icon": 'dtcld',
-    "x": "672075.937500",
-    "y": "-440850.687500",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24265.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 688930,
+    "y": "-443480"
   },
   {
-    "name": "丢包撤离点",
-    "自定义区域": "试车场撤离点",
-    "type": "retreat",
-    "icon": 'tjcld',
-    "x": "687504.687500",
-    "y": "-427413.843750",
-    "z": "",
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21859",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 663586,
+    "y": "-440363"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21802.5",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 662768,
+    "y": "-440946"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21855",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 658951,
+    "y": "-440637"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24657",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 686171,
+    "y": "-445918"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21847",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 664454,
+    "y": "-436127"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21847",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 665749,
+    "y": "-437577"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22350",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 658833,
+    "y": "-439725"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21764",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 659362,
+    "y": "-439406"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-25185.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 685214,
+    "y": "-443542"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22351",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "藏匿物",
+    "icon": "cnw",
+    "x": 652834,
+    "y": "-442731"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22370",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "藏匿物",
+    "icon": "cnw",
+    "x": 656073,
+    "y": "-440185"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24963",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 653835,
+    "y": "-453637"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21859",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 664778,
+    "y": "-439962"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21847",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 665026,
+    "y": "-436431"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21836",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 665110,
+    "y": "-439364"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21821",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 664039.2,
+    "y": "-436414"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22249",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 658900,
+    "y": "-440294"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "鸟窝",
+    "icon": "nw",
+    "x": 663622,
+    "y": "-439047"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21338",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 659496,
+    "y": "-439705"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21270",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑",
+    "icon": "dn",
+    "x": 663871,
+    "y": "-439853"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 663861,
+    "y": "-440870"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": 21364,
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 663604,
+    "y": "-441103"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 663127,
+    "y": "-440212"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 664060,
+    "y": "-440627"
+  },
+     // 复活点
+     {
+        "name": "出生点",
+        "type": "revive",
+        "icon": 'csd',
+        "x": "642030.562500",
+        "y": "-454288.562500",
+        "z": ""
+    },
+    {
+        "name": "出生点",
+        "type": "revive",
+        "icon": 'csd',
+        "x": "641868.000000",
+        "y": "-472453.812500",
+        "z": ""
+    },
+    {
+        "name": "出生点",
+        "type": "revive",
+        "icon": 'csd',
+        "x": "352348.562500",
+        "y": "-576832.375000",
+        "z": ""
+    },
+    {
+        "name": "出生点",
+        "type": "revive",
+        "icon": 'csd',
+        "x": "665390.312500",
+        "y": "-479538.906250",
+        "z": ""
+    },
+{
+  "name": "出生点",
+  "type": "revive",
+  "icon": 'csd',
+  "x": "697247.12500",
+  "y": "-464868.593750",
+  "z": ""
+},
+    {
+        "name": "出生点",
+        "type": "revive",
+        "icon": 'csd',
+        "x": "679688.500000",
+        "y": "-467399.687500",
+        "z": ""
+    },
+    {
+        "name": "出生点",
+        "type": "revive",
+        "icon": 'csd',
+        "x": "689175.562500",
+        "y": "-480478.718750",
+        "z": ""
+    },
+    {
+        "name": "出生点",
+        "type": "revive",
+        "icon": 'csd',
+        "x": "691724.312500",
+        "y": "-445028.250000",
+        "z": ""
+    },
+    {
+        "name": "出生点",
+        "type": "revive",
+        "icon": 'csd',
+        "x": "657532.812500",
+        "y": "-419005.406250",
+        "z": ""
+    },
+    {
+        "name": "拉闸撤离点",
+        "自定义区域": "直升机撤离点",
+        "type": "retreat",
+        "icon": 'dtcld',
+        "x": "672075.937500",
+        "y": "-440850.687500",
+        "z": ""
+    },
+    {
+        "name": "丢包撤离点",
+        "自定义区域": "试车场撤离点",
+        "type": "retreat",
+        "icon": 'tjcld',
+        "x": "687504.687500",
+        "y": "-427413.843750",
+        "z": "",
   "撤离条件": "丢弃背包"
-  },
-  {
-    "name": "行动撤离点",
-    "自定义区域": "火箭撤离点",
-    "type": "retreat",
-    "icon": 'hjcld',
-    "x": "660050.062500",
-    "y": "-416314.531250",
-    "z": ""
-  },
-  // Boss
-  // Boss
-  {
-    "name": "[卫队长官]赛伊德",
-    "typeName": "首领",
-    "自定义区域": "可能出现在行政辖区内",
-    "type": "Boss",
-    "icon": 'boss',
-    "x": "",
-    "y": "",
-    "z": ""
-  },
-  {
-    "name": "[卫队长官]赛伊德",
-    "typeName": "首领",
-    "自定义区域": "可能出现在行政辖区内",
-    "type": "Boss",
-    "icon": 'boss',
-    "x": "",
-    "y": "",
-    "z": ""
-  },
-  // 行动接取站
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "334618.125000",
-    "y": "-788692.500000",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "384914.218750",
-    "y": "-782215.312500",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "350749.593750",
-    "y": "-760869.062500",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "362700.000000",
-    "y": "-764869.875000",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "371941.281250",
-    "y": "-773758.375000",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "397259.812500",
-    "y": "-758860.000000",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "395753.187500",
-    "y": "-745796.187500",
-    "z": ""
-  },
-  {
-    "name": "高价值接取站",
-    "type": "moves",
-    "icon": 'xdjqzgjz',
-    "x": "354700.062500",
-    "y": "-780500.937500",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "332511.875000",
-    "y": "-779256.812500",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "343112.000000",
-    "y": "-792986.437500",
-    "z": ""
-  },
-  {
-    "name": "高价值接取站",
-    "type": "moves",
-    "icon": 'xdjqzgjz',
-    "x": "364365.843750",
-    "y": "-794160.125000",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "371278.656250",
-    "y": "-768059.125000",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "394915.906250",
-    "y": "-751570.187500",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "343047.562500",
-    "y": "-762402.937500",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "392066.375000",
-    "y": "-756213.125000",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "340722.812500",
-    "y": "-783825.500000",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "332315.937500",
-    "y": "-764151.500000",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "376139.937500",
-    "y": "-789654.750000",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "366676.968750",
-    "y": "-773072.312500",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "388136.906250",
-    "y": "-749814.000000",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "365372.875000",
-    "y": "-760074.500000",
-    "z": ""
-  },
-  {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "377253.250000",
-    "y": "-791894.687500",
-    "z": ""
-  },
+    },
+    {
+        "name": "行动撤离点",
+        "自定义区域": "火箭撤离点",
+        "type": "retreat",
+        "icon": 'hjcld',
+        "x": "660050.062500",
+        "y": "-416314.531250",
+        "z": ""
+    },
+    // Boss
+    // Boss
+    {
+        "name": "[卫队长官]赛伊德",
+        "typeName": "首领",
+        "自定义区域": "可能出现在行政辖区内",
+        "type": "Boss",
+        "icon": 'boss',
+        "x": "",
+        "y": "",
+        "z": ""
+    },
+    {
+        "name": "[卫队长官]赛伊德",
+        "typeName": "首领",
+        "自定义区域": "可能出现在行政辖区内",
+        "type": "Boss",
+        "icon": 'boss',
+        "x": "",
+        "y": "",
+        "z": ""
+    },
+    // 行动接取站
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "334618.125000",
+        "y": "-788692.500000",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "384914.218750",
+        "y": "-782215.312500",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "350749.593750",
+        "y": "-760869.062500",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "362700.000000",
+        "y": "-764869.875000",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "371941.281250",
+        "y": "-773758.375000",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "397259.812500",
+        "y": "-758860.000000",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "395753.187500",
+        "y": "-745796.187500",
+        "z": ""
+    },
+    {
+        "name": "高价值接取站",
+        "type": "moves",
+        "icon": 'xdjqzgjz',
+        "x": "354700.062500",
+        "y": "-780500.937500",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "332511.875000",
+        "y": "-779256.812500",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "343112.000000",
+        "y": "-792986.437500",
+        "z": ""
+    },
+    {
+        "name": "高价值接取站",
+        "type": "moves",
+        "icon": 'xdjqzgjz',
+        "x": "364365.843750",
+        "y": "-794160.125000",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "371278.656250",
+        "y": "-768059.125000",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "394915.906250",
+        "y": "-751570.187500",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "343047.562500",
+        "y": "-762402.937500",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "392066.375000",
+        "y": "-756213.125000",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "340722.812500",
+        "y": "-783825.500000",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "332315.937500",
+        "y": "-764151.500000",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "376139.937500",
+        "y": "-789654.750000",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "366676.968750",
+        "y": "-773072.312500",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "388136.906250",
+        "y": "-749814.000000",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "365372.875000",
+        "y": "-760074.500000",
+        "z": ""
+    },
+    {
+        "name": "行动接取站",
+        "type": "move",
+        "icon": 'xdjqz',
+        "x": "377253.250000",
+        "y": "-791894.687500",
+        "z": ""
+    },
 ]
 
 // 事件
@@ -14637,201 +15333,208 @@ var navList4_htjd = [
     title: '全部',
     typeList: [
       {
-        "name": "保险柜",
-        "lang": "lang_bxg",
-        "idType": 1,
-        "num": 8,
-        "icon": "nav_bxx"
-      },
-      {
-        "name": "小保险箱",
-        "lang": "lang_xbxx",
-        "idType": 2,
-        "num": 6,
-        "icon": "nav_xbxx"
-      },
-      {
-        "name": "服务器",
-        "lang": "lang_fwq",
-        "idType": 3,
-        "num": 8,
-        "icon": "nav_fwq"
-      },
-      {
-        "name": "电脑",
-        "lang": "lang_dn",
-        "idType": 4,
-        "num": 4,
-        "icon": "nav_dn"
-      },
-      {
-        "name": "电脑机箱",
-        "lang": "lang_dnjx",
-        "idType": 5,
-        "num": 16,
-        "icon": "nav_dnjx"
-      },
-      {
-        "name": "武器箱",
-        "lang": "lang_wqx",
-        "idType": 6,
-        "num": 4,
-        "icon": "nav_wqx"
-      },
-      {
-        "name": "大武器箱",
-        "lang": "lang_dwqx",
-        "idType": 7,
-        "num": 15,
-        "icon": "nav_dwqx"
-      },
-      {
-        "name": "弹药箱",
-        "lang": "lang_dyx",
-        "idType": 8,
-        "num": 15,
-        "icon": "nav_dyx"
-      },
-      {
-        "name": "工具柜",
-        "lang": "lang_gjg",
-        "idType": 9,
-        "num": 9,
-        "icon": "nav_gjg"
-      },
-      {
-        "name": "大工具盒",
-        "lang": "lang_dgjh",
-        "idType": 10,
-        "num": 25,
-        "icon": "nav_dgjx"
-      },
-      {
-        "name": "实验服",
-        "lang": "lang_syf",
-        "idType": 11,
-        "num": 14,
-        "icon": "nav_yf_s"
-      },
-      {
-        "name": "衣服",
-        "lang": "lang_yf",
-        "idType": 12,
-        "num": 21,
-        "icon": "nav_yf"
-      },
-      {
-        "name": "医疗包",
-        "lang": "lang_ylb",
-        "idType": 13,
-        "num": 13,
-        "icon": "nav_ylb"
-      },
-      {
-        "name": "医疗物资堆",
-        "lang": "lang_ylwzd",
-        "idType": 14,
-        "num": 8,
-        "icon": "nav_ylwzd"
-      },
-      {
-        "name": "旅行袋",
-        "lang": "lang_lxd",
-        "idType": 15,
-        "num": 10,
-        "icon": "nav_lxd"
-      },
-      {
-        "name": "手提箱",
-        "lang": "lang_stx",
-        "idType": 16,
-        "num": 9,
-        "icon": "nav_stx"
-      },
-      {
-        "name": "储物柜",
-        "lang": "lang_cwg",
-        "idType": 17,
-        "num": 8,
-        "icon": "nav_cwg"
-      },
-      {
-        "name": "高级储物箱",
-        "lang": "lang_gjcwx",
-        "idType": 18,
-        "num": 11,
-        "icon": "nav_gjcwx"
-      },
-      {
-        "name": "抽屉柜",
-        "lang": "lang_ctg",
-        "idType": 19,
-        "num": 18,
-        "icon": "nav_ctg"
-      },
-      {
-        "name": "登山包",
-        "lang": "lang_dsb",
-        "idType": 20,
-        "num": 7,
-        "icon": "nav_dsb"
-      },
-      {
-        "name": "快递箱",
-        "lang": "lang_kdx",
-        "idType": 21,
-        "num": 17,
-        "icon": "nav_kdx"
-      },
-      {
-        "name": "航空储物箱",
-        "lang": "lang_hkcwx",
-        "idType": 22,
-        "num": 11,
-        "icon": "nav_hkcwx"
-      },
-      {
-        "name": "垃圾箱",
-        "lang": "lang_ljx",
-        "idType": 23,
-        "num": 5,
-        "icon": "nav_ljx"
-      },
-      {
-        "name": "野外物资箱",
-        "lang": "lang_ywwzx",
-        "idType": 25,
-        "num": 8,
-        "icon": "nav_ywwzx"
-      },
-      {
-        "name": "鸟窝",
-        "lang": "lang_nw",
-        "idType": 25,
-        "num": 7,
-        "icon": "nav_nw"
-      },
-      {
-        "name": "藏匿物",
-        "lang": "lang_cnw",
-        "idType": 25,
-        "num": 7,
-        "icon": "nav_cnw"
-      },
-      {
-        "name": "高级旅行箱",
-        "lang": "lang_gjlxx",
-        "idType": 25,
-        "num": 10,
-        "icon": "nav_xlx"
-      },
-      {
-        "name": "哈夫克返回舱",
-        "lang": "lang_hfkfhc",
-        "idType": 25,
-        "num": 1,
-        "icon": "nav_hfkfhc"
-      },
+          "name": "保险箱",
+          "lang": "lang_bxg",
+          "idType": 1,
+          "num": 13,
+          "icon": "nav_bxx"
+        },
+        {
+          "name": "小保险箱",
+          "lang": "lang_xbxx",
+          "idType": 2,
+          "num": 8,
+          "icon": "nav_xbxx"
+        },
+        {
+          "name": "服务器",
+          "lang": "lang_fwq",
+          "idType": 3,
+          "num": 8,
+          "icon": "nav_fwq"
+        },
+        {
+          "name": "电脑",
+          "lang": "lang_dn",
+          "idType": 4,
+          "num": 5,
+          "icon": "nav_dn"
+        },
+        {
+          "name": "电脑机箱",
+          "lang": "lang_dnjx",
+          "idType": 5,
+          "num": 18,
+          "icon": "nav_dnjx"
+        },
+        {
+          "name": "电脑包",
+          "lang": "lang_dnb",
+          "idType": 5,
+          "num": 6,
+          "icon": "nav_dsb"
+        },
+        {
+          "name": "武器箱",
+          "lang": "lang_wqx",
+          "idType": 6,
+          "num": 4,
+          "icon": "nav_wqx"
+        },
+        {
+          "name": "大武器箱",
+          "lang": "lang_dwqx",
+          "idType": 7,
+          "num": 15,
+          "icon": "nav_dwqx"
+        },
+        {
+          "name": "弹药箱",
+          "lang": "lang_dyx",
+          "idType": 8,
+          "num": 16,
+          "icon": "nav_dyx"
+        },
+        {
+          "name": "工具柜",
+          "lang": "lang_gjg",
+          "idType": 9,
+          "num": 11,
+          "icon": "nav_gjg"
+        },
+        {
+          "name": "收纳盒",
+          "lang": "lang_dgjh",
+          "idType": 10,
+          "num": 25,
+          "icon": "nav_dgjx"
+        },
+        {
+          "name": "一件衣服",
+          "lang": "lang_yf",
+          "idType": 12,
+          "num": 35,
+          "icon": "nav_yf"
+        },
+        {
+          "name": "军用医疗包",
+          "lang": "lang_ylb",
+          "idType": 13,
+          "num": 13,
+          "icon": "nav_ylb"
+        },
+        {
+          "name": "医疗物资堆",
+          "lang": "lang_ylwzd",
+          "idType": 14,
+          "num": 8,
+          "icon": "nav_ylwzd"
+        },
+        {
+          "name": "旅行包",
+          "lang": "lang_lxd",
+          "idType": 15,
+          "num": 14,
+          "icon": "nav_lxd"
+        },
+        {
+          "name": "手提箱",
+          "lang": "lang_stx",
+          "idType": 16,
+          "num": 12,
+          "icon": "nav_stx"
+        },
+        {
+          "name": "储物柜",
+          "lang": "lang_cwg",
+          "idType": 17,
+          "num": 8,
+          "icon": "nav_cwg"
+        },
+        {
+          "name": "高级储物箱",
+          "lang": "lang_gjcwx",
+          "idType": 18,
+          "num": 17,
+          "icon": "nav_gjcwx"
+        },
+        {
+          "name": "抽屉柜",
+          "lang": "lang_ctg",
+          "idType": 19,
+          "num": 20,
+          "icon": "nav_ctg"
+        },
+        {
+          "name": "登山包",
+          "lang": "lang_dsb",
+          "idType": 20,
+          "num": 10,
+          "icon": "nav_dsb"
+        },
+        {
+          "name": "快递箱",
+          "lang": "lang_kdx",
+          "idType": 21,
+          "num": 21,
+          "icon": "nav_kdx"
+        },
+        {
+          "name": "航空储物箱",
+          "lang": "lang_hkcwx",
+          "idType": 22,
+          "num": 11,
+          "icon": "nav_hkcwx"
+        },
+        {
+          "name": "垃圾桶",
+          "lang": "lang_ljx",
+          "idType": 23,
+          "num": 5,
+          "icon": "nav_ljx"
+        },
+        {
+          "name": "搅拌车",
+          "lang": "lang_snc",
+          "idType": 24,
+          "num": 0,
+          "icon": "nav_snc"
+        },
+        {
+          "name": "野外物资箱",
+          "lang": "lang_ywwzx",
+          "idType": 25,
+          "num": 8,
+          "icon": "nav_ywwzx"
+        },
+        {
+          "name": "鸟窝",
+          "lang": "lang_nw",
+          "idType": 25,
+          "num": 8,
+          "icon": "nav_nw"
+        },
+        {
+          "name": "藏匿物",
+          "lang": "lang_cnw",
+          "idType": 25,
+          "num": 9,
+          "icon": "nav_cnw"
+        },
+        {
+          "name": "高级旅行箱",
+          "lang": "lang_gjlxx",
+          "idType": 25,
+          "num": 13,
+          "icon": "nav_xlx"
+        },
+        {
+          "name": "哈夫克返回舱",
+          "lang": "lang_hfkfhc",
+          "idType": 25,
+          "num": 1,
+          "icon": "nav_hfkfhc"
+        },
       {
         "name": "出生点",
         "idType": 26,
@@ -14881,7 +15584,7 @@ var navList4_htjd = [
     title: '物资点',
     typeList: [
       {
-        "name": "保险柜",
+        "name": "保险箱",
         "idType": 1,
         "num": 8,
         "icon": "nav_bxx"
@@ -14935,25 +15638,19 @@ var navList4_htjd = [
         "icon": "nav_gjg"
       },
       {
-        "name": "大工具盒",
+        "name": "收纳盒",
         "idType": 10,
         "num": 23,
         "icon": "nav_dgjx"
       },
       {
-        "name": "实验服",
-        "idType": 11,
-        "num": 14,
-        "icon": "nav_yf_s"
-      },
-      {
-        "name": "衣服",
+        "name": "一件衣服",
         "idType": 12,
-        "num": 21,
+        "num": 35,
         "icon": "nav_yf"
       },
       {
-        "name": "医疗包",
+        "name": "军用医疗包",
         "idType": 13,
         "num": 13,
         "icon": "nav_ylb"
@@ -14965,7 +15662,7 @@ var navList4_htjd = [
         "icon": "nav_ylwzd"
       },
       {
-        "name": "旅行袋",
+        "name": "旅行包",
         "idType": 15,
         "num": 10,
         "icon": "nav_lxd"
@@ -15013,13 +15710,13 @@ var navList4_htjd = [
         "icon": "nav_hkcwx"
       },
       {
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "idType": 23,
         "num": 5,
         "icon": "nav_ljx"
       },
       // {
-      //   "name": "水泥车",
+      //   "name": "搅拌车",
       //   "idType": 24,
       //   "num": 0,
       //   "icon": "nav_snc"
@@ -15111,201 +15808,208 @@ var navListInfo4_htjd = [
     title: '全部',
     typeList: [
       {
-        "name": "保险柜",
-        "lang": "lang_bxg",
-        "idType": 1,
-        "num": 8,
-        "icon": "nav_bxx"
-      },
-      {
-        "name": "小保险箱",
-        "lang": "lang_xbxx",
-        "idType": 2,
-        "num": 6,
-        "icon": "nav_xbxx"
-      },
-      {
-        "name": "服务器",
-        "lang": "lang_fwq",
-        "idType": 3,
-        "num": 8,
-        "icon": "nav_fwq"
-      },
-      {
-        "name": "电脑",
-        "lang": "lang_dn",
-        "idType": 4,
-        "num": 4,
-        "icon": "nav_dn"
-      },
-      {
-        "name": "电脑机箱",
-        "lang": "lang_dnjx",
-        "idType": 5,
-        "num": 16,
-        "icon": "nav_dnjx"
-      },
-      {
-        "name": "武器箱",
-        "lang": "lang_wqx",
-        "idType": 6,
-        "num": 4,
-        "icon": "nav_wqx"
-      },
-      {
-        "name": "大武器箱",
-        "lang": "lang_dwqx",
-        "idType": 7,
-        "num": 15,
-        "icon": "nav_dwqx"
-      },
-      {
-        "name": "弹药箱",
-        "lang": "lang_dyx",
-        "idType": 8,
-        "num": 15,
-        "icon": "nav_dyx"
-      },
-      {
-        "name": "工具柜",
-        "lang": "lang_gjg",
-        "idType": 9,
-        "num": 9,
-        "icon": "nav_gjg"
-      },
-      {
-        "name": "大工具盒",
-        "lang": "lang_dgjh",
-        "idType": 10,
-        "num": 25,
-        "icon": "nav_dgjx"
-      },
-      {
-        "name": "实验服",
-        "lang": "lang_syf",
-        "idType": 11,
-        "num": 14,
-        "icon": "nav_yf_s"
-      },
-      {
-        "name": "衣服",
-        "lang": "lang_yf",
-        "idType": 12,
-        "num": 21,
-        "icon": "nav_yf"
-      },
-      {
-        "name": "医疗包",
-        "lang": "lang_ylb",
-        "idType": 13,
-        "num": 13,
-        "icon": "nav_ylb"
-      },
-      {
-        "name": "医疗物资堆",
-        "lang": "lang_ylwzd",
-        "idType": 14,
-        "num": 8,
-        "icon": "nav_ylwzd"
-      },
-      {
-        "name": "旅行袋",
-        "lang": "lang_lxd",
-        "idType": 15,
-        "num": 10,
-        "icon": "nav_lxd"
-      },
-      {
-        "name": "手提箱",
-        "lang": "lang_stx",
-        "idType": 16,
-        "num": 9,
-        "icon": "nav_stx"
-      },
-      {
-        "name": "储物柜",
-        "lang": "lang_cwg",
-        "idType": 17,
-        "num": 8,
-        "icon": "nav_cwg"
-      },
-      {
-        "name": "高级储物箱",
-        "lang": "lang_gjcwx",
-        "idType": 18,
-        "num": 11,
-        "icon": "nav_gjcwx"
-      },
-      {
-        "name": "抽屉柜",
-        "lang": "lang_ctg",
-        "idType": 19,
-        "num": 18,
-        "icon": "nav_ctg"
-      },
-      {
-        "name": "登山包",
-        "lang": "lang_dsb",
-        "idType": 20,
-        "num": 7,
-        "icon": "nav_dsb"
-      },
-      {
-        "name": "快递箱",
-        "lang": "lang_kdx",
-        "idType": 21,
-        "num": 17,
-        "icon": "nav_kdx"
-      },
-      {
-        "name": "航空储物箱",
-        "lang": "lang_hkcwx",
-        "idType": 22,
-        "num": 11,
-        "icon": "nav_hkcwx"
-      },
-      {
-        "name": "垃圾箱",
-        "lang": "lang_ljx",
-        "idType": 23,
-        "num": 5,
-        "icon": "nav_ljx"
-      },
-      {
-        "name": "野外物资箱",
-        "lang": "lang_ywwzx",
-        "idType": 25,
-        "num": 8,
-        "icon": "nav_ywwzx"
-      },
-      {
-        "name": "鸟窝",
-        "lang": "lang_nw",
-        "idType": 25,
-        "num": 7,
-        "icon": "nav_nw"
-      },
-      {
-        "name": "藏匿物",
-        "lang": "lang_cnw",
-        "idType": 25,
-        "num": 7,
-        "icon": "nav_cnw"
-      },
-      {
-        "name": "高级旅行箱",
-        "lang": "lang_gjlxx",
-        "idType": 25,
-        "num": 10,
-        "icon": "nav_xlx"
-      },
-      {
-        "name": "哈夫克返回舱",
-        "lang": "lang_hfkfhc",
-        "idType": 25,
-        "num": 1,
-        "icon": "nav_hfkfhc"
-      },
+          "name": "保险箱",
+          "lang": "lang_bxg",
+          "idType": 1,
+          "num": 13,
+          "icon": "nav_bxx"
+        },
+        {
+          "name": "小保险箱",
+          "lang": "lang_xbxx",
+          "idType": 2,
+          "num": 8,
+          "icon": "nav_xbxx"
+        },
+        {
+          "name": "服务器",
+          "lang": "lang_fwq",
+          "idType": 3,
+          "num": 8,
+          "icon": "nav_fwq"
+        },
+        {
+          "name": "电脑",
+          "lang": "lang_dn",
+          "idType": 4,
+          "num": 5,
+          "icon": "nav_dn"
+        },
+        {
+          "name": "电脑机箱",
+          "lang": "lang_dnjx",
+          "idType": 5,
+          "num": 18,
+          "icon": "nav_dnjx"
+        },
+        {
+          "name": "电脑包",
+          "lang": "lang_dnb",
+          "idType": 5,
+          "num": 6,
+          "icon": "nav_dsb"
+        },
+        {
+          "name": "武器箱",
+          "lang": "lang_wqx",
+          "idType": 6,
+          "num": 4,
+          "icon": "nav_wqx"
+        },
+        {
+          "name": "大武器箱",
+          "lang": "lang_dwqx",
+          "idType": 7,
+          "num": 15,
+          "icon": "nav_dwqx"
+        },
+        {
+          "name": "弹药箱",
+          "lang": "lang_dyx",
+          "idType": 8,
+          "num": 16,
+          "icon": "nav_dyx"
+        },
+        {
+          "name": "工具柜",
+          "lang": "lang_gjg",
+          "idType": 9,
+          "num": 11,
+          "icon": "nav_gjg"
+        },
+        {
+          "name": "收纳盒",
+          "lang": "lang_dgjh",
+          "idType": 10,
+          "num": 25,
+          "icon": "nav_dgjx"
+        },
+        {
+          "name": "一件衣服",
+          "lang": "lang_yf",
+          "idType": 12,
+          "num": 35,
+          "icon": "nav_yf"
+        },
+        {
+          "name": "军用医疗包",
+          "lang": "lang_ylb",
+          "idType": 13,
+          "num": 13,
+          "icon": "nav_ylb"
+        },
+        {
+          "name": "医疗物资堆",
+          "lang": "lang_ylwzd",
+          "idType": 14,
+          "num": 8,
+          "icon": "nav_ylwzd"
+        },
+        {
+          "name": "旅行包",
+          "lang": "lang_lxd",
+          "idType": 15,
+          "num": 14,
+          "icon": "nav_lxd"
+        },
+        {
+          "name": "手提箱",
+          "lang": "lang_stx",
+          "idType": 16,
+          "num": 12,
+          "icon": "nav_stx"
+        },
+        {
+          "name": "储物柜",
+          "lang": "lang_cwg",
+          "idType": 17,
+          "num": 8,
+          "icon": "nav_cwg"
+        },
+        {
+          "name": "高级储物箱",
+          "lang": "lang_gjcwx",
+          "idType": 18,
+          "num": 17,
+          "icon": "nav_gjcwx"
+        },
+        {
+          "name": "抽屉柜",
+          "lang": "lang_ctg",
+          "idType": 19,
+          "num": 20,
+          "icon": "nav_ctg"
+        },
+        {
+          "name": "登山包",
+          "lang": "lang_dsb",
+          "idType": 20,
+          "num": 10,
+          "icon": "nav_dsb"
+        },
+        {
+          "name": "快递箱",
+          "lang": "lang_kdx",
+          "idType": 21,
+          "num": 21,
+          "icon": "nav_kdx"
+        },
+        {
+          "name": "航空储物箱",
+          "lang": "lang_hkcwx",
+          "idType": 22,
+          "num": 11,
+          "icon": "nav_hkcwx"
+        },
+        {
+          "name": "垃圾桶",
+          "lang": "lang_ljx",
+          "idType": 23,
+          "num": 5,
+          "icon": "nav_ljx"
+        },
+        {
+          "name": "搅拌车",
+          "lang": "lang_snc",
+          "idType": 24,
+          "num": 0,
+          "icon": "nav_snc"
+        },
+        {
+          "name": "野外物资箱",
+          "lang": "lang_ywwzx",
+          "idType": 25,
+          "num": 8,
+          "icon": "nav_ywwzx"
+        },
+        {
+          "name": "鸟窝",
+          "lang": "lang_nw",
+          "idType": 25,
+          "num": 8,
+          "icon": "nav_nw"
+        },
+        {
+          "name": "藏匿物",
+          "lang": "lang_cnw",
+          "idType": 25,
+          "num": 9,
+          "icon": "nav_cnw"
+        },
+        {
+          "name": "高级旅行箱",
+          "lang": "lang_gjlxx",
+          "idType": 25,
+          "num": 13,
+          "icon": "nav_xlx"
+        },
+        {
+          "name": "哈夫克返回舱",
+          "lang": "lang_hfkfhc",
+          "idType": 25,
+          "num": 1,
+          "icon": "nav_hfkfhc"
+        },
       {
         "name": "出生点",
         "idType": 26,
@@ -15355,201 +16059,208 @@ var navListInfo4_htjd = [
     title: '物资点',
     typeList: [
       {
-        "name": "保险柜",
-        "lang": "lang_bxg",
-        "idType": 1,
-        "num": 8,
-        "icon": "nav_bxx"
-      },
-      {
-        "name": "小保险箱",
-        "lang": "lang_xbxx",
-        "idType": 2,
-        "num": 6,
-        "icon": "nav_xbxx"
-      },
-      {
-        "name": "服务器",
-        "lang": "lang_fwq",
-        "idType": 3,
-        "num": 8,
-        "icon": "nav_fwq"
-      },
-      {
-        "name": "电脑",
-        "lang": "lang_dn",
-        "idType": 4,
-        "num": 4,
-        "icon": "nav_dn"
-      },
-      {
-        "name": "电脑机箱",
-        "lang": "lang_dnjx",
-        "idType": 5,
-        "num": 16,
-        "icon": "nav_dnjx"
-      },
-      {
-        "name": "武器箱",
-        "lang": "lang_wqx",
-        "idType": 6,
-        "num": 4,
-        "icon": "nav_wqx"
-      },
-      {
-        "name": "大武器箱",
-        "lang": "lang_dwqx",
-        "idType": 7,
-        "num": 15,
-        "icon": "nav_dwqx"
-      },
-      {
-        "name": "弹药箱",
-        "lang": "lang_dyx",
-        "idType": 8,
-        "num": 15,
-        "icon": "nav_dyx"
-      },
-      {
-        "name": "工具柜",
-        "lang": "lang_gjg",
-        "idType": 9,
-        "num": 9,
-        "icon": "nav_gjg"
-      },
-      {
-        "name": "大工具盒",
-        "lang": "lang_dgjh",
-        "idType": 10,
-        "num": 25,
-        "icon": "nav_dgjx"
-      },
-      {
-        "name": "实验服",
-        "lang": "lang_syf",
-        "idType": 11,
-        "num": 14,
-        "icon": "nav_yf_s"
-      },
-      {
-        "name": "衣服",
-        "lang": "lang_yf",
-        "idType": 12,
-        "num": 21,
-        "icon": "nav_yf"
-      },
-      {
-        "name": "医疗包",
-        "lang": "lang_ylb",
-        "idType": 13,
-        "num": 13,
-        "icon": "nav_ylb"
-      },
-      {
-        "name": "医疗物资堆",
-        "lang": "lang_ylwzd",
-        "idType": 14,
-        "num": 8,
-        "icon": "nav_ylwzd"
-      },
-      {
-        "name": "旅行袋",
-        "lang": "lang_lxd",
-        "idType": 15,
-        "num": 10,
-        "icon": "nav_lxd"
-      },
-      {
-        "name": "手提箱",
-        "lang": "lang_stx",
-        "idType": 16,
-        "num": 9,
-        "icon": "nav_stx"
-      },
-      {
-        "name": "储物柜",
-        "lang": "lang_cwg",
-        "idType": 17,
-        "num": 8,
-        "icon": "nav_cwg"
-      },
-      {
-        "name": "高级储物箱",
-        "lang": "lang_gjcwx",
-        "idType": 18,
-        "num": 11,
-        "icon": "nav_gjcwx"
-      },
-      {
-        "name": "抽屉柜",
-        "lang": "lang_ctg",
-        "idType": 19,
-        "num": 18,
-        "icon": "nav_ctg"
-      },
-      {
-        "name": "登山包",
-        "lang": "lang_dsb",
-        "idType": 20,
-        "num": 7,
-        "icon": "nav_dsb"
-      },
-      {
-        "name": "快递箱",
-        "lang": "lang_kdx",
-        "idType": 21,
-        "num": 17,
-        "icon": "nav_kdx"
-      },
-      {
-        "name": "航空储物箱",
-        "lang": "lang_hkcwx",
-        "idType": 22,
-        "num": 11,
-        "icon": "nav_hkcwx"
-      },
-      {
-        "name": "垃圾箱",
-        "lang": "lang_ljx",
-        "idType": 23,
-        "num": 5,
-        "icon": "nav_ljx"
-      },
-      {
-        "name": "野外物资箱",
-        "lang": "lang_ywwzx",
-        "idType": 25,
-        "num": 8,
-        "icon": "nav_ywwzx"
-      },
-      {
-        "name": "鸟窝",
-        "lang": "lang_nw",
-        "idType": 25,
-        "num": 7,
-        "icon": "nav_nw"
-      },
-      {
-        "name": "藏匿物",
-        "lang": "lang_cnw",
-        "idType": 25,
-        "num": 7,
-        "icon": "nav_cnw"
-      },
-      {
-        "name": "高级旅行箱",
-        "lang": "lang_gjlxx",
-        "idType": 25,
-        "num": 10,
-        "icon": "nav_xlx"
-      },
-      {
-        "name": "哈夫克返回舱",
-        "lang": "lang_hfkfhc",
-        "idType": 25,
-        "num": 1,
-        "icon": "nav_hfkfhc"
-      }
+          "name": "保险箱",
+          "lang": "lang_bxg",
+          "idType": 1,
+          "num": 13,
+          "icon": "nav_bxx"
+        },
+        {
+          "name": "小保险箱",
+          "lang": "lang_xbxx",
+          "idType": 2,
+          "num": 8,
+          "icon": "nav_xbxx"
+        },
+        {
+          "name": "服务器",
+          "lang": "lang_fwq",
+          "idType": 3,
+          "num": 8,
+          "icon": "nav_fwq"
+        },
+        {
+          "name": "电脑",
+          "lang": "lang_dn",
+          "idType": 4,
+          "num": 5,
+          "icon": "nav_dn"
+        },
+        {
+          "name": "电脑机箱",
+          "lang": "lang_dnjx",
+          "idType": 5,
+          "num": 18,
+          "icon": "nav_dnjx"
+        },
+        {
+          "name": "电脑包",
+          "lang": "lang_dnb",
+          "idType": 5,
+          "num": 6,
+          "icon": "nav_dsb"
+        },
+        {
+          "name": "武器箱",
+          "lang": "lang_wqx",
+          "idType": 6,
+          "num": 4,
+          "icon": "nav_wqx"
+        },
+        {
+          "name": "大武器箱",
+          "lang": "lang_dwqx",
+          "idType": 7,
+          "num": 15,
+          "icon": "nav_dwqx"
+        },
+        {
+          "name": "弹药箱",
+          "lang": "lang_dyx",
+          "idType": 8,
+          "num": 16,
+          "icon": "nav_dyx"
+        },
+        {
+          "name": "工具柜",
+          "lang": "lang_gjg",
+          "idType": 9,
+          "num": 11,
+          "icon": "nav_gjg"
+        },
+        {
+          "name": "收纳盒",
+          "lang": "lang_dgjh",
+          "idType": 10,
+          "num": 25,
+          "icon": "nav_dgjx"
+        },
+        {
+          "name": "一件衣服",
+          "lang": "lang_yf",
+          "idType": 12,
+          "num": 35,
+          "icon": "nav_yf"
+        },
+        {
+          "name": "军用医疗包",
+          "lang": "lang_ylb",
+          "idType": 13,
+          "num": 13,
+          "icon": "nav_ylb"
+        },
+        {
+          "name": "医疗物资堆",
+          "lang": "lang_ylwzd",
+          "idType": 14,
+          "num": 8,
+          "icon": "nav_ylwzd"
+        },
+        {
+          "name": "旅行包",
+          "lang": "lang_lxd",
+          "idType": 15,
+          "num": 14,
+          "icon": "nav_lxd"
+        },
+        {
+          "name": "手提箱",
+          "lang": "lang_stx",
+          "idType": 16,
+          "num": 12,
+          "icon": "nav_stx"
+        },
+        {
+          "name": "储物柜",
+          "lang": "lang_cwg",
+          "idType": 17,
+          "num": 8,
+          "icon": "nav_cwg"
+        },
+        {
+          "name": "高级储物箱",
+          "lang": "lang_gjcwx",
+          "idType": 18,
+          "num": 17,
+          "icon": "nav_gjcwx"
+        },
+        {
+          "name": "抽屉柜",
+          "lang": "lang_ctg",
+          "idType": 19,
+          "num": 20,
+          "icon": "nav_ctg"
+        },
+        {
+          "name": "登山包",
+          "lang": "lang_dsb",
+          "idType": 20,
+          "num": 10,
+          "icon": "nav_dsb"
+        },
+        {
+          "name": "快递箱",
+          "lang": "lang_kdx",
+          "idType": 21,
+          "num": 21,
+          "icon": "nav_kdx"
+        },
+        {
+          "name": "航空储物箱",
+          "lang": "lang_hkcwx",
+          "idType": 22,
+          "num": 11,
+          "icon": "nav_hkcwx"
+        },
+        {
+          "name": "垃圾桶",
+          "lang": "lang_ljx",
+          "idType": 23,
+          "num": 5,
+          "icon": "nav_ljx"
+        },
+        {
+          "name": "搅拌车",
+          "lang": "lang_snc",
+          "idType": 24,
+          "num": 0,
+          "icon": "nav_snc"
+        },
+        {
+          "name": "野外物资箱",
+          "lang": "lang_ywwzx",
+          "idType": 25,
+          "num": 8,
+          "icon": "nav_ywwzx"
+        },
+        {
+          "name": "鸟窝",
+          "lang": "lang_nw",
+          "idType": 25,
+          "num": 8,
+          "icon": "nav_nw"
+        },
+        {
+          "name": "藏匿物",
+          "lang": "lang_cnw",
+          "idType": 25,
+          "num": 9,
+          "icon": "nav_cnw"
+        },
+        {
+          "name": "高级旅行箱",
+          "lang": "lang_gjlxx",
+          "idType": 25,
+          "num": 13,
+          "icon": "nav_xlx"
+        },
+        {
+          "name": "哈夫克返回舱",
+          "lang": "lang_hfkfhc",
+          "idType": 25,
+          "num": 1,
+          "icon": "nav_hfkfhc"
+        }
     ]
   },
   {
@@ -15630,9 +16341,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20926.5",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "661854",
+    "x": 661854,
     "y": "-451773"
   },
   {
@@ -15644,9 +16355,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21955.2",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "672929",
+    "x": 672929,
     "y": "-459886"
   },
   {
@@ -15658,9 +16369,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22619",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "696034",
+    "x": 696034,
     "y": "-472179"
   },
   {
@@ -15672,9 +16383,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22620",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "696587",
+    "x": 696587,
     "y": "-472179"
   },
   {
@@ -15686,9 +16397,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22033.6",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "696181.4",
+    "x": 696181.4,
     "y": "-464094"
   },
   {
@@ -15700,9 +16411,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21672.4",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "643787.1",
+    "x": 643787.1,
     "y": "-470335"
   },
   {
@@ -15714,9 +16425,9 @@ var mapArticle4_htjd = [
     "z坐标": "-19886.7",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "663905.3",
+    "x": 663905.3,
     "y": "-459187"
   },
   {
@@ -15728,9 +16439,9 @@ var mapArticle4_htjd = [
     "z坐标": "-19886.7",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "663905.3",
+    "x": 663905.3,
     "y": "-459077"
   },
   {
@@ -15742,9 +16453,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20695.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "664132",
+    "x": 664132,
     "y": "-476221"
   },
   {
@@ -15756,9 +16467,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20695.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "664132",
+    "x": 664132,
     "y": "-476830"
   },
   {
@@ -15770,9 +16481,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20695.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "664706.2",
+    "x": 664706.2,
     "y": "-475291"
   },
   {
@@ -15784,9 +16495,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22635",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "696353",
+    "x": 696353,
     "y": "-470084"
   },
   {
@@ -15798,9 +16509,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21674.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "643956.9",
+    "x": 643956.9,
     "y": "-470335"
   },
   {
@@ -15812,9 +16523,9 @@ var mapArticle4_htjd = [
     "z坐标": "-19670",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "670524",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 670524,
     "y": "-453166"
   },
   {
@@ -15826,9 +16537,9 @@ var mapArticle4_htjd = [
     "z坐标": "-19670",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "670524",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 670524,
     "y": "-453047"
   },
   {
@@ -15840,9 +16551,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21199.4",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "675585",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 675585,
     "y": "-450255"
   },
   {
@@ -15854,9 +16565,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20870",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "662753",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 662753,
     "y": "-449237"
   },
   {
@@ -15868,9 +16579,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22572",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "696448",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 696448,
     "y": "-471024"
   },
   {
@@ -15882,9 +16593,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21785",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "643247",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 643247,
     "y": "-467106"
   },
   {
@@ -15896,9 +16607,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22040",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "646665",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 646665,
     "y": "-468270"
   },
   {
@@ -15910,9 +16621,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20865",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "665922",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 665922,
     "y": "-450765"
   },
   {
@@ -15924,9 +16635,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22735.5",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "657940",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 657940,
     "y": "-448830"
   },
   {
@@ -15938,9 +16649,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20319.6",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "674273",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 674273,
     "y": "-457630"
   },
   {
@@ -15952,9 +16663,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20240.7",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "667846",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 667846,
     "y": "-478836"
   },
   {
@@ -15966,9 +16677,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22005.9",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "694421",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 694421,
     "y": "-462587"
   },
   {
@@ -15980,9 +16691,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22003",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "695360",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 695360,
     "y": "-466067"
   },
   {
@@ -15994,9 +16705,9 @@ var mapArticle4_htjd = [
     "z坐标": "-19712",
     "拾取条件": "",
     "出现条件": "",
-    "name": "实验服",
-    "icon": "yf_s",
-    "x": "667137",
+    "name": "一件衣服",
+    "icon": "yf",
+    "x": 667137,
     "y": "-453391"
   },
   {
@@ -16008,9 +16719,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21716",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "676387",
+    "x": 676387,
     "y": "-450543"
   },
   {
@@ -16022,9 +16733,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21712",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "676445",
+    "x": 676445,
     "y": "-450088"
   },
   {
@@ -16036,9 +16747,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21171",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "663838",
+    "x": 663838,
     "y": "-454865"
   },
   {
@@ -16050,9 +16761,9 @@ var mapArticle4_htjd = [
     "z坐标": "-19796.2",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "670121.2",
+    "x": 670121.2,
     "y": "-451748"
   },
   {
@@ -16064,9 +16775,9 @@ var mapArticle4_htjd = [
     "z坐标": "-19796.2",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "670266.2",
+    "x": 670266.2,
     "y": "-451751"
   },
   {
@@ -16078,9 +16789,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21012.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "663012.4",
+    "x": 663012.4,
     "y": "-450593"
   },
   {
@@ -16092,9 +16803,9 @@ var mapArticle4_htjd = [
     "z坐标": "-27889.7",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "662051.9",
+    "x": 662051.9,
     "y": "-456572"
   },
   {
@@ -16106,9 +16817,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20500.8",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "676014.6",
+    "x": 676014.6,
     "y": "-457350"
   },
   {
@@ -16120,9 +16831,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22485.4",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "675685",
+    "x": 675685,
     "y": "-459474"
   },
   {
@@ -16134,9 +16845,9 @@ var mapArticle4_htjd = [
     "z坐标": "-19957.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "668854",
+    "x": 668854,
     "y": "-455667"
   },
   {
@@ -16148,9 +16859,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20768",
     "拾取条件": "",
     "出现条件": "",
-    "name": "保险柜",
+    "name": "保险箱",
     "icon": "bxx",
-    "x": "668753.6",
+    "x": 668753.6,
     "y": "-479098"
   },
   {
@@ -16162,9 +16873,9 @@ var mapArticle4_htjd = [
     "z坐标": "-19839.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "667703",
+    "x": 667703,
     "y": "-453517"
   },
   {
@@ -16176,9 +16887,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21916",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "643767",
+    "x": 643767,
     "y": "-467333"
   },
   {
@@ -16190,9 +16901,9 @@ var mapArticle4_htjd = [
     "z坐标": "-19896.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "667665",
+    "x": 667665,
     "y": "-455530"
   },
   {
@@ -16204,9 +16915,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21920",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "665046",
+    "x": 665046,
     "y": "-476764"
   },
   {
@@ -16218,9 +16929,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22030.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "衣服",
+    "name": "一件衣服",
     "icon": "yf",
-    "x": "675297",
+    "x": 675297,
     "y": "-454476"
   },
   {
@@ -16234,7 +16945,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "663146",
+    "x": 663146,
     "y": "-449179"
   },
   {
@@ -16248,7 +16959,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "672380",
+    "x": 672380,
     "y": "-459295"
   },
   {
@@ -16262,7 +16973,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "665169",
+    "x": 665169,
     "y": "-450563"
   },
   {
@@ -16276,7 +16987,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "672035",
+    "x": 672035,
     "y": "-475501"
   },
   {
@@ -16290,7 +17001,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "669195.3",
+    "x": 669195.3,
     "y": "-478667"
   },
   {
@@ -16304,7 +17015,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "669256.3",
+    "x": 669256.3,
     "y": "-478290"
   },
   {
@@ -16318,7 +17029,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "665851",
+    "x": 665851,
     "y": "-478849"
   },
   {
@@ -16332,7 +17043,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "695260.3",
+    "x": 695260.3,
     "y": "-464229"
   },
   {
@@ -16346,7 +17057,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "694805",
+    "x": 694805,
     "y": "-464475"
   },
   {
@@ -16360,7 +17071,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "694884",
+    "x": 694884,
     "y": "-463559"
   },
   {
@@ -16374,7 +17085,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "695198",
+    "x": 695198,
     "y": "-465099"
   },
   {
@@ -16388,7 +17099,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "674040",
+    "x": 674040,
     "y": "-448615"
   },
   {
@@ -16402,7 +17113,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "663590",
+    "x": 663590,
     "y": "-460295"
   },
   {
@@ -16416,7 +17127,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "663660",
+    "x": 663660,
     "y": "-460375"
   },
   {
@@ -16430,7 +17141,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "668480",
+    "x": 668480,
     "y": "-476670"
   },
   {
@@ -16444,7 +17155,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "643398",
+    "x": 643398,
     "y": "-467416"
   },
   {
@@ -16458,7 +17169,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "665720",
+    "x": 665720,
     "y": "-450490"
   },
   {
@@ -16472,7 +17183,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "登山包",
     "icon": "dsb",
-    "x": "670094",
+    "x": 670094,
     "y": "-453531"
   },
   {
@@ -16486,7 +17197,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "652353",
+    "x": 652353,
     "y": "-470414"
   },
   {
@@ -16500,7 +17211,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "671435",
+    "x": 671435,
     "y": "-437321"
   },
   {
@@ -16514,7 +17225,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "666964",
+    "x": 666964,
     "y": "-469405"
   },
   {
@@ -16528,7 +17239,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "679382",
+    "x": 679382,
     "y": "-472393"
   },
   {
@@ -16542,7 +17253,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "694776",
+    "x": 694776,
     "y": "-451613"
   },
   {
@@ -16556,7 +17267,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "683115",
+    "x": 683115,
     "y": "-437248"
   },
   {
@@ -16570,7 +17281,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "藏匿物",
     "icon": "cnw",
-    "x": "689993",
+    "x": 689993,
     "y": "-467209"
   },
   {
@@ -16584,7 +17295,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "676372.5",
+    "x": 676372.5,
     "y": "-450522"
   },
   {
@@ -16598,7 +17309,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "676898.1",
+    "x": 676898.1,
     "y": "-450401"
   },
   {
@@ -16612,7 +17323,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "685170",
+    "x": 685170,
     "y": "-430970"
   },
   {
@@ -16626,7 +17337,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "663391",
+    "x": 663391,
     "y": "-448536"
   },
   {
@@ -16640,7 +17351,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "664586",
+    "x": 664586,
     "y": "-449511"
   },
   {
@@ -16654,7 +17365,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "668919.3",
+    "x": 668919.3,
     "y": "-451097"
   },
   {
@@ -16668,7 +17379,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "663345",
+    "x": 663345,
     "y": "-458445"
   },
   {
@@ -16682,7 +17393,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "672386",
+    "x": 672386,
     "y": "-458972"
   },
   {
@@ -16696,7 +17407,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "668859",
+    "x": 668859,
     "y": "-475585"
   },
   {
@@ -16710,7 +17421,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "694736",
+    "x": 694736,
     "y": "-464989"
   },
   {
@@ -16724,7 +17435,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "663673",
+    "x": 663673,
     "y": "-449005"
   },
   {
@@ -16738,7 +17449,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "675810",
+    "x": 675810,
     "y": "-449784"
   },
   {
@@ -16752,7 +17463,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "676688.1",
+    "x": 676688.1,
     "y": "-450622"
   },
   {
@@ -16766,7 +17477,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "675026",
+    "x": 675026,
     "y": "-459883"
   },
   {
@@ -16780,7 +17491,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "695363",
+    "x": 695363,
     "y": "-464559"
   },
   {
@@ -16794,7 +17505,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑机箱",
     "icon": "dnjx",
-    "x": "694709",
+    "x": 694709,
     "y": "-464121"
   },
   {
@@ -16808,7 +17519,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "655275",
+    "x": 655275,
     "y": "-446412"
   },
   {
@@ -16822,7 +17533,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "675568",
+    "x": 675568,
     "y": "-437623"
   },
   {
@@ -16836,7 +17547,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "686553",
+    "x": 686553,
     "y": "-457151"
   },
   {
@@ -16850,7 +17561,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "686243",
+    "x": 686243,
     "y": "-467092"
   },
   {
@@ -16864,7 +17575,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "684432",
+    "x": 684432,
     "y": "-475050"
   },
   {
@@ -16878,7 +17589,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "681733",
+    "x": 681733,
     "y": "-479003"
   },
   {
@@ -16892,7 +17603,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "鸟窝",
     "icon": "nw",
-    "x": "676468",
+    "x": 676468,
     "y": "-434356"
   },
   {
@@ -16906,7 +17617,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "643456",
+    "x": 643456,
     "y": "-467901"
   },
   {
@@ -16920,7 +17631,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "647184",
+    "x": 647184,
     "y": "-468979"
   },
   {
@@ -16934,7 +17645,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "675972",
+    "x": 675972,
     "y": "-449853"
   },
   {
@@ -16948,7 +17659,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "669304",
+    "x": 669304,
     "y": "-451914"
   },
   {
@@ -16962,7 +17673,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "661738",
+    "x": 661738,
     "y": "-459085"
   },
   {
@@ -16976,7 +17687,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "672445",
+    "x": 672445,
     "y": "-473668"
   },
   {
@@ -16990,7 +17701,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "672890",
+    "x": 672890,
     "y": "-473713"
   },
   {
@@ -17004,7 +17715,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "664626.2",
+    "x": 664626.2,
     "y": "-459770"
   },
   {
@@ -17018,7 +17729,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "手提箱",
     "icon": "stx",
-    "x": "669392.6",
+    "x": 669392.6,
     "y": "-477572"
   },
   {
@@ -17032,7 +17743,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "655184",
+    "x": 655184,
     "y": "-422585"
   },
   {
@@ -17046,7 +17757,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "663400",
+    "x": 663400,
     "y": "-420080"
   },
   {
@@ -17060,7 +17771,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "小保险箱",
     "icon": "xbxx",
-    "x": "674176.9",
+    "x": 674176.9,
     "y": "-448634"
   },
   {
@@ -17074,7 +17785,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "小保险箱",
     "icon": "xbxx",
-    "x": "663440",
+    "x": 663440,
     "y": "-460300"
   },
   {
@@ -17088,7 +17799,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "小保险箱",
     "icon": "xbxx",
-    "x": "662096.9",
+    "x": 662096.9,
     "y": "-457531"
   },
   {
@@ -17102,7 +17813,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "小保险箱",
     "icon": "xbxx",
-    "x": "672277.9",
+    "x": 672277.9,
     "y": "-454264"
   },
   {
@@ -17116,7 +17827,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "小保险箱",
     "icon": "xbxx",
-    "x": "669933",
+    "x": 669933,
     "y": "-452906"
   },
   {
@@ -17130,7 +17841,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "小保险箱",
     "icon": "xbxx",
-    "x": "674763",
+    "x": 674763,
     "y": "-457310"
   },
   {
@@ -17144,7 +17855,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "670314.8",
+    "x": 670314.8,
     "y": "-453482"
   },
   {
@@ -17158,7 +17869,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "673578",
+    "x": 673578,
     "y": "-456626"
   },
   {
@@ -17172,7 +17883,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "648115",
+    "x": 648115,
     "y": "-469573"
   },
   {
@@ -17186,7 +17897,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "661338",
+    "x": 661338,
     "y": "-449479"
   },
   {
@@ -17200,7 +17911,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "679311",
+    "x": 679311,
     "y": "-429125"
   },
   {
@@ -17214,7 +17925,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "676633",
+    "x": 676633,
     "y": "-452212"
   },
   {
@@ -17228,7 +17939,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "669794",
+    "x": 669794,
     "y": "-452240"
   },
   {
@@ -17242,7 +17953,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "663969",
+    "x": 663969,
     "y": "-459463"
   },
   {
@@ -17256,7 +17967,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "673592.1",
+    "x": 673592.1,
     "y": "-456131"
   },
   {
@@ -17270,7 +17981,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "680735",
+    "x": 680735,
     "y": "-458327"
   },
   {
@@ -17284,7 +17995,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "695845",
+    "x": 695845,
     "y": "-461866"
   },
   {
@@ -17298,7 +18009,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "694588",
+    "x": 694588,
     "y": "-469186"
   },
   {
@@ -17312,7 +18023,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "693925",
+    "x": 693925,
     "y": "-471663"
   },
   {
@@ -17326,7 +18037,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "646008",
+    "x": 646008,
     "y": "-464957"
   },
   {
@@ -17340,7 +18051,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "大武器箱",
     "icon": "dwqx",
-    "x": "665187",
+    "x": 665187,
     "y": "-476031"
   },
   {
@@ -17352,9 +18063,9 @@ var mapArticle4_htjd = [
     "z坐标": "-19807.7",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "667337",
+    "x": 667337,
     "y": "-452530"
   },
   {
@@ -17366,9 +18077,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22334.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "647048",
+    "x": 647048,
     "y": "-465044"
   },
   {
@@ -17380,9 +18091,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22056",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "648957",
+    "x": 648957,
     "y": "-467177"
   },
   {
@@ -17394,9 +18105,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22844",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "658688",
+    "x": 658688,
     "y": "-453638"
   },
   {
@@ -17408,9 +18119,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21920",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "665163",
+    "x": 665163,
     "y": "-475387"
   },
   {
@@ -17422,9 +18133,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22031.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "675412",
+    "x": 675412,
     "y": "-456374"
   },
   {
@@ -17436,9 +18147,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21012.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "672033",
+    "x": 672033,
     "y": "-457399"
   },
   {
@@ -17450,9 +18161,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20695.2",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "672846",
+    "x": 672846,
     "y": "-477730"
   },
   {
@@ -17464,9 +18175,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22704",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "689429",
+    "x": 689429,
     "y": "-463706"
   },
   {
@@ -17478,9 +18189,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22844",
     "拾取条件": "",
     "出现条件": "",
-    "name": "旅行袋",
+    "name": "旅行包",
     "icon": "lxd",
-    "x": "682014",
+    "x": 682014,
     "y": "-455757"
   },
   {
@@ -17494,7 +18205,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "676625",
+    "x": 676625,
     "y": "-450110"
   },
   {
@@ -17508,7 +18219,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "674241",
+    "x": 674241,
     "y": "-448316"
   },
   {
@@ -17522,7 +18233,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "674280",
+    "x": 674280,
     "y": "-448630"
   },
   {
@@ -17536,7 +18247,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "663605",
+    "x": 663605,
     "y": "-460563"
   },
   {
@@ -17550,7 +18261,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "672412",
+    "x": 672412,
     "y": "-452421"
   },
   {
@@ -17564,7 +18275,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "666663",
+    "x": 666663,
     "y": "-469660"
   },
   {
@@ -17578,7 +18289,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "675511",
+    "x": 675511,
     "y": "-459935"
   },
   {
@@ -17592,7 +18303,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "673105",
+    "x": 673105,
     "y": "-473870"
   },
   {
@@ -17606,7 +18317,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "694557.5",
+    "x": 694557.5,
     "y": "-466020"
   },
   {
@@ -17620,7 +18331,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "669649",
+    "x": 669649,
     "y": "-450926"
   },
   {
@@ -17634,7 +18345,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级储物箱",
     "icon": "gjcwx",
-    "x": "669201",
+    "x": 669201,
     "y": "-478341"
   },
   {
@@ -17648,7 +18359,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "644038",
+    "x": 644038,
     "y": "-469103"
   },
   {
@@ -17662,7 +18373,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "663607",
+    "x": 663607,
     "y": "-452850"
   },
   {
@@ -17676,7 +18387,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "661694",
+    "x": 661694,
     "y": "-459134"
   },
   {
@@ -17690,7 +18401,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "672087",
+    "x": 672087,
     "y": "-457926"
   },
   {
@@ -17704,7 +18415,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "672731",
+    "x": 672731,
     "y": "-476174"
   },
   {
@@ -17718,7 +18429,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "快递箱",
     "icon": "kdx",
-    "x": "695541",
+    "x": 695541,
     "y": "-463792"
   },
   {
@@ -17732,7 +18443,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "644041",
+    "x": 644041,
     "y": "-467030"
   },
   {
@@ -17746,7 +18457,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "647484",
+    "x": 647484,
     "y": "-468846"
   },
   {
@@ -17760,7 +18471,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "662663",
+    "x": 662663,
     "y": "-455301"
   },
   {
@@ -17774,7 +18485,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "643271",
+    "x": 643271,
     "y": "-468913"
   },
   {
@@ -17788,7 +18499,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "643775.2",
+    "x": 643775.2,
     "y": "-468011"
   },
   {
@@ -17802,7 +18513,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "646519",
+    "x": 646519,
     "y": "-468463"
   },
   {
@@ -17816,7 +18527,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "675407",
+    "x": 675407,
     "y": "-450140"
   },
   {
@@ -17830,7 +18541,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "677266",
+    "x": 677266,
     "y": "-448808"
   },
   {
@@ -17844,7 +18555,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "662117",
+    "x": 662117,
     "y": "-455291"
   },
   {
@@ -17858,7 +18569,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "高级旅行箱",
     "icon": "xlx",
-    "x": "669016.3",
+    "x": 669016.3,
     "y": "-477215"
   },
   {
@@ -17870,9 +18581,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22383",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "653951.8",
+    "x": 653951.8,
     "y": "-470157"
   },
   {
@@ -17884,9 +18595,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22086.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "646985",
+    "x": 646985,
     "y": "-468932"
   },
   {
@@ -17898,9 +18609,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21990.5",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "664442",
+    "x": 664442,
     "y": "-452415"
   },
   {
@@ -17912,9 +18623,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21778.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "664942",
+    "x": 664942,
     "y": "-457472"
   },
   {
@@ -17926,9 +18637,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21364.8",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "662167",
+    "x": 662167,
     "y": "-454915"
   },
   {
@@ -17940,9 +18651,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21364.7",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "661678.8",
+    "x": 661678.8,
     "y": "-455302"
   },
   {
@@ -17954,9 +18665,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21364.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "664314.3",
+    "x": 664314.3,
     "y": "-455291"
   },
   {
@@ -17968,9 +18679,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21364.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "662399",
+    "x": 662399,
     "y": "-454900"
   },
   {
@@ -17982,9 +18693,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22477",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "644759.1",
+    "x": 644759.1,
     "y": "-459843"
   },
   {
@@ -17996,9 +18707,9 @@ var mapArticle4_htjd = [
     "z坐标": "-19967.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "667787.2",
+    "x": 667787.2,
     "y": "-454020"
   },
   {
@@ -18010,9 +18721,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20956.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "673027",
+    "x": 673027,
     "y": "-460210"
   },
   {
@@ -18024,9 +18735,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21845.7",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "669947.6",
+    "x": 669947.6,
     "y": "-475076"
   },
   {
@@ -18038,9 +18749,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20768",
     "拾取条件": "",
     "出现条件": "",
-    "name": "医疗包",
+    "name": "军用医疗包",
     "icon": "ylb",
-    "x": "667811.2",
+    "x": 667811.2,
     "y": "-479051"
   },
   {
@@ -18054,7 +18765,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "644857.9",
+    "x": 644857.9,
     "y": "-460457"
   },
   {
@@ -18068,7 +18779,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "663897",
+    "x": 663897,
     "y": "-451402"
   },
   {
@@ -18082,7 +18793,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "662264",
+    "x": 662264,
     "y": "-454192"
   },
   {
@@ -18096,7 +18807,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "662814",
+    "x": 662814,
     "y": "-458716"
   },
   {
@@ -18110,7 +18821,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "661798",
+    "x": 661798,
     "y": "-457040"
   },
   {
@@ -18124,7 +18835,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "665427",
+    "x": 665427,
     "y": "-474974"
   },
   {
@@ -18138,7 +18849,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "680935",
+    "x": 680935,
     "y": "-469578"
   },
   {
@@ -18152,7 +18863,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "医疗物资堆",
     "icon": "ylwzd",
-    "x": "657022.9",
+    "x": 657022.9,
     "y": "-467795"
   },
   {
@@ -18164,9 +18875,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22329.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "646040",
+    "x": 646040,
     "y": "-465780"
   },
   {
@@ -18178,9 +18889,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21512.4",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "662060",
+    "x": 662060,
     "y": "-426430"
   },
   {
@@ -18192,9 +18903,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22344.2",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "679665",
+    "x": 679665,
     "y": "-429210"
   },
   {
@@ -18206,9 +18917,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21925.6",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "670131",
+    "x": 670131,
     "y": "-473064"
   },
   {
@@ -18220,9 +18931,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22960.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "垃圾箱",
+    "name": "垃圾桶",
     "icon": "ljx",
-    "x": "691105",
+    "x": 691105,
     "y": "-478797"
   },
   {
@@ -18236,7 +18947,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "677268.9",
+    "x": 677268.9,
     "y": "-450274"
   },
   {
@@ -18250,7 +18961,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "676996.9",
+    "x": 676996.9,
     "y": "-450995"
   },
   {
@@ -18264,7 +18975,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "662316",
+    "x": 662316,
     "y": "-451829"
   },
   {
@@ -18278,7 +18989,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "675499.2",
+    "x": 675499.2,
     "y": "-457064"
   },
   {
@@ -18292,7 +19003,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "675892.8",
+    "x": 675892.8,
     "y": "-456579"
   },
   {
@@ -18306,7 +19017,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "673509",
+    "x": 673509,
     "y": "-474125"
   },
   {
@@ -18320,7 +19031,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "676267.9",
+    "x": 676267.9,
     "y": "-450118"
   },
   {
@@ -18334,7 +19045,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "服务器",
     "icon": "fwq",
-    "x": "674003.2",
+    "x": 674003.2,
     "y": "-457064"
   },
   {
@@ -18346,9 +19057,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21364.8",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "676599",
+    "x": 676599,
     "y": "-450979"
   },
   {
@@ -18360,9 +19071,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21012.3",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "676822",
+    "x": 676822,
     "y": "-456839"
   },
   {
@@ -18374,9 +19085,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22036.8",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "673695",
+    "x": 673695,
     "y": "-459563"
   },
   {
@@ -18388,9 +19099,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22926",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "696068",
+    "x": 696068,
     "y": "-461971"
   },
   {
@@ -18402,9 +19113,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22141.1",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "696770",
+    "x": 696770,
     "y": "-463565"
   },
   {
@@ -18416,9 +19127,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21404",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "661800",
+    "x": 661800,
     "y": "-417680"
   },
   {
@@ -18430,9 +19141,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22844",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "657946",
+    "x": 657946,
     "y": "-452599"
   },
   {
@@ -18444,9 +19155,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21908.9",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "674296",
+    "x": 674296,
     "y": "-451835"
   },
   {
@@ -18458,9 +19169,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21255.2",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "674923",
+    "x": 674923,
     "y": "-450554"
   },
   {
@@ -18472,9 +19183,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21909.6",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "661023",
+    "x": 661023,
     "y": "-456423"
   },
   {
@@ -18486,9 +19197,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21909.6",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "661023",
+    "x": 661023,
     "y": "-456550"
   },
   {
@@ -18500,9 +19211,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20768",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "665159",
+    "x": 665159,
     "y": "-477634"
   },
   {
@@ -18514,9 +19225,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20908.9",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "672604",
+    "x": 672604,
     "y": "-458472"
   },
   {
@@ -18528,9 +19239,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22352.3",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "674605.2",
+    "x": 674605.2,
     "y": "-458782"
   },
   {
@@ -18542,9 +19253,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22040",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "680394",
+    "x": 680394,
     "y": "-475652"
   },
   {
@@ -18556,9 +19267,9 @@ var mapArticle4_htjd = [
     "z坐标": "-20639.9",
     "拾取条件": "需要完成局内行动才能开启",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "672198",
+    "x": 672198,
     "y": "-473719"
   },
   {
@@ -18570,9 +19281,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22926",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "691675",
+    "x": 691675,
     "y": "-464235"
   },
   {
@@ -18584,9 +19295,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22926",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "694371.6",
+    "x": 694371.6,
     "y": "-460994"
   },
   {
@@ -18598,9 +19309,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21788.4",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "647687",
+    "x": 647687,
     "y": "-468911"
   },
   {
@@ -18612,9 +19323,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22748.6",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "657421",
+    "x": 657421,
     "y": "-451410"
   },
   {
@@ -18626,9 +19337,9 @@ var mapArticle4_htjd = [
     "z坐标": "-21364.8",
     "拾取条件": "需要使用钥匙卡才能开启",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "676130",
+    "x": 676130,
     "y": "-450595"
   },
   {
@@ -18640,9 +19351,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22844",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "681988",
+    "x": 681988,
     "y": "-457496"
   },
   {
@@ -18654,9 +19365,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22841",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "691990",
+    "x": 691990,
     "y": "-475575"
   },
   {
@@ -18668,9 +19379,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22926",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "694921",
+    "x": 694921,
     "y": "-464091"
   },
   {
@@ -18682,9 +19393,9 @@ var mapArticle4_htjd = [
     "z坐标": "-22265.5",
     "拾取条件": "",
     "出现条件": "",
-    "name": "大工具盒",
+    "name": "收纳盒",
     "icon": "dgjx",
-    "x": "696201",
+    "x": 696201,
     "y": "-471626"
   },
   {
@@ -18698,7 +19409,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "663260",
+    "x": 663260,
     "y": "-424480"
   },
   {
@@ -18712,7 +19423,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "656687",
+    "x": 656687,
     "y": "-420595"
   },
   {
@@ -18726,7 +19437,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "664834",
+    "x": 664834,
     "y": "-452655"
   },
   {
@@ -18740,7 +19451,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "676920",
+    "x": 676920,
     "y": "-432860"
   },
   {
@@ -18754,7 +19465,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "672828",
+    "x": 672828,
     "y": "-456239"
   },
   {
@@ -18768,7 +19479,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "野外物资箱",
     "icon": "ywwzx",
-    "x": "692483",
+    "x": 692483,
     "y": "-452249"
   },
   {
@@ -18782,7 +19493,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "657429",
+    "x": 657429,
     "y": "-451603"
   },
   {
@@ -18796,7 +19507,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "665217.3",
+    "x": 665217.3,
     "y": "-476172"
   },
   {
@@ -18810,7 +19521,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "691635",
+    "x": 691635,
     "y": "-468647"
   },
   {
@@ -18824,7 +19535,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "695716",
+    "x": 695716,
     "y": "-469595"
   },
   {
@@ -18838,7 +19549,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "649620",
+    "x": 649620,
     "y": "-465177"
   },
   {
@@ -18852,7 +19563,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "649635.9",
+    "x": 649635.9,
     "y": "-457794"
   },
   {
@@ -18866,7 +19577,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "665686",
+    "x": 665686,
     "y": "-452899"
   },
   {
@@ -18880,7 +19591,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "665558",
+    "x": 665558,
     "y": "-459128"
   },
   {
@@ -18894,7 +19605,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "663862",
+    "x": 663862,
     "y": "-455298"
   },
   {
@@ -18908,7 +19619,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "666150",
+    "x": 666150,
     "y": "-475668"
   },
   {
@@ -18922,7 +19633,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "668652",
+    "x": 668652,
     "y": "-454846"
   },
   {
@@ -18936,7 +19647,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "669871.9",
+    "x": 669871.9,
     "y": "-454246"
   },
   {
@@ -18950,7 +19661,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "672355.7",
+    "x": 672355.7,
     "y": "-474157"
   },
   {
@@ -18964,7 +19675,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "672816.6",
+    "x": 672816.6,
     "y": "-474149"
   },
   {
@@ -18978,7 +19689,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "680728",
+    "x": 680728,
     "y": "-458075"
   },
   {
@@ -18992,7 +19703,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "694100.1",
+    "x": 694100.1,
     "y": "-465981"
   },
   {
@@ -19006,7 +19717,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "693810",
+    "x": 693810,
     "y": "-468516"
   },
   {
@@ -19020,7 +19731,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "663563",
+    "x": 663563,
     "y": "-454668"
   },
   {
@@ -19034,7 +19745,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "弹药箱",
     "icon": "dyx",
-    "x": "693118.7",
+    "x": 693118.7,
     "y": "-452037"
   },
   {
@@ -19048,7 +19759,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "647665",
+    "x": 647665,
     "y": "-470030"
   },
   {
@@ -19062,7 +19773,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "662500",
+    "x": 662500,
     "y": "-449700"
   },
   {
@@ -19076,7 +19787,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "675242.3",
+    "x": 675242.3,
     "y": "-451220"
   },
   {
@@ -19090,7 +19801,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "663229",
+    "x": 663229,
     "y": "-455209"
   },
   {
@@ -19104,7 +19815,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "676731",
+    "x": 676731,
     "y": "-458550"
   },
   {
@@ -19118,7 +19829,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "673915.1",
+    "x": 673915.1,
     "y": "-454119"
   },
   {
@@ -19132,7 +19843,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "680034.2",
+    "x": 680034.2,
     "y": "-463950"
   },
   {
@@ -19146,7 +19857,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "673382.8",
+    "x": 673382.8,
     "y": "-474770"
   },
   {
@@ -19160,7 +19871,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "662572",
+    "x": 662572,
     "y": "-453119"
   },
   {
@@ -19174,7 +19885,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "675486",
+    "x": 675486,
     "y": "-455799"
   },
   {
@@ -19188,7 +19899,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "航空储物箱",
     "icon": "hkcwx",
-    "x": "672780.1",
+    "x": 672780.1,
     "y": "-454224"
   },
   {
@@ -19202,7 +19913,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "671851",
+    "x": 671851,
     "y": "-459464"
   },
   {
@@ -19216,7 +19927,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "684510",
+    "x": 684510,
     "y": "-431500"
   },
   {
@@ -19230,7 +19941,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "665874",
+    "x": 665874,
     "y": "-450118"
   },
   {
@@ -19244,7 +19955,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "673870",
+    "x": 673870,
     "y": "-450766"
   },
   {
@@ -19258,7 +19969,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "668073.6",
+    "x": 668073.6,
     "y": "-450920"
   },
   {
@@ -19272,7 +19983,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "661073",
+    "x": 661073,
     "y": "-459559"
   },
   {
@@ -19286,7 +19997,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "664499",
+    "x": 664499,
     "y": "-474868"
   },
   {
@@ -19300,7 +20011,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "664197.8",
+    "x": 664197.8,
     "y": "-477877"
   },
   {
@@ -19314,7 +20025,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "672665",
+    "x": 672665,
     "y": "-473690"
   },
   {
@@ -19328,7 +20039,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "672750",
+    "x": 672750,
     "y": "-473690"
   },
   {
@@ -19342,7 +20053,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "664682.8",
+    "x": 664682.8,
     "y": "-479119"
   },
   {
@@ -19356,7 +20067,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "694627",
+    "x": 694627,
     "y": "-462665"
   },
   {
@@ -19370,7 +20081,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "694555",
+    "x": 694555,
     "y": "-463929"
   },
   {
@@ -19384,7 +20095,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "694458",
+    "x": 694458,
     "y": "-464772"
   },
   {
@@ -19398,7 +20109,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "665843",
+    "x": 665843,
     "y": "-449443"
   },
   {
@@ -19412,7 +20123,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "667921",
+    "x": 667921,
     "y": "-478136"
   },
   {
@@ -19426,7 +20137,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "695527",
+    "x": 695527,
     "y": "-464716"
   },
   {
@@ -19440,7 +20151,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "抽屉柜",
     "icon": "ctg",
-    "x": "696119",
+    "x": 696119,
     "y": "-469274"
   },
   {
@@ -19454,7 +20165,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "663830",
+    "x": 663830,
     "y": "-452275"
   },
   {
@@ -19468,7 +20179,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "695605",
+    "x": 695605,
     "y": "-461989"
   },
   {
@@ -19482,7 +20193,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "669765",
+    "x": 669765,
     "y": "-478725"
   },
   {
@@ -19496,7 +20207,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "663210",
+    "x": 663210,
     "y": "-449620"
   },
   {
@@ -19510,7 +20221,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "工具柜",
     "icon": "gjg",
-    "x": "674251",
+    "x": 674251,
     "y": "-459041"
   },
   {
@@ -19524,7 +20235,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "643435",
+    "x": 643435,
     "y": "-469885"
   },
   {
@@ -19538,7 +20249,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "674724",
+    "x": 674724,
     "y": "-450142"
   },
   {
@@ -19552,7 +20263,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "661000",
+    "x": 661000,
     "y": "-458780"
   },
   {
@@ -19566,7 +20277,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "670024",
+    "x": 670024,
     "y": "-455529"
   },
   {
@@ -19580,7 +20291,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "665009",
+    "x": 665009,
     "y": "-450030"
   },
   {
@@ -19594,7 +20305,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑包",
     "icon": "dsb",
-    "x": "671758",
+    "x": 671758,
     "y": "-473775"
   },
   {
@@ -19608,7 +20319,7 @@ var mapArticle4_htjd = [
     "出现条件": "断桥事件",
     "name": "哈夫克返回舱",
     "icon": "hfkfhc",
-    "x": "668464.8",
+    "x": 668464.8,
     "y": "-433862"
   },
   {
@@ -19622,7 +20333,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑",
     "icon": "dn",
-    "x": "643661",
+    "x": 643661,
     "y": "-467539"
   },
   {
@@ -19636,7 +20347,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑",
     "icon": "dn",
-    "x": "668639",
+    "x": 668639,
     "y": "-451136"
   },
   {
@@ -19650,7 +20361,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "电脑",
     "icon": "dn",
-    "x": "694747",
+    "x": 694747,
     "y": "-463562"
   },
   {
@@ -19664,7 +20375,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "664680",
+    "x": 664680,
     "y": "-448479"
   },
   {
@@ -19678,7 +20389,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "664680",
+    "x": 664680,
     "y": "-448569"
   },
   {
@@ -19692,7 +20403,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "664680",
+    "x": 664680,
     "y": "-448658"
   },
   {
@@ -19706,7 +20417,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "664680",
+    "x": 664680,
     "y": "-448747"
   },
   {
@@ -19720,7 +20431,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "673741",
+    "x": 673741,
     "y": "-459785"
   },
   {
@@ -19734,7 +20445,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "673741",
+    "x": 673741,
     "y": "-459873"
   },
   {
@@ -19748,7 +20459,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "663262",
+    "x": 663262,
     "y": "-452892"
   },
   {
@@ -19762,7 +20473,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "储物柜",
     "icon": "cwg",
-    "x": "663351",
+    "x": 663351,
     "y": "-452892"
   },
   {
@@ -19776,7 +20487,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "武器箱",
     "icon": "wqx",
-    "x": "662091",
+    "x": 662091,
     "y": "-452645"
   },
   {
@@ -19790,7 +20501,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "武器箱",
     "icon": "wqx",
-    "x": "661287",
+    "x": 661287,
     "y": "-449357"
   },
   {
@@ -19804,7 +20515,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "武器箱",
     "icon": "wqx",
-    "x": "675045",
+    "x": 675045,
     "y": "-456004"
   },
   {
@@ -19818,7 +20529,7 @@ var mapArticle4_htjd = [
     "出现条件": "",
     "name": "武器箱",
     "icon": "wqx",
-    "x": "673214",
+    "x": 673214,
     "y": "-456129"
   },
   {
@@ -19832,307 +20543,881 @@ var mapArticle4_htjd = [
     "出现条件": "飞升者行动",
     "name": "电脑",
     "icon": "dn",
-    "x": "657158.3125",
+    "x": 657158.3125,
     "y": "-418684"
   },
-  // 复活点
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "642030.562500",
-    "y": "-454288.562500",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "第二难度倍场以上才刷新",
+    "z坐标": "-19802",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 669094,
+    "y": "-450932"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "641868.000000",
-    "y": "-472453.812500",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_东区",
+    "自定义区域": "东区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "第二难度倍场以上才刷新",
+    "z坐标": "-22718",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 692366,
+    "y": "-473090"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "352348.562500",
-    "y": "-576832.375000",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "第二难度倍场以上才刷新",
+    "z坐标": "-22033",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 663631,
+    "y": "-460427"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "665390.312500",
-    "y": "-479538.906250",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_合同",
+    "自定义区域": "行动奖励",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "第二难度倍场以上才刷新",
+    "z坐标": "-22030",
+    "拾取条件": "需要完成局内行动才能开启",
+    "出现条件": "",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 674061,
+    "y": "-448417"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "697247.12500",
-    "y": "-464868.593750",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "第二难度倍场以上才刷新",
+    "z坐标": "-21013",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "小保险箱",
+    "icon": "xbxx",
+    "x": 675514,
+    "y": "-459866"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "679688.500000",
-    "y": "-467399.687500",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_中心区",
+    "自定义区域": "中心区",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "第二难度倍场以上才刷新",
+    "z坐标": "-20918",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "小保险箱",
+    "icon": "xbxx",
+    "x": 665285,
+    "y": "-449953"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "689175.562500",
-    "y": "-480478.718750",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21859",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "弹药箱",
+    "icon": "dyx",
+    "x": 664497,
+    "y": "-439174"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "691724.312500",
-    "y": "-445028.250000",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 664558,
+    "y": "-440413"
   },
   {
-    "name": "出生点",
-    "type": "revive",
-    "icon": 'csd',
-    "x": "657532.812500",
-    "y": "-419005.406250",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22350.2",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "抽屉柜",
+    "icon": "ctg",
+    "x": 658115,
+    "y": "-440439"
   },
   {
-    "name": "拉闸撤离点",
-    "自定义区域": "直升机撤离点",
-    "type": "retreat",
-    "icon": 'dtcld',
-    "x": "672075.937500",
-    "y": "-440850.687500",
-    "z": ""
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21859",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 665443,
+    "y": "-439261"
   },
   {
-    "name": "丢包撤离点",
-    "自定义区域": "试车场撤离点",
-    "type": "retreat",
-    "icon": 'tjcld',
-    "x": "687504.687500",
-    "y": "-427413.843750",
-    "z": "",
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 658014,
+    "y": "-439952"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 664569,
+    "y": "-437844"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑机箱",
+    "icon": "dnjx",
+    "x": 657992,
+    "y": "-441014"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21361",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 666484,
+    "y": "-437321"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22346",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 659859,
+    "y": "-440958"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24325",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 685906,
+    "y": "-438732"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24265.1",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 688930,
+    "y": "-443480"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21859",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 663586,
+    "y": "-440363"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21802.5",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 662768,
+    "y": "-440946"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21855",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 658951,
+    "y": "-440637"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24657",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "旅行包",
+    "icon": "lxd",
+    "x": 686171,
+    "y": "-445918"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21847",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 664454,
+    "y": "-436127"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21847",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 665749,
+    "y": "-437577"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22350",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 658833,
+    "y": "-439725"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21764",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "快递箱",
+    "icon": "kdx",
+    "x": 659362,
+    "y": "-439406"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-25185.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 685214,
+    "y": "-443542"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22351",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "藏匿物",
+    "icon": "cnw",
+    "x": 652834,
+    "y": "-442731"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22370",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "藏匿物",
+    "icon": "cnw",
+    "x": 656073,
+    "y": "-440185"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-24963",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 653835,
+    "y": "-453637"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21859",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 664778,
+    "y": "-439962"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21847",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "高级旅行箱",
+    "icon": "xlx",
+    "x": 665026,
+    "y": "-436431"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21836",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 665110,
+    "y": "-439364"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21821",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 664039.2,
+    "y": "-436414"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-22249",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "手提箱",
+    "icon": "stx",
+    "x": 658900,
+    "y": "-440294"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21857.3",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "鸟窝",
+    "icon": "nw",
+    "x": 663622,
+    "y": "-439047"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21338",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "工具柜",
+    "icon": "gjg",
+    "x": 659496,
+    "y": "-439705"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21270",
+    "拾取条件": "",
+    "出现条件": "",
+    "name": "电脑",
+    "icon": "dn",
+    "x": 663871,
+    "y": "-439853"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 663861,
+    "y": "-440870"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": 21364,
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "高级储物箱",
+    "icon": "gjcwx",
+    "x": 663604,
+    "y": "-441103"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "登山包",
+    "icon": "dsb",
+    "x": 663127,
+    "y": "-440212"
+  },
+  {
+    "地图": "航天城",
+    "大区域": "航天城_码头",
+    "自定义区域": "码头",
+    "是否为散点": "FALSE",
+    "倍场特殊配置": "默认全倍场",
+    "z坐标": "-21364",
+    "拾取条件": "",
+    "出现条件": "效能部长出现",
+    "name": "保险箱",
+    "icon": "bxx",
+    "x": 664060,
+    "y": "-440627"
+  },
+   // 复活点
+   {
+      "name": "出生点",
+      "type": "revive",
+      "icon": 'csd',
+      "x": "642030.562500",
+      "y": "-454288.562500",
+      "z": ""
+  },
+  {
+      "name": "出生点",
+      "type": "revive",
+      "icon": 'csd',
+      "x": "641868.000000",
+      "y": "-472453.812500",
+      "z": ""
+  },
+  {
+      "name": "出生点",
+      "type": "revive",
+      "icon": 'csd',
+      "x": "352348.562500",
+      "y": "-576832.375000",
+      "z": ""
+  },
+  {
+      "name": "出生点",
+      "type": "revive",
+      "icon": 'csd',
+      "x": "665390.312500",
+      "y": "-479538.906250",
+      "z": ""
+  },
+{
+"name": "出生点",
+"type": "revive",
+"icon": 'csd',
+"x": "697247.12500",
+"y": "-464868.593750",
+"z": ""
+},
+  {
+      "name": "出生点",
+      "type": "revive",
+      "icon": 'csd',
+      "x": "679688.500000",
+      "y": "-467399.687500",
+      "z": ""
+  },
+  {
+      "name": "出生点",
+      "type": "revive",
+      "icon": 'csd',
+      "x": "689175.562500",
+      "y": "-480478.718750",
+      "z": ""
+  },
+  {
+      "name": "出生点",
+      "type": "revive",
+      "icon": 'csd',
+      "x": "691724.312500",
+      "y": "-445028.250000",
+      "z": ""
+  },
+  {
+      "name": "出生点",
+      "type": "revive",
+      "icon": 'csd',
+      "x": "657532.812500",
+      "y": "-419005.406250",
+      "z": ""
+  },
+  {
+      "name": "拉闸撤离点",
+      "自定义区域": "直升机撤离点",
+      "type": "retreat",
+      "icon": 'dtcld',
+      "x": "672075.937500",
+      "y": "-440850.687500",
+      "z": ""
+  },
+  {
+      "name": "丢包撤离点",
+      "自定义区域": "试车场撤离点",
+      "type": "retreat",
+      "icon": 'tjcld',
+      "x": "687504.687500",
+      "y": "-427413.843750",
+      "z": "",
   "撤离条件": "丢弃背包"
   },
   {
-    "name": "行动撤离点",
-    "自定义区域": "火箭撤离点",
-    "type": "retreat",
-    "icon": 'hjcld',
-    "x": "660050.062500",
-    "y": "-416314.531250",
-    "z": ""
+      "name": "行动撤离点",
+      "自定义区域": "火箭撤离点",
+      "type": "retreat",
+      "icon": 'hjcld',
+      "x": "660050.062500",
+      "y": "-416314.531250",
+      "z": ""
   },
   // Boss
   // Boss
   {
-    "name": "[卫队长官]赛伊德",
-    "typeName": "首领",
-    "自定义区域": "可能出现在行政辖区内",
-    "type": "Boss",
-    "icon": 'boss',
-    "x": "",
-    "y": "",
-    "z": ""
+      "name": "[卫队长官]赛伊德",
+      "typeName": "首领",
+      "自定义区域": "可能出现在行政辖区内",
+      "type": "Boss",
+      "icon": 'boss',
+      "x": "",
+      "y": "",
+      "z": ""
   },
   {
-    "name": "[卫队长官]赛伊德",
-    "typeName": "首领",
-    "自定义区域": "可能出现在行政辖区内",
-    "type": "Boss",
-    "icon": 'boss',
-    "x": "",
-    "y": "",
-    "z": ""
+      "name": "[卫队长官]赛伊德",
+      "typeName": "首领",
+      "自定义区域": "可能出现在行政辖区内",
+      "type": "Boss",
+      "icon": 'boss',
+      "x": "",
+      "y": "",
+      "z": ""
   },
   // 行动接取站
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "334618.125000",
-    "y": "-788692.500000",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "334618.125000",
+      "y": "-788692.500000",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "384914.218750",
-    "y": "-782215.312500",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "384914.218750",
+      "y": "-782215.312500",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "350749.593750",
-    "y": "-760869.062500",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "350749.593750",
+      "y": "-760869.062500",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "362700.000000",
-    "y": "-764869.875000",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "362700.000000",
+      "y": "-764869.875000",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "371941.281250",
-    "y": "-773758.375000",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "371941.281250",
+      "y": "-773758.375000",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "397259.812500",
-    "y": "-758860.000000",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "397259.812500",
+      "y": "-758860.000000",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "395753.187500",
-    "y": "-745796.187500",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "395753.187500",
+      "y": "-745796.187500",
+      "z": ""
   },
   {
-    "name": "高价值接取站",
-    "type": "moves",
-    "icon": 'xdjqzgjz',
-    "x": "354700.062500",
-    "y": "-780500.937500",
-    "z": ""
+      "name": "高价值接取站",
+      "type": "moves",
+      "icon": 'xdjqzgjz',
+      "x": "354700.062500",
+      "y": "-780500.937500",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "332511.875000",
-    "y": "-779256.812500",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "332511.875000",
+      "y": "-779256.812500",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "343112.000000",
-    "y": "-792986.437500",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "343112.000000",
+      "y": "-792986.437500",
+      "z": ""
   },
   {
-    "name": "高价值接取站",
-    "type": "moves",
-    "icon": 'xdjqzgjz',
-    "x": "364365.843750",
-    "y": "-794160.125000",
-    "z": ""
+      "name": "高价值接取站",
+      "type": "moves",
+      "icon": 'xdjqzgjz',
+      "x": "364365.843750",
+      "y": "-794160.125000",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "371278.656250",
-    "y": "-768059.125000",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "371278.656250",
+      "y": "-768059.125000",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "394915.906250",
-    "y": "-751570.187500",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "394915.906250",
+      "y": "-751570.187500",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "343047.562500",
-    "y": "-762402.937500",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "343047.562500",
+      "y": "-762402.937500",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "392066.375000",
-    "y": "-756213.125000",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "392066.375000",
+      "y": "-756213.125000",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "340722.812500",
-    "y": "-783825.500000",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "340722.812500",
+      "y": "-783825.500000",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "332315.937500",
-    "y": "-764151.500000",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "332315.937500",
+      "y": "-764151.500000",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "376139.937500",
-    "y": "-789654.750000",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "376139.937500",
+      "y": "-789654.750000",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "366676.968750",
-    "y": "-773072.312500",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "366676.968750",
+      "y": "-773072.312500",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "388136.906250",
-    "y": "-749814.000000",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "388136.906250",
+      "y": "-749814.000000",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "365372.875000",
-    "y": "-760074.500000",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "365372.875000",
+      "y": "-760074.500000",
+      "z": ""
   },
   {
-    "name": "行动接取站",
-    "type": "move",
-    "icon": 'xdjqz',
-    "x": "377253.250000",
-    "y": "-791894.687500",
-    "z": ""
+      "name": "行动接取站",
+      "type": "move",
+      "icon": 'xdjqz',
+      "x": "377253.250000",
+      "y": "-791894.687500",
+      "z": ""
   },
 ]

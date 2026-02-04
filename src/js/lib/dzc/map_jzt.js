@@ -10821,7 +10821,8 @@ window['jzt_pc_s'].deploy = [
     "CD": 15,
     "name": "ATV全地形车",
     "icon": "deploy_atvqdxc",
-    "Sector": "全局"
+    "Sector": "全局",
+    "num": 1
   },
   {
     "地图": "金字塔",
@@ -10941,7 +10942,8 @@ window['jzt_pc_s'].deploy = [
     "CD": 15,
     "name": "ATV全地形车",
     "icon": "deploy_atvqdxc",
-    "Sector": "全局"
+    "Sector": "全局",
+    "num": 1
   },
   {
     "地图": "金字塔",
@@ -12496,7 +12498,8 @@ window['jzt_mobile_s'].deploy = [
     "CD": 15,
     "name": "ATV全地形车",
     "icon": "deploy_atvqdxc",
-    "Sector": "全局"
+    "Sector": "全局",
+    "num": 1
   },
   {
     "地图": "金字塔",
@@ -12616,7 +12619,8 @@ window['jzt_mobile_s'].deploy = [
     "CD": 15,
     "name": "ATV全地形车",
     "icon": "deploy_atvqdxc",
-    "Sector": "全局"
+    "Sector": "全局",
+    "num": 1
   },
   {
     "地图": "金字塔",

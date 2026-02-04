@@ -102,7 +102,7 @@ var navList_cgxg = [
     title: "全部",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         lang: "lang_bxg",
         idType: 1,
         num: 8,
@@ -165,28 +165,21 @@ var navList_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         lang: "lang_dgjh",
         idType: 10,
         num: 28,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        lang: "lang_syf",
-        idType: 11,
-        num: 13,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         lang: "lang_yf",
         idType: 12,
-        num: 18,
+        num: 31,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         lang: "lang_ylb",
         idType: 13,
         num: 17,
@@ -200,7 +193,7 @@ var navList_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         lang: "lang_lxd",
         idType: 15,
         num: 17,
@@ -256,14 +249,14 @@ var navList_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         lang: "lang_ljx",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         lang: "lang_snc",
         idType: 24,
         num: 5,
@@ -351,7 +344,7 @@ var navList_cgxg = [
     title: "物资点",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         idType: 1,
         num: 5,
         icon: "nav_bxx",
@@ -405,25 +398,19 @@ var navList_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         idType: 10,
         num: 27,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        idType: 11,
-        num: 13,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         idType: 12,
-        num: 18,
+        num: 31,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         idType: 13,
         num: 17,
         icon: "nav_ylb",
@@ -435,7 +422,7 @@ var navList_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         idType: 15,
         num: 17,
         icon: "nav_lxd",
@@ -483,13 +470,13 @@ var navList_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         idType: 24,
         num: 5,
         icon: "nav_snc",
@@ -581,7 +568,7 @@ var navListInfo_cgxg = [
     title: "全部",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         lang: "lang_bxg",
         idType: 1,
         num: 8,
@@ -644,28 +631,21 @@ var navListInfo_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         lang: "lang_dgjh",
         idType: 10,
         num: 28,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        lang: "lang_syf",
-        idType: 11,
-        num: 13,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         lang: "lang_yf",
         idType: 12,
-        num: 18,
+        num: 31,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         lang: "lang_ylb",
         idType: 13,
         num: 17,
@@ -679,7 +659,7 @@ var navListInfo_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         lang: "lang_lxd",
         idType: 15,
         num: 17,
@@ -735,14 +715,14 @@ var navListInfo_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         lang: "lang_ljx",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         lang: "lang_snc",
         idType: 24,
         num: 5,
@@ -818,7 +798,7 @@ var navListInfo_cgxg = [
     title: "物资点",
     typeList: [
         {
-            name: "保险柜",
+            name: "保险箱",
             lang: "lang_bxg",
             idType: 1,
             num: 8,
@@ -881,28 +861,21 @@ var navListInfo_cgxg = [
             icon: "nav_gjg",
           },
           {
-            name: "大工具盒",
+            name: "收纳盒",
             lang: "lang_dgjh",
             idType: 10,
             num: 28,
             icon: "nav_dgjx",
           },
           {
-            name: "实验服",
-            lang: "lang_syf",
-            idType: 11,
-            num: 13,
-            icon: "nav_yf_s",
-          },
-          {
-            name: "衣服",
+            name: "一件衣服",
             lang: "lang_yf",
             idType: 12,
-            num: 18,
+            num: 31,
             icon: "nav_yf",
           },
           {
-            name: "医疗包",
+            name: "军用医疗包",
             lang: "lang_ylb",
             idType: 13,
             num: 17,
@@ -916,7 +889,7 @@ var navListInfo_cgxg = [
             icon: "nav_ylwzd",
           },
           {
-            name: "旅行袋",
+            name: "旅行包",
             lang: "lang_lxd",
             idType: 15,
             num: 17,
@@ -972,14 +945,14 @@ var navListInfo_cgxg = [
             icon: "nav_hkcwx",
           },
           {
-            name: "垃圾箱",
+            name: "垃圾桶",
             lang: "lang_ljx",
             idType: 23,
             num: 8,
             icon: "nav_ljx",
           },
           {
-            name: "水泥车",
+            name: "搅拌车",
             lang: "lang_snc",
             idType: 24,
             num: 5,
@@ -1100,7 +1073,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21237.625",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "352702",
         "y": "-630871",
@@ -1206,7 +1179,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21210.88477",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "354809.3125",
         "y": "-633627.6875",
@@ -1237,7 +1210,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21237.625",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "357093.75",
         "y": "-631081.875",
@@ -1328,7 +1301,7 @@ var mapArticle_cgxg = [
         "z坐标": "-16881.54102",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "276621.5",
         "y": "-643007.75",
@@ -1343,7 +1316,7 @@ var mapArticle_cgxg = [
         "z坐标": "-16855.4375",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "278834.5625",
         "y": "-641212.1875",
@@ -1388,7 +1361,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21610",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "356004.1",
         "y": "-575894"
@@ -1402,7 +1375,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21640",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "378276",
         "y": "-612477"
@@ -1416,7 +1389,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21643",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "378272",
         "y": "-613074"
@@ -1430,7 +1403,7 @@ var mapArticle_cgxg = [
         "z坐标": "-20924.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "337365.4",
         "y": "-581015"
@@ -1444,7 +1417,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21183",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "352551.6",
         "y": "-702468"
@@ -1458,7 +1431,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21435",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "351538.8",
         "y": "-699918"
@@ -1472,7 +1445,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21536",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "365025",
         "y": "-579788"
@@ -1486,7 +1459,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21971",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "375254",
         "y": "-611501"
@@ -1500,8 +1473,8 @@ var mapArticle_cgxg = [
         "z坐标": "-21642.1",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "356383.9",
         "y": "-631917",
         "floor": 1
@@ -1515,8 +1488,8 @@ var mapArticle_cgxg = [
         "z坐标": "-21275.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "362325",
         "y": "-635654"
     },
@@ -1529,8 +1502,8 @@ var mapArticle_cgxg = [
         "z坐标": "-22501",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "370994.6",
         "y": "-661626"
     },
@@ -1543,8 +1516,8 @@ var mapArticle_cgxg = [
         "z坐标": "-22063.8",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "378263",
         "y": "-612261"
     },
@@ -1557,8 +1530,8 @@ var mapArticle_cgxg = [
         "z坐标": "-16255",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "278357.6",
         "y": "-641739"
     },
@@ -1571,8 +1544,8 @@ var mapArticle_cgxg = [
         "z坐标": "-18284.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "293270",
         "y": "-648369"
     },
@@ -1585,8 +1558,8 @@ var mapArticle_cgxg = [
         "z坐标": "-18284.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "293270",
         "y": "-648516"
     },
@@ -1599,8 +1572,8 @@ var mapArticle_cgxg = [
         "z坐标": "-18130.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "292564",
         "y": "-640946"
     },
@@ -1613,8 +1586,8 @@ var mapArticle_cgxg = [
         "z坐标": "-18130.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "292736.7",
         "y": "-640946"
     },
@@ -1627,8 +1600,8 @@ var mapArticle_cgxg = [
         "z坐标": "-16760.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "278281.5",
         "y": "-640438"
     },
@@ -1641,8 +1614,8 @@ var mapArticle_cgxg = [
         "z坐标": "-17755.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "297560.6",
         "y": "-641421"
     },
@@ -1655,8 +1628,8 @@ var mapArticle_cgxg = [
         "z坐标": "-17497.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "300413.3",
         "y": "-666583"
     },
@@ -1669,8 +1642,8 @@ var mapArticle_cgxg = [
         "z坐标": "-19379.8",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "309067.2",
         "y": "-635605"
     },
@@ -1683,7 +1656,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21237.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "356318",
         "y": "-628287",
@@ -1698,7 +1671,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21237",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "353697",
         "y": "-628252",
@@ -1713,7 +1686,7 @@ var mapArticle_cgxg = [
         "z坐标": "-15800.9",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "279071.4",
         "y": "-640547"
@@ -1727,7 +1700,7 @@ var mapArticle_cgxg = [
         "z坐标": "-20996.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "354381.7",
         "y": "-580517"
@@ -1741,7 +1714,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21719.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "370921",
         "y": "-628877"
@@ -1755,7 +1728,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21057.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "335196.5",
         "y": "-577333"
@@ -1769,7 +1742,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19562.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "331114.3",
         "y": "-590968"
@@ -1783,7 +1756,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21050.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "338280",
         "y": "-580912"
@@ -1797,7 +1770,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19010.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "329751.1",
         "y": "-661990"
@@ -1811,7 +1784,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21717.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "358107",
         "y": "-630979",
@@ -1826,7 +1799,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21286.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "362691",
         "y": "-634554"
@@ -1840,7 +1813,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22801.5",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "359890.8",
         "y": "-608009"
@@ -1854,7 +1827,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22861.2",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "365484",
         "y": "-608621"
@@ -3811,7 +3784,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21397.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "353951.3",
         "y": "-576874"
@@ -3825,7 +3798,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21985.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "349209",
         "y": "-578870"
@@ -3839,7 +3812,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22770.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "331727.8",
         "y": "-614382"
@@ -3853,7 +3826,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22974.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "346609.6",
         "y": "-657488"
@@ -3867,7 +3840,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22465.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "343940.4",
         "y": "-657129"
@@ -3881,7 +3854,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22697",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "349785.9",
         "y": "-668510"
@@ -3895,7 +3868,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22338.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "348436.3",
         "y": "-678277"
@@ -3909,7 +3882,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19421.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "331997.3",
         "y": "-695618"
@@ -3923,7 +3896,7 @@ var mapArticle_cgxg = [
         "z坐标": "-20946.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "348695",
         "y": "-704312"
@@ -3937,7 +3910,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21484",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "370868.4",
         "y": "-618916"
@@ -3951,7 +3924,7 @@ var mapArticle_cgxg = [
         "z坐标": "-20661.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "353292.4",
         "y": "-647089"
@@ -3965,7 +3938,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22925.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "370714.7",
         "y": "-674798"
@@ -3979,7 +3952,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22961",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "364525",
         "y": "-681964"
@@ -3993,7 +3966,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22941",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "364024",
         "y": "-606695"
@@ -4007,7 +3980,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22852.9",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "366416",
         "y": "-608292"
@@ -4021,7 +3994,7 @@ var mapArticle_cgxg = [
         "z坐标": "-18488.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "292322.9",
         "y": "-648530"
@@ -4035,7 +4008,7 @@ var mapArticle_cgxg = [
         "z坐标": "-17559.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "301783.5",
         "y": "-664513"
@@ -4806,7 +4779,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21047",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "354563.3",
         "y": "-580102"
@@ -4820,7 +4793,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21153.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "356772.3",
         "y": "-630926",
@@ -4835,7 +4808,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21727.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "370881",
         "y": "-631929"
@@ -4849,7 +4822,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19650.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "327378.9",
         "y": "-592053"
@@ -4863,7 +4836,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21050.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "337734.4",
         "y": "-579579"
@@ -4877,7 +4850,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19691.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "330579.7",
         "y": "-589927"
@@ -4891,7 +4864,7 @@ var mapArticle_cgxg = [
         "z坐标": "-20986.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "336740.8",
         "y": "-579928"
@@ -4905,7 +4878,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21155.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352254.1",
         "y": "-628953",
@@ -4920,7 +4893,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21701.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352738.9",
         "y": "-629341",
@@ -4935,7 +4908,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21155.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352170.1",
         "y": "-631351",
@@ -4950,7 +4923,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19363.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "335212.3",
         "y": "-661762"
@@ -4964,7 +4937,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21707.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "353624.4",
         "y": "-628454",
@@ -4979,7 +4952,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21171.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "354214",
         "y": "-632034",
@@ -4994,7 +4967,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21280.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "362711",
         "y": "-635590"
@@ -5008,7 +4981,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21972.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "370854.8",
         "y": "-660205"
@@ -5022,7 +4995,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22805.2",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "360058.8",
         "y": "-608480"
@@ -5036,7 +5009,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21958.4",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "368212.9",
         "y": "-610225"
@@ -5162,7 +5135,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22285.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "368464.4",
         "y": "-580203"
@@ -5176,7 +5149,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22643.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "320674.8",
         "y": "-617435"
@@ -5190,7 +5163,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19484.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "331182",
         "y": "-662037"
@@ -5204,7 +5177,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19486.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "327798",
         "y": "-667100"
@@ -5218,7 +5191,7 @@ var mapArticle_cgxg = [
         "z坐标": "-20823.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "341657.1",
         "y": "-670722"
@@ -5232,7 +5205,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22081.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "375304",
         "y": "-609870"
@@ -5246,7 +5219,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22616",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "370671",
         "y": "-657518"
@@ -5260,7 +5233,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19871.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "313942.7",
         "y": "-642096"
@@ -5415,7 +5388,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22268.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "370015.2",
         "y": "-582772"
@@ -5429,7 +5402,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22268.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "368885.6",
         "y": "-579960"
@@ -5443,7 +5416,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19654.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "326863.9",
         "y": "-591012"
@@ -5457,7 +5430,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19877.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "322144.5",
         "y": "-640510"
@@ -5471,7 +5444,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19876.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "322204.8",
         "y": "-638758"
@@ -5485,7 +5458,7 @@ var mapArticle_cgxg = [
         "z坐标": "-20510.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "324109",
         "y": "-639002"
@@ -5499,7 +5472,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21775.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "339742.5",
         "y": "-632048"
@@ -5513,7 +5486,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19347.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "334624.8",
         "y": "-661810"
@@ -5527,7 +5500,7 @@ var mapArticle_cgxg = [
         "z坐标": "-18723.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "335391",
         "y": "-663097"
@@ -5541,7 +5514,7 @@ var mapArticle_cgxg = [
         "z坐标": "-20756",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "339376",
         "y": "-670566"
@@ -5555,7 +5528,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22934.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "344179.4",
         "y": "-656286"
@@ -5569,7 +5542,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22128",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "343904.7",
         "y": "-657917"
@@ -5583,7 +5556,7 @@ var mapArticle_cgxg = [
         "z坐标": "-20430",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "340714.3",
         "y": "-668433"
@@ -5597,7 +5570,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21924.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "364554",
         "y": "-580714"
@@ -5611,7 +5584,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21473.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "358821.1",
         "y": "-586317"
@@ -5625,7 +5598,7 @@ var mapArticle_cgxg = [
         "z坐标": "-20587.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "354108.9",
         "y": "-581041"
@@ -5639,7 +5612,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22219.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "367100",
         "y": "-594747"
@@ -5653,7 +5626,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21430.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "370528.7",
         "y": "-617321"
@@ -5667,7 +5640,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22409.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "361730",
         "y": "-681721"
@@ -5681,7 +5654,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22664.8",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "362100",
         "y": "-607103"
@@ -5695,7 +5668,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22657.8",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "363855.5",
         "y": "-608035"
@@ -5709,7 +5682,7 @@ var mapArticle_cgxg = [
         "z坐标": "-18407.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "280614.8",
         "y": "-639339"
@@ -5723,7 +5696,7 @@ var mapArticle_cgxg = [
         "z坐标": "-18304.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "299420.2",
         "y": "-641958"
@@ -5737,7 +5710,7 @@ var mapArticle_cgxg = [
         "z坐标": "-18407.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "292347.5",
         "y": "-651098"
@@ -5751,7 +5724,7 @@ var mapArticle_cgxg = [
         "z坐标": "-18395.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "293707.5",
         "y": "-649363"
@@ -5765,7 +5738,7 @@ var mapArticle_cgxg = [
         "z坐标": "-17496.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "301526.8",
         "y": "-667329"
@@ -5779,7 +5752,7 @@ var mapArticle_cgxg = [
         "z坐标": "-18153.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "308238",
         "y": "-673460"
@@ -5793,7 +5766,7 @@ var mapArticle_cgxg = [
         "z坐标": "-18253.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "306915.3",
         "y": "-671585"
@@ -6964,7 +6937,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19812.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "324366",
         "y": "-597905"
@@ -6978,7 +6951,7 @@ var mapArticle_cgxg = [
         "z坐标": "-21923.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "346655.7",
         "y": "-619276"
@@ -6992,7 +6965,7 @@ var mapArticle_cgxg = [
         "z坐标": "-19511.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "332954.5",
         "y": "-668203"
@@ -7006,7 +6979,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22866.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "372897.6",
         "y": "-597352"
@@ -7020,7 +6993,7 @@ var mapArticle_cgxg = [
         "z坐标": "-22515.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "357109.8",
         "y": "-666142"
@@ -7516,7 +7489,7 @@ var navList2_cgxg = [
     title: "全部",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         lang: "lang_bxg",
         idType: 1,
         num: 8,
@@ -7579,28 +7552,21 @@ var navList2_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         lang: "lang_dgjh",
         idType: 10,
         num: 29,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        lang: "lang_syf",
-        idType: 11,
-        num: 14,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         lang: "lang_yf",
         idType: 12,
-        num: 18,
+        num: 32,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         lang: "lang_ylb",
         idType: 13,
         num: 18,
@@ -7614,7 +7580,7 @@ var navList2_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         lang: "lang_lxd",
         idType: 15,
         num: 15,
@@ -7670,14 +7636,14 @@ var navList2_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         lang: "lang_ljx",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         lang: "lang_snc",
         idType: 24,
         num: 5,
@@ -7765,7 +7731,7 @@ var navList2_cgxg = [
     title: "物资点",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         idType: 1,
         num: 5,
         icon: "nav_bxx",
@@ -7819,25 +7785,19 @@ var navList2_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         idType: 10,
         num: 28,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        idType: 11,
-        num: 14,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         idType: 12,
-        num: 18,
+        num: 32,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         idType: 13,
         num: 18,
         icon: "nav_ylb",
@@ -7849,7 +7809,7 @@ var navList2_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         idType: 15,
         num: 15,
         icon: "nav_lxd",
@@ -7897,13 +7857,13 @@ var navList2_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         idType: 24,
         num: 5,
         icon: "nav_snc",
@@ -7995,7 +7955,7 @@ var navListInfo2_cgxg = [
     title: "全部",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         lang: "lang_bxg",
         idType: 1,
         num: 8,
@@ -8058,28 +8018,21 @@ var navListInfo2_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         lang: "lang_dgjh",
         idType: 10,
         num: 29,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        lang: "lang_syf",
-        idType: 11,
-        num: 14,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         lang: "lang_yf",
         idType: 12,
-        num: 18,
+        num: 32,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         lang: "lang_ylb",
         idType: 13,
         num: 18,
@@ -8093,7 +8046,7 @@ var navListInfo2_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         lang: "lang_lxd",
         idType: 15,
         num: 15,
@@ -8149,14 +8102,14 @@ var navListInfo2_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         lang: "lang_ljx",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         lang: "lang_snc",
         idType: 24,
         num: 5,
@@ -8226,7 +8179,7 @@ var navListInfo2_cgxg = [
     title: "物资点",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         lang: "lang_bxg",
         idType: 1,
         num: 8,
@@ -8289,28 +8242,21 @@ var navListInfo2_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         lang: "lang_dgjh",
         idType: 10,
         num: 29,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        lang: "lang_syf",
-        idType: 11,
-        num: 14,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         lang: "lang_yf",
         idType: 12,
-        num: 18,
+        num: 32,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         lang: "lang_ylb",
         idType: 13,
         num: 18,
@@ -8324,7 +8270,7 @@ var navListInfo2_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         lang: "lang_lxd",
         idType: 15,
         num: 15,
@@ -8380,14 +8326,14 @@ var navListInfo2_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         lang: "lang_ljx",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         lang: "lang_snc",
         idType: 24,
         num: 5,
@@ -8507,7 +8453,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21237.625",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "352702",
         "y": "-630871",
@@ -8613,7 +8559,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21210.88477",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "354809.3125",
         "y": "-633627.6875",
@@ -8644,7 +8590,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21237.625",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "357093.75",
         "y": "-631081.875",
@@ -8735,7 +8681,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-16881.54102",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "276621.5",
         "y": "-643007.75",
@@ -8750,7 +8696,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-16855.4375",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "278834.5625",
         "y": "-641212.1875",
@@ -8795,7 +8741,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21610",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "356004.1",
         "y": "-575894"
@@ -8809,7 +8755,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21640",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "378276",
         "y": "-612477"
@@ -8823,7 +8769,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21643",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "378272",
         "y": "-613074"
@@ -8837,7 +8783,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-20924.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "337365.4",
         "y": "-581015"
@@ -8851,7 +8797,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21183",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "352551.6",
         "y": "-702468"
@@ -8865,7 +8811,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21435",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "351538.8",
         "y": "-699918"
@@ -8879,7 +8825,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21536",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "365025",
         "y": "-579788"
@@ -8893,7 +8839,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21971",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "375254",
         "y": "-611501"
@@ -8907,7 +8853,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22154.2",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "362729.3",
         "y": "-605015"
@@ -8921,8 +8867,8 @@ var mapArticle2_cgxg = [
         "z坐标": "-21642.1",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "356383.9",
         "y": "-631917",
         "floor": 1
@@ -8936,8 +8882,8 @@ var mapArticle2_cgxg = [
         "z坐标": "-21275.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "362325",
         "y": "-635654"
     },
@@ -8950,8 +8896,8 @@ var mapArticle2_cgxg = [
         "z坐标": "-22501",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "370994.6",
         "y": "-661626"
     },
@@ -8964,8 +8910,8 @@ var mapArticle2_cgxg = [
         "z坐标": "-22063.8",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "378263",
         "y": "-612261"
     },
@@ -8978,8 +8924,8 @@ var mapArticle2_cgxg = [
         "z坐标": "-22365.8",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "出现坠机时",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "362220.9",
         "y": "-604462"
     },
@@ -8992,8 +8938,8 @@ var mapArticle2_cgxg = [
         "z坐标": "-16255",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "278357.6",
         "y": "-641739"
     },
@@ -9006,8 +8952,8 @@ var mapArticle2_cgxg = [
         "z坐标": "-18284.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "293270",
         "y": "-648369"
     },
@@ -9020,8 +8966,8 @@ var mapArticle2_cgxg = [
         "z坐标": "-18284.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "293270",
         "y": "-648516"
     },
@@ -9034,8 +8980,8 @@ var mapArticle2_cgxg = [
         "z坐标": "-18130.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "292564",
         "y": "-640946"
     },
@@ -9048,8 +8994,8 @@ var mapArticle2_cgxg = [
         "z坐标": "-18130.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "292736.7",
         "y": "-640946"
     },
@@ -9062,8 +9008,8 @@ var mapArticle2_cgxg = [
         "z坐标": "-16760.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "278281.5",
         "y": "-640438"
     },
@@ -9076,8 +9022,8 @@ var mapArticle2_cgxg = [
         "z坐标": "-17755.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "297560.6",
         "y": "-641421"
     },
@@ -9090,8 +9036,8 @@ var mapArticle2_cgxg = [
         "z坐标": "-17497.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "300413.3",
         "y": "-666583"
     },
@@ -9104,8 +9050,8 @@ var mapArticle2_cgxg = [
         "z坐标": "-19379.8",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "309067.2",
         "y": "-635605"
     },
@@ -9118,7 +9064,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21237.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "356318",
         "y": "-628287",
@@ -9133,7 +9079,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21237",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "353697",
         "y": "-628252",
@@ -9148,7 +9094,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-15800.9",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "279071.4",
         "y": "-640547"
@@ -9162,7 +9108,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-20996.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "354381.7",
         "y": "-580517"
@@ -9176,7 +9122,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21719.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "370921",
         "y": "-628877"
@@ -9190,7 +9136,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21057.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "335196.5",
         "y": "-577333"
@@ -9204,7 +9150,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19562.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "331114.3",
         "y": "-590968"
@@ -9218,7 +9164,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21050.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "338280",
         "y": "-580912"
@@ -9232,7 +9178,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19010.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "329751.1",
         "y": "-661990"
@@ -9246,7 +9192,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21717.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "358107",
         "y": "-630979",
@@ -9261,7 +9207,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21286.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "362691",
         "y": "-634554"
@@ -9275,7 +9221,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22456.5",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "360800.9",
         "y": "-603687"
@@ -11204,7 +11150,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21397.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "353951.3",
         "y": "-576874"
@@ -11218,7 +11164,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21985.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "349209",
         "y": "-578870"
@@ -11232,7 +11178,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22770.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "331727.8",
         "y": "-614382"
@@ -11246,7 +11192,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22974.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "346609.6",
         "y": "-657488"
@@ -11260,7 +11206,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22465.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "343940.4",
         "y": "-657129"
@@ -11274,7 +11220,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22697",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "349785.9",
         "y": "-668510"
@@ -11288,7 +11234,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22338.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "348436.3",
         "y": "-678277"
@@ -11302,7 +11248,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19421.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "331997.3",
         "y": "-695618"
@@ -11316,7 +11262,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-20946.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "348695",
         "y": "-704312"
@@ -11330,7 +11276,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21484",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "370868.4",
         "y": "-618916"
@@ -11344,7 +11290,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-20661.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "353292.4",
         "y": "-647089"
@@ -11358,7 +11304,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22925.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "370714.7",
         "y": "-674798"
@@ -11372,7 +11318,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22961",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "364525",
         "y": "-681964"
@@ -11386,7 +11332,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-18488.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "292322.9",
         "y": "-648530"
@@ -11400,7 +11346,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-17559.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "301783.5",
         "y": "-664513"
@@ -12171,7 +12117,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21047",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "354563.3",
         "y": "-580102"
@@ -12185,7 +12131,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21153.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "356772.3",
         "y": "-630926",
@@ -12200,7 +12146,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21727.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "370881",
         "y": "-631929"
@@ -12214,7 +12160,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19650.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "327378.9",
         "y": "-592053"
@@ -12228,7 +12174,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21050.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "337734.4",
         "y": "-579579"
@@ -12242,7 +12188,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19691.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "330579.7",
         "y": "-589927"
@@ -12256,7 +12202,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-20986.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "336740.8",
         "y": "-579928"
@@ -12270,7 +12216,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21155.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352254.1",
         "y": "-628953",
@@ -12285,7 +12231,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21701.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352738.9",
         "y": "-629341",
@@ -12300,7 +12246,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21155.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352170.1",
         "y": "-631351",
@@ -12315,7 +12261,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19363.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "335212.3",
         "y": "-661762"
@@ -12329,7 +12275,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21707.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "353624.4",
         "y": "-628454",
@@ -12344,7 +12290,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21171.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "354214",
         "y": "-632034",
@@ -12359,7 +12305,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21280.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "362711",
         "y": "-635590"
@@ -12373,7 +12319,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21972.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "370854.8",
         "y": "-660205"
@@ -12387,7 +12333,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22771.8",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "360658",
         "y": "-604548"
@@ -12401,7 +12347,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22372",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "出现坠机时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "361609.6",
         "y": "-604494"
@@ -12415,7 +12361,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22372",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "出现坠机时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "361888.3",
         "y": "-604486"
@@ -12555,7 +12501,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22285.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "368464.4",
         "y": "-580203"
@@ -12569,7 +12515,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22643.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "320674.8",
         "y": "-617435"
@@ -12583,7 +12529,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19484.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "331182",
         "y": "-662037"
@@ -12597,7 +12543,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19486.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "327798",
         "y": "-667100"
@@ -12611,7 +12557,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-20823.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "341657.1",
         "y": "-670722"
@@ -12625,7 +12571,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22081.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "375304",
         "y": "-609870"
@@ -12639,7 +12585,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22616",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "370671",
         "y": "-657518"
@@ -12653,7 +12599,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19871.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "313942.7",
         "y": "-642096"
@@ -12808,7 +12754,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22268.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "370015.2",
         "y": "-582772"
@@ -12822,7 +12768,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22268.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "368885.6",
         "y": "-579960"
@@ -12836,7 +12782,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19654.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "326863.9",
         "y": "-591012"
@@ -12850,7 +12796,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19877.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "322144.5",
         "y": "-640510"
@@ -12864,7 +12810,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19876.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "322204.8",
         "y": "-638758"
@@ -12878,7 +12824,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-20510.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "324109",
         "y": "-639002"
@@ -12892,7 +12838,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21775.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "339742.5",
         "y": "-632048"
@@ -12906,7 +12852,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19347.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "334624.8",
         "y": "-661810"
@@ -12920,7 +12866,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-18723.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "335391",
         "y": "-663097"
@@ -12934,7 +12880,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-20756",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "339376",
         "y": "-670566"
@@ -12948,7 +12894,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22934.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "344179.4",
         "y": "-656286"
@@ -12962,7 +12908,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22128",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "343904.7",
         "y": "-657917"
@@ -12976,7 +12922,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-20430",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "340714.3",
         "y": "-668433"
@@ -12990,7 +12936,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21924.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "364554",
         "y": "-580714"
@@ -13004,7 +12950,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21473.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "358821.1",
         "y": "-586317"
@@ -13018,7 +12964,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-20587.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "354108.9",
         "y": "-581041"
@@ -13032,7 +12978,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22219.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "367100",
         "y": "-594747"
@@ -13046,7 +12992,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21430.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "370528.7",
         "y": "-617321"
@@ -13060,7 +13006,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22409.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "361730",
         "y": "-681721"
@@ -13074,7 +13020,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22788.8",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "361997",
         "y": "-604744"
@@ -13088,7 +13034,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22153.7",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "360369.8",
         "y": "-604138"
@@ -13102,7 +13048,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22460.2",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "358566.7",
         "y": "-603394"
@@ -13116,7 +13062,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-18407.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "280614.8",
         "y": "-639339"
@@ -13130,7 +13076,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-18304.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "299420.2",
         "y": "-641958"
@@ -13144,7 +13090,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-18407.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "292347.5",
         "y": "-651098"
@@ -13158,7 +13104,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-18395.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "293707.5",
         "y": "-649363"
@@ -13172,7 +13118,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-17496.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "301526.8",
         "y": "-667329"
@@ -13186,7 +13132,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-18153.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "308238",
         "y": "-673460"
@@ -13200,7 +13146,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-18253.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "306915.3",
         "y": "-671585"
@@ -14301,7 +14247,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19812.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "324366",
         "y": "-597905"
@@ -14315,7 +14261,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-21923.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "346655.7",
         "y": "-619276"
@@ -14329,7 +14275,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-19511.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "332954.5",
         "y": "-668203"
@@ -14343,7 +14289,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22866.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "372897.6",
         "y": "-597352"
@@ -14357,7 +14303,7 @@ var mapArticle2_cgxg = [
         "z坐标": "-22515.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "357109.8",
         "y": "-666142"
@@ -14843,7 +14789,7 @@ var navList3_cgxg = [
     title: "全部",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         lang: "lang_bxg",
         idType: 1,
         num: 8,
@@ -14906,28 +14852,21 @@ var navList3_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         lang: "lang_dgjh",
         idType: 10,
         num: 28,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        lang: "lang_syf",
-        idType: 11,
-        num: 13,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         lang: "lang_yf",
         idType: 12,
-        num: 19,
+        num: 32,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         lang: "lang_ylb",
         idType: 13,
         num: 17,
@@ -14941,7 +14880,7 @@ var navList3_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         lang: "lang_lxd",
         idType: 15,
         num: 17,
@@ -14997,14 +14936,14 @@ var navList3_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         lang: "lang_ljx",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         lang: "lang_snc",
         idType: 24,
         num: 5,
@@ -15098,7 +15037,7 @@ var navList3_cgxg = [
     title: "物资点",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         lang: "lang_bxg",
         idType: 1,
         num: 8,
@@ -15161,28 +15100,21 @@ var navList3_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         lang: "lang_dgjh",
         idType: 10,
         num: 28,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        lang: "lang_syf",
-        idType: 11,
-        num: 13,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         lang: "lang_yf",
         idType: 12,
-        num: 19,
+        num: 32,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         lang: "lang_ylb",
         idType: 13,
         num: 17,
@@ -15196,7 +15128,7 @@ var navList3_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         lang: "lang_lxd",
         idType: 15,
         num: 17,
@@ -15252,14 +15184,14 @@ var navList3_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         lang: "lang_ljx",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         lang: "lang_snc",
         idType: 24,
         num: 5,
@@ -15356,7 +15288,7 @@ var navListInfo3_cgxg = [
     title: "全部",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         idType: 1,
         num: 9,
         icon: "nav_bxx",
@@ -15410,25 +15342,19 @@ var navListInfo3_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         idType: 10,
         num: 27,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        idType: 11,
-        num: 13,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         idType: 12,
-        num: 19,
+        num: 32,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         idType: 13,
         num: 17,
         icon: "nav_ylb",
@@ -15440,7 +15366,7 @@ var navListInfo3_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         idType: 15,
         num: 17,
         icon: "nav_lxd",
@@ -15488,13 +15414,13 @@ var navListInfo3_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         idType: 24,
         num: 5,
         icon: "nav_snc",
@@ -15565,7 +15491,7 @@ var navListInfo3_cgxg = [
     title: "物资点",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         lang: "lang_bxg",
         idType: 1,
         num: 8,
@@ -15628,28 +15554,21 @@ var navListInfo3_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         lang: "lang_dgjh",
         idType: 10,
         num: 28,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        lang: "lang_syf",
-        idType: 11,
-        num: 13,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         lang: "lang_yf",
         idType: 12,
-        num: 19,
+        num: 32,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         lang: "lang_ylb",
         idType: 13,
         num: 17,
@@ -15663,7 +15582,7 @@ var navListInfo3_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         lang: "lang_lxd",
         idType: 15,
         num: 17,
@@ -15719,14 +15638,14 @@ var navListInfo3_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         lang: "lang_ljx",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         lang: "lang_snc",
         idType: 24,
         num: 5,
@@ -15853,7 +15772,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21237.625",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "352702",
         "y": "-630871",
@@ -15959,7 +15878,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21210.88477",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "354809.3125",
         "y": "-633627.6875",
@@ -15990,7 +15909,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21237.625",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "357093.75",
         "y": "-631081.875",
@@ -16081,7 +16000,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-16881.54102",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "276621.5",
         "y": "-643007.75",
@@ -16096,7 +16015,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-16855.4375",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "278834.5625",
         "y": "-641212.1875",
@@ -16141,7 +16060,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21610",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "356004.1",
         "y": "-575894"
@@ -16155,7 +16074,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21640",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "378276",
         "y": "-612477"
@@ -16169,7 +16088,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21643",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "378272",
         "y": "-613074"
@@ -16183,7 +16102,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-20924.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "337365.4",
         "y": "-581015"
@@ -16197,7 +16116,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21183",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "352551.6",
         "y": "-702468"
@@ -16211,7 +16130,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21435",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "351538.8",
         "y": "-699918"
@@ -16225,7 +16144,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21536",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "365025",
         "y": "-579788"
@@ -16239,7 +16158,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21971",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "375254",
         "y": "-611501"
@@ -16253,8 +16172,8 @@ var mapArticle3_cgxg = [
         "z坐标": "-21642.1",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "356383.9",
         "y": "-631917",
         "floor": 1
@@ -16268,8 +16187,8 @@ var mapArticle3_cgxg = [
         "z坐标": "-21275.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "362325",
         "y": "-635654"
     },
@@ -16282,8 +16201,8 @@ var mapArticle3_cgxg = [
         "z坐标": "-22501",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "370994.6",
         "y": "-661626"
     },
@@ -16296,8 +16215,8 @@ var mapArticle3_cgxg = [
         "z坐标": "-22063.8",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "378263",
         "y": "-612261"
     },
@@ -16310,8 +16229,8 @@ var mapArticle3_cgxg = [
         "z坐标": "-16255",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "278357.6",
         "y": "-641739"
     },
@@ -16324,8 +16243,8 @@ var mapArticle3_cgxg = [
         "z坐标": "-18284.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "293270",
         "y": "-648369"
     },
@@ -16338,8 +16257,8 @@ var mapArticle3_cgxg = [
         "z坐标": "-18284.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "293270",
         "y": "-648516"
     },
@@ -16352,8 +16271,8 @@ var mapArticle3_cgxg = [
         "z坐标": "-18130.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "292564",
         "y": "-640946"
     },
@@ -16366,8 +16285,8 @@ var mapArticle3_cgxg = [
         "z坐标": "-18130.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "292736.7",
         "y": "-640946"
     },
@@ -16380,8 +16299,8 @@ var mapArticle3_cgxg = [
         "z坐标": "-16760.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "278281.5",
         "y": "-640438"
     },
@@ -16394,8 +16313,8 @@ var mapArticle3_cgxg = [
         "z坐标": "-17755.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "297560.6",
         "y": "-641421"
     },
@@ -16408,8 +16327,8 @@ var mapArticle3_cgxg = [
         "z坐标": "-17497.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "300413.3",
         "y": "-666583"
     },
@@ -16422,8 +16341,8 @@ var mapArticle3_cgxg = [
         "z坐标": "-19379.8",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "309067.2",
         "y": "-635605"
     },
@@ -16436,7 +16355,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21237.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "356318",
         "y": "-628287",
@@ -16451,7 +16370,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21237",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "353697",
         "y": "-628252",
@@ -16466,7 +16385,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-15800.9",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "279071.4",
         "y": "-640547"
@@ -16480,7 +16399,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21237.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "354300.1",
         "y": "-629416",
@@ -16495,7 +16414,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-20996.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "354381.7",
         "y": "-580517"
@@ -16509,7 +16428,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21719.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "370921",
         "y": "-628877"
@@ -16523,7 +16442,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21057.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "335196.5",
         "y": "-577333"
@@ -16537,7 +16456,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19562.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "331114.3",
         "y": "-590968"
@@ -16551,7 +16470,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21050.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "338280",
         "y": "-580912"
@@ -16565,7 +16484,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19010.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "329751.1",
         "y": "-661990"
@@ -16579,7 +16498,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21717.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "358107",
         "y": "-630979",
@@ -16594,7 +16513,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21286.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "362691",
         "y": "-634554"
@@ -16608,7 +16527,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22801.5",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "359890.8",
         "y": "-608009"
@@ -16622,7 +16541,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22861.2",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "365484",
         "y": "-608621"
@@ -18579,7 +18498,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21397.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "353951.3",
         "y": "-576874"
@@ -18593,7 +18512,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21985.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "349209",
         "y": "-578870"
@@ -18607,7 +18526,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22770.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "331727.8",
         "y": "-614382"
@@ -18621,7 +18540,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22974.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "346609.6",
         "y": "-657488"
@@ -18635,7 +18554,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22465.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "343940.4",
         "y": "-657129"
@@ -18649,7 +18568,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22697",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "349785.9",
         "y": "-668510"
@@ -18663,7 +18582,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22338.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "348436.3",
         "y": "-678277"
@@ -18677,7 +18596,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19421.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "331997.3",
         "y": "-695618"
@@ -18691,7 +18610,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-20946.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "348695",
         "y": "-704312"
@@ -18705,7 +18624,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21484",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "370868.4",
         "y": "-618916"
@@ -18719,7 +18638,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-20661.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "353292.4",
         "y": "-647089"
@@ -18733,7 +18652,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22925.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "370714.7",
         "y": "-674798"
@@ -18747,7 +18666,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22961",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "364525",
         "y": "-681964"
@@ -18761,7 +18680,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22941",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "364024",
         "y": "-606695"
@@ -18775,7 +18694,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22852.9",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "366416",
         "y": "-608292"
@@ -18789,7 +18708,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-18488.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "292322.9",
         "y": "-648530"
@@ -18803,7 +18722,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-17559.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "301783.5",
         "y": "-664513"
@@ -19574,7 +19493,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21047",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "354563.3",
         "y": "-580102"
@@ -19588,7 +19507,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21153.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "356772.3",
         "y": "-630926",
@@ -19603,7 +19522,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21727.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "370881",
         "y": "-631929"
@@ -19617,7 +19536,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19650.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "327378.9",
         "y": "-592053"
@@ -19631,7 +19550,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21050.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "337734.4",
         "y": "-579579"
@@ -19645,7 +19564,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19691.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "330579.7",
         "y": "-589927"
@@ -19659,7 +19578,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-20986.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "336740.8",
         "y": "-579928"
@@ -19673,7 +19592,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21155.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352254.1",
         "y": "-628953",
@@ -19688,7 +19607,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21701.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352738.9",
         "y": "-629341",
@@ -19703,7 +19622,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21155.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352170.1",
         "y": "-631351",
@@ -19718,7 +19637,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19363.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "335212.3",
         "y": "-661762"
@@ -19732,7 +19651,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21707.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "353624.4",
         "y": "-628454",
@@ -19747,7 +19666,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21171.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "354214",
         "y": "-632034",
@@ -19762,7 +19681,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21280.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "362711",
         "y": "-635590"
@@ -19776,7 +19695,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21972.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "370854.8",
         "y": "-660205"
@@ -19790,7 +19709,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22805.2",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "360058.8",
         "y": "-608480"
@@ -19804,7 +19723,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21958.4",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "368212.9",
         "y": "-610225"
@@ -19972,7 +19891,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22285.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "368464.4",
         "y": "-580203"
@@ -19986,7 +19905,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22643.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "320674.8",
         "y": "-617435"
@@ -20000,7 +19919,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19484.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "331182",
         "y": "-662037"
@@ -20014,7 +19933,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19486.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "327798",
         "y": "-667100"
@@ -20028,7 +19947,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-20823.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "341657.1",
         "y": "-670722"
@@ -20042,7 +19961,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22081.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "375304",
         "y": "-609870"
@@ -20056,7 +19975,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22616",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "370671",
         "y": "-657518"
@@ -20070,7 +19989,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19871.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "313942.7",
         "y": "-642096"
@@ -20225,7 +20144,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22268.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "370015.2",
         "y": "-582772"
@@ -20239,7 +20158,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22268.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "368885.6",
         "y": "-579960"
@@ -20253,7 +20172,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19654.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "326863.9",
         "y": "-591012"
@@ -20267,7 +20186,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19877.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "322144.5",
         "y": "-640510"
@@ -20281,7 +20200,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19876.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "322204.8",
         "y": "-638758"
@@ -20295,7 +20214,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-20510.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "324109",
         "y": "-639002"
@@ -20309,7 +20228,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21775.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "339742.5",
         "y": "-632048"
@@ -20323,7 +20242,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19347.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "334624.8",
         "y": "-661810"
@@ -20337,7 +20256,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-18723.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "335391",
         "y": "-663097"
@@ -20351,7 +20270,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-20756",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "339376",
         "y": "-670566"
@@ -20365,7 +20284,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22934.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "344179.4",
         "y": "-656286"
@@ -20379,7 +20298,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22128",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "343904.7",
         "y": "-657917"
@@ -20393,7 +20312,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-20430",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "340714.3",
         "y": "-668433"
@@ -20407,7 +20326,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21924.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "364554",
         "y": "-580714"
@@ -20421,7 +20340,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21473.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "358821.1",
         "y": "-586317"
@@ -20435,7 +20354,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-20587.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "354108.9",
         "y": "-581041"
@@ -20449,7 +20368,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22219.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "367100",
         "y": "-594747"
@@ -20463,7 +20382,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21430.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "370528.7",
         "y": "-617321"
@@ -20477,7 +20396,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22409.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "361730",
         "y": "-681721"
@@ -20491,7 +20410,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22664.8",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "362100",
         "y": "-607103"
@@ -20505,7 +20424,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22657.8",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "363855.5",
         "y": "-608035"
@@ -20519,7 +20438,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-18407.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "280614.8",
         "y": "-639339"
@@ -20533,7 +20452,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-18304.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "299420.2",
         "y": "-641958"
@@ -20547,7 +20466,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-18407.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "292347.5",
         "y": "-651098"
@@ -20561,7 +20480,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-18395.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "293707.5",
         "y": "-649363"
@@ -20575,7 +20494,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-17496.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "301526.8",
         "y": "-667329"
@@ -20589,7 +20508,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-18153.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "308238",
         "y": "-673460"
@@ -20603,7 +20522,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-18253.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "306915.3",
         "y": "-671585"
@@ -21774,7 +21693,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19812.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "324366",
         "y": "-597905"
@@ -21788,7 +21707,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-21923.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "346655.7",
         "y": "-619276"
@@ -21802,7 +21721,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-19511.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "332954.5",
         "y": "-668203"
@@ -21816,7 +21735,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22866.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "372897.6",
         "y": "-597352"
@@ -21830,7 +21749,7 @@ var mapArticle3_cgxg = [
         "z坐标": "-22515.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "357109.8",
         "y": "-666142"
@@ -22335,7 +22254,7 @@ var navList4_cgxg = [
     title: "全部",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         lang: "lang_bxg",
         idType: 1,
         num: 8,
@@ -22398,28 +22317,21 @@ var navList4_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         lang: "lang_dgjh",
         idType: 10,
         num: 29,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        lang: "lang_syf",
-        idType: 11,
-        num: 14,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         lang: "lang_yf",
         idType: 12,
-        num: 19,
+        num: 33,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         lang: "lang_ylb",
         idType: 13,
         num: 18,
@@ -22433,7 +22345,7 @@ var navList4_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         lang: "lang_lxd",
         idType: 15,
         num: 15,
@@ -22489,14 +22401,14 @@ var navList4_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         lang: "lang_ljx",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         lang: "lang_snc",
         idType: 24,
         num: 5,
@@ -22590,7 +22502,7 @@ var navList4_cgxg = [
     title: "物资点",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         lang: "lang_bxg",
         idType: 1,
         num: 8,
@@ -22653,28 +22565,21 @@ var navList4_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         lang: "lang_dgjh",
         idType: 10,
         num: 29,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        lang: "lang_syf",
-        idType: 11,
-        num: 14,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         lang: "lang_yf",
         idType: 12,
-        num: 19,
+        num: 33,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         lang: "lang_ylb",
         idType: 13,
         num: 18,
@@ -22688,7 +22593,7 @@ var navList4_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         lang: "lang_lxd",
         idType: 15,
         num: 15,
@@ -22744,14 +22649,14 @@ var navList4_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         lang: "lang_ljx",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         lang: "lang_snc",
         idType: 24,
         num: 5,
@@ -22847,7 +22752,7 @@ var navListInfo4_cgxg = [
     title: "全部",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         lang: "lang_bxg",
         idType: 1,
         num: 8,
@@ -22910,28 +22815,21 @@ var navListInfo4_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         lang: "lang_dgjh",
         idType: 10,
         num: 29,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        lang: "lang_syf",
-        idType: 11,
-        num: 14,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         lang: "lang_yf",
         idType: 12,
-        num: 19,
+        num: 33,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         lang: "lang_ylb",
         idType: 13,
         num: 18,
@@ -22945,7 +22843,7 @@ var navListInfo4_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         lang: "lang_lxd",
         idType: 15,
         num: 15,
@@ -23001,14 +22899,14 @@ var navListInfo4_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         lang: "lang_ljx",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         lang: "lang_snc",
         idType: 24,
         num: 5,
@@ -23073,7 +22971,7 @@ var navListInfo4_cgxg = [
     title: "物资点",
     typeList: [
       {
-        name: "保险柜",
+        name: "保险箱",
         lang: "lang_bxg",
         idType: 1,
         num: 8,
@@ -23136,28 +23034,21 @@ var navListInfo4_cgxg = [
         icon: "nav_gjg",
       },
       {
-        name: "大工具盒",
+        name: "收纳盒",
         lang: "lang_dgjh",
         idType: 10,
         num: 29,
         icon: "nav_dgjx",
       },
       {
-        name: "实验服",
-        lang: "lang_syf",
-        idType: 11,
-        num: 14,
-        icon: "nav_yf_s",
-      },
-      {
-        name: "衣服",
+        name: "一件衣服",
         lang: "lang_yf",
         idType: 12,
-        num: 19,
+        num: 33,
         icon: "nav_yf",
       },
       {
-        name: "医疗包",
+        name: "军用医疗包",
         lang: "lang_ylb",
         idType: 13,
         num: 18,
@@ -23171,7 +23062,7 @@ var navListInfo4_cgxg = [
         icon: "nav_ylwzd",
       },
       {
-        name: "旅行袋",
+        name: "旅行包",
         lang: "lang_lxd",
         idType: 15,
         num: 15,
@@ -23227,14 +23118,14 @@ var navListInfo4_cgxg = [
         icon: "nav_hkcwx",
       },
       {
-        name: "垃圾箱",
+        name: "垃圾桶",
         lang: "lang_ljx",
         idType: 23,
         num: 8,
         icon: "nav_ljx",
       },
       {
-        name: "水泥车",
+        name: "搅拌车",
         lang: "lang_snc",
         idType: 24,
         num: 5,
@@ -23360,7 +23251,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21237.625",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "352702",
         "y": "-630871",
@@ -23466,7 +23357,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21210.88477",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "354809.3125",
         "y": "-633627.6875",
@@ -23497,7 +23388,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21237.625",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "357093.75",
         "y": "-631081.875",
@@ -23588,7 +23479,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-16881.54102",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "276621.5",
         "y": "-643007.75",
@@ -23603,7 +23494,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-16855.4375",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "278834.5625",
         "y": "-641212.1875",
@@ -23648,7 +23539,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21610",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "356004.1",
         "y": "-575894"
@@ -23662,7 +23553,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21640",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "378276",
         "y": "-612477"
@@ -23676,7 +23567,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21643",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "378272",
         "y": "-613074"
@@ -23690,7 +23581,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-20924.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "337365.4",
         "y": "-581015"
@@ -23704,7 +23595,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21183",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "352551.6",
         "y": "-702468"
@@ -23718,7 +23609,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21435",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "351538.8",
         "y": "-699918"
@@ -23732,7 +23623,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21536",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "365025",
         "y": "-579788"
@@ -23746,7 +23637,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21971",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "375254",
         "y": "-611501"
@@ -23760,7 +23651,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22154.2",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "362729.3",
         "y": "-605015"
@@ -23774,8 +23665,8 @@ var mapArticle4_cgxg = [
         "z坐标": "-21642.1",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "356383.9",
         "y": "-631917",
         "floor": 1
@@ -23789,8 +23680,8 @@ var mapArticle4_cgxg = [
         "z坐标": "-21275.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "362325",
         "y": "-635654"
     },
@@ -23803,8 +23694,8 @@ var mapArticle4_cgxg = [
         "z坐标": "-22501",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "370994.6",
         "y": "-661626"
     },
@@ -23817,8 +23708,8 @@ var mapArticle4_cgxg = [
         "z坐标": "-22063.8",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "378263",
         "y": "-612261"
     },
@@ -23831,8 +23722,8 @@ var mapArticle4_cgxg = [
         "z坐标": "-22365.8",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "出现坠机时",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "362220.9",
         "y": "-604462"
     },
@@ -23845,8 +23736,8 @@ var mapArticle4_cgxg = [
         "z坐标": "-16255",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "278357.6",
         "y": "-641739"
     },
@@ -23859,8 +23750,8 @@ var mapArticle4_cgxg = [
         "z坐标": "-18284.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "293270",
         "y": "-648369"
     },
@@ -23873,8 +23764,8 @@ var mapArticle4_cgxg = [
         "z坐标": "-18284.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "293270",
         "y": "-648516"
     },
@@ -23887,8 +23778,8 @@ var mapArticle4_cgxg = [
         "z坐标": "-18130.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "292564",
         "y": "-640946"
     },
@@ -23901,8 +23792,8 @@ var mapArticle4_cgxg = [
         "z坐标": "-18130.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "292736.7",
         "y": "-640946"
     },
@@ -23915,8 +23806,8 @@ var mapArticle4_cgxg = [
         "z坐标": "-16760.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "278281.5",
         "y": "-640438"
     },
@@ -23929,8 +23820,8 @@ var mapArticle4_cgxg = [
         "z坐标": "-17755.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "297560.6",
         "y": "-641421"
     },
@@ -23943,8 +23834,8 @@ var mapArticle4_cgxg = [
         "z坐标": "-17497.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "300413.3",
         "y": "-666583"
     },
@@ -23957,8 +23848,8 @@ var mapArticle4_cgxg = [
         "z坐标": "-19379.8",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "309067.2",
         "y": "-635605"
     },
@@ -23971,7 +23862,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21237.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "356318",
         "y": "-628287",
@@ -23986,7 +23877,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21237",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "353697",
         "y": "-628252",
@@ -24001,7 +23892,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-15800.9",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "279071.4",
         "y": "-640547"
@@ -24015,7 +23906,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21237.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "354300.1",
         "y": "-629416",
@@ -24030,7 +23921,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-20996.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "354381.7",
         "y": "-580517"
@@ -24044,7 +23935,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21719.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "370921",
         "y": "-628877"
@@ -24058,7 +23949,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21057.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "335196.5",
         "y": "-577333"
@@ -24072,7 +23963,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19562.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "331114.3",
         "y": "-590968"
@@ -24086,7 +23977,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21050.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "338280",
         "y": "-580912"
@@ -24100,7 +23991,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19010.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "329751.1",
         "y": "-661990"
@@ -24114,7 +24005,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21717.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "358107",
         "y": "-630979",
@@ -24129,7 +24020,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21286.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "362691",
         "y": "-634554"
@@ -24143,7 +24034,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22456.5",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "360800.9",
         "y": "-603687"
@@ -26072,7 +25963,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21397.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "353951.3",
         "y": "-576874"
@@ -26086,7 +25977,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21985.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "349209",
         "y": "-578870"
@@ -26100,7 +25991,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22770.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "331727.8",
         "y": "-614382"
@@ -26114,7 +26005,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22974.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "346609.6",
         "y": "-657488"
@@ -26128,7 +26019,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22465.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "343940.4",
         "y": "-657129"
@@ -26142,7 +26033,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22697",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "349785.9",
         "y": "-668510"
@@ -26156,7 +26047,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22338.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "348436.3",
         "y": "-678277"
@@ -26170,7 +26061,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19421.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "331997.3",
         "y": "-695618"
@@ -26184,7 +26075,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-20946.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "348695",
         "y": "-704312"
@@ -26198,7 +26089,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21484",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "370868.4",
         "y": "-618916"
@@ -26212,7 +26103,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-20661.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "353292.4",
         "y": "-647089"
@@ -26226,7 +26117,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22925.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "370714.7",
         "y": "-674798"
@@ -26240,7 +26131,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22961",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "364525",
         "y": "-681964"
@@ -26254,7 +26145,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-18488.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "292322.9",
         "y": "-648530"
@@ -26268,7 +26159,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-17559.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "301783.5",
         "y": "-664513"
@@ -27039,7 +26930,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21047",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "354563.3",
         "y": "-580102"
@@ -27053,7 +26944,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21153.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "356772.3",
         "y": "-630926",
@@ -27068,7 +26959,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21727.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "370881",
         "y": "-631929"
@@ -27082,7 +26973,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19650.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "327378.9",
         "y": "-592053"
@@ -27096,7 +26987,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21050.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "337734.4",
         "y": "-579579"
@@ -27110,7 +27001,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19691.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "330579.7",
         "y": "-589927"
@@ -27124,7 +27015,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-20986.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "336740.8",
         "y": "-579928"
@@ -27138,7 +27029,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21155.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352254.1",
         "y": "-628953",
@@ -27153,7 +27044,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21701.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352738.9",
         "y": "-629341",
@@ -27168,7 +27059,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21155.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352170.1",
         "y": "-631351",
@@ -27183,7 +27074,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19363.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "335212.3",
         "y": "-661762"
@@ -27197,7 +27088,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21707.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "353624.4",
         "y": "-628454",
@@ -27212,7 +27103,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21171.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "354214",
         "y": "-632034",
@@ -27227,7 +27118,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21280.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "362711",
         "y": "-635590"
@@ -27241,7 +27132,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21972.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "370854.8",
         "y": "-660205"
@@ -27255,7 +27146,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22771.8",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "360658",
         "y": "-604548"
@@ -27269,7 +27160,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22372",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "出现坠机时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "361609.6",
         "y": "-604494"
@@ -27283,7 +27174,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22372",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "出现坠机时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "361888.3",
         "y": "-604486"
@@ -27465,7 +27356,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22285.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "368464.4",
         "y": "-580203"
@@ -27479,7 +27370,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22643.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "320674.8",
         "y": "-617435"
@@ -27493,7 +27384,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19484.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "331182",
         "y": "-662037"
@@ -27507,7 +27398,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19486.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "327798",
         "y": "-667100"
@@ -27521,7 +27412,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-20823.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "341657.1",
         "y": "-670722"
@@ -27535,7 +27426,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22081.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "375304",
         "y": "-609870"
@@ -27549,7 +27440,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22616",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "370671",
         "y": "-657518"
@@ -27563,7 +27454,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19871.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "313942.7",
         "y": "-642096"
@@ -27718,7 +27609,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22268.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "370015.2",
         "y": "-582772"
@@ -27732,7 +27623,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22268.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "368885.6",
         "y": "-579960"
@@ -27746,7 +27637,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19654.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "326863.9",
         "y": "-591012"
@@ -27760,7 +27651,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19877.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "322144.5",
         "y": "-640510"
@@ -27774,7 +27665,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19876.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "322204.8",
         "y": "-638758"
@@ -27788,7 +27679,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-20510.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "324109",
         "y": "-639002"
@@ -27802,7 +27693,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21775.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "339742.5",
         "y": "-632048"
@@ -27816,7 +27707,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19347.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "334624.8",
         "y": "-661810"
@@ -27830,7 +27721,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-18723.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "335391",
         "y": "-663097"
@@ -27844,7 +27735,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-20756",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "339376",
         "y": "-670566"
@@ -27858,7 +27749,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22934.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "344179.4",
         "y": "-656286"
@@ -27872,7 +27763,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22128",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "343904.7",
         "y": "-657917"
@@ -27886,7 +27777,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-20430",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "340714.3",
         "y": "-668433"
@@ -27900,7 +27791,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21924.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "364554",
         "y": "-580714"
@@ -27914,7 +27805,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21473.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "358821.1",
         "y": "-586317"
@@ -27928,7 +27819,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-20587.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "354108.9",
         "y": "-581041"
@@ -27942,7 +27833,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22219.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "367100",
         "y": "-594747"
@@ -27956,7 +27847,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21430.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "370528.7",
         "y": "-617321"
@@ -27970,7 +27861,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22409.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "361730",
         "y": "-681721"
@@ -27984,7 +27875,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22788.8",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "361997",
         "y": "-604744"
@@ -27998,7 +27889,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22153.7",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "360369.8",
         "y": "-604138"
@@ -28012,7 +27903,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22460.2",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "358566.7",
         "y": "-603394"
@@ -28026,7 +27917,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-18407.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "280614.8",
         "y": "-639339"
@@ -28040,7 +27931,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-18304.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "299420.2",
         "y": "-641958"
@@ -28054,7 +27945,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-18407.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "292347.5",
         "y": "-651098"
@@ -28068,7 +27959,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-18395.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "293707.5",
         "y": "-649363"
@@ -28082,7 +27973,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-17496.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "301526.8",
         "y": "-667329"
@@ -28096,7 +27987,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-18153.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "308238",
         "y": "-673460"
@@ -28110,7 +28001,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-18253.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "306915.3",
         "y": "-671585"
@@ -29211,7 +29102,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19812.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "324366",
         "y": "-597905"
@@ -29225,7 +29116,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-21923.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "346655.7",
         "y": "-619276"
@@ -29239,7 +29130,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-19511.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "332954.5",
         "y": "-668203"
@@ -29253,7 +29144,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22866.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "372897.6",
         "y": "-597352"
@@ -29267,7 +29158,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22515.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "357109.8",
         "y": "-666142"
@@ -29309,7 +29200,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22866.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "372897.6",
         "y": "-597352"
@@ -29323,7 +29214,7 @@ var mapArticle4_cgxg = [
         "z坐标": "-22515.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "357109.8",
         "y": "-666142"
@@ -29800,7 +29691,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21237.625",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "352702",
         "y": "-630871",
@@ -29906,7 +29797,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21210.88477",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "354809.3125",
         "y": "-633627.6875",
@@ -29937,7 +29828,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21237.625",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "357093.75",
         "y": "-631081.875",
@@ -30028,7 +29919,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-16881.54102",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "276621.5",
         "y": "-643007.75",
@@ -30043,7 +29934,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-16855.4375",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "278834.5625",
         "y": "-641212.1875",
@@ -30088,7 +29979,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21610",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "356004.1",
         "y": "-575894"
@@ -30102,7 +29993,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21640",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "378276",
         "y": "-612477"
@@ -30116,7 +30007,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21643",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "378272",
         "y": "-613074"
@@ -30130,7 +30021,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-20924.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "337365.4",
         "y": "-581015"
@@ -30144,7 +30035,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21183",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "352551.6",
         "y": "-702468"
@@ -30158,7 +30049,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21435",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "351538.8",
         "y": "-699918"
@@ -30172,7 +30063,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21536",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "365025",
         "y": "-579788"
@@ -30186,7 +30077,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21971",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "375254",
         "y": "-611501"
@@ -30200,8 +30091,8 @@ var mapArticle5_cgxg = [
         "z坐标": "-21642.1",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "356383.9",
         "y": "-631917",
         "floor": 1
@@ -30215,8 +30106,8 @@ var mapArticle5_cgxg = [
         "z坐标": "-21275.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "362325",
         "y": "-635654"
     },
@@ -30229,8 +30120,8 @@ var mapArticle5_cgxg = [
         "z坐标": "-22501",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "370994.6",
         "y": "-661626"
     },
@@ -30243,8 +30134,8 @@ var mapArticle5_cgxg = [
         "z坐标": "-22063.8",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "378263",
         "y": "-612261"
     },
@@ -30257,8 +30148,8 @@ var mapArticle5_cgxg = [
         "z坐标": "-16255",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "278357.6",
         "y": "-641739"
     },
@@ -30271,8 +30162,8 @@ var mapArticle5_cgxg = [
         "z坐标": "-18284.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "293270",
         "y": "-648369"
     },
@@ -30285,8 +30176,8 @@ var mapArticle5_cgxg = [
         "z坐标": "-18284.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "293270",
         "y": "-648516"
     },
@@ -30299,8 +30190,8 @@ var mapArticle5_cgxg = [
         "z坐标": "-18130.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "292564",
         "y": "-640946"
     },
@@ -30313,8 +30204,8 @@ var mapArticle5_cgxg = [
         "z坐标": "-18130.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "292736.7",
         "y": "-640946"
     },
@@ -30327,8 +30218,8 @@ var mapArticle5_cgxg = [
         "z坐标": "-16760.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "278281.5",
         "y": "-640438"
     },
@@ -30341,8 +30232,8 @@ var mapArticle5_cgxg = [
         "z坐标": "-17755.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "297560.6",
         "y": "-641421"
     },
@@ -30355,8 +30246,8 @@ var mapArticle5_cgxg = [
         "z坐标": "-17497.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "300413.3",
         "y": "-666583"
     },
@@ -30369,8 +30260,8 @@ var mapArticle5_cgxg = [
         "z坐标": "-19379.8",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "309067.2",
         "y": "-635605"
     },
@@ -30383,7 +30274,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21237.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "356318",
         "y": "-628287",
@@ -30398,7 +30289,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21237",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "353697",
         "y": "-628252",
@@ -30413,7 +30304,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-15800.9",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "279071.4",
         "y": "-640547"
@@ -30427,7 +30318,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21237.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "354300.1",
         "y": "-629416",
@@ -30442,7 +30333,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-20996.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "354381.7",
         "y": "-580517"
@@ -30456,7 +30347,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21719.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "370921",
         "y": "-628877"
@@ -30470,7 +30361,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21057.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "335196.5",
         "y": "-577333"
@@ -30484,7 +30375,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19562.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "331114.3",
         "y": "-590968"
@@ -30498,7 +30389,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21050.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "338280",
         "y": "-580912"
@@ -30512,7 +30403,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19010.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "329751.1",
         "y": "-661990"
@@ -30526,7 +30417,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21717.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "358107",
         "y": "-630979",
@@ -30541,7 +30432,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21286.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "362691",
         "y": "-634554"
@@ -30555,7 +30446,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22801.5",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "359890.8",
         "y": "-608009"
@@ -30569,7 +30460,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22861.2",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "365484",
         "y": "-608621"
@@ -32526,7 +32417,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21397.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "353951.3",
         "y": "-576874"
@@ -32540,7 +32431,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21985.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "349209",
         "y": "-578870"
@@ -32554,7 +32445,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22770.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "331727.8",
         "y": "-614382"
@@ -32568,7 +32459,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22974.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "346609.6",
         "y": "-657488"
@@ -32582,7 +32473,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22465.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "343940.4",
         "y": "-657129"
@@ -32596,7 +32487,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22697",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "349785.9",
         "y": "-668510"
@@ -32610,7 +32501,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22338.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "348436.3",
         "y": "-678277"
@@ -32624,7 +32515,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19421.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "331997.3",
         "y": "-695618"
@@ -32638,7 +32529,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-20946.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "348695",
         "y": "-704312"
@@ -32652,7 +32543,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21484",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "370868.4",
         "y": "-618916"
@@ -32666,7 +32557,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-20661.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "353292.4",
         "y": "-647089"
@@ -32680,7 +32571,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22925.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "370714.7",
         "y": "-674798"
@@ -32694,7 +32585,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22961",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "364525",
         "y": "-681964"
@@ -32708,7 +32599,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22941",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "364024",
         "y": "-606695"
@@ -32722,7 +32613,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22852.9",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "366416",
         "y": "-608292"
@@ -32736,7 +32627,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-18488.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "292322.9",
         "y": "-648530"
@@ -32750,7 +32641,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-17559.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "301783.5",
         "y": "-664513"
@@ -33521,7 +33412,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21047",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "354563.3",
         "y": "-580102"
@@ -33535,7 +33426,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21153.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "356772.3",
         "y": "-630926",
@@ -33550,7 +33441,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21727.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "370881",
         "y": "-631929"
@@ -33564,7 +33455,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19650.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "327378.9",
         "y": "-592053"
@@ -33578,7 +33469,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21050.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "337734.4",
         "y": "-579579"
@@ -33592,7 +33483,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19691.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "330579.7",
         "y": "-589927"
@@ -33606,7 +33497,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-20986.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "336740.8",
         "y": "-579928"
@@ -33620,7 +33511,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21155.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352254.1",
         "y": "-628953",
@@ -33635,7 +33526,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21701.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352738.9",
         "y": "-629341",
@@ -33650,7 +33541,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21155.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352170.1",
         "y": "-631351",
@@ -33665,7 +33556,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19363.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "335212.3",
         "y": "-661762"
@@ -33679,7 +33570,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21707.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "353624.4",
         "y": "-628454",
@@ -33694,7 +33585,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21171.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "354214",
         "y": "-632034",
@@ -33709,7 +33600,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21280.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "362711",
         "y": "-635590"
@@ -33723,7 +33614,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21972.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "370854.8",
         "y": "-660205"
@@ -33737,7 +33628,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22805.2",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "360058.8",
         "y": "-608480"
@@ -33751,7 +33642,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21958.4",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "368212.9",
         "y": "-610225"
@@ -33919,7 +33810,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22285.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "368464.4",
         "y": "-580203"
@@ -33933,7 +33824,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22643.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "320674.8",
         "y": "-617435"
@@ -33947,7 +33838,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19484.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "331182",
         "y": "-662037"
@@ -33961,7 +33852,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19486.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "327798",
         "y": "-667100"
@@ -33975,7 +33866,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-20823.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "341657.1",
         "y": "-670722"
@@ -33989,7 +33880,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22081.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "375304",
         "y": "-609870"
@@ -34003,7 +33894,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22616",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "370671",
         "y": "-657518"
@@ -34017,7 +33908,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19871.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "313942.7",
         "y": "-642096"
@@ -34172,7 +34063,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22268.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "370015.2",
         "y": "-582772"
@@ -34186,7 +34077,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22268.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "368885.6",
         "y": "-579960"
@@ -34200,7 +34091,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19654.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "326863.9",
         "y": "-591012"
@@ -34214,7 +34105,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19877.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "322144.5",
         "y": "-640510"
@@ -34228,7 +34119,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19876.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "322204.8",
         "y": "-638758"
@@ -34242,7 +34133,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-20510.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "324109",
         "y": "-639002"
@@ -34256,7 +34147,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21775.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "339742.5",
         "y": "-632048"
@@ -34270,7 +34161,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19347.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "334624.8",
         "y": "-661810"
@@ -34284,7 +34175,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-18723.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "335391",
         "y": "-663097"
@@ -34298,7 +34189,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-20756",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "339376",
         "y": "-670566"
@@ -34312,7 +34203,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22934.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "344179.4",
         "y": "-656286"
@@ -34326,7 +34217,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22128",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "343904.7",
         "y": "-657917"
@@ -34340,7 +34231,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-20430",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "340714.3",
         "y": "-668433"
@@ -34354,7 +34245,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21924.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "364554",
         "y": "-580714"
@@ -34368,7 +34259,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21473.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "358821.1",
         "y": "-586317"
@@ -34382,7 +34273,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-20587.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "354108.9",
         "y": "-581041"
@@ -34396,7 +34287,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22219.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "367100",
         "y": "-594747"
@@ -34410,7 +34301,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21430.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "370528.7",
         "y": "-617321"
@@ -34424,7 +34315,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22409.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "361730",
         "y": "-681721"
@@ -34438,7 +34329,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22664.8",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "362100",
         "y": "-607103"
@@ -34452,7 +34343,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22657.8",
         "拾取条件": "",
         "出现条件": "出现渔村时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "363855.5",
         "y": "-608035"
@@ -34466,7 +34357,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-18407.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "280614.8",
         "y": "-639339"
@@ -34480,7 +34371,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-18304.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "299420.2",
         "y": "-641958"
@@ -34494,7 +34385,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-18407.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "292347.5",
         "y": "-651098"
@@ -34508,7 +34399,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-18395.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "293707.5",
         "y": "-649363"
@@ -34522,7 +34413,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-17496.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "301526.8",
         "y": "-667329"
@@ -34536,7 +34427,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-18153.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "308238",
         "y": "-673460"
@@ -34550,7 +34441,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-18253.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "306915.3",
         "y": "-671585"
@@ -35721,7 +35612,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19812.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "324366",
         "y": "-597905"
@@ -35735,7 +35626,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-21923.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "346655.7",
         "y": "-619276"
@@ -35749,7 +35640,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-19511.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "332954.5",
         "y": "-668203"
@@ -35763,7 +35654,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22866.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "372897.6",
         "y": "-597352"
@@ -35777,7 +35668,7 @@ var mapArticle5_cgxg = [
         "z坐标": "-22515.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "357109.8",
         "y": "-666142"
@@ -36328,7 +36219,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21237.625",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "352702",
         "y": "-630871",
@@ -36434,7 +36325,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21210.88477",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "354809.3125",
         "y": "-633627.6875",
@@ -36465,7 +36356,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21237.625",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "357093.75",
         "y": "-631081.875",
@@ -36556,7 +36447,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-16881.54102",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "276621.5",
         "y": "-643007.75",
@@ -36571,7 +36462,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-16855.4375",
         "拾取条件": "",
         "出现条件": "随机刷新",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "278834.5625",
         "y": "-641212.1875",
@@ -36616,7 +36507,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21610",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "356004.1",
         "y": "-575894"
@@ -36630,7 +36521,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21640",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "378276",
         "y": "-612477"
@@ -36644,7 +36535,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21643",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "378272",
         "y": "-613074"
@@ -36658,7 +36549,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-20924.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "337365.4",
         "y": "-581015"
@@ -36672,7 +36563,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21183",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "352551.6",
         "y": "-702468"
@@ -36686,7 +36577,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21435",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "351538.8",
         "y": "-699918"
@@ -36700,7 +36591,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21536",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "365025",
         "y": "-579788"
@@ -36714,7 +36605,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21971",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "375254",
         "y": "-611501"
@@ -36728,7 +36619,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22154.2",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "362729.3",
         "y": "-605015"
@@ -36742,8 +36633,8 @@ var mapArticle6_cgxg = [
         "z坐标": "-21642.1",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "356383.9",
         "y": "-631917",
         "floor": 1
@@ -36757,8 +36648,8 @@ var mapArticle6_cgxg = [
         "z坐标": "-21275.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "362325",
         "y": "-635654"
     },
@@ -36771,8 +36662,8 @@ var mapArticle6_cgxg = [
         "z坐标": "-22501",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "370994.6",
         "y": "-661626"
     },
@@ -36785,8 +36676,8 @@ var mapArticle6_cgxg = [
         "z坐标": "-22063.8",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "378263",
         "y": "-612261"
     },
@@ -36799,8 +36690,8 @@ var mapArticle6_cgxg = [
         "z坐标": "-22365.8",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "出现坠机时",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "362220.9",
         "y": "-604462"
     },
@@ -36813,8 +36704,8 @@ var mapArticle6_cgxg = [
         "z坐标": "-16255",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "278357.6",
         "y": "-641739"
     },
@@ -36827,8 +36718,8 @@ var mapArticle6_cgxg = [
         "z坐标": "-18284.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "293270",
         "y": "-648369"
     },
@@ -36841,8 +36732,8 @@ var mapArticle6_cgxg = [
         "z坐标": "-18284.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "293270",
         "y": "-648516"
     },
@@ -36855,8 +36746,8 @@ var mapArticle6_cgxg = [
         "z坐标": "-18130.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "292564",
         "y": "-640946"
     },
@@ -36869,8 +36760,8 @@ var mapArticle6_cgxg = [
         "z坐标": "-18130.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "292736.7",
         "y": "-640946"
     },
@@ -36883,8 +36774,8 @@ var mapArticle6_cgxg = [
         "z坐标": "-16760.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "278281.5",
         "y": "-640438"
     },
@@ -36897,8 +36788,8 @@ var mapArticle6_cgxg = [
         "z坐标": "-17755.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "297560.6",
         "y": "-641421"
     },
@@ -36911,8 +36802,8 @@ var mapArticle6_cgxg = [
         "z坐标": "-17497.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "300413.3",
         "y": "-666583"
     },
@@ -36925,8 +36816,8 @@ var mapArticle6_cgxg = [
         "z坐标": "-19379.8",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "实验服",
-        "icon": "yf_s",
+        "name": "一件衣服",
+        "icon": "yf",
         "x": "309067.2",
         "y": "-635605"
     },
@@ -36939,7 +36830,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21237.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "356318",
         "y": "-628287",
@@ -36954,7 +36845,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21237",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "353697",
         "y": "-628252",
@@ -36969,7 +36860,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-15800.9",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "保险柜",
+        "name": "保险箱",
         "icon": "bxx",
         "x": "279071.4",
         "y": "-640547"
@@ -36983,7 +36874,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21237.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "354300.1",
         "y": "-629416",
@@ -36998,7 +36889,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-20996.5",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "354381.7",
         "y": "-580517"
@@ -37012,7 +36903,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21719.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "370921",
         "y": "-628877"
@@ -37026,7 +36917,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21057.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "335196.5",
         "y": "-577333"
@@ -37040,7 +36931,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19562.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "331114.3",
         "y": "-590968"
@@ -37054,7 +36945,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21050.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "338280",
         "y": "-580912"
@@ -37068,7 +36959,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19010.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "329751.1",
         "y": "-661990"
@@ -37082,7 +36973,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21717.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "358107",
         "y": "-630979",
@@ -37097,7 +36988,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21286.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "362691",
         "y": "-634554"
@@ -37111,7 +37002,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22456.5",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "衣服",
+        "name": "一件衣服",
         "icon": "yf",
         "x": "360800.9",
         "y": "-603687"
@@ -39040,7 +38931,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21397.3",
         "拾取条件": "需要完成局内行动才能开启",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "353951.3",
         "y": "-576874"
@@ -39054,7 +38945,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21985.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "349209",
         "y": "-578870"
@@ -39068,7 +38959,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22770.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "331727.8",
         "y": "-614382"
@@ -39082,7 +38973,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22974.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "346609.6",
         "y": "-657488"
@@ -39096,7 +38987,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22465.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "343940.4",
         "y": "-657129"
@@ -39110,7 +39001,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22697",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "349785.9",
         "y": "-668510"
@@ -39124,7 +39015,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22338.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "348436.3",
         "y": "-678277"
@@ -39138,7 +39029,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19421.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "331997.3",
         "y": "-695618"
@@ -39152,7 +39043,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-20946.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "348695",
         "y": "-704312"
@@ -39166,7 +39057,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21484",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "370868.4",
         "y": "-618916"
@@ -39180,7 +39071,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-20661.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "353292.4",
         "y": "-647089"
@@ -39194,7 +39085,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22925.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "370714.7",
         "y": "-674798"
@@ -39208,7 +39099,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22961",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "364525",
         "y": "-681964"
@@ -39222,7 +39113,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-18488.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "292322.9",
         "y": "-648530"
@@ -39236,7 +39127,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-17559.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "旅行袋",
+        "name": "旅行包",
         "icon": "lxd",
         "x": "301783.5",
         "y": "-664513"
@@ -40007,7 +39898,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21047",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "354563.3",
         "y": "-580102"
@@ -40021,7 +39912,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21153.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "356772.3",
         "y": "-630926",
@@ -40036,7 +39927,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21727.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "370881",
         "y": "-631929"
@@ -40050,7 +39941,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19650.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "327378.9",
         "y": "-592053"
@@ -40064,7 +39955,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21050.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "337734.4",
         "y": "-579579"
@@ -40078,7 +39969,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19691.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "330579.7",
         "y": "-589927"
@@ -40092,7 +39983,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-20986.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "336740.8",
         "y": "-579928"
@@ -40106,7 +39997,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21155.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352254.1",
         "y": "-628953",
@@ -40121,7 +40012,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21701.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352738.9",
         "y": "-629341",
@@ -40136,7 +40027,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21155.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "352170.1",
         "y": "-631351",
@@ -40151,7 +40042,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19363.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "335212.3",
         "y": "-661762"
@@ -40165,7 +40056,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21707.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "353624.4",
         "y": "-628454",
@@ -40180,7 +40071,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21171.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "354214",
         "y": "-632034",
@@ -40195,7 +40086,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21280.6",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "362711",
         "y": "-635590"
@@ -40209,7 +40100,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21972.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "370854.8",
         "y": "-660205"
@@ -40223,7 +40114,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22771.8",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "360658",
         "y": "-604548"
@@ -40237,7 +40128,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22372",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "出现坠机时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "361609.6",
         "y": "-604494"
@@ -40251,7 +40142,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22372",
         "拾取条件": "需要使用钥匙卡才能开启",
         "出现条件": "出现坠机时",
-        "name": "医疗包",
+        "name": "军用医疗包",
         "icon": "ylb",
         "x": "361888.3",
         "y": "-604486"
@@ -40433,7 +40324,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22285.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "368464.4",
         "y": "-580203"
@@ -40447,7 +40338,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22643.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "320674.8",
         "y": "-617435"
@@ -40461,7 +40352,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19484.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "331182",
         "y": "-662037"
@@ -40475,7 +40366,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19486.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "327798",
         "y": "-667100"
@@ -40489,7 +40380,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-20823.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "341657.1",
         "y": "-670722"
@@ -40503,7 +40394,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22081.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "375304",
         "y": "-609870"
@@ -40517,7 +40408,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22616",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "370671",
         "y": "-657518"
@@ -40531,7 +40422,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19871.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "垃圾箱",
+        "name": "垃圾桶",
         "icon": "ljx",
         "x": "313942.7",
         "y": "-642096"
@@ -40686,7 +40577,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22268.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "370015.2",
         "y": "-582772"
@@ -40700,7 +40591,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22268.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "368885.6",
         "y": "-579960"
@@ -40714,7 +40605,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19654.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "326863.9",
         "y": "-591012"
@@ -40728,7 +40619,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19877.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "322144.5",
         "y": "-640510"
@@ -40742,7 +40633,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19876.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "322204.8",
         "y": "-638758"
@@ -40756,7 +40647,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-20510.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "324109",
         "y": "-639002"
@@ -40770,7 +40661,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21775.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "339742.5",
         "y": "-632048"
@@ -40784,7 +40675,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19347.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "334624.8",
         "y": "-661810"
@@ -40798,7 +40689,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-18723.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "335391",
         "y": "-663097"
@@ -40812,7 +40703,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-20756",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "339376",
         "y": "-670566"
@@ -40826,7 +40717,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22934.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "344179.4",
         "y": "-656286"
@@ -40840,7 +40731,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22128",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "343904.7",
         "y": "-657917"
@@ -40854,7 +40745,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-20430",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "340714.3",
         "y": "-668433"
@@ -40868,7 +40759,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21924.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "364554",
         "y": "-580714"
@@ -40882,7 +40773,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21473.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "358821.1",
         "y": "-586317"
@@ -40896,7 +40787,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-20587.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "354108.9",
         "y": "-581041"
@@ -40910,7 +40801,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22219.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "367100",
         "y": "-594747"
@@ -40924,7 +40815,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21430.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "370528.7",
         "y": "-617321"
@@ -40938,7 +40829,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22409.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "361730",
         "y": "-681721"
@@ -40952,7 +40843,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22788.8",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "361997",
         "y": "-604744"
@@ -40966,7 +40857,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22153.7",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "360369.8",
         "y": "-604138"
@@ -40980,7 +40871,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22460.2",
         "拾取条件": "",
         "出现条件": "出现坠机时",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "358566.7",
         "y": "-603394"
@@ -40994,7 +40885,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-18407.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "280614.8",
         "y": "-639339"
@@ -41008,7 +40899,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-18304.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "299420.2",
         "y": "-641958"
@@ -41022,7 +40913,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-18407.2",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "292347.5",
         "y": "-651098"
@@ -41036,7 +40927,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-18395.7",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "293707.5",
         "y": "-649363"
@@ -41050,7 +40941,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-17496.9",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "301526.8",
         "y": "-667329"
@@ -41064,7 +40955,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-18153.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "308238",
         "y": "-673460"
@@ -41078,7 +40969,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-18253.5",
         "拾取条件": "",
         "出现条件": "",
-        "name": "大工具盒",
+        "name": "收纳盒",
         "icon": "dgjx",
         "x": "306915.3",
         "y": "-671585"
@@ -42179,7 +42070,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19812.4",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "324366",
         "y": "-597905"
@@ -42193,7 +42084,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-21923.8",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "346655.7",
         "y": "-619276"
@@ -42207,7 +42098,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-19511.3",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "332954.5",
         "y": "-668203"
@@ -42221,7 +42112,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22866.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "372897.6",
         "y": "-597352"
@@ -42235,7 +42126,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22515.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "357109.8",
         "y": "-666142"
@@ -42277,7 +42168,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22866.1",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "372897.6",
         "y": "-597352"
@@ -42291,7 +42182,7 @@ var mapArticle6_cgxg = [
         "z坐标": "-22515.6",
         "拾取条件": "",
         "出现条件": "",
-        "name": "水泥车",
+        "name": "搅拌车",
         "icon": "snc",
         "x": "357109.8",
         "y": "-666142"

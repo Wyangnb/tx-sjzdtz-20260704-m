@@ -257,7 +257,7 @@ var outFloor = true;
 
 // 定义名称与类名的映射，实现可扩展性
 const nameClassMap = {
-    '保险柜': 'red',
+    '保险箱': 'red',
     '小保险箱': 'red',
     '服务器': 'orange',
     '电脑': 'orange'
@@ -833,6 +833,7 @@ var init = function () {
         let getMap = queryMap[getQuery('map')];
         currMap = getMap[0];
         currLv = getMap[1];
+        clickMap = getMap[0];
         changeMapLv(getMap);
         if (getQuery('map') === 'cgxg' || getQuery('map') === 'htjd') {
             
@@ -1012,7 +1013,8 @@ function addLayer (mapName) {
     } else if (isFloor && mapScaleInfo.floorInfo?.info?.href) {
         href = mapScaleInfo.floorInfo?.info?.href
     } else {
-        href = ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/'
+        // href = ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/'
+         href = '../../img/'
     }
     console.log(northEast, bounds);
     currLayer = L.tileLayer(href + `${mapName}/{z}_{x}_{y}.jpg`, {
@@ -1053,7 +1055,9 @@ function addLayer (mapName) {
     
     });
     poiList = [];
+
     if (!isWar) {
+        regionList.html('')
         
         poiInfo.forEach((item, index) => {
             if (item.name === '行政西楼' || item.name === '行政东楼') return;
@@ -1061,6 +1065,8 @@ function addLayer (mapName) {
                 className: ` map-region-name`,
                 html: `<div class="map-region-name">${item.name}</div>`,
             })
+            console.log('item', item);
+            
             var pos = getMapPos(item.x, item.y)
             html+= `<div class="region-item region-item-${index}" data-x="${item.x}" data-y="${item.y}">${item.name}</div>`
             poiList.push(L.marker([pos.y, pos.x], {icon: myIcon}).addTo(map))
@@ -1070,8 +1076,7 @@ function addLayer (mapName) {
         regionList.html(html)
         $('.region-item').on('click', anchorRegion)
     } else {
-        console.log(currWarMap, currWarType, window[currWarMap]);
-
+        regionList.html('')
         let length = window[currWarMap].info.sector
         for (let index = 0; index < length; index++) {
             html += `<div class="region-item-war region-item-war-${index} ${Number(window.warLv) === index ? 'active' : ''}" data-index="${index}">区域${regionText[index]}</div>`
@@ -1160,7 +1165,7 @@ function initFloor () {
 // 进入楼层保留选项
 function enterFloorSave () {
     let navType = {
-        '保险柜': 'nav_bxx',
+        '保险箱': 'nav_bxx',
         '小保险箱': 'nav_xbxx',
         '服务器': 'nav_fwq',
         '电脑': 'nav_dn',
@@ -1169,12 +1174,12 @@ function enterFloorSave () {
         '大武器箱': 'nav_dwqx',
         '弹药箱': 'nav_dyx',
         '工具柜': 'nav_gjg',
-        '大工具盒': 'nav_dgjh',
-        '实验服': 'nav_yf_s',
-        '衣服': 'nav_yf',
-        '医疗包': 'nav_ylb',
+        '收纳盒': 'nav_dgjh',
+        // '一件衣服': 'nav_yf_s',
+        '一件衣服': 'nav_yf',
+        '军用医疗包': 'nav_ylb',
         '医疗物资堆': 'nav_ylwzd',
-        '旅行袋': 'nav_lxd',
+        '旅行包': 'nav_lxd',
         '手提箱': 'nav_stx',
         '储物柜': 'nav_cwg',
         '高级储物箱': 'nav_cwg_gj',
@@ -1182,8 +1187,8 @@ function enterFloorSave () {
         '登山包': 'nav_dsb',
         '快递箱': 'nav_kdx',
         '航空储物箱': 'nav_hkcwx',
-        '垃圾箱': 'nav_ljx',
-        '水泥车': 'nav_snc',
+        '垃圾桶': 'nav_ljx',
+        '搅拌车': 'nav_snc',
         '野外物资箱': 'nav_ywwzx',
         '鸟窝': 'nav_nw',
         '藏匿物': 'nav_cnw',
@@ -1342,9 +1347,10 @@ var initNav = function () {
             }, 1000)
         })
     } else {
-        selectRegion.forEach(function (item, index) {
-            regionList.append(`<div class="region-item region-item-${index}" data-x="${item.x}" data-y="${item.y}">${item.name}</div>`)
-        })
+        // regionList.html('')
+        // selectRegion.forEach(function (item, index) {
+        //     poiInfo.append(`<div class="region-item region-item-${index}" data-x="${item.x}" data-y="${item.y}">${item.name}</div>`)
+        // })
     }
    
 }
@@ -1354,6 +1360,8 @@ var renderNavTypeList = function (list, navIndex = 0){
     if (list.length > 15) {
         html = '<div class="fgx top0">物资点</div>'
     }
+    console.log(1111, list);
+    
     list.forEach(function (item, index) {
         if (item.name === '行动接取站' || item.name === '高价值接取站') return;
         if (item.name === '付费撤离点' || item.name === '拉闸撤离点') {
@@ -1421,7 +1429,7 @@ var renderNavTypeList = function (list, navIndex = 0){
             </div>`
         } else {
             html+=`
-            <div class="nav-list-item nav-list-item-${index} ${nameClassMap[item.name] || ''} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+            <div class="nav-list-item nav-list-item-${index} ${nameClassMap[item.name] || ''} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`} ${item.num === 0? 'hide': ''}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
                 <div class="wz-bg">
                     <div class="wz-num">${item.num}</div>
                 </div>
@@ -2304,6 +2312,10 @@ var bindEvent = function () {
         dom_changeMapBtn.removeClass('click')
         dom_map_lv_list.attr('class', 'map-lv-list')
         dom_map_lv.removeClass('click')
+        clickMap = currMap;
+        $('.map-item').removeClass('action')
+        $(`.map-item-${currMap}`).addClass('action')
+
         mapLvIsClick = false;
         mapChangeIsClick = false;
         mapMenuIsShow = false;
@@ -2418,6 +2430,7 @@ var bindEvent = function () {
             dom_map_lv_list.attr('class', 'map-lv-list')
             dom_map_lv.removeClass('click')
             $('.war-lv-list').removeClass('show')
+            clickMap = currMap;
         }
 
         
@@ -2540,6 +2553,8 @@ var bindEvent = function () {
             $('.random-list').removeClass('close')
             
         } else {
+            console.log('这里', clickMap);
+            
             changeMapLv(clickMap + lv);
             $('.zj-ctn').removeClass('show')   
             $('.type-change-ctn').removeClass('show') 
@@ -2792,7 +2807,6 @@ var bindEvent = function () {
     // 全面战场
     $('.btn-war-change').on('click', () => {
         enterWarMap();
-        
     })
     
     // 切换视角
@@ -3048,6 +3062,7 @@ function enterWarMap () {
             changeMapLv('00');
             warRemove();
             currMap = '0';
+            clickMap = '0';
             currLv = '0'
             initNav();
             bindOptionEvent();
@@ -3503,7 +3518,7 @@ function dataFilter (mapArticle) {
     // 保险箱
     let arr = [
         {
-        name: "保险柜"
+        name: "保险箱"
       },
       {
         name: "小保险箱"
@@ -3530,22 +3545,22 @@ function dataFilter (mapArticle) {
         name: "工具柜"
       },
       {
-        name: "大工具盒"
+        name: "收纳盒"
+      },
+    //   {
+    //     name: "一件衣服"
+    //   },
+      {
+        name: "一件衣服"
       },
       {
-        name: "实验服"
-      },
-      {
-        name: "衣服"
-      },
-      {
-        name: "医疗包"
+        name: "军用医疗包"
       },
       {
         name: "医疗物资堆"
       },
       {
-        name: "旅行袋"
+        name: "旅行包"
       },
       {
         name: "手提箱"
@@ -3569,10 +3584,10 @@ function dataFilter (mapArticle) {
         name: "航空储物箱"
       },
       {
-        name: "垃圾箱"
+        name: "垃圾桶"
       },
       {
-        name: "水泥车"
+        name: "搅拌车"
       },
       {
         name: "野外物资箱"
