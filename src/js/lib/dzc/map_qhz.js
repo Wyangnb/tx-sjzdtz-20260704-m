@@ -4481,7 +4481,7 @@ window['qhz_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方8号阵地",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S1",
       "num": "1"
@@ -8636,7 +8636,7 @@ window['qhz_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方8号阵地",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S1",
       "num": "1"
@@ -10325,7 +10325,7 @@ window['qhz_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI1号阵地",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -10340,7 +10340,7 @@ window['qhz_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI1号阵地",
     "CD": "120",
-    "name": "小鸟直升机",
+    "name": "侦察直升机",
     "icon": "deploy_xnzsj",
     "Sector": "全局",
     "num": "1"
@@ -10400,7 +10400,7 @@ window['qhz_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI2号阵地",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -10475,7 +10475,7 @@ window['qhz_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "HAAVK1号阵地",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -10505,7 +10505,7 @@ window['qhz_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "HAAVK2号阵地",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -10520,7 +10520,7 @@ window['qhz_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "HAAVK2号阵地",
     "CD": "120",
-    "name": "小鸟直升机",
+    "name": "侦察直升机",
     "icon": "deploy_xnzsj",
     "Sector": "全局",
     "num": "1"
@@ -12017,7 +12017,7 @@ window['qhz_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI2号阵地M",
     "CD": "120",
-    "name": "小鸟直升机",
+    "name": "侦察直升机",
     "icon": "deploy_xnzsj",
     "Sector": "全局",
     "num": "1"
@@ -12092,7 +12092,7 @@ window['qhz_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "HAAVK2号阵地M",
     "CD": "120",
-    "name": "小鸟直升机",
+    "name": "侦察直升机",
     "icon": "deploy_xnzsj",
     "Sector": "全局",
     "num": "1"

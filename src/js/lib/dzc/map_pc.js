@@ -5923,7 +5923,7 @@ window['pc_pc'].deploy = [
       "允许非队友的友方部署": "是",
       "备注": "北边滩头",
       "CD": "45",
-      "name": "LOSV吉普车",
+      "name": "轻型战术车",
       "icon": "deploy_losvjpc",
       "Sector": "S1",
       "num": "1"
@@ -5953,7 +5953,7 @@ window['pc_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "海上基地",
       "CD": "150",
-      "name": "AH 1035D突击直升机",
+      "name": "突击直升机",
       "icon": "deploy_tjzsj",
       "Sector": "S1",
       "num": "1"
@@ -5968,7 +5968,7 @@ window['pc_pc'].deploy = [
       "允许非队友的友方部署": "是",
       "备注": "临时营地",
       "CD": "45",
-      "name": "LOSV吉普车",
+      "name": "轻型战术车",
       "icon": "deploy_losvjpc",
       "Sector": "S1",
       "num": "1"
@@ -6045,7 +6045,7 @@ window['pc_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "北边废墟",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S2",
       "num": "1"
@@ -6075,7 +6075,7 @@ window['pc_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "隧道入口",
       "CD": "45",
-      "name": "LOSV吉普车",
+      "name": "轻型战术车",
       "icon": "deploy_losvjpc",
       "Sector": "S2",
       "num": "1"
@@ -11755,7 +11755,7 @@ window['pc_mobile'].deploy = [
       "允许非队友的友方部署": "是",
       "备注": "北边滩头",
       "CD": "45",
-      "name": "LOSV吉普车",
+      "name": "轻型战术车",
       "icon": "deploy_losvjpc",
       "Sector": "S1",
       "num": "1"
@@ -11785,7 +11785,7 @@ window['pc_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "海上基地",
       "CD": "150",
-      "name": "AH 1035D突击直升机",
+      "name": "突击直升机",
       "icon": "deploy_tjzsj",
       "Sector": "S1",
       "num": "1"
@@ -11800,7 +11800,7 @@ window['pc_mobile'].deploy = [
       "允许非队友的友方部署": "是",
       "备注": "临时营地",
       "CD": "45",
-      "name": "LOSV吉普车",
+      "name": "轻型战术车",
       "icon": "deploy_losvjpc",
       "Sector": "S1",
       "num": "1"
@@ -11877,7 +11877,7 @@ window['pc_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "北边废墟",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S2",
       "num": "1"
@@ -11907,7 +11907,7 @@ window['pc_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "隧道入口",
       "CD": "45",
-      "name": "LOSV吉普车",
+      "name": "轻型战术车",
       "icon": "deploy_losvjpc",
       "Sector": "S2",
       "num": "1"
@@ -14037,7 +14037,7 @@ window['pc_pc_s'].deploy =   [
     "允许非队友的友方部署": "否",
     "备注": "北边滩头",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -14112,7 +14112,7 @@ window['pc_pc_s'].deploy =   [
     "允许非队友的友方部署": "否",
     "备注": "北边滩头",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -14127,7 +14127,7 @@ window['pc_pc_s'].deploy =   [
     "允许非队友的友方部署": "否",
     "备注": "山上基地",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -14232,7 +14232,7 @@ window['pc_pc_s'].deploy =   [
     "允许非队友的友方部署": "否",
     "备注": "山下基地",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -14337,7 +14337,7 @@ window['pc_pc_s'].deploy =   [
     "允许非队友的友方部署": "否",
     "备注": "C2点",
     "CD": "150",
-    "name": "小鸟直升机",
+    "name": "侦察直升机",
     "icon": "deploy_xnzsj",
     "Sector": "全局",
     "num": "1"
@@ -15943,7 +15943,7 @@ window['pc_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "北边滩头",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -15958,7 +15958,7 @@ window['pc_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "C点被GTI占领后可部署",
     "CD": "150",
-    "name": "小鸟直升机",
+    "name": "侦察直升机",
     "icon": "deploy_xnzsj",
     "Sector": "全局",
     "num": "1"
@@ -16063,7 +16063,7 @@ window['pc_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "山上基地",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"

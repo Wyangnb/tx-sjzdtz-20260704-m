@@ -80,189 +80,189 @@ var navList = [
                 "idType": 1,
                 "num": 15,
                 "icon": "nav_bxx"
-            },
-            {
+              },
+              {
                 "name": "小保险箱",
                 "lang": "lang_xbxx",
                 "idType": 2,
                 "num": 3,
                 "icon": "nav_xbxx"
-            },
-            {
+              },
+              {
                 "name": "服务器",
                 "lang": "lang_fwq",
                 "idType": 3,
                 "num": 9,
                 "icon": "nav_fwq"
-            },
-            {
+              },
+              {
                 "name": "电脑",
                 "lang": "lang_dn",
                 "idType": 4,
-                "num": 17,
+                "num": 19,
                 "icon": "nav_dn"
-            },
-            {
+              },
+              {
                 "name": "电脑机箱",
                 "lang": "lang_dnjx",
                 "idType": 5,
-                "num": 18,
+                "num": 20,
                 "icon": "nav_dnjx"
-            },
-            {
+              },
+              {
                 "name": "武器箱",
                 "lang": "lang_wqx",
                 "idType": 6,
                 "num": 3,
                 "icon": "nav_wqx"
-            },
-            {
+              },
+              {
                 "name": "大武器箱",
                 "lang": "lang_dwqx",
                 "idType": 7,
                 "num": 11,
                 "icon": "nav_dwqx"
-            },
-            {
+              },
+              {
                 "name": "弹药箱",
                 "lang": "lang_dyx",
                 "idType": 8,
                 "num": 13,
                 "icon": "nav_dyx"
-            },
-            {
+              },
+              {
                 "name": "工具柜",
                 "lang": "lang_gjg",
                 "idType": 9,
-                "num": 17,
+                "num": 21,
                 "icon": "nav_gjg"
-            },
-            {
+              },
+              {
                 "name": "收纳盒",
                 "lang": "lang_dgjh",
                 "idType": 10,
-                "num": 21,
+                "num": 24,
                 "icon": "nav_dgjx"
-            },
-            {
+              },
+              {
                 "name": "一件衣服",
                 "lang": "lang_yf",
                 "idType": 12,
                 "num": 23,
                 "icon": "nav_yf"
-            },
-            {
+              },
+              {
                 "name": "军用医疗包",
                 "lang": "lang_ylb",
                 "idType": 13,
                 "num": 9,
                 "icon": "nav_ylb"
-            },
-            {
+              },
+              {
                 "name": "医疗物资堆",
                 "lang": "lang_ylwzd",
                 "idType": 14,
                 "num": 5,
                 "icon": "nav_ylwzd"
-            },
-            {
+              },
+              {
                 "name": "旅行包",
                 "lang": "lang_lxd",
                 "idType": 15,
-                "num": 18,
+                "num": 23,
                 "icon": "nav_lxd"
-            },
-            {
+              },
+              {
                 "name": "手提箱",
                 "lang": "lang_stx",
                 "idType": 16,
                 "num": 8,
                 "icon": "nav_stx"
-            },
-            {
+              },
+              {
                 "name": "储物柜",
                 "lang": "lang_cwg",
                 "idType": 17,
                 "num": 13,
                 "icon": "nav_cwg"
-            },
-            {
+              },
+              {
                 "name": "高级储物箱",
                 "lang": "lang_gjcwx",
                 "idType": 18,
-                "num": 1,
+                "num": 2,
                 "icon": "nav_gjcwx"
-            },
-            {
+              },
+              {
                 "name": "抽屉柜",
                 "lang": "lang_ctg",
                 "idType": 19,
-                "num": 4,
+                "num": 6,
                 "icon": "nav_ctg"
-            },
-            {
+              },
+              {
                 "name": "登山包",
                 "lang": "lang_dsb",
                 "idType": 20,
                 "num": 1,
                 "icon": "nav_dsb"
-            },
-            {
+              },
+              {
                 "name": "快递箱",
                 "lang": "lang_kdx",
                 "idType": 21,
-                "num": 5,
+                "num": 8,
                 "icon": "nav_kdx"
-            },
-            {
+              },
+              {
                 "name": "航空储物箱",
                 "lang": "lang_hkcwx",
                 "idType": 22,
                 "num": 6,
                 "icon": "nav_hkcwx"
-            },
-            {
+              },
+              {
                 "name": "垃圾桶",
                 "lang": "lang_ljx",
                 "idType": 23,
                 "num": 5,
                 "icon": "nav_ljx"
-            },
-            {
+              },
+              {
                 "name": "搅拌车",
                 "lang": "lang_snc",
                 "idType": 24,
                 "num": 6,
                 "icon": "nav_snc"
-            },
-            {
+              },
+              {
                 "name": "野外物资箱",
                 "lang": "lang_ywwzx",
                 "idType": 25,
-                "num": 12,
+                "num": 13,
                 "icon": "nav_ywwzx"
-            },
-            {
+              },
+              {
                 "name": "鸟窝",
                 "lang": "lang_nw",
                 "idType": 25,
                 "num": 22,
                 "icon": "nav_nw"
-            },
-            {
+              },
+              {
                 "name": "藏匿物",
                 "lang": "lang_cnw",
                 "idType": 25,
                 "num": 10,
                 "icon": "nav_cnw"
-            },
-            {
+              },
+              {
                 "name": "高级旅行箱",
                 "lang": "lang_gjlxx",
                 "idType": 25,
                 "num": 6,
                 "icon": "nav_xlx"
-            },
+              },
             {
                 name: '出生点',
                 idType: 26,
@@ -421,7 +421,7 @@ var navListInfo = [
                 "name": "一件衣服",
                 "lang": "lang_yf",
                 "idType": 12,
-                "num": 23,
+                "num": 22,
                 "icon": "nav_yf"
             },
             {
@@ -621,14 +621,14 @@ var navListInfo = [
                 "name": "电脑",
                 "lang": "lang_dn",
                 "idType": 4,
-                "num": 17,
+                "num": 18,
                 "icon": "nav_dn"
             },
             {
                 "name": "电脑机箱",
                 "lang": "lang_dnjx",
                 "idType": 5,
-                "num": 18,
+                "num": 20,
                 "icon": "nav_dnjx"
             },
             {
@@ -656,14 +656,14 @@ var navListInfo = [
                 "name": "工具柜",
                 "lang": "lang_gjg",
                 "idType": 9,
-                "num": 17,
+                "num": 21,
                 "icon": "nav_gjg"
             },
             {
                 "name": "收纳盒",
                 "lang": "lang_dgjh",
                 "idType": 10,
-                "num": 21,
+                "num": 24,
                 "icon": "nav_dgjx"
             },
             {
@@ -691,7 +691,7 @@ var navListInfo = [
                 "name": "旅行包",
                 "lang": "lang_lxd",
                 "idType": 15,
-                "num": 18,
+                "num": 23,
                 "icon": "nav_lxd"
             },
             {
@@ -712,14 +712,14 @@ var navListInfo = [
                 "name": "高级储物箱",
                 "lang": "lang_gjcwx",
                 "idType": 18,
-                "num": 1,
+                "num": 2,
                 "icon": "nav_gjcwx"
             },
             {
                 "name": "抽屉柜",
                 "lang": "lang_ctg",
                 "idType": 19,
-                "num": 4,
+                "num": 6,
                 "icon": "nav_ctg"
             },
             {
@@ -733,7 +733,7 @@ var navListInfo = [
                 "name": "快递箱",
                 "lang": "lang_kdx",
                 "idType": 21,
-                "num": 5,
+                "num": 8,
                 "icon": "nav_kdx"
             },
             {
@@ -761,7 +761,7 @@ var navListInfo = [
                 "name": "野外物资箱",
                 "lang": "lang_ywwzx",
                 "idType": 25,
-                "num": 12,
+                "num": 13,
                 "icon": "nav_ywwzx"
             },
             {

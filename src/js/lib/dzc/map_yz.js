@@ -2817,7 +2817,7 @@ window['yz_pc'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI3号阵地",
     "CD": 90,
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "S2",
     "num": 1
@@ -2832,7 +2832,7 @@ window['yz_pc'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "哈夫克2号阵地",
     "CD": 90,
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "S2",
     "num": 1
@@ -2896,7 +2896,7 @@ window['yz_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方8号阵地",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S1",
       "num": "1"
@@ -5551,7 +5551,7 @@ window['yz_mobile'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI3号阵地",
     "CD": 90,
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "S2",
     "num": 1
@@ -5566,7 +5566,7 @@ window['yz_mobile'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "哈夫克2号阵地",
     "CD": 90,
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "S2",
     "num": 1
@@ -5630,7 +5630,7 @@ window['yz_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方8号阵地",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S1",
       "num": "1"
@@ -6929,7 +6929,7 @@ window['yz_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "双方的一号集结点",
     "CD": 90,
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": 1
@@ -8256,7 +8256,7 @@ window['yz_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "双方的一号集结点",
     "CD": 90,
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": 1

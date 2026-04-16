@@ -126,6 +126,11 @@ window["dc_pc"].navRegion = [
           icon: "nav_fkc",
         },
         {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "固定防空炮",
           num: 9,
           icon: "nav_gdaap",
@@ -202,7 +207,12 @@ window["dc_pc"].navRegion = [
           num: 1,
           icon: "nav_zczsj",
         },
-         {
+        {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "固定防空炮",
           num: 9,
           icon: "nav_gdaap",
@@ -280,6 +290,11 @@ window["dc_pc"].navRegion = [
           icon: "nav_zczsj",
         },
         {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "固定防空炮",
           num: 9,
           icon: "nav_gdaap",
@@ -355,6 +370,11 @@ window["dc_pc"].navRegionInfo = [
           icon: "nav_fkc",
         },
         {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "岸防炮",
           num: 2,
           icon: "nav_afp",
@@ -430,6 +450,11 @@ window["dc_pc"].navRegionInfo = [
       title: "固定武器",
       typeList: [
         {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "固定防空炮",
           num: 9,
           icon: "nav_gdaap",
@@ -489,6 +514,11 @@ window["dc_pc"].navRegionInfo = [
           icon: "nav_zczsj",
         },
         {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "岸防炮",
           num: 2,
           icon: "nav_afp",
@@ -570,6 +600,11 @@ window["dc_pc"].navRegionInfo = [
       title: "固定武器",
       typeList: [
         {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "固定防空炮",
           num: 9,
           icon: "nav_gdaap",
@@ -627,6 +662,11 @@ window["dc_pc"].navRegionInfo = [
           name: "侦查直升机",
           num: 1,
           icon: "nav_zczsj",
+        },
+        {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
         },
         {
           name: "固定防空炮",
@@ -710,6 +750,11 @@ window["dc_pc"].navRegionInfo = [
     {
       title: "固定武器",
       typeList: [
+        {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
          {
           name: "固定防空炮",
           num: 9,
@@ -4349,7 +4394,7 @@ window['dc_pc'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI3号阵地",
     "CD": 150,
-    "name": "F45A战斗机",
+    "name": "F-45A战斗机",
     "Sector": "S1",
     "num": 2
   },
@@ -4393,7 +4438,7 @@ window['dc_pc'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI1号阵地",
     "CD": 150,
-    "name": "F45A战斗机",
+    "name": "F-45A战斗机",
     "Sector": "S1",
     "num": 2
   },
@@ -4424,7 +4469,7 @@ window['dc_pc'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI4号阵地",
     "CD": 150,
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "S2",
     "num": 1
@@ -4582,6 +4627,11 @@ window["dc_mobile"].navRegion = [
           icon: "nav_fkc",
         },
         {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "固定防空炮",
           num: 9,
           icon: "nav_gdaap",
@@ -4657,6 +4707,11 @@ window["dc_mobile"].navRegion = [
           name: "侦查直升机",
           num: 1,
           icon: "nav_zczsj",
+        },
+        {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
         },
          {
           name: "固定防空炮",
@@ -4736,6 +4791,11 @@ window["dc_mobile"].navRegion = [
           icon: "nav_zczsj",
         },
         {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "固定防空炮",
           num: 9,
           icon: "nav_gdaap",
@@ -4811,6 +4871,11 @@ window["dc_mobile"].navRegionInfo = [
           icon: "nav_fkc",
         },
         {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "岸防炮",
           num: 2,
           icon: "nav_afp",
@@ -4886,6 +4951,11 @@ window["dc_mobile"].navRegionInfo = [
       title: "固定武器",
       typeList: [
         {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "固定防空炮",
           num: 9,
           icon: "nav_gdaap",
@@ -4945,6 +5015,11 @@ window["dc_mobile"].navRegionInfo = [
           icon: "nav_zczsj",
         },
         {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "岸防炮",
           num: 2,
           icon: "nav_afp",
@@ -5026,6 +5101,11 @@ window["dc_mobile"].navRegionInfo = [
       title: "固定武器",
       typeList: [
         {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "固定防空炮",
           num: 9,
           icon: "nav_gdaap",
@@ -5083,6 +5163,11 @@ window["dc_mobile"].navRegionInfo = [
           name: "侦查直升机",
           num: 1,
           icon: "nav_zczsj",
+        },
+        {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
         },
         {
           name: "固定防空炮",
@@ -5166,6 +5251,11 @@ window["dc_mobile"].navRegionInfo = [
     {
       title: "固定武器",
       typeList: [
+        {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
          {
           name: "固定防空炮",
           num: 9,
@@ -8804,7 +8894,7 @@ window['dc_mobile'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI3号阵地",
     "CD": 150,
-    "name": "F45A战斗机",
+    "name": "F-45A战斗机",
     "Sector": "S1",
     "num": 2
   },
@@ -8848,7 +8938,7 @@ window['dc_mobile'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI1号阵地",
     "CD": 150,
-    "name": "F45A战斗机",
+    "name": "F-45A战斗机",
     "Sector": "S1",
     "num": 2
   },
@@ -8879,7 +8969,7 @@ window['dc_mobile'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI4号阵地",
     "CD": 150,
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "S2",
     "num": 1
@@ -9054,6 +9144,11 @@ window["dc_pc_s"].navRegion = [
         num: 25,
         icon: "nav_gddyx",
       },
+      {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
        {
           name: "岸防炮",
           num: 2,
@@ -9144,6 +9239,11 @@ window["dc_pc_s"].navRegion = [
     {
       title: "固定武器",
       typeList: [
+        {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
         {
           name: "固定防空炮",
           num: 9,
@@ -9218,6 +9318,11 @@ window["dc_pc_s"].navRegionInfo =   [
         num: 25,
         icon: "nav_gddyx",
       },
+      {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
        {
           name: "岸防炮",
           num: 2,
@@ -9308,6 +9413,11 @@ window["dc_pc_s"].navRegionInfo =   [
     {
       title: "固定武器",
       typeList: [
+        {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
         {
           name: "固定防空炮",
           num: 9,
@@ -11373,7 +11483,7 @@ window['dc_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "gti1号集结",
     "CD": 150,
-    "name": "F45A战斗机",
+    "name": "F-45A战斗机",
     "Sector": "全局",
     "icon": "deploy_f45azdj",
     "num": 2
@@ -11403,7 +11513,7 @@ window['dc_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "gti1号集结",
     "CD": 90,
-    "name": "轻型坦克",
+    "name": "GTQ-35轻型坦克",
     "Sector": "全局",
     "icon": "deploy_m1a4zztk",
     "num": 2
@@ -11478,7 +11588,7 @@ window['dc_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "gti1号集结",
     "CD": 150,
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": 1
@@ -11508,7 +11618,7 @@ window['dc_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "哈夫克1号集结",
     "CD": 150,
-    "name": "F45A战斗机",
+    "name": "F-45A战斗机",
     "icon": "deploy_f45azztk",
     "Sector": "全局",
     "num": 2
@@ -11538,7 +11648,7 @@ window['dc_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "哈夫克1号集结",
     "CD": 90,
-    "name": "轻型坦克",
+    "name": "GTQ-35轻型坦克",
     "icon": "deploy_m1a4zztk",
     "Sector": "全局",
     "num": 2
@@ -11613,7 +11723,7 @@ window['dc_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "哈夫克1号集结",
     "CD": 150,
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": 1
@@ -11696,7 +11806,13 @@ window["dc_mobile_s"].navRegion = [
         num: 25,
         icon: "nav_gddyx",
       },
+      {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
        {
+        
           name: "岸防炮",
           num: 2,
           icon: "nav_afp",
@@ -11777,6 +11893,11 @@ window["dc_mobile_s"].navRegion = [
    {
       title: "固定武器",
       typeList: [
+        {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
         {
           name: "固定防空炮",
           num: 9,
@@ -11921,6 +12042,11 @@ window["dc_mobile_s"].navRegionInfo =   [
     {
       title: "固定武器",
       typeList: [
+        {
+          name: "固定机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
         {
           name: "固定防空炮",
           num: 9,
@@ -13858,7 +13984,7 @@ window['dc_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "gti1号集结",
     "CD": 150,
-    "name": "F45A战斗机",
+    "name": "F-45A战斗机",
     "Sector": "全局",
     "icon": "deploy_f45azdj",
     "num": 2
@@ -13888,7 +14014,7 @@ window['dc_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "gti1号集结",
     "CD": 90,
-    "name": "轻型坦克",
+    "name": "GTQ-35轻型坦克",
     "Sector": "全局",
     "icon": "deploy_m1a4zztk",
     "num": 2
@@ -13963,7 +14089,7 @@ window['dc_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "gti1号集结",
     "CD": 150,
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": 1
@@ -13993,7 +14119,7 @@ window['dc_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "哈夫克1号集结",
     "CD": 150,
-    "name": "F45A战斗机",
+    "name": "F-45A战斗机",
     "icon": "deploy_f45azztk",
     "Sector": "全局",
     "num": 2
@@ -14023,7 +14149,7 @@ window['dc_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "哈夫克1号集结",
     "CD": 90,
-    "name": "轻型坦克",
+    "name": "GTQ-35轻型坦克",
     "icon": "deploy_m1a4zztk",
     "Sector": "全局",
     "num": 2
@@ -14098,7 +14224,7 @@ window['dc_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "哈夫克1号集结",
     "CD": 150,
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": 1

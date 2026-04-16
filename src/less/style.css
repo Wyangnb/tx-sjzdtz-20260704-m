@@ -5515,7 +5515,7 @@ body::-webkit-scrollbar {
 }
 .m-main-wrap .curr-map-ctn .btn-change-map-ctn .map-list-ctn .war-list.show {
   height: 430px/2;
-  height: 1550px/2;
+  height: 1680px/2;
   border: solid 1px #9a9b9b;
   background-color: #0e1112;
 }
@@ -5759,6 +5759,19 @@ body::-webkit-scrollbar {
   display: block;
 }
 .m-main-wrap .curr-map-ctn .btn-change-map-ctn .map-list-ctn .war-lv-list.show-10 .map-lv-item-1 {
+  display: block;
+}
+.m-main-wrap .curr-map-ctn .btn-change-map-ctn .map-list-ctn .war-lv-list.show-11 {
+  transform: translateY(770px);
+  height: 290px/2;
+}
+.m-main-wrap .curr-map-ctn .btn-change-map-ctn .map-list-ctn .war-lv-list.show-11 .map-lv-item-2 {
+  display: none;
+}
+.m-main-wrap .curr-map-ctn .btn-change-map-ctn .map-list-ctn .war-lv-list.show-11 .map-lv-item-0 {
+  display: block;
+}
+.m-main-wrap .curr-map-ctn .btn-change-map-ctn .map-list-ctn .war-lv-list.show-11 .map-lv-item-1 {
   display: block;
 }
 .m-main-wrap .curr-map-ctn .btn-change-map-ctn .map-list-ctn .war-lv-list.top0 {

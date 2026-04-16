@@ -2567,7 +2567,7 @@ window['ljd_pc'].deploy = [
       "允许非队友的友方部署": "是",
       "备注": "公园",
       "CD": "150",
-      "name": "小鸟直升机",
+      "name": "侦察直升机",
       "icon": "deploy_xnzsj",
       "Sector": "S1",
       "num": "1"
@@ -2582,7 +2582,7 @@ window['ljd_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "公园",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S1",
       "num": "1"
@@ -2659,7 +2659,7 @@ window['ljd_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "天桥",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S2",
       "num": "1"
@@ -2721,7 +2721,7 @@ window['ljd_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "海墙",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S3",
       "num": "1"
@@ -2766,7 +2766,7 @@ window['ljd_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "集散区",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S3",
       "num": "1"
@@ -5224,7 +5224,7 @@ window['ljd_mobile'].deploy = [
       "允许非队友的友方部署": "是",
       "备注": "公园",
       "CD": "150",
-      "name": "小鸟直升机",
+      "name": "侦察直升机",
       "icon": "deploy_xnzsj",
       "Sector": "S1",
       "num": "1"
@@ -5239,7 +5239,7 @@ window['ljd_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "公园",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S1",
       "num": "1"
@@ -5316,7 +5316,7 @@ window['ljd_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "天桥",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S2",
       "num": "1"
@@ -5378,7 +5378,7 @@ window['ljd_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "海墙",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S3",
       "num": "1"
@@ -5423,7 +5423,7 @@ window['ljd_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "集散区",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S3",
       "num": "1"
@@ -6922,7 +6922,7 @@ window['ljd_pc_s'].deploy =   [
     "允许非队友的友方部署": "否",
     "备注": "加油站",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -6937,7 +6937,7 @@ window['ljd_pc_s'].deploy =   [
     "允许非队友的友方部署": "是",
     "备注": "加油站",
     "CD": "150",
-    "name": "小鸟直升机",
+    "name": "侦察直升机",
     "icon": "deploy_xnzsj",
     "Sector": "全局",
     "num": "1"
@@ -6997,7 +6997,7 @@ window['ljd_pc_s'].deploy =   [
     "允许非队友的友方部署": "否",
     "备注": "小花园",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -7012,7 +7012,7 @@ window['ljd_pc_s'].deploy =   [
     "允许非队友的友方部署": "否",
     "备注": "龙门吊",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -7072,7 +7072,7 @@ window['ljd_pc_s'].deploy =   [
     "允许非队友的友方部署": "否",
     "备注": "龙门吊",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -7088,7 +7088,7 @@ window['ljd_pc_s'].deploy =   [
     "允许非队友的友方部署": "是",
     "备注": "龙门吊",
     "CD": "150",
-    "name": "小鸟直升机",
+    "name": "侦察直升机",
     "icon": "deploy_xnzsj",
     "Sector": "全局",
     "num": "1"
@@ -8572,7 +8572,7 @@ window['ljd_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "加油站",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -8587,7 +8587,7 @@ window['ljd_mobile_s'].deploy = [
     "允许非队友的友方部署": "是",
     "备注": "加油站",
     "CD": "150",
-    "name": "小鸟直升机",
+    "name": "侦察直升机",
     "icon": "deploy_xnzsj",
     "Sector": "全局",
     "num": "1"
@@ -8647,7 +8647,7 @@ window['ljd_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "小花园",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -8662,7 +8662,7 @@ window['ljd_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "龙门吊",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -8722,7 +8722,7 @@ window['ljd_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "龙门吊",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -8738,7 +8738,7 @@ window['ljd_mobile_s'].deploy = [
     "允许非队友的友方部署": "是",
     "备注": "龙门吊",
     "CD": "150",
-    "name": "小鸟直升机",
+    "name": "侦察直升机",
     "icon": "deploy_xnzsj",
     "Sector": "全局",
     "num": "1"

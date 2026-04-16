@@ -138,6 +138,11 @@ window["hdz_pc"].navRegion = [
           icon: "nav_cfz",
         },
         {
+          name: "固定机枪",
+          num: 3,
+          icon: "nav_gdjq",
+        },
+        {
           name: "岸防炮",
           num: 2,
           icon: "nav_afp",
@@ -147,11 +152,7 @@ window["hdz_pc"].navRegion = [
           num: 1,
           icon: "nav_gdaap",
         },
-        {
-          name: "固定机枪",
-          num: 3,
-          icon: "nav_gdjq",
-        },
+
       ],
     },
     {
@@ -160,9 +161,12 @@ window["hdz_pc"].navRegion = [
     {
       title: "基地部署点",
     },
-    // {
-    //   title: "载具",
-    // },
+    {
+      title: "载具",
+    },
+    {
+      title: "载具补给站",
+    },
     {
       title: "固定弹药箱",
     },
@@ -217,11 +221,17 @@ window["hdz_pc"].navRegion = [
         }
       ],
     },
-    {
+       {
       title: "据点",
     },
     {
       title: "基地部署点",
+    },
+    {
+      title: "载具",
+    },
+    {
+      title: "载具补给站",
     },
     {
       title: "固定弹药箱",
@@ -266,22 +276,29 @@ window["hdz_pc"].navRegion = [
           icon: "nav_cfz",
         },
         {
-          name: "固定防空炮",
-          num: 1,
-          icon: "nav_gdaap",
-        },
-        {
           name: "固定机枪",
           num: 1,
           icon: "nav_gdjq",
         },
+        {
+          name: "固定防空炮",
+          num: 1,
+          icon: "nav_gdaap",
+        },
+
       ],
     },
-    {
+        {
       title: "据点",
     },
     {
       title: "基地部署点",
+    },
+    {
+      title: "载具",
+    },
+    {
+      title: "载具补给站",
     },
     {
       title: "固定弹药箱",
@@ -331,17 +348,28 @@ window["hdz_pc"].navRegion = [
           icon: "nav_cfz",
         },
         {
+          name: "固定防机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "固定防空炮",
           num: 1,
           icon: "nav_gdaap",
         }
       ],
     },
-    {
+        {
       title: "据点",
     },
     {
       title: "基地部署点",
+    },
+    {
+      title: "载具",
+    },
+    {
+      title: "载具补给站",
     },
     {
       title: "固定弹药箱",
@@ -391,22 +419,29 @@ window["hdz_pc"].navRegion = [
           icon: "nav_cfz",
         },
         {
+          name: "固定机枪",
+          num: 1,
+          icon: "nav_gdjq",
+        },
+        {
           name: "固定防空炮",
           num: 3,
           icon: "nav_gdaap",
         },
-        {
-          name: "固定机枪",
-          num: 1,
-          icon: "nav_gdjq",
-        }
+        
       ],
     },
-    {
+        {
       title: "据点",
     },
     {
       title: "基地部署点",
+    },
+    {
+      title: "载具",
+    },
+    {
+      title: "载具补给站",
     },
     {
       title: "固定弹药箱",
@@ -5004,7 +5039,7 @@ window['hdz_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方1号阵地",
       "CD": "150",
-      "name": "小鸟直升机",
+      "name": "侦察直升机",
       "icon": "deploy_xnzsj",
       "Sector": "S1",
       "num": "1"
@@ -5081,7 +5116,7 @@ window['hdz_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方3号阵地",
       "CD": "90",
-      "name": "轻型坦克",
+      "name": "GTQ-35轻型坦克",
       "icon": "deploy_qxtk",
       "Sector": "S2",
       "num": "1"
@@ -5126,7 +5161,7 @@ window['hdz_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "防守方3号阵地",
       "CD": "90",
-      "name": "轻型坦克",
+      "name": "GTQ-35轻型坦克",
       "icon": "deploy_qxtk",
       "Sector": "S2",
       "num": "1"
@@ -5188,7 +5223,7 @@ window['hdz_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方6号阵地",
       "CD": "90",
-      "name": "轻型坦克",
+      "name": "GTQ-35轻型坦克",
       "icon": "deploy_qxtk",
       "Sector": "S3",
       "num": "1"
@@ -5218,7 +5253,7 @@ window['hdz_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "防守方7号阵地",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S3",
       "num": "1"
@@ -5342,7 +5377,7 @@ window['hdz_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方13号阵地",
       "CD": "90",
-      "name": "轻型坦克",
+      "name": "GTQ-35轻型坦克",
       "icon": "deploy_qxtk",
       "Sector": "S5",
       "num": "1"
@@ -5372,7 +5407,7 @@ window['hdz_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "防守方12号阵地",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S5",
       "num": "1"
@@ -5424,6 +5459,11 @@ window["hdz_mobile"].navRegion = [
           icon: "nav_cfz",
         },
         {
+          name: "固定机枪",
+          num: 3,
+          icon: "nav_gdjq",
+        },
+        {
           name: "岸防炮",
           num: 2,
           icon: "nav_afp",
@@ -5433,11 +5473,7 @@ window["hdz_mobile"].navRegion = [
           num: 1,
           icon: "nav_gdaap",
         },
-        {
-          name: "固定机枪",
-          num: 3,
-          icon: "nav_gdjq",
-        },
+
       ],
     },
     {
@@ -5446,9 +5482,12 @@ window["hdz_mobile"].navRegion = [
     {
       title: "基地部署点",
     },
-    // {
-    //   title: "载具",
-    // },
+    {
+      title: "载具",
+    },
+    {
+      title: "载具补给站",
+    },
     {
       title: "固定弹药箱",
     },
@@ -5503,11 +5542,17 @@ window["hdz_mobile"].navRegion = [
         }
       ],
     },
-    {
+       {
       title: "据点",
     },
     {
       title: "基地部署点",
+    },
+    {
+      title: "载具",
+    },
+    {
+      title: "载具补给站",
     },
     {
       title: "固定弹药箱",
@@ -5552,22 +5597,29 @@ window["hdz_mobile"].navRegion = [
           icon: "nav_cfz",
         },
         {
-          name: "固定防空炮",
-          num: 1,
-          icon: "nav_gdaap",
-        },
-        {
           name: "固定机枪",
           num: 1,
           icon: "nav_gdjq",
         },
+        {
+          name: "固定防空炮",
+          num: 1,
+          icon: "nav_gdaap",
+        },
+
       ],
     },
-    {
+        {
       title: "据点",
     },
     {
       title: "基地部署点",
+    },
+    {
+      title: "载具",
+    },
+    {
+      title: "载具补给站",
     },
     {
       title: "固定弹药箱",
@@ -5617,17 +5669,28 @@ window["hdz_mobile"].navRegion = [
           icon: "nav_cfz",
         },
         {
+          name: "固定防机枪",
+          num: 0,
+          icon: "nav_gdaap",
+        },
+        {
           name: "固定防空炮",
           num: 1,
           icon: "nav_gdaap",
         }
       ],
     },
-    {
+        {
       title: "据点",
     },
     {
       title: "基地部署点",
+    },
+    {
+      title: "载具",
+    },
+    {
+      title: "载具补给站",
     },
     {
       title: "固定弹药箱",
@@ -5677,22 +5740,29 @@ window["hdz_mobile"].navRegion = [
           icon: "nav_cfz",
         },
         {
+          name: "固定机枪",
+          num: 1,
+          icon: "nav_gdjq",
+        },
+        {
           name: "固定防空炮",
           num: 3,
           icon: "nav_gdaap",
         },
-        {
-          name: "固定机枪",
-          num: 1,
-          icon: "nav_gdjq",
-        }
+        
       ],
     },
-    {
+        {
       title: "据点",
     },
     {
       title: "基地部署点",
+    },
+    {
+      title: "载具",
+    },
+    {
+      title: "载具补给站",
     },
     {
       title: "固定弹药箱",
@@ -10289,7 +10359,7 @@ window['hdz_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方1号阵地",
       "CD": "150",
-      "name": "小鸟直升机",
+      "name": "侦察直升机",
       "icon": "deploy_xnzsj",
       "Sector": "S1",
       "num": "1"
@@ -10366,7 +10436,7 @@ window['hdz_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方3号阵地",
       "CD": "90",
-      "name": "轻型坦克",
+      "name": "GTQ-35轻型坦克",
       "icon": "deploy_qxtk",
       "Sector": "S2",
       "num": "1"
@@ -10411,7 +10481,7 @@ window['hdz_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "防守方3号阵地",
       "CD": "90",
-      "name": "轻型坦克",
+      "name": "GTQ-35轻型坦克",
       "Sector": "S2",
       "icon": "deploy_qxtk",
       "num": "1"
@@ -10473,7 +10543,7 @@ window['hdz_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方6号阵地",
       "CD": "90",
-      "name": "轻型坦克",
+      "name": "GTQ-35轻型坦克",
       "icon": "deploy_qxtk",
       "Sector": "S3",
       "num": "1"
@@ -10503,7 +10573,7 @@ window['hdz_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "防守方7号阵地",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S3",
       "num": "1"
@@ -10627,7 +10697,7 @@ window['hdz_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方13号阵地",
       "CD": "90",
-      "name": "轻型坦克",
+      "name": "GTQ-35轻型坦克",
       "icon": "deploy_qxtk",
       "Sector": "S5",
       "num": "1"
@@ -10657,7 +10727,7 @@ window['hdz_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "防守方12号阵地",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S5",
       "num": "1"
@@ -12478,7 +12548,7 @@ window['hdz_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI1号阵地",
     "CD": "",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -12493,7 +12563,7 @@ window['hdz_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI1号阵地",
     "CD": "",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -12508,7 +12578,7 @@ window['hdz_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI1号阵地",
     "CD": "90",
-    "name": "轻型坦克",
+    "name": "GTQ-35轻型坦克",
     "icon": "deploy_qxtk",
     "Sector": "全局",
     "num": "1"
@@ -12568,7 +12638,7 @@ window['hdz_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "HAAVK2号阵地",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -12583,7 +12653,7 @@ window['hdz_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "HAAVK2号阵地",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -12598,7 +12668,7 @@ window['hdz_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "HAAVK2号阵地",
     "CD": "90",
-    "name": "轻型坦克",
+    "name": "GTQ-35轻型坦克",
     "icon": "deploy_qxtk",
     "Sector": "全局",
     "num": "1"
@@ -14463,7 +14533,7 @@ window['hdz_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI1号阵地",
     "CD": "",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -14478,7 +14548,7 @@ window['hdz_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI1号阵地",
     "CD": "",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -14493,7 +14563,7 @@ window['hdz_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "GTI1号阵地",
     "CD": "90",
-    "name": "轻型坦克",
+    "name": "GTQ-35轻型坦克",
     "icon": "deploy_qxtk",
     "Sector": "全局",
     "num": "1"
@@ -14553,7 +14623,7 @@ window['hdz_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "HAAVK2号阵地",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -14568,7 +14638,7 @@ window['hdz_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "HAAVK2号阵地",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -14583,7 +14653,7 @@ window['hdz_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "HAAVK2号阵地",
     "CD": "90",
-    "name": "轻型坦克",
+    "name": "GTQ-35轻型坦克",
     "icon": "deploy_qxtk",
     "Sector": "全局",
     "num": "1"

@@ -5546,7 +5546,7 @@ window['dg_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "运输要道",
       "CD": "15",
-      "name": "LOSV吉普车",
+      "name": "轻型战术车",
       "icon": "deploy_losvjpc",
       "Sector": "S1",
       "num": "1"
@@ -5576,7 +5576,7 @@ window['dg_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "山间小路",
       "CD": "15",
-      "name": "LOSV吉普车",
+      "name": "轻型战术车",
       "icon": "deploy_losvjpc",
       "Sector": "S1",
       "num": "1"
@@ -5593,7 +5593,7 @@ window['dg_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方矿场入口",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S2",
       "num": "1"
@@ -5608,7 +5608,7 @@ window['dg_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方二号二号矿场入口",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S2",
       "num": "1"
@@ -5640,7 +5640,7 @@ window['dg_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方工人宿舍",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S3",
       "num": "1"
@@ -5685,7 +5685,7 @@ window['dg_pc'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "园区出口",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S3",
       "num": "1"
@@ -11193,7 +11193,7 @@ window['dg_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "运输要道",
       "CD": "15",
-      "name": "LOSV吉普车",
+      "name": "轻型战术车",
       "icon": "deploy_losvjpc",
       "Sector": "S1",
       "num": "1"
@@ -11223,7 +11223,7 @@ window['dg_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "山间小路",
       "CD": "15",
-      "name": "LOSV吉普车",
+      "name": "轻型战术车",
       "icon": "deploy_losvjpc",
       "Sector": "S1",
       "num": "1"
@@ -11240,7 +11240,7 @@ window['dg_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方矿场入口",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S2",
       "num": "1"
@@ -11255,7 +11255,7 @@ window['dg_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方二号二号矿场入口",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S2",
       "num": "1"
@@ -11287,7 +11287,7 @@ window['dg_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "进攻方工人宿舍",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S3",
       "num": "1"
@@ -11332,7 +11332,7 @@ window['dg_mobile'].deploy = [
       "允许非队友的友方部署": "否",
       "备注": "园区出口",
       "CD": "90",
-      "name": "轮式突击炮",
+      "name": "FSV轮式突击炮",
       "icon": "deploy_lstjp",
       "Sector": "S3",
       "num": "1"
@@ -13399,7 +13399,7 @@ window['dg_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "运输要道",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局【基地名称：运输要道】",
     "num": "1"
@@ -13414,7 +13414,7 @@ window['dg_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "山间小路",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局【基地名称：山间小路】",
     "num": "2"
@@ -13444,7 +13444,7 @@ window['dg_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "乡间小道",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局【基地名称：乡间小道】",
     "num": "1"
@@ -13474,7 +13474,7 @@ window['dg_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "干涸河道",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局【基地名称：干涸河道】",
     "num": "2"
@@ -13549,7 +13549,7 @@ window['dg_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "隧道卡口要道",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局【基地名称：隧道卡口要道】",
     "num": "1"
@@ -13595,7 +13595,7 @@ window['dg_pc_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "临时排污口",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局【基地名称：临时排污口】",
     "num": "1"
@@ -15045,7 +15045,7 @@ window['dg_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "运输要道",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局【基地名称：运输要道】",
     "num": "1"
@@ -15060,7 +15060,7 @@ window['dg_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "山间小路",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局【基地名称：山间小路】",
     "num": "2"
@@ -15090,7 +15090,7 @@ window['dg_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "乡间小道",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局【基地名称：乡间小道】",
     "num": "1"
@@ -15120,7 +15120,7 @@ window['dg_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "干涸河道",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局【基地名称：干涸河道】",
     "num": "2"
@@ -15195,7 +15195,7 @@ window['dg_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "隧道卡口要道",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局【基地名称：隧道卡口要道】",
     "num": "1"
@@ -15241,7 +15241,7 @@ window['dg_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "临时排污口",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局【基地名称：临时排污口】",
     "num": "1"

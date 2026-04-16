@@ -1014,7 +1014,7 @@ function addLayer (mapName) {
         href = mapScaleInfo.floorInfo?.info?.href
     } else {
         // href = ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/'
-         href = '../../img/'
+         href = ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/'
     }
     console.log(northEast, bounds);
     currLayer = L.tileLayer(href + `${mapName}/{z}_{x}_{y}.jpg`, {
@@ -1400,7 +1400,7 @@ var renderNavTypeList = function (list, navIndex = 0){
                 </div>
                 <div class="wz-name">${item.name}</div>
             </div>`
-        } else if (isWar && (item.name.indexOf('突击车') > -1 || item.name.indexOf('枪') > -1 || item.name.indexOf('固定防空') > -1)) {
+        } else if (isWar && (item.name.indexOf('突击车') > -1 || item.name.indexOf('枪') > -1)) {
             html+=`
             <div class="fgx">${(item.name.indexOf('突击车') > -1) ? '载具' : '固定武器'}</div>
                 <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`} ${item.num > 0 ? '' : 'hide'}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">

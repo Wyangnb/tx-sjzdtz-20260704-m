@@ -6553,7 +6553,7 @@ window['jq_pc_s'].deploy =   [
     "允许非队友的友方部署": "否",
     "备注": "二号公路",
     "CD": "150",
-    "name": "小鸟直升机",
+    "name": "侦察直升机",
     "icon": "deploy_xnzsj",
     "Sector": "全局",
     "num": "1"
@@ -6643,7 +6643,7 @@ window['jq_pc_s'].deploy =   [
     "允许非队友的友方部署": "否",
     "备注": "沙漠边缘",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -6658,7 +6658,7 @@ window['jq_pc_s'].deploy =   [
     "允许非队友的友方部署": "否",
     "备注": "B点被GTI占领后可以部署",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -6705,7 +6705,7 @@ window['jq_pc_s'].deploy =   [
     "允许非队友的友方部署": "否",
     "备注": "二号城区入口",
     "CD": "150",
-    "name": "小鸟直升机",
+    "name": "侦察直升机",
     "icon": "deploy_xnzsj",
     "Sector": "全局",
     "num": "1"
@@ -6765,7 +6765,7 @@ window['jq_pc_s'].deploy =   [
     "允许非队友的友方部署": "否",
     "备注": "主干道",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -8214,7 +8214,7 @@ window['jq_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "B点",
     "CD": "150",
-    "name": "AH 1035D突击直升机",
+    "name": "突击直升机",
     "icon": "deploy_tjzsj",
     "Sector": "全局",
     "num": "1"
@@ -8229,7 +8229,7 @@ window['jq_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "临时指挥部",
     "CD": "150",
-    "name": "小鸟直升机",
+    "name": "侦察直升机",
     "icon": "deploy_xnzsj",
     "Sector": "全局",
     "num": "1"
@@ -8289,7 +8289,7 @@ window['jq_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "村庄",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
@@ -8334,7 +8334,7 @@ window['jq_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "城区入口",
     "CD": "150",
-    "name": "小鸟直升机",
+    "name": "侦察直升机",
     "icon": "deploy_xnzsj",
     "Sector": "全局",
     "num": "1"
@@ -8379,7 +8379,7 @@ window['jq_mobile_s'].deploy = [
     "允许非队友的友方部署": "否",
     "备注": "主干道",
     "CD": "90",
-    "name": "轮式突击炮",
+    "name": "FSV轮式突击炮",
     "icon": "deploy_lstjp",
     "Sector": "全局",
     "num": "1"
