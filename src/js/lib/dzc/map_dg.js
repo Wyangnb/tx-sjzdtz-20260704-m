@@ -61,7 +61,7 @@ window["dg"].info = {
   name_mobile: "map_dg",
   names_mobile: "map_dg",
   sector: 4,
-  rotate: true,
+  rotate: 90,
   // href: window.location.href.indexOf(80) > -1 ? '../../img/': 'https://game.gtimg.cn/images/dfm/cp/a20250113mapduangui/',
   sectorInit: [
     {

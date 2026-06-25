@@ -61,7 +61,7 @@ window["ljd"].info = {
   name_mobile: "map_ljd_pc",
   names_mobile: "map_ljd_zl",
   sector: 3,
-  rotate: true,
+  rotate: 90,
   sectorInit: [
     {
       minZoom: 2,

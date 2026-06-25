@@ -259,6 +259,13 @@ var outFloor = true;
 const nameClassMap = {
     '保险箱': 'red',
     '小保险箱': 'red',
+    '托卡马克面板': 'red',
+    '乏燃料堆体': 'red',
+    '燃料储罐': 'red',
+    '应急仓': 'red',
+    '仿星控制柱': 'red',
+    '反应堆基座': 'red',
+    '污水净化器': 'red',
     '服务器': 'orange',
     '电脑': 'orange'
 };
@@ -289,6 +296,7 @@ var queryMap = {
     'htjd': '21',
     'bks': '31',
     'cxjy': '42',
+    'az3': '50',
 }
 
 
@@ -465,9 +473,11 @@ function getMapPos (posX, posY) {
     // 世界中心轴x： 358155.687500； y： 750191.750000
     // return {x: bj - (mapScaleInfo.centerX - x ) / xB2, y: -bj - (mapScaleInfo.centerY + y ) / yB2}
     // currLayer.name === 'map_gc'|| currLayer.name === 'map_pc'
-    if (currLayer.name.indexOf('cgxg') !== -1 || currLayer.name === 'map_yc2' || currLayer.name === 'map_yc'|| mapScaleInfo.rotate) {
+    if (currLayer.name.indexOf('cgxg') !== -1 || currLayer.name === 'map_yc2' || currLayer.name === 'map_yc'|| mapScaleInfo.rotate == 90) {
 
         return {x: bj - (mapScaleInfo.centerY + y ) / yB2, y: -bj + (mapScaleInfo.centerX - x ) / xB2}
+    } else if (mapScaleInfo.rotate === -90) {
+        return {x: bj + (mapScaleInfo.centerY + y ) / yB2, y: -bj - (mapScaleInfo.centerX - x ) / xB2}
     } else{
         return {x: bj - (mapScaleInfo.centerX - x ) / xB2, y: -bj - (mapScaleInfo.centerY + y ) / yB2}
     }
@@ -697,11 +707,11 @@ function refreshMarker2(from, arr) {
                         currClickMarker = this;
                         $(this.getElement()).addClass('click')
                         if (item['随机']) {
-                            markerName.html(`${that.name}${item['拾取条件'] && item['拾取条件'] !== ''? `<span> ( ${item['拾取条件']} ) </span>`: ` [${item['随机']}]`}`)
+                            markerName.html(`${ that?.sub_name || that.name}${item['拾取条件'] && item['拾取条件'] !== ''? `<span> ( ${item['拾取条件']} ) </span>`: ` [${item['随机']}]`}`)
                         } else if (item['撤离条件']) {
-                            markerName.html(`${that.name}${item['撤离条件'] && item['撤离条件'] !== ''? `<span> ( ${item['撤离条件']} ) </span>`: ` [${item['撤离条件']}]`}`)
+                            markerName.html(`${ that?.sub_name || that.name}${item['撤离条件'] && item['撤离条件'] !== ''? `<span> ( ${item['撤离条件']} ) </span>`: ` [${item['撤离条件']}]`}`)
                         } else {
-                            markerName.html(`${that.name}${item['拾取条件'] && item['拾取条件'] !== ''? `<span> ( ${item['拾取条件']} ) </span>`: ''}`)
+                            markerName.html(`${ that?.sub_name || that.name}${item['拾取条件'] && item['拾取条件'] !== ''? `<span> ( ${item['拾取条件']} ) </span>`: ''}`)
                         }
                         if (this.myIcon.name.indexOf('基地') > -1) {
                             initWarSwiper(this.myIcon.name, that);
@@ -1358,7 +1368,7 @@ var initNav = function () {
 var renderNavTypeList = function (list, navIndex = 0){
     var html = ''
     if (list.length > 15) {
-        html = '<div class="fgx top0">物资点</div>'
+        html = '<div class="fgx top0 nav-wz">物资点</div>'
     }
     console.log(1111, list);
     
@@ -1449,6 +1459,7 @@ var renderNavTypeList = function (list, navIndex = 0){
         navTypyList.addClass('normal')
         navTypyList.removeClass('war')
     }
+    $('.nav-option-ctn').attr('data-map', currMap)
     navTypyList.html(html)
     typeListInit = true;
     visibleMarker2[navIndex].isInit = true;
@@ -1517,7 +1528,7 @@ function changeMapLv(type) {
             poiInfo: selectRegion,
             mapName: '零号大坝',
             mapLayer: 'map_db',
-            getLvName: (name) => name.indexOf('夜') > -1 ? '长夜' : '机密'
+            getLvName: (name) => name.indexOf('夜') > -1 ? '永夜' : '机密'
         },
         '01_B1': {
             mapInfo: dabaInfo,
@@ -1527,7 +1538,7 @@ function changeMapLv(type) {
             poiInfo: selectRegion,
             mapName: '零号大坝',
             mapLayer: 'daba_0f',
-            getLvName: (name) => name.indexOf('夜') > -1 ? '长夜' : '机密'
+            getLvName: (name) => name.indexOf('夜') > -1 ? '永夜' : '机密'
         },
         '01_1F': {
             mapInfo: dabaInfo,
@@ -1537,7 +1548,7 @@ function changeMapLv(type) {
             poiInfo: selectRegion,
             mapName: '零号大坝',
             mapLayer: 'daba_1f',
-            getLvName: (name) => name.indexOf('夜') > -1 ? '长夜' : '机密'
+            getLvName: (name) => name.indexOf('夜') > -1 ? '永夜' : '机密'
         },
         '01_2F': {
             mapInfo: dabaInfo,
@@ -1547,7 +1558,7 @@ function changeMapLv(type) {
             poiInfo: selectRegion,
             mapName: '零号大坝',
             mapLayer: 'daba_2f',
-            getLvName: (name) => name.indexOf('夜') > -1 ? '长夜' : '机密'
+            getLvName: (name) => name.indexOf('夜') > -1 ? '永夜' : '机密'
         },
         '02': {
             mapInfo: dabaInfo,
@@ -1557,7 +1568,7 @@ function changeMapLv(type) {
             poiInfo: selectRegion,
             mapName: '零号大坝',
             mapLayer: 'map_db',
-            getLvName: (name) => name.indexOf('夜') > -1 ? '终夜' : '绝密'
+            getLvName: (name) => name.indexOf('夜') > -1 ? '永夜' : '绝密'
         },
         '02_B1': {
             mapInfo: dabaInfo,
@@ -1567,7 +1578,7 @@ function changeMapLv(type) {
             poiInfo: selectRegion,
             mapName: '零号大坝',
             mapLayer: 'daba_0f',
-            getLvName: (name) => name.indexOf('夜') > -1 ? '终夜' : '绝密'
+            getLvName: (name) => name.indexOf('夜') > -1 ? '永夜' : '绝密'
         },
         '02_1F': {
             mapInfo: dabaInfo,
@@ -1577,7 +1588,7 @@ function changeMapLv(type) {
             poiInfo: selectRegion,
             mapName: '零号大坝',
             mapLayer: 'daba_1f',
-            getLvName: (name) => name.indexOf('夜') > -1 ? '终夜' : '绝密'
+            getLvName: (name) => name.indexOf('夜') > -1 ? '永夜' : '绝密'
         },
         '02_2F': {
             mapInfo: dabaInfo,
@@ -1587,7 +1598,47 @@ function changeMapLv(type) {
             poiInfo: selectRegion,
             mapName: '零号大坝',
             mapLayer: 'daba_2f',
-            getLvName: (name) => name.indexOf('夜') > -1 ? '终夜' : '绝密'
+            getLvName: (name) => name.indexOf('夜') > -1 ? '永夜' : '绝密'
+        },
+        '03': {
+            mapInfo: dabaInfo,
+            navList: navList4,
+            navTypeList: navListInfo4,
+            mapIcons: mapArticle4,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'map_db',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '永夜' : '绝密'
+        },
+        '03_B1': {
+            mapInfo: dabaInfo,
+            navList: () => dabaInfo.floorInfo.navList3_minus,
+            navTypeList: () => dabaInfo.floorInfo.navList3_minus,
+            mapIcons: () => dabaInfo.floorInfo.mapArticle3_minus,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'daba_0f',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '永夜' : '绝密'
+        },
+        '03_1F': {
+            mapInfo: dabaInfo,
+            navList: () => dabaInfo.floorInfo.navList3_firest,
+            navTypeList: () => dabaInfo.floorInfo.navList3_firest,
+            mapIcons: () => dabaInfo.floorInfo.mapArticle3_first,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'daba_1f',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '永夜' : '绝密'
+        },
+        '03_2F': {
+            mapInfo: dabaInfo,
+            navList: () => dabaInfo.floorInfo.navList3_second,
+            navTypeList: () => dabaInfo.floorInfo.navList3_second,
+            mapIcons: () => dabaInfo.floorInfo.mapArticle3_second,
+            poiInfo: selectRegion,
+            mapName: '零号大坝',
+            mapLayer: 'daba_2f',
+            getLvName: (name) => name.indexOf('夜') > -1 ? '永夜' : '绝密'
         },
         
         // 长弓溪谷
@@ -1969,7 +2020,34 @@ function changeMapLv(type) {
             mapName: '潮汐监狱',
             mapLayer: 'cxjy_4f',
             lvName: '绝密'
-        }
+        },
+        // az3
+        '50': {
+            mapInfo: az3Info,
+            navList: navList_az3,
+            navTypeList: navListInfo_az3,
+            mapIcons: mapArticle_az3,
+            poiInfo: selectRegion_az3,
+            mapName: 'AZ3',
+            mapLayer: 'map_az3',
+            lvName: '常规',
+            extraConfig: {
+                removeExistingLayer: true
+            }
+        },
+        '51': {
+            mapInfo: az3Info,
+            navList: navList2_az3,
+            navTypeList: navListInfo2_az3,
+            mapIcons: mapArticle2_az3,
+            poiInfo: selectRegion_az3,
+            mapName: 'AZ3',
+            mapLayer: 'map_az3',
+            lvName: '常规',
+            extraConfig: {
+                removeExistingLayer: true
+            }
+        },
         // 注意：原代码中32以下有一些重复的case(31_B1, 31_1F, 31_2F)，看起来可能是错误
     };
 
@@ -2465,9 +2543,9 @@ var bindEvent = function () {
             if (clickMap === currMap) {
                 if (chooseItemLvName.indexOf('前夜') > -1) {
                     $(`.map-lv-item-3`).addClass('action')
-                } else if (chooseItemLvName.indexOf('长夜') > -1) {
+                } else if (chooseItemLvName.indexOf('永夜') > -1) {
                     $(`.map-lv-item-4`).addClass('action')
-                } else if (chooseItemLvName.indexOf('终夜') > -1) {
+                } else if (chooseItemLvName.indexOf('永夜') > -1) {
                     $(`.map-lv-item-5`).addClass('action')
                 } else {
                     $(`.map-lv-item-${currLv}`).addClass('action')
@@ -2583,9 +2661,9 @@ var bindEvent = function () {
         $('.map-lv-item').removeClass('action')
         if (chooseItemLvName.indexOf('前夜') > -1) {
             $(`.map-lv-item-3`).addClass('action')
-        } else if (chooseItemLvName.indexOf('长夜') > -1) {
+        } else if (chooseItemLvName.indexOf('永夜') > -1) {
             $(`.map-lv-item-4`).addClass('action')
-        } else if (chooseItemLvName.indexOf('终夜') > -1) {
+        } else if (chooseItemLvName.indexOf('永夜') > -1) {
             $(`.map-lv-item-5`).addClass('action')
         } else {
             $(`.map-lv-item-${currLv}`).addClass('action')

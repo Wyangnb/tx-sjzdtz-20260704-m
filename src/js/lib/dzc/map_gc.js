@@ -61,7 +61,7 @@ window["gc"].info = {
   name_mobile: "map_gc",
   names_mobile: "map_gc_zl",
   sector: 3,
-  rotate: true,
+  rotate: 90,
   sectorInit: [
     {
       minZoom: 2,

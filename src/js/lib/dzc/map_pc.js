@@ -61,7 +61,7 @@ window["pc"].info = {
   name_mobile: "map_pc",
   names_mobile: "map_pc_mobile_zl",
   sector: 4,
-  rotate: true,
+  rotate: 90,
   sectorInit: [
     {
       minZoom: 2,
