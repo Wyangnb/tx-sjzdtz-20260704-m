@@ -617,13 +617,13 @@ function refreshMarker2(from, arr) {
         if (visible) {
             if (item['自定义区域']) {
                 var popupHtml = `
-                <div class="name">${this.name}${item['自定义区域'] !== ''? `<span> ( ${item['自定义区域']} ) </span>`: ''}</div>
+                <div class="name">${this?.sub_name || this.name}${item['自定义区域'] !== ''? `<span> ( ${item['自定义区域']} ) </span>`: ''}</div>
                  <div class="btn-floor" data-floor=${this.floor}></div>
                 <div class="address">地点：<span>${item['自定义区域']}</span></div>
             `;
             } else {
                 var popupHtml = `
-                <div class="name">${this.name}${item['自定义区域'] !== ''? `<span> ( ${item['自定义区域']} ) </span>`: ''}</div>
+                <div class="name">${this?.sub_name || this.name}${item['自定义区域'] !== ''? `<span> ( ${item['自定义区域']} ) </span>`: ''}</div>
                  <div class="btn-floor" data-floor=${this.floor}></div>
             `;
             }
@@ -1381,7 +1381,7 @@ var renderNavTypeList = function (list, navIndex = 0){
                 <div class="wz-bg">
                     <div class="wz-num">${item.num}</div>
                 </div>
-                <div class="wz-name">${item.name}</div>
+                <div class="wz-name">${item?.sub_name || item.name}</div>
             </div>`
         } else if (item.name === '进攻方基地') {
             html+=`
@@ -1390,7 +1390,7 @@ var renderNavTypeList = function (list, navIndex = 0){
                 <div class="wz-bg">
                     <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
                 </div>
-                <div class="wz-name">${item.name}</div>
+                <div class="wz-name">${item?.sub_name || item.name}</div>
             </div>`
         }else if ((item.name === '据点A' || item.name === '据点B'|| item.name === '据点C'||item.name === '据点D'||item.name === '据点E'||item.name === '据点A1'||item.name === '据点B1'||item.name === '据点C1'||item.name === '据点D1'||item.name === '据点E1') && !window.occupy) {
             html+=`
@@ -1399,7 +1399,7 @@ var renderNavTypeList = function (list, navIndex = 0){
                 <div class="wz-bg">
                     <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
                 </div>
-                <div class="wz-name">${item.name}</div>
+                <div class="wz-name">${item?.sub_name || item.name}</div>
             </div>`
         } else if (item.name === '据点A'  && window.occupy) {
             html+=`
@@ -1408,7 +1408,7 @@ var renderNavTypeList = function (list, navIndex = 0){
                 <div class="wz-bg">
                     <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
                 </div>
-                <div class="wz-name">${item.name}</div>
+                <div class="wz-name">${item?.sub_name || item.name}</div>
             </div>`
         } else if (isWar && (item.name.indexOf('突击车') > -1 || item.name.indexOf('枪') > -1)) {
             html+=`
@@ -1417,7 +1417,7 @@ var renderNavTypeList = function (list, navIndex = 0){
                 <div class="wz-bg">
                     <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
                 </div>
-                <div class="wz-name">${item.name}</div>
+                <div class="wz-name">${item?.sub_name || item.name}</div>
             </div>`
         } else if ('滑索'.indexOf(item.name) > -1) {
             html+=`
@@ -1426,7 +1426,7 @@ var renderNavTypeList = function (list, navIndex = 0){
                 <div class="wz-bg">
                     <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
                 </div>
-                <div class="wz-name">${item.name}</div>
+                <div class="wz-name">${item?.sub_name || item.name}</div>
             </div>`
         } else if (item.name === '出生点' || item.name === '撤离点' || item.name === '首领' || item.name === '行动接取站' || item.name === '固定弹药箱' || item.name === '载具补给站') {
             html+=`
@@ -1435,7 +1435,7 @@ var renderNavTypeList = function (list, navIndex = 0){
                 <div class="wz-bg">
                     <div class="wz-num">${item.num}</div>
                 </div>
-                <div class="wz-name">${item.name}</div>
+                <div class="wz-name">${item?.sub_name || item.name}</div>
             </div>`
         } else {
             html+=`
@@ -1443,7 +1443,7 @@ var renderNavTypeList = function (list, navIndex = 0){
                 <div class="wz-bg">
                     <div class="wz-num">${item.num}</div>
                 </div>
-                <div class="wz-name">${item.name}</div>
+                <div class="wz-name">${item?.sub_name || item.name}</div>
             </div>`
         }
        
@@ -2186,7 +2186,7 @@ function selectmarker(name) {
             <div class="wz-bg">
                 <div class="wz-num">${item.num}</div>
             </div>
-            <div class="wz-name">${item.name}</div>
+            <div class="wz-name">${item?.sub_name || item.name}</div>
         </div>`
     })
     // navTypyList.html(html)
@@ -3343,7 +3343,7 @@ function warInit (mapName, type, isBorder = false) {
             
             $(`.nav-list-nav${icon.substring(1)}`).addClass(`img_nav${icon.substring(1)}_click active`)
             var popupHtml = `
-                <div class="name">${element.name}</div>
+                <div class="name">${element?.sub_name || element.name}</div>
             `;
             // popupHtml += '</div>';
             cacheMarker.push(L.marker([pos.y, pos.x], {icon: myIcon}).bindPopup(popupHtml).addTo(map).on({
@@ -3362,9 +3362,9 @@ function warInit (mapName, type, isBorder = false) {
                     currClickMarker = this;
                     $(this.getElement()).addClass('click')
                     if (element['随机']) {
-                        markerName.html(`${element.name}${element['拾取条件'] && element['拾取条件'] !== ''? `<span> ( ${element['拾取条件']} ) </span>`: ` [${element['随机']}]`}`)
+                        markerName.html(`${element?.sub_name || element.name}${element['拾取条件'] && element['拾取条件'] !== ''? `<span> ( ${element['拾取条件']} ) </span>`: ` [${element['随机']}]`}`)
                     } else {
-                        markerName.html(`${element.name}${element['拾取条件'] && element['拾取条件'] !== ''? `<span> ( ${element['拾取条件']} ) </span>`: ''}`)
+                        markerName.html(`${element?.sub_name || element.name}${element['拾取条件'] && element['拾取条件'] !== ''? `<span> ( ${element['拾取条件']} ) </span>`: ''}`)
                     }
                     
                     if (this.myIcon.name.indexOf('基地') > -1 || (this.myIcon.name.indexOf('据点') > -1 && window.occupy)) {

@@ -442,6 +442,12 @@ var navList_az3 = [
                 icon: 'nav_ffcld',
             },
             {
+                name: '概率撤离点',
+                idType: 27,
+                num: 1,
+                icon: 'nav_sjcld',
+            },
+            {
                 name: '常规撤离点',
                 idType: 27,
                 num: 4,
@@ -1056,6 +1062,12 @@ var navListInfo_az3 = [
                 idType: 27,
                 num: 1,
                 icon: 'nav_ffcld',
+            },
+            {
+                name: '概率撤离点',
+                idType: 27,
+                num: 1,
+                icon: 'nav_sjcld',
             },
             {
                 name: '常规撤离点',
@@ -10336,6 +10348,15 @@ var mapArticle_az3 = [
         "z": ""
     },
     {
+        "name": "概率撤离点",
+        "自定义区域": "压水堆外侧",
+        "type": "retreat",
+        "icon": "sjcld",
+        "x": "181077.812500",
+        "y": "-224034.937500",
+        "z": ""
+    },
+    {
         "name": "常规撤离点",
         "自定义区域": "航天大道",
         "type": "retreat",
@@ -10714,7 +10735,7 @@ var navList2_az3 = [
             {
                 name: '概率撤离点',
                 idType: 27,
-                num: 2,
+                num: 3,
                 icon: 'nav_sjcld',
             },
             {
@@ -11331,7 +11352,7 @@ var navListInfo2_az3 = [
             {
                 name: '概率撤离点',
                 idType: 27,
-                num: 2,
+                num: 3,
                 icon: 'nav_sjcld',
             },
             {
@@ -21408,6 +21429,15 @@ var mapArticle2_az3 = [
         "icon": "sjcld",
         "x": "171243.984375",
         "y": "-250584.078125",
+        "z": "",
+    },
+    {
+        "name": "概率撤离点",
+        "自定义区域": "航天大道",
+        "type": "retreat",
+        "icon": "sjcld",
+        "x": "236034.937500",
+        "y": "-163267.812500",
         "z": "",
     },
     {
