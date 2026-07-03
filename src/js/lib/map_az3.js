@@ -10,21 +10,44 @@ var az3Info = {
     initX: -105,
     initY: 130,
     rotate: -90,
-    // floor: [
-    //   {
-    //     floor_f: 'B1',
-    //     floor_name :'皇家博物馆'
-    //   },
-    //   {
-    //    floor_f: '1F',
-    //    floor_name :'皇家博物馆'
-    //   },
-    //   {
-    //     floor_f: '2F',
-    //    floor_name :'皇家博物馆'
-    //   }
-    //  ],
-    //  floorInfo : bksFloor
+    floor: [
+      {
+        floor_f: '1F',
+        floor_address: '1',
+        floor_name :'RBMK反应堆'
+      },
+      {
+       floor_f: '2F',
+       floor_address: '1',
+       floor_name :'RBMK反应堆'
+      },
+      {
+        floor_f: '3F',
+        floor_address: '1',
+       floor_name :'RBMK反应堆'
+      },
+      {
+        floor_f: '1F',
+        floor_address: '2',
+        floor_name :'老科学院'
+      },
+      {
+       floor_f: '2F',
+       floor_address: '2',
+       floor_name :'老科学院'
+      },
+      {
+        floor_f: '1F',
+        floor_address: '3',
+        floor_name :'压水堆'
+      },
+      {
+       floor_f: '2F',
+       floor_address: '3',
+       floor_name :'压水堆'
+      },
+     ],
+     floorInfo : az3Floor
 }
 var selectRegion_az3 = [
     {

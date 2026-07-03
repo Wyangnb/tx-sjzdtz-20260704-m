@@ -16,12 +16,25 @@ var cxjyFloor = {
     latLngX: -25,
     latLngY: 55,
     pixelToLatLngRatio: -0.35,
-    href:
-      window.location.href.indexOf(80) > -1 ||
-      window.location.href.indexOf("test") > -1
-        ? "../../img/"
-        : "https://game.gtimg.cn/images/dfm/cp/a20250113map/",
-    floor: [
+    floorAliasMap: {
+          '行政区':'潮汐监狱',
+          '卸货区':'潮汐监狱',
+          '电梯井':'潮汐监狱',
+          '医疗实验区':'潮汐监狱',
+          '禁闭区':'潮汐监狱',
+          '牢房':'潮汐监狱',
+          '施工区':'潮汐监狱',
+          '潮汐控制室':'潮汐监狱',
+          '东侧小岛':'潮汐监狱',
+          '东瞭望台区':'潮汐监狱',
+          '西瞭望台区':'潮汐监狱',
+          '西瞭望台区':'潮汐监狱',
+          '蓄水区':'潮汐监狱',
+          '囚犯活动区':'潮汐监狱',
+          '水动力渠':'潮汐监狱',
+        },
+    floor: {
+      '潮汐监狱': [
       {
         floor_f: "1F",
         floor_name: "潮汐监狱",
@@ -75,6 +88,7 @@ var cxjyFloor = {
         pixelToLatLngRatio: -0.35,
       },
     ],
+}
   },
 
     navList_first: [

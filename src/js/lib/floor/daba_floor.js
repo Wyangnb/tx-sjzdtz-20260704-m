@@ -16,8 +16,14 @@ var dabaFloor = {
         // bj: 128,
 
         pixelToLatLngRatio: -0.85,
-        href: (window.location.href.indexOf(80) > -1 || window.location.href.indexOf("test") > -1) ? '../../img/': 'https://game.gtimg.cn/images/dfm/cp/a20250113map/',
-        floor: [
+        floorAliasMap: {
+          '地下': '地下通道',
+          '地下通道': '地下通道',
+          '行政楼': '行政辖区',
+          '行政辖区': '行政辖区'
+        },
+        floor: {
+          '行政辖区':[
             {
                 floor_f: 'B1',
                 floor_name :'地下通道',
@@ -62,7 +68,8 @@ var dabaFloor = {
                 initY: 69.5,
                 pixelToLatLngRatio: -0.85,
             }
-        ]
+          ]
+        }
     },
     navList_minus: [
         {

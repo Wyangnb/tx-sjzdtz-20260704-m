@@ -19,9 +19,11 @@ var cgxgFloor = {
     // latLngX: 0,
     // latLngY: 0,
     pixelToLatLngRatio: -0.35,
-    href:(window.location.href.indexOf(80) > -1 || window.location.href.indexOf("test") > -1)? "../../img/"
-        : "https://game.gtimg.cn/images/dfm/cp/a20250113map/",
-    floor: [
+     floorAliasMap: {
+          '钻石皇后酒店': '钻石皇后酒店',
+        },
+    floor: {
+      '钻石皇后酒店': [
       {
         floor_f: "1F",
         floor_name: "钻石皇后酒店",
@@ -48,7 +50,8 @@ var cgxgFloor = {
         latLngY: 53,
         pixelToLatLngRatio: -0.35,
       },
-    ],
+    ]
+    },
   },
   // 普通
   navList_firest: [

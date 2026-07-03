@@ -254,6 +254,181 @@ var isFloor = false;
 var currFloorIndex = -1;
 var currMapFloor = dabaFloor;
 var outFloor = true;
+var currFloorRegion = '';
+
+function getFloorGroupMap() {
+    var floorGroupMap = mapScaleInfo && mapScaleInfo.floorInfo && mapScaleInfo.floorInfo.info
+        ? mapScaleInfo.floorInfo.info.floor
+        : null;
+    if (floorGroupMap && !Array.isArray(floorGroupMap) && typeof floorGroupMap === 'object') {
+        return floorGroupMap;
+    }
+    return null;
+}
+
+function getFloorAliasMap() {
+    return mapScaleInfo && mapScaleInfo.floorInfo && mapScaleInfo.floorInfo.info
+        ? (mapScaleInfo.floorInfo.info.floorAliasMap || {})
+        : {};
+}
+
+function normalizeFloorRegionName(regionName) {
+    if (!regionName) return '';
+    var aliasMap = getFloorAliasMap();
+    return aliasMap[regionName] || regionName;
+}
+
+function resolveFloorList(regionName, fallbackToFlat) {
+    var floorGroupMap = getFloorGroupMap();
+    var normalizedRegionName = normalizeFloorRegionName(regionName);
+    if (floorGroupMap) {
+        if (normalizedRegionName && Array.isArray(floorGroupMap[normalizedRegionName])) {
+            return floorGroupMap[normalizedRegionName];
+        }
+
+        var floorGroupKeys = Object.keys(floorGroupMap);
+        for (var i = 0; i < floorGroupKeys.length; i++) {
+            var floorGroupKey = floorGroupKeys[i];
+            var floorGroupList = floorGroupMap[floorGroupKey];
+            if (!Array.isArray(floorGroupList)) continue;
+
+            if (
+                normalizedRegionName &&
+                (
+                    floorGroupKey === normalizedRegionName ||
+                    floorGroupKey.indexOf(normalizedRegionName) > -1 ||
+                    normalizedRegionName.indexOf(floorGroupKey) > -1
+                )
+            ) {
+                return floorGroupList;
+            }
+
+            for (var j = 0; normalizedRegionName && j < floorGroupList.length; j++) {
+                if (floorGroupList[j].floor_name === normalizedRegionName) {
+                    return floorGroupList;
+                }
+            }
+        }
+
+        return fallbackToFlat ? (Array.isArray(mapScaleInfo && mapScaleInfo.floor) ? mapScaleInfo.floor : []) : [];
+    }
+
+    if (Array.isArray(mapScaleInfo && mapScaleInfo.floor)) {
+        if (!normalizedRegionName) {
+            return mapScaleInfo.floor;
+        }
+        return mapScaleInfo.floor.filter(function (item) {
+            return item.floor_name === normalizedRegionName;
+        });
+    }
+
+    return [];
+}
+
+function getCurrentFloorList(regionName, shouldUpdateRegion) {
+    var resolvedRegionName = regionName || currFloorRegion;
+    if (!resolvedRegionName) {
+        var activeRegionName = $.trim($('.region-item.action').text());
+        if (activeRegionName) {
+            resolvedRegionName = activeRegionName;
+        }
+    }
+    if (!resolvedRegionName) {
+        var floorGroupMap = getFloorGroupMap();
+        if (floorGroupMap) {
+            var floorGroupKeys = Object.keys(floorGroupMap);
+            if (floorGroupKeys.length === 1) {
+                resolvedRegionName = floorGroupKeys[0];
+            }
+        }
+    }
+    var floorItems = resolveFloorList(resolvedRegionName, true);
+    if (shouldUpdateRegion !== false && resolvedRegionName) {
+        currFloorRegion = normalizeFloorRegionName(resolvedRegionName);
+    }
+    return floorItems;
+}
+
+function getFloorItem(index, regionName, floorCode, shouldUpdateRegion) {
+    var floorItems = getCurrentFloorList(regionName, shouldUpdateRegion);
+    if (floorCode) {
+        for (var i = 0; i < floorItems.length; i++) {
+            if (floorItems[i].floor_f === floorCode) {
+                return floorItems[i];
+            }
+        }
+    }
+    if (floorItems[index]) {
+        return floorItems[index];
+    }
+    return null;
+}
+
+function getActiveFloorConfig(index, regionName, floorCode) {
+    var floorItem = getFloorItem(index, regionName, floorCode);
+    if (floorItem) {
+        return floorItem;
+    }
+    var flatFloorList = mapScaleInfo && mapScaleInfo.floorInfo && mapScaleInfo.floorInfo.info && Array.isArray(mapScaleInfo.floorInfo.info.floor)
+        ? mapScaleInfo.floorInfo.info.floor
+        : [];
+    return flatFloorList[index] || null;
+}
+
+function getFloorIndexByCode(floorItems, floorCode, fallbackIndex) {
+    if (floorCode) {
+        for (var i = 0; i < floorItems.length; i++) {
+            if (floorItems[i].floor_f === floorCode) {
+                return i;
+            }
+        }
+    }
+    if (floorItems[fallbackIndex]) {
+        return fallbackIndex;
+    }
+    return -1;
+}
+
+function shouldRenderAllFloorItems() {
+    if (!Array.isArray(mapScaleInfo && mapScaleInfo.floor)) {
+        return false;
+    }
+    var floorAddressMap = {};
+    for (var i = 0; i < mapScaleInfo.floor.length; i++) {
+        var floorAddress = mapScaleInfo.floor[i].floor_address;
+        if (floorAddress) {
+            floorAddressMap[floorAddress] = true;
+        }
+    }
+    return Object.keys(floorAddressMap).length > 1;
+}
+
+function getFloorListForRender() {
+    if (shouldRenderAllFloorItems()) {
+        return mapScaleInfo.floor;
+    }
+    return getCurrentFloorList();
+}
+
+function buildFloorItemKey(floorInfo) {
+    if (!floorInfo) return '';
+    return [
+        floorInfo.floor_address || '',
+        floorInfo.floor_name || '',
+        floorInfo.floor_f || ''
+    ].join('__');
+}
+
+function buildFloorMapPath(floorInfo, floorCode) {
+    var resolvedFloorCode = floorInfo && floorInfo.floor_f ? floorInfo.floor_f : floorCode;
+    if (!resolvedFloorCode) {
+        return isZj ? `${currMap + currLv}_s` : `${currMap + currLv}`;
+    }
+    var floorPath = floorInfo && floorInfo.floor_address
+        ? `${floorInfo.floor_address}_${resolvedFloorCode}`
+        : resolvedFloorCode;
+    return isZj ? `${currMap + currLv}_s_${floorPath}` : `${currMap + currLv}_${floorPath}`;
+}
 
 // 定义名称与类名的映射，实现可扩展性
 const nameClassMap = {
@@ -690,10 +865,12 @@ function refreshMarker2(from, arr) {
                         this.isClick = true;
                         this.myIcon = myIcon;
                         if (that?.floor || that?.floor === 0) {
+                            var popupFloorInfo = getFloorItem(that.floor, item['自定义区域'], null, false);
                             $('.leaflet-popup').addClass('floor')
                             $('.btn-pop-floor').attr('data-name', that.name)
-                            $('.btn-pop-floor').attr('data-floor', mapScaleInfo?.floor[that.floor]?.floor_f)
+                            $('.btn-pop-floor').attr('data-floor', popupFloorInfo?.floor_f || mapScaleInfo?.floor[that.floor]?.floor_f || '')
                             $('.btn-pop-floor').attr('data-index', that.floor)
+                            $('.btn-pop-floor').attr('data-region', item['自定义区域'] || '')
                         } else {
                             $('.leaflet-popup').removeClass('floor')
                         }
@@ -972,16 +1149,25 @@ function addLayer (mapName) {
         southWest = L.latLng(0, 0)
         pixelToLatLngRatio = -1
     } else if (isFloor) {
-        mapWidth = mapScaleInfo.floorInfo.info.floor[currFloorIndex].boundsW
-        mapHeight = mapScaleInfo.floorInfo.info.floor[currFloorIndex].boundsH
+        var currentFloorConfig = getActiveFloorConfig(currFloorIndex, currFloorRegion);
+        if (!currentFloorConfig) {
+            currentFloorConfig = mapScaleInfo && Array.isArray(mapScaleInfo.floor) ? mapScaleInfo.floor[currFloorIndex] : null;
+        }
+        mapWidth = currentFloorConfig ? currentFloorConfig.boundsW : mapScaleInfo.floorInfo.info.boundsW
+        mapHeight = currentFloorConfig ? currentFloorConfig.boundsH : mapScaleInfo.floorInfo.info.boundsH
         // southWest = L.latLng(-25, 55)
         // pixelToLatLngRatio = -0.85
         // mapWidth = mapScaleInfo.boundsW
         // mapHeight = mapScaleInfo.boundsH
         console.log(mapScaleInfo.floorInfo.info.latLngX, mapScaleInfo);
         
-        southWest = L.latLng(mapScaleInfo.floorInfo.info.floor[currFloorIndex].latLngX, mapScaleInfo.floorInfo.info.floor[currFloorIndex].latLngY)
-        pixelToLatLngRatio = mapScaleInfo.floorInfo.info.pixelToLatLngRatio
+        southWest = L.latLng(
+            currentFloorConfig ? currentFloorConfig.latLngX : mapScaleInfo.floorInfo.info.latLngX,
+            currentFloorConfig ? currentFloorConfig.latLngY : mapScaleInfo.floorInfo.info.latLngY
+        )
+        pixelToLatLngRatio = currentFloorConfig && currentFloorConfig.pixelToLatLngRatio
+            ? currentFloorConfig.pixelToLatLngRatio
+            : mapScaleInfo.floorInfo.info.pixelToLatLngRatio
     } else if (isWar) {
         mapWidth = mapScaleInfo.boundsW
         mapHeight = mapScaleInfo.boundsH
@@ -1000,11 +1186,10 @@ function addLayer (mapName) {
         initX = mapScaleInfo.initX_s
         initY = mapScaleInfo.initY_s
     } else if (isFloor) {
-        
-        minZoom = mapScaleInfo.floorInfo.info.floor[currFloorIndex].minZoom
-        initZoom =  mapScaleInfo.floorInfo.info.floor[currFloorIndex].initZoom
-        initX = mapScaleInfo.floorInfo.info.floor[currFloorIndex].initX
-        initY = mapScaleInfo.floorInfo.info.floor[currFloorIndex].initY;
+        minZoom = currentFloorConfig ? currentFloorConfig.minZoom : mapScaleInfo.floorInfo.info.minZoom
+        initZoom = currentFloorConfig ? currentFloorConfig.initZoom : mapScaleInfo.floorInfo.info.initZoom
+        initX = currentFloorConfig ? currentFloorConfig.initX : mapScaleInfo.floorInfo.info.initX
+        initY = currentFloorConfig ? currentFloorConfig.initY : mapScaleInfo.floorInfo.info.initY;
         
     } else {
         minZoom = mapScaleInfo.minZoom
@@ -1119,6 +1304,7 @@ function anchorRegion (e) {
     e.stopPropagation();
     var x = $(e.target).attr('data-x');
     var y = $(e.target).attr('data-y');
+    currFloorRegion = normalizeFloorRegionName($.trim($(e.target).text()));
     var pos = getMapPos(x, y)
     if (isFloor) {
         isFloor = false;
@@ -1143,33 +1329,55 @@ function anchorRegion (e) {
 
 // 初始化楼层
 function initFloor () {
+    var currentFloorList = getFloorListForRender();
+    var activeFloorItem = currFloorIndex > -1 ? getFloorItem(currFloorIndex, currFloorRegion, null, false) : null;
+    var activeFloorKey = buildFloorItemKey(activeFloorItem);
     floorList.html('')
     floorTop = $('.map-floor-change-list')
     let html2 = ''
-    mapScaleInfo.floor.forEach((item, index) => {
-        let html = `<div class="floor-item floor-item-${index} ${currFloorIndex === index ? 'act' : ''}" data-index="${index}" data-floor="${item.floor_f}">${item.floor_f}</div>`
-        html2 += `<div class="map-floor-item floor_${item.floor_f} ${currFloorIndex === index ? 'act' : ''}" data-index="${index}"></div>`
+    currentFloorList.forEach((item, index) => {
+        let floorRegion = item.floor_name || ''
+        let floorItemKey = buildFloorItemKey(item)
+        let isActiveFloor = activeFloorKey && floorItemKey === activeFloorKey
+        let html = `<div class="floor-item floor-item-${index} ${isActiveFloor ? 'act' : ''}" data-index="${index}" data-address="${item.floor_address}" data-floor="${item.floor_f}" data-region="${floorRegion}" data-floor-key="${floorItemKey}">${item.floor_address ? item.floor_name : ''} ${item.floor_f}</div>`
+        html2 += `<div class="map-floor-item floor_${item.floor_f} ${isActiveFloor ? 'act' : ''}" data-index="${index}" data-floor="${item.floor_f}" data-region="${floorRegion}" data-floor-key="${floorItemKey}"></div>`
         floorList.append(html)
        
     })
+    if (currentFloorList.length && currentFloorList[0].floor_address) {
+        floorList.attr('data-address', 'more')
+    }
+    
     floorTop.html(html2)
     $('.btn-floor-mod').addClass('show')
-    $('.floor-item').on('click', (e) => {
-         outFloor = false;
-        isFloor = true;
-        let index = Number($(e.target).attr('data-index'));
-        let floor = $(e.target).attr('data-floor');
-        currFloorIndex = index;
-        $('.nav-option-ctn').addClass('floor')
-        saveMarker = Object.assign({}, visibleMarker);
-        if (isZj) {
-            changeMapLv(`${currMap + currLv + '_s_' +floor}`)
-        } else {
-            changeMapLv(`${currMap + currLv + '_' +floor}`)
-        }
-        enterFloorSave();
-      
-    })
+    $('.floor-item').off('click').on('click', enterFloorMode)
+    $('.map-floor-item').off('click').on('click', enterFloorMode)
+}
+
+function enterFloorMode(e) {
+    outFloor = false;
+    isFloor = true;
+    let index = Number($(e.target).attr('data-index'));
+    let floor = $(e.target).attr('data-floor');
+    let floorRegion = $(e.target).attr('data-region') || currFloorRegion;
+    let currentFloorList = getCurrentFloorList(floorRegion);
+    currFloorIndex = getFloorIndexByCode(currentFloorList, floor, index);
+    if (currFloorIndex === -1) return;
+    let currentFloor = currentFloorList[currFloorIndex];
+    let activeFloorKey = buildFloorItemKey(currentFloor);
+    currFloorRegion = normalizeFloorRegionName(floorRegion || currentFloor.floor_name);
+    $('.nav-option-ctn').addClass('floor')
+    $('.m-index').addClass('floor')
+    $('.btn-floor-mod').addClass('act')
+    $('.floor-text').text('退出楼层')
+    $('.floor-list').addClass('show')
+    $('.floor-item').removeClass('act')
+    $('.map-floor-item').removeClass('act')
+    $(`.floor-item[data-floor-key="${activeFloorKey}"]`).addClass('act')
+    $(`.map-floor-item[data-floor-key="${activeFloorKey}"]`).addClass('act')
+    saveMarker = Object.assign({}, visibleMarker);
+    changeMapLv(buildFloorMapPath(currentFloor, floor));
+    enterFloorSave();
 }
 
 // 进入楼层保留选项
@@ -2035,6 +2243,76 @@ function changeMapLv(type) {
                 removeExistingLayer: true
             }
         },
+        '50_1_1F': {
+            mapInfo: az3Info,
+            navList: () => az3Info.floorInfo.navList_firest1,
+            navTypeList: () => az3Info.floorInfo.navList_firest1,
+            mapIcons: () => az3Info.floorInfo.mapArticle_first1,
+            poiInfo: selectRegion_az3,
+            mapName: 'RBMK反应堆',
+            mapLayer: 'az3_1_1f',
+            lvName: '常规'
+        },
+         '50_1_2F': {
+            mapInfo: az3Info,
+            navList: () => az3Info.floorInfo.navList_second1,
+            navTypeList: () => az3Info.floorInfo.navList_second1,
+            mapIcons: () => az3Info.floorInfo.mapArticle_second1,
+            poiInfo: selectRegion_az3,
+            mapName: 'RBMK反应堆',
+            mapLayer: 'az3_1_2f',
+            lvName: '常规'
+        },
+        '50_1_3F': {
+            mapInfo: az3Info,
+            navList: () => az3Info.floorInfo.navList_three1,
+            navTypeList: () => az3Info.floorInfo.navList_three1,
+            mapIcons: () => az3Info.floorInfo.mapArticle_three1,
+            poiInfo: selectRegion_az3,
+            mapName: 'RBMK反应堆',
+            mapLayer: 'az3_1_3f',
+            lvName: '常规'
+        },
+        '50_2_1F': {
+            mapInfo: az3Info,
+            navList: () => az3Info.floorInfo.navList_firest2,
+            navTypeList: () => az3Info.floorInfo.navList_firest2,
+            mapIcons: () => az3Info.floorInfo.mapArticle_first2,
+            poiInfo: selectRegion_az3,
+            mapName: 'RBMK反应堆',
+            mapLayer: 'az3_2_1f',
+            lvName: '常规'
+        },
+         '50_2_2F': {
+            mapInfo: az3Info,
+            navList: () => az3Info.floorInfo.navList_second2,
+            navTypeList: () => az3Info.floorInfo.navList_second2,
+            mapIcons: () => az3Info.floorInfo.mapArticle_second2,
+            poiInfo: selectRegion_az3,
+            mapName: 'RBMK反应堆',
+            mapLayer: 'az3_2_2f',
+            lvName: '常规'
+        },
+        '50_3_1F': {
+            mapInfo: az3Info,
+            navList: () => az3Info.floorInfo.navList_firest3,
+            navTypeList: () => az3Info.floorInfo.navList_firest3,
+            mapIcons: () => az3Info.floorInfo.mapArticle_first3,
+            poiInfo: selectRegion_az3,
+            mapName: 'RBMK反应堆',
+            mapLayer: 'az3_3_1f',
+            lvName: '常规'
+        },
+         '50_3_2F': {
+            mapInfo: az3Info,
+            navList: () => az3Info.floorInfo.navList_second3,
+            navTypeList: () => az3Info.floorInfo.navList_second3,
+            mapIcons: () => az3Info.floorInfo.mapArticle_second3,
+            poiInfo: selectRegion_az3,
+            mapName: 'RBMK反应堆',
+            mapLayer: 'az3_3_2f',
+            lvName: '常规'
+        },
         '51': {
             mapInfo: az3Info,
             navList: navList2_az3,
@@ -2727,17 +3005,18 @@ var bindEvent = function () {
             var name = $(this).attr('data-name')
             var floor = $(this).attr('data-floor')
             var index = Number($(this).attr('data-index'))
+            var floorRegion = $(this).attr('data-region')
             console.log('name', currMap, currLv, floor, index);
             outFloor = false;
             isFloor = true;
-            currFloorIndex = index;
+            var currentFloorList = getCurrentFloorList(floorRegion);
+            currFloorIndex = getFloorIndexByCode(currentFloorList, floor, index);
+            if (currFloorIndex === -1) return;
+            var currentFloor = currentFloorList[currFloorIndex];
+            currFloorRegion = normalizeFloorRegionName(floorRegion || currentFloor.floor_name);
             $('.nav-option-ctn').addClass('floor')
             saveMarker = Object.assign({}, visibleMarker);
-            if (isZj) {
-                changeMapLv(`${currMap + currLv + '_s_' +floor}`)
-            } else {
-                changeMapLv(`${currMap + currLv + '_' +floor}`)
-            }
+            changeMapLv(buildFloorMapPath(currentFloor, floor))
             enterFloorSave();
             $('.m-index').addClass('floor')
             $('.floor-text').text('退出楼层')
@@ -3067,12 +3346,13 @@ function resetFloor () {
     isFloor = false;
     outFloor = true;
     currFloorIndex = -1;
+    currFloorRegion = '';
 }
 
 // 查找是否有楼层
 function findFloor (regionName) {
-    let floorInfo = mapScaleInfo.floor.find(item => item.floor_name === regionName);
-    if (floorInfo) {
+    let floorInfo = resolveFloorList(regionName, false);
+    if (floorInfo && floorInfo.length) {
         enterFloor();
         $('.btn-floor-mod').addClass('show')
 
@@ -3797,4 +4077,3 @@ window.addEventListener('load', () => {
     init();
     console.log(document.querySelector('.left-nav-ctn'));
 });
-

@@ -7149,6 +7149,12 @@ body::-webkit-scrollbar {
 .floor-list.show {
   display: block;
 }
+.floor-list[data-address="more"] {
+  width: 1.65rem;
+}
+.floor-list[data-address="more"] .floor-item {
+  width: 1.65rem;
+}
 .floor-list .floor-item {
   text-align: center;
   width: 80px;
