@@ -5,10 +5,10 @@ var cxjyInfo = {
     boundsH: 250,
     centerX: 50383.464844,
     centerY: 51155.902344,
-    minZoom: 1,
-    initZoom: 1,
-    initX: -115,
-    initY: 140,
+    minZoom: 2,
+    initZoom: 2,
+    initX: -135,
+    initY: 135,
     floor: [
         {
             floor_f: '1F',

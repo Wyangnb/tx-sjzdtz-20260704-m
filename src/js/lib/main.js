@@ -541,6 +541,28 @@ var visibleMarker2 = {
     }
 };
 
+function normalizeMarkerMode(mode) {
+    return typeof mode === 'string' ? mode.trim() : '';
+}
+
+function getMarkerMode(item) {
+    var itemMode = normalizeMarkerMode(item?.mode);
+    if (itemMode) {
+        return itemMode;
+    }
+    var pickupMode = normalizeMarkerMode(item?.['拾取条件']);
+    if (pickupMode === '泄露区刷新' || pickupMode === '需要密钥才能开启') {
+        return pickupMode;
+    }
+    return '';
+}
+
+function getMarkerFilterKey(item) {
+    if (!item?.name) return '';
+    var mode = getMarkerMode(item);
+    return mode ? `${item.name}__${mode}` : `${item.name}__default`;
+}
+
 var hoverMarker = {};
 var clickMarker = {}
 var ciLayer = null;
@@ -776,17 +798,18 @@ function refreshMarker2(from, arr) {
     $.each(arr, function (index, item) {
         var visible = false;
         var that = this;
-        if (from === "filter" && visibleMarker[item.name]) visible = true;
-        if (from === "filter" && visibleMarker['出生点'] && item.type === 'revive') {
+        var markerFilterKey = getMarkerFilterKey(item);
+        if (from === "filter" && visibleMarker[markerFilterKey]) visible = true;
+        if (from === "filter" && visibleMarker[getMarkerFilterKey({ name: '出生点' })] && item.type === 'revive') {
             visible = true;
         }
-        if (from === "filter" && visibleMarker['首领'] && item.type === 'Boss') {
+        if (from === "filter" && visibleMarker[getMarkerFilterKey({ name: '首领' })] && item.type === 'Boss') {
             visible = true;
         }
-        if (from === "filter" && (visibleMarker['行动接取站']) && item.type === 'move') {
+        if (from === "filter" && visibleMarker[getMarkerFilterKey({ name: '行动接取站' })] && item.type === 'move') {
             visible = true;
         }
-        if (from === "filter" && (visibleMarker['高价值']) && item.type === 'move') {
+        if (from === "filter" && visibleMarker[getMarkerFilterKey({ name: '高价值' })] && item.type === 'move') {
             visible = true;
         }
         if (visible) {
@@ -968,7 +991,7 @@ function toggleVisible(type, index) {
         } else {
             for (let index = 0; index < navTypeList[currLeftNav].typeList.length; index++) {
                 const element = navTypeList[currLeftNav].typeList[index];
-                visibleMarker[element.name] = (type.indexOf('all') > 0 ? true : false);
+                visibleMarker[getMarkerFilterKey(element)] = (type.indexOf('all') > 0 ? true : false);
             }
         }
        
@@ -1378,6 +1401,10 @@ function enterFloorMode(e) {
     saveMarker = Object.assign({}, visibleMarker);
     changeMapLv(buildFloorMapPath(currentFloor, floor));
     enterFloorSave();
+}
+
+function shouldSkipAllSelectionWhenExitFloor() {
+    return (`${currMap}${currLv}` === '50' || `${currMap}${currLv}` === '51') && !!listIsAll[currLeftNav];
 }
 
 // 进入楼层保留选项
@@ -2321,10 +2348,80 @@ function changeMapLv(type) {
             poiInfo: selectRegion_az3,
             mapName: 'AZ3',
             mapLayer: 'map_az3',
-            lvName: '常规',
+            lvName: '机密',
             extraConfig: {
                 removeExistingLayer: true
             }
+        },
+        '51_1_1F': {
+            mapInfo: az3Info,
+            navList: () => az3Info.floorInfo.navList2_firest1,
+            navTypeList: () => az3Info.floorInfo.navList2_firest1,
+            mapIcons: () => az3Info.floorInfo.mapArticle2_first1,
+            poiInfo: selectRegion_az3,
+            mapName: 'RBMK反应堆',
+            mapLayer: 'az3_1_1f',
+            lvName: '机密'
+        },
+         '51_1_2F': {
+            mapInfo: az3Info,
+            navList: () => az3Info.floorInfo.navList2_second1,
+            navTypeList: () => az3Info.floorInfo.navList2_second1,
+            mapIcons: () => az3Info.floorInfo.mapArticle2_second1,
+            poiInfo: selectRegion_az3,
+            mapName: 'RBMK反应堆',
+            mapLayer: 'az3_1_2f',
+            lvName: '机密'
+        },
+        '51_1_3F': {
+            mapInfo: az3Info,
+            navList: () => az3Info.floorInfo.navList2_three1,
+            navTypeList: () => az3Info.floorInfo.navList2_three1,
+            mapIcons: () => az3Info.floorInfo.mapArticle2_three1,
+            poiInfo: selectRegion_az3,
+            mapName: 'RBMK反应堆',
+            mapLayer: 'az3_1_3f',
+            lvName: '机密'
+        },
+        '51_2_1F': {
+            mapInfo: az3Info,
+            navList: () => az3Info.floorInfo.navList2_firest2,
+            navTypeList: () => az3Info.floorInfo.navList2_firest2,
+            mapIcons: () => az3Info.floorInfo.mapArticle2_first2,
+            poiInfo: selectRegion_az3,
+            mapName: '老科学院',
+            mapLayer: 'az3_2_1f',
+            lvName: '机密'
+        },
+         '51_2_2F': {
+            mapInfo: az3Info,
+            navList: () => az3Info.floorInfo.navList2_second2,
+            navTypeList: () => az3Info.floorInfo.navList2_second2,
+            mapIcons: () => az3Info.floorInfo.mapArticle2_second2,
+            poiInfo: selectRegion_az3,
+            mapName: '老科学院',
+            mapLayer: 'az3_2_2f',
+            lvName: '机密'
+        },
+        '51_3_1F': {
+            mapInfo: az3Info,
+            navList: () => az3Info.floorInfo.navList2_firest3,
+            navTypeList: () => az3Info.floorInfo.navList2_firest3,
+            mapIcons: () => az3Info.floorInfo.mapArticle2_first3,
+            poiInfo: selectRegion_az3,
+            mapName: '压水堆',
+            mapLayer: 'az3_3_1f',
+            lvName: '机密'
+        },
+         '51_3_2F': {
+            mapInfo: az3Info,
+            navList: () => az3Info.floorInfo.navList2_second3,
+            navTypeList: () => az3Info.floorInfo.navList2_second3,
+            mapIcons: () => az3Info.floorInfo.mapArticle2_second3,
+            poiInfo: selectRegion_az3,
+            mapName: '压水堆',
+            mapLayer: 'az3_3_2f',
+            lvName: '机密'
         },
         // 注意：原代码中32以下有一些重复的case(31_B1, 31_1F, 31_2F)，看起来可能是错误
     };
@@ -3322,13 +3419,20 @@ function enterFloor (regionName) {
     const floor_text = $('.floor-text')
     floorList.attr('class').indexOf('show') > -1 ? floorList.removeClass('show') : floorList.addClass('show')
     if ($('.btn-floor-mod').attr('class').indexOf('act') > -1) {
+        const skipKeepAllOnExit = shouldSkipAllSelectionWhenExitFloor();
         $('.btn-floor-mod').removeClass('act')
         floor_text.text('切换楼层')
         if (isFloor) {
             isFloor = false;
             currFloorIndex = -1
+            if (skipKeepAllOnExit) {
+                resetAll('none');
+                saveMarker = {};
+            }
             changeMapLv(`${currMap + currLv}`)
-            enterFloorSave();
+            if (!skipKeepAllOnExit) {
+                enterFloorSave();
+            }
             outFloor = true;
         }
         $('.nav-option-ctn').removeClass('floor')
@@ -3990,6 +4094,21 @@ function dataFilter (mapArticle) {
             typeList: []
         },
         {
+            titleType: 'mode',
+            title: '泄露区物资点',
+            typeList: []
+        },
+        {
+            titleType: 'my',
+            title: '密钥刷新点',
+            typeList: []
+        },
+        {
+            titleType: 'xxj',
+            title: '洗消间点',
+            typeList: []
+        },
+        {
             titleType: 'csd',
             title: '出生点',
             typeList: []
@@ -4062,6 +4181,261 @@ function dataFilter (mapArticle) {
         arrInfo
     }
     
+}
+
+renderNavTypeList = function (list, navIndex = 0) {
+    list = Array.isArray(list) ? list : [];
+    const seenFilterKeys = new Set();
+    const categories = {
+        wz: { title: '物资点', html: '' },
+        mode: { title: '泄露区物资点', html: '' },
+        my: { title: '密钥刷新点', html: '' },
+        xxj: { title: '洗消间点', html: '' },
+        csd: { title: '出生点', html: '' },
+        cld: { title: '撤离点', html: '' },
+        sl: { title: '首领', html: '' },
+        jd: { title: '据点', html: '' },
+        jdbsd: { title: '基地部署点', html: '' },
+        zj: { title: '载具', html: '' },
+        zjbjz: { title: '载具补给站', html: '' },
+        gddyx: { title: '固定弹药箱', html: '' },
+        gdwq: { title: '固定武器', html: '' },
+        zz: { title: '装置', html: '' }
+    };
+
+    function buildNavItem(item, index) {
+        const extraClass = nameClassMap[item.name] || '';
+        const filterKey = getMarkerFilterKey(item);
+        const markerMode = getMarkerMode(item);
+        return `
+        <div class="nav-list-item nav-list-item-${index} ${extraClass} nav-list-${item.icon} ${visibleMarker[filterKey] ? `img_${item.icon}_click active`: `img_${item.icon}`} ${item.num === 0 ? 'hide' : ''}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-mode="${markerMode}" data-filter-key="${filterKey}">
+            <div class="wz-bg">
+                <div class="wz-num" ${item.num === 1 ? 'hide' : ''}>${item.num}</div>
+            </div>
+            <div class="wz-name">${item?.sub_name || item.name}</div>
+        </div>`;
+    }
+
+    function addToCategory(item, index, category) {
+        if (item.num === 0) return;
+        categories[category].html += buildNavItem(item, index);
+    }
+
+    list.forEach(function (item, index) {
+        if (item.name === '行动接取站' || item.name === '高价值接取站') return;
+        const filterKey = getMarkerFilterKey(item);
+        if (seenFilterKeys.has(filterKey)) return;
+        seenFilterKeys.add(filterKey);
+
+        if (item.name.indexOf('撤离点') !== -1) {
+            addToCategory(item, index, 'cld');
+        } else if (item?.mode?.indexOf('泄露区') > -1) {
+            addToCategory(item, index, 'mode');
+        } else if (item?.mode?.indexOf('密钥') > -1) {
+            addToCategory(item, index, 'my');
+        } else if (item?.mode?.indexOf('洗消间点') > -1) {
+            addToCategory(item, index, 'xxj');
+        } else if (item.name.indexOf('出生点') !== -1) {
+            addToCategory(item, index, 'csd');
+        } else if (item.name.indexOf('首领') !== -1) {
+            addToCategory(item, index, 'sl');
+        } else if (item.name.indexOf('基地') > -1) {
+            addToCategory(item, index, 'jdbsd');
+        } else if (item.name.indexOf('据点') > -1) {
+            addToCategory(item, index, 'jd');
+        } else if (isWar && (item.name.indexOf('车') > -1 || item.name.indexOf('舟') > -1 || item.name.indexOf('轮式') > -1 || item.name.indexOf('直升机') > -1)) {
+            addToCategory(item, index, 'zj');
+        } else if (item.name.indexOf('载具补给站') > -1) {
+            addToCategory(item, index, 'zjbjz');
+        } else if (item.name.indexOf('固定弹药箱') > -1) {
+            addToCategory(item, index, 'gddyx');
+        } else if (isWar && (item.name.indexOf('枪') > -1 || item.name.indexOf('炮') > -1 || item.name.indexOf('密集阵') > -1)) {
+            addToCategory(item, index, 'gdwq');
+        } else if (item.name.indexOf('滑索') > -1 || item.name.indexOf('电梯') > -1) {
+            addToCategory(item, index, 'zz');
+        } else {
+            addToCategory(item, index, 'wz');
+        }
+
+        !typeListInit && (visibleMarker[filterKey] = false)
+    })
+
+    let html = '';
+    let isFirstCategory = true;
+    Object.keys(categories).forEach(function (key) {
+        if (!categories[key].html) return;
+        html += `<div class="fgx ${isFirstCategory ? 'top0' : ''} nav-${key}">${categories[key].title}</div>${categories[key].html}`;
+        isFirstCategory = false;
+    });
+
+    if (isWar) {
+        navTypyList.addClass('war')
+        navTypyList.removeClass('normal')
+    } else {
+        navTypyList.addClass('normal')
+        navTypyList.removeClass('war')
+    }
+    $('.nav-option-ctn').attr('data-map', currMap)
+    navTypyList.html(html)
+    typeListInit = true;
+    visibleMarker2[navIndex].isInit = true;
+}
+
+selectmarker = function (name) {
+    if (name === '') {
+        mapSelectCtn.removeClass('show');
+        return;
+    }
+    var markerList = []
+    var seenFilterKeys = new Set();
+    var html = '';
+    for (let index = 0; index < allNavList[0].typeList.length; index++) {
+        const element = allNavList[0].typeList[index];
+        const filterKey = getMarkerFilterKey(element);
+        if (fuzzyMatch(element.name, name) && !seenFilterKeys.has(filterKey)) {
+            seenFilterKeys.add(filterKey);
+            markerList.push(element)
+        }
+    }
+    markerList.length && markerList.forEach(function (item, index) {
+        const filterKey = getMarkerFilterKey(item);
+        const markerMode = getMarkerMode(item);
+        html+=`
+        <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[filterKey] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-mode="${markerMode}" data-filter-key="${filterKey}">
+            <div class="wz-bg">
+                <div class="wz-num">${item.num}</div>
+            </div>
+            <div class="wz-name">${item?.sub_name || item.name}</div>
+        </div>`
+    })
+    selectCtn.html(html)
+    mapSelectCtn.addClass('show');
+
+    bindOptionEvent();
+}
+
+bindOptionEvent = function () {
+    var NavListItem = $('.nav-list-item')
+    NavListItem.off('click').on('click', function (e) {
+        var $target = $(e.currentTarget);
+        var icon = $target.attr('data-icon');
+        var name = $target.attr('data-name');
+        var filterKey = $target.attr('data-filter-key') || name;
+        var NavListItemNum = $target.find('.wz-num')
+        if (NavListItemNum.text() == 0) return;
+        if (!visibleMarker[filterKey]) {
+            $target.addClass(`img_${icon}_click active`)
+        } else {
+            $target.removeClass(`img_${icon}_click active`)
+            $target.addClass(`img_${icon}`)
+        }
+        currNavIcon = name;
+        NavCliciIndex++;
+        toggleVisible(filterKey, currLeftNav);
+        saveMarker = Object.assign({}, visibleMarker);
+        
+        let chooseNum = $('.nav-type-list').find('.nav-list-item.active').length;
+        let totalNum = $('.nav-type-list').find('.nav-list-item').not('.hide').length;
+        if (chooseNum === totalNum) {
+            $('.choose-all').attr('class', 'img_all_open choose-all')
+        } else {
+            if (listIsAll[currLeftNav]) {
+                listIsAll[currLeftNav] = false;
+                listIsAll[0] = false;
+            }
+            $('.choose-all').attr('class', 'img_all_close choose-all')
+        }
+    })
+}
+
+enterFloorSave = function () {
+    for (const key in saveMarker) {
+        if (Object.hasOwnProperty.call(saveMarker, key) && saveMarker[key]) {
+            $(`.nav-list-item[data-filter-key="${key}"]`).addClass('active')
+            toggleVisible(key, currLeftNav);
+        }
+    }
+    visibleMarker = Object.assign({}, saveMarker);
+}
+
+dataFilter = function (mapArticle) {
+    let arr = [
+        { name: "保险箱" }, { name: "小保险箱" }, { name: "服务器" }, { name: "电脑" },
+        { name: "电脑机箱" }, { name: "武器箱" }, { name: "大武器箱" }, { name: "弹药箱" },
+        { name: "工具柜" }, { name: "收纳盒" }, { name: "一件衣服" }, { name: "军用医疗包" },
+        { name: "医疗物资堆" }, { name: "旅行包" }, { name: "手提箱" }, { name: "储物柜" },
+        { name: "高级储物箱" }, { name: "抽屉柜" }, { name: "登山包" }, { name: "快递箱" },
+        { name: "航空储物箱" }, { name: "垃圾桶" }, { name: "搅拌车" }, { name: "野外物资箱" },
+        { name: "鸟窝" }, { name: "藏匿物" }, { name: "高级旅行箱" }, { name: "出生点" },
+        { name: "付费撤离点" }, { name: "常规撤离点" }, { name: "概率撤离点" }, { name: "列车撤离点" },
+        { name: "首领" }
+    ]
+    let arrInfo = [
+        { titleType: "all", title: "全部", typeList: [] },
+        { titleType: "wzd", title: "物资点", typeList: [] },
+        { titleType: 'mode', title: '泄露区物资点', typeList: [] },
+        { titleType: 'my', title: '密钥刷新点', typeList: [] },
+        { titleType: 'xxj', title: '洗消间点', typeList: [] },
+        { titleType: 'csd', title: '出生点', typeList: [] },
+        { titleType: "cld", title: "撤离点", typeList: [] },
+        { titleType: "首领", title: "首领", typeList: [] }
+    ];
+    let numList = {}
+
+    for (let index = 0; index < mapArticle.length; index++) {
+        const element = mapArticle[index];
+        if (element.name.indexOf('接取站') !== -1) {
+            continue;
+        }
+        if (element.icon === 'boss') {
+            element.name = '首领'
+        }
+        const filterKey = getMarkerFilterKey(element)
+        numList[filterKey] = numList[filterKey] ? numList[filterKey] + 1 : 1
+        if (!arr.some(item => getMarkerFilterKey(item) === filterKey)) {
+            arr.push({
+                name: element.name,
+                icon: 'nav_' + element.icon,
+                mode: getMarkerMode(element)
+            })
+        } else {
+            const existingItem = arr.find(item => getMarkerFilterKey(item) === filterKey);
+            existingItem.icon = 'nav_' + element.icon;
+            existingItem.mode = getMarkerMode(element);
+        }
+    }
+    
+    for (let index = 0; index < arr.length; index++) {
+        const element = arr[index];
+        const filterKey = getMarkerFilterKey(element)
+        if (numList[filterKey]) {
+            element.num = numList[filterKey]
+        } else {
+            element.num = element.num || 0
+        }
+
+        if (element.name === '出生点') {
+            arrInfo[5]['typeList'].push(element)
+        } else if (element.mode && element.mode.indexOf('泄露区') > -1) {
+            arrInfo[2]['typeList'].push(element)
+        } else if (element.mode && element.mode.indexOf('密钥') > -1) {
+            arrInfo[3]['typeList'].push(element)
+        } else if (element.mode && element.mode.indexOf('洗消间点') > -1) {
+            arrInfo[4]['typeList'].push(element)
+        } else if (element.name.indexOf('撤离点') > -1) {
+            arrInfo[6]['typeList'].push(element)
+        } else if (element.name === '首领') {
+            arrInfo[7]['typeList'].push(element)
+        } else {
+            arrInfo[1]['typeList'].push(element)
+        }
+    }
+
+    arrInfo[0]['typeList'] = arr
+    return {
+        arr,
+        arrInfo
+    }
 }
 
 
