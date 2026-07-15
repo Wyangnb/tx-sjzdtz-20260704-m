@@ -911,7 +911,8 @@ function refreshMarker2(from, arr) {
                         } else if (item['撤离条件']) {
                             markerName.html(`${ that?.sub_name || that.name}${item['撤离条件'] && item['撤离条件'] !== ''? `<span> ( ${item['撤离条件']} ) </span>`: ` [${item['撤离条件']}]`}`)
                         } else {
-                            markerName.html(`${ that?.sub_name || that.name}${item['拾取条件'] && item['拾取条件'] !== ''? `<span> ( ${item['拾取条件']} ) </span>`: ''}`)
+                            var markerCondition = item['拾取条件'] || item['出现条件'] || '';
+                            markerName.html(`${ that?.sub_name || that.name}${markerCondition !== '' ? `<span> ( ${markerCondition} ) </span>` : ''}`)
                         }
                         if (this.myIcon.name.indexOf('基地') > -1) {
                             initWarSwiper(this.myIcon.name, that);
@@ -2456,6 +2457,9 @@ function changeMapLv(type) {
             navTypeList = arrInfo;
         }
 
+
+        console.log('allNavList', allNavList);
+        console.log('navTypeList', navTypeList);
         // 设置地图名称和难度
         const lvName = config.lvName || (config.getLvName ? config.getLvName(chooseItemLvName) : '常规');
         console.log('changeMapLv', config.mapName, lvName, config.lvName);
@@ -4104,8 +4108,8 @@ function dataFilter (mapArticle) {
             typeList: []
         },
         {
-            titleType: 'xxj',
-            title: '洗消间点',
+            titleType: 'qxj',
+            title: '清洗间点位',
             typeList: []
         },
         {
@@ -4190,7 +4194,7 @@ renderNavTypeList = function (list, navIndex = 0) {
         wz: { title: '物资点', html: '' },
         mode: { title: '泄露区物资点', html: '' },
         my: { title: '密钥刷新点', html: '' },
-        xxj: { title: '洗消间点', html: '' },
+        qxj: { title: '清洗间点位', html: '' },
         csd: { title: '出生点', html: '' },
         cld: { title: '撤离点', html: '' },
         sl: { title: '首领', html: '' },
@@ -4231,10 +4235,10 @@ renderNavTypeList = function (list, navIndex = 0) {
             addToCategory(item, index, 'cld');
         } else if (item?.mode?.indexOf('泄露区') > -1) {
             addToCategory(item, index, 'mode');
-        } else if (item?.mode?.indexOf('密钥') > -1) {
+        } else if (item?.name?.indexOf('密钥') > -1) {
             addToCategory(item, index, 'my');
-        } else if (item?.mode?.indexOf('洗消间点') > -1) {
-            addToCategory(item, index, 'xxj');
+        } else if (item?.name?.indexOf('清洗间') > -1) {
+            addToCategory(item, index, 'qxj');
         } else if (item.name.indexOf('出生点') !== -1) {
             addToCategory(item, index, 'csd');
         } else if (item.name.indexOf('首领') !== -1) {
@@ -4375,7 +4379,7 @@ dataFilter = function (mapArticle) {
         { titleType: "wzd", title: "物资点", typeList: [] },
         { titleType: 'mode', title: '泄露区物资点', typeList: [] },
         { titleType: 'my', title: '密钥刷新点', typeList: [] },
-        { titleType: 'xxj', title: '洗消间点', typeList: [] },
+        { titleType: 'qxj', title: '清洗间点位', typeList: [] },
         { titleType: 'csd', title: '出生点', typeList: [] },
         { titleType: "cld", title: "撤离点", typeList: [] },
         { titleType: "首领", title: "首领", typeList: [] }
@@ -4418,9 +4422,9 @@ dataFilter = function (mapArticle) {
             arrInfo[5]['typeList'].push(element)
         } else if (element.mode && element.mode.indexOf('泄露区') > -1) {
             arrInfo[2]['typeList'].push(element)
-        } else if (element.mode && element.mode.indexOf('密钥') > -1) {
+        } else if (element.mode && element.name.indexOf('密钥') > -1) {
             arrInfo[3]['typeList'].push(element)
-        } else if (element.mode && element.mode.indexOf('洗消间点') > -1) {
+        } else if (element.mode && element.name.indexOf('清洗间') > -1) {
             arrInfo[4]['typeList'].push(element)
         } else if (element.name.indexOf('撤离点') > -1) {
             arrInfo[6]['typeList'].push(element)
