@@ -850,7 +850,7 @@ function refreshMarker2(from, arr) {
                 let rotate = currWarMap === 'qhz' ? 90 : 180
                 var myIcon =  L.divIcon({
                     className: `${isWar ? 'map-war-icon' : 'map-icon'} ${nameClassMap[that.name] || ''}`,
-                    html: `<div class="map-icon-bg" style="${that?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(that?.rotate) + rotate}deg)` : ''}"><img src="${path + iconName}.png"/></div>`,
+                    html: `<div class="map-icon-bg" style="${that?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(that?.rotate) + rotate}deg)` : ''}"><img src="${path + iconName}.png"/><text class="marker-order" style="${that?.index ? `display: block;` : 'display: none;'}">#${that?.index}</text></div>`,
                     iconSize: [30, 30],			//设置图标大小
                     iconAnchor: [15, 15],		//设置图标偏移
                 })
@@ -900,7 +900,7 @@ function refreshMarker2(from, arr) {
                         this.openPopup();
                         this.setIcon( L.divIcon({
                             className: `${isWar ? 'map-war-icon' : 'map-icon'} click ${nameClassMap[that.name] || ''}`,
-                            html: `<div class="map-icon-bg" style="${that?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(that?.rotate) + rotate}deg)` : ''}"><img src="${path + iconName}.png"/></div>`,
+                            html: `<div class="map-icon-bg" style="${that?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(that?.rotate) + rotate}deg)` : ''}"><img src="${path + iconName}.png"/><text class="marker-order" style="${that?.index ? `display: block;` : 'display: none;'}">#${that?.index}</text></div>`,
                             iconSize: [50, 50],			//设置图标大小
                             iconAnchor: [25, 25],		//设置图标偏移
                         }));
@@ -910,6 +910,9 @@ function refreshMarker2(from, arr) {
                             markerName.html(`${ that?.sub_name || that.name}${item['拾取条件'] && item['拾取条件'] !== ''? `<span> ( ${item['拾取条件']} ) </span>`: ` [${item['随机']}]`}`)
                         } else if (item['撤离条件']) {
                             markerName.html(`${ that?.sub_name || that.name}${item['撤离条件'] && item['撤离条件'] !== ''? `<span> ( ${item['撤离条件']} ) </span>`: ` [${item['撤离条件']}]`}`)
+                        } else if (item?.img) {
+                            $('.marker-preview').attr('src', item?.img)
+                            markerName.html(`${ that?.sub_name || that.name}`)
                         } else {
                             var markerCondition = item['拾取条件'] || item['出现条件'] || '';
                             markerName.html(`${ that?.sub_name || that.name}${markerCondition !== '' ? `<span> ( ${markerCondition} ) </span>` : ''}`)
@@ -920,17 +923,30 @@ function refreshMarker2(from, arr) {
                         // this?.remove()
                        
                         addressName.html(that['自定义区域'])
+                        if (that['自定义区域']) {
+                            $('.address').show();
+                        } else {
+                            $('.address').hide();
+                        }
+                        if (item?.img) {
+                            $('.marker-preview-ctn').show();
+                        } else {
+                            $('.marker-preview-ctn').hide();
+                        }
                         markerPop.addClass('show')
                         console.log('that', that);
-                        
+                        $('.marker-pop-ctn').removeClass('preview')
                         // 如果有楼层，则显示楼层按钮
                         if (that?.floor || that?.floor === 0) {
                             $('.marker-pop-ctn').attr('data-floor', that.floor)
                             $('.marker-pop-ctn').attr('data-name', that.name)
                             $('.marker-pop-ctn').attr('data-index', index)
                             $('.marker-pop-ctn').addClass('floor')
+                        } else if (that?.index) {
+                            $('.marker-pop-ctn').addClass('preview')
                         } else {
                             $('.marker-pop-ctn').removeClass('floor')
+                           
                         }
                     },
                     popupclose: function () {
@@ -1510,6 +1526,7 @@ var initNav = function () {
     
     allNavList.forEach(function (item, index) {
         if (item.titleType === 'xdjqz') return;
+        
         if (isWar) {
             html+= `
             <div class="nav-option-item nav-option-item-${index}  ${currLeftNav === index ? 'active': ''}" data-index="${index}">
@@ -1603,10 +1620,12 @@ var initNav = function () {
 
 var renderNavTypeList = function (list, navIndex = 0){
     var html = ''
-    if (list.length > 15) {
+    if (list.length > 15 && list[1].titleType !== 'cbt') {
         html = '<div class="fgx top0 nav-wz">物资点</div>'
+    } else {
+        html = '<div class="fgx top0 nav-cbt">藏宝图</div>'
     }
-    console.log(1111, list);
+    console.log(1111, list[1].titleType, list);
     
     list.forEach(function (item, index) {
         if (item.name === '行动接取站' || item.name === '高价值接取站') return;
@@ -2488,6 +2507,8 @@ function changeMapLv(type) {
         if (config.extraConfig && config.extraConfig.removeExistingLayer) {
             map.addLayer(currLayer);
         }
+
+        initNav();
 
         return true;
     };
@@ -4093,6 +4114,11 @@ function dataFilter (mapArticle) {
             typeList: []
         },
         { 
+            titleType: "cbt",
+            title: "藏宝图",
+            typeList: []
+        },
+        { 
             titleType: "wzd",
             title: "物资点",
             typeList: []
@@ -4191,6 +4217,7 @@ renderNavTypeList = function (list, navIndex = 0) {
     list = Array.isArray(list) ? list : [];
     const seenFilterKeys = new Set();
     const categories = {
+        cbt: { title: '藏宝图', html: '' },
         wz: { title: '物资点', html: '' },
         mode: { title: '泄露区物资点', html: '' },
         my: { title: '密钥刷新点', html: '' },
@@ -4233,6 +4260,8 @@ renderNavTypeList = function (list, navIndex = 0) {
 
         if (item.name.indexOf('撤离点') !== -1) {
             addToCategory(item, index, 'cld');
+        } else if (item.name.indexOf('藏宝图') !== -1) {
+            addToCategory(item, index, 'cbt');
         } else if (item?.mode?.indexOf('泄露区') > -1) {
             addToCategory(item, index, 'mode');
         } else if (item?.name?.indexOf('密钥') > -1) {
@@ -4376,6 +4405,7 @@ dataFilter = function (mapArticle) {
     ]
     let arrInfo = [
         { titleType: "all", title: "全部", typeList: [] },
+        { titleType: "cbt", title: "藏宝图", typeList: [] },
         { titleType: "wzd", title: "物资点", typeList: [] },
         { titleType: 'mode', title: '泄露区物资点', typeList: [] },
         { titleType: 'my', title: '密钥刷新点', typeList: [] },
