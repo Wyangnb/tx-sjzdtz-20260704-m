@@ -6665,6 +6665,7 @@ body::-webkit-scrollbar {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .m-main-wrap .nav-ctn .nav-type-list.normal .nav-list-item .wz-bg .wz-num {
+  position: absolute;
   opacity: 0.8;
   font-size: 16px;
   color: #EAEBEB;
@@ -7229,7 +7230,7 @@ body::-webkit-scrollbar {
   position: absolute;
   right: 0.25rem;
   top: 2.6rem;
-  width: 80px;
+  width: 160px;
   color: #cfd0d1;
   border: 1px solid #515658;
   background-color: #0e1112;
@@ -7246,7 +7247,7 @@ body::-webkit-scrollbar {
 }
 .floor-list .floor-item {
   text-align: center;
-  width: 80px;
+  width: 160px;
   line-height: 55px/2;
   font-size: 24px;
   opacity: 0.3;

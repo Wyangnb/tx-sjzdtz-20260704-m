@@ -298,8 +298,8 @@ body {
                  
                     overflow: hidden;
                     &.show{
-                        height: 430px/2;
-                        height: 1830px/2;
+                        height: 1970px/2; // 14 项（每项 140px/2）；新增地图按 140px/2 递增
+                        overflow-y: auto;
                         border: solid 1px #9a9b9b;
                         background-color: #0e1112;
                     }
@@ -1239,6 +1239,7 @@ body {
                         height: 210px/2;
                         border: 1px solid rgba(255, 255, 255, 0.3);
                         .wz-num{
+                            position: absolute;
                             opacity: 0.8;
                             font-size: 16px;
                             color: #EAEBEB;
@@ -1794,7 +1795,7 @@ body {
     top: 2.6rem;
     // left: 30px;
     // top: 10px;
-    width: 80px;
+    width: 160px;
     // height: 280px/2;
     color: #cfd0d1;
     border: 1px solid #515658;
@@ -1813,7 +1814,7 @@ body {
         // margin-left: 20px;
         // padding-left: 13px;
         text-align: center;
-        width: 80px;
+        width: 160px;
         // height: 28px;
         // text-align: center;
         line-height: 55px/2;

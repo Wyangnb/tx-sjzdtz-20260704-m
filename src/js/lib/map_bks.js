@@ -262,13 +262,13 @@ var navList_bks = [
                 "num": 26,
                 "icon": "nav_xlx"
               },
-              {
-                "name": "藏宝图",
-                "lang": "lang_gjlxx",
-                "idType": 25,
-                "num": 11,
-                "icon": "nav_cbt"
-              },
+              // {
+              //   "name": "藏宝图",
+              //   "lang": "lang_gjlxx",
+              //   "idType": 25,
+              //   "num": 11,
+              //   "icon": "nav_cbt"
+              // },
             {
                 name: '出生点',
                 idType: 26,
@@ -561,18 +561,18 @@ var navListInfo_bks = [
             // },
         ]
     },
-    {
-      titleType: 'cbt',
-      title: '藏宝图',
-      typeList: [
-          {
-              name: '藏宝图',
-              idType: 26,
-              num: 10,
-              icon: 'nav_cbt',
-          },
-      ]
-  },
+  //   {
+  //     titleType: 'cbt',
+  //     title: '藏宝图',
+  //     typeList: [
+  //         {
+  //             name: '藏宝图',
+  //             idType: 26,
+  //             num: 10,
+  //             icon: 'nav_cbt',
+  //         },
+  //     ]
+  // },
     {
       titleType: 'wzd',
       title: '物资点',
@@ -8240,13 +8240,13 @@ var navList2_bks = [
             "num": 26,
             "icon": "nav_xlx"
           },
-          {
-            "name": "藏宝图",
-            "lang": "lang_gjlxx",
-            "idType": 25,
-            "num": 10,
-            "icon": "nav_cbt"
-          },
+          // {
+          //   "name": "藏宝图",
+          //   "lang": "lang_gjlxx",
+          //   "idType": 25,
+          //   "num": 10,
+          //   "icon": "nav_cbt"
+          // },
           {
               name: '出生点',
               idType: 26,
@@ -8291,10 +8291,10 @@ var navList2_bks = [
           // },
       ]
   },
-  {
-    titleType: 'cbt',
-    title: '藏宝图',
-},
+//   {
+//     titleType: 'cbt',
+//     title: '藏宝图',
+// },
   {
       titleType: 'wzd',
       title: '物资点',
@@ -8535,18 +8535,18 @@ var navListInfo2_bks = [
           // },
       ]
   },
-  {
-    titleType: 'cbt',
-    title: '藏宝图',
-    typeList: [
-        {
-            name: '藏宝图',
-            idType: 26,
-            num: 10,
-            icon: 'nav_cbt',
-        },
-    ]
-},
+//   {
+//     titleType: 'cbt',
+//     title: '藏宝图',
+//     typeList: [
+//         {
+//             name: '藏宝图',
+//             idType: 26,
+//             num: 10,
+//             icon: 'nav_cbt',
+//         },
+//     ]
+// },
   {
     titleType: 'wzd',
     title: '物资点',

@@ -1,5 +1,8 @@
 /* eslint-disable */
 
+var IMG_PRE = (window.location.href.indexOf(80) > -1) ? '': '//game.gtimg.cn/images/dfm/cp/a20240729directory';
+
+
 var getQuery = function (name) {
     var m = window.location.search.match(new RegExp('(\\?|&)' + name + '=([^&]*)(&|$)'));
     return !m ? '' : decodeURIComponent(m[2]);
@@ -410,6 +413,14 @@ function getFloorListForRender() {
     return getCurrentFloorList();
 }
 
+// 判断导航数据是否为"分组形态"（[{titleType, title, typeList}]）；扁平条目数组（雷达站楼层 navList_ldz_*）返回 false。
+// 酒店等既有楼层 navList_firest/navList_second 是分组形态 → 有真分类 tab，必须走 initNav 正常渲染；
+// 雷达站楼层 navList_ldz_* 是扁平条目 → 无组概念，需整列渲染。
+function isGroupedNav(arr) {
+    return Array.isArray(arr) && arr.length > 0 && !!arr[0] &&
+        !!arr[0].titleType && Array.isArray(arr[0].typeList);
+}
+
 function buildFloorItemKey(floorInfo) {
     if (!floorInfo) return '';
     return [
@@ -561,6 +572,195 @@ function getMarkerFilterKey(item) {
     if (!item?.name) return '';
     var mode = getMarkerMode(item);
     return mode ? `${item.name}__${mode}` : `${item.name}__default`;
+}
+
+// ========== ★ 鱼类导航组（自 PC 版迁移，去国际化） ==========
+// 静态 nav 数据（navList_az3 等）没有"鱼类"入口；地图点位数据 mapArticle_* 中 catalog==='fish'
+// 的条目在此按 name__模式 聚合为第 N+1 组 tab（独立 tab，与 PC 版一致），同种鱼多个点位合并为 num。
+// 只在有鱼的地图追加（无鱼不产生空组）；floor（楼层扁平 nav）与战争（isWar）流程不处理。
+function buildFishGroup(icons) {
+    var entryMap = {};
+    var numMap = {};
+    (Array.isArray(icons) ? icons : []).forEach(function (item) {
+        if (!item || !item.name || item.catalog !== 'fish') return;
+        var key = getMarkerFilterKey(item);
+        numMap[key] = (numMap[key] || 0) + 1;
+        if (entryMap[key]) return;
+        var entry = { name: item.name, icon: item.icon ? 'nav_' + item.icon : 'nav_wz' };
+        var mode = getMarkerMode(item);
+        if (mode) entry.mode = mode;            // 携带 mode 保证 getMarkerFilterKey 与 marker 侧一致
+        if (item.catalog) entry.catalog = item.catalog;
+        if (item.sub_name) entry.sub_name = item.sub_name;
+        entryMap[key] = entry;
+    });
+    var typeList = Object.keys(entryMap).map(function (k) {
+        entryMap[k].num = numMap[k];
+        return entryMap[k];
+    });
+    return { titleType: 'yl', title: '鱼类', typeList: typeList };
+}
+// 幂等追加"鱼类"组到导航组数组末尾（已存在 yl 组则原样返回）；当前地图无鱼时不追加
+function ensureFishGroup(arr, icons) {
+    if (!Array.isArray(arr) || !Array.isArray(icons)) return arr;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] && arr[i].titleType === 'yl') return arr;
+    }
+    var group = buildFishGroup(icons);
+    if (!group.typeList.length) return arr;
+    return arr.concat([group]);
+}
+// 取导航组数组中的"鱼类"组条目列表（无鱼返回 []）。allNavList / navTypeList 各自持有独立的 yl 组对象，
+// 故两边分别取，保持与 ensureFishGroup 一致的"各自构建"模式，避免跨数组共享同一批对象。
+function getFishTypeList(arr) {
+    if (!Array.isArray(arr)) return [];
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] && arr[i].titleType === 'yl') return Array.isArray(arr[i].typeList) ? arr[i].typeList : [];
+    }
+    return [];
+}
+// ★ 把鱼类条目注入"全部"组（allNavList[0] / titleType==='all'）
+// 背景：默认视图走 renderNavTypeList(allNavList[0].typeList, 0)，而静态 nav（navList_az3[0]）里
+// 一条 catalog==='fish' 都没有 —— 只有点「鱼类」tab 才走 navTypeList[N]。结果首屏「全部」看不到鱼。
+// 实现约束：恒返回**新数组**、只替换 [0]，绝不原地 push（避免污染模块级静态 nav、重复注入无限膨胀）。
+function injectFishIntoAll(arr, fishEntries) {
+    if (!Array.isArray(arr) || !arr.length) return arr;
+    if (!Array.isArray(fishEntries) || !fishEntries.length) return arr;
+    var head = arr[0];
+    if (!head || head.titleType !== 'all' || !Array.isArray(head.typeList)) return arr;
+    // 按 filterKey 去重：已存在同名同 mode 的条目则跳过（重复渲染会被 renderNavTypeList 的 seenFilterKeys 吃掉，但 num 会算错）
+    var existKeys = {};
+    head.typeList.forEach(function (item) {
+        if (item) existKeys[getMarkerFilterKey(item)] = true;
+    });
+    var added = fishEntries.filter(function (item) {
+        return item && !existKeys[getMarkerFilterKey(item)];
+    });
+    if (!added.length) return arr;
+    var newHead = {};
+    for (var k in head) {
+        if (Object.prototype.hasOwnProperty.call(head, k)) newHead[k] = head[k];
+    }
+    newHead.typeList = head.typeList.concat(added);
+    return [newHead].concat(arr.slice(1));
+}
+// nav 列表里鱼图标的图片基址（与 marker 侧 refreshMarker2 同源的 CDN lv3 目录；本机 lv3 缺失部分鱼图）
+var FISH_ICON_URL = './img/lv3/';
+function fishIconImg(item, cls) {
+    var raw = (item && item.icon) ? String(item.icon).replace(/^nav_/, '') : 'wz';
+    return `<div class="wz-icon ${cls || ''}" ><img src="${FISH_ICON_URL + raw}.png" style="width:100%;height:100%;object-fit:contain"/></div>`;
+}
+
+// ========== ★ 通用自定义区域绘制（自 PC 版迁移，去国际化） ==========
+// 用法（纯数据操作，零接线）：
+//   1. 区域数据挂在当前地图 poi（selectRegion_*）的条目上：加 points（"X=..,Y=..,Z=.." 数组，L.polygon 自动闭合）
+//      和可选 style（{ color, weight, dashArray, fillOpacity }）；
+//   2. 道具对象加 activeRegion: '<poi条目name>' 或 ['<name1>', '<name2>', ...]（一次高亮多个区域），
+//      导航栏勾选该道具时绘制对应区域 polygon + 名称标注；取消勾选时按剩余勾选道具重算重绘。
+//      同一区域被多个道具引用时同屏只画一份（drawnRegions 幂等）。
+//   3. 子区域（可选）：条目加 children: [{ name, x, y, points, style? }, ...]——父被触发时跟随渲染，
+//      每个子项画自己的 polygon + 子标题（锚点用 child.x/y），颜色缺省继承父色（child.style 可单独指定）；
+//      父条目的 points 保留则照常画父轮廓 + 父标题，两者互不排斥；children 只一层、不可被 activeRegion 独立引用。
+//   区域轮廓可用 scripts/build_game_world_points.js 从原图手动取点生成。
+var regionLayers = [];                          // 已绘制区域图层（polygon + 名称标签），统一清理入口
+var DEFAULT_REGION_COLOR = '#185FA5';           // 区域缺省描边/填充色（可被 region.color / style.color 覆盖）
+var drawnRegions = {};                          // 已绘制区域名集合（drawRegion 幂等依据；clearRegions 时重置）
+
+// 清理当前已绘制的所有自定义区域（polygon + 名称标签）；导航重算 / 切图 / 切楼层时调用
+function clearRegions() {
+    $.each(regionLayers, function () { this.remove(); });
+    regionLayers = [];
+    drawnRegions = {};
+}
+
+// 绘制一个自定义区域（poi 条目驱动）+ 名称标注；只画不清，配合 clearRegions 使用
+function drawRegion(name) {
+    // 幂等：同一区域同屏只画一份（多个道具引用同一 activeRegion 时不叠加）
+    if (drawnRegions[name]) return;
+    drawnRegions[name] = true;
+    // 从当前地图 poi（selectRegion_*）按 name 找带 points 或 children 的条目（如核电站水域）
+    var region = null;
+    if (poiInfo && poiInfo.length) {
+        for (var i = 0; i < poiInfo.length; i++) {
+            if (poiInfo[i].name === name &&
+                ((poiInfo[i].points && poiInfo[i].points.length) || (poiInfo[i].children && poiInfo[i].children.length))) {
+                region = poiInfo[i];
+                break;
+            }
+        }
+    }
+    if (!region) return;
+    // 父区域：有 points 时绘制父 polygon + 父标题
+    if (region.points && region.points.length) drawOneRegion(region, region.name);
+    // 子区域：children 跟随父渲染；有 points 画 polygon + 子标题，仅 {name,x,y} 时只渲染子标题
+    if (region.children && region.children.length) {
+        region.children.forEach(function (child) {
+            if (!child) return;
+            var hasAnchor = (child.x != null && child.y != null &&
+                             Number.isFinite(Number(child.x)) && Number.isFinite(Number(child.y))) ||
+                            (child.labelX != null && child.labelY != null);
+            if (!hasAnchor && !(child.points && child.points.length)) return;
+            drawOneRegion(child, child.name);
+        });
+    }
+}
+
+// 绘制单个区域 polygon + 名称标注（父条目与 children 子项共用）；只画不清，配合 clearRegions 使用
+function drawOneRegion(item, labelText) {
+    var latlngs = null;
+    // 顶点解析（与 drawBorder 同链路：filterPos → getMapPos）；无 points 时跳过 polygon 绘制
+    if (item.points && item.points.length) {
+        latlngs = item.points.map(function (str) {
+            var pos = getMapPos(filterPos(str, 'X', ','), filterPos(str, 'Y', ',', 1));
+            return [pos.y, pos.x];
+        });
+        var style = item.style || {};
+        var color = style.color || item.color || DEFAULT_REGION_COLOR;
+        regionLayers.push(L.polygon(latlngs, {
+            color: color, fillColor: color,
+            fillOpacity: style.fillOpacity != null ? style.fillOpacity : 0.15,
+            weight: style.weight != null ? style.weight : 2,
+            dashArray: style.dashArray || null,
+            interactive: false
+        }).addTo(map));
+    }
+    // 名称标注：优先 labelX/labelY，其次条目自带 x/y，缺省取顶点均值；interactive:false 避免遮挡
+    var lp;
+    if (item.labelX != null && item.labelY != null) {
+        lp = getMapPos(item.labelX, item.labelY);
+    } else if (item.x != null && item.y != null && Number.isFinite(Number(item.x)) && Number.isFinite(Number(item.y))) {
+        lp = getMapPos(item.x, item.y);
+    } else if (latlngs) {
+        var sumLat = 0, sumLng = 0;
+        latlngs.forEach(function (ll) { sumLat += ll[0]; sumLng += ll[1]; });
+        lp = { y: sumLat / latlngs.length, x: sumLng / latlngs.length };
+    } else {
+        return;
+    }
+    regionLayers.push(L.marker([lp.y, lp.x], {
+        icon: L.divIcon({
+            className: 'map-region-name',
+            html: '<div class="region-item">' + (labelText || item.name) + '</div>'
+        }),
+        interactive: false
+    }).addTo(map));
+}
+
+// 收集当前所有已勾选道具的 activeRegion（去重，供 syncRegions 渲染）
+function collectActiveRegions() {
+    var set = {};
+    (Array.isArray(mapIcons) ? mapIcons : []).forEach(function (item) {
+        if (!item || !item.activeRegion || !visibleMarker[getMarkerFilterKey(item)]) return;
+        var list = Array.isArray(item.activeRegion) ? item.activeRegion : [item.activeRegion];
+        list.forEach(function (rn) { if (rn) set[rn] = true; });
+    });
+    return Object.keys(set);
+}
+
+// 按当前勾选道具集合重绘自定义区域（refreshMarker2 尾部调用）；先清空再重画；drawRegion 幂等
+function syncRegions() {
+    if (isWar) return;
+    clearRegions();
+    collectActiveRegions().forEach(function (rn) { drawRegion(rn); });
 }
 
 var hoverMarker = {};
@@ -794,6 +994,8 @@ function refreshMarker2(from, arr) {
     isRemove = true;
     cacheMarker = [];
     markerList = []
+    // ★ 清理自定义区域图层（activeRegion 绘制），避免切图/切楼层/切难度残留（自 PC 版迁移）
+    clearRegions();
 
     $.each(arr, function (index, item) {
         var visible = false;
@@ -837,7 +1039,7 @@ function refreshMarker2(from, arr) {
                 className =  'article'
             }
             var pos = getMapPos(this.x, this.y)
-            var path = isWar ? ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/' : ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/'
+            var path = isWar ? './img/dzc_i/' : './img/lv3/'
             var iconName;
             if (that.name === "进攻方基地" ) {
                 iconName = window.viewChange ? 'g_jdbsd_g': 'g_jdbsd_r'
@@ -959,6 +1161,8 @@ function refreshMarker2(from, arr) {
       
     });
     isRemove = false;
+    // ★ 区域重绘（自 PC 版迁移）：marker 重建后按当前勾选集合绘制 activeRegion 多边形/水域；isWar 内部已跳过
+    syncRegions();
 }
 
 
@@ -1090,6 +1294,16 @@ var init = function () {
          $('.deploy-swiper').removeClass('show')
      })
 
+    // ★ 鱼类导航组（与 changeMapLv→applyMapConfig 内 ensureFishGroup/injectFishIntoAll 注入同款）：首屏默认
+    // 路径（无 ?map= 时不走 changeMapLv）直接 initNav，静态 nav 无鱼类组/鱼条目 → 鱼点位无 nav 入口可点亮、
+    // 地图不显示鱼。此处补同样注入保证首屏有鱼；ensureFishGroup 幂等、injectFishIntoAll 去重恒返新数组，
+    // query 参数路径（applyMapConfig 已注入）在此重复执行无副作用。
+    if (!isWar && !isFloor) {
+        allNavList = ensureFishGroup(allNavList, mapIcons);
+        navTypeList = ensureFishGroup(navTypeList, mapIcons);
+        allNavList = injectFishIntoAll(allNavList, getFishTypeList(allNavList));
+    }
+
     initNav();
     // 如果有floor，则初始化floor
     if (mapScaleInfo.floorInfo) {
@@ -1195,6 +1409,7 @@ function addLayer (mapName) {
         }
         mapWidth = currentFloorConfig ? currentFloorConfig.boundsW : mapScaleInfo.floorInfo.info.boundsW
         mapHeight = currentFloorConfig ? currentFloorConfig.boundsH : mapScaleInfo.floorInfo.info.boundsH
+
         // southWest = L.latLng(-25, 55)
         // pixelToLatLngRatio = -0.85
         // mapWidth = mapScaleInfo.boundsW
@@ -1241,16 +1456,14 @@ function addLayer (mapName) {
     
     var bounds = L.latLngBounds(southWest, northEast);  
         // var href = mapScaleInfo?.href ? mapScaleInfo?.href : 'https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/'
-        var href = ''
-    if (!isFloor && mapScaleInfo.href) {
-        href = mapScaleInfo.href
+    var href = `${IMG_PRE}/img/`
+    // if (!isFloor && mapScaleInfo.href) {
+    //     href = mapScaleInfo.href
     
-    } else if (isFloor && mapScaleInfo.floorInfo?.info?.href) {
-        href = mapScaleInfo.floorInfo?.info?.href
-    } else {
-        // href = ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/'
-         href = ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/'
-    }
+    // } else if (isFloor && mapScaleInfo.floorInfo?.info?.href) {
+    //     href = mapScaleInfo.floorInfo?.info?.href
+    // }
+
     console.log(northEast, bounds);
     currLayer = L.tileLayer(href + `${mapName}/{z}_{x}_{y}.jpg`, {
         minZoom: minZoom,
@@ -1535,9 +1748,17 @@ var initNav = function () {
             </div>
             `
         } else {
+            var tabIconCls = item.titleType === "首领" ? 'sl' : item.titleType;
+            var tabIconExtra = '';
+            // 鱼类 tab：CSS 无 yl 精灵，取该组第一条鱼的 lv3 图作图标
+            if (item.titleType === 'yl' && Array.isArray(item.typeList) && item.typeList.length) {
+                tabIconCls = 'nav-fish-tab';
+                var fishRaw = String(item.typeList[0].icon || 'wz').replace(/^nav_/, '');
+                tabIconExtra = `<img src="${FISH_ICON_URL + fishRaw}.png" style="width:70%;height:70%;object-fit:contain;display:block;margin:auto"/>`;
+            }
             html+= `
             <div class="nav-option-item nav-option-item-${index} ${currLeftNav === index ? 'active': ''}" data-index="${index}">
-                <div class="nav-option-i ${item.titleType === "首领" ? 'sl': item.titleType}"></div>
+                <div class="nav-option-i ${tabIconCls}" style="${item.titleType === 'yl' ? 'background:none' : ''}">${tabIconExtra}</div>
                 <div class="nav-option-text">${item.title}</div>
             </div>
             `
@@ -1965,6 +2186,61 @@ function changeMapLv(type) {
             mapLayer: 'cgxg_2f',
             lvName: '常规'
         },
+        '10_ldz_1F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList_ldz_1f,
+            navTypeList: () => cgxgInfo.floorInfo.navList_ldz_1f,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle_ldz_1f,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            lvName: '常规',
+            mapLayer: 'cgxg_ldz_1f',
+            needRemove: true
+        },
+        '10_ldz_2F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList_ldz_2f,
+            navTypeList: () => cgxgInfo.floorInfo.navList_ldz_2f,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle_ldz_2f,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            lvName: '常规',
+            mapLayer: 'cgxg_ldz_2f',
+            needRemove: true
+        },
+        '10_ldz_3F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList_ldz_3f,
+            navTypeList: () => cgxgInfo.floorInfo.navList_ldz_3f,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle_ldz_3f,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            lvName: '常规',
+            mapLayer: 'cgxg_ldz_3f',
+            needRemove: true
+        },
+        '10_ldz_4F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList_ldz_4f,
+            navTypeList: () => cgxgInfo.floorInfo.navList_ldz_4f,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle_ldz_4f,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            lvName: '常规',
+            mapLayer: 'cgxg_ldz_4f',
+            needRemove: true
+        },
+        '10_ldz_B1': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList_firest,
+            navTypeList: () => cgxgInfo.floorInfo.navList_firest,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle_first,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            lvName: '常规',
+            mapLayer: 'cgxg_ldz_b1',
+            needRemove: true
+        },
         '11': {
             mapInfo: cgxgInfo,
             navList: navList3_cgxg,
@@ -2032,6 +2308,61 @@ function changeMapLv(type) {
             mapName: '长弓溪谷',
             mapLayer: 'cgxg_2f',
             lvName: '机密'
+        },
+        '11_ldz_1F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList2_ldz_1f,
+            navTypeList: () => cgxgInfo.floorInfo.navList2_ldz_1f,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle2_ldz_1f,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            lvName: '机密',
+            mapLayer: 'cgxg_ldz_1f',
+            needRemove: true
+        },
+        '11_ldz_2F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList2_ldz_2f,
+            navTypeList: () => cgxgInfo.floorInfo.navList2_ldz_2f,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle2_ldz_2f,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            lvName: '机密',
+            mapLayer: 'cgxg_ldz_2f',
+            needRemove: true
+        },
+        '11_ldz_3F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList2_ldz_3f,
+            navTypeList: () => cgxgInfo.floorInfo.navList2_ldz_3f,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle2_ldz_3f,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            lvName: '机密',
+            mapLayer: 'cgxg_ldz_3f',
+            needRemove: true
+        },
+        '11_ldz_4F': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList2_ldz_4f,
+            navTypeList: () => cgxgInfo.floorInfo.navList2_ldz_4f,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle2_ldz_4f,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            lvName: '机密',
+            mapLayer: 'cgxg_ldz_4f',
+            needRemove: true
+        },
+        '11_ldz_B1': {
+            mapInfo: cgxgInfo,
+            navList: () => cgxgInfo.floorInfo.navList2_ldz_b1,
+            navTypeList: () => cgxgInfo.floorInfo.navList2_ldz_b1,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle2_ldz_b1,
+            poiInfo: selectRegion_cgxg,
+            mapName: '长弓溪谷',
+            lvName: '机密',
+            mapLayer: 'cgxg_ldz_b1',
+            needRemove: true
         },
         
         // 航天基地
@@ -2463,7 +2794,10 @@ function changeMapLv(type) {
         navTypeList = typeof config.navTypeList === 'function' ? config.navTypeList() : config.navTypeList;
         mapIcons = typeof config.mapIcons === 'function' ? config.mapIcons() : config.mapIcons;
 
-        if (Number(currMap) === 1 && Number(currLv) === 1) {
+        // ★ PC 版修复：机密难度(11)随机事件过滤只针对"主图"大地图：山火/坠机替换 mapIcons 并重算分类 nav。
+        // 楼层视图（isFloor）必须跳过——否则 dataFilter 的 arrInfo（分类组数组）会覆盖掉扁平 navList，
+        // 楼层点位列表全空（10/11_ldz_*F 曾踩同款 bug）。
+        if (!isFloor && Number(currMap) === 1 && Number(currLv) === 1) {
             if ($('.random-act').text().indexOf('山火') > -1) {
                 mapIcons = mapArticle5_cgxg;
             }
@@ -2474,6 +2808,14 @@ function changeMapLv(type) {
             const { arr, arrInfo } = dataFilter(mapIcons);
             allNavList = arrInfo;
             navTypeList = arrInfo;
+        }
+
+        // ★ 鱼类导航组（PC 版迁移）：仅主图挂载（楼层扁平 nav / 战争 navRegion 均不处理）；
+        // ensureFishGroup 幂等、无鱼不追加；inject 把鱼并入"全部"组、恒返新数组不污染静态 nav。
+        if (!isWar && !isFloor) {
+            allNavList = ensureFishGroup(allNavList, mapIcons);
+            navTypeList = ensureFishGroup(navTypeList, mapIcons);
+            allNavList = injectFishIntoAll(allNavList, getFishTypeList(allNavList));
         }
 
 
@@ -2508,7 +2850,14 @@ function changeMapLv(type) {
             map.addLayer(currLayer);
         }
 
-        initNav();
+        // 导航装配（按 nav 形态分流，避免误删子楼层的分类 tab）：
+        // - 主图 / 分组形态楼层（酒店 navList_firest 等，[{titleType,title,typeList}]）→ initNav 正常建分类 tab；
+        // - 扁平形态楼层（雷达站 navList_ldz_*，纯条目数组，无组概念）→ 不建 tab，清掉主图残留一级 tab（如"鱼类"），尾部整列渲染
+        if (!isFloor || isGroupedNav(navTypeList)) {
+            initNav();
+        } else {
+            $('.nav-options').empty();
+        }
 
         return true;
     };
@@ -2545,10 +2894,13 @@ function changeMapLv(type) {
     }
     console.log('changeMapLv', currLeftNav, listIsAll);
     // 渲染导航类型列表
-    if (Number(currLeftNav) === 0) {
-        renderNavTypeList(allNavList[0]?.typeList, 0);
+    if (isFloor && !isGroupedNav(navTypeList)) {
+        // ★ 扁平楼层 nav（雷达站 navList_ldz_*）：整列直接渲染；无组 tab、无 group0 概念
+        renderNavTypeList(allNavList, 0);
+    } else if (Number(currLeftNav) === 0) {
+        renderNavTypeList(allNavList[0]?.typeList || [], 0);
     } else {
-        renderNavTypeList(navTypeList[currLeftNav].typeList, currLeftNav);
+        renderNavTypeList((navTypeList[currLeftNav] && navTypeList[currLeftNav].typeList) || [], currLeftNav);
     }
 
     // 绑定选项事件
@@ -3419,7 +3771,7 @@ function viewChangeToMap () {
             console.log(`${window.viewChange ? 'g_jdbsd_g': 'g_jdbsd_r'}`);
             var icon = L.divIcon({
                 className: ` map-war-icon`,
-                html: `<div class="map-icon-bg"><img src=" https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${window.viewChange ? 'g_jdbsd_g': 'g_jdbsd_r'}.png"/></div>`,
+                html: `<div class="map-icon-bg"><img src="./img/dzc_i/${window.viewChange ? 'g_jdbsd_g': 'g_jdbsd_r'}.png"/></div>`,
                 iconSize: [30, 30],			//设置图标大小
                 iconAnchor: [15, 15],		//设置图标偏移
             })
@@ -3428,7 +3780,7 @@ function viewChangeToMap () {
         } else if (this.options.icon.name === "防守方基地") {
             var icon = L.divIcon({
                 className: ` map-war-icon`,
-                html: `<div class="map-icon-bg"><img src=" https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${window.viewChange ? 'f_jdbsd_r': 'f_jdbsd_g'}.png"/></div>`,
+                html: `<div class="map-icon-bg"><img src="./img/dzc_i/${window.viewChange ? 'f_jdbsd_r': 'f_jdbsd_g'}.png"/></div>`,
                 iconSize: [30, 30],			//设置图标大小
                 iconAnchor: [15, 15],		//设置图标偏移
             })
@@ -3449,7 +3801,9 @@ function enterFloor (regionName) {
         floor_text.text('切换楼层')
         if (isFloor) {
             isFloor = false;
-            currFloorIndex = -1
+            currFloorIndex = -1;
+            // ★ 清除建筑/楼层记忆：避免上一栋楼（如雷达站 B1）残留，导致退出后楼层切换列表被过滤/缺失
+            currFloorRegion = '';
             if (skipKeepAllOnExit) {
                 resetAll('none');
                 saveMarker = {};
@@ -3459,6 +3813,10 @@ function enterFloor (regionName) {
                 enterFloorSave();
             }
             outFloor = true;
+            // 回主图后按整图重建楼层切换列表（覆盖雷达站残留的单栋楼子列表）
+            if (mapScaleInfo && (mapScaleInfo.floorInfo || (mapScaleInfo.floor && mapScaleInfo.floor.length))) {
+                initFloor();
+            }
         }
         $('.nav-option-ctn').removeClass('floor')
         $('.m-index').removeClass('floor')
@@ -3734,14 +4092,14 @@ function warInit (mapName, type, isBorder = false) {
                 let rotate = currWarMap === 'qhz' ? 90 : 180
                 myIcon = L.divIcon({
                     className: ` map-war-icon`,
-                    html: `<div class="map-icon-bg" style="transform: translate3d(-50%, -50%, 0) rotate(${Number(element.rotate) + rotate}deg)"><img src=" https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${icon}.png"/></div>`,
+                    html: `<div class="map-icon-bg" style="transform: translate3d(-50%, -50%, 0) rotate(${Number(element.rotate) + rotate}deg)"><img src="./img/dzc_i/${icon}.png"/></div>`,
                     iconSize: [30, 30],			//设置图标大小
                     iconAnchor: [15, 15],		//设置图标偏移
                 })
             } else {
                 myIcon = L.divIcon({
                     className: ` map-war-icon`,
-                    html: `<div class="map-icon-bg"><img src=" https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${icon}.png"/></div>`,
+                    html: `<div class="map-icon-bg"><img src="./img/dzc_i/${icon}.png"/></div>`,
                     iconSize: [30, 30],			//设置图标大小
                     iconAnchor: [15, 15],		//设置图标偏移
                 })
@@ -3764,7 +4122,7 @@ function warInit (mapName, type, isBorder = false) {
                     this.openPopup();
                     this.setIcon( L.divIcon({
                         className: ` map-war-icon click`,
-                        html: `<div class="map-icon-bg" style="${element?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(element?.rotate) + rotate}deg)` : ''}"><img src=" https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${icon}.png"/></div>`,
+                        html: `<div class="map-icon-bg" style="${element?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(element?.rotate) + rotate}deg)` : ''}"><img src="./img/dzc_i/${icon}.png"/></div>`,
                         iconSize: [50, 50],			//设置图标大小
                         iconAnchor: [25, 25],		//设置图标偏移
                     }));
@@ -4231,16 +4589,19 @@ renderNavTypeList = function (list, navIndex = 0) {
         zjbjz: { title: '载具补给站', html: '' },
         gddyx: { title: '固定弹药箱', html: '' },
         gdwq: { title: '固定武器', html: '' },
-        zz: { title: '装置', html: '' }
+        zz: { title: '装置', html: '' },
+        yl: { title: '鱼类', html: '' }
     };
 
     function buildNavItem(item, index) {
         const extraClass = nameClassMap[item.name] || '';
         const filterKey = getMarkerFilterKey(item);
         const markerMode = getMarkerMode(item);
+        const isFish = item.catalog === 'fish';
         return `
-        <div class="nav-list-item nav-list-item-${index} ${extraClass} nav-list-${item.icon} ${visibleMarker[filterKey] ? `img_${item.icon}_click active`: `img_${item.icon}`} ${item.num === 0 ? 'hide' : ''}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-mode="${markerMode}" data-filter-key="${filterKey}">
+        <div class="nav-list-item nav-list-item-${index} ${extraClass} nav-list-${item.icon} ${visibleMarker[filterKey] ? `img_${item.icon}_click active`: `img_${item.icon}`} ${item.num === 0 ? 'hide' : ''} ${isFish ? 'nav-fish-item' : ''}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-mode="${markerMode}" data-filter-key="${filterKey}">
             <div class="wz-bg">
+                ${isFish ? fishIconImg(item) : ''}
                 <div class="wz-num" ${item.num === 1 ? 'hide' : ''}>${item.num}</div>
             </div>
             <div class="wz-name">${item?.sub_name || item.name}</div>
@@ -4258,7 +4619,9 @@ renderNavTypeList = function (list, navIndex = 0) {
         if (seenFilterKeys.has(filterKey)) return;
         seenFilterKeys.add(filterKey);
 
-        if (item.name.indexOf('撤离点') !== -1) {
+        if (item.catalog === 'fish') {
+            addToCategory(item, index, 'yl');
+        } else if (item.name.indexOf('撤离点') !== -1) {
             addToCategory(item, index, 'cld');
         } else if (item.name.indexOf('藏宝图') !== -1) {
             addToCategory(item, index, 'cbt');
@@ -4333,9 +4696,11 @@ selectmarker = function (name) {
     markerList.length && markerList.forEach(function (item, index) {
         const filterKey = getMarkerFilterKey(item);
         const markerMode = getMarkerMode(item);
+        const isFish = item.catalog === 'fish';
         html+=`
         <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[filterKey] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-mode="${markerMode}" data-filter-key="${filterKey}">
             <div class="wz-bg">
+                ${isFish ? fishIconImg(item) : ''}
                 <div class="wz-num">${item.num}</div>
             </div>
             <div class="wz-name">${item?.sub_name || item.name}</div>
@@ -4412,7 +4777,8 @@ dataFilter = function (mapArticle) {
         { titleType: 'qxj', title: '清洗间点位', typeList: [] },
         { titleType: 'csd', title: '出生点', typeList: [] },
         { titleType: "cld", title: "撤离点", typeList: [] },
-        { titleType: "首领", title: "首领", typeList: [] }
+        { titleType: "首领", title: "首领", typeList: [] },
+        { titleType: 'yl', title: '鱼类', typeList: [] }
     ];
     let numList = {}
 
@@ -4430,12 +4796,14 @@ dataFilter = function (mapArticle) {
             arr.push({
                 name: element.name,
                 icon: 'nav_' + element.icon,
-                mode: getMarkerMode(element)
+                mode: getMarkerMode(element),
+                catalog: element.catalog   // ★ 保留 catalog：机密难度经 dataFilter 重建 nav 时鱼不丢分类
             })
         } else {
             const existingItem = arr.find(item => getMarkerFilterKey(item) === filterKey);
             existingItem.icon = 'nav_' + element.icon;
             existingItem.mode = getMarkerMode(element);
+            if (element.catalog) existingItem.catalog = element.catalog;
         }
     }
     
@@ -4448,7 +4816,9 @@ dataFilter = function (mapArticle) {
             element.num = element.num || 0
         }
 
-        if (element.name === '出生点') {
+        if (element.catalog === 'fish') {
+            arrInfo[8]['typeList'].push(element)
+        } else if (element.name === '出生点') {
             arrInfo[5]['typeList'].push(element)
         } else if (element.mode && element.mode.indexOf('泄露区') > -1) {
             arrInfo[2]['typeList'].push(element)

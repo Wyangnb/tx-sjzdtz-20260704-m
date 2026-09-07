@@ -283,13 +283,13 @@ var navList_htjd = [
             "num": 6,
             "icon": "nav_xlx"
           },
-          {
-            "name": "藏宝图",
-            "lang": "lang_gjlxx",
-            "idType": 25,
-            "num": 10,
-            "icon": "nav_cbt"
-          },
+          // {
+          //   "name": "藏宝图",
+          //   "lang": "lang_gjlxx",
+          //   "idType": 25,
+          //   "num": 10,
+          //   "icon": "nav_cbt"
+          // },
         {
           "name": "出生点",
           "idType": 26,
@@ -334,10 +334,10 @@ var navList_htjd = [
           // }
         ]
   },
-  {
-    titleType: 'cbt',
-    title: '藏宝图',
-},
+//   {
+//     titleType: 'cbt',
+//     title: '藏宝图',
+// },
   {
       titleType: 'wzd',
       title: '物资点',
@@ -812,18 +812,18 @@ var navListInfo_htjd = [
           // }
         ]
   },
-  {
-    titleType: 'cbt',
-    title: '藏宝图',
-    typeList: [
-        {
-            name: '藏宝图',
-            idType: 26,
-            num: 10,
-            icon: 'nav_cbt',
-        },
-    ]
-},
+//   {
+//     titleType: 'cbt',
+//     title: '藏宝图',
+//     typeList: [
+//         {
+//             name: '藏宝图',
+//             idType: 26,
+//             num: 10,
+//             icon: 'nav_cbt',
+//         },
+//     ]
+// },
   {
       titleType: 'wzd',
       title: '物资点',
@@ -5415,13 +5415,13 @@ var navList2_htjd = [
             "num": 1,
             "icon": "nav_hfkfhc"
           },
-          {
-            "name": "藏宝图",
-            "lang": "lang_gjlxx",
-            "idType": 25,
-            "num": 10,
-            "icon": "nav_cbt"
-          },
+          // {
+          //   "name": "藏宝图",
+          //   "lang": "lang_gjlxx",
+          //   "idType": 25,
+          //   "num": 10,
+          //   "icon": "nav_cbt"
+          // },
       {
         "name": "出生点",
         "idType": 26,
@@ -5951,18 +5951,18 @@ var navListInfo2_htjd = [
       // }
     ]
   },
-  {
-    titleType: 'cbt',
-    title: '藏宝图',
-    typeList: [
-        {
-            name: '藏宝图',
-            idType: 26,
-            num: 10,
-            icon: 'nav_cbt',
-        },
-    ]
-},
+//   {
+//     titleType: 'cbt',
+//     title: '藏宝图',
+//     typeList: [
+//         {
+//             name: '藏宝图',
+//             idType: 26,
+//             num: 10,
+//             icon: 'nav_cbt',
+//         },
+//     ]
+// },
   {
     titleType: 'wzd',
     title: '物资点',
@@ -10569,13 +10569,13 @@ var navList3_htjd = [
           "num": 13,
           "icon": "nav_xlx"
         },
-        {
-          "name": "藏宝图",
-          "lang": "lang_gjlxx",
-          "idType": 25,
-          "num": 11,
-          "icon": "nav_cbt"
-        },
+        // {
+        //   "name": "藏宝图",
+        //   "lang": "lang_gjlxx",
+        //   "idType": 25,
+        //   "num": 11,
+        //   "icon": "nav_cbt"
+        // },
       {
         "name": "出生点",
         "idType": 26,
@@ -11092,18 +11092,18 @@ var navListInfo3_htjd = [
       // }
     ]
   },
-  {
-    titleType: 'cbt',
-    title: '藏宝图',
-    typeList: [
-        {
-            name: '藏宝图',
-            idType: 26,
-            num: 10,
-            icon: 'nav_cbt',
-        },
-    ]
-},
+//   {
+//     titleType: 'cbt',
+//     title: '藏宝图',
+//     typeList: [
+//         {
+//             name: '藏宝图',
+//             idType: 26,
+//             num: 10,
+//             icon: 'nav_cbt',
+//         },
+//     ]
+// },
   {
     titleType: 'wzd',
     title: '物资点',
@@ -15907,13 +15907,13 @@ var navList4_htjd = [
           "num": 1,
           "icon": "nav_hfkfhc"
         },
-        {
-          "name": "藏宝图",
-          "lang": "lang_gjlxx",
-          "idType": 25,
-          "num": 11,
-          "icon": "nav_cbt"
-        },
+        // {
+        //   "name": "藏宝图",
+        //   "lang": "lang_gjlxx",
+        //   "idType": 25,
+        //   "num": 11,
+        //   "icon": "nav_cbt"
+        // },
       {
         "name": "出生点",
         "idType": 26,
@@ -16437,18 +16437,18 @@ var navListInfo4_htjd = [
       // }
     ]
   },
-  {
-    titleType: 'cbt',
-    title: '藏宝图',
-    typeList: [
-        {
-            name: '藏宝图',
-            idType: 26,
-            num: 10,
-            icon: 'nav_cbt',
-        },
-    ]
-},
+//   {
+//     titleType: 'cbt',
+//     title: '藏宝图',
+//     typeList: [
+//         {
+//             name: '藏宝图',
+//             idType: 26,
+//             num: 10,
+//             icon: 'nav_cbt',
+//         },
+//     ]
+// },
   {
     titleType: 'wzd',
     title: '物资点',
