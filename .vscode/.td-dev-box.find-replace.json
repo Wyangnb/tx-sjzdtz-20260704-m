@@ -5,20 +5,21 @@
       "id": "grp-1763275498413",
       "name": "组 1",
       "enabled": true,
-      "find": "../../img/",
-      "replace": " https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/",
+      "find": "./",
+      "replace": " https://game.gtimg.cn/images/dfm/cp/a20240729directory/",
       "options": {
         "regex": false,
         "caseSensitive": false,
         "wholeWord": false
       },
       "files": [
-        "/Users/wy/myDoc/myProject/trae_地图站/tx-sjz-aqz-zh-20240529/m/src/js/lib/main.js"
+        "src/js/lib/main.js"
       ],
       "lastRunAt": null
     }
   ],
   "recentFiles": [
-    "/Users/wy/myDoc/myProject/trae_地图站/tx-sjz-aqz-zh-20240529/m/src/js/lib/main.js"
+    "/Users/wy/myDoc/myProject/trae_地图站/tx-sjz-aqz-zh-20240529/m/src/js/lib/main.js",
+    "src/js/lib/main.js"
   ]
 }

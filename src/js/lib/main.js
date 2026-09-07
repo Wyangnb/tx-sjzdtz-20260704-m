@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-var IMG_PRE = (window.location.href.indexOf(80) > -1) ? '': '//game.gtimg.cn/images/dfm/cp/a20240729directory';
+var IMG_PRE = (window.location.href.indexOf(801) > -1) ? '': '//game.gtimg.cn/images/dfm/cp/a20240729directory';
 
 
 var getQuery = function (name) {
@@ -421,6 +421,25 @@ function isGroupedNav(arr) {
         !!arr[0].titleType && Array.isArray(arr[0].typeList);
 }
 
+// ★ 导航"当前条目列表"兼容 helper：扁平楼层 nav（雷达站 navList_ldz_* 为纯条目数组，无分组）下，
+// 传统代码按 allNavList[0].typeList / navTypeList[currLeftNav].typeList 取当前列表会取到 undefined，
+// 导致"点全选 nav 被空渲染清空"等（marker 走 refreshMarker2 不受影响故地图正常）。
+// 语义与旧逻辑保持一致：分组形态 index0 优先取 allNavList[0].typeList（含鱼注入），index>0 取组列表；
+// 扁平形态返回整列数组本体。
+function currentNavList(idx) {
+    if (Array.isArray(allNavList) && !(allNavList[0] && Array.isArray(allNavList[0].typeList))) {
+        return allNavList;
+    }
+    var i = (idx === undefined || idx === null) ? Number(currLeftNav || 0) : Number(idx);
+    if (i === 0 && allNavList[0] && Array.isArray(allNavList[0].typeList)) return allNavList[0].typeList;
+    if (navTypeList[i] && Array.isArray(navTypeList[i].typeList)) return navTypeList[i].typeList;
+    if (navTypeList[0] && Array.isArray(navTypeList[0].typeList)) return navTypeList[0].typeList;
+    return [];
+}
+function isFlatNav() {
+    return Array.isArray(allNavList) && !(allNavList[0] && Array.isArray(allNavList[0].typeList));
+}
+
 function buildFloorItemKey(floorInfo) {
     if (!floorInfo) return '';
     return [
@@ -483,6 +502,7 @@ var queryMap = {
     'bks': '31',
     'cxjy': '42',
     'az3': '50',
+    'daba_1f': '01_1F',
 }
 
 
@@ -644,7 +664,7 @@ function injectFishIntoAll(arr, fishEntries) {
     return [newHead].concat(arr.slice(1));
 }
 // nav 列表里鱼图标的图片基址（与 marker 侧 refreshMarker2 同源的 CDN lv3 目录；本机 lv3 缺失部分鱼图）
-var FISH_ICON_URL = './img/lv3/';
+var FISH_ICON_URL = 'https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/';
 function fishIconImg(item, cls) {
     var raw = (item && item.icon) ? String(item.icon).replace(/^nav_/, '') : 'wz';
     return `<div class="wz-icon ${cls || ''}" ><img src="${FISH_ICON_URL + raw}.png" style="width:100%;height:100%;object-fit:contain"/></div>`;
@@ -1039,7 +1059,7 @@ function refreshMarker2(from, arr) {
                 className =  'article'
             }
             var pos = getMapPos(this.x, this.y)
-            var path = isWar ? './img/dzc_i/' : './img/lv3/'
+            var path = isWar ? 'https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/' : 'https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/'
             var iconName;
             if (that.name === "进攻方基地" ) {
                 iconName = window.viewChange ? 'g_jdbsd_g': 'g_jdbsd_r'
@@ -1210,8 +1230,9 @@ function toggleVisible(type, index) {
                 }
             }
         } else {
-            for (let index = 0; index < navTypeList[currLeftNav].typeList.length; index++) {
-                const element = navTypeList[currLeftNav].typeList[index];
+            var curTypeList = currentNavList();
+            for (let index = 0; index < curTypeList.length; index++) {
+                const element = curTypeList[index];
                 visibleMarker[getMarkerFilterKey(element)] = (type.indexOf('all') > 0 ? true : false);
             }
         }
@@ -1483,12 +1504,12 @@ function addLayer (mapName) {
 
     map.setMaxBounds(bounds)
     map.options.minZoom = minZoom;
-    
+
     if (mapName === 'map_qhz' && currWarType === 'mobile') {
         map.setView([window.occupy ? mapScaleInfo.initX_mobile_s : mapScaleInfo.initX, window.occupy ? mapScaleInfo.initY_mobile_s : mapScaleInfo.initY], initZoom)
     } else {
         console.log('执行', initZoom);
-        
+
         map.setView([initX, initY], initZoom)
     }
 
@@ -1513,7 +1534,6 @@ function addLayer (mapName) {
                 className: ` map-region-name`,
                 html: `<div class="map-region-name">${item.name}</div>`,
             })
-            console.log('item', item);
             
             var pos = getMapPos(item.x, item.y)
             html+= `<div class="region-item region-item-${index}" data-x="${item.x}" data-y="${item.y}">${item.name}</div>`
@@ -1605,6 +1625,8 @@ function initFloor () {
     $('.btn-floor-mod').addClass('show')
     $('.floor-item').off('click').on('click', enterFloorMode)
     $('.map-floor-item').off('click').on('click', enterFloorMode)
+
+    // debugger
 }
 
 function enterFloorMode(e) {
@@ -1669,12 +1691,9 @@ function enterFloorSave () {
         '藏匿物': 'nav_cnw',
         '高级旅行箱': 'nav_xlx'
     }
-    console.log(saveMarker);
     for (const key in saveMarker) {
         if (Object.hasOwnProperty.call(saveMarker, key)) {
             if (saveMarker[key]) {
-                console.log(key);
-                
                 !visibleMarker[key] ? $(`.nav-list-${navType[key]}`).addClass('active'): $(`.${navType[key]}`).removeClass('active')
                 toggleVisible(key, currLeftNav);
             }
@@ -1780,8 +1799,6 @@ var initNav = function () {
         if (Number(index) === 0) {
             renderNavTypeList(allNavList[0].typeList, 0)
         } else {
-            console.log('navTypeList[index]', navTypeList[index]);
-            
             renderNavTypeList(navTypeList[index].typeList, index)
         }
 
@@ -1790,7 +1807,6 @@ var initNav = function () {
         } else {
             $('.choose-all').attr('class', 'img_all_close choose-all')
         }
-        console.log('initNav', currLeftNav, listIsAll);
         
         bindOptionEvent();
 
@@ -1813,7 +1829,6 @@ var initNav = function () {
         $('.region-item-war').on('click', function (e) {
             // $('.region-item-war').removeClass('active')
             $(this).addClass('active')
-            console.log(2222, $(this));
             var index = $(e.target).attr('data-index');
             $(e.target).addClass('active')
             window.isLvChange = true;
@@ -1846,14 +1861,13 @@ var renderNavTypeList = function (list, navIndex = 0){
     } else {
         html = '<div class="fgx top0 nav-cbt">藏宝图</div>'
     }
-    console.log(1111, list[1].titleType, list);
     
     list.forEach(function (item, index) {
         if (item.name === '行动接取站' || item.name === '高价值接取站') return;
         if (item.name === '付费撤离点' || item.name === '拉闸撤离点') {
             html+=`
             <div class="fgx ${list.length > 15 ? '' : 'top0'}">撤离点</div>
-                <div class="nav-list-item nav-list-item-${index} ${nameClassMap[item.name] || ''} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+                <div class="nav-list-item nav-list-item-${index} ${nameClassMap[item.name] || ''} nav-list-${item.icon} ${visibleMarker[getMarkerFilterKey(item)] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-filter-key="${getMarkerFilterKey(item)}">
                 <div class="wz-bg">
                     <div class="wz-num">${item.num}</div>
                 </div>
@@ -1862,7 +1876,7 @@ var renderNavTypeList = function (list, navIndex = 0){
         } else if (item.name === '进攻方基地') {
             html+=`
             <div class="fgx">基地部署点</div>
-                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[getMarkerFilterKey(item)] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-filter-key="${getMarkerFilterKey(item)}">
                 <div class="wz-bg">
                     <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
                 </div>
@@ -1871,7 +1885,7 @@ var renderNavTypeList = function (list, navIndex = 0){
         }else if ((item.name === '据点A' || item.name === '据点B'|| item.name === '据点C'||item.name === '据点D'||item.name === '据点E'||item.name === '据点A1'||item.name === '据点B1'||item.name === '据点C1'||item.name === '据点D1'||item.name === '据点E1') && !window.occupy) {
             html+=`
             <div class="fgx">据点</div>
-                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[getMarkerFilterKey(item)] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-filter-key="${getMarkerFilterKey(item)}">
                 <div class="wz-bg">
                     <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
                 </div>
@@ -1880,7 +1894,7 @@ var renderNavTypeList = function (list, navIndex = 0){
         } else if (item.name === '据点A'  && window.occupy) {
             html+=`
             <div class="fgx">据点</div>
-                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[getMarkerFilterKey(item)] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-filter-key="${getMarkerFilterKey(item)}">
                 <div class="wz-bg">
                     <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
                 </div>
@@ -1889,7 +1903,7 @@ var renderNavTypeList = function (list, navIndex = 0){
         } else if (isWar && (item.name.indexOf('突击车') > -1 || item.name.indexOf('枪') > -1)) {
             html+=`
             <div class="fgx">${(item.name.indexOf('突击车') > -1) ? '载具' : '固定武器'}</div>
-                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`} ${item.num > 0 ? '' : 'hide'}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[getMarkerFilterKey(item)] ? `img_${item.icon}_click active`: `img_${item.icon}`} ${item.num > 0 ? '' : 'hide'}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-filter-key="${getMarkerFilterKey(item)}">
                 <div class="wz-bg">
                     <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
                 </div>
@@ -1898,7 +1912,7 @@ var renderNavTypeList = function (list, navIndex = 0){
         } else if ('滑索'.indexOf(item.name) > -1) {
             html+=`
             <div class="fgx">装置</div>
-                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+                <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[getMarkerFilterKey(item)] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-filter-key="${getMarkerFilterKey(item)}">
                 <div class="wz-bg">
                     <div class="wz-num" ${item.num === 1? 'hide': ''}">${item.num}</div>
                 </div>
@@ -1907,7 +1921,7 @@ var renderNavTypeList = function (list, navIndex = 0){
         } else if (item.name === '出生点' || item.name === '撤离点' || item.name === '首领' || item.name === '行动接取站' || item.name === '固定弹药箱' || item.name === '载具补给站') {
             html+=`
             <div class="fgx ${(list.length > 15 || item.name === '固定弹药箱' || item.name === '载具补给站') ? '' : 'top0'}">${item.name}</div>
-                <div class="nav-list-item nav-list-item-${index} ${nameClassMap[item.name] || ''} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+                <div class="nav-list-item nav-list-item-${index} ${nameClassMap[item.name] || ''} nav-list-${item.icon} ${visibleMarker[getMarkerFilterKey(item)] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-filter-key="${getMarkerFilterKey(item)}">
                 <div class="wz-bg">
                     <div class="wz-num">${item.num}</div>
                 </div>
@@ -1915,7 +1929,7 @@ var renderNavTypeList = function (list, navIndex = 0){
             </div>`
         } else {
             html+=`
-            <div class="nav-list-item nav-list-item-${index} ${nameClassMap[item.name] || ''} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`} ${item.num === 0? 'hide': ''}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+            <div class="nav-list-item nav-list-item-${index} ${nameClassMap[item.name] || ''} nav-list-${item.icon} ${visibleMarker[getMarkerFilterKey(item)] ? `img_${item.icon}_click active`: `img_${item.icon}`} ${item.num === 0? 'hide': ''}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-filter-key="${getMarkerFilterKey(item)}">
                 <div class="wz-bg">
                     <div class="wz-num">${item.num}</div>
                 </div>
@@ -1924,7 +1938,7 @@ var renderNavTypeList = function (list, navIndex = 0){
         }
        
         
-       !typeListInit &&  (visibleMarker[item.name] = false)
+       !typeListInit &&  (visibleMarker[getMarkerFilterKey(item)] = false)
        
     })
     if (isWar) {
@@ -2132,7 +2146,7 @@ function changeMapLv(type) {
                 removeExistingLayer: true
             }
         },
-        '10_1F': {
+        '10_jd_1F': {
             mapInfo: cgxgInfo,
             navList: () => cgxgInfo.floorInfo.navList_firest,
             navTypeList: () => cgxgInfo.floorInfo.navList_firest,
@@ -2142,7 +2156,7 @@ function changeMapLv(type) {
             mapLayer: 'cgxg_1f',
             lvName: '常规'
         },
-        '10_2F': {
+        '10_jd_2F': {
             mapInfo: cgxgInfo,
             navList: () => cgxgInfo.floorInfo.navList_second,
             navTypeList: () => cgxgInfo.floorInfo.navList_second,
@@ -2232,9 +2246,9 @@ function changeMapLv(type) {
         },
         '10_ldz_B1': {
             mapInfo: cgxgInfo,
-            navList: () => cgxgInfo.floorInfo.navList_firest,
-            navTypeList: () => cgxgInfo.floorInfo.navList_firest,
-            mapIcons: () => cgxgInfo.floorInfo.mapArticle_first,
+            navList: () => cgxgInfo.floorInfo.navList1_ldz_b1,
+            navTypeList: () => cgxgInfo.floorInfo.navList1_ldz_b1,
+            mapIcons: () => cgxgInfo.floorInfo.mapArticle1_ldz_b1,
             poiInfo: selectRegion_cgxg,
             mapName: '长弓溪谷',
             lvName: '常规',
@@ -2255,7 +2269,7 @@ function changeMapLv(type) {
                 removeExistingLayer: true
             }
         },
-        '11_1F': {
+        '11_jd_1F': {
             mapInfo: cgxgInfo,
             navList: () => cgxgInfo.floorInfo.navList2_firest,
             navTypeList: () => cgxgInfo.floorInfo.navList2_firest,
@@ -2265,7 +2279,7 @@ function changeMapLv(type) {
             mapLayer: 'cgxg_1f',
             lvName: '机密'
         },
-        '11_2F': {
+        '11_jd_2F': {
             mapInfo: cgxgInfo,
             navList: () => cgxgInfo.floorInfo.navList2_second,
             navTypeList: () => cgxgInfo.floorInfo.navList2_second,
@@ -2818,9 +2832,17 @@ function changeMapLv(type) {
             allNavList = injectFishIntoAll(allNavList, getFishTypeList(allNavList));
         }
 
+        // ★ 扁平楼层 nav 统一包"全部"分组壳：雷达站 navList_ldz_*（cgxg_floor.js）是纯条目数组，
+        // 无分组 → 原本不建一级 tab、且"全选/重置"按组形态取 allNavList[0].typeList 会拿到 undefined
+        // 导致 nav 被空渲染清空。此处（仅楼层、且确实扁平时）包成与酒店/az3 楼层一致的单"全部"分组
+        // （新数组，不动源数据），之后 isGroupedNav=true，建 tab、全选等逻辑按分组天然工作。
+        if (isFloor && !isWar && Array.isArray(navTypeList) && navTypeList.length && !isGroupedNav(navTypeList)) {
+            var _flatWrap = [{ titleType: 'all', title: '全部', typeList: navTypeList.slice() }];
+            allNavList = _flatWrap;
+            navTypeList = _flatWrap;
+        }
 
-        console.log('allNavList', allNavList);
-        console.log('navTypeList', navTypeList);
+
         // 设置地图名称和难度
         const lvName = config.lvName || (config.getLvName ? config.getLvName(chooseItemLvName) : '常规');
         console.log('changeMapLv', config.mapName, lvName, config.lvName);
@@ -2861,6 +2883,23 @@ function changeMapLv(type) {
 
         return true;
     };
+
+    // ★ 主图→楼层预置：进入楼层时地图若仍停在主图大边界/低 zoom，addLayer 里 setMaxBounds(楼层小矩形)
+    // 会触发 Leaflet(maxBoundsViscosity=1) 强锚定到楼层瓦片矩形中心+可容纳 zoom，覆盖楼层 initX/initY 预设点
+    // （首次切入 cgxg 雷达站偏、酒店因矩形中心≈预设点看不出，第二次起因已在楼层域而正常）。
+    // 这里在 applyMapConfig/addLayer 前先把地图切到该层 minZoom 以上、并落位到该层预设点，避免跨域强锚定。
+    // 守卫 currFloorIndex>=0：仅"楼层上下文切换"生效；query 直入主图/楼层退主图（index=-1）与楼层互切（zoom 已达标）不受影响。
+    if (currFloorIndex >= 0 && map && mapConfigs[type] && mapConfigs[type].mapInfo && mapConfigs[type].mapInfo.floorInfo) {
+        var _preMi = mapConfigs[type].mapInfo;
+        var _preGm = _preMi.floorInfo.info && _preMi.floorInfo.info.floor;
+        var _preRk = currFloorRegion || (Object.keys(_preGm || {})[0]);
+        var _preList = (_preGm && _preRk && _preGm[_preRk]) || [];
+        var _preItem = _preList[currFloorIndex] || _preList[0];
+        if (_preItem && _preItem.initX !== undefined && map.getZoom() < _preItem.minZoom) {
+            map.setMaxBounds(null);
+            map.setView([_preItem.initX, _preItem.initY], _preItem.initZoom);
+        }
+    }
 
     // 应用地图配置
     const configApplied = applyMapConfig(mapConfigs[type]);
@@ -2922,19 +2961,17 @@ function selectmarker(name) {
         mapSelectCtn.removeClass('show');
         return;
     };
-    console.log('name', name, allNavList);
     var markerList = []
     var html = '';
-    for (let index = 0; index < allNavList[0].typeList.length; index++) {
-        const element = allNavList[0].typeList[index];
-        console.log(element);
+    var searchList = currentNavList(0);
+    for (let index = 0; index < searchList.length; index++) {
+        const element = searchList[index];
         fuzzyMatch(element.name, name) && markerList.push(element)
     }
-    console.log('markerList', markerList);
     markerList.length && markerList.forEach(function (item, index) {
         // console.log(visibleMarker[item.name], item.name);
         html+=`
-        <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[item.name] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}">
+        <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[getMarkerFilterKey(item)] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-filter-key="${getMarkerFilterKey(item)}">
             <div class="wz-bg">
                 <div class="wz-num">${item.num}</div>
             </div>
@@ -2955,9 +2992,10 @@ function bindOptionEvent () {
     NavListItem.on('click', function (e) {
         var icon = $(e.target).attr('data-icon');
         var name = $(e.target).attr('data-name');
+        var filterKey = $(e.target).attr('data-filter-key');
         var NavListItemNum = $(e.target).find('.wz-num')
         if (NavListItemNum.text() == 0) return;
-        if (!visibleMarker[name]) {
+        if (!visibleMarker[filterKey]) {
             $(this).addClass(`img_${icon}_click active`)
         } else {
             $(this).removeClass(`img_${icon}_click active`)
@@ -2965,12 +3003,11 @@ function bindOptionEvent () {
         }
         currNavIcon = name;
         NavCliciIndex++;
-        toggleVisible(name, currLeftNav);
+        toggleVisible(filterKey, currLeftNav);
         saveMarker = Object.assign({}, visibleMarker);
         
         let chooseNum = $('.nav-type-list').find('.active').length;
-        console.log(123, chooseNum, navTypeList[currLeftNav].typeList.length);
-        if (chooseNum === navTypeList[currLeftNav].typeList.length) {
+        if (chooseNum === currentNavList().length) {
             console.log('走这里');
             
             $('.choose-all').attr('class', 'img_all_open choose-all')
@@ -2983,7 +3020,6 @@ function bindOptionEvent () {
                 $('.choose-all').attr('class', 'img_all_close choose-all')
             }
         }
-        console.log('点击');
     })
 }
 
@@ -3022,11 +3058,10 @@ var bindEvent = function () {
             toggleVisible(`${currLeftNav}_none`, currLeftNav);
             $('.choose-all').attr('class', 'img_all_close choose-all')
         }
-        // renderNavTypeList(navList[0].typeList)
         if (Number(currLeftNav) === 0) {
-            renderNavTypeList(allNavList[0].typeList, 0)
+            renderNavTypeList(currentNavList(), 0)
         } else {
-            renderNavTypeList(navTypeList[currLeftNav].typeList, currLeftNav)
+            renderNavTypeList(currentNavList(), currLeftNav)
         }
 
         bindOptionEvent();
@@ -3038,11 +3073,10 @@ var bindEvent = function () {
         resetAll('none')
         toggleVisible(`none`, currLeftNav);
         $('.choose-all').attr('class', 'img_all_close choose-all')
-        // renderNavTypeList(navList[0].typeList)
         if (Number(currLeftNav) === 0) {
-            renderNavTypeList(allNavList[0].typeList, 0)
+            renderNavTypeList(currentNavList(), 0)
         } else {
-            renderNavTypeList(navTypeList[currLeftNav].typeList, currLeftNav)
+            renderNavTypeList(currentNavList(), currLeftNav)
         }
 
         bindOptionEvent();
@@ -3057,9 +3091,9 @@ var bindEvent = function () {
         $(`.nav-option-item-${index}`).addClass('active')
         console.log($(e.target).attr('data-index'));
         if (Number(index) === 0) {
-            renderNavTypeList(allNavList[0].typeList, 0)
+            renderNavTypeList(currentNavList(0), 0)
         } else {
-            renderNavTypeList(navTypeList[index].typeList, index)
+            renderNavTypeList(currentNavList(index), index)
         }
 
         if (listIsAll[currLeftNav]) {
@@ -3771,7 +3805,7 @@ function viewChangeToMap () {
             console.log(`${window.viewChange ? 'g_jdbsd_g': 'g_jdbsd_r'}`);
             var icon = L.divIcon({
                 className: ` map-war-icon`,
-                html: `<div class="map-icon-bg"><img src="./img/dzc_i/${window.viewChange ? 'g_jdbsd_g': 'g_jdbsd_r'}.png"/></div>`,
+                html: `<div class="map-icon-bg"><img src="https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${window.viewChange ? 'g_jdbsd_g': 'g_jdbsd_r'}.png"/></div>`,
                 iconSize: [30, 30],			//设置图标大小
                 iconAnchor: [15, 15],		//设置图标偏移
             })
@@ -3780,7 +3814,7 @@ function viewChangeToMap () {
         } else if (this.options.icon.name === "防守方基地") {
             var icon = L.divIcon({
                 className: ` map-war-icon`,
-                html: `<div class="map-icon-bg"><img src="./img/dzc_i/${window.viewChange ? 'f_jdbsd_r': 'f_jdbsd_g'}.png"/></div>`,
+                html: `<div class="map-icon-bg"><img src="https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${window.viewChange ? 'f_jdbsd_r': 'f_jdbsd_g'}.png"/></div>`,
                 iconSize: [30, 30],			//设置图标大小
                 iconAnchor: [15, 15],		//设置图标偏移
             })
@@ -4092,21 +4126,21 @@ function warInit (mapName, type, isBorder = false) {
                 let rotate = currWarMap === 'qhz' ? 90 : 180
                 myIcon = L.divIcon({
                     className: ` map-war-icon`,
-                    html: `<div class="map-icon-bg" style="transform: translate3d(-50%, -50%, 0) rotate(${Number(element.rotate) + rotate}deg)"><img src="./img/dzc_i/${icon}.png"/></div>`,
+                    html: `<div class="map-icon-bg" style="transform: translate3d(-50%, -50%, 0) rotate(${Number(element.rotate) + rotate}deg)"><img src="https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${icon}.png"/></div>`,
                     iconSize: [30, 30],			//设置图标大小
                     iconAnchor: [15, 15],		//设置图标偏移
                 })
             } else {
                 myIcon = L.divIcon({
                     className: ` map-war-icon`,
-                    html: `<div class="map-icon-bg"><img src="./img/dzc_i/${icon}.png"/></div>`,
+                    html: `<div class="map-icon-bg"><img src="https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${icon}.png"/></div>`,
                     iconSize: [30, 30],			//设置图标大小
                     iconAnchor: [15, 15],		//设置图标偏移
                 })
             }
             myIcon.name = element.name;
             myIcon.icon = icon;
-            visibleMarker[element.name] = true;
+            visibleMarker[getMarkerFilterKey(element)] = true;
             
             $(`.nav-list-nav${icon.substring(1)}`).addClass(`img_nav${icon.substring(1)}_click active`)
             var popupHtml = `
@@ -4122,7 +4156,7 @@ function warInit (mapName, type, isBorder = false) {
                     this.openPopup();
                     this.setIcon( L.divIcon({
                         className: ` map-war-icon click`,
-                        html: `<div class="map-icon-bg" style="${element?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(element?.rotate) + rotate}deg)` : ''}"><img src="./img/dzc_i/${icon}.png"/></div>`,
+                        html: `<div class="map-icon-bg" style="${element?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(element?.rotate) + rotate}deg)` : ''}"><img src="https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/${icon}.png"/></div>`,
                         iconSize: [50, 50],			//设置图标大小
                         iconAnchor: [25, 25],		//设置图标偏移
                     }));
@@ -4599,7 +4633,7 @@ renderNavTypeList = function (list, navIndex = 0) {
         const markerMode = getMarkerMode(item);
         const isFish = item.catalog === 'fish';
         return `
-        <div class="nav-list-item nav-list-item-${index} ${extraClass} nav-list-${item.icon} ${visibleMarker[filterKey] ? `img_${item.icon}_click active`: `img_${item.icon}`} ${item.num === 0 ? 'hide' : ''} ${isFish ? 'nav-fish-item' : ''}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-mode="${markerMode}" data-filter-key="${filterKey}">
+        <div class="nav-list-item nav-list-item-${index} ${extraClass} nav-list-${item.icon} ${visibleMarker[filterKey] ? `img_${item.icon}_click active`: `img_${item.icon}`} ${item.num === 0 ? 'hide' : ''} ${isFish ? 'nav-fish-item' : ''}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-filter-key="${getMarkerFilterKey(item)}" data-mode="${markerMode}" data-filter-key="${filterKey}">
             <div class="wz-bg">
                 ${isFish ? fishIconImg(item) : ''}
                 <div class="wz-num" ${item.num === 1 ? 'hide' : ''}>${item.num}</div>
@@ -4698,7 +4732,7 @@ selectmarker = function (name) {
         const markerMode = getMarkerMode(item);
         const isFish = item.catalog === 'fish';
         html+=`
-        <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[filterKey] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-mode="${markerMode}" data-filter-key="${filterKey}">
+        <div class="nav-list-item nav-list-item-${index} nav-list-${item.icon} ${visibleMarker[filterKey] ? `img_${item.icon}_click active`: `img_${item.icon}`}" data-index="${index}" data-icon="${item.icon}" data-name="${item.name}" data-filter-key="${getMarkerFilterKey(item)}" data-mode="${markerMode}" data-filter-key="${filterKey}">
             <div class="wz-bg">
                 ${isFish ? fishIconImg(item) : ''}
                 <div class="wz-num">${item.num}</div>

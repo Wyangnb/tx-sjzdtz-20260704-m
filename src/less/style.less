@@ -656,6 +656,23 @@ body {
                       
                         }
                     }
+                    // 摩格旧城区（index 13）：每档 translateY 递增 70px（单项高），新增地图按此递增
+                    &.show-13{
+                        transform: translateY(910px);
+                        height: 290px/2;
+                        .map-lv-item-2{
+                            display: none;
+                      
+                        }
+                        .map-lv-item-0{
+                            display: block;
+                      
+                        }
+                        .map-lv-item-1{
+                            display: block;
+                      
+                        }
+                    }
                     &.top0{
                         transform: translateY(0px);
                     }
@@ -963,6 +980,9 @@ body {
                         margin-top: 10px;
                         font-size: 20px;
                         white-space: nowrap;
+                        max-width: 1rem;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                         // transform: scale(0.55);
                     }
                     div{
@@ -1256,6 +1276,10 @@ body {
                         margin-top: 10px;
                         font-size: 20px;
                         white-space: nowrap;
+                        white-space: nowrap;
+                        max-width: 1rem;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                     }
                     div{
                         flex-shrink: 0;
