@@ -340,6 +340,14 @@
     background-size: 147px/2 auto;
 }
 
+.img_nav_placeholder{
+    background-image: data-uri('@{img}placeholder.png');
+    width: 147px/2;
+    height: 107px/2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 147px/2 auto;
+}
 
 
 .img_nav_cld_i{
@@ -2294,7 +2302,8 @@
 }
 
 // 摩格旧城区（mgjcq）新增图标：GTQ-35轻型坦克 / 两栖全地形车（nav 勾选列表用，marker 直接引用 dzc_i png）
-.img_deploy_qxtk{
+// 选中态 main.js 会把类从 img_xxx 换成 img_xxx_click，无独立 _click 素材 → 按既有约定合并选择器共用同一张图
+.img_deploy_qxtk, .img_deploy_qxtk_click{
     background-image: data-uri('@{img}dzc_i/deploy_qxtk.png');
     width: 210px/2;
     height: 210px/2;
@@ -2302,7 +2311,7 @@
     background-repeat: no-repeat;
     background-size: 210px/2 auto;
 }
-.img_q_qxtk{
+.img_q_qxtk, .img_q_qxtk_click{
     background-image: data-uri('@{img}dzc_i/q_qxtk.png');
     width: 210px/2;
     height: 210px/2;
@@ -2310,7 +2319,7 @@
     background-repeat: no-repeat;
     background-size: 210px/2 auto;
 }
-.img_q_lqqdxc{
+.img_q_lqqdxc, .img_q_lqqdxc_click{
     background-image: data-uri('@{img}dzc_i/q_lqqdxc.png');
     width: 210px/2;
     height: 210px/2;
