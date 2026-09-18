@@ -89,6 +89,13 @@
                             <div class="curr-map-name">零号大坝</div>
                             <div class="curr-map-lv">常规</div>
 
+                            <!-- 爆破 -->
+                            <!-- <div class="bp-curr-map-name">零号大坝</div> -->
+                            <div class="bp-curr-mode-ctn">
+                              <div class="mode-change-text">进攻</div>
+                              <div class="mode-change-icon"></div>
+                            </div>
+
                             <div class="curr-random">特殊事件</div>
 
                             <div class="zj-ctn">
@@ -160,8 +167,19 @@
                           </div>
                         </div>
 
+                        <!-- 爆破地图列表 -->
+                        <div class="bp-map-change show">
+                          <div class="bp-map-item act" data-map="htzz">航天中转站</div>
+                          <div class="bp-map-item" data-map="lswdz">蓝水屋电站</div>
+                          <div class="bp-map-item" data-map="smezy">萨米尔庄园</div>
+                        </div>
+
                         <div class="btn-nav-state">
                           <div class="nav-state-icon img_nav_state"></div>
+                        </div>
+
+                        <div class="btn-nav-state-bp">
+                          <div class="nav-state-icon img_nav_state_bp_s"></div>
                         </div>
 
                         <div class="select-region-ctn">
@@ -205,6 +223,29 @@
                             <div class="abcter btn-check-marker img_btn_check_marker"></div>
                           </div>
                         </div>
+
+                        <!-- 爆破 -->
+                        <div class="bp-nav-ctn">
+                          
+                          <div class="nav-ctn-bg img_bp_nav_bg_s">
+                            <div class="bp-nav-title">点位筛选</div>
+                            <div class="bp-top-btns">
+                              <div class="bp-btns-item bp-btn-normal">通用</div>
+                              <div class="bp-btns-item bp-btn-role">干员</div>
+                            </div>
+                            <div class="bp-point-list-ctn">
+                              <div class="bp-point-list">
+                                <div class="bp-normal-list"></div>
+                                <div class="bp-role-list"></div>
+                              </div>
+                              <div class="bp-skill-title">技能选择</div>
+                              <div class="bp-skill-list"></div>
+                            </div>
+                          <div class="nav-bot-ctn img_bp_bot_bg_s">
+                            <div class="abcter reset-choose img_bp_reset_s"></div>
+                            <div class="abcter btn-check-marker-bp img_btn_check_marker"></div>
+                          </div>
+                        </div>
         
                         <div class="right-nav">
                           <div class="btn-right-nav img_btn_right_nav"></div>
@@ -223,6 +264,11 @@
                         <div class="btn-war-change">
                           <div class="iswar-i"></div>
                           <div class="war-change-text">全面战场</div>
+                        </div>
+
+                        <div class="btn-bp-change">
+                          <div class="iswar-i"></div>
+                          <div class="bp-change-text">爆破模式</div>
                         </div>
 
                         <div class="btn-view-change">
@@ -432,11 +478,15 @@
   <script src="<%= require('./src/js/lib/dzc/map_dc.js') %>"></script>
   <script src="<%= require('./src/js/lib/dzc/map_yz.js') %>"></script>
   <script src="<%= require('./src/js/lib/dzc/map_wmsyh.js') %>"></script>
+  <script src="<%= require('./src/js/lib/bp/map_htzzz.js') %>"></script>
+  <script src="<%= require('./src/js/lib/bp/map_lswdz.js') %>"></script>
+  <script src="<%= require('./src/js/lib/bp/map_smezy.js') %>"></script>
   
   <script src="<%= require('./src/js/lib/map_az3.js') %>"></script>
   <script src="<%= require('./src/js/lib/dzc/map_dsc.js') %>"></script>
   <script src="<%= require('./src/js/lib/dzc/map_mgjcq.js') %>"></script>
   <script src="<%= require('./src/js/lib/main.js') %>"></script>
+  <script src="<%= require('./src/js/lib/main_bp.js') %>"></script>
   <script src="https://ossweb-img.qq.com/images/js/TGMobileShare/TGMobileShare.min.js"></script>
   <script src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
   <script src="https://img.ssl.msdk.qq.com/wiki/msdkJsAdapter.js"></script>

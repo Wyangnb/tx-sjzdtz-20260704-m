@@ -47,6 +47,29 @@ if (fs.existsSync('src/img/xdaba')) {
         flatten: true
     });
 }
+if (fs.existsSync('src/img/map_htzz')) {
+    copyItem.push({
+        from: 'src/img/map_htzz',
+        to: './img/map_htzz',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/bp')) {
+    copyItem.push({
+        from: 'src/img/bp',
+        to: './ossweb-img/img/bp',
+        flatten: true
+    });
+}
+['map_lswdz', 'map_smezy'].forEach(function (name) {
+    if (fs.existsSync('src/img/' + name)) {
+        copyItem.push({
+            from: 'src/img/' + name,
+            to: './img/' + name,
+            flatten: true
+        });
+    }
+});
 
 if (fs.existsSync('src/img/dzc_i')) {
     copyItem.push({

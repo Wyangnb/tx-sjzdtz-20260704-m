@@ -3203,7 +3203,6 @@ var bindEvent = function () {
 
 
     $('.m-index').on('click', function (e) {
-        console.log(e, $(e.target).attr('class'));
        
         if ($(e.target).attr('class') === 'nav-ctn open') {
             navState = false;
