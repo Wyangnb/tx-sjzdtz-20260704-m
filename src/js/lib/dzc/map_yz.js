@@ -431,21 +431,11 @@ window["yz_pc"].navRegionInfo = [
           num: 4,
           icon: "nav_gddyx",
         },
-      ],
-    },
-    {
-      title: "据点",
-      typeList: [
         {
           name: "据点A",
           num: 1,
           icon: "nav_jd_a",
         },
-      ],
-    },
-    {
-      title: "基地部署点",
-      typeList: [
         {
           name: "进攻方基地",
           num: 2,
@@ -456,12 +446,7 @@ window["yz_pc"].navRegionInfo = [
           num: 1,
           icon: "nav_jdbsd_g",
         },
-      ],
-    },
-    {
-      title: "载具",
-      typeList: [
-       {
+        {
           name: "突击车",
           num: 1,
           icon: "nav_orvtjc",
@@ -471,29 +456,19 @@ window["yz_pc"].navRegionInfo = [
           num: 1,
           icon: "nav_sxzjc",
         },
-      ],
-    },
-    {
-      title: "载具补给站",
-      typeList: [
-         // 载具补给站
-         {
+        {
           name: "载具补给站",
           num: 7,
           icon: "nav_zjbjz",
         },
-      ]
-    },
-    {
-      title: "固定弹药箱",
-      typeList: [
         {
           name: "固定弹药箱",
           num: 4,
           icon: "nav_gddyx",
         },
       ],
-    }
+    },
+    
   ],
   [
     {

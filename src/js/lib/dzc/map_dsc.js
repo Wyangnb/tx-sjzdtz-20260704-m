@@ -530,11 +530,11 @@ window["dsc_pc"].navRegionInfo = [
 
       ],
     },
-    // {
-    //   title: "载具",
-    //   typeList: [
-    //   ],
-    // },
+    {
+      title: "载具",
+      typeList: [
+      ],
+    },
     {
       title: "载具补给站",
       typeList: [

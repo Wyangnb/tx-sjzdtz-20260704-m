@@ -352,13 +352,7 @@ var navList = [
                 "num": 3,
                 "icon": "nav_mmf"
               },
-            //    {
-            //     "name": "藏宝图",
-            // "lang": "lang_gjlxx",
-            // "idType": 25,
-            // "num": 10,
-            // "icon": "nav_cbt"
-            //   },
+            
             {
                 name: '出生点',
                 idType: 26,
@@ -415,10 +409,7 @@ var navList = [
             },
         ]
     },
-    // {
-    //     titleType: 'cbt',
-    //     title: '藏宝图',
-    // },
+   
     {
         titleType: 'wzd',
         title: '物资点',
@@ -636,13 +627,6 @@ var navListInfo = [
                 "num": 6,
                 "icon": "nav_xlx"
             },
-            // {
-            //     "name": "藏宝图",
-            // "lang": "lang_gjlxx",
-            // "idType": 25,
-            // "num": 10,
-            // "icon": "nav_cbt"
-            //   },
             {
                 name: '出生点',
                 idType: 26,
@@ -699,18 +683,6 @@ var navListInfo = [
             },
         ]
     },
-    // {
-    //     titleType: 'cbt',
-    //     title: '藏宝图',
-    //     typeList: [
-    //         {
-    //             name: '藏宝图',
-    //             idType: 26,
-    //             num: 10,
-    //             icon: 'nav_cbt',
-    //         },
-    //     ]
-    // },
     {
         titleType: 'wzd',
         title: '物资点',
@@ -6307,107 +6279,7 @@ var mapArticle = [
     "x": 318866.312500,
     "y": "-776415.562500"
   },
-//   藏宝图
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 1,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt1.png',
-    "icon": "cbt",
-    "x": "319172.7188",
-    "y": "-778363.5625",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 2,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt2.png',
-    "icon": "cbt",
-    "x": "323228.8125",
-    "y": "-769356",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 3,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt3.png',
-    "icon": "cbt",
-    "x": "342757.4063",
-    "y": "-763536.5625",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 4,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt4.png',
-    "icon": "cbt",
-    "x": "395694.8125",
-    "y": "-788158.5",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 5,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt5.png',
-    "icon": "cbt",
-    "x": "373631.5313",
-    "y": "-752355.9375",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 6,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt6.png',
-    "icon": "cbt",
-    "x": "395359.5938",
-    "y": "-750910.5625",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 7,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt7.png',
-    "icon": "cbt",
-    "x": "377384.2188",
-    "y": "-779410.8125",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 9,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt9.png',
-    "icon": "cbt",
-    "x": "336910.4063",
-    "y": "-795068.4375",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 10,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt10.png',
-    "icon": "cbt",
-    "x": "364610.1875",
-    "y": "-789170.375",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 11,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt11.png',
-    "icon": "cbt",
-    "x": "362557.9063",
-    "y": "-759719.9375",
-    "z": ""
-},
+
 
 //   出生点
 {
@@ -7028,13 +6900,6 @@ var navList2 = [
                 "num": 3,
                 "icon": "nav_mmf"
               },
-            //   {
-            //     "name": "藏宝图",
-            // "lang": "lang_gjlxx",
-            // "idType": 25,
-            // "num": 10,
-            // "icon": "nav_cbt"
-            //   },
             {
                 name: '出生点',
                 idType: 26,
@@ -7085,10 +6950,6 @@ var navList2 = [
             },
         ]
     },
-    // {
-    //     titleType: 'cbt',
-    //     title: '藏宝图',
-    // },
     {
         titleType: 'wzd',
         title: '物资点',
@@ -7356,18 +7217,6 @@ var navListInfo2 = [
             },
         ]
     },
-    // {
-    //     titleType: 'cbt',
-    //     title: '藏宝图',
-    //     typeList: [
-    //         {
-    //             name: '藏宝图',
-    //             idType: 26,
-    //             num: 10,
-    //             icon: 'nav_cbt',
-    //         },
-    //     ]
-    // },
     {
         titleType: 'wzd',
         title: '物资点',
@@ -7660,230 +7509,7 @@ var navListInfo2 = [
 ]
 
 var mapArticle2 = [
-    {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "罗非鱼",
-    "icon": "tilapia",
-    "x": 346317.404,
-    "y": -784358.773,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水 / 海水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "白条鱼",
-    "icon": "sharpbelly",
-    "x": 346950.891,
-    "y": -781827.883,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "基础谷物团饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "横纹鲃鱼",
-    "icon": "striped_barb",
-    "x": 345367.174,
-    "y": -778347.908,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "基础谷物团饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "红尾鱼",
-    "icon": "redtail",
-    "x": 345367.174,
-    "y": -775500.656,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "强化诱食团饵\r\n高对比刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "花鲢鱼",
-    "icon": "bighead_carp",
-    "x": 344416.943,
-    "y": -772613.859,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "强化诱食团饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "青鱼",
-    "icon": "black_carp",
-    "x": 344100.2,
-    "y": -769766.607,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵\r\n荧光震动亮片",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "条纹鲈",
-    "icon": "striped_bass",
-    "x": 343783.457,
-    "y": -764704.826,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水 / 海水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "鲻鱼",
-    "icon": "mullet",
-    "x": 344416.943,
-    "y": -760275.767,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水 / 海水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "梭鲈",
-    "icon": "zander",
-    "x": 342199.74,
-    "y": -757744.877,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵\r\n荧光震动亮片\r\n精准猎食拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "短吻多鳍鱼",
-    "icon": "shortnose_bichir",
-    "x": 344733.687,
-    "y": -758061.238,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "强化诱食团饵\r\n高对比刺激拟饵\r\n荧光震动亮片\r\n深水探测拟饵\r\n高频摆尾软饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "翘嘴鲌",
-    "icon": "culter",
-    "x": 342833.227,
-    "y": -756163.07,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵\r\n精准猎食拟饵\r\n高频摆尾软饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "长颈鹿鲶",
-    "icon": "giraffe_catfish",
-    "x": 345050.43,
-    "y": -755846.709,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "深水探测拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "恩氏多鳍鱼",
-    "icon": "endlicheri",
-    "x": 343466.713,
-    "y": -754581.263,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "精制竞技团饵\r\n深水探测拟饵\r\n领地刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "狗鱼",
-    "icon": "pike",
-    "x": 347584.377,
-    "y": -754225.357,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "精准猎食拟饵\r\n高频摆尾软饵\r\n领地刺激拟饵\r\n钢珠声诱拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "巨型褐鳟",
-    "icon": "brown_trout",
-    "x": 345367.174,
-    "y": -752959.912,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "精准猎食拟饵\r\n深潜巨物震动饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "幼鲨",
-    "icon": "shark",
-    "x": 348534.607,
-    "y": -752959.912,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水 / 海水",
-    "k2": "饵料",
-    "v2": "深潜巨物震动饵\r\n钢珠声诱拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
+    
     {
         "地图": "大坝",
         "大区域": "大坝_合同",
@@ -13131,107 +12757,7 @@ var mapArticle2 = [
     "x": 318866.312500,
     "y": "-776415.562500"
   },
-//   藏宝图
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 1,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt1.png',
-    "icon": "cbt",
-    "x": "319172.7188",
-    "y": "-778363.5625",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 2,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt2.png',
-    "icon": "cbt",
-    "x": "323228.8125",
-    "y": "-769356",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 3,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt3.png',
-    "icon": "cbt",
-    "x": "342757.4063",
-    "y": "-763536.5625",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 4,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt4.png',
-    "icon": "cbt",
-    "x": "395694.8125",
-    "y": "-788158.5",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 5,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt5.png',
-    "icon": "cbt",
-    "x": "373631.5313",
-    "y": "-752355.9375",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 6,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt6.png',
-    "icon": "cbt",
-    "x": "395359.5938",
-    "y": "-750910.5625",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 7,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt7.png',
-    "icon": "cbt",
-    "x": "377384.2188",
-    "y": "-779410.8125",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 9,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt9.png',
-    "icon": "cbt",
-    "x": "336910.4063",
-    "y": "-795068.4375",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 10,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt10.png',
-    "icon": "cbt",
-    "x": "364610.1875",
-    "y": "-789170.375",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 11,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt11.png',
-    "icon": "cbt",
-    "x": "362557.9063",
-    "y": "-759719.9375",
-    "z": ""
-},
+
 //   出生点
 {
     "name": "出生点",
@@ -13849,13 +13375,6 @@ var navList3 = [
                 "num": 3,
                 "icon": "nav_mmf"
               },
-            //   {
-            //     "name": "藏宝图",
-            // "lang": "lang_gjlxx",
-            // "idType": 25,
-            // "num": 10,
-            // "icon": "nav_cbt"
-            //   },
             {
                 name: '出生点',
                 idType: 26,
@@ -13900,10 +13419,6 @@ var navList3 = [
             },
         ]
     },
-    // {
-    //     titleType: 'cbt',
-    //     title: '藏宝图',
-    // },
     {
         titleType: 'wzd',
         title: '物资点',
@@ -14165,18 +13680,6 @@ var navListInfo3 = [
             },
         ]
     },
-    // {
-    //     titleType: 'cbt',
-    //     title: '藏宝图',
-    //     typeList: [
-    //         {
-    //             name: '藏宝图',
-    //             idType: 26,
-    //             num: 10,
-    //             icon: 'nav_cbt',
-    //         },
-    //     ]
-    // },
     {
         titleType: 'wzd',
         title: '物资点',
@@ -14463,230 +13966,7 @@ var navListInfo3 = [
 ]
 
 var mapArticle3 = [
-    {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "罗非鱼",
-    "icon": "tilapia",
-    "x": 346317.404,
-    "y": -784358.773,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水 / 海水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "白条鱼",
-    "icon": "sharpbelly",
-    "x": 346950.891,
-    "y": -781827.883,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "基础谷物团饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "横纹鲃鱼",
-    "icon": "striped_barb",
-    "x": 345367.174,
-    "y": -778347.908,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "基础谷物团饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "红尾鱼",
-    "icon": "redtail",
-    "x": 345367.174,
-    "y": -775500.656,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "强化诱食团饵\r\n高对比刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "花鲢鱼",
-    "icon": "bighead_carp",
-    "x": 344416.943,
-    "y": -772613.859,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "强化诱食团饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "青鱼",
-    "icon": "black_carp",
-    "x": 344100.2,
-    "y": -769766.607,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵\r\n荧光震动亮片",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "条纹鲈",
-    "icon": "striped_bass",
-    "x": 343783.457,
-    "y": -764704.826,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水 / 海水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "鲻鱼",
-    "icon": "mullet",
-    "x": 344416.943,
-    "y": -760275.767,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水 / 海水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "梭鲈",
-    "icon": "zander",
-    "x": 342199.74,
-    "y": -757744.877,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵\r\n荧光震动亮片\r\n精准猎食拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "短吻多鳍鱼",
-    "icon": "shortnose_bichir",
-    "x": 344733.687,
-    "y": -758061.238,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "强化诱食团饵\r\n高对比刺激拟饵\r\n荧光震动亮片\r\n深水探测拟饵\r\n高频摆尾软饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "翘嘴鲌",
-    "icon": "culter",
-    "x": 342833.227,
-    "y": -756163.07,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵\r\n精准猎食拟饵\r\n高频摆尾软饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "长颈鹿鲶",
-    "icon": "giraffe_catfish",
-    "x": 345050.43,
-    "y": -755846.709,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "深水探测拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "恩氏多鳍鱼",
-    "icon": "endlicheri",
-    "x": 343466.713,
-    "y": -754581.263,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "精制竞技团饵\r\n深水探测拟饵\r\n领地刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "狗鱼",
-    "icon": "pike",
-    "x": 347584.377,
-    "y": -754225.357,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "精准猎食拟饵\r\n高频摆尾软饵\r\n领地刺激拟饵\r\n钢珠声诱拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "巨型褐鳟",
-    "icon": "brown_trout",
-    "x": 345367.174,
-    "y": -752959.912,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "精准猎食拟饵\r\n深潜巨物震动饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "幼鲨",
-    "icon": "shark",
-    "x": 348534.607,
-    "y": -752959.912,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水 / 海水",
-    "k2": "饵料",
-    "v2": "深潜巨物震动饵\r\n钢珠声诱拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
+    
     {
         "地图": "大坝",
         "大区域": "大坝_合同",
@@ -20183,107 +19463,6 @@ var mapArticle3 = [
     "x": 318866.312500,
     "y": "-776415.562500"
   },
-//   藏宝图
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 1,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt1.png',
-    "icon": "cbt",
-    "x": "319172.7188",
-    "y": "-778363.5625",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 2,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt2.png',
-    "icon": "cbt",
-    "x": "323228.8125",
-    "y": "-769356",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 3,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt3.png',
-    "icon": "cbt",
-    "x": "342757.4063",
-    "y": "-763536.5625",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 4,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt4.png',
-    "icon": "cbt",
-    "x": "395694.8125",
-    "y": "-788158.5",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 5,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt5.png',
-    "icon": "cbt",
-    "x": "373631.5313",
-    "y": "-752355.9375",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 6,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt6.png',
-    "icon": "cbt",
-    "x": "395359.5938",
-    "y": "-750910.5625",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 7,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt7.png',
-    "icon": "cbt",
-    "x": "377384.2188",
-    "y": "-779410.8125",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 9,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt9.png',
-    "icon": "cbt",
-    "x": "336910.4063",
-    "y": "-795068.4375",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 10,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt10.png',
-    "icon": "cbt",
-    "x": "364610.1875",
-    "y": "-789170.375",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 11,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt11.png',
-    "icon": "cbt",
-    "x": "362557.9063",
-    "y": "-759719.9375",
-    "z": ""
-},
 //   出生点
 {
     "name": "出生点",
@@ -20883,13 +20062,6 @@ var navList4 = [
                 "num": 3,
                 "icon": "nav_mmf"
               },
-            //   {
-            //     "name": "藏宝图",
-            // "lang": "lang_gjlxx",
-            // "idType": 25,
-            // "num": 10,
-            // "icon": "nav_cbt"
-            //   },
             {
                 name: '出生点',
                 idType: 26,
@@ -20946,10 +20118,6 @@ var navList4 = [
             },
         ]
     },
-    // {
-    //     titleType: 'cbt',
-    //     title: '藏宝图',
-    // },
     {
         titleType: 'wzd',
         title: '物资点',
@@ -21238,18 +20406,6 @@ var navListInfo4 = [
             },
         ]
     },
-    // {
-    //     titleType: 'cbt',
-    //     title: '藏宝图',
-    //     typeList: [
-    //         {
-    //             name: '藏宝图',
-    //             idType: 26,
-    //             num: 10,
-    //             icon: 'nav_cbt',
-    //         },
-    //     ]
-    // },
     {
         titleType: 'wzd',
         title: '物资点',
@@ -21526,230 +20682,7 @@ var navListInfo4 = [
 ]
 
 var mapArticle4 = [
-    {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "罗非鱼",
-    "icon": "tilapia",
-    "x": 346317.404,
-    "y": -784358.773,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水 / 海水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "白条鱼",
-    "icon": "sharpbelly",
-    "x": 346950.891,
-    "y": -781827.883,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "基础谷物团饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "横纹鲃鱼",
-    "icon": "striped_barb",
-    "x": 345367.174,
-    "y": -778347.908,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "基础谷物团饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "红尾鱼",
-    "icon": "redtail",
-    "x": 345367.174,
-    "y": -775500.656,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "强化诱食团饵\r\n高对比刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "花鲢鱼",
-    "icon": "bighead_carp",
-    "x": 344416.943,
-    "y": -772613.859,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "强化诱食团饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "青鱼",
-    "icon": "black_carp",
-    "x": 344100.2,
-    "y": -769766.607,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵\r\n荧光震动亮片",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "条纹鲈",
-    "icon": "striped_bass",
-    "x": 343783.457,
-    "y": -764704.826,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水 / 海水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "鲻鱼",
-    "icon": "mullet",
-    "x": 344416.943,
-    "y": -760275.767,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水 / 海水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "梭鲈",
-    "icon": "zander",
-    "x": 342199.74,
-    "y": -757744.877,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵\r\n荧光震动亮片\r\n精准猎食拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "短吻多鳍鱼",
-    "icon": "shortnose_bichir",
-    "x": 344733.687,
-    "y": -758061.238,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "强化诱食团饵\r\n高对比刺激拟饵\r\n荧光震动亮片\r\n深水探测拟饵\r\n高频摆尾软饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "翘嘴鲌",
-    "icon": "culter",
-    "x": 342833.227,
-    "y": -756163.07,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "高对比刺激拟饵\r\n精准猎食拟饵\r\n高频摆尾软饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "长颈鹿鲶",
-    "icon": "giraffe_catfish",
-    "x": 345050.43,
-    "y": -755846.709,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "深水探测拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "恩氏多鳍鱼",
-    "icon": "endlicheri",
-    "x": 343466.713,
-    "y": -754581.263,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "精制竞技团饵\r\n深水探测拟饵\r\n领地刺激拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "狗鱼",
-    "icon": "pike",
-    "x": 347584.377,
-    "y": -754225.357,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "精准猎食拟饵\r\n高频摆尾软饵\r\n领地刺激拟饵\r\n钢珠声诱拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "巨型褐鳟",
-    "icon": "brown_trout",
-    "x": 345367.174,
-    "y": -752959.912,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水",
-    "k2": "饵料",
-    "v2": "精准猎食拟饵\r\n深潜巨物震动饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
-  {
-    "地图": "森林",
-    "大区域": "大坝河滩",
-    "name": "幼鲨",
-    "icon": "shark",
-    "x": 348534.607,
-    "y": -752959.912,
-    "k1": "海水or淡水鱼",
-    "v1": "淡水 / 海水",
-    "k2": "饵料",
-    "v2": "深潜巨物震动饵\r\n钢珠声诱拟饵",
-    "catalog": "fish",
-    "activeRegion": ["大坝河滩"]
-  },
+    
         {
             "地图": "大坝",
             "大区域": "大坝_合同",
@@ -26347,107 +25280,6 @@ var mapArticle4 = [
     "x": 318866.312500,
     "y": "-776415.562500"
   },
-  //   藏宝图
-  {
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 1,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt1.png',
-    "icon": "cbt",
-    "x": "319172.7188",
-    "y": "-778363.5625",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 2,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt2.png',
-    "icon": "cbt",
-    "x": "323228.8125",
-    "y": "-769356",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 3,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt3.png',
-    "icon": "cbt",
-    "x": "342757.4063",
-    "y": "-763536.5625",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 4,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt4.png',
-    "icon": "cbt",
-    "x": "395694.8125",
-    "y": "-788158.5",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 5,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt5.png',
-    "icon": "cbt",
-    "x": "373631.5313",
-    "y": "-752355.9375",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 6,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt6.png',
-    "icon": "cbt",
-    "x": "395359.5938",
-    "y": "-750910.5625",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 7,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt7.png',
-    "icon": "cbt",
-    "x": "377384.2188",
-    "y": "-779410.8125",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 9,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt9.png',
-    "icon": "cbt",
-    "x": "336910.4063",
-    "y": "-795068.4375",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 10,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt10.png',
-    "icon": "cbt",
-    "x": "364610.1875",
-    "y": "-789170.375",
-    "z": ""
-},
-{
-    "name": "藏宝图",
-    "type": "revive",
-    "index": 11,
-     "img": ' https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/db_cbt11.png',
-    "icon": "cbt",
-    "x": "362557.9063",
-    "y": "-759719.9375",
-    "z": ""
-},
 //   出生点
     {
         "name": "出生点",

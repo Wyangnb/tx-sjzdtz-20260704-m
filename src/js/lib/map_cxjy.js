@@ -368,10 +368,10 @@ var navList_cxjy = [
         titleType: 'cld',
         title: '撤离点',
     },
-    {
-        titleType: 'boss',
-        title: '首领',
-    },
+    // {
+    //     titleType: 'boss',
+    //     title: '首领',
+    // },
 ]
 
 // 单个大类
@@ -869,11 +869,11 @@ var navListInfo_cxjy = [
             },
         ]
     },
-    {
-        titleType: 'boss',
-        title: '首领',
-        typeList: []
-    }
+    // {
+    //     titleType: 'boss',
+    //     title: '首领',
+    //     typeList: []
+    // }
 ]
 
 // 普通

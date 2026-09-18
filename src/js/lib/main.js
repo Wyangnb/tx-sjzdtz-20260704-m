@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-var IMG_PRE = (window.location.href.indexOf(801) > -1) ? '': '//game.gtimg.cn/images/dfm/cp/a20240729directory';
+var IMG_PRE = (window.location.href.indexOf(80) > -1) ? '': '//game.gtimg.cn/images/dfm/cp/a20240729directory';
 
 
 var getQuery = function (name) {
@@ -432,6 +432,20 @@ function currentNavList(idx) {
     }
     var i = (idx === undefined || idx === null) ? Number(currLeftNav || 0) : Number(idx);
     if (i === 0 && allNavList[0] && Array.isArray(allNavList[0].typeList)) return allNavList[0].typeList;
+    // ★ titleType 键匹配：一级 tab 的 index 本质是 allNavList 下标，内容源组改以
+    // allNavList[i].titleType 在 navTypeList 中查找，不再假定两数组下标同构。背景：
+    // az3 常规 navList_az3 与 navListInfo_az3 组骨架不一致（后者多「首领」幽灵空组），
+    // ensureFishGroup 追加的鱼类组在两数组下标错位 → 点鱼类 tab 按下标取到"行动接取站"
+    // 组、被 renderNavTypeList 接取站守卫过滤成空。键匹配后该场景自然正确；
+    // 找不到组时回退旧下标行为，战争等异构路径不受影响。
+    var tt = allNavList[i] && allNavList[i].titleType;
+    if (tt && Array.isArray(navTypeList)) {
+        for (var j = 0; j < navTypeList.length; j++) {
+            if (navTypeList[j] && navTypeList[j].titleType === tt && Array.isArray(navTypeList[j].typeList)) {
+                return navTypeList[j].typeList;
+            }
+        }
+    }
     if (navTypeList[i] && Array.isArray(navTypeList[i].typeList)) return navTypeList[i].typeList;
     if (navTypeList[0] && Array.isArray(navTypeList[0].typeList)) return navTypeList[0].typeList;
     return [];
@@ -502,7 +516,6 @@ var queryMap = {
     'bks': '31',
     'cxjy': '42',
     'az3': '50',
-    'daba_1f': '01_1F',
 }
 
 
@@ -709,8 +722,12 @@ function drawRegion(name) {
         }
     }
     if (!region) return;
-    // 父区域：有 points 时绘制父 polygon + 父标题
-    if (region.points && region.points.length) drawOneRegion(region, region.name);
+    // ★ 父区域只画 polygon，不再画父标题：父区域（selectRegion 顶层条目）的名称已由 addLayer 的常驻区域名
+    // 标签（poiList，遍历 poiInfo 逐条渲染）固定展示过一次——再画会在同锚点叠出"双主水域名"
+    // （az3 勾选"核电站外海"的鱼后同屏两个重叠标题）。children 子项不在常驻列表内，仍由下方补标题。
+    // ※ 恢复提示：若未来某个父区域未出现在 selectRegion 顶层（不被常驻标签覆盖）且需要标题，
+    //    把 drawOneRegion 第三参改为 false 即可恢复该父标题渲染（同锚点无常驻标签时不会重叠）。
+    if (region.points && region.points.length) drawOneRegion(region, region.name, true);
     // 子区域：children 跟随父渲染；有 points 画 polygon + 子标题，仅 {name,x,y} 时只渲染子标题
     if (region.children && region.children.length) {
         region.children.forEach(function (child) {
@@ -724,8 +741,9 @@ function drawRegion(name) {
     }
 }
 
-// 绘制单个区域 polygon + 名称标注（父条目与 children 子项共用）；只画不清，配合 clearRegions 使用
-function drawOneRegion(item, labelText) {
+// 绘制单个区域 polygon + 名称标注（父条目与 children 子项共用）；只画不清，配合 clearRegions 使用。
+// 第三参 noLabel=true 时只画 polygon 不画标题——供父区域使用（标题由 addLayer 常驻 selectRegion 标签提供）。
+function drawOneRegion(item, labelText, noLabel) {
     var latlngs = null;
     // 顶点解析（与 drawBorder 同链路：filterPos → getMapPos）；无 points 时跳过 polygon 绘制
     if (item.points && item.points.length) {
@@ -743,6 +761,7 @@ function drawOneRegion(item, labelText) {
             interactive: false
         }).addTo(map));
     }
+    if (noLabel) return;   // 父区域：标题省略（见 drawRegion 注释与恢复提示）
     // 名称标注：优先 labelX/labelY，其次条目自带 x/y，缺省取顶点均值；interactive:false 避免遮挡
     var lp;
     if (item.labelX != null && item.labelY != null) {
@@ -1022,7 +1041,10 @@ function refreshMarker2(from, arr) {
         var that = this;
         var markerFilterKey = getMarkerFilterKey(item);
         if (from === "filter" && visibleMarker[markerFilterKey]) visible = true;
-        if (from === "filter" && visibleMarker[getMarkerFilterKey({ name: '出生点' })] && item.type === 'revive') {
+        // ★ 出生点兜底特判：仅放行 name 确为"出生点"的 revive 点位。
+        // 历史：type='revive' 被密钥/清洗间及部分物资点位复用（az3 密钥23/清洗间16、cgxg 电脑等），
+        // 原来按 type 放行 → 只勾出生点会连带渲染密钥+清洗间+物资。加 name 守卫后互不干扰。
+        if (from === "filter" && visibleMarker[getMarkerFilterKey({ name: '出生点' })] && item.type === 'revive' && item.name === '出生点') {
             visible = true;
         }
         if (from === "filter" && visibleMarker[getMarkerFilterKey({ name: '首领' })] && item.type === 'Boss') {
@@ -1041,7 +1063,15 @@ function refreshMarker2(from, arr) {
                  <div class="btn-floor" data-floor=${this.floor}></div>
                 <div class="address">地点：<span>${item['自定义区域']}</span></div>
             `;
-            } else {
+            } 
+            // else if (item['激活条件']) {
+            //     var popupHtml =`
+            //         <div class="name">${this?.sub_name ? this.sub_name : this.name}</div>
+            //          <div class="open-text war ${(!item['激活条件'] || item['激活条件'] === '' || item['激活条件'] === '-') ? 'hide': ''}">激活条件：<span>${item['激活条件']}</span></div>
+            //          `
+               
+            // } 
+             else {
                 var popupHtml = `
                 <div class="name">${this?.sub_name || this.name}${item['自定义区域'] !== ''? `<span> ( ${item['自定义区域']} ) </span>`: ''}</div>
                  <div class="btn-floor" data-floor=${this.floor}></div>
@@ -1059,7 +1089,7 @@ function refreshMarker2(from, arr) {
                 className =  'article'
             }
             var pos = getMapPos(this.x, this.y)
-            var path = isWar ? 'https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/' : 'https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/'
+ var path = isWar ? 'https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/' : 'https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/'
             var iconName;
             if (that.name === "进攻方基地" ) {
                 iconName = window.viewChange ? 'g_jdbsd_g': 'g_jdbsd_r'
@@ -1144,10 +1174,23 @@ function refreshMarker2(from, arr) {
                         }
                         // this?.remove()
                        
-                        addressName.html(that['自定义区域'])
+                        // ★ 鱼点位弹窗：点位自带 k1/v1、k2/v2（例：海水or淡水鱼→淡水/海水、饵料→诱食团饵），
+                        // 原填充只写 name/自定义区域，从没读 k/v → 鱼点弹窗仅一行名。此处补两行键值。
+                        var fishKv = '';
+                        if (that?.catalog === 'fish') {
+                            [[that.k1, that.v1], [that.k2, that.v2]].forEach(function (kv) {
+                                if (kv[0] && kv[1]) fishKv += '<div class="mk-row"><span class="mk-k">' + kv[0] + '：</span><span class="mk-v">' + kv[1] + '</span></div>';
+                            });
+                        }
+                        $('.marker-fish-kv').html(fishKv);
+                        $('.marker-pop-ctn').toggleClass('fish-kv', !!fishKv);
                         if (that['自定义区域']) {
+                            addressName.html(that['自定义区域'])
                             $('.address').show();
-                        } else {
+                        } else if (that['激活条件']){
+                            $('.address').html(`激活条件：<span class="address-name">${that['激活条件']}</span>`)
+                            $('.address').show();
+                        }else {
                             $('.address').hide();
                         }
                         if (item?.img) {
@@ -1189,35 +1232,21 @@ function refreshMarker2(from, arr) {
 
 function toggleVisible(type, index) {
     
-    switch (type) {
-        case "0_all":
-        case "1_all":
-        case "2_all":
-        case "3_all":
-        case "4_all":
-        case "5_all":
-            renderMarker()
-            break;
-        case "0_none":
-        case "1_none":
-        case "2_none":
-        case "3_none":
-        case "4_none":
-        case "5_none":
-          
-            renderMarker()
+    // ★ 鱼类组等运行时追加 tab 的索引可能 >5（cgxg 常规 index=6、机密/隐藏等更高），
+    // 原硬编码 case "0_all"~"5_all" / "0_none"~"5_none" 覆盖不到 → 鱼组全选/全不选落入 default
+    // 只翻转垃圾键、按钮失效。改为任意数字索引通配，行为与原 0~5 case 完全等价。
+    var _allNone = /^(\d+)_(all|none)$/.exec(type || '');
+    if (_allNone) {
+        renderMarker();
+        if (_allNone[1] === 'none') {
             isWar ? $('.map-war-icon').remove() : $('.map-icon').remove();
-            console.log('删除', $('.map-icon').remove());
-            break;
-        case "none":
-            isWar ? $('.map-war-icon').remove() : $('.map-icon').remove();
-            currClickMarker?.remove();
-            renderMarker2()
-            break;
-    
-        default:
-            visibleMarker[type] = visibleMarker[type] ? false : true;
-            break;
+        }
+    } else if (type === "none") {
+        isWar ? $('.map-war-icon').remove() : $('.map-icon').remove();
+        currClickMarker?.remove();
+        renderMarker2()
+    } else {
+        visibleMarker[type] = visibleMarker[type] ? false : true;
     }
     $('.deploy-swiper').removeClass('show')
     function renderMarker () {
@@ -1623,7 +1652,21 @@ function initFloor () {
     
     floorTop.html(html2)
     $('.btn-floor-mod').addClass('show')
-    $('.floor-item').off('click').on('click', enterFloorMode)
+    // 优化楼层进入
+    var busy = false;
+    $('.floor-item').off('click').on('click', function (e) {
+        if (!busy) {
+            busy = true;
+            $(this)
+            .nextAll('.floor-item[data-index="0"],.floor-item[data-index="1"],.floor-item[data-index="2"]')
+            .first()
+            .trigger('click');      // 相邻元素带着自己的事件跑一遍
+            busy = false;
+        }
+        return enterFloorMode.call(this, e);
+    });
+    // $('.floor-item').off('click').on('click', enterFloorMode)
+    
     $('.map-floor-item').off('click').on('click', enterFloorMode)
 
     // debugger
@@ -1799,7 +1842,7 @@ var initNav = function () {
         if (Number(index) === 0) {
             renderNavTypeList(allNavList[0].typeList, 0)
         } else {
-            renderNavTypeList(navTypeList[index].typeList, index)
+            renderNavTypeList(currentNavList(index), index)
         }
 
         if (listIsAll[currLeftNav]) {
@@ -1856,11 +1899,9 @@ var initNav = function () {
 
 var renderNavTypeList = function (list, navIndex = 0){
     var html = ''
-    if (list.length > 15 && list[1].titleType !== 'cbt') {
-        html = '<div class="fgx top0 nav-wz">物资点</div>'
-    } else {
-        html = '<div class="fgx top0 nav-cbt">藏宝图</div>'
-    }
+    // if (list.length > 15 && list[1].titleType !== 'cbt') {
+    //     html = '<div class="fgx top0 nav-wz">物资点</div>'
+    // }
     
     list.forEach(function (item, index) {
         if (item.name === '行动接取站' || item.name === '高价值接取站') return;
@@ -2812,16 +2853,25 @@ function changeMapLv(type) {
         // 楼层视图（isFloor）必须跳过——否则 dataFilter 的 arrInfo（分类组数组）会覆盖掉扁平 navList，
         // 楼层点位列表全空（10/11_ldz_*F 曾踩同款 bug）。
         if (!isFloor && Number(currMap) === 1 && Number(currLv) === 1) {
-            if ($('.random-act').text().indexOf('山火') > -1) {
+            var _actText = $('.random-act').text();
+            var _eventMode = false;
+            if (_actText.indexOf('山火') > -1) {
                 mapIcons = mapArticle5_cgxg;
+                _eventMode = true;
             }
-            if ($('.random-act').text().indexOf('坠机') > -1 && $('.random-act').text().indexOf('山火') > -1) {
+            if (_actText.indexOf('坠机') > -1 && _actText.indexOf('山火') > -1) {
                 mapIcons = mapArticle6_cgxg;
+                _eventMode = true;
                 console.log('mapArticle6_cgxg');
             }
-            const { arr, arrInfo } = dataFilter(mapIcons);
-            allNavList = arrInfo;
-            navTypeList = arrInfo;
+            // ★ 守卫收紧：dataFilter 仅在随机事件态（mapIcons 确被山火/坠机数据替换）才重建分类 nav；
+            // 非事件态有静态 nav（navList3_cgxg 等），无需重建。曾无条件 dataFilter →
+            // 机密非事件态点难度切换即崩（分类循环越界 arrInfo[8]：Cannot read 'typeList' of undefined）。
+            if (_eventMode) {
+                const { arr, arrInfo } = dataFilter(mapIcons);
+                allNavList = arrInfo;
+                navTypeList = arrInfo;
+            }
         }
 
         // ★ 鱼类导航组（PC 版迁移）：仅主图挂载（楼层扁平 nav / 战争 navRegion 均不处理）；
@@ -2939,7 +2989,10 @@ function changeMapLv(type) {
     } else if (Number(currLeftNav) === 0) {
         renderNavTypeList(allNavList[0]?.typeList || [], 0);
     } else {
-        renderNavTypeList((navTypeList[currLeftNav] && navTypeList[currLeftNav].typeList) || [], currLeftNav);
+        // ★ 统一走 currentNavList()（titleType 键匹配）：az3 等两份 nav 组序不一致时，鱼类 tab
+        // 的 data-index(如8) 与 navTypeList 下标错位，直取 navTypeList[8] 会拿到"行动接取站"组、
+        // 被 renderNavTypeList 守卫过滤成空 → 切难度/重开导航后当前 tab 列表变空。
+        renderNavTypeList(currentNavList(), currLeftNav);
     }
 
     // 绑定选项事件
@@ -3599,11 +3652,11 @@ var bindEvent = function () {
             $('.map-select').removeClass('show')
         }
 
-        if (Number(currLeftNav) === 0) {
-            renderNavTypeList(allNavList[0].typeList, 0)
-        } else {
-            renderNavTypeList(navTypeList[currLeftNav].typeList, currLeftNav)
-        }
+        // ★ 统一走 currentNavList()（titleType 键匹配，见 changeMapLv 尾部同款修复）：鱼类等运行时
+        // 追加 tab 的 data-index 与 navTypeList 下标在 az3（nav 组序不一致）会错位——直取
+        // navTypeList[currLeftNav].typeList 会渲染成"行动接取站"组(空)。键匹配后关闭/重开导航列表不丢；
+        // 扁平楼层(雷达站)由 helper 返回整列，亦更稳。
+        renderNavTypeList(currentNavList(), currLeftNav)
         bindOptionEvent();
     })
 
@@ -3963,8 +4016,47 @@ function enterWarMap () {
         }
 }
 
+// ★ 战争导航纯动态重建（changeWarMap 装载后调用；普通地图 isWar=false 直接返回，零影响）：
+// navRegion / navRegionInfo 的静态分类组一律不再读取——只认 titleType==='all' 的「全部」组，
+// 全部条目按固定分类表用 navCatOf 打桶动态生成分类组（空分类不建 tab），随后 allNavList 与
+// navTypeList 赋同一份 rebuilt。双数组"按下标互相对应"的耦合与手工同步（fillNavRegionInfo /
+// 删块对齐）从此消失——删空分类、增删道具都只动 all 组；索引错位（点载具渲出载具补给站）、
+// 空分类渲染"全部"等历史 bug 从机制上不可能再发生。
+// 找不到 all 组（老结构/扁平 nav 等兜底场景）则原样返回、保持装载结果不动。
+function rebuildWarNavCategories() {
+    if (!isWar || !Array.isArray(navTypeList) || !navTypeList.length) return;
+    // 定位「全部」组：titleType 显式匹配，不假定下标 0
+    var allGroup = null;
+    for (var gi = 0; gi < navTypeList.length; gi++) {
+        var g0 = navTypeList[gi];
+        if (g0 && g0.titleType === 'all' && Array.isArray(g0.typeList) && g0.typeList.length) {
+            allGroup = g0;
+            break;
+        }
+    }
+    if (!allGroup) return;
+    // 固定分类表：顺序即一级 tab 顺序（= dzc 全地图 navRegion 骨架），key 与 navCatOf 桶键一致
+    var WAR_CATS = [
+        { title: '据点', key: 'jd' },
+        { title: '基地部署点', key: 'jdbsd' },
+        { title: '载具', key: 'zj' },
+        { title: '载具补给站', key: 'zjbjz' },
+        { title: '固定弹药箱', key: 'gddyx' },
+        { title: '固定武器', key: 'gdwq' }
+    ];
+    var rebuilt = [allGroup];
+    WAR_CATS.forEach(function (cat) {
+        var list = allGroup.typeList.filter(function (it) { return it && it.name && navCatOf(it) === cat.key; });
+        if (!list.length) return; // 空分类不建 tab
+        rebuilt.push({ title: cat.title, typeList: list });
+    });
+    allNavList = rebuilt;
+    navTypeList = rebuilt;
+}
+
 // 战场切换
 function changeWarMap(mapName, type) {
+    clearRegions();
     console.log('mapName', mapName, type, window.occupy, window[mapName]);
     
     visibleMarker = {}
@@ -3998,6 +4090,10 @@ function changeWarMap(mapName, type) {
     
    
     typeListInit = false;
+
+    // ★ 战争导航纯动态重建：只读 all 组、navCatOf 打桶生成分类 tab（见 rebuildWarNavCategories）。
+    // 必须在 initNav 之前——initNav 用 allNavList 建一级 tab、默认渲染 allNavList[0].typeList。
+    rebuildWarNavCategories();
 
     initNav();
     warInit(currWarMap, currWarType);
@@ -4243,7 +4339,7 @@ function initWarSwiper (name, data) {
                         <div class="slide-img ${this.icon}"></div>
                     </div>
                     <div class="slide-info">
-                        <div class="slide-tiem">${this.CD}s</div>
+                        <div class="slide-tiem ${this.CD?'':'hide'}">${this.CD?this.CD+'s':''}</div>
                         <div class="slide-num">可部署:${this.num}</div>
                     </div>
                 </div>
@@ -4292,7 +4388,7 @@ function initWarSwiper (name, data) {
                         <div class="slide-img ${this.icon}"></div>
                     </div>
                     <div class="slide-info">
-                        <div class="slide-tiem">${this.CD}s</div>
+                        <div class="slide-tiem ${this.CD?'':'hide'}">${this.CD?this.CD+'s':''}</div>
                         <div class="slide-num">可部署:${this.num}</div>
                     </div>
                 </div>
@@ -4305,7 +4401,7 @@ function initWarSwiper (name, data) {
                         <div class="slide-img ${this.icon}"></div>
                     </div>
                     <div class="slide-info">
-                        <div class="slide-tiem">${this.CD}s</div>
+                        <div class="slide-tiem ${this.CD?'':'hide'}">${this.CD?this.CD+'s':''}</div>
                         <div class="slide-num">可部署:${this.num}</div>
                     </div>
                 </div>
@@ -4506,11 +4602,6 @@ function dataFilter (mapArticle) {
             typeList: []
         },
         { 
-            titleType: "cbt",
-            title: "藏宝图",
-            typeList: []
-        },
-        { 
             titleType: "wzd",
             title: "物资点",
             typeList: []
@@ -4605,11 +4696,36 @@ function dataFilter (mapArticle) {
     
 }
 
+// ★ 导航条目 → 渲染分区桶的统一分类器（唯一规则源）。renderNavTypeList 分区显示与
+// rebuildWarNavCategories（战争导航纯动态重建）共用本函数——避免"navRegionInfo 数据归类"
+// 与"渲染分区"两套口径漂移（历史教训：fillNavRegionInfo 把坦克归入"载具"组 typeList，
+// 但渲染关键词链不认识"坦克"时仍落入 wz 物资点分区）。判定顺序与历史内置链完全一致，
+// 勿随意调序；isWar 分支仅战争流程生效。
+function navCatOf(item) {
+    if (!item || !item.name) return 'wz';
+    var n = String(item.name);
+    if (item.catalog === 'fish') return 'yl';
+    if (n.indexOf('撤离点') !== -1) return 'cld';
+    if (item.mode && String(item.mode).indexOf('泄露区') > -1) return 'mode';
+    if (n.indexOf('密钥') > -1) return 'my';
+    if (n.indexOf('清洗间') > -1) return 'qxj';
+    if (n.indexOf('出生点') !== -1) return 'csd';
+    if (n.indexOf('首领') !== -1) return 'sl';
+    if (n.indexOf('基地') > -1) return 'jdbsd';
+    if (n.indexOf('据点') > -1) return 'jd';
+    // 如果载具被分类到了物资点，请在此加入新的关键词
+    if (isWar && (n.indexOf('坦克') > -1 || n.indexOf('车') > -1 || n.indexOf('舟') > -1 || n.indexOf('轮式') > -1 || n.indexOf('直升机') > -1)) return 'zj';
+    if (n.indexOf('载具补给站') > -1) return 'zjbjz';
+    if (n.indexOf('固定弹药箱') > -1) return 'gddyx';
+    if (isWar && (n.indexOf('枪') > -1 || n.indexOf('炮') > -1 || n.indexOf('密集阵') > -1)) return 'gdwq';
+    if (n.indexOf('滑索') > -1 || n.indexOf('电梯') > -1) return 'zz';
+    return 'wz';
+}
+
 renderNavTypeList = function (list, navIndex = 0) {
     list = Array.isArray(list) ? list : [];
     const seenFilterKeys = new Set();
     const categories = {
-        cbt: { title: '藏宝图', html: '' },
         wz: { title: '物资点', html: '' },
         mode: { title: '泄露区物资点', html: '' },
         my: { title: '密钥刷新点', html: '' },
@@ -4653,39 +4769,9 @@ renderNavTypeList = function (list, navIndex = 0) {
         if (seenFilterKeys.has(filterKey)) return;
         seenFilterKeys.add(filterKey);
 
-        if (item.catalog === 'fish') {
-            addToCategory(item, index, 'yl');
-        } else if (item.name.indexOf('撤离点') !== -1) {
-            addToCategory(item, index, 'cld');
-        } else if (item.name.indexOf('藏宝图') !== -1) {
-            addToCategory(item, index, 'cbt');
-        } else if (item?.mode?.indexOf('泄露区') > -1) {
-            addToCategory(item, index, 'mode');
-        } else if (item?.name?.indexOf('密钥') > -1) {
-            addToCategory(item, index, 'my');
-        } else if (item?.name?.indexOf('清洗间') > -1) {
-            addToCategory(item, index, 'qxj');
-        } else if (item.name.indexOf('出生点') !== -1) {
-            addToCategory(item, index, 'csd');
-        } else if (item.name.indexOf('首领') !== -1) {
-            addToCategory(item, index, 'sl');
-        } else if (item.name.indexOf('基地') > -1) {
-            addToCategory(item, index, 'jdbsd');
-        } else if (item.name.indexOf('据点') > -1) {
-            addToCategory(item, index, 'jd');
-        } else if (isWar && (item.name.indexOf('车') > -1 || item.name.indexOf('舟') > -1 || item.name.indexOf('轮式') > -1 || item.name.indexOf('直升机') > -1)) {
-            addToCategory(item, index, 'zj');
-        } else if (item.name.indexOf('载具补给站') > -1) {
-            addToCategory(item, index, 'zjbjz');
-        } else if (item.name.indexOf('固定弹药箱') > -1) {
-            addToCategory(item, index, 'gddyx');
-        } else if (isWar && (item.name.indexOf('枪') > -1 || item.name.indexOf('炮') > -1 || item.name.indexOf('密集阵') > -1)) {
-            addToCategory(item, index, 'gdwq');
-        } else if (item.name.indexOf('滑索') > -1 || item.name.indexOf('电梯') > -1) {
-            addToCategory(item, index, 'zz');
-        } else {
-            addToCategory(item, index, 'wz');
-        }
+        // ★ 分类判定统一收敛到 navCatOf()（与 rebuildWarNavCategories 共用同一规则源，见函数注释）；
+        // 判定链行为与历史内联版完全一致，仅规则单源化
+        addToCategory(item, index, navCatOf(item));
 
         !typeListInit && (visibleMarker[filterKey] = false)
     })
@@ -4804,17 +4890,25 @@ dataFilter = function (mapArticle) {
     ]
     let arrInfo = [
         { titleType: "all", title: "全部", typeList: [] },
-        { titleType: "cbt", title: "藏宝图", typeList: [] },
         { titleType: "wzd", title: "物资点", typeList: [] },
         { titleType: 'mode', title: '泄露区物资点', typeList: [] },
         { titleType: 'my', title: '密钥刷新点', typeList: [] },
         { titleType: 'qxj', title: '清洗间点位', typeList: [] },
         { titleType: 'csd', title: '出生点', typeList: [] },
         { titleType: "cld", title: "撤离点", typeList: [] },
-        { titleType: "首领", title: "首领", typeList: [] },
-        { titleType: 'yl', title: '鱼类', typeList: [] }
+        { titleType: "首领", title: "首领", typeList: [] }
+        // ★ 鱼类(yl)组不在此硬编码占位：下方分类循环按需懒创建（无 fish 条目则 arrInfo 不含 yl，
+        // 与 ensureFishGroup"无鱼不追加"规则一致，避免出现空的"鱼类"tab）
     ];
     let numList = {}
+
+    // ★ 取组 helper：按 titleType 键匹配（不用下标），供下方分类落位使用；找不到返回 null。
+    const _groupOf = function (tt) {
+        for (let _i = 0; _i < arrInfo.length; _i++) {
+            if (arrInfo[_i] && arrInfo[_i].titleType === tt) return arrInfo[_i];
+        }
+        return null;
+    };
 
     for (let index = 0; index < mapArticle.length; index++) {
         const element = mapArticle[index];
@@ -4850,22 +4944,34 @@ dataFilter = function (mapArticle) {
             element.num = element.num || 0
         }
 
+        // ★ 分类落位全部改 titleType 键匹配（不用下标）：arrInfo 声明增删组，消费永不错位、永不越界。
+        // 历史教训：曾按"含 cbt 共 9 组的旧声明"推 +1 索引，相对当前 8 组声明整体偏一位 → 出生点/泄露区/密钥等
+        // 全部串组，且"首领"分支写 arrInfo[8]（不存在）抛 Cannot read properties of undefined (reading 'typeList')。
+        // 鱼 catalog 维持懒建 yl 组于末尾（数据无鱼则 arrInfo 不含"鱼类"组，与 ensureFishGroup"无鱼不追加"一致）。
+        let _tar = null;
         if (element.catalog === 'fish') {
-            arrInfo[8]['typeList'].push(element)
+            _tar = _groupOf('yl');
+            if (!_tar) {
+                _tar = { titleType: 'yl', title: '鱼类', typeList: [] };
+                arrInfo.push(_tar);
+            }
         } else if (element.name === '出生点') {
-            arrInfo[5]['typeList'].push(element)
+            _tar = _groupOf('csd');
         } else if (element.mode && element.mode.indexOf('泄露区') > -1) {
-            arrInfo[2]['typeList'].push(element)
+            _tar = _groupOf('mode');
         } else if (element.mode && element.name.indexOf('密钥') > -1) {
-            arrInfo[3]['typeList'].push(element)
+            _tar = _groupOf('my');
         } else if (element.mode && element.name.indexOf('清洗间') > -1) {
-            arrInfo[4]['typeList'].push(element)
+            _tar = _groupOf('qxj');
         } else if (element.name.indexOf('撤离点') > -1) {
-            arrInfo[6]['typeList'].push(element)
+            _tar = _groupOf('cld');
         } else if (element.name === '首领') {
-            arrInfo[7]['typeList'].push(element)
+            _tar = _groupOf('首领');
         } else {
-            arrInfo[1]['typeList'].push(element)
+            _tar = _groupOf('wzd');
+        }
+        if (_tar) {
+            _tar.typeList.push(element);
         }
     }
 

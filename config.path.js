@@ -8,6 +8,6 @@ module.exports = {
     prod: 'https://qrtss.treedom.cn/202405sjzaqzh5/',
     // handover: 'https://qrss.treedom.cn/sjzdtz4/m/',
     handover: '//game.gtimg.cn/images/dfm/cp/a20240729directory/m/',
-    
+    // handover: 'https://vendor-qqc-dfdtzhw.treedom.cn/zh/m/ossweb-img/',
     local: ''
 };
