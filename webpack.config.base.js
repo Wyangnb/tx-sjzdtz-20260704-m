@@ -34,6 +34,29 @@ if (fs.existsSync('src/img/xdaba')) {
         flatten: true
     });
 }
+if (fs.existsSync('src/img/htzz')) {
+    copyItem.push({
+        from: 'src/img/htzz',
+        to: './img/htzz',
+        flatten: true
+    });
+}
+if (fs.existsSync('src/img/bp')) {
+    copyItem.push({
+        from: 'src/img/bp',
+        to: './img/bp',
+        flatten: true
+    });
+}
+['map_htzz', 'map_lswdz', 'map_smezy'].forEach(function (name) {
+    if (fs.existsSync('src/img/' + name)) {
+        copyItem.push({
+            from: 'src/img/' + name,
+            to: './img/' + name,
+            flatten: true
+        });
+    }
+});
 
 module.exports = function () {
     return {
