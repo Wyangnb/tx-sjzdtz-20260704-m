@@ -159,4 +159,323 @@ var selectRegion_lswdz = [
 ];
 
 // 进入模式时默认显示的区域。
-var selectPoint_lswdz = [];
+var selectPoint_lswdz = [
+    {
+        "type": "normal",
+        "name": "区域点位",
+        "point_name": "A点",
+        "icon": "icon_csd",
+        "img": "lswdz_a",
+        "x": "101319",
+        "y": "-55142",
+    },
+    {
+        "type": "normal",
+        "name": "区域点位",
+        "point_name": "B点",
+        "icon": "icon_csd",
+        "img": "lswdz_b",
+        "x": "94059",
+        "y": "-56665",
+    },
+    {
+        "type": "normal",
+        "name": "区域点位",
+        "point_name": "中路滑索",
+        "icon": "icon_csd",
+        "img": "lswdz_hs",
+        "x": "97015",
+        "y": "-52675",
+    },
+    {
+        "type": "normal",
+        "name": "区域点位",
+        "point_name": "管道",
+        "icon": "icon_csd",
+        "img": "lswdz_gd",
+        "x": "96305",
+        "y": "-57079",
+    },
+    {
+        "type": "normal",
+        "name": "区域点位",
+        "point_name": "防守方出生点",
+        "icon": "icon_csd",
+        "img": "lswdz_ff",
+        "x": "97222",
+        "y": "-59561",
+    },
+    {
+        "type": "normal",
+        "name": "区域点位",
+        "point_name": "进攻方出生点",
+        "icon": "icon_csd",
+        "img": "lswdz_gf",
+        "x": "95242",
+        "y": "-48065",
+    },
+    {
+        "type": "normal",
+        "name": "灭火器",
+        "point_name": "灭火器",
+        "icon": "icon_mhq",
+        "img": "lswdz_mhq1",
+        "x": "91009",
+        "y": "-54569",
+    },
+    {
+        "type": "normal",
+        "name": "煤气罐",
+        "point_name": "煤气罐",
+        "icon": "icon_mqg",
+        "img": "lswdz_mqg",
+        "x": "100680",
+        "y": "-56281",
+    },
+    {
+        "type": "normal",
+        "name": "灭火器",
+        "point_name": "灭火器",
+        "icon": "icon_mhq",
+        "img": "lswdz_mhq2",
+        "x": "102267",
+        "y": "-53263",
+    },
+    {
+        "type": "role",
+        "name": "乌鲁鲁",
+        "icon": "icon_wll",
+        "points": [
+            {
+                "name": "A点燃烧弹压制",
+                "point_name": "复合型燃烧弹",
+                "point_desc": "防守压制A点路口",
+                "camp": "防守",
+                "icon": "icon_fhrsd",
+                "vid": "e1288hff2hw",
+                "price": "300",
+                "x": "100687",
+                "y":"-51669",
+                "role_x": "100716",
+                "role_y": "-56486"
+            },
+            {
+                "name": "A点燃烧弹进攻",
+                "point_name": "复合型燃烧弹",
+                "point_desc": "提前高抛投掷，覆盖A点二层区域或更高点来投掷覆盖到整个A点区域内",
+                "camp": "进攻",
+                "icon": "icon_fhrsd",
+                "vid": "q1288b7lwfl",
+                "price": "300",
+                "x": "100834",
+                "y":"-57136",
+                "role_x": "104174",
+                "role_y": "-53708"
+            },
+            {
+                "name": "A点燃烧弹压制",
+                "point_name": "复合型燃烧弹",
+                "point_desc": "进攻A点，提前高抛投掷，防止防守方架点",
+                "camp": "进攻",
+                "icon": "icon_fhrsd",
+                "vid": "e1288bnkjzr",
+                "price": "300",
+                "x": "103790",
+                "y":"-54979",
+                "role_x": "100746",
+                "role_y": "-52023"
+            },
+            {
+                "name": "B区高抛燃烧弹",
+                "point_name": "复合型燃烧弹",
+                "point_desc": "进攻B点，提前高抛投掷，防止防守方架点",
+                "camp": "进攻",
+                "icon": "icon_fhrsd",
+                "vid": "v12889y6adn",
+                "price": "300",
+                "x": "91966",
+                "y":"-56307",
+                "role_x": "90784",
+                "role_y": "-52968"
+            },
+        ]
+    },
+    {
+        "type": "role",
+        "name": "液氮",
+        "icon": "icon_yd",
+        "points": [
+            {
+                "name": "A点冷罐压制",
+                "point_name": "杜瓦冷罐",
+                "point_desc": "集装箱上投掷，压制B点防守方闪击",
+                "camp": "防守",
+                "icon": "icon_dwlg",
+                "vid": "s1288pu6dxc",
+                "price": "300",
+                "x": "100687",
+                "y":"-51669",
+                "role_x": "100716",
+                "role_y": "-56486"
+            },
+            {
+                "name": "A点冷罐进攻",
+                "point_name": "杜瓦冷罐",
+                "point_desc": "提前高抛投掷，覆盖A点二层区域或更高点来投掷覆盖到整个A点区域内",
+                "camp": "进攻",
+                "icon": "icon_dwlg",
+                "vid": "m1288tbg1sh",
+                "price": "300",
+                "x": "100834",
+                "y":"-57136",
+                "role_x": "104174",
+                "role_y": "-53708"
+            },
+            {
+                "name": "A点冷罐压制",
+                "point_name": "杜瓦冷罐",
+                "point_desc": "进攻A点，提前高抛投掷，防止防守方架点",
+                "camp": "进攻",
+                "icon": "icon_dwlg",
+                "vid": "k12885s6d9a",
+                "price": "300",
+                "x": "103790",
+                "y":"-54979",
+                "role_x": "100746",
+                "role_y": "-52023"
+            },
+            {
+                "name": "B区高抛冷罐",
+                "point_name": "杜瓦冷罐",
+                "point_desc": "进攻B点，提前高抛投掷，防止防守方架点",
+                "camp": "进攻",
+                "icon": "icon_dwlg",
+                "vid": "k12885s6d9a",
+                "price": "300",
+                "x": "92054",
+                "y":"-56366",
+                "role_x": "91552",
+                "role_y": "-52406"
+            },
+        ]
+    },
+    {
+        "type": "role",
+        "name": "红狼",
+        "icon": "icon_hl",
+        "points": [
+            {
+                "name": "A点烟雾干扰",
+                "point_name": "突破型烟雾弹",
+                "point_desc": "提前高抛投掷烟雾，干扰A点二层区域或更高点来投掷到A点区域内",
+                "camp": "进攻",
+                "icon": "icon_ywd",
+                "vid": "i1288tnqzmx",
+                "price": "150",
+                "x": "100834",
+                "y":"-57136",
+                "role_x": "104174",
+                "role_y": "-53708"
+            }
+        ]
+    },
+    {
+        "type": "role",
+        "name": "佐娅",
+        "icon": "icon_zy",
+        "points": [
+            {
+                "name": "A点毒雾干扰",
+                "point_name": "致盲毒雾",
+                "point_desc": "提前高抛投掷毒雾，干扰A点二层区域或更高点来投掷到A点区域内",
+                "camp": "进攻",
+                "icon": "icon_zmdw",
+                "vid": "a1288kqrj9j",
+                "price": "250",
+                "x": "100834",
+                "y":"-57136",
+                "role_x": "104174",
+                "role_y": "-53708"
+            }
+        ]
+    },
+    {
+        "type": "role",
+        "name": "露娜",
+        "icon": "icon_ln",
+        "points": [
+            {
+                "name": "B点反弹瞬爆雷",
+                "point_name": "增强型破片手雷",
+                "point_desc": "在最右侧防守B区，反弹墙投掷手雷，对墙后敌人造成伤害",
+                "camp": "防守",
+                "icon": "icon_spzd",
+                "vid":"v1288swk346",
+                "price": "250",
+                "x": "91168",
+                "y":"-54564",
+                "role_x": "92025",
+                "role_y": "-56307"
+            },
+            {
+                "name": "B点手雷炸煤气罐",
+                "point_name": "增强型破片手雷",
+                "point_desc": "在左路防守B区，反弹墙投掷手雷，引爆煤气罐，同时再向后方投掷手雷压制",
+                "camp": "防守",
+                "icon": "icon_spzd",
+                "vid":"y1288jyo5nc",
+                "price": "250",
+                "x": "91168",
+                "y":"-54564",
+                "role_x": "92025",
+                "role_y": "-56307"
+            },
+            {
+                "name": "B点通道远程手雷",
+                "point_name": "增强型破片手雷",
+                "point_desc": "防守检修通道，远距离精准投掷手雷压制",
+                "camp": "防守",
+                "icon": "icon_spzd",
+                "vid":"e12880bt45u",
+                "price": "250",
+                "x": "91168",
+                "y":"-54564",
+                "role_x": "92025",
+                "role_y": "-56307"
+            },
+        ]
+    },
+    {
+        "type": "role",
+        "name": "牧羊人",
+        "icon": "icon_myr",
+        "points": [
+            {
+                "name": "B点反弹瞬爆雷",
+                "point_name": "强化型破片手雷",
+                "point_desc": "在最右侧防守B区，反弹墙投掷手雷，对墙后敌人造成伤害",
+                "camp": "防守",
+                "icon": "icon_spzd",
+                "vid":"e12887xycm9",
+                "price": "250",
+                "x": "91168",
+                "y":"-54564",
+                "role_x": "92025",
+                "role_y": "-56307"
+            },
+            {
+                "name": "B点手雷炸煤气罐",
+                "point_name": "强化型破片手雷",
+                "point_desc": "在左路防守B区，反弹墙投掷手雷，引爆煤气罐，同时再向后方投掷手雷压制",
+                "camp": "防守",
+                "icon": "icon_spzd",
+                "vid":"r1288cueiio",
+                "price": "250",
+                "x": "95305",
+                "y":"-55450",
+                "role_x": "93562",
+                "role_y": "-55480"
+            },
+        ]
+    },
+];

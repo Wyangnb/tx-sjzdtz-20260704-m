@@ -12,12 +12,12 @@
 
 @font-face {
     font-family: 'text';
-    // src: url('../img/text.ttf');
+    src: url('https://game.gtimg.cn/images/dfm/cp/a20240906main/p-med.ttf');
     font-display: 'swap';
 }
 @font-face {
     font-family: 'boldtext';
-    // src: url('../img/bold.ttf');
+    src: url('https://game.gtimg.cn/images/dfm/cp/a20240906main/p-bold.ttf');
     font-display: 'swap';
 }
 // @font-face {
@@ -1918,6 +1918,7 @@ body {
         margin-left: 0.24rem;
         color: #10f796;
         font-size: 0.32rem;
+        font-family: 'boldtext';
         span{
             color: #eaebeb;
             font-size: 0.16rem;
@@ -2206,6 +2207,14 @@ body {
     }
   }
 
+  .bp-curr-mode-ctn{
+    display: none;
+  }
+
+  .bp-nav-ctn .nav-bot-ctn{
+    opacity: 0;
+    pointer-events: none;
+}
 
   //   爆破模式
 .bp-mode{
@@ -2213,10 +2222,66 @@ body {
     .abcter;
 }
 
+
 .map-region-name{
     pointer-events: none;
 }
 
+.marker-pop-video-ctn{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 684px;
+    height: 385px;
+}
+
+.marker-preview-ctn{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 684px;
+}
+.marker-preview{
+    width: 684px;
+    object-fit: contain;
+}
+
+.marker-pop-desc{
+    margin: 0 auto;
+    margin-top: 16px;
+    line-height: 32px;
+    width: 678px;
+    color: rgba(234, 235, 235, 0.80);
+font-family: "ProjectD Type";
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px; /* 145.455% */
+// text-indent: 0px
+}
+
+.marker-pop-ctn{
+    &.bp-mode{
+        .img_marker_pop_bg_s;
+        .marker-name{
+            position: relative;
+            margin-left: 32px;
+            color: #F5BF48;
+            &::after{
+                content: "";
+                .img_marker_pop_fgx_s;
+                .lcter;
+                margin-left: -16px;
+                width: 684px;
+                bottom: -34px;
+            }
+        }
+        .address{
+            display: none;
+        }
+        .btn-close-marker-pop{
+            right: 32px;
+        }
+    }
+}
 .bp-point-marker{
     .map-icon-bg{
         // background-color: rgba(19, 59, 40, 1);
@@ -2344,6 +2409,7 @@ body {
 
 .bp-nav-ctn{
     // display: none;
+    // display: block !important;
     position: absolute;
     top: 0;
     // width: 750px;
@@ -2360,6 +2426,7 @@ body {
         }
         .nav-bot-ctn{
             opacity: 1;
+            pointer-events: visible;
         }
     }
     .nav-ctn-bg{
@@ -2434,7 +2501,7 @@ body {
         cursor: pointer;
         &.act{
             border-color: #0FF796;
-            color: #0FF796;
+            // color: #0FF796;
         }
     }
     .bp-point-item-icon{
@@ -2455,9 +2522,29 @@ body {
         text-align: center;
         font-size: 18px;
         line-height: 24px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+       
+    }
+    .bp-point-item-price{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        // width: 100%;
+        height: 28px;
+        background: rgba(16, 28, 32, 0.80);
+        text-align: right;
+        font-size: 18px;
+        line-height: 28px;
+        
+        &::before{
+            content: "";
+            .tcter;
+            .img_icon_jb_s;
+            left: -30px;
+        }
     }
     .bp-point-item-count{
         position: absolute;
@@ -2481,6 +2568,10 @@ body {
         }
     }
     .bp-role-item, .bp-normal-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         border: 1px solid rgba(234, 235, 235, 0.50);
         background: #191B1D;
         &.act{
@@ -2553,13 +2644,25 @@ body {
         }
         .bp-point-item-name{
             position: absolute;
-            right: 0;
-            width: 120px;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-top: 5px;
+            width: 180px;
             height: 54px;
-            text-align: center;
+            text-align: right;
+            background: transparent;
             // flex: 1;
             // text-align: left;
             font-size: 20px;
+            &.no-price{
+                line-height: 54px;
+            }
+            
+        }
+        .bp-point-item-price{
+            background: transparent;
+            margin-top: 15px;
         }
         .bp-point-item-count{
             display: none;
@@ -2574,12 +2677,94 @@ body {
     .reset-choose{
         margin-left: -310px;
     }
+
+   
+}
 }
 
+
+
+
+// 横屏时爆破导航沿用常规导航，从左侧滑入。
+html.landscape{
+    .m-main-wrap{
+        .bp-nav-ctn{
+            width: 100%;
+            pointer-events: none;
+         
+            div{
+                pointer-events: visible;
+            }
+            &.show{
+                .nav-ctn-bg,
+                .nav-bot-ctn{
+                    left: 0;
+                }
+                background-color: rgba(0, 0, 0, 0.45);
+            }
+            .bp-nav-title{
+                transform: translateX(24px);
+            }
+            .bp-top-btns{
+                transform: translateX(24px);
+            }
+            .bp-point-list-ctn{
+                transform: translateX(24px);
+            }
+            .nav-ctn-bg{
+                left: -100%;
+                bottom: auto;
+                top: 0;
+                transition: 0.5s;
+                
+                .img_bp_nav_bg_l;
+                height: 1000px;
+                background-size: cover;
+                background-position: center top;
+            }
+            .nav-bot-ctn{
+                left: -100%;
+                transition: 0.5s;
+            }
+        }
+    }
+    .curr-map-ctn{
+        left: 77px;
+    }
+    .bp-map-change{
+        left: 77px;
+    }
+    .marker-pop-ctn{
+        &.bp-mode{
+            .img_marker_pop_bg_l_s;
+            width: 6.4rem;
+            height: 100vh;
+            background-size: cover;
+            left: 0;
+            transform: translateX(-100%);
+            bottom: 0;
+            &.show{
+                transform: translateX(0);
+            }
+            .marker-name{
+                &::after{
+                    width: 5.88rem;
+                    background-size: cover;
+                }
+            }
+            .marker-pop-desc{
+                width: 5.88rem;
+                font-size: 0.2rem;
+            }
+        }
+        .marker-preview-ctn{
+            width: 5.88rem;
+            .marker-pop-video-ctn{
+                width: 5.88rem !important;
+            }
+        }
+    }
 }
-
-
-
 
 @media screen and (min-width: 768px) {
 }
