@@ -708,7 +708,7 @@ var selectPoint_lswdz = [
                 "point_name": "敌情追踪",
                 "point_desc": "",
                 "camp": "防守",
-                "icon": "icon_dqzj",
+                "icon": "icon_dqzz",
                 "vid":"",
                 "price": "",
                 "x": "",

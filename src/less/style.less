@@ -2234,6 +2234,52 @@ body {
     height: 385px;
 }
 
+// 腾讯播放器全屏时脱离侧边弹窗尺寸，保持视频在视口内居中。
+.marker-pop-video-ctn:fullscreen,
+.marker-pop-video-ctn:-webkit-full-screen,
+.marker-pop-video-ctn.txp-fullscreen,
+.marker-pop-video-ctn.txp-fullscreen-container{
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 2147483647 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    background: #000 !important;
+}
+
+.marker-video-fullscreen{
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 2147483647 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    background: #000 !important;
+}
+
+.marker-pop-video-ctn:fullscreen iframe,
+.marker-pop-video-ctn:-webkit-full-screen iframe,
+.marker-pop-video-ctn.txp-fullscreen iframe,
+.marker-pop-video-ctn.txp-fullscreen-container iframe,
+.marker-pop-video-ctn:fullscreen video,
+.marker-pop-video-ctn:-webkit-full-screen video,
+.marker-pop-video-ctn.txp-fullscreen video,
+.marker-pop-video-ctn.txp-fullscreen-container video{
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    margin: 0 auto !important;
+}
+
 .marker-preview-ctn{
     margin: 0 auto;
     margin-top: 50px;
@@ -2270,7 +2316,7 @@ line-height: 32px; /* 145.455% */
                 .img_marker_pop_fgx_s;
                 .lcter;
                 margin-left: -16px;
-                width: 684px;
+                width: 678px;
                 bottom: -34px;
             }
         }
@@ -2531,11 +2577,6 @@ line-height: 32px; /* 145.455% */
         // text-overflow: ellipsis;
        
     }
-    .bp-point-item-unavailable{
-        margin-right: 4px;
-        color: #FF4D4F;
-        font-size: 16px;
-    }
     .bp-point-item-price{
         position: absolute;
         right: 10px;
@@ -2643,6 +2684,24 @@ line-height: 32px; /* 145.455% */
         &:nth-child(even) {
             margin-right: 0;
           }
+
+          &.not-data{
+            background-color: #1B252B;
+            &::after{
+                content: "";
+                .abcter;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+            &::before{
+                content: "暂无点位";
+                .abcter;
+                font-size: 16px;
+                color: #EAEBEB;
+                opacity: 0.3;
+            }
+          }
         .bp-point-item-icon{
             position: relative;
             margin-left: 13px;
@@ -2656,7 +2715,7 @@ line-height: 32px; /* 145.455% */
             right: 10px;
             top: 50%;
             transform: translateY(-50%);
-            margin-top: 5px;
+            // margin-top: 3px;
             width: 200px;
             height: 54px;
             text-align: right;
@@ -2769,6 +2828,9 @@ html.landscape{
         .marker-preview-ctn{
             width: 5.88rem;
             .marker-pop-video-ctn{
+                width: 5.88rem !important;
+            }
+            .marker-preview{
                 width: 5.88rem !important;
             }
         }

@@ -22,6 +22,23 @@ var bpCurrentConfig = null;
 var bpMarkerPlayer = null;
 var bpMarkerPlayerIndex = 0;
 
+function syncBpVideoFullscreen() {
+    var fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement;
+    $('.marker-video-fullscreen').removeClass('marker-video-fullscreen');
+    if (!fullscreenElement) return;
+    var $fullscreenElement = $(fullscreenElement);
+    var $videoContainer = $fullscreenElement.hasClass('marker-pop-video-ctn')
+        ? $fullscreenElement
+        : $fullscreenElement.closest('.marker-pop-video-ctn');
+    if ($videoContainer.length) {
+        $fullscreenElement.addClass('marker-video-fullscreen');
+        $videoContainer.addClass('marker-video-fullscreen');
+    }
+}
+
+$(document).off('fullscreenchange.bpVideo webkitfullscreenchange.bpVideo')
+    .on('fullscreenchange.bpVideo webkitfullscreenchange.bpVideo', syncBpVideoFullscreen);
+
 function clearBpMarkerMedia() {
     var $preview = $('.marker-preview-ctn');
     var $markerPop = $('.marker-pop-ctn');
@@ -663,18 +680,22 @@ function renderBpPointItems($container, entries, className, onClick) {
         var selectedClass = bpSelectedPointKeys[entryKey] ? ' act' : '';
         var price = getBpEntryPrice(entry);
         var nameClass = price ? '' : ' no-price';
-        var unavailableLabel = entry.unavailable ? '<span class="bp-point-item-unavailable">暂无</span>' : '';
         $container.append(
             '<div class="bp-point-item ' + className + selectedClass + '" data-index="' + index + '">' +
                 '<div class="bp-point-item-icon ' + icon + '"></div>' +
-                '<div class="bp-point-item-name' + nameClass + '">' + unavailableLabel + escapeBpHtml(entry.name) + '</div>' +
+                '<div class="bp-point-item-name' + nameClass + '">' + escapeBpHtml(entry.name) + '</div>' +
                 (price ? '<div class="bp-point-item-price">' + escapeBpHtml(price) + '</div>' : '') +
                 (entry.items.length > 1 ? '<div class="bp-point-item-count">' + entry.items.length + '</div>' : '') +
             '</div>'
         );
     });
     $container.find('.' + className.split(' ').join('.')).off('click.bpPoint').on('click.bpPoint', function () {
-        onClick(entries[Number($(this).attr('data-index'))], $(this));
+        var entry = entries[Number($(this).attr('data-index'))];
+        if (entry && entry.unavailable) {
+            $(this).addClass('not-data');
+            return;
+        }
+        onClick(entry, $(this));
     });
 }
 
@@ -730,10 +751,11 @@ function renderBpPointList(type) {
                 return Object.assign({}, skill, { key: roleKey + ':' + skill.name });
             });
             skills.forEach(function (skill) {
-                bpSelectedPointKeys[skill.key] = true;
+                if (!skill.unavailable) bpSelectedPointKeys[skill.key] = true;
             });
             $('.bp-skill-title').show();
             renderBpPointItems($skillList, skills, 'bp-skill-item', function (skill, $skillItem) {
+                if (skill.unavailable) return;
                 var skillSelected = !!bpSelectedPointKeys[skill.key];
                 if (skillSelected) delete bpSelectedPointKeys[skill.key];
                 else bpSelectedPointKeys[skill.key] = true;

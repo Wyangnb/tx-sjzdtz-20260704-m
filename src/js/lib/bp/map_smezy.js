@@ -202,10 +202,10 @@ var selectPoint_smezy = [
                 "icon": "icon_djjs",
                 "vid":"w12885iyscw",
                 "price": "200",
-                "x": "90380",
-                "y":"-138877",
-                "role_x": "86968",
-                "role_y": "-143014"
+               "x": "90311",
+                "y":"-138774",
+                "role_x": "87003",
+                "role_y": "-143083"
             },
             {
                 "name": "B点反弹电箭",
@@ -264,7 +264,7 @@ var selectPoint_smezy = [
                 "point_name": "敌情追踪",
                 "point_desc": "",
                 "camp": "防守",
-                "icon": "icon_dqzj",
+                "icon": "icon_dqzz",
                 "vid":"",
                 "price": "",
                 "x": "",
@@ -316,7 +316,7 @@ var selectPoint_smezy = [
                 "point_name": "敌情追踪",
                 "point_desc": "",
                 "camp": "进攻",
-                "icon": "icon_dqzj",
+                "icon": "icon_dqzz",
                 "vid":"",
                 "price": "",
                 "x": "",
@@ -348,28 +348,28 @@ var selectPoint_smezy = [
             {
                 "name": "B点反弹瞬爆雷",
                 "point_name": "强化型破片手雷",
-                "point_desc": "在最右侧防守B区，反弹墙投掷手雷，对墙后敌人造成伤害",
+                "point_desc": "防守B点，投掷道具反弹远距离压制",
                 "camp": "防守",
                 "icon": "icon_spzd",
-                "vid":"e12887xycm9",
+                "vid":"i1288dvxp6z",
                 "price": "250",
-                "x": "91168",
-                "y":"-54564",
-                "role_x": "92025",
-                "role_y": "-56307"
+                "x": "90311",
+                "y":"-138774",
+                "role_x": "87003",
+                "role_y": "-143083"
             },
             {
                 "name": "B点手雷炸煤气罐",
                 "point_name": "强化型破片手雷",
-                "point_desc": "在左路防守B区，反弹墙投掷手雷，引爆煤气罐，同时再向后方投掷手雷压制",
+                "point_desc": "防守B点，投掷道具反弹远距离压制楼梯口敌人",
                 "camp": "防守",
                 "icon": "icon_spzd",
-                "vid":"r1288cueiio",
+                "vid":"k1288qja4p2",
                 "price": "250",
-                "x": "95305",
-                "y":"-55450",
-                "role_x": "93562",
-                "role_y": "-55480"
+                "x": "91207",
+                "y":"-140670",
+                "role_x": "87003",
+                "role_y": "-142497"
             },
             {
                 "name": "",
