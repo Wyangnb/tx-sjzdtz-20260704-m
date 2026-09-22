@@ -342,6 +342,7 @@ function createBpPoint(point) {
             bpRoleLayer = createBpPoint({
                 type: 'role-marker',
                 name: point.role_name || '',
+                skill_point_name: point.name || '',
                 icon: point.role_icon,
                 x: point.role_x,
                 y: point.role_y
@@ -350,7 +351,7 @@ function createBpPoint(point) {
         currClickMarker = marker;
         marker.myIcon = marker.getIcon();
         if (markerPop && markerPop.length) {
-            markerName.html(escapeBpHtml(point.point_name || point.name || ''));
+            markerName.html(escapeBpHtml(point.skill_point_name || point.name || ''));
             addressName.html(point.name);
             renderBpMarkerMedia(point);
             markerPop.addClass('show');
@@ -583,7 +584,8 @@ function getBpEntryMapPoints(entry) {
     function collect(points) {
         (Array.isArray(points) ? points : []).forEach(function (point) {
             if (!point) return;
-            if (point.x !== undefined && point.y !== undefined) result.push(point);
+            if (point.x !== undefined && point.x !== null && String(point.x).trim() !== '' &&
+                point.y !== undefined && point.y !== null && String(point.y).trim() !== '') result.push(point);
             if (Array.isArray(point.points)) collect(point.points);
         });
     }
@@ -625,14 +627,24 @@ function getBpSelectedMapPoints() {
 function getBpRolePointEntries(entry) {
     var groups = {};
     var entries = [];
-    getBpEntryMapPoints(entry).forEach(function (point) {
-        if (!isBpCampPoint(point)) return;
-        var name = point.point_name || point.name || '未命名点位';
-        if (!groups[name]) {
-            groups[name] = { name: name, icon: point.icon || entry.icon, items: [] };
-            entries.push(groups[name]);
-        }
-        groups[name].items.push(point);
+    function collect(points) {
+        (Array.isArray(points) ? points : []).forEach(function (point) {
+            if (!point) return;
+            if (point.type !== 'role' && (point.point_name !== undefined || point.name !== undefined)) {
+                if (!isBpCampPoint(point)) return;
+                var name = point.point_name || point.name || '未命名点位';
+                if (!groups[name]) {
+                    groups[name] = { name: name, icon: point.icon || entry.icon, items: [] };
+                    entries.push(groups[name]);
+                }
+                groups[name].items.push(point);
+            }
+            collect(point.points);
+        });
+    }
+    collect(entry && entry.items);
+    entries.forEach(function (skill) {
+        skill.unavailable = getBpEntryMapPoints(skill).length === 0;
     });
     return entries;
 }
@@ -651,10 +663,11 @@ function renderBpPointItems($container, entries, className, onClick) {
         var selectedClass = bpSelectedPointKeys[entryKey] ? ' act' : '';
         var price = getBpEntryPrice(entry);
         var nameClass = price ? '' : ' no-price';
+        var unavailableLabel = entry.unavailable ? '<span class="bp-point-item-unavailable">暂无</span>' : '';
         $container.append(
             '<div class="bp-point-item ' + className + selectedClass + '" data-index="' + index + '">' +
                 '<div class="bp-point-item-icon ' + icon + '"></div>' +
-                '<div class="bp-point-item-name' + nameClass + '">' + escapeBpHtml(entry.name) + '</div>' +
+                '<div class="bp-point-item-name' + nameClass + '">' + unavailableLabel + escapeBpHtml(entry.name) + '</div>' +
                 (price ? '<div class="bp-point-item-price">' + escapeBpHtml(price) + '</div>' : '') +
                 (entry.items.length > 1 ? '<div class="bp-point-item-count">' + entry.items.length + '</div>' : '') +
             '</div>'
@@ -927,8 +940,18 @@ $('.bp-btns-item').off('click.bpPointType').on('click.bpPointType', function (e)
     var $item = $(e.currentTarget);
     var wasActive = $item.hasClass('act');
     $('.bp-btns-item').removeClass('act');
-    if (!wasActive) $item.addClass('act');
+    if (!wasActive) {
+        $item.addClass('act');
+        if ($item.hasClass('bp-btn-normal')) {
+            getBpPointEntries('normal').forEach(function (entry) {
+                bpSelectedPointKeys[getBpEntryKey('normal', entry)] = true;
+            });
+        }
+    }
     renderBpPointList(wasActive ? null : ($item.hasClass('bp-btn-role') ? 'role' : 'normal'));
+    if (!wasActive && $item.hasClass('bp-btn-normal')) {
+        generateBpPoints(getBpSelectedMapPoints());
+    }
 });
 
 $('.bp-nav-ctn .reset-choose').off('click.bpReset').on('click.bpReset', function (event) {

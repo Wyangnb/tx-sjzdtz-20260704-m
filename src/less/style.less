@@ -2320,6 +2320,10 @@ line-height: 32px; /* 145.455% */
     }
 }
 
+.bp-point-marker-role{
+    pointer-events: none;
+}
+
 .bp-point-marker-normal{
     .map-icon-bg{
         background: rgba(0, 0, 0, 0.45);
@@ -2527,6 +2531,11 @@ line-height: 32px; /* 145.455% */
         // text-overflow: ellipsis;
        
     }
+    .bp-point-item-unavailable{
+        margin-right: 4px;
+        color: #FF4D4F;
+        font-size: 16px;
+    }
     .bp-point-item-price{
         position: absolute;
         right: 10px;
@@ -2648,7 +2657,7 @@ line-height: 32px; /* 145.455% */
             top: 50%;
             transform: translateY(-50%);
             margin-top: 5px;
-            width: 180px;
+            width: 200px;
             height: 54px;
             text-align: right;
             background: transparent;
