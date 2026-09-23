@@ -137,7 +137,7 @@ var BP_MAP_CONFIGS = {
     },
     smezy: {
         key: 'smezy',
-        title: '萨米尔庄园',
+        title: '萨米尔山庄',
         info: smezyInfo,
         points: selectPoint_smezy,
         regions: selectRegion_smezy,
@@ -368,7 +368,7 @@ function createBpPoint(point) {
         currClickMarker = marker;
         marker.myIcon = marker.getIcon();
         if (markerPop && markerPop.length) {
-            markerName.html(escapeBpHtml(point.skill_point_name || point.name || ''));
+            markerName.html(escapeBpHtml(point.skill_point_name || point.point_name || point.name || ''));
             addressName.html(point.name);
             renderBpMarkerMedia(point);
             markerPop.addClass('show');
@@ -630,6 +630,7 @@ function getBpSelectedMapPoints() {
                 if (bpSelectedPointKeys[roleKey + ':' + skill.name]) {
                     result = result.concat(getBpEntryMapPoints(skill).map(function (point) {
                         return Object.assign({}, point, {
+                            skill_point_name: point.name || '',
                             role_name: entry.name,
                             role_icon: entry.icon
                         });
@@ -907,6 +908,8 @@ function initBpMode() {
     $('.btn-war-change').off('click').on('click.bpWar', function (event) {
         event.preventDefault();
         event.stopImmediatePropagation();
+        $('.marker-pop-ctn').removeClass('show');
+        if (bpMode) clearBpMarkerMedia();
         if (bpMode) {
             // 爆破模式是从战场进入时，退出爆破即可恢复战场，避免再次切回常规模式。
             var wasWarMode = !!(bpState && bpState.isWar);
@@ -920,6 +923,8 @@ function initBpMode() {
     $('.btn-war-change2').off('click.bpWar').on('click.bpWar', function (event) {
         event.preventDefault();
         event.stopPropagation();
+        $('.marker-pop-ctn').removeClass('show');
+        if (bpMode) clearBpMarkerMedia();
         if (bpMode) exitBpMode();
         if (isWar) enterWarMap();
     });
@@ -950,6 +955,12 @@ $('.bp-map-item').off('click.bpMap').on('click.bpMap', function (e) {
 $('.btn-nav-state-bp').on('click', function () {
     $('.bp-nav-ctn').addClass('show')
 })
+
+$('.btn-close-bp-nav').off('click.bpNavClose').on('click.bpNavClose', function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    $('.bp-nav-ctn').removeClass('show');
+});
 
 // 关闭菜单栏
 $('.btn-check-marker-bp').on('click', function () {

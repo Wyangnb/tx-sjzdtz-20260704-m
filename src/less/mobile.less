@@ -421,3 +421,28 @@ html.pad_landscape{
     }
 }
 
+@media screen and (max-height: 469px) {
+    .bp-mode .bp-nav-ctn.show ~ .right-nav {
+        display: none;
+    }
+
+    .bp-mode{
+        .bp-nav-ctn{
+            // width: 100%;
+            // background-color: rgba(0, 0, 0, 0.3);
+            // z-index: 100000;
+            // pointer-events: none;
+            div{
+                // pointer-events: visible;
+            }
+            &.show{
+                .nav-ctn-bg{
+                    bottom: 30px;
+                }
+                
+            }
+            .bp-nav-title{}
+        }
+    }
+}
+
