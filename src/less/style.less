@@ -2225,12 +2225,73 @@ body {
     pointer-events: none;
 }
 
+.marker-video-ctn{
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.88);
+    &.show{
+        display: flex;
+    }
+    .marker-video-player .marker-pop-video-ctn{
+        width: 701px;
+        height: 385px;
+    }
+}
+
+.marker-video-player{
+    position: relative;
+    width: 701px;
+    height: 385px;
+}
+
+// 腾讯播放器自动播放时隐藏中心播放按钮，避免覆盖视频画面。
+.marker-video-ctn .txp-btn-play,
+.marker-video-ctn .txp-bezel-play,
+.marker-video-ctn .txp-play-btn,
+.marker-video-ctn .txp-big-play,
+.marker-video-ctn .txp-big-play-button,
+.marker-video-ctn button[class*="play"]{
+    display: none !important;
+}
+
+.marker-video-close{
+    .abcter;
+    margin-top: -240px;
+    margin-left: 320px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-image: data-uri('@{img}btn_close_nav.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
   //   爆破模式
 .bp-mode{
     .bp-point-name{
     .abcter;
 }
-
+.bp-point-marker-role{
+    // pointer-events: none !important;
+    .map-icon-bg{
+        &::before{
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border: 1px solid #0FF796;
+            animation: markerLine2 1s infinite;
+        }
+    }
+}
 
 .map-region-name{
     pointer-events: none;
@@ -2238,10 +2299,11 @@ body {
 
 .marker-pop-video-ctn{
     margin: 0 auto;
-    margin-top: 50px;
     width: 684px;
     height: 385px;
 }
+
+
 
 .btn-close-bp-nav{
     
@@ -2306,6 +2368,15 @@ body {
     margin: 0 auto;
     margin-top: 50px;
     width: 684px;
+    &.has-video{
+        cursor: pointer;
+        .marker-preview{
+            transition: opacity 0.2s ease;
+        }
+        &:hover .marker-preview{
+            opacity: 0.82;
+        }
+    }
 }
 .marker-preview{
     width: 684px;
@@ -2370,7 +2441,22 @@ line-height: 32px; /* 145.455% */
     }
 }
 
-.bp-point-marker-skill{
+.bp-point-marker-skill, .bp-point-marker-normal{
+    &.act{
+        .map-icon-bg{
+            &::before{
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+                border: 1px solid #0FF796;
+                animation: markerLine2 1s infinite;
+            }
+        }
+    }
     .map-icon-bg{
         // background: transparent;
         // border: transparent;
@@ -2849,15 +2935,14 @@ html.landscape{
         }
         .marker-preview-ctn{
             width: 5.88rem;
-            .marker-pop-video-ctn{
-                width: 5.88rem !important;
-            }
             .marker-preview{
                 width: 5.88rem !important;
             }
         }
     }
 }
+
+
 
 @media screen and (min-width: 768px) {
 }
@@ -2873,6 +2958,21 @@ html.landscape{
     }
     100%{
         transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+@keyframes markerLine2 {
+    0%{
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-50%, -50%) scale(1.5);
         opacity: 0;
     }
 }

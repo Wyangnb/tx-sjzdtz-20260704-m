@@ -16,6 +16,7 @@ var bpSelectedPointKeys = {};
 var bpSelectedRoleKey = null;
 
 var BP_DEFAULT_MAP = 'htzz';
+var BP_VIDEO_POSTER_URL = 'https://game.gtimg.cn/images/dfm/cp/a20240729directory/m/video_poster.jpg';
 // 爆破模式可拖拽视野在瓦片边界外额外保留的空间，数值越大可移动范围越大。
 var BP_VIEW_BOUNDS_PADDING = 200;
 var bpCurrentConfig = null;
@@ -39,8 +40,9 @@ function syncBpVideoFullscreen() {
 $(document).off('fullscreenchange.bpVideo webkitfullscreenchange.bpVideo')
     .on('fullscreenchange.bpVideo webkitfullscreenchange.bpVideo', syncBpVideoFullscreen);
 
-function clearBpMarkerMedia() {
+function clearBpMarkerMedia(keepPreview) {
     var $preview = $('.marker-preview-ctn');
+    var $video = $('.marker-video-ctn');
     var $markerPop = $('.marker-pop-ctn');
     if (bpMarkerPlayer && typeof bpMarkerPlayer.pause === 'function') {
         bpMarkerPlayer.pause();
@@ -49,7 +51,10 @@ function clearBpMarkerMedia() {
         bpMarkerPlayer.destroy();
     }
     bpMarkerPlayer = null;
-    $preview.find('.marker-pop-video, .marker-pop-video-ctn').remove();
+    $video.removeClass('show').removeAttr('data-vid');
+    $video.find('.marker-video-player').empty();
+    if (keepPreview) return;
+    $preview.removeAttr('data-vid').removeClass('has-video');
     $markerPop.find('.marker-pop-desc').remove();
     $preview.find('.marker-preview').attr('src', '').hide();
     $preview.hide();
@@ -60,6 +65,7 @@ function initBpMarkerPlayer(containerId, vid) {
     bpMarkerPlayer = new window.Txplayer({
         containerId: containerId,
         vid: vid,
+        poster: BP_VIDEO_POSTER_URL,
         width: '600',
         height: '400',
         autoplay: true
@@ -76,6 +82,14 @@ function getBpMarkerImageUrl(imageName) {
     return getBpAssetRoot() + image + '.jpg';
 }
 
+function getBpMarkerPreviewUrl(point) {
+    if (point && point.img) return getBpMarkerImageUrl(point.img);
+    if (point && point.vid) return BP_VIDEO_POSTER_URL;
+    var icon = String(point && point.icon || '').replace(/[^a-zA-Z0-9_-]/g, '');
+    if (icon) return getBpAssetRoot() + icon + '.png';
+    return '';
+}
+
 function renderBpMarkerMedia(point) {
     if (!bpMode) return;
     var $preview = $('.marker-preview-ctn');
@@ -85,27 +99,11 @@ function renderBpMarkerMedia(point) {
     $preview.find('.marker-preview').attr('src', '').hide();
 
     var vid = point && point.vid ? String(point.vid).trim() : '';
-    var img = getBpMarkerImageUrl(point && point.img);
+    var img = getBpMarkerPreviewUrl(point);
     var pointDesc = point && point.point_desc ? String(point.point_desc).trim() : '';
-    if (vid) {
-        var containerId = 'marker-pop-video-' + (++bpMarkerPlayerIndex);
-        $('<div>', {
-            'id': containerId,
-            'class': 'marker-pop-video-ctn'
-        }).appendTo($preview);
-        $preview.show();
-        if (typeof window.Txplayer === 'function') {
-            initBpMarkerPlayer(containerId, vid);
-        } else {
-            var script = document.createElement('script');
-            script.src = '//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js';
-            script.onload = function () {
-                if ($('#' + containerId).length && bpMode) initBpMarkerPlayer(containerId, vid);
-            };
-            document.head.appendChild(script);
-        }
-    } else if (img) {
+    if (img) {
         $preview.find('.marker-preview').attr('src', img).show();
+        if (vid) $preview.attr('data-vid', vid).addClass('has-video');
         $preview.show();
     } else {
         $preview.hide();
@@ -118,6 +116,31 @@ function renderBpMarkerMedia(point) {
     }
 }
 
+function playBpMarkerVideo(vid) {
+    var $video = $('.marker-video-ctn');
+    var $player = $video.find('.marker-video-player');
+    if (!$video.length || !$player.length || !vid) return;
+
+    var containerId = 'marker-pop-video-' + (++bpMarkerPlayerIndex);
+    $player.empty().append($('<div>', {
+        'id': containerId,
+        'class': 'marker-pop-video-ctn'
+    })).attr('data-vid', vid);
+    $video.addClass('show').attr('data-vid', vid);
+
+    if (typeof window.Txplayer === 'function') {
+        initBpMarkerPlayer(containerId, vid);
+        return;
+    }
+
+    var script = document.createElement('script');
+    script.src = '//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js';
+    script.onload = function () {
+        if ($('#' + containerId).length && bpMode) initBpMarkerPlayer(containerId, vid);
+    };
+    document.head.appendChild(script);
+}
+
 var BP_MAP_CONFIGS = {
     htzz: {
         key: 'htzz',
@@ -125,7 +148,7 @@ var BP_MAP_CONFIGS = {
         info: htzzzInfo,
         points: selectPoint_htzzz,
         regions: selectRegion_htzzz,
-        tileExtension: 'mixed'
+        tileExtension: 'png'
     },
     lswdz: {
         key: 'lswdz',
@@ -133,7 +156,7 @@ var BP_MAP_CONFIGS = {
         info: lswdzInfo,
         points: selectPoint_lswdz,
         regions: selectRegion_lswdz,
-        tileExtension: 'jpg'
+        tileExtension: 'png'
     },
     smezy: {
         key: 'smezy',
@@ -141,7 +164,7 @@ var BP_MAP_CONFIGS = {
         info: smezyInfo,
         points: selectPoint_smezy,
         regions: selectRegion_smezy,
-        tileExtension: 'jpg'
+        tileExtension: 'png'
     }
 };
 
@@ -166,6 +189,7 @@ function getBpAssetRoot() {
 }
 
 function getBpTileExtension(coords) {
+    if (bpCurrentConfig && bpCurrentConfig.tileExtension === 'png') return 'png';
     if (bpCurrentConfig && bpCurrentConfig.tileExtension === 'mixed') {
         return coords.z === 1 && !(coords.x === 0 && coords.y === 0) ? 'png' : 'jpg';
     }
@@ -342,11 +366,19 @@ function createBpPoint(point) {
         if (event && event.originalEvent && L.DomEvent && L.DomEvent.stopPropagation) {
             L.DomEvent.stopPropagation(event.originalEvent);
         }
+        $('.bp-map-change').removeClass('show');
         clearBpPointActiveState();
         if (marker.getElement()) $(marker.getElement()).addClass('act');
+        var flyToPos = pos;
         if (point.role_x !== undefined && point.role_y !== undefined && point.role_icon) {
             clearBpRoleLayer();
             var rolePos = getBpMapPos(point.role_x, point.role_y);
+            flyToPos = $('html').hasClass('landscape')
+                ? {
+                    x: (pos.x + rolePos.x) / 2,
+                    y: (pos.y + rolePos.y) / 2
+                }
+                : (pos.y < rolePos.y ? pos : rolePos);
             bpRoleLine = L.polyline([
                 [pos.y, pos.x],
                 [rolePos.y, rolePos.x]
@@ -373,7 +405,7 @@ function createBpPoint(point) {
             renderBpMarkerMedia(point);
             markerPop.addClass('show');
         }
-        map.flyTo([pos.y, pos.x], Math.max(map.getZoom(), bpCurrentConfig.info.initZoom));
+        map.flyTo([flyToPos.y, flyToPos.x], Math.max(map.getZoom(), 1.4));
     });
     return marker;
 }
@@ -693,7 +725,13 @@ function renderBpPointItems($container, entries, className, onClick) {
     $container.find('.' + className.split(' ').join('.')).off('click.bpPoint').on('click.bpPoint', function () {
         var entry = entries[Number($(this).attr('data-index'))];
         if (entry && entry.unavailable) {
-            $(this).addClass('not-data');
+            var $item = $(this);
+            if ($item.hasClass('bp-skill-item')) {
+                $item.addClass('not-data');
+                setTimeout(function () {
+                    $item.removeClass('not-data');
+                }, 300);
+            }
             return;
         }
         onClick(entry, $(this));
@@ -877,6 +915,18 @@ function exitBpMode() {
 
 function initBpMode() {
     $('.btn-war-change2').addClass('bp-hidden');
+    $('.marker-video-ctn').appendTo(document.body);
+    $('.marker-preview-ctn').off('click.bpVideo').on('click.bpVideo', function (event) {
+        var vid = $(this).attr('data-vid');
+        if (!bpMode || !vid) return;
+        event.preventDefault();
+        playBpMarkerVideo(vid);
+    });
+    $('.marker-video-close').off('click.bpVideo').on('click.bpVideo', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        clearBpMarkerMedia(true);
+    });
     $('.btn-close-marker-pop').off('click.bpRole').on('click.bpRole', function () {
         if (!bpMode) return;
         clearBpPointActiveState();
