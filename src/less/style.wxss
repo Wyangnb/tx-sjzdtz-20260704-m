@@ -6638,12 +6638,10 @@ table {
 }
 @font-face {
   font-family: 'text';
-  src: url('https://game.gtimg.cn/images/dfm/cp/a20240906main/p-med.ttf');
   font-display: 'swap';
 }
 @font-face {
   font-family: 'boldtext';
-  src: url('https://game.gtimg.cn/images/dfm/cp/a20240906main/p-bold.ttf');
   font-display: 'swap';
 }
 a {
@@ -9438,8 +9436,14 @@ html.landscape .m-main-wrap .nav-ctn .nav-type-list {
   height: 100%;
   height: 46vh;
 }
+html.landscape .marker-video-player,
+html.landscape .marker-pop-video-ctn {
+  width: 10rem !important;
+  height: 5.6rem !important;
+}
 html.landscape .marker-video-close {
-  margin-left: 450px;
+  margin-left: 550px;
+  margin-top: -250px;
 }
 html.pad_landscape .floor-list {
   right: 1.5rem;
