@@ -646,6 +646,15 @@ function getBpEntryKey(type, entry) {
     return (type || entry.type || '') + ':' + entry.name;
 }
 
+// 清除某一类型（normal / role）的全部选中状态，切换类型时用于丢弃另一类型的点位。
+function clearBpPointTypeSelection(type) {
+    var prefix = (type === 'role' ? 'role' : 'normal') + ':';
+    Object.keys(bpSelectedPointKeys).forEach(function (key) {
+        if (key.indexOf(prefix) === 0) delete bpSelectedPointKeys[key];
+    });
+    if (type === 'role') bpSelectedRoleKey = null;
+}
+
 function getBpSelectedMapPoints() {
     var result = [];
     ['normal', 'role'].forEach(function (type) {
@@ -1021,20 +1030,27 @@ $('.bp-btns-item').off('click.bpPointType').on('click.bpPointType', function (e)
     e.preventDefault();
     e.stopPropagation();
     var $item = $(e.currentTarget);
+    var isRoleBtn = $item.hasClass('bp-btn-role');
+    var clickedType = isRoleBtn ? 'role' : 'normal';
     var wasActive = $item.hasClass('act');
     $('.bp-btns-item').removeClass('act');
+
+    // 切换类型（或取消选中）时清除本次涉及类型的选中状态，
+    // 选择通用时丢弃全部干员点位，选择干员时丢弃全部通用点位。
+    clearBpPointTypeSelection(wasActive ? clickedType : (isRoleBtn ? 'normal' : 'role'));
+
+    var nextType = null;
     if (!wasActive) {
         $item.addClass('act');
-        if ($item.hasClass('bp-btn-normal')) {
+        nextType = clickedType;
+        if (nextType === 'normal') {
             getBpPointEntries('normal').forEach(function (entry) {
                 bpSelectedPointKeys[getBpEntryKey('normal', entry)] = true;
             });
         }
     }
-    renderBpPointList(wasActive ? null : ($item.hasClass('bp-btn-role') ? 'role' : 'normal'));
-    if (!wasActive && $item.hasClass('bp-btn-normal')) {
-        generateBpPoints(getBpSelectedMapPoints());
-    }
+    renderBpPointList(nextType);
+    generateBpPoints(getBpSelectedMapPoints());
 });
 
 $('.bp-nav-ctn .reset-choose').off('click.bpReset').on('click.bpReset', function (event) {
