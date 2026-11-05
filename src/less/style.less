@@ -241,7 +241,12 @@ body {
                 width: 970px/2;
                 height: 430px/2;
                 height: 565px/2;
+            
                 &.war{
+                    pointer-events: none;
+                    div{
+                        pointer-events: visible;
+                    }
                     .map-list{
                         display: none;
                     }
@@ -416,10 +421,10 @@ body {
                     }
                     &.show-5{
                         transform: translateY(350px);
-                        height: 290px/2;
+                        height: 440px/2;
                         // height: 150px/2;
                         .map-lv-item-2{
-                            display: none;
+                            display: block;
                       
                         }
                         .map-lv-item-0{
@@ -765,6 +770,7 @@ body {
         pointer-events: none;
         background-size: 100% auto;
         background-position: center;
+        .img_map_mask_p;
     }
     .nav-ctn{
         // display: none;
@@ -1061,6 +1067,9 @@ body {
                     }
                     &.cld{
                         .img_nav_cld_i;
+                    }
+                    &.fsq{
+                        .img_nav_fsq_i;
                     }
                     &.sl{
                         .img_nav_sl_i;
@@ -1871,6 +1880,168 @@ body {
 }
 .leaflet-popup-close-button{
     display: none;
+}
+
+.leaflet-popup.radiation.fsq{
+    position: fixed !important;
+    top: 50% !important;
+    right: 24px;
+    bottom: auto !important;
+    left: auto !important;
+    margin: 0 !important;
+    transform: translateY(-50%) !important;
+    margin-top: 0px !important;
+    z-index: 1006;
+    width: 137px !important;
+    height: 584px !important;
+    border-radius: 0 !important;
+    .leaflet-popup-content-wrapper{
+        pointer-events: auto;
+        opacity: 1;
+        width: 137px !important;
+        height: 584px !important;
+        padding: 0;
+        background-color: transparent;
+        background-image: data-uri('@{img}lv3/hk_bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 137px auto;
+        border-radius: 0 !important;
+        .leaflet-popup-content{
+            width: 137px !important;
+            height: 100% !important;
+            margin: 0;
+        }
+        .name{
+            color: #ffffff;
+        }
+    }
+    .leaflet-popup-close-button{
+        display: block;
+        top: -10px !important;
+        text-indent: -9999px;
+        width: 137px;
+        height: 50px;
+        // background-color: #000;
+        transform: translateY(-50px);
+    }
+}
+
+.radiation-popup{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 18px 14px 0 18px;
+    .name{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        width: auto;
+        max-width: none;
+        white-space: nowrap;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        color: #EAEBEB;
+        font-size: 0.2rem;
+        transform: translateY(-50%);
+        line-height: 0.2rem;
+        opacity: 0.6;
+    }
+    .radiation-current-minute{
+        position: absolute;
+        top: 170px;
+        right: 10px;
+        margin: 0;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        color: rgba(234, 235, 235, 0.72);
+        font-size: 0.12rem;
+        line-height: 0.16rem;
+        white-space: nowrap;
+    }
+    .radiation-range-control{
+        position: absolute;
+        top: 30px;
+        left: 65px;
+        width: 105px;
+        height: 494px;
+    }
+    .radiation-range-slider{
+        -webkit-appearance: none;
+        appearance: none;
+        display: block;
+        width: 10px;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        outline: none;
+        writing-mode: vertical-lr;
+        direction: ltr;
+        background-color: transparent;
+        background-image: data-uri('@{img}lv3/hk_line.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+            background-size: 10px auto;
+        cursor: pointer;
+        &:disabled{
+            cursor: default;
+            opacity: 0.55;
+        }
+        &::-webkit-slider-thumb{
+            -webkit-appearance: none;
+            appearance: none;
+            width: 33px;
+            height: 14px;
+            border: 0;
+            background-image: data-uri('@{img}lv3/hk_i.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 33px auto;
+        }
+        &::-moz-range-thumb{
+            width: 33px;
+            height: 14px;
+            border: 0;
+            border-radius: 0;
+            background-image: data-uri('@{img}lv3/hk_i.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 33px auto;
+        }
+    }
+    .radiation-range-labels{
+        position: absolute;
+        top: 0;
+        left: -54px;
+        width: 61px;
+        height: 100%;
+        margin: 0;
+        color: rgba(234, 235, 235, 0.65);
+        font-size: 0.2rem;
+        line-height: 0.2rem;
+        letter-spacing: 2px;
+        pointer-events: none;
+        span{
+            position: absolute;
+            left: 0;
+            right: auto;
+            white-space: nowrap;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+        .radiation-label-max{
+            bottom: 0;
+        }
+        .radiation-label-middle{
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .radiation-label-min{
+            top: 0;
+        }
+    }
 }
 
 .marker-pop-ctn{
@@ -2907,6 +3078,9 @@ html.landscape{
                 left: -100%;
                 transition: 0.5s;
             }
+        }
+        .map-mask{
+            .img_map_mask;
         }
     }
     .curr-map-ctn{

@@ -802,6 +802,248 @@ function syncRegions() {
     collectActiveRegions().forEach(function (rn) { drawRegion(rn); });
 }
 
+// ========== ★ 辐射区逻辑（与 PC 端同步） ==========
+var radiationMarkerStates = {};
+var radiationPopupBindings = {};
+var radiationRangeLayers = [];
+var RADIATION_OPTION_NAMES = ['随机辐射区', '东侧辐射区', '西侧辐射区'];
+var DEFAULT_RADIATION_TIMELINE = {
+    rangeStartMinute: 3,
+    expandStartMinute: 3,
+    expandEndMinute: 8,
+    initialRadius: 0,
+    finalRadius: 50
+};
+
+function isRadiationMarker(item) {
+    return !!item && String(item.name || '').indexOf('辐射区') > -1;
+}
+
+function isRadiationOptionName(name) {
+    return RADIATION_OPTION_NAMES.indexOf(name) > -1;
+}
+
+function resetOtherRadiationOptions(selectedFilterKey) {
+    RADIATION_OPTION_NAMES.forEach(function (name) {
+        var filterKey = getMarkerFilterKey({ name: name });
+        visibleMarker[filterKey] = filterKey === selectedFilterKey;
+    });
+}
+
+function normalizeRadiationOptionVisibility() {
+    var selectedName = '';
+    RADIATION_OPTION_NAMES.some(function (name) {
+        if (visibleMarker[getMarkerFilterKey({ name: name })]) {
+            selectedName = name;
+            return true;
+        }
+        return false;
+    });
+    resetOtherRadiationOptions(
+        selectedName ? getMarkerFilterKey({ name: selectedName }) : ''
+    );
+}
+
+function syncRadiationOptionClasses() {
+    $('.nav-list-item').each(function () {
+        var name = $(this).attr('data-name');
+        if (!isRadiationOptionName(name)) return;
+        var filterKey = $(this).attr('data-filter-key') || getMarkerFilterKey({ name: name });
+        $(this).toggleClass('active', !!visibleMarker[filterKey]);
+    });
+}
+
+function getRadiationMarkerId(item) {
+    if (!item) return '';
+    return [item.name, getMarkerMode(item), item.x, item.y].join('|');
+}
+
+function getRadiationTimelineConfig() {
+    var config = mapScaleInfo && mapScaleInfo.radiationTimeline
+        ? mapScaleInfo.radiationTimeline
+        : {};
+    function getNumber(value, fallback) {
+        var result = Number(value);
+        return Number.isFinite(result) ? result : fallback;
+    }
+    return {
+        rangeStartMinute: Math.max(0, getNumber(config.rangeStartMinute, DEFAULT_RADIATION_TIMELINE.rangeStartMinute)),
+        expandStartMinute: Math.max(0, getNumber(config.expandStartMinute, DEFAULT_RADIATION_TIMELINE.expandStartMinute)),
+        expandEndMinute: Math.max(0, getNumber(config.expandEndMinute, DEFAULT_RADIATION_TIMELINE.expandEndMinute)),
+        initialRadius: Math.max(0, getNumber(config.initialRadius, DEFAULT_RADIATION_TIMELINE.initialRadius)),
+        finalRadius: Math.max(0, getNumber(config.finalRadius, DEFAULT_RADIATION_TIMELINE.finalRadius))
+    };
+}
+
+function getRadiationMarkerState(item) {
+    var id = getRadiationMarkerId(item);
+    if (!radiationMarkerStates[id]) {
+        radiationMarkerStates[id] = {
+            minute: 0,
+            rangeLayer: null,
+            boundaryLayer: null
+        };
+    }
+    return radiationMarkerStates[id];
+}
+
+function getRadiationRangeRadius(minute) {
+    var config = getRadiationTimelineConfig();
+    var value = Math.max(0, Number(minute) || 0);
+    if (value < config.rangeStartMinute) return 0;
+    if (value < config.expandStartMinute) return config.initialRadius;
+    if (value >= config.expandEndMinute || config.expandEndMinute <= config.expandStartMinute) {
+        return config.finalRadius;
+    }
+    var progress = (value - config.expandStartMinute) /
+        (config.expandEndMinute - config.expandStartMinute);
+    return config.initialRadius + (config.finalRadius - config.initialRadius) * progress;
+}
+
+function clearRadiationRangeLayers() {
+    radiationRangeLayers.forEach(function (layer) {
+        if (layer && layer.remove) layer.remove();
+    });
+    radiationRangeLayers = [];
+    Object.keys(radiationMarkerStates).forEach(function (id) {
+        radiationMarkerStates[id].rangeLayer = null;
+        radiationMarkerStates[id].boundaryLayer = null;
+    });
+}
+
+function syncRadiationRangeLayer(item, pos, minute) {
+    var state = getRadiationMarkerState(item);
+    var config = getRadiationTimelineConfig();
+    var radius = getRadiationRangeRadius(minute);
+
+    if (!state.boundaryLayer && config.finalRadius > 0) {
+        state.boundaryLayer = L.circle([pos.y, pos.x], {
+            radius: config.finalRadius,
+            color: '#9A9FA1',
+            opacity: 0.7,
+            weight: 2,
+            dashArray: '8, 6',
+            fill: false,
+            interactive: false
+        }).addTo(map);
+        radiationRangeLayers.push(state.boundaryLayer);
+    }
+
+    if (!radius) {
+        if (state.rangeLayer) {
+            radiationRangeLayers = radiationRangeLayers.filter(function (layer) {
+                return layer !== state.rangeLayer;
+            });
+            state.rangeLayer.remove();
+            state.rangeLayer = null;
+        }
+        return;
+    }
+
+    if (state.rangeLayer && state.rangeLayer.setRadius) {
+        state.rangeLayer.setRadius(radius);
+        if (state.boundaryLayer && state.boundaryLayer.bringToFront) {
+            state.boundaryLayer.bringToFront();
+        }
+        return;
+    }
+
+    state.rangeLayer = L.circle([pos.y, pos.x], {
+        radius: radius,
+        color: '#FF0000',
+        opacity: 0.6,
+        weight: 2,
+        fill: true,
+        fillColor: '#FF0000',
+        fillOpacity: 0.3,
+        interactive: false
+    }).addTo(map);
+    radiationRangeLayers.push(state.rangeLayer);
+    if (state.boundaryLayer && state.boundaryLayer.bringToFront) {
+        state.boundaryLayer.bringToFront();
+    }
+}
+
+function getRadiationIconName(item) {
+    return item.icon;
+}
+
+function createRadiationMarkerIcon(item, path, minute, isClick) {
+    var iconName = getRadiationIconName(item);
+    var rotate = currWarMap === 'qhz' ? 90 : 180;
+    var icon = L.divIcon({
+        className: ` ${isWar ? 'map-war-icon' : 'map-icon'}${isClick ? ' click' : ''} ${nameClassMap[item.name] || ''}`,
+        html: isClick
+            ? `<div class="map-icon-bg"><img src="${path + iconName}.png" style="${item?.rotate ? `transform: rotate(${Number(item.rotate) + rotate}deg)` : ''}"/><text class="marker-order" style="${item?.index ? 'display: block' : 'display: none'}">#${item?.index}</text></div>`
+            : `<div class="map-icon-bg" style="${item?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(item.rotate) + rotate}deg)` : ''}"><img src="${path + iconName}.png"/><text class="marker-order" style="${item?.index ? 'display: block' : 'display: none'}">#${item?.index}</text></div>`,
+        iconSize: [30, 30],
+        iconAnchor: [15, 15]
+    });
+    icon.name = item.name;
+    icon.icon = iconName;
+    return icon;
+}
+
+function formatRadiationMinute(minute) {
+    return String(Math.round((Number(minute) || 0) * 10) / 10);
+}
+
+function buildRadiationPopupHtml(item, minute) {
+    var config = getRadiationTimelineConfig();
+    var maxMinute = Math.max(config.expandEndMinute, config.expandStartMinute);
+    var sliderDisabled = item.name === '随机辐射区';
+    var minuteText = formatRadiationMinute(minute);
+    return `
+        <div class="radiation-popup">
+            <div class="name">滑动切换辐射区域</div>
+            <div class="radiation-range-control">
+                <input class="radiation-range-slider" data-radiation-id="${getRadiationMarkerId(item)}" type="range" orient="vertical" min="0" max="${maxMinute}" step="0.1" value="${Number(minute) || 0}" aria-label="${item.name}范围时间" aria-orientation="vertical" aria-valuetext="${minuteText}分钟" ${sliderDisabled ? 'disabled aria-disabled="true"' : ''}>
+                <div class="radiation-range-labels">
+                    <span class="radiation-label-min">0分钟</span>
+                    <span class="radiation-label-middle">${config.expandStartMinute}分钟</span>
+                    <span class="radiation-label-max">${maxMinute}分钟</span>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function updateRadiationMarkerAppearance(marker, item, pos, path, minute, isClick) {
+    var state = getRadiationMarkerState(item);
+    state.minute = Math.max(0, Number(minute) || 0);
+    marker.myIcon = createRadiationMarkerIcon(item, path, state.minute, false);
+    marker.setIcon(isClick
+        ? createRadiationMarkerIcon(item, path, state.minute, true)
+        : marker.myIcon);
+    syncRadiationRangeLayer(item, pos, state.minute);
+}
+
+function resetRadiationPopupState(binding) {
+    if (!binding || !binding.marker) return;
+    binding.state.minute = 0;
+    binding.marker.myIcon = createRadiationMarkerIcon(binding.item, binding.path, 0, false);
+    binding.marker.setIcon(binding.marker.myIcon);
+    syncRadiationRangeLayer(binding.item, binding.pos, 0);
+}
+
+function registerRadiationPopup(marker, item, pos, path, state) {
+    radiationPopupBindings[getRadiationMarkerId(item)] = {
+        marker: marker,
+        item: item,
+        pos: pos,
+        path: path,
+        state: state
+    };
+}
+
+function mountRadiationPopup(marker) {
+    var popup = marker && marker.getPopup && marker.getPopup();
+    var popupElement = popup && popup.getElement && popup.getElement();
+    if (popupElement && popupElement.parentNode !== document.body) {
+        document.body.appendChild(popupElement);
+    }
+}
+
 var hoverMarker = {};
 var clickMarker = {}
 var ciLayer = null;
@@ -1035,6 +1277,8 @@ function refreshMarker2(from, arr) {
     markerList = []
     // ★ 清理自定义区域图层（activeRegion 绘制），避免切图/切楼层/切难度残留（自 PC 版迁移）
     clearRegions();
+    clearRadiationRangeLayers();
+    radiationPopupBindings = {};
 
     $.each(arr, function (index, item) {
         var visible = false;
@@ -1057,7 +1301,11 @@ function refreshMarker2(from, arr) {
             visible = true;
         }
         if (visible) {
-            if (item['自定义区域']) {
+            var isRadiationItem = isRadiationMarker(item);
+            var radiationState = isRadiationItem ? getRadiationMarkerState(item) : null;
+            if (isRadiationItem) {
+                var popupHtml = buildRadiationPopupHtml(item, radiationState.minute);
+            } else if (item['自定义区域']) {
                 var popupHtml = `
                 <div class="name">${this?.sub_name || this.name}${item['自定义区域'] !== ''? `<span> ( ${item['自定义区域']} ) </span>`: ''}</div>
                  <div class="btn-floor" data-floor=${this.floor}></div>
@@ -1080,7 +1328,7 @@ function refreshMarker2(from, arr) {
           
 
 
-            popupHtml += '</div>';
+            if (!isRadiationItem) popupHtml += '</div>';
 
             var className = ''
             if (item?.type) {
@@ -1089,6 +1337,7 @@ function refreshMarker2(from, arr) {
                 className =  'article'
             }
             var pos = getMapPos(this.x, this.y)
+            if (radiationState) syncRadiationRangeLayer(item, pos, radiationState.minute);
  var path = isWar ? 'https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/dzc_i/' : 'https://game.gtimg.cn/images/dfm/cp/a20240729directory/img/lv3/'
             var iconName;
             if (that.name === "进攻方基地" ) {
@@ -1100,12 +1349,14 @@ function refreshMarker2(from, arr) {
             }
             if (this.icon) {
                 let rotate = currWarMap === 'qhz' ? 90 : 180
-                var myIcon =  L.divIcon({
-                    className: `${isWar ? 'map-war-icon' : 'map-icon'} ${nameClassMap[that.name] || ''}`,
-                    html: `<div class="map-icon-bg" style="${that?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(that?.rotate) + rotate}deg)` : ''}"><img src="${path + iconName}.png"/><text class="marker-order" style="${that?.index ? `display: block;` : 'display: none;'}">#${that?.index}</text></div>`,
-                    iconSize: [30, 30],			//设置图标大小
-                    iconAnchor: [15, 15],		//设置图标偏移
-                })
+                var myIcon = radiationState
+                    ? createRadiationMarkerIcon(that, path, radiationState.minute, false)
+                    : L.divIcon({
+                        className: `${isWar ? 'map-war-icon' : 'map-icon'} ${nameClassMap[that.name] || ''}`,
+                        html: `<div class="map-icon-bg" style="${that?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(that?.rotate) + rotate}deg)` : ''}"><img src="${path + iconName}.png"/><text class="marker-order" style="${that?.index ? `display: block;` : 'display: none;'}">#${that?.index}</text></div>`,
+                        iconSize: [30, 30],			//设置图标大小
+                        iconAnchor: [15, 15],		//设置图标偏移
+                    })
 
                 if (that.name === '电梯撤离点' && that.point1) {
                     var pos1 = getMapPos(that.point1.x, that.point1.y)
@@ -1133,12 +1384,14 @@ function refreshMarker2(from, arr) {
 
                 myIcon.name = that.name;
                 
-                cacheMarker.push(L.marker([pos.y, pos.x], {icon:  myIcon, zIndexOffset: that.name === currNavIcon ? NavCliciIndex + 1 : NavCliciIndex}).bindPopup(popupHtml).addTo(map).on({
+                var marker = L.marker([pos.y, pos.x], {icon: myIcon, zIndexOffset: that.name === currNavIcon ? NavCliciIndex + 1 : NavCliciIndex}).bindPopup(popupHtml, radiationState ? {className: 'radiation fsq'} : undefined).addTo(map).on({
                     click: function () {
                         document.getElementById('MapContainer').classList.remove('zooming');
                         currClickMarker?.setIcon(currClickMarker?.myIcon)
                         this.isClick = true;
-                        this.myIcon = myIcon;
+                        this.myIcon = radiationState
+                            ? createRadiationMarkerIcon(that, path, radiationState.minute, false)
+                            : myIcon;
                         if (that?.floor || that?.floor === 0) {
                             var popupFloorInfo = getFloorItem(that.floor, item['自定义区域'], null, false);
                             $('.leaflet-popup').addClass('floor')
@@ -1149,15 +1402,28 @@ function refreshMarker2(from, arr) {
                         } else {
                             $('.leaflet-popup').removeClass('floor')
                         }
+                        if (radiationState) {
+                            this.setPopupContent(buildRadiationPopupHtml(that, radiationState.minute));
+                        }
                         this.openPopup();
-                        this.setIcon( L.divIcon({
-                            className: `${isWar ? 'map-war-icon' : 'map-icon'} click ${nameClassMap[that.name] || ''}`,
-                            html: `<div class="map-icon-bg" style="${that?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(that?.rotate) + rotate}deg)` : ''}"><img src="${path + iconName}.png"/><text class="marker-order" style="${that?.index ? `display: block;` : 'display: none;'}">#${that?.index}</text></div>`,
-                            iconSize: [50, 50],			//设置图标大小
-                            iconAnchor: [25, 25],		//设置图标偏移
-                        }));
+                        if (radiationState) {
+                            mountRadiationPopup(this);
+                        }
+                        this.setIcon(radiationState
+                            ? createRadiationMarkerIcon(that, path, radiationState.minute, true)
+                            : L.divIcon({
+                                className: `${isWar ? 'map-war-icon' : 'map-icon'} click ${nameClassMap[that.name] || ''}`,
+                                html: `<div class="map-icon-bg" style="${that?.rotate ? `transform: translate3d(-50%, -50%, 0) rotate(${Number(that?.rotate) + rotate}deg)` : ''}"><img src="${path + iconName}.png"/><text class="marker-order" style="${that?.index ? `display: block;` : 'display: none;'}">#${that?.index}</text></div>`,
+                                iconSize: [50, 50],			//设置图标大小
+                                iconAnchor: [25, 25],		//设置图标偏移
+                            }));
                         currClickMarker = this;
                         $(this.getElement()).addClass('click')
+                        if (radiationState) {
+                            markerPop.removeClass('show');
+                            $('.deploy-swiper').removeClass('show');
+                            return;
+                        }
                         if (item['随机']) {
                             markerName.html(`${ that?.sub_name || that.name}${item['拾取条件'] && item['拾取条件'] !== ''? `<span> ( ${item['拾取条件']} ) </span>`: ` [${item['随机']}]`}`)
                         } else if (item['撤离条件']) {
@@ -1215,9 +1481,16 @@ function refreshMarker2(from, arr) {
                         }
                     },
                     popupclose: function () {
+                        if (radiationState) {
+                            resetRadiationPopupState(radiationPopupBindings[getRadiationMarkerId(that)]);
+                        }
                         markerPop.removeClass('show')
                     }
-                }))
+                })
+                if (radiationState) {
+                    registerRadiationPopup(marker, that, pos, path, radiationState);
+                }
+                cacheMarker.push(marker)
             }
             
         }
@@ -1277,6 +1550,8 @@ function toggleVisible(type, index) {
        
     }
 
+    normalizeRadiationOptionVisibility();
+    syncRadiationOptionClasses();
     refreshMarker2("filter", mapIcons);
 }
 
@@ -1336,7 +1611,52 @@ var init = function () {
         }
      });
  
+    $(document)
+        .off('input.radiation change.radiation', '.radiation-range-slider')
+        .on('input.radiation change.radiation', '.radiation-range-slider', function () {
+            var binding = radiationPopupBindings[$(this).attr('data-radiation-id')];
+            if (!binding || binding.item.name === '随机辐射区') return;
+            var minuteText = formatRadiationMinute(this.value);
+            $(this)
+                .attr('aria-valuetext', minuteText + '分钟')
+                .closest('.radiation-popup')
+                .find('.radiation-current-minute')
+                .text('当前 ' + minuteText + ' 分钟');
+            updateRadiationMarkerAppearance(
+                binding.marker,
+                binding.item,
+                binding.pos,
+                binding.path,
+                Number(this.value),
+                true
+            );
+        });
+
+    $(document)
+        .off('mousedown.radiationClose touchstart.radiationClose')
+        .on('mousedown.radiationClose touchstart.radiationClose', function (e) {
+            if ($(e.target).closest('.leaflet-popup.radiation.fsq').length) return;
+            if ($(e.target).closest('.map-icon, .map-war-icon').length) return;
+            var radiationPopup = document.querySelector('.leaflet-popup.radiation.fsq');
+            if (!radiationPopup) return;
+            if (!currClickMarker || !currClickMarker.getPopup) return;
+            var radiationBinding = Object.keys(radiationPopupBindings)
+                .map(function (id) { return radiationPopupBindings[id]; })
+                .find(function (binding) { return binding.marker === currClickMarker; });
+            resetRadiationPopupState(radiationBinding);
+            var popupElement = currClickMarker.getPopup()?.getElement?.();
+            if (popupElement && $(popupElement).hasClass('radiation')) {
+                currClickMarker.closePopup();
+            } else {
+                $(radiationPopup).remove();
+            }
+            currClickMarker.setIcon(currClickMarker.myIcon);
+            markerPop.removeClass('show');
+            $('.deploy-swiper').removeClass('show');
+        });
+
      $('.leaflet-popup-pane').on('click', (e) => {
+         if ($(e.target).closest('.radiation-popup').length) return;
          console.log(e);
          console.log(currClickMarker);
          currClickMarker?.closePopup();
@@ -1816,7 +2136,7 @@ var initNav = function () {
             if (item.titleType === 'yl' && Array.isArray(item.typeList) && item.typeList.length) {
                 tabIconCls = 'nav-fish-tab';
                 var fishRaw = String(item.typeList[0].icon || 'wz').replace(/^nav_/, '');
-                tabIconExtra = `<img src="${FISH_ICON_URL + fishRaw}.png" style="width:70%;height:70%;object-fit:contain;display:block;margin:auto"/>`;
+                tabIconExtra = `<img src="https://game.gtimg.cn/images/dfm/cp/a20240729directory/m/yu.png" style="width:80%;height:80%;object-fit:contain;display:block;margin:auto;margin-top:0.1rem"/>`;
             }
             html+= `
             <div class="nav-option-item nav-option-item-${index} ${currLeftNav === index ? 'active': ''}" data-index="${index}">
@@ -2007,6 +2327,7 @@ function toastTips () {
 // ... existing code ...
 function changeMapLv(type) {
     console.log('难度', type);
+    $('.map-lv-item-2').text(String(type).charAt(0) === '5' ? '超临界' : '绝密');
     
     // 地图配置映射
     const mapConfigs = {
@@ -2759,6 +3080,19 @@ function changeMapLv(type) {
                 removeExistingLayer: true
             }
         },
+        '52': {
+            mapInfo: az3Info,
+            navList: navList3_az3,
+            navTypeList: navListInfo3_az3,
+            mapIcons: mapArticle3_az3,
+            poiInfo: selectRegion_az3,
+            mapName: 'AZ3',
+            mapLayer: 'map_az3',
+            lvName: '超临界',
+            extraConfig: {
+                removeExistingLayer: true
+            }
+        },
         '51_1_1F': {
             mapInfo: az3Info,
             navList: () => az3Info.floorInfo.navList2_firest1,
@@ -2848,6 +3182,7 @@ function changeMapLv(type) {
         allNavList = typeof config.navList === 'function' ? config.navList() : config.navList;
         navTypeList = typeof config.navTypeList === 'function' ? config.navTypeList() : config.navTypeList;
         mapIcons = typeof config.mapIcons === 'function' ? config.mapIcons() : config.mapIcons;
+        radiationMarkerStates = {};
 
         // ★ PC 版修复：机密难度(11)随机事件过滤只针对"主图"大地图：山火/坠机替换 mapIcons 并重算分类 nav。
         // 楼层视图（isFloor）必须跳过——否则 dataFilter 的 arrInfo（分类组数组）会覆盖掉扁平 navList，
@@ -3372,6 +3707,7 @@ var bindEvent = function () {
 
         if (index) {
             clickMap = index;
+            $('.map-lv-item-2').text(String(index) === '5' ? '超临界' : '绝密');
             dom_map_lv_list.attr('class', `map-lv-list show show-${clickMap}`)
             mapChangeIsClick = false;
             mapMenuIsShow = false;
@@ -4329,7 +4665,20 @@ function initWarSwiper (name, data) {
                     </div>
                 </div>
             </div>`
-            } else {
+        } else if (this['阵营'] === data['name']) { 
+            html += ` <div class="swiper-slide">
+            <div class="slide-name">${this.name}</div>
+            <div class="slide-bot">
+                <div class="slide-img-ctn">
+                    <div class="slide-img ${this.icon}"></div>
+                </div>
+                <div class="slide-info">
+                    <div class="slide-tiem ${this.CD?'':'hide'}">${this.CD?this.CD+'s':''}</div>
+                    <div class="slide-num">可部署:${this.num}</div>
+                </div>
+            </div>
+        </div>`
+        } else {
                 if (this['备注'] !== data['自定义区域'] && this['备注'] !== data['备注']) return;
                 html += ` <div class="swiper-slide">
                 <div class="slide-name">${this.name}</div>
@@ -4345,7 +4694,7 @@ function initWarSwiper (name, data) {
             </div>`
             }
         // } else if ((name.indexOf(this['阵营']) > -1) && window.occupy) {
-        } else if (this['备注'] === data['自定义区域'] && window.occupy) {
+        } else if (this['备注'] === data['自定义区域'] || this['阵营'] === data['备注'] && window.occupy) {
         //     length++;
         //     if (this?.type) {
         //         html += ` <div class="swiper-slide">
@@ -4704,6 +5053,7 @@ function navCatOf(item) {
     if (!item || !item.name) return 'wz';
     var n = String(item.name);
     if (item.catalog === 'fish') return 'yl';
+    if (n.indexOf('辐射区') > -1) return 'fsq';
     if (n.indexOf('撤离点') !== -1) return 'cld';
     if (item.mode && String(item.mode).indexOf('泄露区') > -1) return 'mode';
     if (n.indexOf('密钥') > -1) return 'my';
@@ -4723,6 +5073,7 @@ function navCatOf(item) {
 
 renderNavTypeList = function (list, navIndex = 0) {
     list = Array.isArray(list) ? list : [];
+    normalizeRadiationOptionVisibility();
     const seenFilterKeys = new Set();
     const categories = {
         wz: { title: '物资点', html: '' },
@@ -4731,6 +5082,7 @@ renderNavTypeList = function (list, navIndex = 0) {
         qxj: { title: '清洗间点位', html: '' },
         csd: { title: '出生点', html: '' },
         cld: { title: '撤离点', html: '' },
+        fsq: { title: '辐射区', html: '' },
         sl: { title: '首领', html: '' },
         jd: { title: '据点', html: '' },
         jdbsd: { title: '基地部署点', html: '' },
@@ -4840,15 +5192,23 @@ bindOptionEvent = function () {
         var filterKey = $target.attr('data-filter-key') || name;
         var NavListItemNum = $target.find('.wz-num')
         if (NavListItemNum.text() == 0) return;
-        if (!visibleMarker[filterKey]) {
-            $target.addClass(`img_${icon}_click active`)
+        var nextVisible = !visibleMarker[filterKey];
+        if (isRadiationOptionName(name)) {
+            resetOtherRadiationOptions(nextVisible ? filterKey : '');
+            refreshMarker2('filter', mapIcons);
+            $('.deploy-swiper').removeClass('show');
+            syncRadiationOptionClasses();
         } else {
-            $target.removeClass(`img_${icon}_click active`)
-            $target.addClass(`img_${icon}`)
+            if (!visibleMarker[filterKey]) {
+                $target.addClass(`img_${icon}_click active`)
+            } else {
+                $target.removeClass(`img_${icon}_click active`)
+                $target.addClass(`img_${icon}`)
+            }
+            currNavIcon = name;
+            NavCliciIndex++;
+            toggleVisible(filterKey, currLeftNav);
         }
-        currNavIcon = name;
-        NavCliciIndex++;
-        toggleVisible(filterKey, currLeftNav);
         saveMarker = Object.assign({}, visibleMarker);
         
         let chooseNum = $('.nav-type-list').find('.nav-list-item.active').length;
