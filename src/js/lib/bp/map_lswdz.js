@@ -14,6 +14,7 @@ var lswdzInfo = {
     initY: 120
 };
 
+
 // 点位由菜单按需传入地图，不会在进入模式时自动显示。
 var selectRegion_lswdz = [
     {
@@ -2220,7 +2221,117 @@ var selectPoint_lswdz = [
             },
         ]
     },
-    
+    {
+        "type": "role",
+        "name": "野火",
+        "icon": "icon_yh",
+        "points": [
+            {
+                "name": "",
+                "point_name": "盾式破障器",
+                "point_desc": "",
+                "camp": "进攻",
+                "icon": "icon_dspzq",
+                "vid":"",
+                "price": "",
+                "x": "",
+                "y":"",
+                "role_x": "",
+                "role_y": ""
+            },
+            {
+                "name": "",
+                "point_name": "环形烟幕",
+                "point_desc": "",
+                "camp": "进攻",
+                "icon": "icon_hxym",
+                "vid":"",
+                "price": "",
+                "x": "",
+                "y":"",
+                "role_x": "",
+                "role_y": ""
+            },
+            {
+                "name": "",
+                "point_name": "高爆手雷",
+                "point_desc": "",
+                "camp": "进攻",
+                "icon": "icon_gbsl",
+                "vid":"",
+                "price": "",
+                "x": "",
+                "y":"",
+                "role_x": "",
+                "role_y": ""
+            },
+            {
+                "name": "",
+                "point_name": "愈战愈勇",
+                "point_desc": "",
+                "camp": "进攻",
+                "icon": "icon_yzyy",
+                "vid":"",
+                "price": "",
+                "x": "",
+                "y":"",
+                "role_x": "",
+                "role_y": ""
+            },
+            {
+                "name": "",
+                "point_name": "盾式破障器",
+                "point_desc": "",
+                "camp": "防守",
+                "icon": "icon_dspzq",
+                "vid":"",
+                "price": "",
+                "x": "",
+                "y":"",
+                "role_x": "",
+                "role_y": ""
+            },
+            {
+                "name": "",
+                "point_name": "环形烟幕",
+                "point_desc": "",
+                "camp": "防守",
+                "icon": "icon_hxym",
+                "vid":"",
+                "price": "",
+                "x": "",
+                "y":"",
+                "role_x": "",
+                "role_y": ""
+            },
+            {
+                "name": "",
+                "point_name": "高爆手雷",
+                "point_desc": "",
+                "camp": "防守",
+                "icon": "icon_gbsl",
+                "vid":"",
+                "price": "",
+                "x": "",
+                "y":"",
+                "role_x": "",
+                "role_y": ""
+            },
+            {
+                "name": "",
+                "point_name": "愈战愈勇",
+                "point_desc": "",
+                "camp": "防守",
+                "icon": "icon_yzyy",
+                "vid":"",
+                "price": "",
+                "x": "",
+                "y":"",
+                "role_x": "",
+                "role_y": ""
+            },
+        ]
+    },
     
    
     
